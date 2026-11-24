@@ -1,0 +1,184 @@
+.EvoTopBarRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+.EvoTopBarContainer
+{
+    horizontal-align: center;
+    vertical-align: top;
+    flow-children: right;
+}
+
+.EvoTopBarSide
+{
+    flow-children: right;
+    vertical-align: top;
+}
+
+.EvoTopBarTeamGroup
+{
+    flow-children: right;
+    background-image: url("s2r://panorama/images/hud/reborn/top_bar_team_bg_psd.vtex");
+    background-size: cover;
+    background-color: #0b1015e0;
+    border-bottom: 1px solid #000000ee;
+    border-left: 1px solid #000000cc;
+    border-right: 1px solid #000000cc;
+    padding: 0px 2px 3px 2px;
+    margin: 0px 2px;
+}
+
+.EvoTopBarClock
+{
+    width: 82px;
+    height: 44px;
+    flow-children: down;
+    horizontal-align: center;
+    vertical-align: top;
+    background-image: url("s2r://panorama/images/hud/reborn/bg_timer_psd.vtex");
+    background-size: cover;
+    background-color: #0e141ae8;
+    border-left: 1px solid #000000ff;
+    border-right: 1px solid #000000ff;
+    border-bottom: 1px solid #000000ff;
+    box-shadow: #000000bb 0px 2px 6px 0px;
+}
+
+.EvoDayNightIcon
+{
+    width: 18px;
+    height: 18px;
+    horizontal-align: center;
+    margin-top: 3px;
+    background-image: url("s2r://panorama/images/hud/reborn/glow_day_psd.vtex");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.EvoDayNightIcon.IsNight
+{
+    background-image: url("s2r://panorama/images/hud/reborn/glow_night_psd.vtex");
+}
+
+.EvoClockLabel
+{
+    horizontal-align: center;
+    margin-top: -1px;
+    font-family: monospaceNumbersFont;
+    font-size: 13px;
+    font-weight: semi-bold;
+    color: #c8d2dc;
+    text-shadow: 0px 1px 2px #000000cc;
+}
+
+.EvoTopBarHeroCard
+{
+    width: 66px;
+    flow-children: down;
+    margin: 0px 1px;
+}
+
+.EvoTopBarColorStrip
+{
+    width: 100%;
+    height: 3px;
+    background-color: #5e9940;
+}
+
+.EvoTopBarPortraitWrap
+{
+    width: 66px;
+    height: 36px;
+    background-color: #12181f;
+    border: 1px solid #000000ee;
+}
+
+.EvoTopBarHeroImage
+{
+    width: 100%;
+    height: 100%;
+    transition-property: saturation, brightness;
+    transition-duration: 0.2s;
+}
+
+.EvoTopBarHeroCard.IsDead .EvoTopBarHeroImage
+{
+    saturation: 0.1;
+    brightness: 0.45;
+}
+
+.EvoTopBarDeadOverlay
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("s2r://panorama/images/hud/reborn/top_bar_dead_overlay_png.vtex");
+    background-size: cover;
+    visibility: collapse;
+}
+
+.EvoTopBarHeroCard.IsDead .EvoTopBarDeadOverlay
+{
+    visibility: visible;
+}
+
+.EvoTopBarRespawnLabel
+{
+    horizontal-align: center;
+    vertical-align: center;
+    font-family: monospaceNumbersFont;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d8dfe6;
+    text-shadow: 0px 1px 2px #000000ee;
+    visibility: collapse;
+}
+
+.EvoTopBarHeroCard.IsDead .EvoTopBarRespawnLabel
+{
+    visibility: visible;
+}
+
+.EvoTopBarBars
+{
+    width: 100%;
+    flow-children: down;
+    margin-top: 1px;
+}
+
+.EvoTopBarBars.Hidden
+{
+    visibility: collapse;
+}
+
+.EvoTopBarHpTrack
+{
+    width: 100%;
+    height: 4px;
+    background-color: #080c10ee;
+    border: 1px solid #000000dd;
+}
+
+.EvoTopBarHpFill
+{
+    height: 100%;
+    background-color: #5e9940;
+}
+
+.EvoTopBarMpTrack
+{
+    width: 100%;
+    height: 3px;
+    background-color: #080c10ee;
+    border-left: 1px solid #000000dd;
+    border-right: 1px solid #000000dd;
+    border-bottom: 1px solid #000000dd;
+}
+
+.EvoTopBarMpFill
+{
+    height: 100%;
+    background-color: #3a72b8;
+}

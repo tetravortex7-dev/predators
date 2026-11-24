@@ -1,0 +1,406 @@
+.EvoDraftRoot
+{
+    width: 100%;
+    height: 100%;
+}
+
+.EvoDraftReopenBtn
+{
+    visibility: collapse;
+    horizontal-align: center;
+    vertical-align: bottom;
+    margin-bottom: 248px;
+    padding: 7px 18px;
+    background-image: url("s2r://panorama/images/hud/reborn/bg_timer_psd.vtex");
+    background-size: cover;
+    background-color: #141c24ee;
+    border: 1px solid #a88c52cc;
+    box-shadow: #000000cc 0px 3px 10px 0px;
+}
+
+.EvoDraftReopenBtn.Visible
+{
+    visibility: visible;
+}
+
+.EvoDraftReopenBtn:hover
+{
+    brightness: 1.25;
+}
+
+.EvoDraftReopenLabel
+{
+    font-family: titleFont;
+    font-size: 13px;
+    font-weight: semi-bold;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #e6cb86;
+    text-shadow: 0px 1px 2px #000000cc;
+}
+
+.EvoDraftModal
+{
+    visibility: collapse;
+    horizontal-align: center;
+    vertical-align: center;
+    margin-bottom: 90px;
+    flow-children: down;
+    background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
+    background-size: cover;
+    background-color: #0b1016f2;
+    border: 1px solid #2b3542;
+    border-top: 2px solid #9e8147;
+    box-shadow: #000000ee 0px 10px 36px 0px;
+}
+
+.EvoDraftModal.Visible
+{
+    visibility: visible;
+}
+
+.EvoDraftHeader
+{
+    width: 100%;
+    height: 38px;
+    padding: 0px 12px 0px 16px;
+    flow-children: right;
+    vertical-align: center;
+    background-image: url("s2r://panorama/images/hud/reborn/bg_timer_psd.vtex");
+    background-size: cover;
+    background-color: #111720f0;
+    border-bottom: 1px solid #000000ee;
+}
+
+.EvoDraftTitle
+{
+    width: fill-parent-flow(1.0);
+    font-family: titleFont;
+    font-size: 15px;
+    font-weight: semi-bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e3c987;
+    text-shadow: 0px 1px 3px #000000dd;
+    vertical-align: center;
+}
+
+.EvoDraftMinimizeBtn
+{
+    width: 24px;
+    height: 24px;
+    background-color: #141b24cc;
+    border: 1px solid #354252aa;
+    vertical-align: center;
+}
+
+.EvoDraftMinimizeBtn:hover
+{
+    brightness: 1.3;
+    border: 1px solid #9e8147cc;
+}
+
+.EvoDraftMinimizeIcon
+{
+    width: 11px;
+    height: 11px;
+    horizontal-align: center;
+    vertical-align: center;
+    background-image: url("s2r://panorama/images/hud/reborn/arrow_collapse_icon_psd.vtex");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    wash-color: #9aa8b6;
+    transform: rotateZ( 90deg );
+}
+
+.EvoDraftCards
+{
+    flow-children: right;
+    padding: 16px 14px 18px 14px;
+}
+
+.EvoDraftOptionCard
+{
+    width: 248px;
+    flow-children: down;
+    margin: 0px 7px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #161d26f6 ), to( #0c1016fa ) );
+    border: 1px solid #2d3846;
+    border-top: 1px solid #485769aa;
+    box-shadow: #000000aa 0px 4px 14px 0px;
+    transition-property: brightness, border-color, transform;
+    transition-duration: 0.14s;
+}
+
+.EvoDraftOptionCard:hover
+{
+    brightness: 1.15;
+    border: 1px solid #c6a55a;
+    transform: translateY( -3px );
+}
+
+.EvoDraftHeroBanner
+{
+    width: 100%;
+    height: 126px;
+    background-color: #090d12;
+    overflow: clip;
+}
+
+.EvoDraftHeroImage
+{
+    width: 100%;
+    height: 100%;
+}
+
+.EvoDraftHeroVignette
+{
+    width: 100%;
+    height: 100%;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #00000010 ), color-stop( 0.55, #0a0f1522 ), to( #0e141cf5 ) );
+}
+
+.EvoDraftAttrBadge
+{
+    horizontal-align: right;
+    vertical-align: top;
+    margin: 7px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #0b0f15dd;
+    border: 1px solid #424f60cc;
+    padding: 3px;
+}
+
+.EvoDraftAttrIcon
+{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.EvoDraftAttrIcon.STR
+{
+    background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.EvoDraftAttrIcon.AGI
+{
+    background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.EvoDraftAttrIcon.INT
+{
+    background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.EvoDraftAttrIcon.ALL
+{
+    background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_all_psd.vtex");
+}
+
+.EvoDraftBannerName
+{
+    width: 100%;
+    vertical-align: bottom;
+    padding: 0px 10px 7px 10px;
+    text-align: center;
+    font-family: titleFont;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #f0dfa8;
+    text-shadow: 0px 2px 6px #000000ff;
+}
+
+.EvoDraftCardBody
+{
+    width: 100%;
+    flow-children: down;
+    padding: 10px 12px 12px 12px;
+}
+
+.EvoDraftSkillRow
+{
+    horizontal-align: center;
+    flow-children: right;
+    margin-bottom: 10px;
+}
+
+.EvoDraftMiniAbilityWrap
+{
+    width: 44px;
+    height: 44px;
+    margin: 0px 5px;
+    padding: 2px;
+    background-image: url("s2r://panorama/images/hud/reborn/ability_bevel_psd.vtex");
+    background-size: 100% 100%;
+    border: 1px solid #3c4959;
+    transition-property: brightness, border-color;
+    transition-duration: 0.1s;
+}
+
+.EvoDraftMiniAbilityWrap:hover
+{
+    brightness: 1.25;
+    border: 1px solid #e0c175;
+}
+
+.EvoDraftMiniAbilityWrap.Innate
+{
+    border: 1px solid #b5944d;
+    border-radius: 50%;
+}
+
+.EvoDraftMiniAbilityIcon
+{
+    width: 100%;
+    height: 100%;
+}
+
+.EvoDraftAbilityIconWrap
+{
+    width: 76px;
+    height: 76px;
+    horizontal-align: center;
+    margin: 14px 0px 8px 0px;
+    padding: 3px;
+    background-image: url("s2r://panorama/images/hud/reborn/ability_bevel_psd.vtex");
+    background-size: 100% 100%;
+}
+
+.EvoDraftAbilityIcon
+{
+    width: 100%;
+    height: 100%;
+}
+
+.EvoDraftOptionName
+{
+    width: 100%;
+    text-align: center;
+    font-family: titleFont;
+    font-size: 15px;
+    font-weight: semi-bold;
+    letter-spacing: 0.6px;
+    color: #e5ca86;
+    text-shadow: 0px 1px 2px #000000cc;
+    margin-bottom: 6px;
+}
+
+.EvoDraftOptionDesc
+{
+    width: 100%;
+    min-height: 54px;
+    text-align: center;
+    font-family: defaultFont;
+    font-size: 12px;
+    color: #9ba8b6;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.EvoDraftRoleStrip
+{
+    width: 100%;
+    flow-children: right;
+    padding: 3px 8px;
+    margin-bottom: 9px;
+    background-color: #0b1016cc;
+    border-bottom: 1px solid #25303daa;
+}
+
+.EvoDraftRoleAttr
+{
+    font-family: titleFont;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    vertical-align: center;
+}
+
+.EvoDraftRoleAttr.STR { color: #ec574b; }
+.EvoDraftRoleAttr.AGI { color: #54d168; }
+.EvoDraftRoleAttr.INT { color: #4db8ff; }
+.EvoDraftRoleAttr.ALL { color: #e2b85b; }
+
+.EvoDraftRoleStats
+{
+    width: fill-parent-flow(1.0);
+    text-align: right;
+    font-family: defaultFont;
+    font-size: 11px;
+    color: #8493a3;
+    vertical-align: center;
+}
+
+.EvoDraftDescBox
+{
+    width: 100%;
+    min-height: 78px;
+    flow-children: down;
+    padding: 8px 9px;
+    margin-bottom: 10px;
+    background-color: #0b1016bb;
+    border: 1px solid #202a36;
+    border-left: 2px solid #9f8349bb;
+}
+
+.EvoDraftDescLead
+{
+    width: 100%;
+    text-align: left;
+    font-family: defaultFont;
+    font-size: 12px;
+    font-weight: semi-bold;
+    color: #dfe7ef;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.EvoDraftDescLine
+{
+    width: 100%;
+    text-align: left;
+    font-family: defaultFont;
+    font-size: 11.5px;
+    color: #98a8b8;
+    line-height: 15px;
+}
+
+.EvoDraftSelectFooter
+{
+    width: 100%;
+    height: 28px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #252e39ee ), to( #192028f6 ) );
+    border: 1px solid #3c4a5a;
+    transition-property: background-color, border-color;
+    transition-duration: 0.12s;
+}
+
+.EvoDraftOptionCard:hover .EvoDraftSelectFooter
+{
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #5e4c24f0 ), to( #3a2e14f8 ) );
+    border: 1px solid #d6b668;
+}
+
+.EvoDraftSelectLabel
+{
+    horizontal-align: center;
+    vertical-align: center;
+    font-family: titleFont;
+    font-size: 12px;
+    font-weight: semi-bold;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #c9d3de;
+}
+
+.EvoDraftOptionCard:hover .EvoDraftSelectLabel
+{
+    color: #ffe8a3;
+}

@@ -1,0 +1,41 @@
+{
+  "key": "example",
+  "hero": "npc_dota_hero_slark",
+  "model": "models/heroes/slark/slark.vmdl",
+  "diet": "CARNIVORE",
+  "attr": "AGI",
+  "keep_default_abilities": true,
+  "tags": ["predator", "mobile"],
+  "spell_pool_tags": ["predator", "mobility", "burst"],
+  "innate": "slark_essence_shift",
+  "signature": "slark_pounce",
+  "stages": [
+    {
+      "name_ru": "Стадия 1",
+      "name_en": "Stage 1",
+      "desc_ru": "Описание 1-й стадии (2 ур.).",
+      "desc_en": "Stage 1 description (Lv.2).",
+      "scale": 0.65,
+      "wearables": []
+    },
+    {
+      "name_ru": "Стадия 2",
+      "name_en": "Stage 2",
+      "desc_ru": "Описание 2-й стадии (6 ур.).",
+      "desc_en": "Stage 2 description (Lv.6).",
+      "scale": 0.85,
+      "color": [200, 220, 255],
+      "wearables": []
+    },
+    {
+      "name_ru": "Стадия 3",
+      "name_en": "Stage 3",
+      "desc_ru": "Описание 3-й стадии (12 ур.).",
+      "desc_en": "Stage 3 description (Lv.12).",
+      "scale": 1.05,
+      "color": [160, 210, 255],
+      "label_color": [230, 198, 110],
+      "wearables": []
+    }
+  ]
+}

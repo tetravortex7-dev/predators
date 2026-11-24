@@ -1,0 +1,162 @@
+{
+  "addon_game_name": {
+    "ru": "Evo: Adapt. Win.",
+    "en": "Evo: Adapt. Win."
+  },
+  "npc_dota_hero_wisp": {
+    "ru": "Выбор судьбы",
+    "en": "Choice of Fate"
+  },
+  "evo_phase_incubator": {
+    "ru": "Инкубатор",
+    "en": "Incubator"
+  },
+  "evo_phase_surface": {
+    "ru": "Поверхность",
+    "en": "Surface"
+  },
+  "evo_phase_tiebreaker": {
+    "ru": "Тай-брейк",
+    "en": "Tiebreaker"
+  },
+  "DOTA_Tooltip_modifier_evo_boss_courage": {
+    "ru": "Ярость босса (Courage)",
+    "en": "Boss Courage"
+  },
+  "DOTA_Tooltip_modifier_evo_boss_courage_Description": {
+    "ru": "Босс вошёл в режим охоты на героев с усиленными характеристиками.",
+    "en": "The boss has entered hero-hunting mode with empowered stats."
+  },
+  "DOTA_Tooltip_modifier_fountain_buff_lua": {
+    "ru": "Восстановление от фонтана",
+    "en": "Fountain Rejuvenation"
+  },
+  "DOTA_Tooltip_modifier_fountain_buff_lua_Description": {
+    "ru": "Восстанавливает %dMODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE%%% здоровья и %dMODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE%%% маны в секунду.",
+    "en": "Heals %dMODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE%%% HP and %dMODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE%%% mana per second."
+  },
+  "DOTA_Tooltip_modifier_evo_world_pause": {
+    "ru": "Пауза мира (Дуэль)",
+    "en": "World Pause (Duel)"
+  },
+  "DOTA_Tooltip_modifier_evo_world_pause_Description": {
+    "ru": "Мир остановлен на время проведения дуэли на арене.",
+    "en": "The world is paused while the arena duel takes place."
+  },
+  "evo_hud_score_title": {
+    "ru": "Очки матча",
+    "en": "Match Score"
+  },
+  "evo_hud_score_short": {
+    "ru": "ОЧКИ",
+    "en": "SCORE"
+  },
+  "evo_hud_my_score": {
+    "ru": "Мои очки",
+    "en": "My Score"
+  },
+  "evo_hud_my_team_score": {
+    "ru": "Команда",
+    "en": "Team"
+  },
+  "evo_phase_ended": {
+    "ru": "Финал",
+    "en": "Match Over"
+  },
+  "evo_team_2": {
+    "ru": "Силы Света",
+    "en": "Radiant"
+  },
+  "evo_team_3": {
+    "ru": "Силы Тьмы",
+    "en": "Dire"
+  },
+  "evo_team_6": {
+    "ru": "Команда 1",
+    "en": "Team 1"
+  },
+  "evo_team_7": {
+    "ru": "Команда 2",
+    "en": "Team 2"
+  },
+  "evo_team_8": {
+    "ru": "Команда 3",
+    "en": "Team 3"
+  },
+  "evo_team_9": {
+    "ru": "Команда 4",
+    "en": "Team 4"
+  },
+  "evo_draft_body_title": {
+    "ru": "Выбор эволюции",
+    "en": "Choose Evolution"
+  },
+  "evo_draft_ability_title": {
+    "ru": "Выбор способности",
+    "en": "Choose Ability"
+  },
+  "evo_draft_mutation_title": {
+    "ru": "Выбор мутации",
+    "en": "Choose Mutation"
+  },
+  "evo_attr_STR": {
+    "ru": "СИЛА",
+    "en": "STRENGTH"
+  },
+  "evo_attr_AGI": {
+    "ru": "ЛОВКОСТЬ",
+    "en": "AGILITY"
+  },
+  "evo_attr_INT": {
+    "ru": "ИНТЕЛЛЕКТ",
+    "en": "INTELLIGENCE"
+  },
+  "evo_attr_ALL": {
+    "ru": "УНИВЕРСАЛ",
+    "en": "UNIVERSAL"
+  },
+  "evo_spell_shop_title": {
+    "ru": "Способности",
+    "en": "Abilities"
+  },
+  "evo_spell_shop_owned": {
+    "ru": "Мои слоты (нажми два для обмена)",
+    "en": "Owned Slots (click two to swap)"
+  },
+  "evo_duel_title": {
+    "ru": "Дуэль 1×1",
+    "en": "1v1 Duel"
+  },
+  "evo_boss_duel_title": {
+    "ru": "Босс-арена",
+    "en": "Boss Arena"
+  },
+  "evo_tiebreaker_title": {
+    "ru": "Тай-брейк Bo3",
+    "en": "Bo3 Tiebreaker"
+  },
+  "evo_duel_boss_label": {
+    "ru": "Босс",
+    "en": "Boss"
+  },
+  "evo_talent_tree_title": {
+    "ru": "ДЕРЕВО ТАЛАНТОВ",
+    "en": "TALENT TREE"
+  },
+  "DOTA_Tooltip_modifier_evo_peace_time": {
+    "ru": "Инкубатор (мирное время)",
+    "en": "Incubator (Peace Time)"
+  },
+  "DOTA_Tooltip_modifier_evo_peace_time_Description": {
+    "ru": "PvP между игроками отключено во время фазы Инкубатора. Фармите крипов и готовьте первую эволюцию.",
+    "en": "Hero PvP damage is disabled during the Incubator phase. Farm neutrals and prepare your first evolution."
+  },
+  "DOTA_Tooltip_modifier_evo_mutation_runtime": {
+    "ru": "Мутация",
+    "en": "Mutation"
+  },
+  "DOTA_Tooltip_modifier_evo_mutation_runtime_Description": {
+    "ru": "Активный эффект выбранной мутации эволюции.",
+    "en": "Active effect of your chosen evolution mutation."
+  }
+}

@@ -1,0 +1,19 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/evo_top_bar.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_top_bar.js" />
+    </scripts>
+    <Panel class="EvoTopBarRoot" hittest="false">
+        <Panel class="EvoTopBarContainer" hittest="false">
+            <Panel id="EvoTopBarLeft" class="EvoTopBarSide EvoTopBarLeft" hittest="false" />
+            <Panel id="EvoTopBarClock" class="EvoTopBarClock">
+                <Panel id="EvoDayNightIcon" class="EvoDayNightIcon" />
+                <Label id="EvoClockLabel" class="EvoClockLabel" text="0:00" />
+            </Panel>
+            <Panel id="EvoTopBarRight" class="EvoTopBarSide EvoTopBarRight" hittest="false" />
+        </Panel>
+    </Panel>
+</root>

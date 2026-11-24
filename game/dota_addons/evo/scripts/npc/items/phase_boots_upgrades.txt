@@ -1,0 +1,99 @@
+"DOTAAbilities"
+{
+"item_recipe_phase_boots_2"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "300"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_phase_boots_2"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_phase_boots;item_ring_of_protection;item_broadsword"
+        }
+    }
+
+	"item_recipe_phase_boots_3"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "600"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_phase_boots_3"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_phase_boots_2;item_ring_of_protection;item_broadsword"
+        }
+    }
+
+"item_phase_boots_2"
+    {
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/item_phase_boots_2.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityCooldown"               "8"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilitySharedCooldown"         "item_phase_boots_2;item_phase_boots;item_phase_boots_3"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "phase_boots_2"
+		"ItemAliases"                   "phase; boots"
+
+        "precache"
+        {
+            "particle"  "particles/items2_fx/phase_boots.vpcf"
+        }
+
+        "ItemQuality"                   "rare"
+
+        "AbilityValues"
+        {
+				"armor"        				"8"
+                "damage"        			"36"
+                "move_speed"     			"45"
+                "movespeed_active"      	"20"
+                "movespeed_active_range"    "15"
+                "duration"      			"5"
+        }
+    }
+
+	"item_phase_boots_3"
+    {
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/item_phase_boots_3.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityCooldown"               "8"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilitySharedCooldown"         "item_phase_boots_2;item_phase_boots;item_phase_boots_3"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "phase_boots_3"
+		"ItemAliases"                   "phase; boots"
+
+        "precache"
+        {
+            "particle"  "particles/econ/events/ti6/phase_boots_ti6.vpcf"
+            "sound"     "sounds/items/phase_boots_activate.vsnd"
+        }
+
+        "ItemQuality"                   "epic"
+
+        "AbilityValues"
+        {
+				"armor"        				"10"
+                "damage"        			"48"
+                "move_speed"     			"45"
+                "movespeed_active"      	"22"
+                "movespeed_active_range"    "17"
+                "duration"      			"5"
+        }
+    }
+}

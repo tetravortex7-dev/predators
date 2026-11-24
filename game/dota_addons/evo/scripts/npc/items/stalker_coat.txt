@@ -1,0 +1,87 @@
+"DOTAAbilities"
+{
+	"item_stalker_coat"
+    {
+        "BaseClass"    "item_datadriven"
+        "AbilityTextureName" "item_stalker_coat"
+        "ItemQuality"  "epic"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemAliases"                   "gank; coat; stalker"
+        "ItemCost"     "2500"
+
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "20"
+        "AbilityManaCost"               "50"
+		"ItemPurchasable"               "1"
+
+        "SideShop"     "1"
+        "SecretShop"   "0"
+
+        "ItemStackable" "0"
+        "ItemPermanent" "1"
+        "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+        "AbilityValues"
+        {
+                "attributes"    "35"
+                "speeda"    "30"
+                "dur"    "15"
+                "dmg"    "80"
+        }
+
+            "OnSpellStart"
+        {
+                "ApplyModifier"
+                    {
+                        "Target"            "CASTER"
+                        "ModifierName"      "modifier_stalker_coat_speed_up"
+                    }
+        }
+
+        "Modifiers"
+        {
+            "modifier_stalker_coat"
+            {
+                "Passive"  "1"
+                "IsHidden" "1"
+                "Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%dmg"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "%attributes"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS" "%attributes"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS" "%attributes"
+                }
+                "States"
+                {
+                "MODIFIER_STATE_NOT_ON_MINIMAP_FOR_ENEMIES" "MODIFIER_STATE_VALUE_ENABLED"
+                }
+            }
+
+                    "modifier_stalker_coat_speed_up"
+            {
+                "Passive"  "0"
+                "IsHidden" "0"
+                "IsBuff"    "1"
+                "IsPurgable" "1"
+                "Duration" "%dur"
+                "EffectName"  "particles/units/heroes/hero_phantom_assassin/phantom_assassin_blur.vpcf"
+                "EffectAttachType"  "follow_origin"
+                "OnCreated"
+                {
+                  "FireSound"
+                  {
+                    "EffectName"  "DOTA_Item.ShadowAmulet.Activate"
+                    "Target"      "CASTER"
+                  }
+                }
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%speeda"
+                    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE_UNIQUE" "%speeda"
+                }
+            }
+        }
+    }
+}

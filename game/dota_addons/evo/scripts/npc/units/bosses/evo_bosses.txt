@@ -1,0 +1,72 @@
+"DOTAUnits"
+{
+	"npc_dota_evo_boss_slardar"
+	{
+		"BaseClass"					"npc_dota_creature"
+		"Model"						"models/heroes/slardar/slardar.vmdl"
+		"ModelScale"				"0.7"
+		"SoundSet"					"Hero_Slardar"
+		"Level"						"1"
+		"IsBossCreature"			"1"
+		"MinimapIcon"				"minimap_roshan"
+		"MinimapIconSize"			"500"
+		"HasInventory"				"1"
+		"ConsideredHero"			"1"
+		"UseNeutralCreepBehavior"	"0"
+		"CanBeDominated"			"0"
+
+		"Ability1"					"evo_elasmyr_tidal_lunge"
+		"Ability2"					"evo_elasmyr_maelstrom_slam"
+		"Ability3"					"evo_elasmyr_adaptive_scales"
+		"Ability4"					"evo_elasmyr_bash"
+		"Ability5"					"evo_elasmyr_abyssal_flood"
+
+		"ArmorPhysical"				"5"
+		"MagicalResistance"			"25"
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"46"
+		"AttackDamageMax"			"54"
+		"AttackRate"				"1.5"
+		"AttackAnimationPoint"		"0.36"
+		"AttackAcquisitionRange"	"900"
+		"AttackRange"				"150"
+
+		"BountyXP"					"450"
+		"BountyGoldMin"				"380"
+		"BountyGoldMax"				"480"
+
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		"HealthBarOffset"			"200"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"315"
+		"MovementTurnRate"			"0.75"
+
+		"StatusHealth"				"920"
+		"StatusHealthRegen"			"6.5"
+		"StatusMana"				"480"
+		"StatusManaRegen"			"3.5"
+
+		"VisionDaytimeRange"		"1400"
+		"VisionNighttimeRange"		"1200"
+
+		"precache"
+		{
+			"model"					"models/heroes/slardar/slardar.vmdl"
+			"soundfile"				"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+		}
+
+		"Creature"
+		{
+			"HPGain"				"75"
+			"DamageGain"			"3.5"
+			"ArmorGain"				"0.3"
+			"MagicResistGain"		"0.15"
+			"MoveSpeedGain"			"0.5"
+			"BountyGain"			"12"
+			"XPGain"				"25"
+		}
+	}
+}

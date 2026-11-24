@@ -1,0 +1,18 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/evo_spell_shop.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_spell_shop.js" />
+    </scripts>
+    <Panel class="EvoSpellShopRoot" hittest="false">
+        <Panel id="EvoSpellStrip" class="EvoSpellStrip">
+            <Panel id="EvoSpellOfferedRow" class="EvoSpellOfferedRow" />
+        </Panel>
+        <Button id="EvoSpellPlusBtn" class="EvoSpellPlusBtn">
+            <Panel class="EvoSpellPlusWell" />
+            <Panel class="EvoSpellPlusFill" />
+        </Button>
+    </Panel>
+</root>

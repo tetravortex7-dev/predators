@@ -1,0 +1,538 @@
+{
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash": {
+    "ru": "Водяной всплеск",
+    "en": "Water Splash"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_Description": {
+    "ru": "Герой совершает короткий рывок волной на расстояние до %dash_range%, нанося %damage% магического урона всем врагам на пути и замедляя их передвижение на %slow_pct%%% на %slow_duration% сек.",
+    "en": "Dashes forward up to %dash_range% units, dealing %damage% magic damage to all enemies along the path and slowing movement speed by %slow_pct%%% for %slow_duration%s."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_t1_water_splash_slow": {
+    "ru": "Водяной всплеск",
+    "en": "Water Splash"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_t1_water_splash_slow_Description": {
+    "ru": "Скорость передвижения снижена на 15%.",
+    "en": "Movement speed reduced by 15%."
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream": {
+    "ru": "Разъедающий поток",
+    "en": "Corrosive Stream"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_Description": {
+    "ru": "Выпускает поток воды в цель, нанося %base_damage% + %attr_damage_pct%%% от наибольшего атрибута магического урона. Поток расплёскивается на %splash_targets% ближайших врагов (%splash_pct%%% урона) и снижает броню всех задетых целей на %armor_reduction% на %armor_duration% сек.",
+    "en": "Fires a water stream dealing %base_damage% + %attr_damage_pct%%% of highest attribute magic damage. Splashes onto %splash_targets% nearest enemies (%splash_pct%%% damage) and reduces armor by %armor_reduction% for %armor_duration%s on all hit."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_t1_corrosive_armor": {
+    "ru": "Разъедающий поток",
+    "en": "Corrosive Stream"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_t1_corrosive_armor_Description": {
+    "ru": "Броня снижена на 2.",
+    "en": "Armor reduced by 2."
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence": {
+    "ru": "Адаптивная сущность",
+    "en": "Adaptive Essence"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_Description": {
+    "ru": "Динамически усиливает героя в зависимости от наибольшего атрибута:<br>— <b>Сила:</b> +%str_armor% к броне и +%str_hp_regen% к регенерации здоровья.<br>— <b>Ловкость:</b> +%agi_attack_speed% к скорости атаки и +%agi_move_speed_pct%%% к скорости передвижения.<br>— <b>Интеллект:</b> +%int_spell_amp%%% к урону заклинаний и +%int_mana_regen% к регенерации маны.",
+    "en": "Dynamically grants bonuses based on highest attribute:<br>— <b>Strength:</b> +%str_armor% Armor, +%str_hp_regen% HP Regen.<br>— <b>Agility:</b> +%agi_attack_speed% Attack Speed, +%agi_move_speed_pct%%% Move Speed.<br>— <b>Intelligence:</b> +%int_spell_amp%%% Spell Amp, +%int_mana_regen% Mana Regen."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_adaptive_essence": {
+    "ru": "Адаптивная сущность",
+    "en": "Adaptive Essence"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_adaptive_essence_Description": {
+    "ru": "Активный бонус от наибольшего атрибута (1: СИЛ, 2: ЛОВ, 3: ИНТ).",
+    "en": "Active bonus from highest attribute (1: STR, 2: AGI, 3: INT)."
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_dash_range": {
+    "ru": "ДАЛЬНОСТЬ РЫВКА:",
+    "en": "DASH RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_damage": {
+    "ru": "МАГИЧЕСКИЙ УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЕ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_slow_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+    "en": "SLOW DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_attr_damage_pct": {
+    "ru": "%УРОН ОТ МАКС. АТРИБУТА:",
+    "en": "%HIGHEST ATTR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_splash_targets": {
+    "ru": "ЦЕЛЕЙ СПЛЕША:",
+    "en": "SPLASH TARGETS:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_splash_pct": {
+    "ru": "%УРОН СПЛЕША:",
+    "en": "%SPLASH DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_armor_reduction": {
+    "ru": "СНИЖЕНИЕ БРОНИ:",
+    "en": "ARMOR REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_armor_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_str_armor": {
+    "ru": "БРОНЯ (СИЛА):",
+    "en": "ARMOR (STR):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_str_hp_regen": {
+    "ru": "РЕГЕН HP (СИЛА):",
+    "en": "HP REGEN (STR):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_agi_attack_speed": {
+    "ru": "СКОРОСТЬ АТАКИ (ЛОВКОСТЬ):",
+    "en": "ATTACK SPEED (AGI):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_agi_move_speed_pct": {
+    "ru": "%СКОРОСТЬ БЕГА (ЛОВКОСТЬ):",
+    "en": "%MOVE SPEED (AGI):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_int_spell_amp": {
+    "ru": "%УРОН ЗАКЛИНАНИЙ (ИНТЕЛЛЕКТ):",
+    "en": "%SPELL AMP (INT):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_int_mana_regen": {
+    "ru": "РЕГЕН МАНЫ (ИНТЕЛЛЕКТ):",
+    "en": "MANA REGEN (INT):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q": {
+    "ru": "Рывок Прилива",
+    "en": "Tidal Surge"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_Description": {
+    "ru": "Рывок волной на %dash_range%, наносящий %damage% магического урона всем врагам на пути.<br><b>T3:</b> оставляет водный след на %trail_duration% сек., накладывающий Промокание (-20%% MS).<br><b>T4:</b> создаёт в конце водоворот (%vortex_radius% AoE), стягивающий врагов с мини-станом на %vortex_stun% сек.",
+    "en": "Dashes forward %dash_range% units, dealing %damage% magic damage to all enemies along the path.<br><b>T3:</b> leaves a water trail for %trail_duration%s applying Wet (-20%% MS).<br><b>T4:</b> creates a %vortex_radius%-AoE vortex at the end, pulling enemies with a %vortex_stun%s ministun."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_dash_range": {
+    "ru": "ДАЛЬНОСТЬ РЫВКА:",
+    "en": "DASH RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_damage": {
+    "ru": "МАГИЧЕСКИЙ УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_trail_duration": {
+    "ru": "СЛЕД ПРОМОКАНИЯ (T3):",
+    "en": "WET TRAIL (T3):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_vortex_radius": {
+    "ru": "РАДИУС ВОДОВОРОТА (T4):",
+    "en": "VORTEX RADIUS (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w": {
+    "ru": "Водяное Копьё",
+    "en": "Water Spear"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_Description": {
+    "ru": "Направленный удар водой на %base_damage% + %stat_pct%%% от суммы Силы и Ловкости магического урона, накладывающий Промокание на %wet_duration% сек.<br><b>T3:</b> 50%% конусный сплеш за целью; если цель уже промокла — оцепенение на %root_duration% сек.<br><b>T4:</b> снижает маг. сопротивление цели на %mr_reduction%%% на 4 сек.; убийство цели под дебаффом сокращает КД вдвое.",
+    "en": "Hurls a water spear dealing %base_damage% + %stat_pct%%% of (STR+AGI) magic damage and applying Wet for %wet_duration%s.<br><b>T3:</b> 50%% cone splash behind target; roots for %root_duration%s if target is already Wet.<br><b>T4:</b> shreds %mr_reduction%%% magic resistance for 4s; killing a debuffed target cuts CD by 50%%."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_stat_pct": {
+    "ru": "%УРОН ОТ (СИЛ+ЛОВ):",
+    "en": "%(STR+AGI) DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_wet_duration": {
+    "ru": "ПРОМОКАНИЕ:",
+    "en": "WET DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_root_duration": {
+    "ru": "ОЦЕПЕНЕНИЕ (T3):",
+    "en": "ROOT DURATION (T3):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_mr_reduction": {
+    "ru": "%СРЕЗ МАГРЕЗИСТА (T4):",
+    "en": "%MAGIC RES SHRED (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e": {
+    "ru": "Разрежение",
+    "en": "Rarefaction"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_Description": {
+    "ru": "На %duration% сек. дарует +%bonus_ms_pct%%% к скорости передвижения и %evasion_pct%%% уклонения.<br><b>T3:</b> базовое развеивание при применении и прохождение сквозь существ.<br><b>T4:</b> +%status_res_pct%%% к сопротивлению эффектам во время действия; пока способность на перезарядке, пассивно даёт +%cd_armor% брони и +%cd_hp_regen% регена HP.",
+    "en": "Grants +%bonus_ms_pct%%% Move Speed and %evasion_pct%%% Evasion for %duration%s.<br><b>T3:</b> basic dispel on cast and phased movement.<br><b>T4:</b> +%status_res_pct%%% Status Resistance while active; passively grants +%cd_armor% Armor and +%cd_hp_regen% HP Regen while on cooldown."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_bonus_ms_pct": {
+    "ru": "%СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+    "en": "%MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_evasion_pct": {
+    "ru": "%УКЛОНЕНИЕ:",
+    "en": "%EVASION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_status_res_pct": {
+    "ru": "%СОПР. ЭФФЕКТАМ (T4):",
+    "en": "%STATUS RES (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_cd_armor": {
+    "ru": "БРОНЯ НА КД (T4):",
+    "en": "COOLDOWN ARMOR (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_e_cd_hp_regen": {
+    "ru": "РЕГЕН HP НА КД (T4):",
+    "en": "COOLDOWN HP REGEN (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_r": {
+    "ru": "Зов Океана",
+    "en": "Call of the Ocean"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_r_Description": {
+    "ru": "Затапливает область радиусом %radius% на %duration% сек. Все враги в зоне постоянно находятся под эффектом Промокания (гарантирует оцепенение от Водяного Копья), а перезарядка Рывка Прилива героя внутри зоны идёт в 1.5× быстрее.",
+    "en": "Floods a %radius%-radius area for %duration%s. Enemies inside permanently suffer Wet (guaranteeing Water Spear root), while the caster's Tidal Surge cooldown ticks 1.5x faster inside."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_r_radius": {
+    "ru": "РАДИУС:",
+    "en": "RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_r_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q": {
+    "ru": "Кровавый скачок",
+    "en": "Blood Leap"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_Description": {
+    "ru": "Мгновенный скачок к врагу, наносящий %base_damage% + %str_pct%%% от Силы физического урона и накладывающий Кровотечение (%bleed_dps% урона/сек на %bleed_duration% сек.).<br><b>T3:</b> движущаяся цель замедляется на 18%% и продлевает Кровотечение.<br><b>T4:</b> можно прыгать и к союзникам.",
+    "en": "Blinks to an enemy dealing %base_damage% + %str_pct%%% STR physical damage and applying Bleed (%bleed_dps% DPS for %bleed_duration%s).<br><b>T3:</b> moving targets are slowed by 18%% and extend Bleed.<br><b>T4:</b> can also blink to allied units."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_base_damage": {
+    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "en": "BASE PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_str_pct": {
+    "ru": "%УРОН ОТ СИЛЫ:",
+    "en": "%STR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_bleed_dps": {
+    "ru": "УРОН КРОВОТЕЧЕНИЯ/СЕК:",
+    "en": "BLEED DPS:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_bleed_duration": {
+    "ru": "ДЛИТ. КРОВОТЕЧЕНИЯ:",
+    "en": "BLEED DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w": {
+    "ru": "Вытягивание жизни",
+    "en": "Life Siphon"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_Description": {
+    "ru": "Наносит %base_damage% + %str_pct%%% от Силы магического урона и лечит героя на %heal_pct%%% от нанесённого урона.<br><b>T3:</b> бьёт по конусу дальностью %range% (25%% лечения от крипов).<br><b>T4:</b> избыточное лечение превращается в Кровавый щит (до %shield_cap_pct%%% макс. HP на 6 сек.).",
+    "en": "Deals %base_damage% + %str_pct%%% STR magic damage and heals for %heal_pct%%% of damage dealt.<br><b>T3:</b> hits in a %range%-range cone (25%% heal vs creeps).<br><b>T4:</b> overheal converts into a Blood Shield (up to %shield_cap_pct%%% Max HP for 6s)."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_range": {
+    "ru": "ДАЛЬНОСТЬ:",
+    "en": "RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_base_damage": {
+    "ru": "БАЗОВЫЙ МАГ. УРОН:",
+    "en": "BASE MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_str_pct": {
+    "ru": "%УРОН ОТ СИЛЫ:",
+    "en": "%STR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_heal_pct": {
+    "ru": "%ЛЕЧЕНИЕ ОТ УРОНА:",
+    "en": "%DAMAGE HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_shield_cap_pct": {
+    "ru": "%МАКС. ЩИТ ОТ HP (T4):",
+    "en": "%MAX HP SHIELD (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e": {
+    "ru": "Жажда плоти",
+    "en": "Flesh Hunger"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_Description": {
+    "ru": "<b>Пассивно:</b> +%lifesteal_pct%%% вампиризма против кровоточащих целей и +%bonus_as% к скорости атаки.<br><b>T3 (Активно — Вскипание):</b> тратит 10%% текущего HP, на %active_duration% сек. удваивает пассивные бонусы и даёт +%active_ms_pct%%% MS.<br><b>T4:</b> убийство кровоточащей цели сбрасывает КД Кровавого скачка и лечит %kill_heal_pct%%% макс. HP.",
+    "en": "<b>Passive:</b> +%lifesteal_pct%%% lifesteal vs bleeding targets and +%bonus_as% Attack Speed.<br><b>T3 (Active — Boiling):</b> costs 10%% current HP, doubles passive bonuses and grants +%active_ms_pct%%% MS for %active_duration%s.<br><b>T4:</b> killing a bleeding target resets Blood Leap CD and heals %kill_heal_pct%%% Max HP."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_lifesteal_pct": {
+    "ru": "%ВАМПИРИЗМ ПО КРОВОТ.:",
+    "en": "%BLEED LIFESTEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_bonus_as": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_active_duration": {
+    "ru": "ДЛИТ. ВСКИПАНИЯ (T3):",
+    "en": "BOILING DURATION (T3):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_active_ms_pct": {
+    "ru": "%СКОРОСТЬ ПЕРЕДВ. (T3):",
+    "en": "%MOVE SPEED (T3):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_kill_heal_pct": {
+    "ru": "%ЛЕЧЕНИЕ ЗА УБИЙСТВО (T4):",
+    "en": "%KILL HEAL (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r": {
+    "ru": "Ритуал Свежевателей",
+    "en": "Flayer Ritual"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_Description": {
+    "ru": "Связывает героя с целью на %duration% сек. (разрыв на дистанции %break_distance%). На цели постоянно висит Кровотечение, а %redirect_pct%%% всего входящего по герою урона перенаправляется в связанную цель чистым уроном.",
+    "en": "Tethers the hero to a target for %duration%s (breaks at %break_distance% range). The target permanently suffers Bleed and takes %redirect_pct%%% of all damage dealt to the caster as pure damage."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_redirect_pct": {
+    "ru": "%ПЕРЕНАПРАВЛЕНИЕ УРОНА:",
+    "en": "%DAMAGE REDIRECT:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_break_distance": {
+    "ru": "ДИСТАНЦИЯ РАЗРЫВА:",
+    "en": "BREAK DISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q": {
+    "ru": "Шаг сквозь Тень",
+    "en": "Shadow Step"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q_Description": {
+    "ru": "Уходит в невидимость на %duration% сек. со скоростью %move_speed% и прохождением сквозь существ, нанося %pass_damage% магического урона врагам при прохождении.<br><b>T3:</b> прохождение замедляет на 15%% (3 сек.), атака из невидимости оглушает на 0.2 сек.<br><b>T4:</b> замедление 25%% (4 сек.), мини-стан 0.4 сек.",
+    "en": "Turns invisible for %duration%s with %move_speed% phased Move Speed, dealing %pass_damage% magic damage to enemies passed through.<br><b>T3:</b> passing slows by 15%% (3s); attacking from invis ministuns 0.2s.<br><b>T4:</b> 25%% slow (4s) and 0.4s ministun."
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q_move_speed": {
+    "ru": "СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
+    "en": "MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q_pass_damage": {
+    "ru": "УРОН ПРОХОЖДЕНИЯ:",
+    "en": "PASS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w": {
+    "ru": "Печать Пустоты",
+    "en": "Void Seal"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_Description": {
+    "ru": "Накладывает на врага метку на %duration% сек. (применимо в невидимости). Следующий удар или заклинание героя взрывают метку на %base_damage% + %int_pct%%% от Интеллекта магического урона.<br><b>T3:</b> накладывает безмолвие на %silence_duration% сек.<br><b>T4:</b> сжигает %mana_burn_pct%%% макс. маны цели и даёт герою +%spell_amp_pct%%% к урону заклинаний на 5 сек.",
+    "en": "Marks an enemy for %duration%s (castable while invisible). The next attack or spell detonates the mark for %base_damage% + %int_pct%%% INT magic damage.<br><b>T3:</b> silences for %silence_duration%s.<br><b>T4:</b> burns %mana_burn_pct%%% Max Mana and grants +%spell_amp_pct%%% Spell Amp for 5s."
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ МЕТКИ:",
+    "en": "MARK DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_int_pct": {
+    "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:",
+    "en": "%INT DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_silence_duration": {
+    "ru": "БЕЗМОЛВИЕ (T3):",
+    "en": "SILENCE (T3):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_mana_burn_pct": {
+    "ru": "%СЖИГАНИЕ МАНЫ (T4):",
+    "en": "%MANA BURN (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_spell_amp_pct": {
+    "ru": "%УСИЛ. ЗАКЛИНАНИЙ (T4):",
+    "en": "%SPELL AMP (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e": {
+    "ru": "Касание Бездны",
+    "en": "Abyssal Touch"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_Description": {
+    "ru": "Атаки накладывают Эрозию на %stack_duration% сек. (до %max_stacks% зарядов): -%mr_shred_per_stack%%% маг. сопротивления и +%on_hit_damage% маг. урона за каждый заряд.<br><b>T3:</b> атаки по замедленным или обездвиженным целям дают 2 заряда.<br><b>T4:</b> на максимуме зарядов накладывает Истощение (-%heal_reduction_pct%%% к лечению и регену на 4 сек.).",
+    "en": "Attacks apply Erosion for %stack_duration%s (max %max_stacks% stacks): -%mr_shred_per_stack%%% Magic Resistance and +%on_hit_damage% on-hit magic damage per stack.<br><b>T3:</b> applies 2 stacks vs slowed or rooted targets.<br><b>T4:</b> max stacks apply Exhaustion (-%heal_reduction_pct%%% healing/regen for 4s)."
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_max_stacks": {
+    "ru": "МАКС. ЗАРЯДОВ:",
+    "en": "MAX STACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_mr_shred_per_stack": {
+    "ru": "%СРЕЗ МАГРЕЗИСТА/ЗАРЯД:",
+    "en": "%MAGIC RES SHRED/STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_on_hit_damage": {
+    "ru": "МАГ. УРОН ЗА ЗАРЯД:",
+    "en": "MAGIC DMG/STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_heal_reduction_pct": {
+    "ru": "%СРЕЗ ЛЕЧЕНИЯ (T4):",
+    "en": "%HEAL REDUCTION (T4):"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r": {
+    "ru": "Зеркало Бездны",
+    "en": "Void Mirror"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r_Description": {
+    "ru": "Обездвиживает цель на %root_duration% сек. и создаёт рядом иллюзию героя на %illusion_duration% сек. (%illusion_dmg_pct%%% наносимого урона, %illusion_taken_pct%%% получаемого). Иллюзия атакует цель и накладывает заряды Касания Бездны.",
+    "en": "Roots the target for %root_duration%s and spawns an illusion next to them for %illusion_duration%s (%illusion_dmg_pct%%% damage dealt, %illusion_taken_pct%%% taken). The illusion attacks the target and applies Abyssal Touch stacks."
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r_root_duration": {
+    "ru": "ОЦЕПЕНЕНИЕ:",
+    "en": "ROOT DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r_illusion_duration": {
+    "ru": "ДЛИТ. ИЛЛЮЗИИ:",
+    "en": "ILLUSION DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r_illusion_dmg_pct": {
+    "ru": "%УРОН ИЛЛЮЗИИ:",
+    "en": "%ILLUSION DAMAGE:"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_wet": {
+    "ru": "Промокание",
+    "en": "Wet"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_wet_Description": {
+    "ru": "Скорость передвижения снижена на 20%. Водяное Копьё T3+ обездвижит цель.",
+    "en": "Movement speed reduced by 20%. Water Spear T3+ will root this unit."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_w_root": {
+    "ru": "Водяные оковы",
+    "en": "Water Shackles"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_w_root_Description": {
+    "ru": "Обездвижен Водяным Копьём.",
+    "en": "Rooted by Water Spear."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_w_mr": {
+    "ru": "Пробитый поток",
+    "en": "Pierced Current"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_w_mr_Description": {
+    "ru": "Сопротивление магии снижено на 15%. Смерть под дебаффом сократит КД Водяного Копья вдвое.",
+    "en": "Magic resistance reduced by 15%. Dying under this debuff cuts Water Spear cooldown in half."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_e_buff": {
+    "ru": "Разрежение",
+    "en": "Rarefaction"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_water_e_buff_Description": {
+    "ru": "+18% скорости передвижения и 25% уклонения (на T3+ прохождение сквозь юнитов, на T4 +25% сопр. эффектам).",
+    "en": "+18% movement speed and 25% evasion (phased at T3+, +25% status resistance at T4)."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_bleed": {
+    "ru": "Кровотечение",
+    "en": "Bleed"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_bleed_Description": {
+    "ru": "Получает периодический физический урон. На T3+ движение замедляет и продлевает эффект.",
+    "en": "Taking physical damage over time. At T3+, moving slows and extends duration."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_shield": {
+    "ru": "Кровавый щит",
+    "en": "Blood Shield"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_shield_Description": {
+    "ru": "Поглощает входящий урон за счёт избыточного лечения от Вытягивания жизни.",
+    "en": "Absorbing incoming damage from Life Siphon overheal."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_e_active": {
+    "ru": "Вскипание крови",
+    "en": "Boiling Blood"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_e_active_Description": {
+    "ru": "Бонусы Жажды плоти удвоены, +15% к скорости передвижения.",
+    "en": "Flesh Hunger bonuses doubled, +15% movement speed."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_r_tether": {
+    "ru": "Ритуал Свежевателей",
+    "en": "Flayer Ritual"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_r_tether_Description": {
+    "ru": "Получает 30% урона, наносимого Алому Потрошителю.",
+    "en": "Taking 30% of all damage dealt to the Scarlet Ripper."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_r_caster": {
+    "ru": "Ритуал Свежевателей",
+    "en": "Flayer Ritual"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_blood_r_caster_Description": {
+    "ru": "30% входящего урона перенаправляется в связанную цель.",
+    "en": "Redirecting 30% of incoming damage to the tethered target."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_q_invis": {
+    "ru": "Шаг сквозь Тень",
+    "en": "Shadow Step"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_q_invis_Description": {
+    "ru": "Невидимость, скорость 550 и прохождение сквозь существ с нанесением урона врагам.",
+    "en": "Invisible with 550 phased movement speed, damaging enemies passed through."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_q_slow": {
+    "ru": "Холод Тени",
+    "en": "Shadow Chill"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_q_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Movement speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_w_mark": {
+    "ru": "Печать Пустоты",
+    "en": "Void Seal"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_w_mark_Description": {
+    "ru": "Следующий удар или заклинание владельца взорвут печать, нанеся магический урон.",
+    "en": "The caster's next attack or spell will detonate this seal for magic damage."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_w_amp": {
+    "ru": "Сила Пустоты",
+    "en": "Void Empowerment"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_w_amp_Description": {
+    "ru": "+12% к урону заклинаний.",
+    "en": "+12% spell amplification."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_erosion": {
+    "ru": "Эрозия",
+    "en": "Erosion"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_erosion_Description": {
+    "ru": "Снижает сопротивление магии и усиливает магический урон от атак владельца за каждый заряд.",
+    "en": "Reduced magic resistance and bonus on-hit magic damage taken per stack."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_exhaust": {
+    "ru": "Истощение Бездны",
+    "en": "Abyssal Exhaustion"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_exhaust_Description": {
+    "ru": "Входящее лечение и регенерация здоровья снижены на 40%.",
+    "en": "Incoming healing and health regeneration reduced by 40%."
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_r_root": {
+    "ru": "Зеркало Бездны",
+    "en": "Void Mirror"
+  },
+  "DOTA_Tooltip_modifier_evo_morph_void_r_root_Description": {
+    "ru": "Обездвижен Зеркалом Бездны.",
+    "en": "Rooted by Void Mirror."
+  }
+}

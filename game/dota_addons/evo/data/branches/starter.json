@@ -1,0 +1,33 @@
+{
+  "is_starter": true,
+  "id": "evo_body_t1_amoeba",
+  "hero": "npc_dota_hero_wisp",
+  "model": "models/heroes/wisp/wisp.vmdl",
+  "diet": "HYBRID",
+  "attr": "STR",
+  "scale": 1.0,
+  "tags": ["aquatic", "starter"],
+  "spell_pool_tags": ["aquatic", "utility"],
+  "innate": "slardar_sprint",
+  "signature": "tidehunter_gush",
+  "name_ru": "Выбор судьбы",
+  "name_en": "Choice of Fate",
+  "desc_ru": "Стартовая форма. На 2-м уровне открывает выбор первой ветки эволюции.",
+  "desc_en": "Starter form. Unlocks your first evolution branch at level 2.",
+  "wearables": [
+    "Madame Scrio"
+  ],
+  "stats": {
+    "str": 16,
+    "agi": 16,
+    "int": 16,
+    "str_gain": 2.0,
+    "agi_gain": 2.0,
+    "int_gain": 2.0,
+    "move_speed": 310,
+    "dmg_min": 24,
+    "dmg_max": 28,
+    "attack_range": 150,
+    "armor": 1
+  }
+}

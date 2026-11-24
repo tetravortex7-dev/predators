@@ -1,0 +1,297 @@
+"DOTAAbilities"
+{
+"item_recipe_great_bracer"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "2460"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_great_bracer"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_bracer"
+        }
+    }
+"item_recipe_ultra_bracer"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "5000"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_ultra_bracer"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_great_bracer"
+        }
+    }
+"item_recipe_great_null_talisman"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "2460"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_great_null_talisman"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_null_talisman"
+        }
+    }
+"item_recipe_ultra_null_talisman"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "5000"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_ultra_null_talisman"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_great_null_talisman"
+        }
+    }
+"item_recipe_great_wraith_band"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "2460"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_great_wraith_band"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_wraith_band"
+        }
+    }
+"item_recipe_ultra_wraith_band"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "5000"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_ultra_wraith_band"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_great_wraith_band"
+        }
+    }
+
+	"item_great_bracer"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "great_bracer"
+        "ItemQuality"                   "rare"
+		"ItemAliases"                   "bracer; great"
+
+        "AbilityValues"
+        {
+                "str"           "12"
+                "aid"           "9"
+        }
+        "Modifiers"
+        {
+            "modifier_great_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%aid"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%str"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%aid"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+
+"item_ultra_bracer"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "ultra_bracer"
+        "ItemQuality"                   "epic"
+		"ItemAliases"                   "ultra; bracer"
+
+        "AbilityValues"
+        {
+                "str"           "34"
+                "aid"           "26"
+        }
+        "Modifiers"
+        {
+            "modifier_ultra_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%aid"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%str"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%aid"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+
+"item_great_null_talisman"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "great_null_talisman"
+        "ItemQuality"                   "rare"
+		"ItemAliases"                   "null; talisman; great"
+
+        "AbilityValues"
+        {
+                "str"           "12"
+                "aid"           "9"
+        }
+        "Modifiers"
+        {
+            "modifier_great_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%str"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%aid"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%aid"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+
+"item_ultra_null_talisman"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "ultra_null_talisman"
+        "ItemQuality"                   "epic"
+		"ItemAliases"                   "ultra; null; talisman"
+
+        "AbilityValues"
+        {
+                "str"           "34"
+                "aid"           "26"
+        }
+        "Modifiers"
+        {
+            "modifier_ultra_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%str"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%aid"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%aid"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+
+"item_great_wraith_band"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "great_wraith_band"
+        "ItemQuality"                   "rare"
+		"ItemAliases"                   "great; wraith; band"
+
+        "AbilityValues"
+        {
+                "str"           "12"
+                "aid"           "9"
+        }
+        "Modifiers"
+        {
+            "modifier_great_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%aid"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%aid"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%str"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+
+"item_ultra_wraith_band"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "ultra_wraith_band"
+        "ItemQuality"                   "epic"
+		"ItemAliases"                   "ultra; wraith; band"
+
+        "AbilityValues"
+        {
+                "str"           "34"
+                "aid"           "26"
+        }
+        "Modifiers"
+        {
+            "modifier_ultra_bracer_passive"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+                "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "%aid"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "%aid"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "%str"
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%aid"
+                }
+            }
+        }
+    }
+}

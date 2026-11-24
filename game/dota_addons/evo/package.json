@@ -1,0 +1,22 @@
+{
+  "name": "evo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evo (Adapt. Win.) — Dota 2 Custom Game",
+  "scripts": {
+    "generate:loc": "python tools/generate_localization.py",
+    "generate:branches": "python tools/generate_branches.py",
+    "generate:neutrals": "python tools/generate_neutrals.py",
+    "build": "npm run generate:loc && npm run generate:branches && npm run generate:neutrals && npm run build:vscripts && npm run build:panorama",
+    "build:vscripts": "tstl -p tsconfig.json",
+    "build:panorama": "tsc -p tsconfig.panorama.json",
+    "watch:vscripts": "tstl -p tsconfig.json --watch",
+    "watch:panorama": "tsc -p tsconfig.panorama.json --watch"
+  },
+  "devDependencies": {
+    "@moddota/dota-lua-types": "latest",
+    "@moddota/panorama-types": "latest",
+    "typescript": "5.7.2",
+    "typescript-to-lua": "1.28.0"
+  }
+}

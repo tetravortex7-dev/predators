@@ -1,0 +1,24 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/evo_evolution_draft.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_evolution_draft.js" />
+    </scripts>
+    <Panel class="EvoDraftRoot" hittest="false">
+        <Button id="EvoDraftReopenBtn" class="EvoDraftReopenBtn">
+            <Label id="EvoDraftReopenLabel" class="EvoDraftReopenLabel" text="#evo_draft_body_title" />
+        </Button>
+
+        <Panel id="EvoDraftModal" class="EvoDraftModal">
+            <Panel class="EvoDraftHeader">
+                <Label id="EvoDraftTitle" class="EvoDraftTitle" text="#evo_draft_body_title" />
+                <Button id="EvoDraftMinimizeBtn" class="EvoDraftMinimizeBtn">
+                    <Panel class="EvoDraftMinimizeIcon" />
+                </Button>
+            </Panel>
+            <Panel id="EvoDraftCards" class="EvoDraftCards" />
+        </Panel>
+    </Panel>
+</root>

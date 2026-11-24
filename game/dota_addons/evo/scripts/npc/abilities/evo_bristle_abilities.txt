@@ -1,0 +1,250 @@
+"DOTAAbilities"
+{
+	"evo_bristle_dread_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"AbilityTextureName"			"bristleback_viscous_nasal_goo"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"600 675 750"
+		"AbilityCooldown"				"5.0 4.5 4.0"
+		"AbilityManaCost"				"35 40 45"
+		"AbilityValues"
+		{
+			"radius"					"225"
+			"base_damage"				"55 95 135"
+			"str_pct"					"30 40 50"
+			"slow_pct"					"22 28 34"
+			"armor_per_stack"			"2 3 4"
+		}
+	}
+
+	"evo_bristle_dread_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"AbilityTextureName"			"bristleback_quill_spray"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"3.5 3.2 3.0"
+		"AbilityManaCost"				"35 40 45"
+		"AbilityValues"
+		{
+			"radius"					"525 575 625"
+			"base_damage"				"75 130 185"
+			"str_pct"					"35 45 55"
+			"stack_damage"				"18 26 35"
+			"max_stacks"				"5 6 7"
+		}
+	}
+
+	"evo_bristle_dread_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"AbilityTextureName"			"bristleback_bristleback"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"16.0 16.0 14.0"
+		"AbilityManaCost"				"50"
+		"AbilityValues"
+		{
+			"bonus_armor"				"4 7 10"
+			"reflect_pct"				"12 18 24"
+			"active_duration"			"3.5"
+		}
+	}
+
+	"evo_bristle_dread_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"AbilityTextureName"			"bristleback_warpath"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"130"
+		"AbilityValues"
+		{
+			"duration"					"6.0"
+			"bonus_ms_pct"				"30"
+			"ram_damage"				"90"
+			"str_pct"					"45"
+		}
+	}
+
+	"evo_bristle_crush_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_crusher"
+		"AbilityTextureName"			"spirit_breaker_charge_of_darkness"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"12.0 11.0 10.0"
+		"AbilityManaCost"				"50 55 60"
+		"AbilityValues"
+		{
+			"duration"					"3.0 3.5 4.0"
+			"bonus_ms_pct"				"28 35 42"
+			"base_damage"				"70 125 180"
+			"str_pct"					"50 65 80"
+			"stun_duration"				"0.9 1.1 1.3"
+		}
+	}
+
+	"evo_bristle_crush_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_crusher"
+		"AbilityTextureName"			"slardar_amplify_damage"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCooldown"				"5.0 4.5 4.0"
+		"AbilityManaCost"				"40 45 50"
+		"AbilityValues"
+		{
+			"radius"					"325 350 375"
+			"base_damage"				"80 135 190"
+			"str_pct"					"60 75 90"
+		}
+	}
+
+	"evo_bristle_crush_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_crusher"
+		"AbilityTextureName"			"axe_counter_helix"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"						"3"
+		"AbilityValues"
+		{
+			"cleave_pct"				"35 45 55"
+			"lifesteal_pct"				"12 18 24"
+		}
+	}
+
+	"evo_bristle_crush_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_crusher"
+		"AbilityTextureName"			"bristleback_warpath"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"130"
+		"AbilityValues"
+		{
+			"duration"					"7.0"
+			"bonus_str_pct"				"25"
+			"bonus_attack_range"		"225"
+			"pure_bonus"				"45"
+		}
+	}
+
+	"evo_bristle_react_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"AbilityTextureName"			"alchemist_acid_spray"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"750 825 900"
+		"AbilityCooldown"				"5.5 5.0 4.5"
+		"AbilityManaCost"				"45 50 55"
+		"AbilityValues"
+		{
+			"radius"					"260"
+			"base_damage"				"70 120 170"
+			"attr_pct"					"22 30 38"
+		}
+	}
+
+	"evo_bristle_react_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"AbilityTextureName"			"bristleback_quill_spray"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"600 675 750"
+		"AbilityCooldown"				"4.5 4.0 3.5"
+		"AbilityManaCost"				"40 45 50"
+		"AbilityValues"
+		{
+			"range"						"600 675 750"
+			"base_damage"				"65 115 165"
+			"attr_pct"					"20 28 36"
+		}
+	}
+
+	"evo_bristle_react_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"AbilityTextureName"			"alchemist_chemical_rage"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"15.0 15.0 13.0"
+		"AbilityManaCost"				"55"
+		"AbilityValues"
+		{
+			"bonus_range"				"125"
+			"on_hit_damage"				"12 18 24"
+		}
+	}
+
+	"evo_bristle_react_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"AbilityTextureName"			"alchemist_acid_spray"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"800"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"140"
+		"AbilityValues"
+		{
+			"radius"					"500"
+			"duration"					"5.5"
+			"pulse_damage"				"75"
+			"attr_pct"					"24"
+		}
+	}
+}

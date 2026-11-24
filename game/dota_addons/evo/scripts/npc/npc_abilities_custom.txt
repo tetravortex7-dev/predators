@@ -1,0 +1,17 @@
+#base abilities/evo_generic_talents.txt
+#base abilities/evo_bristle_abilities.txt
+#base abilities/evo_morph_abilities.txt
+#base abilities/evo_slark_abilities.txt
+#base abilities/evo_t1_heroes_abilities.txt
+#base units/bosses/evo_boss_elasmyr_abilities.txt
+#base units/buildings/npc_dota_fountain/abilities.txt
+#base units/neutrals/abilities.txt
+#base units/neutrals/npc_dota_neutral_doomling/abilities.txt
+#base units/neutrals/npc_dota_neutral_kobold_big/abilities.txt
+#base units/neutrals/npc_dota_neutral_ogre_mage/abilities.txt
+#base units/neutrals/npc_dota_neutral_satyr_small/abilities.txt
+#base units/neutrals/npc_dota_neutral_slarkling/abilities.txt
+
+"DOTAAbilities"
+{
+}

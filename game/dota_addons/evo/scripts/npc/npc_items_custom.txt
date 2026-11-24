@@ -1,0 +1,162 @@
+#base items/evo_boss_core.txt
+#base items/boss/angels_blood.txt
+#base items/boss/angels_sword.txt
+#base items/boss/angels_armor.txt
+#base items/boss/blessed_essence.txt
+#base items/boss/dead_boots.txt
+#base items/boss/awful_mask.txt
+#base items/boss/eclipse_amphora.txt
+#base items/boss/ring_of_the_void.txt
+#base items/boss/icarus.txt
+#base items/boss/saint_yasha.txt
+#base items/boss/cursed_sange.txt
+#base items/boss/demons_claw.txt
+#base items/neutral/mechanical_arm.txt
+#base items/spellshop_sell.txt
+#base items/might_treads.txt
+#base items/falcon_boots.txt
+#base items/leaf_buckler.txt
+#base items/heart_of_alaron.txt
+#base items/refresher_core.txt
+#base items/war_axe.txt
+#base items/piercing_blade.txt
+#base items/aeon_greaves.txt
+#base items/monkey_king_bar.txt
+#base items/slice_of_static.txt
+#base items/static_amulet.txt
+#base items/charons_scepter.txt
+#base items/polar_spear.txt
+#base items/amulet_of_chronos.txt
+#base items/void_blink.txt
+#base items/helm_of_the_dominator.txt
+#base items/helm_of_the_overlord.txt
+#base items/shiva_armageddon.txt
+#base items/azrael_crossbow.txt
+#base items/icarus_daedalus.txt
+#base items/amaliels_cuirass.txt
+#base items/reapers_mask.txt
+#base items/sacred_butterfly.txt
+#base items/eye_of_skadi.txt
+#base items/plague_staff.txt
+#base items/strength_amulet.txt
+#base items/power_amulet.txt
+#base items/mystic_amulet.txt
+#base items/fireblend.txt
+#base items/blaze_lance.txt
+#base items/demons_lance.txt
+#base items/damned_swords.txt
+#base items/angels_desolator.txt
+#base items/burning_blades.txt
+#base items/bfury.txt
+#base items/demons_fury.txt
+#base items/pavise_cape.txt
+#base items/mantlet.txt
+#base items/angels_locket.txt
+#base items/tome_of_hero.txt
+#base items/medical_tractate.txt
+#base items/tome_of_stats.txt
+#base items/third_eye.txt
+#base items/helm_of_tyranth.txt
+#base items/mask_of_rage.txt
+#base items/demons_reaper.txt
+#base items/spiked_armor.txt
+#base items/potions/potions.txt
+#base items/midas_custom.txt
+#base items/phase_boots_upgrades.txt
+#base items/midas_sword.txt
+#base items/kabbalah.txt
+#base items/aether_lens_upgrades.txt
+#base items/mana_heart.txt
+#base items/sunshine_blade.txt
+#base items/experience_tome.txt
+#base items/solomon_books.txt
+#base items/stalker_coat.txt
+#base items/manteau_of_life.txt
+#base items/bracer_wb_null_upgrades.txt
+#base items/kaya_upgrades.txt
+
+"DOTAAbilities"
+{
+	"item_refresher"
+	{
+		"AbilitySharedCooldown"			"refresher"
+	}
+	"item_blade_mail"
+	{
+		"AbilitySharedCooldown"			"blade_mail"
+	}
+	"item_aghanims_shard"
+	{
+		"ItemPurchasable"				"0"
+		"ItemInitialStockTime"			"99999"
+		"ItemInitialStockTimeTurbo"		"99999"
+	}
+
+	"item_assassins_dagger"
+	{
+		"AbilityTextureName"			"override/assassins_dagger"
+	}
+	"item_light_robes"
+	{
+		"AbilityTextureName"			"override/light_robes"
+	}
+	"item_sample_picker"
+	{
+		"AbilityTextureName"			"override/assassins_contract"
+	}
+	"item_gladiator_helm"
+	{
+		"AbilityTextureName"			"override/helm_of_the_gladiators"
+	}
+	"item_fortitude_ring"
+	{
+		"AbilityTextureName"			"override/ring_of_fortitude"
+	}
+	"item_icarus_wings"
+	{
+		"AbilityTextureName"			"override/icarus_wings"
+	}
+	"item_warhammer"
+	{
+		"AbilityTextureName"			"override/warhammer"
+	}
+	"item_wizard_glass"
+	{
+		"AbilityTextureName"			"override/wizard_glass"
+	}
+	"item_star_mace"
+	{
+		"AbilityTextureName"			"override/star_mace"
+	}
+	"item_blighted_spirit"
+	{
+		"AbilityTextureName"			"override/blighted_spirit"
+	}
+
+
+
+	"item_clarity"
+	{"ItemPurchasable"				"0"}
+
+	"item_faerie_fire"
+	{"ItemPurchasable"				"0"}
+
+	"item_flask"
+	{"ItemPurchasable"				"0"}
+
+	"item_tango"
+	{"ItemPurchasable"				"0"}
+
+	"item_enchanted_mango"
+	{"ItemPurchasable"				"0"}
+
+	"item_blood_grenade"
+	{"ItemPurchasable"				"0"}
+
+	"item_bottle"
+	{"ItemCost"						"300"}
+
+	"item_hand_of_midas"
+	{"ItemPurchasable"				"0"}
+
+}

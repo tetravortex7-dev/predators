@@ -1,0 +1,6 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_score_hud.js" />
+    </scripts>
+    <Panel class="EvoScoreHudRoot" hittest="false" />
+</root>

@@ -1,0 +1,50 @@
+{
+  "DOTA_Tooltip_ability_special_bonus_evo_agi_int_1": {
+    "ru": "+1 к ловкости и интеллекту",
+    "en": "+1 Agility & Intelligence"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_int_str_1": {
+    "ru": "+1 к интеллекту и силе",
+    "en": "+1 Intelligence & Strength"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_hp_100": {
+    "ru": "+100 к здоровью",
+    "en": "+100 Health"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_mana_125": {
+    "ru": "+125 к мане",
+    "en": "+125 Mana"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_ms_25": {
+    "ru": "+25 к скорости передвижения",
+    "en": "+25 Movement Speed"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_armor_6": {
+    "ru": "+6 к броне",
+    "en": "+6 Armor"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_all_stats_5": {
+    "ru": "+5 ко всем атрибутам",
+    "en": "+5 All Stats"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_magic_resist_15": {
+    "ru": "+15% к сопротивлению магии",
+    "en": "+15% Magic Resistance"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_hp_regen_15": {
+    "ru": "+15 к восстановлению здоровья",
+    "en": "+15 Health Regen"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_mana_regen_75": {
+    "ru": "+7.5 к восстановлению маны",
+    "en": "+7.5 Mana Regen"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_damage_75": {
+    "ru": "+75 к урону",
+    "en": "+75 Attack Damage"
+  },
+  "DOTA_Tooltip_ability_special_bonus_evo_spell_amp_28": {
+    "ru": "+28% к урону заклинаний",
+    "en": "+28% Spell Amplification"
+  }
+}

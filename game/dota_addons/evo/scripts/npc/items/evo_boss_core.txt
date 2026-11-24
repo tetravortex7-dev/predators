@@ -1,0 +1,32 @@
+"DOTAAbilities"
+{
+	"item_evo_boss_core_alpha"
+	{
+		"BaseClass"					"item_lua"
+		"ScriptFile"				"items/item_evo_boss_core"
+		"AbilityTextureName"		"item_aegis"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"ItemCost"					"0"
+		"ItemPurchasable"			"0"
+		"ItemSellable"				"0"
+		"ItemDroppable"				"1"
+		"ItemKillable"				"1"
+		"ItemShareability"			"ITEM_FULLY_SHAREABLE"
+		"Model"						"models/props_gameplay/aegis.vmdl"
+	}
+
+	"item_evo_boss_core_beta"
+	{
+		"BaseClass"					"item_lua"
+		"ScriptFile"				"items/item_evo_boss_core"
+		"AbilityTextureName"		"item_aegis"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"ItemCost"					"0"
+		"ItemPurchasable"			"0"
+		"ItemSellable"				"0"
+		"ItemDroppable"				"1"
+		"ItemKillable"				"1"
+		"ItemShareability"			"ITEM_FULLY_SHAREABLE"
+		"Model"						"models/props_gameplay/aegis.vmdl"
+	}
+}

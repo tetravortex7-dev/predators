@@ -1,0 +1,98 @@
+"DOTAAbilities"
+{
+"item_recipe_hand_of_midas_custom"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "1550"
+        "ItemShopTags"                  "gold;atk"
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_hand_of_midas_custom"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_gloves"
+        }
+    }
+
+"item_recipe_hand_of_midas_custom_two"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "2100"
+        "ItemShopTags"                  "gold;atk"
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_hand_of_midas_custom_two"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_hand_of_midas_custom"
+        }
+    }
+"item_hand_of_midas_custom"
+    {
+        "BaseClass"                     "item_lua"
+        "ItemShopTags"                  "gold;atk;rune"
+        "ScriptFile"                    "items/item_hand_of_midas_custom.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CREEP"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilityTextureName"            "hand_of_midas"
+        "AbilityCastRange"              "600 900"
+        "AbilityManaCost"               "150 300"
+        "AbilityCooldown"               "100 50"
+        "AbilitySharedCooldown"         "midas"
+        "ItemQuality"                   "rare"
+		"ItemAliases"                   "midas; hand"
+
+        "AbilityValues"
+        {
+                "atk"            "30"
+                "gold"           "150"
+                "exp"            "150"
+                "rune"           "250"
+				"lvl_difference" "5"
+        }
+    }
+"item_hand_of_midas_custom_two"
+    {
+        "BaseClass"                     "item_lua"
+        "AbilitySharedCooldown"         "midas"
+        "ItemShopTags"                  "gold;atk;rune"
+        "ScriptFile"                    "items/item_hand_of_midas_custom_two.lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CREEP"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilityTextureName"            "hand_of_midas_custom_two"
+        "AbilityCastRange"              "600 900"
+        "AbilityManaCost"               "150 300"
+        "AbilityCooldown"               "100 50"
+        "AbilitySharedCooldown"         "midas"
+        "ItemQuality"                   "epic"
+		"ItemAliases"                   "midas; hand"
+
+        "precache"
+        {
+            "particle"     "particles/hand_of_midas_two_custom.vpcf"
+        }
+
+        "AbilityValues"
+        {
+                "atk"            "45"
+                "gold"           "300"
+                "exp"            "300"
+                "rune"           "500"
+				"lvl_difference" "5"
+        }
+    }
+}

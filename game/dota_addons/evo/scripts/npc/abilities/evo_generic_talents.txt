@@ -1,0 +1,135 @@
+"DOTAAbilities"
+{
+	"evo_empty_slot_1"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"evo_empty_slot_2"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"evo_empty_slot_3"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"evo_empty_slot_4"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"evo_empty_slot_5"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"evo_empty_slot_6"
+	{
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_agi_int_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_int_str_1"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_hp_100"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_mana_125"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_ms_25"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_armor_6"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_all_stats_5"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_magic_resist_15"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_hp_regen_15"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_mana_regen_75"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_damage_75"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+	"special_bonus_evo_spell_amp_28"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/evo_generic_talents"
+		"AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+	}
+}

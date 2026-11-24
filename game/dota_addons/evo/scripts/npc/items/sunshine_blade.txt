@@ -1,0 +1,52 @@
+"DOTAAbilities"
+{
+
+"item_recipe_durandal"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      ""
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_durandal"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_radiance;item_dagon_5"
+        }
+    }
+"item_durandal"
+    {
+        "BaseClass"                     "item_lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "ScriptFile"                    "items/item_durandal.lua"
+        "Model"                         "models/props_gameplay/red_box.vmdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "AbilityTextureName"            "durandal"
+        "AbilityCastRange"              "800"
+        "AbilityCooldown"               "45"
+        "AbilitySharedCooldown"         "dagon"
+        "AbilityManaCost"               "400"
+        "ItemQuality"                   "artifact"
+		"ItemAliases"                   "dagon; durandal; vision; blind"
+
+        "AbilityValues"
+        {
+                "dmg"          "74"
+                "int"          "32"
+                "all"          "9"
+                "period_dmg"          "85"
+                "aura_miss"          "20"
+                "aura_resist"          "18.5"
+                "aura_range"          "800"
+                "damage"          "1000"
+                "duration"          "5"
+                "miss"          "75"
+        }
+    }
+}

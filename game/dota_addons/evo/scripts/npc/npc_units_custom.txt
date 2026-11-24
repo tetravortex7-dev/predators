@@ -1,0 +1,51 @@
+#base units/bosses/evo_bosses.txt
+#base units/buildings/npc_dota_fountain/unit.txt
+#base units/neutrals/npc_dota_neutral_centaur_small/unit.txt
+#base units/neutrals/npc_dota_neutral_doomling/unit.txt
+#base units/neutrals/npc_dota_neutral_ghost_small/unit.txt
+#base units/neutrals/npc_dota_neutral_hellbear_small/unit.txt
+#base units/neutrals/npc_dota_neutral_kobold_big/unit.txt
+#base units/neutrals/npc_dota_neutral_kobold_medium/unit.txt
+#base units/neutrals/npc_dota_neutral_kobold_small/unit.txt
+#base units/neutrals/npc_dota_neutral_ogre_mage/unit.txt
+#base units/neutrals/npc_dota_neutral_ogre_warrior/unit.txt
+#base units/neutrals/npc_dota_neutral_satyr_small/unit.txt
+#base units/neutrals/npc_dota_neutral_slarkling/unit.txt
+#base units/neutrals/npc_dota_neutral_wildkin_big/unit.txt
+#base units/neutrals/npc_dota_neutral_wolf_small/unit.txt
+#base units/neutrals/evo_creep_mire_tadpole/unit.txt
+#base units/neutrals/evo_creep_mire_spitter/unit.txt
+#base units/neutrals/evo_creep_marsh_froglet/unit.txt
+#base units/neutrals/evo_creep_marsh_croaker/unit.txt
+#base units/neutrals/evo_creep_lantern_mole/unit.txt
+#base units/neutrals/evo_creep_thorn_cone/unit.txt
+#base units/neutrals/evo_creep_golden_greevil/unit.txt
+#base units/neutrals/evo_creep_dune_stalker/unit.txt
+#base units/neutrals/evo_creep_dune_alpha/unit.txt
+#base units/neutrals/evo_creep_sand_golem/unit.txt
+#base units/neutrals/evo_creep_desert_vulture/unit.txt
+#base units/neutrals/evo_creep_dune_scavenger/unit.txt
+#base units/neutrals/evo_creep_sand_beast/unit.txt
+#base units/neutrals/evo_creep_frost_seal/unit.txt
+#base units/neutrals/evo_creep_frostbitten_brute/unit.txt
+#base units/neutrals/evo_creep_frostbitten_shaman/unit.txt
+#base units/neutrals/evo_creep_frostbitten_hulker/unit.txt
+#base units/neutrals/evo_creep_glacier_giant/unit.txt
+#base units/neutrals/evo_creep_tusk_skeleton/unit.txt
+#base units/neutrals/evo_creep_tusk_knight/unit.txt
+#base units/neutrals/evo_creep_frost_wraith/unit.txt
+#base units/neutrals/evo_creep_frost_troll/unit.txt
+#base units/neutrals/evo_creep_battle_penguin/unit.txt
+#base units/neutrals/evo_creep_abyss_prowler/unit.txt
+#base units/neutrals/evo_creep_abyss_shaman/unit.txt
+#base units/neutrals/evo_creep_dread_warrior/unit.txt
+#base units/neutrals/evo_creep_dread_archer/unit.txt
+#base units/neutrals/evo_creep_elder_toad/unit.txt
+#base units/neutrals/evo_creep_elder_toad_mage/unit.txt
+#base units/neutrals/evo_creep_darkreef_warden/unit.txt
+#base units/neutrals/evo_creep_obsidian_drake/unit.txt
+#base units/neutrals/evo_creep_obsidian_dragon/unit.txt
+
+"DOTAUnits"
+{
+}

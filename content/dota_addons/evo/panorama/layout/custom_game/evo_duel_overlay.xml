@@ -1,0 +1,26 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/evo_duel_overlay.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_duel_overlay.js" />
+    </scripts>
+    <Panel class="EvoDuelRoot" hittest="false">
+        <Panel id="EvoDuelBanner" class="EvoDuelBanner">
+            <Panel class="EvoDuelTopRow">
+                <Label id="EvoDuelTitle" class="EvoDuelTitle" text="#evo_duel_title" />
+                <Label id="EvoDuelTimer" class="EvoDuelTimer" text="30s" />
+            </Panel>
+            <Label id="EvoDuelMatchup" class="EvoDuelMatchup" text="" />
+            <Panel id="EvoDuelBetRow" class="EvoDuelBetRow">
+                <Button id="EvoBetLeftBtn" class="EvoDuelBetBtn">
+                    <Label id="EvoBetLeftLabel" class="EvoDuelBetLabel" text="" />
+                </Button>
+                <Button id="EvoBetRightBtn" class="EvoDuelBetBtn">
+                    <Label id="EvoBetRightLabel" class="EvoDuelBetLabel" text="" />
+                </Button>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

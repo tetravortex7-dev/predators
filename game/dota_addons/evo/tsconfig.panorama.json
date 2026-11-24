@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "rootDir": "src/panorama",
+    "outDir": "../../../content/dota_addons/evo/panorama",
+    "target": "ES2017",
+    "module": "None",
+    "lib": ["ES2017"],
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "types": ["@moddota/panorama-types"]
+  },
+  "include": ["src/panorama/**/*.ts"]
+}

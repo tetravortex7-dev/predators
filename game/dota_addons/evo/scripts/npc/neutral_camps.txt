@@ -1,0 +1,136 @@
+"NeutralCamps"
+{
+	"small"
+	{
+		"middle"
+		{
+			"1"
+			{
+				"evo_creep_mire_tadpole" "2"
+				"evo_creep_mire_spitter" "1"
+			}
+			"2"
+			{
+				"evo_creep_marsh_froglet" "2"
+				"evo_creep_marsh_croaker" "1"
+			}
+			"3"
+			{
+				"evo_creep_lantern_mole" "2"
+				"evo_creep_thorn_cone" "1"
+			}
+			"4"
+			{
+				"evo_creep_thorn_cone" "2"
+				"evo_creep_golden_greevil" "1"
+			}
+		}
+		"spring"
+		{
+			"1"
+			{
+				"evo_creep_marsh_froglet" "1"
+				"evo_creep_marsh_croaker" "1"
+				"evo_creep_lantern_mole" "1"
+			}
+			"2"
+			{
+				"evo_creep_mire_tadpole" "1"
+				"evo_creep_thorn_cone" "2"
+			}
+			"3"
+			{
+				"evo_creep_lantern_mole" "2"
+				"evo_creep_golden_greevil" "1"
+			}
+		}
+	}
+	"medium"
+	{
+		"desert"
+		{
+			"1"
+			{
+				"evo_creep_dune_stalker" "2"
+				"evo_creep_dune_alpha" "1"
+			}
+			"2"
+			{
+				"evo_creep_sand_golem" "2"
+				"evo_creep_dune_scavenger" "1"
+			}
+			"3"
+			{
+				"evo_creep_desert_vulture" "2"
+				"evo_creep_dune_scavenger" "1"
+			}
+			"4"
+			{
+				"evo_creep_sand_beast" "1"
+				"evo_creep_dune_stalker" "1"
+			}
+		}
+	}
+	"hard"
+	{
+		"winter"
+		{
+			"1"
+			{
+				"evo_creep_frost_seal" "2"
+			}
+			"2"
+			{
+				"evo_creep_frostbitten_brute" "1"
+				"evo_creep_frostbitten_shaman" "1"
+				"evo_creep_frostbitten_hulker" "1"
+			}
+			"3"
+			{
+				"evo_creep_glacier_giant" "1"
+				"evo_creep_frost_wraith" "1"
+			}
+			"4"
+			{
+				"evo_creep_tusk_skeleton" "1"
+				"evo_creep_tusk_knight" "1"
+				"evo_creep_frost_troll" "1"
+			}
+			"5"
+			{
+				"evo_creep_battle_penguin" "2"
+				"evo_creep_frost_seal" "1"
+			}
+		}
+	}
+	"strong"
+	{
+		"dire"
+		{
+			"1"
+			{
+				"evo_creep_abyss_prowler" "1"
+				"evo_creep_abyss_shaman" "1"
+			}
+			"2"
+			{
+				"evo_creep_dread_warrior" "1"
+				"evo_creep_dread_archer" "1"
+			}
+			"3"
+			{
+				"evo_creep_elder_toad" "1"
+				"evo_creep_elder_toad_mage" "1"
+			}
+			"4"
+			{
+				"evo_creep_darkreef_warden" "2"
+			}
+			"5"
+			{
+				"evo_creep_obsidian_drake" "1"
+				"evo_creep_obsidian_dragon" "1"
+			}
+		}
+	}
+}

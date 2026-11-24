@@ -1,0 +1,30 @@
+{
+  "key": "nyx",
+  "hero": "npc_dota_hero_nyx_assassin",
+  "model": "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
+  "diet": "CARNIVORE",
+  "attr": "AGI",
+  "keep_default_abilities": false,
+  "tags": ["insect", "hive", "nyx"],
+  "spell_pool_tags": ["control", "burst"],
+  "innate": "evo_nyx_living_chitin",
+  "signature": "evo_nyx_t1_burrow_spike",
+  "stages": [
+    {
+      "id": "evo_body_t1_nyx",
+      "tier_index": 1,
+      "name_ru": "Личинка Улья",
+      "name_en": "Hive Larva",
+      "desc_ru": "Подземный хитиновый хищник с ночным обзором и реактивной бронёй.\nНаращивает пластины от добиваний и перерождается в скарабея, багрового богомола или пси-архонта.",
+      "desc_en": "Subterranean chitin predator with night vision and reactive plating.\nGrows plates from last-hits and evolves into an obsidian scarab, crimson mantis, or psy-archon.",
+      "scale": 0.65,
+      "abilities": [
+        "evo_nyx_t1_burrow_spike",
+        "evo_nyx_t1_chitin_burst",
+        "evo_nyx_living_chitin"
+      ],
+      "label_color": [175, 130, 220],
+      "wearables": []
+    }
+  ]
+}

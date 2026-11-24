@@ -1,0 +1,102 @@
+"DOTAAbilities"
+{
+	"evo_elasmyr_tidal_lunge"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bosses/evo_elasmyr_tidal_lunge"
+		"AbilityTextureName"			"slardar_sprint"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"15"
+		"AbilityCastPoint"				"0.25"
+		"AbilityCastRange"				"500"
+		"AbilityCooldown"				"14.0 13.5 13.0 12.5 12.0 11.5 11.0 10.5 10.0 9.5 9.0 8.5 8.0 7.5 7.0"
+		"AbilityManaCost"				"55 60 65 70 75 80 85 90 95 100 105 110 115 120 125"
+		"AbilityValues"
+		{
+			"lunge_distance"			"500"
+			"width"						"175"
+			"damage"					"45 75 105 135 165 195 225 255 285 315 345 375 405 435 465"
+			"puddle_radius"				"320"
+			"puddle_duration"			"8.0"
+		}
+	}
+
+	"evo_elasmyr_maelstrom_slam"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bosses/evo_elasmyr_maelstrom_slam"
+		"AbilityTextureName"			"slardar_slithereen_crush"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"15"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"13.0 12.5 12.0 11.5 11.0 10.5 10.0 9.5 9.0 8.5 8.0 7.5 7.0 6.5 6.0"
+		"AbilityManaCost"				"60 65 70 75 80 85 90 95 100 105 110 115 120 125 130"
+		"AbilityValues"
+		{
+			"radius"					"350"
+			"damage"					"50 85 120 155 190 225 260 295 330 365 400 435 470 505 540"
+			"slow_duration"				"2.5"
+		}
+	}
+
+	"evo_elasmyr_adaptive_scales"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bosses/evo_elasmyr_adaptive_scales"
+		"AbilityTextureName"			"slardar_amplify_damage"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"15"
+		"AbilityValues"
+		{
+			"max_stacks"				"10"
+			"armor_per_stack"			"0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 2.6 2.8 3.0 3.2 3.4"
+			"magic_resist_per_stack"	"1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 2.6 2.8 3.0 3.2 3.4 3.6 3.8"
+			"burst_radius"				"350"
+			"burst_damage"				"60 95 130 165 200 235 270 305 340 375 410 445 480 515 550"
+		}
+	}
+
+	"evo_elasmyr_bash"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bosses/evo_elasmyr_bash"
+		"AbilityTextureName"			"slardar_bash"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"15"
+		"AbilityValues"
+		{
+			"attack_count"				"4"
+			"bonus_damage"				"30 50 70 90 110 130 150 170 190 210 230 250 270 290 310"
+			"bash_duration"				"0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00 1.05 1.10 1.15 1.20 1.25 1.30"
+		}
+	}
+
+	"evo_elasmyr_abyssal_flood"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/bosses/evo_elasmyr_abyssal_flood"
+		"AbilityTextureName"			"slardar_amplify_damage"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"15"
+		"AbilityCastPoint"				"0.35"
+		"AbilityCooldown"				"38.0 36.5 35.0 33.5 32.0 30.5 29.0 27.5 26.0 24.5 23.0 21.5 20.0 18.5 17.0"
+		"AbilityManaCost"				"110 120 130 140 150 160 170 180 190 200 210 220 230 240 250"
+		"AbilityValues"
+		{
+			"radius"					"600"
+			"duration"					"8.0"
+			"dps"						"18 28 38 48 58 68 78 88 98 108 118 128 138 148 158"
+		}
+	}
+}

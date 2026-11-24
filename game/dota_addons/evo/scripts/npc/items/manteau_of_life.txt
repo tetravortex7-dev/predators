@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+	"item_recipe_manteau_invis"
+    {
+        "Model"                         "models/props_gameplay/recipe.mdl"
+        "BaseClass"                     "item_datadriven"
+
+        "ItemCost"                      "5000"
+        "ItemShopTags"                  ""
+
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_manteau_invis"
+        "AbilityTextureName"            "recipe"
+        "ItemRequirements"
+        {
+            "01"                        "item_stalker_coat"
+        }
+    }
+
+	"item_manteau_invis"
+    {
+        "BaseClass"    "item_lua"
+        "ScriptFile"   "items/item_manteau_invis.lua"
+        "AbilityTextureName" "item_mantle_of_mage"
+        "ItemQuality"  "epic"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "ItemAliases"                   "mantle, manteau, mage"
+        "ItemCost"     "7500"
+        "ItemPurchasable"               "1"
+
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "30.0"
+        "AbilityManaCost"               "250"
+
+        "SideShop"     "1"
+        "SecretShop"   "0"
+
+        "ItemStackable" "0"
+        "ItemPermanent" "1"
+        "ItemDisassembleRule" "DOTA_ITEM_DISASSEMBLE_ALWAYS"
+
+        "AbilityValues"
+        {
+                "attributes"    "30"
+                "speeda"    "20"
+                "dur"    "9"
+                "dmg"    "100"
+                "resist"    "20"
+                "health"    "2000"
+				"windwalk_duration"							"15.0"
+				"windwalk_bonus_movement_speed_percentage"	"20"
+				"windwalk_fade_time"						"0.3"
+				"windwalk_bonus_damage"						"175"
+        }
+    }
+}

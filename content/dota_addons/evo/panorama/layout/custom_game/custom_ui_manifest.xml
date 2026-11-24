@@ -1,0 +1,11 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/hud_bootstrap.js" />
+    </scripts>
+    <Panel>
+        <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/evo_score_hud.xml" />
+        <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/evo_evolution_draft.xml" />
+        <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/evo_duel_overlay.xml" />
+        <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/evo_talent_tree.xml" />
+    </Panel>
+</root>

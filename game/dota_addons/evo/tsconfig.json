@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "src/vscripts",
+    "outDir": "scripts/vscripts",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "types": ["@moddota/dota-lua-types/normalized"]
+  },
+  "tstl": {
+    "luaTarget": "JIT",
+    "luaLibImport": "require",
+    "sourceMapTraceback": true,
+    "noHeader": true
+  },
+  "include": ["src/vscripts/**/*.ts"]
+}

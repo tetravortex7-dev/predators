@@ -1,0 +1,533 @@
+"DOTAAbilities"
+{
+
+	"item_mana_potion"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "Model"                         "models/props_gameplay/clarity.mdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "mana_potion"
+
+		"ItemCost"                      "100"
+        "AbilityCastPoint"              "0"
+        "AbilityCooldown"               "15"
+        "AbilityManaCost"               "0"
+        "AbilityCastRange"              "100"
+
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemAliases"                   "mana; potion"
+        "ItemStackable"                 "1"
+        "ItemPermanent"                 "0"
+        "ItemInitialCharges"            "1"
+
+
+		"ItemStockTime"                 "60"
+		"ItemStockInitial"               "5"
+		"ItemStockMax"                   "10"
+		"ItemInitialStockTime"           "15"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "buff_duration"         "25"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "total_mana_regen"      "225"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "mana_per_second"       "9"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "total_mana_x"          "25"
+            }
+            "05"
+            {
+                "var_type"              "FIELD_FLOAT"
+                "interval"              "1"
+            }
+        }
+
+        "OnSpellStart"
+        {
+            "ApplyModifier"
+            {
+                "Target"            "TARGET"
+                "ModifierName"      "modifier_mana_potion_active"
+            }
+
+            "FireSound"
+            {
+                "EffectName"        "DOTA_Item.ClarityPotion.Activate"
+                "Target"            "TARGET"
+            }
+            "SpendCharge"
+            {}
+        }
+
+        "Modifiers"
+        {
+            "modifier_mana_potion_active"
+            {
+                "Duration"                  "25"
+                "Passive"                   "0"
+                "IsHidden"                  "0"
+                "IsBuff"                    "1"
+                "IsDebuff"                  "0"
+                "IsPurgable"                "1"
+                "EffectName"                "particles/items_fx/healing_clarity.vpcf"
+                "EffectAttachType"          "follow_origin"
+                "TextureName"               "item_mana_potion"
+
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT" "9"
+                }
+
+                "OnTakeDamage"
+                {
+                    "RemoveModifier"
+                    {
+                        "Target"            "UNIT"
+                        "ModifierName"      "modifier_mana_potion_active"
+                    }
+                }
+            }
+        }
+    }
+
+	"item_heal_potion"
+    {
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+        "Model"                         "models/props_gameplay/salve.mdl"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "heal_potion"
+
+        "AbilityCastPoint"              "0"
+        "AbilityCooldown"               "15"
+        "AbilityManaCost"               "0"
+        "AbilityCastRange"              "100"
+
+        "ItemCost"                      "100"
+        "ItemShopTags"                  "consumable"
+        "ItemQuality"                   "consumable"
+        "ItemAliases"                   "heal; potion"
+        "ItemStackable"                 "1"
+        "ItemPermanent"                 "0"
+        "ItemInitialCharges"            "1"
+
+		"ItemStockTime"                 "60"
+		"ItemStockInitial"               "5"
+		"ItemStockMax"                   "10"
+		"ItemInitialStockTime"           "15"
+
+        "AbilityValues"
+         {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "duration"              "10"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "health_per_second"     "25"
+            }
+         }
+
+        "OnSpellStart"
+        {
+            "ApplyModifier"
+            {
+                "Target"            "TARGET"
+                "ModifierName"      "modifier_heal_potion_active"
+            }
+
+            "FireSound"
+            {
+                "EffectName"        "DOTA_Item.SalvePotion.Activate"
+                "Target"            "TARGET"
+            }
+            "SpendCharge"
+            {}
+        }
+
+        "Modifiers"
+        {
+            "modifier_heal_potion_active"
+            {
+                "Passive"   "0"
+                "Duration"  "10"
+                "TextureName"   "item_heal_potion"
+
+                "ThinkInterval"     "0.1"
+                "OnIntervalThink"
+                {
+                    "RunScript"
+                    {
+                        "ScriptFile"    "items/item_heal_potion.lua"
+                        "Function"      "heal"
+                    }
+                }
+
+				"OnTakeDamage"
+                {
+                    "RemoveModifier"
+                    {
+                        "Target"            "UNIT"
+                        "ModifierName"      "modifier_heal_potion_active"
+                    }
+                }
+            }
+        }
+    }
+
+	"item_strength_potion"
+    {
+		"BaseClass"                     "item_datadriven"
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+		"AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+		"Model"                         "models/props_gameplay/salve.mdl"
+		"Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+		"AbilityTextureName"            "strength_potion"
+		"AbilityManaCost"               "0"
+		"AbilityCooldown"               "30"
+
+			"ItemStockTime"                  "60"
+			"ItemStockInitial"               "5"
+			"ItemStockMax"                   "5"
+			"ItemInitialStockTime"           "90.0"
+
+		"AbilityCastPoint"              "0"
+		"AbilityCastRange"              "100"
+
+		"ItemCost"                      "150"
+		"ItemShopTags"                  "consumable"
+		"ItemQuality"                   "consumable"
+		"ItemAliases"                   "strength; potion"
+		"ItemStackable"                 "1"
+		"ItemPermanent"                 "0"
+		"ItemInitialCharges"            "1"
+
+		"AbilityValues"
+		  {
+			"01"
+			{
+				"var_type"              "FIELD_INTEGER"
+				"buff_duration"         "45"
+			}
+			"02"
+			{
+				"var_type"              "FIELD_INTEGER"
+				"str_bonus"             "15"
+			}
+		  }
+
+		"OnSpellStart"
+			{
+			"ApplyModifier"
+			{
+				"Target"                "TARGET"
+				"ModifierName"          "modifier_item_str_active"
+			}
+
+			"FireSound"
+			{
+				"EffectName"            "DOTA_Item.HealingSalve.Activate"
+				"Target"                "TARGET"
+			}
+			"SpendCharge"
+			{}
+			}
+
+		"Modifiers"
+		 {
+			"modifier_item_str_active"
+			{
+				"Duration"                  "45"
+				"Passive"                   "0"
+				"IsHidden"                  "1"
+				"IsBuff"                    "1"
+				"IsPurgable"                "0"
+				"Attributes"                "MODIFIER_ATTRIBUTE_MULTIPLE"
+				"EffectName"                "particles/items_fx/healing_flask.vpcf"
+				"EffectAttachType"          "follow_origin"
+				"TextureName"               "item_strength_potion"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "15"
+				}
+			 }
+		 }
+    }
+
+"item_agility_potion"
+    {
+    "BaseClass"                     "item_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+    "Model"                         "models/props_gameplay/salve.mdl"
+    "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+    "AbilityTextureName"            "agility_potion"
+    "AbilityManaCost"               "0"
+    "AbilityCooldown"               "30"
+
+    "AbilityCastPoint"              "0"
+    "AbilityCastRange"              "100"
+
+    "ItemCost"                      "150"
+    "ItemShopTags"                  "consumable"
+    "ItemQuality"                   "consumable"
+    "ItemAliases"                   "agility; potion"
+    "ItemStackable"                 "1"
+    "ItemPermanent"                 "0"
+    "ItemInitialCharges"            "1"
+	"ItemStockTime"                  "60"
+	"ItemStockInitial"               "5"
+	"ItemStockMax"                   "5"
+	"ItemInitialStockTime"           "90.0"
+
+    "AbilityValues"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "buff_duration"         "45"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "agi_bonus"             "15"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "ApplyModifier"
+        {
+            "Target"                "TARGET"
+            "ModifierName"          "modifier_item_agi_active"
+        }
+
+        "FireSound"
+        {
+            "EffectName"            "DOTA_Item.HealingSalve.Activate"
+            "Target"                "TARGET"
+        }
+        "SpendCharge"
+        {}
+    }
+
+    "Modifiers"
+        {
+        "modifier_item_agi_active"
+        {
+            "Duration"                  "45"
+            "Passive"                   "0"
+            "IsHidden"                  "1"
+            "IsBuff"                    "1"
+            "IsDebuff"                  "0"
+            "IsPurgable"                "0"
+            "Attributes"                "MODIFIER_ATTRIBUTE_MULTIPLE"
+            "EffectName"                "particles/items_fx/healing_flask.vpcf"
+            "EffectAttachType"          "follow_origin"
+            "TextureName"               "item_agility_potion"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_AGILITY_BONUS" "15"
+            }
+        }
+        }
+    }
+
+
+"item_intellegence_potion"
+    {
+    "BaseClass"                     "item_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+    "Model"                         "models/props_gameplay/salve.mdl"
+    "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+    "AbilityTextureName"            "intellegence_potion"
+    "AbilityManaCost"               "0"
+    "AbilityCooldown"               "30"
+
+
+    "AbilityCastPoint"              "0"
+    "AbilityCastRange"              "100"
+
+    "ItemCost"                      "150"
+    "ItemShopTags"                  "consumable"
+    "ItemQuality"                   "consumable"
+    "ItemAliases"                   "int; potion"
+    "ItemStackable"                 "1"
+    "ItemPermanent"                 "0"
+    "ItemInitialCharges"            "1"
+	"ItemStockTime"                  "60"
+	"ItemStockInitial"               "5"
+	"ItemStockMax"                   "5"
+	"ItemInitialStockTime"           "90.0"
+
+    "AbilityValues"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "buff_duration"         "45"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "int_bonus"             "15"
+            }
+        }
+
+    "OnSpellStart"
+        {
+        "ApplyModifier"
+        {
+            "Target"                "TARGET"
+            "ModifierName"          "modifier_item_int_active"
+        }
+
+        "FireSound"
+        {
+            "EffectName"            "DOTA_Item.ClarityPotion.Activate"
+            "Target"                "TARGET"
+        }
+        "SpendCharge"
+        {}
+        }
+
+    "Modifiers"
+        {
+        "modifier_item_int_active"
+        {
+            "Duration"                  "45"
+            "Passive"                   "0"
+            "IsHidden"                  "1"
+            "IsBuff"                    "1"
+            "IsDebuff"                  "0"
+            "IsPurgable"                "0"
+            "Attributes"                "MODIFIER_ATTRIBUTE_MULTIPLE"
+            "EffectName"                "particles/items_fx/healing_flask.vpcf"
+            "EffectAttachType"          "follow_origin"
+            "TextureName"               "item_intellegence_potion"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "15"
+            }
+        }
+        }
+    }
+
+"item_combined_potion"
+    {
+       "BaseClass"                     "item_datadriven"
+       "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT"
+       "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+       "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+       "Model"                         "models/props_gameplay/salve.mdl"
+       "ItemDeclarations"               "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+        "Effect"                        "particles/generic_gameplay/dropped_item.vpcf"
+        "AbilityTextureName"            "combined_potion"
+        "AbilityManaCost"               "0"
+
+        "ItemStockTime"                 "120"
+		"ItemCost"                      "350"
+        "ItemStockInitial"               "1"
+        "ItemStockMax"                   "2"
+        "ItemInitialStockTime"           "180.0"
+
+        "AbilityCastPoint"              "0.3"
+       "AbilityCooldown"               "60"
+       "AbilityCastRange"              "100"
+
+       "ItemShopTags"                  "consumable"
+       "ItemQuality"                   "consumable"
+       "ItemAliases"                   "combined potion; agility; agi; intellegence; int; strength; str; boost stats"
+       "ItemStackable"                 "1"
+       "ItemPermanent"                 "0"
+       "ItemInitialCharges"            "1"
+
+    "AbilityValues"
+        {
+            "01"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "buff_duration"               "45"
+            }
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "int_bonus"                  "15"
+            }
+            "03"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "str_bonus"                 "15"
+            }
+            "04"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "agi_bonus"                 "15"
+            }
+        }
+    "OnSpellStart"
+        {
+        "ApplyModifier"
+             {
+                "Target"                "TARGET"
+                "ModifierName"          "modifier_item_combined_active"
+             }
+
+        "FireSound"
+                {
+                    "EffectName"            "DOTA_Item.HealingSalve.Activate"
+                    "EffectName"            "DOTA_Item.ClarityPotion.Activate"
+                    "Target"                "TARGET"
+                }
+        "SpendCharge"
+            {}
+        }
+    "Modifiers"
+        {
+            "modifier_item_combined_active"
+            {
+                "Duration"                  "45"
+                "Passive"                   "0"
+                "IsHidden"                  "0"
+                "IsBuff"                    "1"
+                "IsDebuff"                  "0"
+                "IsPurgable"                "1"
+                "Attributes"                "MODIFIER_ATTRIBUTE_MULTIPLE"
+                "EffectName"                "particles/items_fx/healing_flask.vpcf"
+                "EffectAttachType"          "follow_origin"
+                "TextureName"               "item_combined_potion"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"   "15"
+                    "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"    "15"
+                    "MODIFIER_PROPERTY_STATS_AGILITY_BONUS"     "15"
+                }
+            }
+        }
+    }
+}

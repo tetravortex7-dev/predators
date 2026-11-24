@@ -1,0 +1,3573 @@
+{
+  "DOTA_Tooltip_Ability_item_evo_boss_core_alpha": {
+    "ru": "Ядро босса: Высший Хищник",
+    "en": "Boss Core: Apex Predator"
+  },
+  "DOTA_Tooltip_Ability_item_evo_boss_core_alpha_Description": {
+    "ru": "Активируй, чтобы ассимилировать способность босса, или разбей на земле, чтобы не досталось врагам.",
+    "en": "Activate to assimilate the boss's signature ability, or destroy it on the ground to deny enemies."
+  },
+  "DOTA_Tooltip_Ability_item_evo_boss_core_beta": {
+    "ru": "Ядро босса: Глубинный Колосс",
+    "en": "Boss Core: Abyssal Colossus"
+  },
+  "DOTA_Tooltip_Ability_item_evo_boss_core_beta_Description": {
+    "ru": "Активируй, чтобы ассимилировать способность босса, или разбей на земле, чтобы не досталось врагам.",
+    "en": "Activate to assimilate the boss's signature ability, or destroy it on the ground to deny enemies."
+  },
+  "DOTA_Tooltip_modifier_peace_time_invulnerable_lua": {
+    "ru": "Мирное время",
+    "en": "Peace Time"
+  },
+  "DOTA_Tooltip_modifier_peace_time_invulnerable_lua_Description": {
+    "ru": "На ранних этапах игры герои неуязвимы. Исследуйте карту и готовьтесь к битве!",
+    "en": "Heroes cannot damage each other during the early stages of the game. Explore the map and prepare for battle!"
+  },
+  "DOTA_Tooltip_ability_item_mana_potion": {
+    "ru": "Зелье маны",
+    "en": "Mana Potion"
+  },
+  "DOTA_Tooltip_ability_item_mana_potion_Description": {
+    "ru": "<h1>Активка: Манареген</h1> Восстанавливает 225 маны, в течение 25 секунд. <br><br>Сбивается если герой атакован.",
+    "en": "<h1>Use: Manaregen</h1> Restores 225 mana over 25 seconds. <br><br>Interrupted if the hero is attacked."
+  },
+  "DOTA_Tooltip_ability_item_mana_potion_Lore": {
+    "ru": "Последний шанс мага продолжить бой.",
+    "en": "The mage's last chance to continue the fight."
+  },
+  "DOTA_Tooltip_ability_item_heal_potion": {
+    "ru": "Зелье здоровья",
+    "en": "Healing Potion"
+  },
+  "DOTA_Tooltip_ability_item_heal_potion_Description": {
+    "ru": "<h1>Активка: Лечение</h1>Восстанавливает 200 + 10% здоровья, в течение 10 секунд. <br><br>Сбивается если герой атакован.",
+    "en": "<h1>Use: Heal</h1> Restores 200 + 10% health over 10 seconds. <br><br>Interrupted if the hero is attacked."
+  },
+  "DOTA_Tooltip_ability_item_heal_potion_Lore": {
+    "ru": "Хоть память о боли забыть нельзя, зато раны можно быстро восстановить.",
+    "en": "You can't forget the memory of pain, but you can quickly mend your wounds."
+  },
+  "DOTA_Tooltip_ability_item_strength_potion": {
+    "ru": "Зелье силы",
+    "en": "Strength Potion"
+  },
+  "DOTA_Tooltip_ability_item_strength_potion_Description": {
+    "ru": "<h1>Активка: Заорать</h1> Повышает силу героя на 15. <br><br>Всего на 45 секунд.",
+    "en": "<h1>Use: Roar</h1> Increases hero's strength by 15. <br><br>Lasts 45 seconds."
+  },
+  "DOTA_Tooltip_ability_item_strength_potion_Lore": {
+    "ru": "Бренное тело ненадолго забывает о собственных пределах.",
+    "en": "The mortal body briefly forgets its own limits."
+  },
+  "DOTA_Tooltip_ability_item_agility_potion": {
+    "ru": "Зелье ловкости",
+    "en": "Agility Potion"
+  },
+  "DOTA_Tooltip_ability_item_agility_potion_Description": {
+    "ru": "<h1>Активка: На спидах</h1> Повышает ловкость героя на 15. <br><br>Всего на 45 секунд.",
+    "en": "<h1>Use: On the Move</h1> Increases hero's agility by 15. <br><br>Lasts 45 seconds."
+  },
+  "DOTA_Tooltip_ability_item_agility_potion_Lore": {
+    "ru": "Иногда тело движется быстрее мысли. Это как раз такой случай.",
+    "en": "Sometimes the body moves faster than thought. This is one of those times."
+  },
+  "DOTA_Tooltip_ability_item_intellegence_potion": {
+    "ru": "Зелье интеллекта",
+    "en": "Intelligence Potion"
+  },
+  "DOTA_Tooltip_ability_item_intellegence_potion_Description": {
+    "ru": "<h1>Активка: Эйнштейн</h1> Повышает интеллект героя на 15. <br><br>Всего на 45 секунд.",
+    "en": "<h1>Use: Einstein</h1> Increases hero's intelligence by 15. <br><br>Lasts 45 seconds."
+  },
+  "DOTA_Tooltip_ability_item_intellegence_potion_Lore": {
+    "ru": "Когда ум замирает, остается только тишина и ясность.",
+    "en": "When the mind stills, only silence and clarity remain."
+  },
+  "DOTA_Tooltip_ability_item_combined_potion": {
+    "ru": "3-Синтез",
+    "en": "Tri-Synthesis"
+  },
+  "DOTA_Tooltip_ability_item_combined_potion_Description": {
+    "ru": "<h1>Активка: Почти Бог</h1> Повышает характеристики героя на 15. <br><br>Всего на 45 секунд.",
+    "en": "<h1>Use: Almost God</h1> Increases all hero attributes by 15. <br><br>Lasts 45 seconds."
+  },
+  "DOTA_Tooltip_ability_item_combined_potion_Lore": {
+    "ru": "На миг делает героя тем, кем он мог бы стать.",
+    "en": "For a moment, it makes the hero what he could have become."
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom": {
+    "ru": "Hand of Midas",
+    "en": "Hand of Midas"
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_Description": {
+    "ru": "<h1>Мидасик</h1> Использование на крипе даст 50% бонусного золота, и 50% бонусного опыта.\n<h1>Пассивная: Solo leveling</h1> Объем бонусного золота и опыта слегка увеличивается с уровнем героя.",
+    "en": "<h1>Midas Touch</h1> Use on a creep to grant 50% bonus gold and 50% bonus experience.\n<h1>Passive: Solo Leveling</h1> The amount of bonus gold and experience slightly increases with hero level."
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_atk": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_Lore": {
+    "ru": "Каждый труп - шанс стать богаче.",
+    "en": "Every corpse is a chance to grow richer."
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_two": {
+    "ru": "Hand of Midas 2",
+    "en": "Hand of Midas 2"
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_two_Description": {
+    "ru": "<h1>Мидасик</h1> Использование на крипе даст 100% бонусного золота, и 100% бонусного опыта.\n<h1>Пассивная: Solo leveling</h1> Объем бонусного золота и опыта значительно увеличивается с уровнем героя.",
+    "en": "<h1>Midas Touch</h1> Use on a creep to grant 100% bonus gold and 100% bonus experience.\n<h1>Passive: Solo Leveling</h1> The amount of bonus gold and experience significantly increases with hero level."
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_two_atk": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_hand_of_midas_custom_two_Lore": {
+    "ru": "Жизнь в обмен на гору золота. Идеальный контракт.",
+    "en": "Life exchanged for a pile of gold. The perfect contract."
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2": {
+    "ru": "Phase Boots 2",
+    "en": "Phase Boots 2"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2_move_speed": {
+    "ru": "+$movespeed",
+    "en": "+$movespeed"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2_Description": {
+    "ru": "<h1>Активируемая: Phase 2</h1> Увеличивает скорость передвижения, позволяет проходить сквозь существ.<br>Увеличивает скорость передвижения на %movespeed_active_range%% для героев дальнего боя и на %movespeed_active%% для ближнего. <br>Длится 5 сек.",
+    "en": "<h1>Active: Phase 2</h1> Increases movement speed and allows passing through units.<br>Increases movement speed by %movespeed_active_range%% for ranged heroes and by %movespeed_active%% for melee heroes. <br>Lasts 5 seconds."
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_2_Lore": {
+    "ru": "Скользи.",
+    "en": "Glide."
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3": {
+    "ru": "Phase Boots 3",
+    "en": "Phase Boots 3"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3_move_speed": {
+    "ru": "+$movespeed",
+    "en": "+$movespeed"
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3_Description": {
+    "ru": "<h1>Активируемая: Phase 3</h1> Увеличивает скорость передвижения, позволяет проходить сквозь существ.<br>Увеличивает скорость передвижения на %movespeed_active_range%% для героев дальнего боя и на %movespeed_active%% для ближнего. <br>Длится 5 сек.",
+    "en": "<h1>Active: Phase 3</h1> Increases movement speed and allows passing through units.<br>Increases movement speed by %movespeed_active_range%% for ranged heroes and by %movespeed_active%% for melee heroes. <br>Lasts 5 seconds."
+  },
+  "DOTA_Tooltip_ability_item_phase_boots_3_Lore": {
+    "ru": "Стены? Кто их заметил?",
+    "en": "Walls? Didn't noticed."
+  },
+  "DOTA_Tooltip_ability_item_midas_sword": {
+    "ru": "Midas Sword",
+    "en": "Midas Sword"
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_Note0": {
+    "ru": "Если вы атакуете босса и MidasTouch срабатывает, то вы не сможете получить дополнительное золото в течении 16 секунд.",
+    "en": "If you attack a boss and Midas Touch triggers, you will not be able to gain additional gold for 16 seconds."
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_Description": {
+    "ru": "<h1>Активируемая: Midas</h1> Превращает цель в горку бонусного золота (0.2 * ур. героя * золото за убийство), а также герой получает %exp%%  бонусного опыта.\n<h1>Пассивная: Midas Touch</h1> При атаке дает %gold_chance%%  шанс получить %gold% золота.\n",
+    "en": "<h1>Active: Midas</h1> Turns the target into a pile of bonus gold (0.2 * hero level * kill gold), and the hero also gains %exp%% bonus experience.\n<h1>Passive: Midas Touch</h1> On attack, grants a %gold_chance%% chance to gain %gold% gold.\n"
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_Lore": {
+    "ru": "Прикосновение этого меча превращает все в блестящий металл.",
+    "en": "The touch of this sword turns everything into gleaming metal."
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_chance": {
+    "ru": "%EXPLOSE:<br>• ШАНС:",
+    "en": "%EXPLOSE:<br>• CHANCE:"
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_atk": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_midas_sword_damage": {
+    "ru": "• УРОН:",
+    "en": "• УРОН:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela": {
+    "ru": "Каббала",
+    "en": "Kabbalah"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n",
+    "en": "<h1>Experience gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the ability's cooldown is more than 10 sec and manacost is more that 50. Otherwise, less experience is given, proportional to the cooldown duration.\n"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_Lore": {
+    "ru": "Магический фокус.",
+    "en": "A magical focus."
+  },
+  "DOTA_Tooltip_ability_item_quibbela_exp_per_cast": {
+    "ru": "Опыт за каст:",
+    "en": "Experience per cast:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_exp_lvl_bonus": {
+    "ru": "Бонус опыта за уровень героя:",
+    "en": "Hero level experience bonus:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2": {
+    "ru": "Quibbela 2",
+    "en": "Kabbalah 2"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n",
+    "en": "<h1>Experience gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the ability's cooldown is more than 10 sec and manacost is more that 50. Otherwise, less experience is given, proportional to the cooldown duration.\n"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_Lore": {
+    "ru": "Концентрация знаний.",
+    "en": "Concentration of knowledge."
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_exp_per_cast": {
+    "ru": "Опыт за каст:",
+    "en": "Experience per cast:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_exp_lvl_bonus": {
+    "ru": "Бонус опыта за уровень героя:",
+    "en": "Hero level experience bonus:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_2_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3": {
+    "ru": "Quibbela 3",
+    "en": "Kabbalah 3"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n",
+    "en": "<h1>Experience gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the ability's cooldown is more than 10 sec and manacost is more that 50. Otherwise, less experience is given, proportional to the cooldown duration.\n"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_Lore": {
+    "ru": "Концентрация опыта.",
+    "en": "Concentration of experience."
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_exp_per_cast": {
+    "ru": "Опыт за каст:",
+    "en": "Experience per cast:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_exp_lvl_bonus": {
+    "ru": "Бонус опыта за уровень героя:",
+    "en": "Hero level experience bonus:"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_quibbela_3_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2": {
+    "ru": "Aether Lens 2",
+    "en": "Aether Lens 2"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_Description": {
+    "ru": "<h1>Пассивная: Aethereal Focus</h1> Увеличивает дальность применения способностей и предметов на %cast_range_bonus%.",
+    "en": "<h1>Passive: Aethereal Focus</h1> Increases the cast range of abilities and items by %cast_range_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_Lore": {
+    "ru": "Подарок хворому сыну, наделённый силой последнего вздоха умирающего мага.",
+    "en": "A gift to a sick son, imbued with the power of a dying mage’s final breath."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_mp_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_spell_amp": {
+    "ru": "+$spell_amp",
+    "en": "+$spell_amp"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3": {
+    "ru": "Aether Lens 3",
+    "en": "Aether Lens 3"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_Description": {
+    "ru": "<h1>Пассивная: Aethereal Focus</h1> Увеличивает дальность применения способностей и предметов на %cast_range_bonus%.",
+    "en": "<h1>Passive: Aethereal Focus</h1> Increases the cast range of abilities and items by %cast_range_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_Lore": {
+    "ru": "Подарок хворому сыну, наделённый силой последнего вздоха умирающего мага.",
+    "en": "A gift to a sick son, imbued with the power of a dying mage’s final breath."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_mp_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_spell_amp": {
+    "ru": "+$spell_amp",
+    "en": "+$spell_amp"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4": {
+    "ru": "Aether Lens 4",
+    "en": "Aether Lens 4"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_Description": {
+    "ru": "<h1>Пассивная: Aethereal Focus</h1> Увеличивает дальность применения способностей и предметов на %cast_range_bonus%.",
+    "en": "<h1>Passive: Aethereal Focus</h1> Increases the cast range of abilities and items by %cast_range_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_Lore": {
+    "ru": "Подарок хворому сыну, наделённый силой последнего вздоха умирающего мага.",
+    "en": "A gift to a sick son, imbued with the power of a dying mage’s final breath."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_mp_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_spell_amp": {
+    "ru": "+$spell_amp",
+    "en": "+$spell_amp"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5": {
+    "ru": "Aether Lens 5",
+    "en": "Aether Lens 5"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_Description": {
+    "ru": "<h1>Активируемая: Критули</h1> Добавляет %int_act% интеллекта и %mana_regen% регенерации маны. <br>Так же магический урон, нанесенный противникам имеет %chance%%  шанс стать критическим и нанести %mult%%  урона пока бафф активен.\n<h1>Пассивная: Aethereal Focus</h1> Увеличивает дальность применения способностей и предметов на %cast_range_bonus%.<br>Увеличивает магический урон на %spell_amp%%.",
+    "en": "<h1>Active: Crituli</h1> Grants %int_act% Intelligence and %mana_regen% Mana Regeneration. <br>Additionally, magical damage dealt to enemies has a %chance%% chance to critically strike for %mult%% of damage while the buff is active.\n<h1>Passive: Aethereal Focus</h1> Increases the cast range of abilities and items by %cast_range_bonus%.<br>Increases magical damage by %spell_amp%%."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_Lore": {
+    "ru": "Через линзу видно слабость врага, остается лишь точно направить заклинание.",
+    "en": "Through the lens, the enemy’s weakness is revealed; you just need to aim your spell precisely."
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_mp_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_5_cast_range_bonus": {
+    "ru": "+$cast_range",
+    "en": "+$cast_range"
+  },
+  "DOTA_Tooltip_modifier_lens_5_act": {
+    "ru": "ManaFlow",
+    "en": "Mana Flow"
+  },
+  "DOTA_Tooltip_modifier_lens_5_act_Description": {
+    "ru": "Добавляет регенерацию маны и интеллект.",
+    "en": "Grants Mana Regeneration and Intelligence."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart": {
+    "ru": "Wisdom Heart",
+    "en": "Wisdom Heart"
+  },
+  "DOTA_Tooltip_ability_item_mana_heart_Description": {
+    "ru": "<h1>Пассивная: Mana Regen</h1> Восстанавливает %mana_regen_prc%% от максимального количества маны в секунду.<br><br> Если владелец получит урон или использует способность/предмет то восстановление маны будет прервано на %melee_cooldown% секунд для героев ближнего боя, и %ranged_cooldown% секунд для героев дальнего боя.",
+    "en": "<h1>Passive: Mana Regen</h1> Restores %mana_regen_prc%% of maximum mana per second.<br><br>If the owner takes damage or uses an ability/item, mana regeneration will be paused for %melee_cooldown% seconds for melee heroes, and %ranged_cooldown% seconds for ranged heroes."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart_Lore": {
+    "ru": "Магия больше не знает границ, когда каждый удар сердца возвращает ману.",
+    "en": "Magic knows no bounds when every beat of the heart restores mana."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart_mana_bonus": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_mana_heart_int_bonus": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_modifier_item_mana_heart_regen_visible": {
+    "ru": "Mana Regen",
+    "en": "Mana Regen"
+  },
+  "DOTA_Tooltip_modifier_item_mana_heart_regen_visible_Description": {
+    "ru": "Восстанавливает 2.5%%% от максимума маны.",
+    "en": "Restores 2.5%%% of maximum mana."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart2": {
+    "ru": "Wisdom Heart 2",
+    "en": "Wisdom Heart 2"
+  },
+  "DOTA_Tooltip_ability_item_mana_heart2_Description": {
+    "ru": "<h1>Пассивная: Mana Regen</h1> Восстанавливает %mana_regen_prc%% от максимального количества маны в секунду.<br><br> Если владелец получит урон или использует способность/предмет то восстановление маны будет прервано на %melee_cooldown% секунд для героев ближнего боя, и %ranged_cooldown% секунд для героев дальнего боя.",
+    "en": "<h1>Passive: Mana Regen</h1> Restores %mana_regen_prc%% of maximum mana per second.<br><br>If the owner takes damage or uses an ability/item, mana regeneration will be paused for %melee_cooldown% seconds for melee heroes, and %ranged_cooldown% seconds for ranged heroes."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart_2_Lore": {
+    "ru": "Магия больше не знает границ, когда каждый удар сердца возвращает ману."
+  },
+  "DOTA_Tooltip_ability_item_mana_heart2_mana_bonus": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_mana_heart2_int_bonus": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_modifier_item_mana_heart2_regen_visible": {
+    "ru": "Mana Regen",
+    "en": "Mana Regen"
+  },
+  "DOTA_Tooltip_modifier_item_mana_heart2_regen_visible_Description": {
+    "ru": "Восстанавливает 3.2%%% от максимума маны.",
+    "en": "Restores 3.2%%% of maximum mana."
+  },
+  "DOTA_Tooltip_ability_item_durandal": {
+    "ru": "Sunshine blade",
+    "en": "Sunshine Blade"
+  },
+  "DOTA_Tooltip_ability_item_durandal_Description": {
+    "ru": "<h1>Активируемая: Magical Burst</h1> Выпускает сильный энергетический всплеск, наносящий %damage% урона выбранному существу, и ослепляет его на %duration% сек.\n<h1>Пассивная: Soul Burn</h1> Наносит %period_dmg% урона в секунду ближайшим к вам целям, уменьшает магическое сопротивление врагов на %aura_resist%%, враги имеют %aura_miss%%  промахнуться.<br>Радиус: 800",
+    "en": "<h1>Active: Magical Burst</h1> Releases a powerful energy burst, dealing %damage% damage to the targeted unit and blinding it for %duration% seconds.\n<h1>Passive: Soul Burn</h1> Deals %period_dmg% damage per second to nearby enemies, reduces their magical resistance by %aura_resist%%, and gives them a %aura_miss%% chance to miss.<br>Radius: 800"
+  },
+  "DOTA_Tooltip_ability_item_durandal_Lore": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_durandal_dmg": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_durandal_all": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_durandal_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_modifier_durandal_aura": {
+    "ru": "Soul Burn",
+    "en": "Soul Burn"
+  },
+  "DOTA_Tooltip_modifier_durandal_aura_Description": {
+    "ru": "Горит.<br>Магическое сопротивление уменьшено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%.<br>Шанс промаха увеличен на %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%.",
+    "en": "Burning.<br>Magical resistance reduced by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%.<br>Miss chance increased by %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_modifier_durandal_spell": {
+    "ru": "Blind",
+    "en": "Blind"
+  },
+  "DOTA_Tooltip_modifier_durandal_spell_Description": {
+    "ru": "Ослеплен. Шанс промаха увеличен на %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%.",
+    "en": "Blinded. Miss chance increased by %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_ability_item_experience_tome": {
+    "ru": "Experience Tome",
+    "en": "Experience Tome"
+  },
+  "DOTA_Tooltip_ability_item_experience_tome_Description": {
+    "ru": "<h1>Read</h1> Прочтение этой книги увеличит ваш уровень.",
+    "en": "<h1>Read</h1> Reading this tome increases your level."
+  },
+  "DOTA_Tooltip_ability_item_solomon_book": {
+    "ru": "Sanctum Regnum",
+    "en": "Sanctum Regnum"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n <h1>Killer mage</h1> Увеличивает урон магией на %amplification%%.\n",
+    "en": "<h1>Experience Gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the cooldown is greater than 10 seconds and the mana cost is greater than 50. Otherwise, reduced experience is granted, proportional to the cooldown duration.\n<h1>Killer Mage</h1> Increases magical damage by %amplification%%.\n"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_Lore": {
+    "ru": "Священный гримуар королей-архимагов.",
+    "en": "A sacred grimoire of archmage kings."
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2": {
+    "ru": "Sanctum Regnum Tome 2",
+    "en": "Sanctum Regnum Tome 2"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n <h1>Killer mage</h1> Увеличивает урон магией на %amplification%%.\n",
+    "en": "<h1>Experience Gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the cooldown is greater than 10 seconds and the mana cost is greater than 50. Otherwise, reduced experience is granted, proportional to the cooldown duration.\n<h1>Killer Mage</h1> Increases magical damage by %amplification%%.\n"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2_Lore": {
+    "ru": "Более редкий том гримуара, дарует магическую силу.",
+    "en": "A rarer volume of the grimoire, granting enhanced magical power."
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_2_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3": {
+    "ru": "Sanctum Regnum Tome 3",
+    "en": "Sanctum Regnum Tome 3"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3_Description": {
+    "ru": "<h1>Experience gain</h1> Получает (%exp_per_cast% + Бонус за ур. героя) опыта за каст способностей. Полный бонус начисляется если перезарядка больше 10 и манакост больше 50. Иначе дается меньше опыта, пропорционально длительности перезарядки.\n <h1>Killer mage</h1> Увеличивает урон магией на %amplification%%.\n",
+    "en": "<h1>Experience Gain</h1> Grants (%exp_per_cast% + Hero Level Bonus) experience per spell cast. Full bonus is awarded if the cooldown is greater than 10 seconds and the mana cost is greater than 50. Otherwise, reduced experience is granted, proportional to the cooldown duration.\n<h1>Killer Mage</h1> Increases magical damage by %amplification%%.\n"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3_Lore": {
+    "ru": "Невероятно редкий том гримуара, дарует прорву магической энергии.",
+    "en": "An incredibly rare volume of the grimoire, overflowing with magical energy."
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3_int": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_solomon_book_3_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat": {
+    "ru": "Ganker Coat"
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat_Description": {
+    "ru": "<h1>Активируемая: Hunt</h1> При активации увеличивает скорость передвижения и магическое сопротивление на %speeda%%. \nДлительность: %dur% секунд.\n<h1>Пассивная: MAGIC ASSAULT</h1> Поглощает 25% магического урона.\n<h1>Пассивная: HIDING</h1> Для врагов вы невидимы на миникарте.\n"
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat_Lore": {
+    "ru": "Талант убийцы - быть бесшумным. И неуязвимым к магии."
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat_a": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat_dmg": {
+    "ru": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_stalker_coat_attributes": {
+    "ru": "+$all"
+  },
+  "DOTA_Tooltip_modifier_stalker_coat_speed_up": {
+    "ru": "Hunt"
+  },
+  "DOTA_Tooltip_modifier_stalker_coat_speed_up_Description": {
+    "ru": "Увеличивает вашу скорость передвижения и магическое сопротивление на 20%%%."
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis": {
+    "ru": "Manteau of life",
+    "en": "Manteau of Life"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_Description": {
+    "ru": "<h1>Lothar's Edge</h1>Герой становится невидимым. Атака с невидимости нанесет дополнительно %windwalk_bonus_damage% урона.\n<h1>Пассивная: HIDING</h1> Для врагов вы невидимы на миникарте.\n",
+    "en": "<h1>Lothar's Edge</h1>The hero becomes invisible. Attacking from invisibility deals an additional %windwalk_bonus_damage% damage.\n<h1>Passive: HIDING</h1>You are invisible on the minimap to enemies.\n"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_Lore": {
+    "ru": "Скрытность не значит плохо. Плохо быть убитым.",
+    "en": "Stealth is not cowardice. Dying is."
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_a": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_dmg": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_resist": {
+    "ru": "+$spell_resist",
+    "en": "+$spell_resist"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_speeda": {
+    "ru": "+к скорости передвижения (%):",
+    "en": "+Movement Speed (%):"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_manteau_invis_attributes": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_great_bracer": {
+    "ru": "Great Bracer",
+    "en": "Great Bracer"
+  },
+  "DOTA_Tooltip_ability_item_great_bracer_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_great_bracer_Lore": {
+    "ru": "Улучшенный браслет, доработанный после множества сражений.",
+    "en": "A sturdy bracer, honed through the trials of many battles. A beginner’s trusted companion."
+  },
+  "DOTA_Tooltip_ability_item_great_bracer_str": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_great_bracer_aid": {
+    "ru": "+урона, ловкости и интеллекта",
+    "en": "+Damage, Agility and Intelligence"
+  },
+  "DOTA_Tooltip_ability_item_ultra_bracer": {
+    "ru": "Ultra Bracer",
+    "en": "Ultra Bracer"
+  },
+  "DOTA_Tooltip_ability_item_ultra_bracer_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_ultra_bracer_Lore": {
+    "ru": "Стандартный боевой аксессуар, проверенный временем и войнами.",
+    "en": "A masterfully crafted bracer, tested in countless wars. The mark of an experienced warrior."
+  },
+  "DOTA_Tooltip_ability_item_ultra_bracer_str": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_ultra_bracer_aid": {
+    "ru": "+урона, ловкости и интеллекта",
+    "en": "+Damage, Agility and Intelligence"
+  },
+  "DOTA_Tooltip_ability_item_great_null_talisman": {
+    "ru": "Great Null Talisman",
+    "en": "Great Null Talisman"
+  },
+  "DOTA_Tooltip_ability_item_great_null_talisman_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_great_null_talisman_Lore": {
+    "ru": "Простой артефакт, созданный для стабилизации и накопления магической энергии.",
+    "en": "A simple talisman, designed to stabilize and harness magical energy. Perfect for apprentices."
+  },
+  "DOTA_Tooltip_ability_item_great_null_talisman_str": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_great_null_talisman_aid": {
+    "ru": "+урона, силы и ловкости",
+    "en": "+Damage, Strength and Agility"
+  },
+  "DOTA_Tooltip_ability_item_ultra_null_talisman": {
+    "ru": "Ultra Null Talisman",
+    "en": "Ultra Null Talisman"
+  },
+  "DOTA_Tooltip_ability_item_ultra_null_talisman_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_ultra_null_talisman_Lore": {
+    "ru": "Талисман, разработанный для тех, кто делает первые шаги в серьёзной магии.",
+    "en": "A talisman refined by master mages, channeling raw magical power. A weapon of seasoned casters."
+  },
+  "DOTA_Tooltip_ability_item_ultra_null_talisman_str": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_ultra_null_talisman_aid": {
+    "ru": "+урона, силы и ловкости",
+    "en": "+Damage, Strength and Agility"
+  },
+  "DOTA_Tooltip_ability_item_great_wraith_band": {
+    "ru": "Great Wraith Band",
+    "en": "Great Wraith Band"
+  },
+  "DOTA_Tooltip_ability_item_great_wraith_band_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_great_wraith_band_Lore": {
+    "ru": "Артефакт, часто используемый разведчиками и лёгкими воинами.",
+    "en": "An artifact often wielded by scouts and light warriors. Reliable, but unrefined."
+  },
+  "DOTA_Tooltip_ability_item_great_wraith_band_str": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_great_wraith_band_aid": {
+    "ru": "+урона, силы и интеллекта",
+    "en": "+Damage, Strength and Intelligence"
+  },
+  "DOTA_Tooltip_ability_item_ultra_wraith_band": {
+    "ru": "Ultra Wraith Band",
+    "en": "Ultra Wraith Band"
+  },
+  "DOTA_Tooltip_ability_item_ultra_wraith_band_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_ultra_wraith_band_Lore": {
+    "ru": "Артефакт, проверенный временем, предназначенный для повышения точности и скорости.",
+    "en": "A finely crafted band, perfected for precision and speed. Favored by elite warriors."
+  },
+  "DOTA_Tooltip_ability_item_ultra_wraith_band_str": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_ultra_wraith_band_aid": {
+    "ru": "+урона, силы и интеллекта",
+    "en": "+Damage, Strength and Intelligence"
+  },
+  "DOTA_Tooltip_ability_item_asura_staff": {
+    "ru": "Asura Staff"
+  },
+  "DOTA_Tooltip_ability_item_asura_staff_Description": {
+    "ru": "Уменьшение расхода и потери маны: %manacost%%."
+  },
+  "DOTA_Tooltip_ability_item_asura_staff_Note0": {
+    "ru": "Эффекты от такого же предмета не складывается."
+  },
+  "DOTA_Tooltip_ability_item_asura_staff_Lore": {
+    "ru": "Посох прославленной волшебницы, пропавший много тысячелетий назад."
+  },
+  "DOTA_Tooltip_ability_item_asura_staff_amp": {
+    "ru": "%+усиление способностей"
+  },
+  "DOTA_Tooltip_ability_item_asura_staff_int": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya": {
+    "ru": "Infernal Truncheon"
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya_Description": {
+    "ru": "<h1>Catalyst</h1> На %act_amp%%  усиливает способности, но при их использовании тратит %act_manacost%%  маны от ее стандартного значения.<br>Длится: %duration% сек.\nУменьшение расхода и потери маны: %manacost%%."
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya_Note0": {
+    "ru": "Эффекты от такого же предмета не складывается."
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya_Lore": {
+    "ru": "Палочка, на которую Данич пролил божественную(жигулевское) кормушку."
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya_amp": {
+    "ru": "%+усиление способностей"
+  },
+  "DOTA_Tooltip_ability_item_infernal_kaya_int": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_modifier_infernal_kaya_active": {
+    "ru": "Catalyst"
+  },
+  "DOTA_Tooltip_modifier_infernal_kaya_active_Description": {
+    "ru": "Усиливает способности, но их использование тратит намного больше сил."
+  },
+  "DOTA_Tooltip_ability_item_recipe_angels_blood_lua": {
+    "ru": "Рецепт: Angel's Blood",
+    "en": "Recipe: Angel's Blood"
+  },
+  "DOTA_Tooltip_ability_item_angels_blood_lua": {
+    "ru": "Angel's Blood",
+    "en": "Angel's Blood"
+  },
+  "DOTA_Tooltip_ability_item_angels_blood_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_angels_sword_lua": {
+    "ru": "Рецепт: Angel's Sword",
+    "en": "Recipe: Angel's Sword"
+  },
+  "DOTA_Tooltip_ability_item_angels_sword_lua": {
+    "ru": "Angel's Sword",
+    "en": "Angel's Sword"
+  },
+  "DOTA_Tooltip_ability_item_angels_sword_lua_Description": {
+    "ru": "<h1>Активное: Angels Shield</h1> Блокирует входящий магический урон на %shield_duration% seconds.",
+    "en": "<h1>Active: Angels Shield</h1> Blocks incoming magic damage for %shield_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_angels_sword_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_modifier_item_angels_sword_active_lua": {
+    "ru": "Angels Shield",
+    "en": "Angels Shield"
+  },
+  "DOTA_Tooltip_modifier_item_angels_sword_active_lua_Description": {
+    "ru": "Блокирует входящий магический урон.",
+    "en": "Blocks incoming magic damage."
+  },
+  "DOTA_Tooltip_ability_item_recipe_angels_armor_lua": {
+    "ru": "Рецепт: Angel's Armor",
+    "en": "Recipe: Angel's Armor"
+  },
+  "DOTA_Tooltip_ability_item_angels_armor_lua": {
+    "ru": "Angel's Armor",
+    "en": "Angel's Armor"
+  },
+  "DOTA_Tooltip_ability_item_angels_armor_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_angels_armor_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_angels_armor_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_angels_armor_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_recipe_blessed_essence_lua": {
+    "ru": "Рецепт: Blessed Essence",
+    "en": "Recipe: Blessed Essence"
+  },
+  "DOTA_Tooltip_ability_item_blessed_essence_lua": {
+    "ru": "Blessed Essence",
+    "en": "Blessed Essence"
+  },
+  "DOTA_Tooltip_ability_item_blessed_essence_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_blessed_essence_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_recipe_dead_boots_lua": {
+    "ru": "Рецепт: Dead Boots",
+    "en": "Recipe: Dead Boots"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua": {
+    "ru": "Dead Boots",
+    "en": "Dead Boots"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua_bonus_movement_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_dead_boots_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_recipe_awful_mask_lua": {
+    "ru": "Рецепт: Awful Mask",
+    "en": "Recipe: Awful Mask"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua": {
+    "ru": "Awful Mask",
+    "en": "Awful Mask"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_awful_mask_lua_lifesteal": {
+    "ru": "%+$lifesteal",
+    "en": "%+$lifesteal"
+  },
+  "DOTA_Tooltip_ability_item_recipe_eclipse_amphora_lua": {
+    "ru": "Рецепт: Eclipse Amphora",
+    "en": "Recipe: Eclipse Amphora"
+  },
+  "DOTA_Tooltip_ability_item_eclipse_amphora_lua": {
+    "ru": "Eclipse Amphora",
+    "en": "Eclipse Amphora"
+  },
+  "DOTA_Tooltip_ability_item_eclipse_amphora_lua_Description": {
+    "ru": "<h1>Активное: Mass Sleep</h1> Вызывает глубокий сон всех врагов в радиусе %abilitycastrange% на %duration% секунд. Нанесение урона спящему отряду пробуждает его.",
+    "en": "<h1>Active: Mass Sleep</h1> Induce a deep sleep to all enemies withing %abilitycastrange% range for %duration% seconds. Dealing damage to a sleeping unit awakens it."
+  },
+  "DOTA_Tooltip_modifier_item_eclipse_amphora_lua": {
+    "ru": "Спит",
+    "en": "Sleeping"
+  },
+  "DOTA_Tooltip_ability_item_recipe_ring_of_the_void_lua": {
+    "ru": "Рецепт: Ring of the Void",
+    "en": "Recipe: Ring of the Void"
+  },
+  "DOTA_Tooltip_ability_item_ring_of_the_void_lua": {
+    "ru": "Ring of the Void",
+    "en": "Ring of the Void"
+  },
+  "DOTA_Tooltip_ability_item_ring_of_the_void_lua_Description": {
+    "ru": "<h1>Пассивное: Void Energy</h1> Каждый примененный дебафф или нанесенный урон от заклинаний заставляет противника накапливать до %max_stacks% стаков пустотной энергии. Каждый стак пустотной энергии наносит %damage_pct%%% урона текущему здоровью, когда противник получает урон от заклинаний.",
+    "en": "<h1>Passive: Void Energy</h1> Each applied debuff or dealed spell damage causes enemy to stack up to %max_stacks% stacks of void energy. Every void energy stack deals increases spell damage to enemy by %damage_pct%%%."
+  },
+  "DOTA_Tooltip_modifier_item_ring_of_the_void_debuff_stack_lua": {
+    "ru": "Заряд Пустотной Энергии",
+    "en": "Void Energy stack"
+  },
+  "DOTA_Tooltip_ability_item_recipe_icarus_lua": {
+    "ru": "Рецепт: Icarus",
+    "en": "Recipe: Icarus"
+  },
+  "DOTA_Tooltip_ability_item_icarus_lua": {
+    "ru": "Icarus",
+    "en": "Icarus"
+  },
+  "DOTA_Tooltip_ability_item_icarus_lua_Description": {
+    "ru": "<h1>Пассивное: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance%%% нанести %crit_multiplier%%% урона.",
+    "en": "<h1>Passive: Critical Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage."
+  },
+  "DOTA_Tooltip_ability_item_icarus_lua_lore": {
+    "ru": ""
+  },
+  "DOTA_Tooltip_ability_item_icarus_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_cursed_sange_lua": {
+    "ru": "Рецепт: Cursed Sange",
+    "en": "Recipe: Cursed Sange"
+  },
+  "DOTA_Tooltip_ability_item_cursed_sange_lua": {
+    "ru": "Cursed Sange",
+    "en": "Cursed Sange"
+  },
+  "DOTA_Tooltip_ability_item_cursed_sange_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_cursed_sange_lua_status_resistance": {
+    "ru": "%+к сопротивлению эффектам"
+  },
+  "DOTA_Tooltip_ability_item_cursed_sange_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_saint_yasha_lua": {
+    "ru": "Рецепт: Saint Yasha",
+    "en": "Recipe: Saint Yasha"
+  },
+  "DOTA_Tooltip_ability_item_saint_yasha_lua": {
+    "ru": "Saint Yasha",
+    "en": "Saint Yasha"
+  },
+  "DOTA_Tooltip_ability_item_saint_yasha_lua_Note0": {
+    "ru": "Бонусы к скорости от нескольких предметов на основе Yasha не складываются.",
+    "en": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_saint_yasha_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_saint_yasha_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_saint_yasha_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_modifier_item_desolator_lua_debuff": {
+    "ru": "Desolator",
+    "en": "Desolator"
+  },
+  "DOTA_Tooltip_modifier_item_desolator_lua_debuff_Description": {
+    "ru": "Атаки Desolator уменьшили вашу броню на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
+    "en": "Desolator attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+  },
+  "DOTA_Tooltip_modifier_item_mekansm_noheal_Description": {
+    "ru": "Mekansm Restore, Guardian Greaves, Aeon Greaves Mend не повлияют на отряд, который недавно был исцелен с помощью Restore или Mend.",
+    "en": "Mekansm Restore, Guardian Greaves, Aeon Greaves Mend will not affect a unit that has recently been healed by Restore or Mend."
+  },
+  "DOTA_Tooltip_ability_item_tome_of_hero_lua": {
+    "ru": "Tome of Hero",
+    "en": "Tome of Hero"
+  },
+  "DOTA_Tooltip_ability_item_tome_of_hero_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1> Повышает уровень вашего героя на 1.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's level by 1."
+  },
+  "DOTA_Tooltip_ability_item_medical_tractate_lua": {
+    "ru": "Medical Tractate",
+    "en": "Medical Tractate"
+  },
+  "DOTA_Tooltip_ability_item_medical_tractate_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1>Увеличивает здоровье вашего героя на %health_bonus%.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's health by %health_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_tome_of_strength_lua": {
+    "ru": "Tome of Strength",
+    "en": "Tome of Strength"
+  },
+  "DOTA_Tooltip_ability_item_tome_of_strength_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1>Увеличивает силу вашего героя на %strength_bonus%.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's strength by %strength_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_tome_of_agility_lua": {
+    "ru": "Tome of Agility",
+    "en": "Tome of Agility"
+  },
+  "DOTA_Tooltip_ability_item_tome_of_agility_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1>Увеличивает ловкость вашего героя на %agility_bonus%.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's agility by %agility_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_tome_of_intellect_lua": {
+    "ru": "Tome of Intellect",
+    "en": "Tome of Intellect"
+  },
+  "DOTA_Tooltip_ability_item_tome_of_intellect_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1>Увеличивает интеллект вашего героя на %intellect_bonus%.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's intellect by %intellect_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_tome_of_gods_lua": {
+    "ru": "Tome of Gods",
+    "en": "Tome of Gods"
+  },
+  "DOTA_Tooltip_ability_item_tome_of_gods_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1>Увеличивает силу вашего героя на %strength_bonus%, ловкость на %agility_bonus%, интеллект на %intellect_bonus%.",
+    "en": "<h1>Use: Consume</h1>Increases your hero's strength by %strength_bonus%, agility by %agility_bonus%, intellect by %intellect_bonus%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_monkey_king_bar_lua": {
+    "ru": "Рецепт: Monkey King Bar",
+    "en": "Recipe: Monkey King Bar"
+  },
+  "DOTA_Tooltip_ability_item_monkey_king_bar_lua": {
+    "ru": "Monkey King Bar",
+    "en": "Monkey King Bar"
+  },
+  "DOTA_Tooltip_ability_item_monkey_king_bar_lua_Description": {
+    "ru": "<h1>Пассивное: Mini-Bash</h1>Предоставляет каждой атаке %bash_chance%%% шанс нанести %bash_damage% дополнительного урона и нанести мини-оглушение.\n<h1>Пассивное: True Strike</h1>Предотвращает промах ваших атак.<br>True Strike не работает при атаке вражеских построек.",
+    "en": "<h1>Passive: Mini-Bash</h1>Grants each attack a %bash_chance%%% chance to deal %bash_damage% bonus damage and deal a mini-stun.\n<h1>Passive: True Strike</h1>Prevents your attacks from missing.<br>True Strike does not work when attacking enemy structures."
+  },
+  "DOTA_Tooltip_ability_item_monkey_king_bar_lua_Lore": {
+    "ru": "Мощный посох, используемый искусным воином.",
+    "en": "A powerful staff used by a master warrior."
+  },
+  "DOTA_Tooltip_ability_item_monkey_king_bar_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_monkey_king_bar_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_recipe_might_treads_lua": {
+    "ru": "Рецепт: Might Treads",
+    "en": "Recipe: Might Treads"
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua": {
+    "ru": "Might Treads",
+    "en": "Might Treads"
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_Description": {
+    "ru": "<h1>Активное: Switch Attribute</h1>Переключение между +%bonus_stat% силы, +%bonus_stat% ловкости или +%bonus_stat% интеллекта.\nБонусы к скорости передвижения от нескольких пар ботинок не складываются.",
+    "en": "<h1>Active: Switch Attribute</h1>Switches between +%bonus_stat% Strength, +%bonus_stat% Agility, or +%bonus_stat% Intelligence.\nMovement speed bonuses from multiple pairs of boots do not stack."
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_Lore": {
+    "ru": "Пара ботинок с толстой кожей, которые меняются в соответствии с потребностями владельца.",
+    "en": "A pair of heavy-skinned boots that change to meet the demands of the wearer."
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_bonus_movement_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_bonus_stat": {
+    "ru": "+$selected_attrib",
+    "en": "+$selected_attrib"
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_bonus_secondary_stat": {
+    "ru": "+$unselected_attrib",
+    "en": "+$unselected_attrib"
+  },
+  "DOTA_Tooltip_ability_item_might_treads_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_recipe_falcon_boots_lua": {
+    "ru": "Рецепт: Falcon Boots",
+    "en": "Recipe: Falcon Boots"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua": {
+    "ru": "Falcon Boots",
+    "en": "Falcon Boots"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_Description": {
+    "ru": "<h1>Активное: Phase</h1> Увеличивает скорость передвижения на %phase_movement_speed%%% для героев ближнего боя и на %phase_movement_speed_range%%% для героев дальнего боя, а также позволяет проходить сквозь существ и поворачиваться быстрее. Действует %phase_duration% сек.\nБонусы к скорости передвижения от нескольких пар ботинок не складываются.",
+    "en": "<h1>Active: Phase</h1> Gives %phase_movement_speed%%% increased movement speed on melee heroes, and %phase_movement_speed_range%%% on ranged heroes, and lets you move through units and turn more quickly for %phase_duration% seconds.\nMovement speed bonuses from multiple pairs of boots do not stack."
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_Lore": {
+    "ru": "Ботинки, которые позволяют владельцу путешествовать между слоями реальности.",
+    "en": "Boots that allow the wearer to travel between the ether."
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_bonus_movement_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_falcon_boots_lua_bonus_mp_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_modifier_item_falcon_boots_lua_active": {
+    "ru": "Falcon Boots",
+    "en": "Falcon Boots"
+  },
+  "DOTA_Tooltip_modifier_item_falcon_boots_lua_active_Description": {
+    "ru": "Скорость передвижения увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Проходит сквозь других существ.",
+    "en": "Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%% and allows you to move through units."
+  },
+  "DOTA_Tooltip_ability_item_recipe_bracer_lua": {
+    "ru": "Рецепт: Bracer"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua": {
+    "ru": "Bracer"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_Description": {
+    "ru": "<h1>Активное: Reveal Power</h1>Регенерация здоровья увеличивается на %active_hp_regen% за каждый Bracer в течение %duration% секунд."
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_Lore": {
+    "ru": "Наручи подойдут в том случае, если нужно укрепить защиту и повысить живучесть."
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_bonus_damage": {
+    "ru": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_bracer_lua_bonus_health_regen": {
+    "ru": "+$hp_regen"
+  },
+  "DOTA_Tooltip_modifier_item_bracer_lua_active": {
+    "ru": "Bracer"
+  },
+  "DOTA_Tooltip_modifier_item_bracer_lua_active_Description": {
+    "ru": "Восстанавливает %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% здоровья в секунду."
+  },
+  "DOTA_Tooltip_ability_item_recipe_wraith_band_lua": {
+    "ru": "Рецепт: Wraith Band"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua": {
+    "ru": "Wraith Band"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_Description": {
+    "ru": "<h1>Активное: Reveal Power</h1>Скорость атаки увеличивается на %active_attack_speed% за каждый Wraith Band в течение %duration% секунд."
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_Lore": {
+    "ru": "Тиара, от которой доносится лёгкий шёпот."
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_wraith_band_lua_bonus_armor": {
+    "ru": "+$armor"
+  },
+  "DOTA_Tooltip_modifier_item_wraith_band_lua_active": {
+    "ru": "Wraith Band"
+  },
+  "DOTA_Tooltip_modifier_item_wraith_band_lua_active_Description": {
+    "ru": "Скорость атаки увеличена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_null_talisman_lua": {
+    "ru": "Рецепт: Null Talisman"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua": {
+    "ru": "Null Talisman"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_Description": {
+    "ru": "<h1>Активное: Reveal Power</h1>Регенерации маны увеличивается на %active_mp_regen% за каждый Null Talisman в течение %duration% секунд."
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_Lore": {
+    "ru": "Небольшой драгоценный камень на нескольких цепочках."
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_null_talisman_lua_bonus_max_mana_percentage": {
+    "ru": "%+$max_mana_percentage"
+  },
+  "DOTA_Tooltip_modifier_item_null_talisman_lua_active": {
+    "ru": "Null Talisman"
+  },
+  "DOTA_Tooltip_modifier_item_null_talisman_lua_active_Description": {
+    "ru": "Восстанавливает %dMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% маны в секунду."
+  },
+  "DOTA_Tooltip_ability_item_recipe_heart_of_alaron_lua": {
+    "ru": "Рецепт: Heart of Alaron",
+    "en": "Recipe: Heart of Alaron"
+  },
+  "DOTA_Tooltip_ability_item_heart_of_alaron_lua": {
+    "ru": "Heart of Alaron",
+    "en": "Heart of Alaron"
+  },
+  "DOTA_Tooltip_ability_item_heart_of_alaron_lua_Lore": {
+    "ru": "Сохранившееся сердце могущественного монстра, хранящее в себе мудрость Аларона.",
+    "en": "Preserved heart of an powerful monster, it contains the Alaron's wisdom."
+  },
+  "DOTA_Tooltip_ability_item_heart_of_alaron_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_heart_of_alaron_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_heart_of_alaron_lua_mana_regen_amplify_pct": {
+    "ru": "%+к усилению восстановления маны",
+    "en": "%+Mana Regen Amplification"
+  },
+  "DOTA_Tooltip_ability_item_recipe_spellshop_sell_lua": {
+    "ru": "Рецепт: Spellshop Cocktail",
+    "en": "Recipe: Spellshop Cocktail"
+  },
+  "DOTA_Tooltip_ability_item_spellshop_sell_lua": {
+    "ru": "Spellshop Cocktail",
+    "en": "Spellshop Cocktail"
+  },
+  "DOTA_Tooltip_ability_item_spellshop_sell_lua_Description": {
+    "ru": "Позволяет продавать способности в магазине заклинаний. Расходует заряд предмета.",
+    "en": "Allows you to sell ability in spell shop. Losts charges<br><br>Does not required if \"Free Sells\" enabled"
+  },
+  "DOTA_Tooltip_ability_item_recipe_leaf_buckler_lua": {
+    "ru": "Рецепт: Leaf Buckler",
+    "en": "Recipe: Leaf Buckler"
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua": {
+    "ru": "Leaf Buckler",
+    "en": "Leaf Buckler"
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_Description": {
+    "ru": "<h1>Пассивное: Revenge Block</h1>Grants a %block_chance%%% chance to block %damage_block% damage from incoming attacks and get %active_agility% agility for %active_duration% seconds.",
+    "en": "<h1>Passive: Revenge Block</h1>Grants a %block_chance%%% chance to block %damage_block% damage from incoming attacks and get %active_agility% agility for %active_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_Lore": {
+    "ru": "Щит, сделанный из листьев тропического дерева.",
+    "en": "A shield made from the leaves of a tropical tree."
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_Note0": {
+    "ru": "Эффекты нескольких способностей, блокирующих урон, не сочетаются.",
+    "en": "Multiple sources of damage block do not stack."
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_leaf_buckler_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_modifier_item_leaf_buckler_lua_active": {
+    "ru": "Leaf Buckler",
+    "en": "Leaf Buckler"
+  },
+  "DOTA_Tooltip_modifier_item_leaf_buckler_lua_active_Description": {
+    "ru": "Ловкость увеличена на %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%.",
+    "en": "Agility increased by %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_refresher_core_lua": {
+    "ru": "Рецепт: Refresher Core",
+    "en": "Recipe: Refresher Core"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua": {
+    "ru": "Refresher Core",
+    "en": "Refresher Core"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_Description": {
+    "ru": "<h1>Активное: Reset Cooldowns</h1>Сбрасывает перезарядку всех предметов и способностей. Имеет общую перезарядку с предметом Refresher Shard. Перезарядка этого предмета происходит, только когда он находится в основном инвентаре героя.\n<h1>Пассивное: В случае активации способности у вас есть %instant_recharge_chance%%% шанс сбросить перезарядку этой способности и получить положительный эффект. Он дарует вам %instant_recharge_spell_lifesteal%%% вампиризма от заклинаний, уменьшает перезарядку на %instant_recharge_cooldown%%%, расход маны на %instant_recharge_mana_cost%%%, а также сокращает задержку перед применением заклинаний на %instant_recharge_cast_point_reduction%%% в течение %instant_recharge_duration% секунд.",
+    "en": "<h1>Active: Reset Cooldowns</h1>Resets the cooldowns of all your items and abilities. Shares a cooldown with Refresher Shard. This item's cooldown only progresses in your hero's main inventory.\n<h1>Passive: Cooldown Reduction</h1>Reduces the cooldown time of all spells and items.\n<h1>Passive: Instant Recharge</h1>Upon a casting ability you have %instant_recharge_chance%%% chance to reset cooldown's ability and get %instant_recharge_mana_cost%%% mana cost reduction, %instant_recharge_cooldown%%% cooldown reduction, %instant_recharge_spell_lifesteal%%% spell lifesteal, %instant_recharge_cast_point_reduction%%% cast point reduction for %instant_recharge_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_Lore": {
+    "ru": "Могущественный артефакт с магическими спектрами, созданный для волшебников.",
+    "en": "A powerful artifact with spellcraft spectrums created for wizards."
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_cast_range_bonus": {
+    "ru": "+$cast_range"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_refresher_core_lua_bonus_cooldown": {
+    "ru": "%+$cooldown_reduction",
+    "en": "%+$cooldown_reduction"
+  },
+  "DOTA_Tooltip_modifier_item_refresher_core_recharge_lua": {
+    "ru": "Instant Recharge",
+    "en": "Instant Recharge"
+  },
+  "DOTA_Tooltip_modifier_item_refresher_core_recharge_lua_Description": {
+    "ru": "Дарует вампиризм заклинаний, также уменьшает перезарядку, расход маны и задержку перед применением заклинаний.",
+    "en": "Grants spell lifesteal and abilities mana cost, cooldowns, cast point reduced"
+  },
+  "DOTA_Tooltip_ability_item_recipe_war_axe_lua": {
+    "ru": "Рецепт: War Axe",
+    "en": "Recipe: War Axe"
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua": {
+    "ru": "War Axe",
+    "en": "War Axe"
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua_Lore": {
+    "ru": "Потерянное оружие старого серийного убийцы.",
+    "en": "Lost weapon of an old serial killer."
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_war_axe_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_piercing_blade_lua": {
+    "ru": "Рецепт: Piercing Blade",
+    "en": "Recipe: Piercing Blade"
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua": {
+    "ru": "Piercing Blade",
+    "en": "Piercing Blade"
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_Description": {
+    "ru": "<h1>Пассивное: Greater Pierce</h1>Каждая атака может с %pierce_chance%%% шансом пройти сквозь уклонение и нанести чистый урон от атаки + %pierce_damage% дополнительного чистого урона.",
+    "en": "<h1>Passive: Greater Pierce</h1>Grants each attack a %pierce_chance%%% chance to pierce through evasion and deal pure attack damage + %pierce_damage% bonus pure damage."
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_Lore": {
+    "ru": "Древнее могущественное оружие.",
+    "en": "Ancient powerful weapon."
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_piercing_blade_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_aeon_greaves_lua": {
+    "ru": "Рецепт: Aeon Greaves",
+    "en": "Recipe: Aeon Greaves"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua": {
+    "ru": "Aeon Greaves",
+    "en": "Aeon Greaves"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_Description": {
+    "ru": "<h1>Активное: Mend</h1>Restores %replenish_health% health and %replenish_mana% mana to nearby allies, and removes most negative effects from the caster.<br><br>Radius: %replenish_radius%<br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n<h1>Пассивное: Guardian Aura</h1> Grants %aura_health_regen% health regeneration and %aura_armor% armor to allied units. If an allied hero's health falls below %aura_bonus_threshold%%%, this is increased to %aura_health_regen_bonus% health regeneration and %aura_armor_bonus% armor. <br><br>Radius: %aura_radius%\n<h1>Пассивное: Combo Breaker</h1> When you take damage and your health falls below %save_threshold%%%, a strong dispel is applied and you gain a %buff_duration% second buff that provides +%status_resistance%%% Status Resistance and causes all damage you deal and are dealt to be reduced by %damage_penalty%%%. Only triggers on player based damage.<br/><br/>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>\nMovement speed bonuses from multiple pairs of boots do not stack.",
+    "en": "<h1>Active: Mend</h1>Restores %replenish_health% health and %replenish_mana% mana to nearby allies, and removes most negative effects from the caster.<br><br>Radius: %replenish_radius%<br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n<h1>Passive: Guardian Aura</h1> Grants %aura_health_regen% health regeneration and %aura_armor% armor to allied units. If an allied hero's health falls below %aura_bonus_threshold%%%, this is increased to %aura_health_regen_bonus% health regeneration and %aura_armor_bonus% armor. <br><br>Radius: %aura_radius%\n<h1>Passive: Combo Breaker</h1> When you take damage and your health falls below %save_threshold%%%, a strong dispel is applied and you gain a %buff_duration% second buff that provides +%status_resistance%%% Status Resistance and causes all damage you deal and are dealt to be reduced by %damage_penalty%%%. Only triggers on player based damage.<br/><br/>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>\nMovement speed bonuses from multiple pairs of boots do not stack."
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_Lore": {
+    "ru": "One of many holy instruments constructed to honor the Omniscience from Ivory Incubarium.",
+    "en": "One of many holy instruments constructed to honor the Omniscience from Ivory Incubarium."
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_Note0": {
+    "ru": "The aura boost only applies to heroes.",
+    "en": "The aura boost only applies to heroes."
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_bonus_movement": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_aeon_greaves_lua_save_cooldown": {
+    "ru": "COMBO BREAKER COOLDOWN:",
+    "en": "COMBO BREAKER COOLDOWN:"
+  },
+  "DOTA_Tooltip_modifier_item_aeon_greaves_lua_aura": {
+    "ru": "Guardian Aura",
+    "en": "Guardian Aura"
+  },
+  "DOTA_Tooltip_modifier_item_aeon_greaves_lua_aura_Description": {
+    "ru": "Provides %fMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% health regeneration and %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% armor.",
+    "en": "Provides %fMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% health regeneration and %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% armor."
+  },
+  "DOTA_Tooltip_modifier_item_aeon_greaves_lua_save": {
+    "ru": "Combo Breaker",
+    "en": "Combo Breaker"
+  },
+  "DOTA_Tooltip_modifier_item_aeon_greaves_lua_save_Description": {
+    "ru": "All incoming damage negated. Outgoing damage reduced by %dMODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE%%%",
+    "en": "All incoming damage negated. Outgoing damage reduced by %dMODIFIER_PROPERTY_TOTALDAMAGEOUTGOING_PERCENTAGE%%%"
+  },
+  "DOTA_Tooltip_modifier_item_aeon_greaves_lua_save_cooldown": {
+    "ru": "Combo Breaker Cooldown",
+    "en": "Combo Breaker Cooldown"
+  },
+  "DOTA_Tooltip_ability_item_recipe_sange_2_lua": {
+    "ru": "Рецепт: Sange"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua": {
+    "ru": "Sange"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_Description": {
+    "ru": "<h1>Активное: Disarm</h1>Prevents a target from attacking for %disarm_melee% seconds on melee targets, and %disarm_range% seconds on ranged targets.<br><br>Range: %abilitycastrange%"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_Lore": {
+    "ru": "This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not."
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_bonus_evasion": {
+    "ru": "%+$evasion"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_sange_2_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_yasha_2_lua": {
+    "ru": "Рецепт: Yasha"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua": {
+    "ru": "Yasha"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_Description": {
+    "ru": "<h1>Активное: Mirror Image</h1>Creates %images_count% images of your hero that last %tooltip_illusion_duration% seconds. <br><br>Melee images deal %tooltip_damage_outgoing_melee%%% damage, while Ranged images deal %tooltip_damage_outgoing_ranged%%%. Illusions take %tooltip_damage_incoming_total_pct%%% damage. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_Lore": {
+    "ru": "An axe made of reflective materials that causes confusion amongst enemy ranks."
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_Note0": {
+    "ru": "Has a %invuln_duration% second cast time during which you are invulnerable."
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_Note1": {
+    "ru": "Many effects are removed upon using Yasha."
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_Note2": {
+    "ru": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_yasha_2_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_recipe_kaya_2_lua": {
+    "ru": "Рецепт: Kaya"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua": {
+    "ru": "Kaya"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_Description": {
+    "ru": "<h1>Активное: Ether Blast</h1>Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_agility_multiplier%x your target's primary attribute + %blast_damage_base% as magical damage.<br><br>Range: %abilitycastrange%<br>Duration: %duration% seconds"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_Lore": {
+    "ru": "A flickering blade of a ghastly nature, it is capable of dealing damage in both magical and physical planes."
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_Note0": {
+    "ru": "Shares cooldown with Ghost Scepter."
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_Note1": {
+    "ru": "Ethereal units take %ethereal_damage_bonus%%% bonus magic damage."
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_Note3": {
+    "ru": "Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_spell_amp": {
+    "ru": "%+Spell Amplification"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_spell_lifesteal_amp": {
+    "ru": "%+Spell Lifesteal Amplification"
+  },
+  "DOTA_Tooltip_ability_item_kaya_2_lua_mana_regen_multiplier": {
+    "ru": "%+Mana Regen Amplification"
+  },
+  "DOTA_Tooltip_modifier_item_kaya_2_debuff_lua": {
+    "ru": "Ether Blast"
+  },
+  "DOTA_Tooltip_modifier_item_kaya_2_debuff_lua_Description": {
+    "ru": "Ethereal Form. Taking %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE%%% increased magic damage and cannot attack or be attacked. Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_sange_and_yasha_2_lua": {
+    "ru": "Рецепт: Sange and Yasha"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua": {
+    "ru": "Sange and Yasha"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_Description": {
+    "ru": "<h1>Активное: Disarm</h1>Prevents a target from attacking for %disarm_melee% seconds on melee targets, and %disarm_range% seconds on ranged targets.<br><br>Range: %abilitycastrange%\n<h1>Active: Mirror Image</h1>Creates %images_count% images of your hero that last %tooltip_illusion_duration% seconds. <br><br>Melee images deal %tooltip_damage_outgoing_melee%%% damage, while Ranged images deal %tooltip_damage_outgoing_ranged%%%. Illusions take %tooltip_damage_incoming_total_pct%%% damage. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_Lore": {
+    "ru": "Sange and Yasha, when attuned by the moonlight and used together, become a very powerful combination."
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_Note0": {
+    "ru": "Has a %invuln_duration% second cast time during which you are invulnerable."
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_Note1": {
+    "ru": "Many effects are removed upon using Yasha."
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_Note2": {
+    "ru": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_evasion": {
+    "ru": "%+$evasion"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_sange_and_yasha_2_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_recipe_kaya_and_sange_2_lua": {
+    "ru": "Рецепт: Kaya and Sange"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua": {
+    "ru": "Kaya and Sange"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_Description": {
+    "ru": "<h1>Активное: Ether Blast</h1>Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_agility_multiplier%x your target's primary attribute + %blast_damage_base% as magical damage.<br><br>Range: %abilitycastrange%<br>Duration: %duration% seconds\n<h1>Active: Disarm</h1>Prevents a target from attacking for %disarm_melee% seconds on melee targets, and %disarm_range% seconds on ranged targets.<br><br>Range: %abilitycastrange%"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_Lore": {
+    "ru": "Two of three known items of unimaginable power that many believe were crafted at the same enchanter's forge."
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_Note0": {
+    "ru": "Shares cooldown with Ghost Scepter."
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_Note1": {
+    "ru": "Ethereal units take %ethereal_damage_bonus%%% bonus magic damage."
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_Note3": {
+    "ru": "Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_spell_amp": {
+    "ru": "%+Spell Amplification"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_spell_lifesteal_amp": {
+    "ru": "%+Spell Lifesteal Amplification"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_mana_regen_multiplier": {
+    "ru": "%+Mana Regen Amplification"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_bonus_evasion": {
+    "ru": "%+$evasion"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_kaya_and_sange_2_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_yasha_and_kaya_2_lua": {
+    "ru": "Рецепт: Yasha and Kaya"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua": {
+    "ru": "Yasha and Kaya"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Description": {
+    "ru": "<h1>Активное: Mirror Image</h1>Creates %images_count% images of your hero that last %tooltip_illusion_duration% seconds. <br><br>Melee images deal %tooltip_damage_outgoing_melee%%% damage, while Ranged images deal %tooltip_damage_outgoing_ranged%%%. Illusions take %tooltip_damage_incoming_total_pct%%% damage. <br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>\n<h1>Active: Ether Blast</h1>Converts the target unit to ethereal form, rendering them immune to physical damage, but unable to attack and %ethereal_damage_bonus%%% more vulnerable to magic damage.<br><br>  Enemy targets are also slowed by %blast_movement_slow%%%, and take %blast_agility_multiplier%x your target's primary attribute + %blast_damage_base% as magical damage.<br><br>Range: %abilitycastrange%<br>Duration: %duration% seconds"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Lore": {
+    "ru": "Yasha and Kaya when paired together share a natural resonance."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Note0": {
+    "ru": "Has a %invuln_duration% second cast time during which you are invulnerable."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Note1": {
+    "ru": "Many effects are removed upon using Yasha."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Note2": {
+    "ru": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Note3": {
+    "ru": "Ethereal units take %ethereal_damage_bonus%%% bonus magic damage."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_Note4": {
+    "ru": "Using a Town Portal Scroll or Boots of Travel will not dispel Ethereal Form."
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_bonus_intellect": {
+    "ru": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_spell_amp": {
+    "ru": "%+Spell Amplification"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_spell_lifesteal_amp": {
+    "ru": "%+Spell Lifesteal Amplification"
+  },
+  "DOTA_Tooltip_ability_item_yasha_and_kaya_2_lua_mana_regen_multiplier": {
+    "ru": "%+Mana Regen Amplification"
+  },
+  "DOTA_Tooltip_ability_item_recipe_slice_of_static_lua": {
+    "ru": "Рецепт: Slice of Static",
+    "en": "Recipe: Slice of Static"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua": {
+    "ru": "Slice of Static",
+    "en": "Slice of Static"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_Description": {
+    "ru": "<h1>Активное: Static Cast</h1>Upon using ability deals current health %damage_pct%%% damage in radius %damage_radius% for %active_duration% seconds.<br><br>Mana Cost: %mana_cost_pct%%%.\n<h1>Пассивное: Intellect Conversion</h1>Increases spell amplification for %spell_amp_per_int%%% for each intellect point.",
+    "en": "<h1>Active: Static Cast</h1>Upon using ability deals current health %damage_pct%%% damage in radius %damage_radius% for %active_duration% seconds.<br><br>Mana Cost: %mana_cost_pct%%%.\n<h1>Passive: Intellect Conversion</h1>Increases spell amplification for %spell_amp_per_int%%% for each intellect point."
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_lore": {
+    "ru": "A piece of ancient might amulet.",
+    "en": "A piece of ancient might amulet."
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_slice_of_static_lua_bonus_max_mana_percentage": {
+    "ru": "%+$max_mana_percentage",
+    "en": "%+$max_mana_percentage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_static_amulet_lua": {
+    "ru": "Рецепт: Static Amulet",
+    "en": "Recipe: Static Amulet"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua": {
+    "ru": "Static Amulet",
+    "en": "Static Amulet"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_Description": {
+    "ru": "<h1>Активное: Static Cast</h1>Upon using ability deals current health %damage_pct%%% damage in radius %damage_radius% for %active_duration% seconds.<br><br>Mana Cost: %mana_cost_pct%%%.\n<h1>Пассивное: Intellect Conversion</h1>Increases spell amplification for %spell_amp_per_int%%% for each intellect point.",
+    "en": "<h1>Active: Static Cast</h1>Upon using ability deals current health %damage_pct%%% damage in radius %damage_radius% for %active_duration% seconds.<br><br>Mana Cost: %mana_cost_pct%%%.\n<h1>Passive: Intellect Conversion</h1>Increases spell amplification for %spell_amp_per_int%%% for each intellect point."
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_lore": {
+    "ru": "Ancient powerful amulet of glorious wizard.",
+    "en": "Ancient powerful amulet of glorious wizard."
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_static_amulet_lua_bonus_max_mana_percentage": {
+    "ru": "%+$max_mana_percentage",
+    "en": "%+$max_mana_percentage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_charons_scepter_lua": {
+    "ru": "Рецепт: Charon's Scepter",
+    "en": "Recipe: Charon's Scepter"
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua": {
+    "ru": "Charon's Scepter",
+    "en": "Charon's Scepter"
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_Description": {
+    "ru": "<h1>Активное: Disappear</h1>Unit briefly shifts into another dimension in %cyclone_duration% seconds where it is immune from harm and has %hp_regen_pct%%% health regen.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>",
+    "en": "<h1>Active: Disappear</h1>Unit briefly shifts into another dimension in %cyclone_duration% seconds where it is immune from harm and has %hp_regen_pct%%% health regen.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_Lore": {
+    "ru": "A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil.",
+    "en": "A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil."
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_Note0": {
+    "ru": "Cyclone can purge some buffs and debuffs.",
+    "en": "Cyclone can purge some buffs and debuffs."
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_charons_scepter_lua_bonus_movement_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_modifier_charons_scepter_active_lua": {
+    "ru": "Disappeared",
+    "en": "Disappeared"
+  },
+  "DOTA_Tooltip_ability_item_recipe_fireblend_lua": {
+    "ru": "Рецепт: Fireblend",
+    "en": "Recipe: Fireblend"
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua": {
+    "ru": "Fireblend",
+    "en": "Fireblend"
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua_Description": {
+    "ru": "<h1>Активное: Вырубка</h1>Уничтожает деревья в области.<br><br>Область: %abilitycastrange%\n<h1>Пассивное: Взрыв</h1> Каждая атака с шансом %explosion_chance%%% создает взрыв в радиусе %explosion_radius% и наносит %explosion_damage% урона.\n<h1>Пассивное: Подавление</h1> Увеличивает урон против крипов на %damage_bonus% для героев ближнего боя, и на %damage_bonus_ranged% для дальнего.",
+    "en": "<h1>Active: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged."
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua_Lore": {
+    "ru": "Враги горят, деревья падают.",
+    "en": "The axe of an old warsmith, it allows you to effectively maneuver the forest."
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua_Note0": {
+    "ru": "Несколько мечей не взрывают врагов чаще.",
+    "en": "Effects of multiple fireblend do not stack."
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_fireblend_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_recipe_polar_spear_lua": {
+    "ru": "Рецепт: Polar Spear",
+    "en": "Recipe: Polar Spear"
+  },
+  "DOTA_Tooltip_ability_item_polar_spear_lua": {
+    "ru": "Polar Spear",
+    "en": "Polar Spear"
+  },
+  "DOTA_Tooltip_ability_item_polar_spear_lua_Description": {
+    "ru": "<h1>Активное: Pull</h1> Pulls the target.",
+    "en": "<h1>Active: Pull</h1> Pulls the target."
+  },
+  "DOTA_Tooltip_ability_item_polar_spear_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_polar_spear_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_polar_spear_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_recipe_amulet_of_chronos_lua": {
+    "ru": "Рецепт: Amulet of Chronos",
+    "en": "Recipe: Amulet of Chronos"
+  },
+  "DOTA_Tooltip_ability_item_amulet_of_chronos_lua": {
+    "ru": "Amulet of Chronos",
+    "en": "Amulet of Chronos"
+  },
+  "DOTA_Tooltip_ability_item_amulet_of_chronos_lua_Description": {
+    "ru": "<h1>Пассивное: Chronos's Touch</h1> Warps attacked enemy backward to whatever position it was in %revert_time% seconds earlier.<br><br>No effect on cooldown, gold, experience, HP or mana.",
+    "en": "<h1>Passive: Chronos's Touch</h1> Warps attacked enemy backward to whatever position it was in %revert_time% seconds earlier.<br><br>No effect on cooldown, gold, experience, HP or mana."
+  },
+  "DOTA_Tooltip_ability_item_amulet_of_chronos_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_recipe_void_blink_lua": {
+    "ru": "Рецепт: Void Blink",
+    "en": "Recipe: Void Blink"
+  },
+  "DOTA_Tooltip_ability_item_void_blink_lua": {
+    "ru": "Void Blink",
+    "en": "Void Blink"
+  },
+  "DOTA_Tooltip_ability_item_void_blink_lua_Description": {
+    "ru": "<h1>Активное: Void Blink</h1> Teleport to a target point up to %blink_range% units away and pulls enemies to chosen direction in %pull_radius% radius and deals %pull_damage% damage to pulled enemies. <br><br>Blink Dagger cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.\n<h1>Пассивное: Void Energy</h1> Each applied debuff or dealed spell damage causes enemy to stack up to %max_stacks% stacks of void energy. Every void energy stack deals current health %damage_pct%%% damage when enemy takes spell damage.",
+    "en": "<h1>Active: Void Blink</h1> Teleport to a target point up to %blink_range% units away and pulls enemies to chosen direction in %pull_radius% radius and deals %pull_damage% damage to pulled enemies. <br><br>Blink Dagger cannot be used for %blink_damage_cooldown% seconds after taking damage from an enemy hero or Roshan.\n<h1>Passive: Void Energy</h1> Each applied debuff or dealed spell damage causes enemy to stack up to %max_stacks% stacks of void energy. Every void energy stack deals increases spell damage to enemy by %damage_pct%%%."
+  },
+  "DOTA_Tooltip_ability_item_void_blink_lua_Note0": {
+    "ru": "Self-casting will cause you to teleport in the direction of your team's fountain.",
+    "en": "Self-casting will cause you to teleport in the direction of your team's fountain."
+  },
+  "DOTA_Tooltip_ability_item_void_blink_lua_Note1": {
+    "ru": "If you used Blink to teleport to a distance over the maximum range, you'll be teleported 4/5 of the maximum range instead.",
+    "en": "If you used Blink to teleport to a distance over the maximum range, you'll be teleported 4/5 of the maximum range instead."
+  },
+  "DOTA_Tooltip_modifier_item_void_blink_pull_lua": {
+    "ru": "Pulling",
+    "en": "Pulling"
+  },
+  "DOTA_Tooltip_ability_item_recipe_aether_eye_lua": {
+    "ru": "Рецепт: Aether Eye"
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua": {
+    "ru": "Aether Eye"
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua_Description": {
+    "ru": "<h1>Пассивное: Aethereal Concentrate</h1> Increases targeted spell, item cast range and grants %cast_range_bonus_per_enemy% cast range per visible enemy."
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua_Note0": {
+    "ru": "Passive does not stack."
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua_bonus_mana": {
+    "ru": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_eye_lua_cast_range_bonus": {
+    "ru": "+$cast_range"
+  },
+  "DOTA_Tooltip_ability_item_recipe_eye_of_angel_lua": {
+    "ru": "Рецепт: Eye of Angel"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua": {
+    "ru": "Eye of Angel"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_Description": {
+    "ru": "<h1>Активное: Angel's Attention</h1> Tracks an enemy hero, granting bonus %active_cast_range_bonus% cast range on abilities what targets enemy.\n<h1>Пассивное: Aethereal Concentrate</h1> Increases targeted spell, item cast range and grants %cast_range_bonus_per_enemy% cast range per visible enemy."
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_Note0": {
+    "ru": "Passive does not stack."
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_bonus_mana": {
+    "ru": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_cast_range_bonus": {
+    "ru": "+$cast_range"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_angel_lua_bonus_health_regen": {
+    "ru": "+$hp_regen"
+  },
+  "DOTA_Tooltip_modifier_item_eye_of_angel_active_lua": {
+    "ru": "Angel's Attention"
+  },
+  "DOTA_Tooltip_modifier_item_eye_of_angel_active_lua_Description": {
+    "ru": "Abilities's which targets this unit cast range is increased"
+  },
+  "DOTA_Tooltip_ability_item_recipe_helm_of_the_dominator_lua": {
+    "ru": "Рецепт: Helm of the Dominator",
+    "en": "Recipe: Helm of the Dominator"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua": {
+    "ru": "Helm of the Dominator",
+    "en": "Helm of the Dominator"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua_Description": {
+    "ru": "<h1>Пассивное: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect.",
+    "en": "<h1>Passive: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua_Lore": {
+    "ru": "The powerful headpiece of a dead necromancer.",
+    "en": "The powerful headpiece of a dead necromancer."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua_bonus_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_dominator_lua_bonus_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_helm_of_the_overlord_lua": {
+    "ru": "Рецепт: Helm of the Overlord",
+    "en": "Recipe: Helm of the Overlord"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua": {
+    "ru": "Helm of the Overlord",
+    "en": "Helm of the Overlord"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua_Description": {
+    "ru": "<h1>Пассивное: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect.",
+    "en": "<h1>Passive: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua_Lore": {
+    "ru": "The powerful headpiece of a dead necromancer.",
+    "en": "The powerful headpiece of a dead necromancer."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua_bonus_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_the_overlord_lua_bonus_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_helm_of_tyrant_lua": {
+    "ru": "Рецепт: Helm of the Tyrant",
+    "en": "Recipe: Helm of the Tyrant"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua": {
+    "ru": "Helm of the Tyrant",
+    "en": "Helm of the Tyrant"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua_Description": {
+    "ru": "<h1>Пассивное: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect.",
+    "en": "<h1>Passive: Possess</h1>Provides every controlled unit with +%damage_pct_per_primary%%% base attack damage per owner primary attribute, +%health_pct_per_strength%%% health per owner strength, +%hp_regen_per_strength% health regen per owner strength, +%attack_speed_per_agility% attack speed per owner agility, +%armor_per_agility% armor per owner agility, +%spell_amplify_per_intellect%%% spell amplify per intellect."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua_Lore": {
+    "ru": "The powerful headpiece of a dead necromancer.",
+    "en": "The powerful headpiece of a dead necromancer."
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua_bonus_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_helm_of_tyrant_lua_bonus_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_shiva_armageddon_lua": {
+    "ru": "Рецепт: Shiva's Armageddon",
+    "en": "Recipe: Shiva's Armageddon"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua": {
+    "ru": "Shiva's Armageddon",
+    "en": "Shiva's Armageddon"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_Description": {
+    "ru": "<h1>Активное: Armageddon Blast</h1> Emits a freezing wave that causes enemies to take %spell_amp%%% more damage from spells for %resist_debuff_duration% seconds, deals %blast_damage% magical damage and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds and surrounds hero with random icy explosions that slow enemies and deal massive %explosion_damage% + %explosion_damage_per_int% per intellect damage in radius %explosion_radius%. Deals %illusion_multiplier_pct%%% damage to illusions.<br><br>Radius: %blast_radius%\n\n<h1>Пассивное: Freezing Aura</h1> Reduces the attack speed of all enemies by %aura_attack_speed% and all heals, regeneration and lifesteal by %hp_regen_degen_aura%%%. <br><br>Radius: %aura_radius%",
+    "en": "<h1>Active: Armageddon Blast</h1> Emits a freezing wave that causes enemies to take %spell_amp%%% more damage from spells for %resist_debuff_duration% seconds, deals %blast_damage% magical damage and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds and surrounds hero with random icy explosions that slow enemies and deal massive %explosion_damage% + %explosion_damage_per_int% per intellect damage in radius %explosion_radius%. Deals %illusion_multiplier_pct%%% damage to illusions.<br><br>Radius: %blast_radius%\n\n<h1>Passive: Freezing Aura</h1> Reduces the attack speed of all enemies by %aura_attack_speed% and all heals, regeneration and lifesteal by %hp_regen_degen_aura%%%. <br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_Lore": {
+    "ru": "Said to have belonged to a goddess, today it retains much of its former power.",
+    "en": "Said to have belonged to a goddess, today it retains much of its former power."
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_Note0": {
+    "ru": "The wave extends at a speed of %blast_speed% to a max size of %blast_radius%.",
+    "en": "The wave extends at a speed of %blast_speed% to a max size of %blast_radius%."
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_Note1": {
+    "ru": "The Arctic Blast follows its caster.",
+    "en": "The Arctic Blast follows its caster."
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_Note2": {
+    "ru": "Multiple instances of Freezing Aura do not stack.",
+    "en": "Multiple instances of Freezing Aura do not stack."
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_shiva_armageddon_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_modifier_shiva_armageddon_aura_debuff_lua": {
+    "ru": "Freezing Aura",
+    "en": "Freezing Aura"
+  },
+  "DOTA_Tooltip_modifier_shiva_armageddon_aura_debuff_lua_Description": {
+    "ru": "Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and regeneration by %dMODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE%%%.",
+    "en": "Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and regeneration by %dMODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_modifier_shiva_armageddon_blast_lua": {
+    "ru": "Arctic Blast",
+    "en": "Arctic Blast"
+  },
+  "DOTA_Tooltip_modifier_shiva_armageddon_blast_lua_Description": {
+    "ru": "Movement speed slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%.",
+    "en": "Movement speed slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_power_treads_lua": {
+    "ru": "Рецепт: Power Treads",
+    "en": "Recipe: Power Treads"
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua": {
+    "ru": "Power Treads",
+    "en": "Power Treads"
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_Description": {
+    "ru": "<h1>Активное: Switch Attribute</h1>Switches between +%bonus_stat% Strength, +%bonus_stat% Agility, or +%bonus_stat% Intelligence.\nMovement speed bonuses from multiple pairs of boots do not stack.",
+    "en": "<h1>Active: Switch Attribute</h1>Switches between +%bonus_stat% Strength, +%bonus_stat% Agility, or +%bonus_stat% Intelligence.\nMovement speed bonuses from multiple pairs of boots do not stack."
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_Note0": {
+    "ru": "Power Treads can be built using a Belt of Strength, Band of Elvenskin, or a Robe of the Magi.",
+    "en": "Power Treads can be built using a Belt of Strength, Band of Elvenskin, or a Robe of the Magi."
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_Lore": {
+    "ru": "A pair of tough-skinned boots that change to meet the demands of the wearer.",
+    "en": "A pair of tough-skinned boots that change to meet the demands of the wearer."
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_bonus_movement_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_bonus_stat": {
+    "ru": "+$selected_attrib",
+    "en": "+$selected_attrib"
+  },
+  "DOTA_Tooltip_ability_item_power_treads_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_recipe_plague_staff_lua": {
+    "ru": "Рецепт: Plague Staff",
+    "en": "Recipe: Plague Staff"
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua": {
+    "ru": "Plague Staff",
+    "en": "Plague Staff"
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua_Description": {
+    "ru": "<h1>Пассивное: Critical Damage</h1>Grants each spell damage a %crit_chance%%% chance to deal %crit_multiplier%%% damage and make enemy %spell_amp%%% more vulnerable to magic damage for %resist_debuff_duration% seconds.\n\n<h1>Пассивное: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.<br><br>Radius: %aura_radius%",
+    "en": "<h1>Passive: Critical Damage</h1>Grants each spell damage a %crit_chance%%% chance to deal %crit_multiplier%%% damage and make enemy %spell_amp%%% more vulnerable to magic damage for %resist_debuff_duration% seconds.\n\n<h1>Passive: Basilius Aura</h1>Grants %aura_mana_regen% mana regeneration to allies.<br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua_Note0": {
+    "ru": "Critical Damage does not work against buildings.",
+    "en": "Critical Damage does not work against buildings."
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua_bonus_max_mana_percentage": {
+    "ru": "%+$max_mana_percentage",
+    "en": "%+$max_mana_percentage"
+  },
+  "DOTA_Tooltip_ability_item_plague_staff_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_modifier_item_plague_staff_aura_lua": {
+    "ru": "Plague Staff",
+    "en": "Plague Staff"
+  },
+  "DOTA_Tooltip_modifier_item_plague_staff_aura_lua_Description": {
+    "ru": "Granting mana regeneration to allies.",
+    "en": "Granting mana regeneration to allies."
+  },
+  "DOTA_Tooltip_modifier_item_plague_staff_debuff_lua": {
+    "ru": "Magic Weakness",
+    "en": "Magic Weakness"
+  },
+  "DOTA_Tooltip_modifier_item_plague_staff_debuff_lua_Description": {
+    "ru": "Magic resistance decreased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%.",
+    "en": "Magic resistance decreased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_strength_amulet_lua": {
+    "ru": "Рецепт: Strength Amulet",
+    "en": "Recipe: Strength Amulet"
+  },
+  "DOTA_Tooltip_ability_item_strength_amulet_lua": {
+    "ru": "Strength Amulet",
+    "en": "Strength Amulet"
+  },
+  "DOTA_Tooltip_ability_item_strength_amulet_lua_Description": {
+    "ru": "<h1>Активное: Strength Power</h1>Increase your strength by %active_strength_multiplier%%% for next %active_duration% seconds.\n<h1>Пассивное: Strong Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases strength by %bonus_strength_per_charge%, armor by %bonus_armor_per_charge%, health by %bonus_health_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Strength Power</h1>Increase your strength by %active_strength_multiplier%%% for next %active_duration% seconds.\n<h1>Passive: Strong Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases strength by %bonus_strength_per_charge%, armor by %bonus_armor_per_charge%, health by %bonus_health_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death."
+  },
+  "DOTA_Tooltip_ability_item_strength_amulet_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_modifier_item_strength_amulet_active_lua": {
+    "ru": "Strength Power",
+    "en": "Strength Power"
+  },
+  "DOTA_Tooltip_modifier_item_strength_amulet_active_lua_Description": {
+    "ru": "Strength is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%.",
+    "en": "Strength is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_power_amulet_lua": {
+    "ru": "Рецепт: Power Amulet",
+    "en": "Recipe: Power Amulet"
+  },
+  "DOTA_Tooltip_ability_item_power_amulet_lua": {
+    "ru": "Power Amulet",
+    "en": "Power Amulet"
+  },
+  "DOTA_Tooltip_ability_item_power_amulet_lua_Description": {
+    "ru": "<h1>Активное: Amulet Blast</h1> Stun every enemy within the radius for %stun_per_charge% seconds per charge, cannot be higher than %max_stun% seconds. Also heals caster for %heal% + %heal_per_charge% per charge health.\n<h1>Пассивное: Corruption Power</h1> Your attacks reduce the target's armor by %armor_reduction_per_charge% per charge for %armor_reduction_duration% seconds.\n<h1>Пассивное: Power Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases attack damage by %bonus_damage_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Amulet Blast</h1> Stun every enemy within the radius for %stun_per_charge% seconds per charge, cannot be higher than %max_stun% seconds. Also heals caster for %heal% + %heal_per_charge% per charge health.\n<h1>Passive: Corruption Power</h1> Your attacks reduce the target's armor by %armor_reduction_per_charge% per charge for %armor_reduction_duration% seconds.\n<h1>Passive: Power Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases attack damage by %bonus_damage_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death."
+  },
+  "DOTA_Tooltip_ability_item_power_amulet_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_modifier_item_power_amulet_debuff_lua": {
+    "ru": "Power Amulet",
+    "en": "Power Amulet"
+  },
+  "DOTA_Tooltip_modifier_item_power_amulet_debuff_lua_Description": {
+    "ru": "Power Amulet attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
+    "en": "Power Amulet attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_mystic_amulet_lua": {
+    "ru": "Рецепт: Mystic Amulet",
+    "en": "Recipe: Mystic Amulet"
+  },
+  "DOTA_Tooltip_ability_item_mystic_amulet_lua": {
+    "ru": "Mystic Amulet",
+    "en": "Mystic Amulet"
+  },
+  "DOTA_Tooltip_ability_item_mystic_amulet_lua_Description": {
+    "ru": "<h1>Активное: Mystic Release</h1>Deal %active_damage% + %active_damage_pct%%% per charge damage to every nearby enemy. Damage depends on the max health and cannot be higher than %max_active_damage_pct%%%.\n<h1>Пассивное: Mystic Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases intellect by %bonus_intellect_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Mystic Release</h1>Deal %active_damage% + %active_damage_pct%%% per charge damage to every nearby enemy. Damage depends on the max health and cannot be higher than %max_active_damage_pct%%%.\n<h1>Passive: Mystic Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases intellect by %bonus_intellect_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death."
+  },
+  "DOTA_Tooltip_ability_item_mystic_amulet_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_recipe_tarrasque_amulet_lua": {
+    "ru": "Рецепт: Tarrasque Amulet",
+    "en": "Recipe: Tarrasque Amulet"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua": {
+    "ru": "Tarrasque Amulet",
+    "en": "Tarrasque Amulet"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_Description": {
+    "ru": "<h1>Активное: Tarrasque Power</h1>Increase your strength by %active_strength_multiplier%%% for next %active_duration% seconds.\n<h1>Пассивное: Tarrasque Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases strength by %bonus_strength_per_charge%, armor by %bonus_armor_per_charge%, health by %bonus_health_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Tarrasque Power</h1>Increase your strength by %active_strength_multiplier%%% for next %active_duration% seconds.\n<h1>Passive: Tarrasque Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases strength by %bonus_strength_per_charge%, armor by %bonus_armor_per_charge%, health by %bonus_health_per_charge%.<br><br>Max charges: %max_charges%<br>Loses all charges on death."
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_tarrasque_amulet_lua_health_regen_pct": {
+    "ru": "%+Max Health Regen",
+    "en": "%+Max Health Regen"
+  },
+  "DOTA_Tooltip_modifier_item_tarrasque_amulet_active_lua": {
+    "ru": "Tarrasque Power",
+    "en": "Tarrasque Power"
+  },
+  "DOTA_Tooltip_modifier_item_tarrasque_amulet_active_lua_Description": {
+    "ru": "Strength is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%.",
+    "en": "Strength is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_might_amulet_lua": {
+    "ru": "Рецепт: Might Amulet",
+    "en": "Recipe: Might Amulet"
+  },
+  "DOTA_Tooltip_ability_item_might_amulet_lua": {
+    "ru": "Might Amulet",
+    "en": "Might Amulet"
+  },
+  "DOTA_Tooltip_ability_item_might_amulet_lua_Description": {
+    "ru": "<h1>Активное: Amulet Blast</h1> Stun every enemy within the radius for %stun_per_charge% seconds per charge, cannot be higher than %max_stun% seconds. Also heals caster for %heal% + %heal_per_charge% per charge health.\n<h1>Пассивное: Might Pierce</h1>Grants each attack a %pierce_chance%%% chance to bash enemy for %bash_stun% seconds and deal pure attack damage + %pierce_damage% bonus pure damage.\n<h1>Пассивное: Corruption Power</h1> Your attacks reduce the target's armor by %armor_reduction_per_charge% per charge for %armor_reduction_duration% seconds.\n<h1>Пассивное: True Strike</h1>Prevents your attacks from missing.<br>True Strike does not work when attacking enemy structures.\n<h1>Пассивное: Might Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases attack damage by %bonus_damage_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Amulet Blast</h1> Stun every enemy within the radius for %stun_per_charge% seconds per charge, cannot be higher than %max_stun% seconds. Also heals caster for %heal% + %heal_per_charge% per charge health.\n<h1>Passive: Corruption Might</h1> Your attacks reduce the target's armor by %armor_reduction% + %armor_reduction_per_charge% per charge for %armor_reduction_duration% seconds.\n<h1>Passive: Might Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases attack damage by %bonus_damage_per_charge%.<br><br>Max charges: %max_charges%<br>Loses all charges on death."
+  },
+  "DOTA_Tooltip_ability_item_might_amulet_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_might_amulet_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_might_amulet_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_modifier_item_might_amulet_debuff_lua": {
+    "ru": "Power Amulet",
+    "en": "Power Amulet"
+  },
+  "DOTA_Tooltip_modifier_item_might_amulet_debuff_lua_Description": {
+    "ru": "Power Amulet attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
+    "en": "Power Amulet attacks reduced your armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_alaron_amulet_lua": {
+    "ru": "Рецепт: Alaron Amulet",
+    "en": "Recipe: Alaron Amulet"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua": {
+    "ru": "Alaron Amulet",
+    "en": "Alaron Amulet"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_Description": {
+    "ru": "<h1>Активное: Alaron Release</h1>Deal %active_damage% + %active_damage_pct%%% per charge damage to every nearby enemy. Damage depends on the max health and cannot be higher than %max_active_damage_pct%%%<br><br>Increases Spell Lifesteal to %active_spell_lifesteal%%%. Lasts %active_duration% seconds.\n<h1>Пассивное: Alaron Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases intellect by %bonus_intellect_per_charge%.<br><br>Max charges: %max_charges%<br>Loses half charges on death.",
+    "en": "<h1>Active: Alaron Release</h1>Deal %active_damage% + %active_damage_pct%%% per charge damage to every nearby enemy. Damage depends on the max health and cannot be higher than %max_active_damage_pct%%%.\n<h1>Passive: Alaron Collector</h1>Grants one charge for every activated rune, two charges for every picked up lotus, one charge per every captured watcher. Every charge increases intellect by %bonus_intellect_per_charge%.<br><br>Max charges: %max_charges%<br>Loses all charges on death."
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_bonus_intellect": {
+    "ru": "+$int",
+    "en": "+$int"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_aoe_bonus": {
+    "ru": "+$aoe_bonus"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_mana_regen_amplify_pct": {
+    "ru": "%+Mana Regen Amplification",
+    "en": "%+Mana Regen Amplification"
+  },
+  "DOTA_Tooltip_ability_item_alaron_amulet_lua_spell_lifesteal": {
+    "ru": "%+$spell_lifesteal"
+  },
+  "DOTA_Tooltip_ability_item_recipe_azrael_crossbow_lua": {
+    "ru": "Рецепт: Azrael Crossbow",
+    "en": "Recipe: Azrael Crossbow"
+  },
+  "DOTA_Tooltip_ability_item_azrael_crossbow_lua": {
+    "ru": "Azrael Crossbow",
+    "en": "Azrael Crossbow"
+  },
+  "DOTA_Tooltip_ability_item_azrael_crossbow_lua_Description": {
+    "ru": "<h1>Пассивное: Critical Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage.\n\n<h1>Пассивное: Double Shot</h1> The attacks of ranged heroes strike the enemy twice.",
+    "en": "<h1>Passive: Critical Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage.\n\n<h1>Passive: Double Shot</h1> The attacks of ranged heroes strike the enemy twice."
+  },
+  "DOTA_Tooltip_ability_item_azrael_crossbow_lua_lore": {
+    "ru": "Weapon of the Burning Legion.",
+    "en": "Weapon of the Burning Legion."
+  },
+  "DOTA_Tooltip_ability_item_azrael_crossbow_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_icarus_daedalus_lua": {
+    "ru": "Рецепт: Icarus & Daedalus",
+    "en": "Recipe: Icarus & Daedalus"
+  },
+  "DOTA_Tooltip_ability_item_icarus_daedalus_lua": {
+    "ru": "Icarus & Daedalus",
+    "en": "Icarus & Daedalus"
+  },
+  "DOTA_Tooltip_ability_item_icarus_daedalus_lua_Description": {
+    "ru": "<h1>Пассивное: Critical Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage.",
+    "en": "<h1>Passive: Critical Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_multiplier%%% damage."
+  },
+  "DOTA_Tooltip_ability_item_icarus_daedalus_lua_lore": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_icarus_daedalus_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_amaliels_cuirass_lua": {
+    "ru": "Рецепт: Amaliels Cuirass",
+    "en": "Recipe: Amaliels Cuirass"
+  },
+  "DOTA_Tooltip_ability_item_amaliels_cuirass_lua": {
+    "ru": "Amaliels Cuirass",
+    "en": "Amaliels Cuirass"
+  },
+  "DOTA_Tooltip_ability_item_amaliels_cuirass_lua_Description": {
+    "ru": "<h1>Пассивное: Amaliels Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%",
+    "en": "<h1>Passive: Amaliels Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_amaliels_cuirass_lua_Lore": {
+    "ru": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed.",
+    "en": "Forged in the depths of the nether reaches, this hellish mail provides an army with increased armor and attack speed."
+  },
+  "DOTA_Tooltip_ability_item_amaliels_cuirass_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_amaliels_cuirass_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_modifier_item_amaliels_cuirass_lua_aura_debuff": {
+    "ru": "Amaliels Cuirass",
+    "en": "Amaliels Cuirass"
+  },
+  "DOTA_Tooltip_modifier_item_amaliels_cuirass_lua_aura_debuff_Description": {
+    "ru": "Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%",
+    "en": "Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
+  },
+  "DOTA_Tooltip_modifier_item_amaliels_cuirass_lua_aura_buff": {
+    "ru": "Amaliels Cuirass",
+    "en": "Amaliels Cuirass"
+  },
+  "DOTA_Tooltip_modifier_item_amaliels_cuirass_lua_aura_buff_Description": {
+    "ru": "Armor enhanced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nAttack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%.",
+    "en": "Armor enhanced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nAttack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_reapers_mask_lua": {
+    "ru": "Рецепт: Reaper's Mask",
+    "en": "Recipe: Reaper's Mask"
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua": {
+    "ru": "Reaper's Mask",
+    "en": "Reaper's Mask"
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua_Description": {
+    "ru": "<h1>Пассивное: Vladmir's Aura</h1>Grants %lifesteal_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies. Lifesteal from creeps is reduced by %creep_lifesteal_reduction_pct%%%.<br><br>Radius: %aura_radius%",
+    "en": "<h1>Passive: Vladmir's Aura</h1>Grants %lifesteal_aura%%% lifesteal, %damage_aura%%% bonus damage, %mana_regen_aura% mana regeneration, and %armor_aura% armor to nearby allies. Lifesteal from creeps is reduced by %creep_lifesteal_reduction_pct%%%.<br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua_Lore": {
+    "ru": "An eerie mask that is haunted with the malice of a fallen vampire.",
+    "en": "An eerie mask that is haunted with the malice of a fallen vampire."
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_reapers_mask_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_recipe_sacred_butterfly_lua": {
+    "ru": "Рецепт: Sacred Butterfly",
+    "en": "Recipe: Sacred Butterfly"
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua": {
+    "ru": "Sacred Butterfly",
+    "en": "Sacred Butterfly"
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_lore": {
+    "ru": "A Sacred weapon which provides an incredible amount of dexterity in combat.",
+    "en": "A Sacred weapon which provides an incredible amount of dexterity in combat."
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_Note0": {
+    "ru": "Stacks diminishingly with other sources of Evasion.",
+    "en": "Stacks diminishingly with other sources of Evasion."
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_bonus_evasion": {
+    "ru": "%+$evasion",
+    "en": "%+$evasion"
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_bonus_attack_speed_pct": {
+    "ru": "%+$attack_pct",
+    "en": "%+$attack_pct"
+  },
+  "DOTA_Tooltip_ability_item_sacred_butterfly_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_burning_butterfly_lua": {
+    "ru": "Recipe: Burning Butterfly",
+    "en": "Recipe: Burning Butterfly"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua": {
+    "ru": "Burning Butterfly",
+    "en": "Burning Butterfly"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_lore": {
+    "ru": "A burning weapon which provides an incredible amount of dexterity in combat.",
+    "en": "A burning weapon which provides an incredible amount of dexterity in combat."
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_Note0": {
+    "ru": "Stacks diminishingly with other sources of Evasion.",
+    "en": "Stacks diminishingly with other sources of Evasion."
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_bonus_evasion": {
+    "ru": "%+$evasion",
+    "en": "%+$evasion"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_bonus_attack_speed_pct": {
+    "ru": "%+$attack_pct",
+    "en": "%+$attack_pct"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_burning_butterfly_lua_backtrack_chance": {
+    "ru": "%Backtrack",
+    "en": "%Backtrack chance:"
+  },
+  "DOTA_Tooltip_ability_item_recipe_eye_of_skadi_2_lua": {
+    "ru": "Рецепт: Eye of Skadi",
+    "en": "Recipe: Eye of Skadi"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua": {
+    "ru": "Eye of Skadi",
+    "en": "Eye of Skadi"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua_Description": {
+    "ru": "<h1>Пассивное: Cold Attack</h1> Attacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by %heal_reduction%%% for %cold_duration% seconds. Slows enemy units by %cold_slow%%% movement speed and by %cold_attack_slow% attack speed.",
+    "en": "<h1>Passive: Cold Attack</h1> Attacks lower enemy movement and attack speed and reduces heals, health regeneration, lifesteal and spell lifesteal by %heal_reduction%%% for %cold_duration% seconds. Slows enemy units by %cold_slow%%% movement speed and by %cold_attack_slow% attack speed."
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua_Lore": {
+    "ru": "Extremely rare artifact, guarded by the azure dragons.",
+    "en": "Extremely rare artifact, guarded by the azure dragons."
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_eye_of_skadi_2_lua_bonus_mana": {
+    "ru": "+$mana",
+    "en": "+$mana"
+  },
+  "DOTA_Tooltip_modifier_item_eye_of_skadi_lua_slow": {
+    "ru": "Eye of Skadi Cold Attack",
+    "en": "Eye of Skadi Cold Attack"
+  },
+  "DOTA_Tooltip_modifier_item_eye_of_skadi_lua_slow_Description": {
+    "ru": "Heals, health regeneration, lifesteal and spell lifesteal reduced by %dMODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE%%%. Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%.",
+    "en": "Heals, health regeneration, lifesteal and spell lifesteal reduced by %dMODIFIER_PROPERTY_LIFESTEAL_AMPLIFY_PERCENTAGE%%%. Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_blaze_lance_lua": {
+    "ru": "Рецепт: Blaze Lance",
+    "en": "Recipe: Blaze Lance"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua": {
+    "ru": "Blaze Lance",
+    "en": "Blaze Lance"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_Description": {
+    "ru": "<h1>Активное: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Пассивное: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Пассивное: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)",
+    "en": "<h1>Active: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Passive: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_Lore": {
+    "ru": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest.",
+    "en": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest."
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_Note0": {
+    "ru": "Effects of multiple Blaze Lance do not stack.",
+    "en": "Effects of multiple Blaze Lance do not stack."
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_lua_base_attack_range": {
+    "ru": "+$attack_range",
+    "en": "+$attack_range"
+  },
+  "DOTA_Tooltip_ability_item_recipe_blaze_lance_2_lua": {
+    "ru": "Рецепт: Blaze Lance",
+    "en": "Recipe: Blaze Lance"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua": {
+    "ru": "Blaze Lance",
+    "en": "Blaze Lance"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_Description": {
+    "ru": "<h1>Активное: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Пассивное: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Пассивное: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)",
+    "en": "<h1>Active: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Passive: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_Lore": {
+    "ru": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest.",
+    "en": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest."
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_Note0": {
+    "ru": "Effects of multiple Blaze Lance do not stack.",
+    "en": "Effects of multiple Blaze Lance do not stack."
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_base_attack_range": {
+    "ru": "+$attack_range",
+    "en": "+$attack_range"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_movement_speed_percent_bonus": {
+    "ru": "%+$move_speed",
+    "en": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_status_resistance": {
+    "ru": "%+Status Resistance",
+    "en": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_blaze_lance_2_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp",
+    "en": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_demons_lance_lua": {
+    "ru": "Рецепт: Demons Lance",
+    "en": "Recipe: Demons Lance"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua": {
+    "ru": "Demons Lance",
+    "en": "Demons Lance"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_Description": {
+    "ru": "<h1>Активное: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Пассивное: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Пассивное: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)\n<h1>Пассивное: Demons Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% and slows enemy by %slow% for %duration% seconds. Deals %damage_per_second% damage per second.\n<h1>Пассивное: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%.",
+    "en": "<h1>Active: Chop Trees</h1>Destroy a trees in radius.<br><br>Cast Range: %abilitycastrange%\n<h1>Passive: Explode</h1> Every attack has chance %explosion_chance%%% to create explosion on every target nearby main target in %explosion_radius% radius and deal magic %explosion_damage% damage.\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %damage_bonus% for melee heroes, and %damage_bonus_ranged% for ranged.\n<h1>Passive: Splash</h1>Causes owner's attacks to splinter on the target, hitting up to %split_count% nearby units within a %split_range% range normal attacks that deal %splash_damage%%% damage. (Ranged only)\n<h1>Passive: Demons Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% for %duration% seconds.\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%."
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_Lore": {
+    "ru": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest.",
+    "en": "The lance of an old warsmith was made from wyvern's skin, it allows you to effectively maneuver the forest."
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_Note0": {
+    "ru": "Effects of multiple Blaze Lance do not stack.",
+    "en": "Effects of multiple Blaze Lance do not stack."
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_base_attack_range": {
+    "ru": "+$attack_range",
+    "en": "+$attack_range"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_movement_speed_percent_bonus": {
+    "ru": "%+$move_speed",
+    "en": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_status_resistance": {
+    "ru": "%+Status Resistance",
+    "en": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_demons_lance_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp",
+    "en": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_angels_desolator_lua": {
+    "ru": "Рецепт: Angels Desolator",
+    "en": "Recipe: Angels Desolator"
+  },
+  "DOTA_Tooltip_ability_item_angels_desolator_lua": {
+    "ru": "Angels Desolator",
+    "en": "Angels Desolator"
+  },
+  "DOTA_Tooltip_ability_item_angels_desolator_lua_Description": {
+    "ru": "<h1>Пассивное: Angelic Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% and slows enemy by %slow% for %duration% seconds. Deals %damage_per_second% damage per second.\n<h1>Пассивное: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%.",
+    "en": "<h1>Passive: Angelic Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% for %duration% seconds.\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%."
+  },
+  "DOTA_Tooltip_ability_item_angels_desolator_lua_Lore": {
+    "ru": "A wicked weapon, used in torturing political criminals.",
+    "en": "A wicked weapon, used in torturing political criminals."
+  },
+  "DOTA_Tooltip_ability_item_angels_desolator_lua_Note0": {
+    "ru": "Armor reduction works on buildings.",
+    "en": "Armor reduction works on buildings."
+  },
+  "DOTA_Tooltip_ability_item_angels_desolator_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_damned_swords_lua": {
+    "ru": "Рецепт: Damned Swords",
+    "en": "Recipe: Damned Swords"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua": {
+    "ru": "Damned Swords",
+    "en": "Damned Swords"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_Note0": {
+    "ru": "Yasha based movement speed bonuses from multiple items do not stack.",
+    "en": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_damned_swords_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_recipe_burning_blades_lua": {
+    "ru": "Рецепт: Burning Blades",
+    "en": "Recipe: Burning Blades"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua": {
+    "ru": "Burning Blades",
+    "en": "Burning Blades"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_Description": {
+    "ru": "<h1>Пассивное: Burning Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% and slows enemy by %slow% for %duration% seconds. Deals %damage_per_second% damage per second.\n<h1>Пассивное: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%.",
+    "en": "<h1>Passive: Burning Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% for %duration% seconds.\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%."
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_Note0": {
+    "ru": "Yasha based movement speed bonuses from multiple items do not stack.",
+    "en": "Yasha based movement speed bonuses from multiple items do not stack."
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_Note1": {
+    "ru": "Armor reduction works on buildings.",
+    "en": "Armor reduction works on buildings."
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_bonus_strength": {
+    "ru": "+$str",
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_bonus_agility": {
+    "ru": "+$agi",
+    "en": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_bonus_movement_speed": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_burning_blades_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_qfury_lua": {
+    "ru": "Рецепт: Quelling Fury",
+    "en": "Recipe: Quelling Fury"
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua": {
+    "ru": "Quelling Fury",
+    "en": "Quelling Fury"
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_Description": {
+    "ru": "<h1>Активное: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n\n<h1>Пассивное: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)",
+    "en": "<h1>Active: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus%. \n\n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target."
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_Lore": {
+    "ru": "The axe of a fallen gnome, it allows you to effectively maneuver the forest.",
+    "en": "The axe of a fallen gnome, it allows you to effectively maneuver the forest."
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_Note0": {
+    "ru": "Cleave damage goes through spell immunity.",
+    "en": "Cleave damage goes through spell immunity."
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_Note1": {
+    "ru": "If multiple sources of Cleave are present, each Cleave's damage is applied separately.",
+    "en": "If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_qfury_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_recipe_bfury_2_lua": {
+    "ru": "Рецепт: Battle Fury",
+    "en": "Recipe: Battle Fury"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua": {
+    "ru": "Battle Fury",
+    "en": "Battle Fury"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_Description": {
+    "ru": "<h1>Активное: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n\n<h1>Пассивное: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)",
+    "en": "<h1>Active: Chop Tree</h1> Destroy a trees in %chop_radius% radius.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus%. \n\n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target."
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_Lore": {
+    "ru": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
+    "en": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_Note0": {
+    "ru": "Cleave damage goes through spell immunity.",
+    "en": "Cleave damage goes through spell immunity."
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_Note1": {
+    "ru": "If multiple sources of Cleave are present, each Cleave's damage is applied separately.",
+    "en": "If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_movement_speed_percent_bonus": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_recipe_demons_fury_lua": {
+    "ru": "Рецепт: Demons Fury",
+    "en": "Recipe: Demons Fury"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua": {
+    "ru": "Demons Fury",
+    "en": "Demons Fury"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_Description": {
+    "ru": "<h1>Активное: Chop Tree</h1> Destroy a target tree.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Пассивное: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus% for melee heroes, and %quelling_bonus_ranged% for ranged. \n\n<h1>Пассивное: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target. Deals %cleave_damage_percent_creep%%% against creeps. (Melee Only)\n<h1>Пассивное: Demons Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% and slows enemy by %slow% for %duration% seconds. Deals %damage_per_second% damage per second.\n<h1>Пассивное: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%.",
+    "en": "<h1>Active: Chop Tree</h1> Destroy a trees in %chop_radius% radius.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus%. \n\n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target.\n<h1>Passive: Demons Corruption</h1> Your attacks reduce the target's armor by %armor_reduction% for %duration% seconds.\n<h1>Passive: Soul Stealer</h1> Desolator gains +%bonus_damage_per_kill% damage every time an enemy hero dies while affected by Corruption, to a maximum of %max_damage%."
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_Lore": {
+    "ru": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
+    "en": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_Note0": {
+    "ru": "Cleave damage goes through spell immunity.",
+    "en": "Cleave damage goes through spell immunity."
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_Note1": {
+    "ru": "If multiple sources of Cleave are present, each Cleave's damage is applied separately.",
+    "en": "If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_damage": {
+    "ru": "+$damage",
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_agility": {
+    "ru": "+$agi"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_attack_speed": {
+    "ru": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_movement_speed_percent_bonus": {
+    "ru": "%+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_strength": {
+    "ru": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_status_resistance": {
+    "ru": "%+Status Resistance"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_hp_regen_amp": {
+    "ru": "%+Health Regen and Lifesteal Amp"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_health_bonus": {
+    "ru": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_recipe_pavise_cape_lua": {
+    "ru": "Рецепт: Pavise Cape",
+    "en": "Recipe: Pavise Cape"
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua": {
+    "ru": "Pavise Cape",
+    "en": "Pavise Cape"
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua_Description": {
+    "ru": "<h1>Активное: Glimmer Protect</h1> After a %initial_fade_delay% second delay, grants invisibility, %active_movement_speed% movement speed and a damage barrier that absorbs up to %barrier_block% damage to you or a target allied unit for %duration% seconds. <br><br>Range: %abilitycastrange%<br><br>Can be cast while channeling.",
+    "en": "<h1>Active: Glimmer Protect</h1> After a %initial_fade_delay% second delay, grants invisibility, %active_movement_speed% movement speed and a damage barrier that absorbs up to %barrier_block% damage to you or a target allied unit for %duration% seconds. <br><br>Range: %abilitycastrange%<br><br>Can be cast while channeling."
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_pavise_cape_lua_bonus_magical_armor": {
+    "ru": "%+$spell_resist",
+    "en": "%+$spell_resist"
+  },
+  "DOTA_Tooltip_modifier_item_pavise_cape_lua_active": {
+    "ru": "Pavise",
+    "en": "Pavise"
+  },
+  "DOTA_Tooltip_modifier_item_pavise_cape_lua_active_Description": {
+    "ru": "Absorbing damage. Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%.",
+    "en": "Absorbing damage. Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%."
+  },
+  "DOTA_Tooltip_ability_item_recipe_mantlet_lua": {
+    "ru": "Рецепт: Mantlet",
+    "en": "Recipe: Mantlet"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua": {
+    "ru": "Mantlet",
+    "en": "Mantlet"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_Description": {
+    "ru": "<h1>Активное: Mass Protect</h1>Grants allies a physical damage barrier that absorbs %active_absorb% damage. Duration: %active_duration%s\n<h1>Пассивное: Block</h1>Grants a %block_chance%%% chance to block %damage_block% damage from incoming attacks.",
+    "en": "<h1>Active: Mass Protect</h1>Grants allies a physical damage barrier that absorbs %active_absorb% damage. Duration: %active_duration%s\n<h1>Passive: Block</h1>Grants a %block_chance%%% chance to block %damage_block% damage from incoming attacks."
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_Note0": {
+    "ru": "Multiple sources of damage block do not stack.",
+    "en": "Multiple sources of damage block do not stack."
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_bonus_armor": {
+    "ru": "+$armor",
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_bonus_health_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_mantlet_lua_bonus_mana_regen": {
+    "ru": "+$mana_regen",
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_modifier_item_mantlet_lua_active": {
+    "ru": "Mantlet",
+    "en": "Mantlet"
+  },
+  "DOTA_Tooltip_modifier_item_mantlet_lua_active_Description": {
+    "ru": "Absorbing physical damage.",
+    "en": "Absorbing physical damage."
+  },
+  "DOTA_Tooltip_ability_item_recipe_angels_locket_lua": {
+    "ru": "Рецепт: Angels Locket",
+    "en": "Recipe: Angels Locket"
+  },
+  "DOTA_Tooltip_ability_item_angels_locket_lua": {
+    "ru": "Angels Locket",
+    "en": "Angels Locket"
+  },
+  "DOTA_Tooltip_ability_item_angels_locket_lua_Description": {
+    "ru": "<h1>Активное: Healing Enlightment</h1>Applies a buff to ally, which heals him %buff_heal_per_heal% health per every gained heal from allies. Duration: %buff_duration%s\n<h1>Пассивное: Angels Blessing</h1>Amplifies heals you provide by %heal_increase%%%.\n\n<h1>Пассивное: Regeneration Aura</h1>Grants %aura_health_regen% health regeneration to allies.<br><br>Radius: %aura_radius%",
+    "en": "<h1>Active: Healing Enlightment</h1>Applies a buff to ally, which heals him %buff_heal_per_heal% health per every gained heal from allies. Duration: %buff_duration%s\n<h1>Passive: Angels Blessing</h1>Amplifies heals you provide by %heal_increase%%%.\n\n<h1>Passive: Regeneration Aura</h1>Grants %aura_health_regen% health regeneration to allies.<br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_angels_locket_lua_bonus_all_stats": {
+    "ru": "+$all",
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_modifier_item_angels_locket_aura_lua": {
+    "ru": "Angels Locket Aura",
+    "en": "Angels Locket Aura"
+  },
+  "DOTA_Tooltip_modifier_item_angels_locket_aura_lua_Description": {
+    "ru": "Regenerating %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% HP per second.",
+    "en": "Regenerating %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% HP per second."
+  },
+  "DOTA_Tooltip_modifier_item_angels_locket_buff_lua": {
+    "ru": "Healing Arcane",
+    "en": "Healing Arcane"
+  },
+  "DOTA_Tooltip_modifier_item_angels_locket_buff_lua_Description": {
+    "ru": "Heals when unit gains heal from ally.",
+    "en": "Heals when unit gains heal from ally."
+  },
+  "DOTA_Tooltip_ability_item_third_eye_lua": {
+    "ru": "Third Eye",
+    "en": "Third Eye"
+  },
+  "DOTA_Tooltip_ability_item_third_eye_lua_Description": {
+    "ru": "<h1>Использование: Consume</h1> Grants the ability to see invisible units and wards to any allied vision within %radius% range of its carrier for %duration% seconds, can be stacked up to %max_stacks% times.<br><br>Loses stack on death.",
+    "en": "<h1>Use: Consume</h1> Grants the ability to see invisible units and wards to any allied vision within %radius% range of its carrier for %duration% seconds, can be stacked up to %max_stacks% times.<br><br>Loses stack on death."
+  },
+  "DOTA_Tooltip_modifier_item_third_eye_lua": {
+    "ru": "Third Eye",
+    "en": "Third Eye"
+  },
+  "DOTA_Tooltip_modifier_item_third_eye_lua_Description": {
+    "ru": "Provides True Sight",
+    "en": "Provides True Sight"
+  },
+  "DOTA_Tooltip_ability_item_satchel_Description": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_satchel_xp_gain": {
+    "ru": "%+XP Gain",
+    "en": "%+XP Gain"
+  },
+  "DOTA_Tooltip_ability_item_overflowing_elixir_Description": {
+    "ru": "<h1>Активное: Regenerate</h1>Restores %health% health, and %mana% mana over %duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n<h1>Пассивное:  Store Rune</h1>Runes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 120 seconds.",
+    "en": "<h1>Active: Regenerate</h1>Restores %health% health, and %mana% mana over %duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n<h1>Passive:  Store Rune</h1>Runes can be stored in the bottle for later use by right-clicking them. Unused runes will automatically activate after 120 seconds."
+  },
+  "DOTA_Tooltip_ability_item_assassins_dagger_Description": {
+    "ru": "<h1>Пассивное: Assassin's Strike</h1>Empowers your next attack, causing it to deal %bonus_damage% damage.",
+    "en": "<h1>Passive: Assassin's Strike</h1>Empowers your next attack, causing it to deal %bonus_damage% damage."
+  },
+  "DOTA_Tooltip_ability_item_assassins_dagger_bonus_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_light_robes_attack_speed": {
+    "ru": "+$attack",
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_light_robes_health_penalty": {
+    "ru": "-<font color='#e03e2e'>Health</font>",
+    "en": "-<font color='#e03e2e'>Health</font>"
+  },
+  "DOTA_Tooltip_ability_item_venom_gland_Description": {
+    "ru": "<h1>Пассивное: Toxin Attack</h1>Attacks reduces enemy heals, health regeneration, lifesteal, spell lifesteal by %degen%%% and deals %damage% damage per second for %float% seconds.",
+    "en": "<h1>Passive: Toxin Attack</h1>Attacks reduces enemy heals, health regeneration, lifesteal, spell lifesteal by %degen%%% and deals %damage% damage per second for %float% seconds."
+  },
+  "DOTA_Tooltip_ability_item_venom_gland_primary_attribute": {
+    "ru": "+$primary_attribute",
+    "en": "+$primary_attribute"
+  },
+  "DOTA_Tooltip_ability_item_venom_gland_debuff_amp": {
+    "ru": "%+$debuff_amp",
+    "en": "%+$debuff_amp"
+  },
+  "DOTA_Tooltip_ability_item_venom_gland_damage": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_venom_gland_degen": {
+    "ru": "",
+    "en": ""
+  },
+  "DOTA_Tooltip_ability_item_gladiator_helm_Description": {
+    "ru": "<h1>Passive</h1>Upon taking hero damage, you gains %damage% damage, %armor% armor, %movement_speed% movement speed for %duration% seconds.",
+    "en": "<h1>Passive: Gladiator's Inspiration</h1>Upon taking hero damage, you gains %damage% damage, %armor% armor, %movement_speed% movement speed for %duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_sample_picker_Description": {
+    "ru": "<h1>Пассивное: Thief's Hand</h1>Causes your next attack to steal %base_gold%+%gold_per_level% per level gold.",
+    "en": "<h1>Passive: Thief's Hand</h1>Causes your next attack to steal %base_gold%+%gold_per_level% per level gold."
+  },
+  "DOTA_Tooltip_ability_item_sample_picker_strength_penalty": {
+    "ru": "-<font color='#e03e2e'>Strength</font>",
+    "en": "-<font color='#e03e2e'>Strength</font>"
+  },
+  "DOTA_Tooltip_ability_item_icarus_wings_Description": {
+    "ru": "<h1>Активное: Fly</h1>Grants your hero unobstructive movement and vision for %duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost and hero is slows by %slow%%% for next %slow_duration% seconds.",
+    "en": "<h1>Active: Fly</h1>Grants your hero unobstructive movement and vision for %duration% seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost and hero is slows by %slow%%% for next %slow_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_icarus_wings_move_speed": {
+    "ru": "+$move_speed",
+    "en": "+$move_speed"
+  },
+  "DOTA_Tooltip_ability_item_fortitude_ring_Description": {
+    "ru": "<h1>Активное: Block</h1>Your hero takes %damage_reduction%%% less damage from any source for %damage_reduction_duration% seconds.",
+    "en": "<h1>Active: Block</h1>Your hero takes %damage_reduction%%% less damage from any source for %damage_reduction_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_fortitude_ring_bonus_health": {
+    "ru": "+$health",
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_fortitude_ring_hp_regen": {
+    "ru": "+$hp_regen",
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_mechanical_arm_lua": {
+    "ru": "Mechanical Arm",
+    "en": "Mechanical Arm"
+  },
+  "DOTA_Tooltip_ability_item_mechanical_arm_lua_Description": {
+    "ru": "<h1>Пассивное: Bash</h1>Grants a %stun_chance%%% chance on hit to stun the target for %stun_duration% seconds.",
+    "en": "<h1>Passive: Bash</h1>Grants a %stun_chance%%% chance on hit to stun the target for %stun_duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_mechanical_arm_lua_bat": {
+    "ru": "BASE ATTACK TIME:",
+    "en": "BASE ATTACK TIME:"
+  },
+  "DOTA_Tooltip_modifier_techies_stasis_trap_lua_root": {
+    "ru": "Stasis Trap Root",
+    "en": "Stasis Trap Root"
+  },
+  "DOTA_Tooltip_modifier_techies_stasis_trap_lua_root_Description": {
+    "ru": "You found one of the Techies' Stasis Traps!",
+    "en": "You found one of the Techies' Stasis Traps!"
+  },
+  "DOTA_Tooltip_modifier_techies_minefield_sign_lua_detection": {
+    "ru": "Minefield Sign",
+    "en": "Minefield Sign"
+  },
+  "DOTA_Tooltip_modifier_techies_minefield_sign_lua_detection_Description": {
+    "ru": "Hidden by the Techies' Minefield Sign.",
+    "en": "Hidden by the Techies' Minefield Sign."
+  },
+  "DOTA_Tooltip_modifier_phantom_assassin_blur_lua_smoke": {
+    "ru": "Blur"
+  },
+  "DOTA_Tooltip_modifier_phantom_assassin_blur_lua_smoke_Description": {
+    "ru": "Размывает свои очертания, пропадая из виду противника."
+  },
+  "DOTA_Tooltip_modifier_drow_ranger_marksmanship_lua_aura": {
+    "ru": "Marksmanship"
+  },
+  "DOTA_Tooltip_modifier_drow_ranger_marksmanship_lua_aura_Description": {
+    "ru": "Granting %dMODIFIER_PROPERTY_STATS_AGILITY_BONUS% bonus agility."
+  },
+  "DOTA_Tooltip_modifier_monkey_king_wukongs_command_buff_lua": {
+    "ru": "Wukong's Command",
+    "en": "Wukong's Command"
+  },
+  "DOTA_Tooltip_modifier_monkey_king_wukongs_command_buff_lua_Description": {
+    "ru": "Bonus Armor",
+    "en": "Bonus Armor"
+  },
+  "DOTA_Tooltip_modifier_legion_commander_moment_of_courage_lifesteal_lua": {
+    "ru": "Moment of Courage"
+  },
+  "DOTA_Tooltip_modifier_legion_commander_moment_of_courage_lifesteal_lua_Description": {
+    "ru": "The next attack will have maximum attack speed."
+  },
+  "DOTA_Tooltip_modifier_lina_fiery_soul_lua": {
+    "ru": "Fiery Soul"
+  },
+  "DOTA_Tooltip_modifier_lina_fiery_soul_lua_Description": {
+    "ru": "Attack Speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and Movement Speed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+  },
+  "DOTA_Tooltip_modifier_earthshaker_enchant_totem_lua": {
+    "ru": "Enchant Totem",
+    "en": "Enchant Totem"
+  },
+  "DOTA_Tooltip_modifier_earthshaker_enchant_totem_lua_Description": {
+    "ru": "Next attack will deal %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% increased damage",
+    "en": "Next attack will deal %dMODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE%%% increased damage"
+  },
+  "DOTA_Tooltip_modifier_earthshaker_aftershock_active_lua": {
+    "ru": "Aftershock"
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_buff": {
+    "ru": "Equilibrium",
+    "en": "Equilibrium"
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_buff_Description": {
+    "ru": "Урон от заклинаний восстанавливает ману и замедляет врагов.",
+    "en": "Your spell damage steals mana and slows your enemies."
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_debuff": {
+    "ru": "Equilibrium",
+    "en": "Equilibrium"
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_debuff_Description": {
+    "ru": "Передвижение замедлено на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%.",
+    "en": "Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+  },
+  "DOTA_Item_Build_Potions": {
+    "ru": "Зелья",
+    "en": "Potions"
+  },
+  "DOTA_Item_Build_Mage": {
+    "ru": "Маг",
+    "en": "Mage"
+  },
+  "DOTA_Item_Build_Carry": {
+    "ru": "Керри",
+    "en": "Carry"
+  },
+  "DOTA_Item_Build_Ganker": {
+    "ru": "Ганкер",
+    "en": "Ganker"
+  },
+  "DOTA_Item_Build_Ascention": {
+    "ru": "Возвышение",
+    "en": "Ascension"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_2_mana_regen": {
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_3_bonus_mana_regen": {
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_aether_lens_4_bonus_mana_regen": {
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_mana_heart2_Lore": {
+    "en": "Magic knows no bounds when every beat of the heart restores mana."
+  },
+  "DOTA_Tooltip_ability_item_durandal_period_dmg": {
+    "en": "SOUL BURN:<br>• DAMAGE PER SECOND:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_aura_miss": {
+    "en": "%• MISS CHANCE:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_aura_range": {
+    "en": "• AURA RADIUS:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_aura_resist": {
+    "en": "%• MAGICAL RESISTANCE REDUCTION IN AURA:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_damage": {
+    "en": "MAGICAL BURST:<br>• DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_duration": {
+    "en": "BLIND:<br>• DURATION:"
+  },
+  "DOTA_Tooltip_ability_item_durandal_miss": {
+    "en": "%• MISS CHANCE WHILE BLINDED:"
+  },
+  "DOTA_Tooltip_ability_item_recipe_demons_claw_lua": {
+    "en": "Recipe: Demon's Claw"
+  },
+  "DOTA_Tooltip_ability_item_demons_claw_lua": {
+    "en": "Demon's Claw"
+  },
+  "DOTA_Tooltip_ability_item_demons_claw_lua_bonus_damage": {
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_recipe_bfury_lua": {
+    "en": "Recipe: Battle Fury"
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua": {
+    "en": "Battle Fury"
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_Description": {
+    "en": "<h1>Active: Chop Tree</h1> Destroy a trees in %chop_radius% radius.<br><br>Cast Range: %abilitycastrange%\n\n<h1>Passive: Quell</h1> Increases attack damage against non-hero units by %quelling_bonus%. \n\n<h1>Passive: Cleave</h1> Deals %cleave_damage_percent%%% of attack damage as physical damage in a cone up to %cleave_distance% around the target."
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_Lore": {
+    "en": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once."
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_Note0": {
+    "en": "Cleave damage goes through spell immunity."
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_Note1": {
+    "en": "If multiple sources of Cleave are present, each Cleave's damage is applied separately."
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_bonus_damage": {
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_bonus_health_regen": {
+    "en": "+$hp_regen"
+  },
+  "DOTA_Tooltip_ability_item_bfury_lua_bonus_mana_regen": {
+    "en": "+$mana_regen"
+  },
+  "DOTA_Tooltip_ability_item_bfury_2_lua_bonus_all_stats": {
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_demons_fury_lua_bonus_all_stats": {
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua": {
+    "en": "Mask of Rage"
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua_Description": {
+    "en": "<h1>Active: Rage</h1>Gives %berserk_bonus_attack_speed% attack speed, %berserk_bonus_movement_speed% movement speed and deals %berserk_hp_leech_percent%%% damage of target's max health, but reduces your armor by %berserk_armor_reduction% and silences you.  Lasts %berserk_duration% seconds.\n\n<h1>Passive: Lifesteal</h1>Heals the attacker for a percentage of attack damage dealt."
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua_Lore": {
+    "en": "Once this mask is worn, its bearer becomes an uncontrollable aggressive force."
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua_bonus_attack_speed": {
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua_bonus_damage": {
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_mask_of_rage_lua_lifesteal_percent": {
+    "en": "%+$lifesteal"
+  },
+  "DOTA_Tooltip_modifier_item_mask_of_rage_active_lua": {
+    "en": "Rage"
+  },
+  "DOTA_Tooltip_modifier_item_mask_of_rage_active_lua_Description": {
+    "en": "Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% but reduces armor by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS% and silences you."
+  },
+  "DOTA_Tooltip_ability_item_demons_reaper_lua": {
+    "en": "Demon's Reaper"
+  },
+  "DOTA_Tooltip_ability_item_demons_reaper_lua_Description": {
+    "en": "<h1>Passive: Feast</h1>Attacks deals %hp_leech_percent%%% damage of target's max health.\n\n<h1>Passive: Lifesteal</h1>Heals the attacker for a percentage of attack damage dealt."
+  },
+  "DOTA_Tooltip_ability_item_demons_reaper_lua_bonus_attack_speed": {
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_demons_reaper_lua_bonus_damage": {
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_demons_reaper_lua_lifesteal_percent": {
+    "en": "%+$lifesteal"
+  },
+  "DOTA_Tooltip_ability_item_recipe_spiked_armor_lua": {
+    "en": "Recipe: Spiked Armor"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua": {
+    "en": "Spiked Armor"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_Description": {
+    "en": "<h1>Active: Damage Return</h1>For %duration% seconds, the damage returned from all sources is increased by %active_reflection_pct%%%.\n\n<h1>Passive: Damage Return</h1>Everytime you are attacked, you return %passive_reflection_constant% damage plus %passive_reflection_pct%%% of the attack damage dealt to you.\n\n<h1>Passive: Spiked Aura</h1> Grants %aura_attack_speed% attack speed and %aura_positive_armor% armor to nearby allied units and structures, and decreases nearby enemy unit and structure armor by %aura_negative_armor%.<br><br>Radius: %aura_radius%"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_Lore": {
+    "en": "A razor-sharp coat of mail, it is the choice of selfless martyrs in combat."
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_Note0": {
+    "en": "Damage Return is calculated before any kind of reduction."
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_Note1": {
+    "en": "Damage Return doesn't reflect damage from other forms of Blade Mail."
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_Note2": {
+    "en": "Returned damage type is the same as it was received."
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_bonus_damage": {
+    "en": "+$damage"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_bonus_armor": {
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_bonus_attack_speed": {
+    "en": "+$attack"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_bonus_health": {
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_spiked_armor_lua_bonus_all_stats": {
+    "en": "+$all"
+  },
+  "DOTA_Tooltip_modifier_item_spiked_armor_lua_aura_debuff": {
+    "en": "Spiked Armor"
+  },
+  "DOTA_Tooltip_modifier_item_spiked_armor_lua_aura_debuff_Description": {
+    "en": "Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%"
+  },
+  "DOTA_Tooltip_modifier_item_spiked_armor_lua_aura_buff": {
+    "en": "Spiked Armor"
+  },
+  "DOTA_Tooltip_modifier_item_spiked_armor_lua_aura_buff_Description": {
+    "en": "Armor enhanced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.\nAttack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+  },
+  "DOTA_Tooltip_ability_item_manacles_of_power": {
+    "en": "Manacle's Power"
+  },
+  "DOTA_Tooltip_ability_item_manacles_of_power_Description": {
+    "en": "<h1>Active: Catch</h1>Binds caster with enemy and most strongest drags other.<br><br>Duration: %duration% seconds.\n\n<h1>Passive: Manacle's Collector</h1>Owner gains +%bonus_strength_per_kill% strength per kill."
+  },
+  "DOTA_Tooltip_ability_item_manacles_of_power_bonus_strength": {
+    "en": "+$str"
+  },
+  "DOTA_Tooltip_ability_item_barricade": {
+    "en": "Barricade"
+  },
+  "DOTA_Tooltip_ability_item_barricade_Description": {
+    "en": "<h1>Active: Barricade</h1>Builds wall with length %length% that blocks %max_hits% ranged hits.<br><br>Duration: %duration% seconds."
+  },
+  "DOTA_Tooltip_ability_item_barricade_bonus_health": {
+    "en": "+$health"
+  },
+  "DOTA_Tooltip_ability_item_barricade_bonus_armor": {
+    "en": "+$armor"
+  },
+  "DOTA_Tooltip_modifier_tinker_rearm_lua": {
+    "en": "Rearmor"
+  },
+  "DOTA_Tooltip_modifier_tinker_rearm_lua_Description": {
+    "en": "Magic Resistance increased by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%"
+  },
+  "DOTA_Tooltip_modifier_dark_willow_shadow_realm_lua": {
+    "en": "Shadow Realm"
+  },
+  "DOTA_Tooltip_modifier_dark_willow_shadow_realm_lua_Description": {
+    "en": "Untargetable and gaining bonus magic damage."
+  },
+  "DOTA_Tooltip_modifier_dark_willow_shadow_realm_lua_throwing_shade_lua": {
+    "en": "Throwing Shade"
+  },
+  "DOTA_Tooltip_modifier_dark_willow_shadow_realm_lua_throwing_shade_lua_Description": {
+    "en": "Taking increased damage from Dark Willow."
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_mana_increase": {
+    "en": "Obsidian Decimator"
+  },
+  "DOTA_Tooltip_modifier_obsidian_destroyer_equilibrium_lua_mana_increase_Description": {
+    "en": "Maximum mana increased by %dMODIFIER_PROPERTY_EXTRA_MANA_PERCENTAGE%%%."
+  }
+}

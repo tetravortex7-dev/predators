@@ -1,0 +1,166 @@
+{
+  "npc_dota_evo_boss_alpha": {
+    "ru": "Высший Хищник (Босс)",
+    "en": "Apex Predator (Boss)"
+  },
+  "npc_dota_evo_boss_beta": {
+    "ru": "Глубинный Колосс (Босс)",
+    "en": "Abyssal Colossus (Boss)"
+  },
+  "npc_dota_evo_boss_slardar": {
+    "ru": "Эласмир, Хозяин Прилива",
+    "en": "Elasmyr, Tide Sovereign"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_tidal_lunge": {
+    "ru": "Приливный выпад",
+    "en": "Tidal Lunge"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_tidal_lunge_Description": {
+    "ru": "Рывок вперёд на %lunge_distance% с нанесением %damage% магического урона всем врагам на пути. Оставляет лужу воды радиусом %puddle_radius% на %puddle_duration% сек., усиливающую босса.",
+    "en": "Lunges forward %lunge_distance% units dealing %damage% magic damage along the path, leaving a %puddle_radius%-radius water puddle for %puddle_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_maelstrom_slam": {
+    "ru": "Водоворот",
+    "en": "Maelstrom Slam"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_maelstrom_slam_Description": {
+    "ru": "Стягивает врагов в радиусе %radius% к себе, нанося %damage% магического урона и замедляя их на 40%% на %slow_duration% сек.",
+    "en": "Pulls enemies within %radius% radius toward Elasmyr, dealing %damage% magic damage and slowing by 40%% for %slow_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_adaptive_scales": {
+    "ru": "Адаптивная чешуя",
+    "en": "Adaptive Scales"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_adaptive_scales_Description": {
+    "ru": "Получая урон от героев, накапливает до %max_stacks% зарядов (+%armor_per_stack% брони и +%magic_resist_per_stack%%% сопротивления магии за заряд). На максимуме сбрасывает дебаффы и взрывается волной на %burst_damage% магического урона в радиусе %burst_radius%.",
+    "en": "Hero damage grants up to %max_stacks% stacks (+%armor_per_stack% Armor, +%magic_resist_per_stack%%% Magic Res). At max stacks, purges debuffs and blasts %burst_radius% AoE for %burst_damage% magic damage."
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood": {
+    "ru": "Потоп",
+    "en": "Abyssal Flood"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood_Description": {
+    "ru": "Затапливает область радиусом %radius% на %duration% сек., усиливая босса и нанося врагам %dps% магического урона в секунду с замедлением на 20%%.",
+    "en": "Floods a %radius%-radius area for %duration%s, empowering Elasmyr while dealing %dps% magic DPS and slowing enemies by 20%%."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_puddle_buff": {
+    "ru": "Приливная сила",
+    "en": "Tidal Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_puddle_buff_Description": {
+    "ru": "+30% скорости передвижения, +35 скорости атаки, +6 брони.",
+    "en": "+30% movement speed, +35 attack speed, +6 armor."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_maelstrom_slow": {
+    "ru": "Водоворот",
+    "en": "Maelstrom"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_maelstrom_slow_Description": {
+    "ru": "Скорость передвижения снижена на 40%.",
+    "en": "Movement speed reduced by 40%."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_adaptive_scales": {
+    "ru": "Адаптивная чешуя",
+    "en": "Adaptive Scales"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_adaptive_scales_Description": {
+    "ru": "Накапливает броню и сопротивление магии; на 10 зарядах срабатывает волна воды и развеивание.",
+    "en": "Gaining armor and magic resistance; triggers a purge and tidal burst at 10 stacks."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_scales_burst_slow": {
+    "ru": "Удар прилива",
+    "en": "Tidal Burst"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_scales_burst_slow_Description": {
+    "ru": "Скорость передвижения снижена на 35%.",
+    "en": "Movement speed reduced by 35%."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_flood_buff": {
+    "ru": "Хозяин Потопа",
+    "en": "Sovereign of the Flood"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_flood_buff_Description": {
+    "ru": "+40% скорости передвижения, +55 скорости атаки, +10 брони.",
+    "en": "+40% movement speed, +55 attack speed, +10 armor."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_flood_debuff": {
+    "ru": "В пучине Потопа",
+    "en": "Flooded"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_flood_debuff_Description": {
+    "ru": "Скорость передвижения снижена на 20%.",
+    "en": "Movement speed reduced by 20%."
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_bash": {
+    "ru": "Оглушение глубин",
+    "en": "Bash of the Deep"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_bash_Description": {
+    "ru": "Каждая %attack_count%-я атака оглушает цель на %bash_duration% сек. и наносит %bonus_damage% дополнительного физического урона.",
+    "en": "Every %attack_count%th attack stuns for %bash_duration%s and deals %bonus_damage% bonus physical damage."
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_bash": {
+    "ru": "Заряд оглушения",
+    "en": "Bash Charge"
+  },
+  "DOTA_Tooltip_modifier_evo_elasmyr_bash_Description": {
+    "ru": "Четвёртая атака оглушит цель и нанесёт доп. урон.",
+    "en": "The 4th attack will bash and deal bonus physical damage."
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_tidal_lunge_damage": {
+    "ru": "МАГИЧЕСКИЙ УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_tidal_lunge_puddle_radius": {
+    "ru": "РАДИУС ЛУЖИ:",
+    "en": "PUDDLE RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_tidal_lunge_puddle_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ЛУЖИ:",
+    "en": "PUDDLE DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_maelstrom_slam_radius": {
+    "ru": "РАДИУС:",
+    "en": "RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_maelstrom_slam_damage": {
+    "ru": "МАГИЧЕСКИЙ УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_maelstrom_slam_slow_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
+    "en": "SLOW DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_adaptive_scales_armor_per_stack": {
+    "ru": "БРОНЯ ЗА ЗАРЯД:",
+    "en": "ARMOR PER STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_adaptive_scales_magic_resist_per_stack": {
+    "ru": "%МАГРЕЗИСТ ЗА ЗАРЯД:",
+    "en": "%MAGIC RES PER STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_adaptive_scales_burst_damage": {
+    "ru": "УРОН ВЗРЫВА:",
+    "en": "BURST DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_bash_bonus_damage": {
+    "ru": "ДОП. ФИЗ. УРОН:",
+    "en": "BONUS PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_bash_bash_duration": {
+    "ru": "ОГЛУШЕНИЕ:",
+    "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood_radius": {
+    "ru": "РАДИУС:",
+    "en": "RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood_dps": {
+    "ru": "УРОН В СЕКУНДУ:",
+    "en": "DAMAGE PER SECOND:"
+  }
+}

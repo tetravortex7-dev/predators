@@ -1,0 +1,264 @@
+{
+  "key": "bristle",
+  "hero": "npc_dota_hero_bristleback",
+  "model": "models/heroes/bristleback/bristleback.vmdl",
+  "diet": "CARNIVORE",
+  "attr": "STR",
+  "keep_default_abilities": false,
+  "tags": ["beast", "durable", "bristle"],
+  "spell_pool_tags": ["durable", "aoe"],
+  "innate": "evo_bristle_adrenaline",
+  "signature": "evo_bristle_t1_quill_burst",
+  "stages": [
+    {
+      "id": "evo_body_t1_bristle",
+      "tier_index": 1,
+      "name_ru": "Молодой Щетиноспин",
+      "name_en": "Young Bristleback",
+      "desc_ru": "Силовой боец передовой и ближнего боя.\nКопит Ярость от кастов и урона, развиваясь в стального танка, берсерка или кислотного универсала.",
+      "desc_en": "Strength frontline brawler and bruiser.\nBuilds Fury from casts and damage, evolving into an iron tank, crimson berserker, or universal acid reactor.",
+      "scale": 0.65,
+      "ability_level": 1,
+      "abilities": [
+        "evo_bristle_t1_acid_spit",
+        "evo_bristle_t1_quill_burst",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": [
+        "evo_body_t2_bristle_dread",
+        "evo_body_t2_bristle_crush",
+        "evo_body_t2_bristle_react"
+      ],
+      "label_color": [220, 170, 110],
+      "wearables": []
+    },
+    {
+      "id": "evo_body_t2_bristle_dread",
+      "tier_index": 2,
+      "attr": "STR",
+      "name_ru": "Бронированный Вепрь",
+      "name_en": "Armored Boar",
+      "desc_ru": "Ветка Дредноута T2 (Танк-бастион / STR): Вязкая смола [Q], Стальной веер [W], Непробиваемый панцирь [E].",
+      "desc_en": "Dreadnought Branch T2 (Bastion Tank / STR): Viscous Tar [Q], Steel Fan [W], Impenetrable Shell [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "abilities": [
+        "evo_bristle_dread_q",
+        "evo_bristle_dread_w",
+        "evo_bristle_dread_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t3_bristle_dread"],
+      "color": [165, 175, 185],
+      "label_color": [175, 195, 215],
+      "wearables": [
+        "Heavy Barbed Back"
+      ]
+    },
+    {
+      "id": "evo_body_t3_bristle_dread",
+      "tier_index": 3,
+      "attr": "STR",
+      "name_ru": "Стальной Бастион",
+      "name_en": "Steel Bastion",
+      "desc_ru": "Ветка Дредноута T3: Leash на [Q], пробитие блока на [W], таунт и щит на [E], до 7 стаков Ярости и авто-веер со спины.",
+      "desc_en": "Dreadnought Branch T3: Leash on [Q], block-piercing [W], taunt & shield on [E], 7 Fury stacks & rear auto-quills.",
+      "scale": 0.95,
+      "ability_level": 2,
+      "abilities": [
+        "evo_bristle_dread_q",
+        "evo_bristle_dread_w",
+        "evo_bristle_dread_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t4_bristle_dread"],
+      "color": [135, 115, 85],
+      "label_color": [195, 165, 125],
+      "wearables": [
+        "Heavy Barbed Back",
+        "Heavy Barbed Head",
+        "Heavy Barbed Arms"
+      ]
+    },
+    {
+      "id": "evo_body_t4_bristle_dread",
+      "tier_index": 4,
+      "attr": "STR",
+      "name_ru": "Железный Дредноут",
+      "name_en": "Iron Dreadnought",
+      "desc_ru": "Ветка Дредноута T4: лужа смолы на [Q], отталкивание на [W], 360° защита спины на [E], Осадный каток [R].",
+      "desc_en": "Dreadnought Branch T4: Tar puddle on [Q], knockback on [W], 360-deg back protection on [E], Siege Roller [R].",
+      "scale": 1.1,
+      "ability_level": 3,
+      "abilities": [
+        "evo_bristle_dread_q",
+        "evo_bristle_dread_w",
+        "evo_bristle_dread_e",
+        "evo_bristle_dread_r",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": [],
+      "color": [75, 80, 100],
+      "label_color": [155, 175, 225],
+      "wearables": [
+        "Piston Impaler",
+        "Heavy Barbed Head",
+        "Heavy Barbed Arms",
+        "Heavy Barbed Morning Star",
+        "Heavy Barbed Collar"
+      ]
+    },
+    {
+      "id": "evo_body_t2_bristle_crush",
+      "tier_index": 2,
+      "attr": "STR",
+      "name_ru": "Свирепый Секач",
+      "name_en": "Ferocious Cleaver",
+      "desc_ru": "Ветка Крушителя T2 (Берсерк / STR): Рывок Берсерка [Q], Круговой размах [W], Жажда рубки [E].",
+      "desc_en": "Crusher Branch T2 (Berserker / STR): Berserker Rush [Q], Whirlwind Flail [W], Bloodlust [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "abilities": [
+        "evo_bristle_crush_q",
+        "evo_bristle_crush_w",
+        "evo_bristle_crush_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t3_bristle_crush"],
+      "color": [205, 65, 55],
+      "label_color": [235, 95, 85],
+      "wearables": [
+        "Beast of the Crimson Ring Weapon"
+      ]
+    },
+    {
+      "id": "evo_body_t3_bristle_crush",
+      "tier_index": 3,
+      "attr": "STR",
+      "name_ru": "Кровавый Клыкач",
+      "name_en": "Blood Tusker",
+      "desc_ru": "Ветка Крушителя T3: хил на [Q], модификаторы атак в AoE на [W], шипы каждые 4 удара на [E], урон и Phase в пассивке.",
+      "desc_en": "Crusher Branch T3: Heal on [Q], attack modifiers on [W], spike burst every 4 hits [E], bonus damage & Phase in innate.",
+      "scale": 0.95,
+      "ability_level": 2,
+      "abilities": [
+        "evo_bristle_crush_q",
+        "evo_bristle_crush_w",
+        "evo_bristle_crush_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t4_bristle_crush"],
+      "color": [175, 35, 35],
+      "label_color": [225, 65, 65],
+      "wearables": [
+        "Beast of the Crimson Ring Weapon",
+        "Beast of the Crimson Ring Helm",
+        "Beast of the Crimson Ring Bracers"
+      ]
+    },
+    {
+      "id": "evo_body_t4_bristle_crush",
+      "tier_index": 4,
+      "attr": "STR",
+      "name_ru": "Багровый Крушитель",
+      "name_en": "Crimson Crusher",
+      "desc_ru": "Ветка Крушителя T4: -70% КД [Q] за килл, двойной размах на [W], +45% вампиризма и +35% сопр. на лоу ХП [E], Безумие Арены [R].",
+      "desc_en": "Crusher Branch T4: -70% [Q] CD on kill, double sweep on [W], low-HP lifesteal & status res on [E], Arena Frenzy [R].",
+      "scale": 1.1,
+      "ability_level": 3,
+      "abilities": [
+        "evo_bristle_crush_q",
+        "evo_bristle_crush_w",
+        "evo_bristle_crush_e",
+        "evo_bristle_crush_r",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": [],
+      "color": [130, 20, 25],
+      "label_color": [210, 45, 55],
+      "wearables": [
+        "Beast of the Crimson Ring Weapon",
+        "Beast of the Crimson Ring Helm",
+        "Beast of the Crimson Ring Bracers",
+        "Beast of the Crimson Ring Back",
+        "Beast of the Crimson Ring Armor"
+      ]
+    },
+    {
+      "id": "evo_body_t2_bristle_react",
+      "tier_index": 2,
+      "attr": "ALL",
+      "name_ru": "Алхимический Носитель",
+      "name_en": "Alchemical Carrier",
+      "desc_ru": "Ветка Реактора T2 (Универсал / STR+AGI+INT): Капсула реагента [Q], Реактивный залп [W], Мутагенный синтез [E].",
+      "desc_en": "Reactor Branch T2 (Universal / STR+AGI+INT): Reagent Capsule [Q], Reactive Volley [W], Mutagenic Synthesis [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "abilities": [
+        "evo_bristle_react_q",
+        "evo_bristle_react_w",
+        "evo_bristle_react_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t3_bristle_react"],
+      "color": [185, 225, 45],
+      "label_color": [195, 235, 65],
+      "wearables": [
+        "Crystals of the Violent Precipitate"
+      ]
+    },
+    {
+      "id": "evo_body_t3_bristle_react",
+      "tier_index": 3,
+      "attr": "ALL",
+      "name_ru": "Паровой Мутант",
+      "name_en": "Steam Mutant",
+      "desc_ru": "Ветка Реактора T3: True Sight в лужах [Q], бафф MS+AS на [W], щит + пар на [E], Spell Amp и бесплатный каст на 5 стаках Ярости.",
+      "desc_en": "Reactor Branch T3: True Sight puddles [Q], MS+AS buff [W], Shield & steam [E], Spell Amp & free-mana blast at 5 Fury stacks.",
+      "scale": 0.95,
+      "ability_level": 2,
+      "abilities": [
+        "evo_bristle_react_q",
+        "evo_bristle_react_w",
+        "evo_bristle_react_e",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": ["evo_body_t4_bristle_react"],
+      "color": [75, 225, 145],
+      "label_color": [95, 235, 165],
+      "wearables": [
+        "Crystals of the Violent Precipitate",
+        "Blastforge Exhaler",
+        "Flail of the Violent Precipitate"
+      ]
+    },
+    {
+      "id": "evo_body_t4_bristle_react",
+      "tier_index": 4,
+      "attr": "ALL",
+      "name_ru": "Кислотный Реактор",
+      "name_en": "Acid Reactor",
+      "desc_ru": "Ветка Реактора T4: 360° залп на 5 стаках Ярости [W], +статы от врагов рядом на [E], Цепная реакция [R].",
+      "desc_en": "Reactor Branch T4: 360-deg volley at 5 Fury stacks [W], nearby catalyst stat aura [E], Chain Reaction [R].",
+      "scale": 1.1,
+      "ability_level": 3,
+      "abilities": [
+        "evo_bristle_react_q",
+        "evo_bristle_react_w",
+        "evo_bristle_react_e",
+        "evo_bristle_react_r",
+        "evo_bristle_adrenaline"
+      ],
+      "next_body_ids": [],
+      "color": [45, 210, 235],
+      "label_color": [75, 225, 245],
+      "wearables": [
+        "Crystals of the Violent Precipitate",
+        "Helm of the Violent Precipitate",
+        "Flail of the Violent Precipitate",
+        "Bracers of the Violent Precipitate",
+        "Lantern of the Violent Precipitate"
+      ]
+    }
+  ]
+}

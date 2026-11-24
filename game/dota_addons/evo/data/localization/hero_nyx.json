@@ -1,0 +1,98 @@
+{
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin": {
+    "ru": "Живой хитин",
+    "en": "Living Chitin"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_Description": {
+    "ru": "Каждые %stack_interval% сек. и при добивании любого юнита накапливает Хитиновую пластину (до %max_stacks%): +%armor_per_stack% к броне, +%mr_per_stack%%% к сопротивлению магии и +%ms_per_stack%%% к скорости передвижения. При получении урона от вражеского героя тратит заряд, блокируя %base_block% + %block_attr_pct%%% от наибольшего атрибута урона и нанося %pulse_damage% магического урона в радиусе %pulse_radius%.",
+    "en": "Every %stack_interval%s and on any unit kill gains a Chitin Plate (max %max_stacks%): +%armor_per_stack% Armor, +%mr_per_stack%%% Magic Resistance, and +%ms_per_stack%%% Move Speed. Taking hero damage consumes 1 stack to block %base_block% + %block_attr_pct%%% highest attribute damage and pulse %pulse_damage% magic damage in %pulse_radius% radius."
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_living_chitin": {
+    "ru": "Живой хитин",
+    "en": "Living Chitin"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_living_chitin_Description": {
+    "ru": "Даёт броню, сопротивление магии и MS; блокирует урон героев с импульсом.",
+    "en": "Bonus armor, magic resistance, and MS; blocks hero damage with an AoE pulse."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike": {
+    "ru": "Подземный толчок",
+    "en": "Burrow Spike"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_Description": {
+    "ru": "Выпускает по земле линию шипов на расстояние %range%, подбрасывая и оглушая врагов на %stun_duration% сек. и нанося %damage% чистого урона (%creep_mult%x по крипам).",
+    "en": "Sends a %range%-range line of spikes stunning enemies for %stun_duration%s and dealing %damage% pure damage (%creep_mult%x vs creeps)."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst": {
+    "ru": "Хитиновый выброс",
+    "en": "Chitin Burst"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_Description": {
+    "ru": "Усиленный укус, наносящий %base_damage% + %attr_pct%%% от наибольшего атрибута физического урона. Поглощает все заряды Живого хитина для взрыва в радиусе %burst_radius% на %burst_per_stack% чистого урона за заряд и замедления на 20%% на %slow_duration% сек. Добивание крипа возвращает 1 заряд.",
+    "en": "Empowered bite dealing %base_damage% + %attr_pct%%% highest attribute physical damage. Consumes all Living Chitin stacks to blast %burst_radius% AoE for %burst_per_stack% pure damage per stack and slow by 20%% for %slow_duration%s. Killing a creep restores 1 stack."
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_t1_chitin_slow": {
+    "ru": "Хитиновый выброс",
+    "en": "Chitin Burst"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_t1_chitin_slow_Description": {
+    "ru": "Скорость передвижения снижена на 20%.",
+    "en": "Movement speed reduced by 20%."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_max_stacks": {
+    "ru": "МАКС. ПЛАСТИН:",
+    "en": "MAX PLATES:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_stack_interval": {
+    "ru": "ИНТЕРВАЛ ЗАРЯДА:",
+    "en": "STACK INTERVAL:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_armor_per_stack": {
+    "ru": "БРОНЯ ЗА ПЛАСТИНУ:",
+    "en": "ARMOR PER PLATE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_mr_per_stack": {
+    "ru": "%МАГРЕЗИСТ ЗА ПЛАСТИНУ:",
+    "en": "%MAGIC RES PER PLATE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_ms_per_stack": {
+    "ru": "%СКОРОСТЬ БЕГА ЗА ПЛАСТИНУ:",
+    "en": "%MOVE SPEED PER PLATE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_base_block": {
+    "ru": "БАЗОВЫЙ БЛОК УРОНА:",
+    "en": "BASE BLOCK:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_pulse_damage": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_range": {
+    "ru": "ДАЛЬНОСТЬ:",
+    "en": "RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_damage": {
+    "ru": "ЧИСТЫЙ УРОН:",
+    "en": "PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_stun_duration": {
+    "ru": "ОГЛУШЕНИЕ:",
+    "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_base_damage": {
+    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "en": "BASE PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_attr_pct": {
+    "ru": "%УРОН ОТ МАКС. АТРИБУТА:",
+    "en": "%HIGHEST ATTR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_per_stack": {
+    "ru": "ЧИСТЫЙ УРОН ЗА ПЛАСТИНУ:",
+    "en": "PURE DMG PER PLATE:"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_radius": {
+    "ru": "РАДИУС ВЗРЫВА:",
+    "en": "BLAST RADIUS:"
+  }
+}

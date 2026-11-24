@@ -1,0 +1,248 @@
+"DOTAAbilities"
+{
+	"evo_slark_agi_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"AbilityTextureName"			"slark_pounce"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"12.0 10.0 8.0"
+		"AbilityManaCost"				"65 70 75"
+		"AbilityValues"
+		{
+			"leap_distance"				"650 750 850"
+			"base_damage"				"90 160 230"
+			"agi_pct"					"40 60 80"
+			"leash_duration"			"2.25 2.75 3.25"
+			"leash_radius"				"350"
+		}
+	}
+
+	"evo_slark_agi_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"AbilityTextureName"			"slark_dark_pact"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"9.0 8.0 7.0"
+		"AbilityManaCost"				"60 65 70"
+		"AbilityValues"
+		{
+			"delay"						"1.2"
+			"radius"					"325"
+			"base_damage"				"120 210 300"
+			"agi_pct"					"50 75 100"
+		}
+	}
+
+	"evo_slark_agi_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"AbilityTextureName"			"slark_essence_shift"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"						"3"
+		"AbilityValues"
+		{
+			"agi_per_stack"				"2 3 4"
+			"enemy_stat_loss"			"1 2 2"
+			"hero_duration"				"20.0 25.0 30.0"
+			"creep_duration"			"12.0"
+		}
+	}
+
+	"evo_slark_agi_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"AbilityTextureName"			"slark_shadow_dance"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"120"
+		"AbilityValues"
+		{
+			"duration"					"4.5"
+			"bonus_ms_pct"				"30"
+			"hp_regen_pct"				"5"
+			"bonus_as"					"50"
+		}
+	}
+
+	"evo_slark_str_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_str"
+		"AbilityTextureName"			"slardar_slithereen_crush"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"600 700 800"
+		"AbilityCooldown"				"11.0 10.0 9.0"
+		"AbilityManaCost"				"65 70 75"
+		"AbilityValues"
+		{
+			"leap_distance"				"600 700 800"
+			"radius"					"260"
+			"base_damage"				"100 180 260"
+			"str_pct"					"60 85 110"
+			"stun_duration"				"0.9 1.1 1.3"
+		}
+	}
+
+	"evo_slark_str_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_str"
+		"AbilityTextureName"			"slark_fish_bait"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"225"
+		"AbilityCooldown"				"8.0 7.0 6.0"
+		"AbilityManaCost"				"55 60 65"
+		"AbilityValues"
+		{
+			"base_damage"				"110 190 270"
+			"str_pct"					"65 90 115"
+			"heal_pct"					"45"
+		}
+	}
+
+	"evo_slark_str_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_str"
+		"AbilityTextureName"			"slark_depth_shroud"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"						"3"
+		"AbilityValues"
+		{
+			"bonus_armor"				"5 8 12"
+			"return_damage"				"20 35 50"
+		}
+	}
+
+	"evo_slark_str_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_str"
+		"AbilityTextureName"			"bloodseeker_rupture"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"450"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"130"
+		"AbilityValues"
+		{
+			"duration"					"3.0"
+			"base_dps"					"120"
+			"str_pct"					"80"
+		}
+	}
+
+	"evo_slark_int_q"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"AbilityTextureName"			"naga_siren_ensnare"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"750 825 900"
+		"AbilityCooldown"				"11.0 10.0 9.0"
+		"AbilityManaCost"				"80 90 100"
+		"AbilityValues"
+		{
+			"radius"					"260"
+			"base_damage"				"100 175 250"
+			"int_pct"					"60 80 100"
+			"root_duration"				"1.5 1.9 2.3"
+		}
+	}
+
+	"evo_slark_int_w"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"AbilityTextureName"			"tidehunter_gush"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"750 850 950"
+		"AbilityCooldown"				"8.0 7.0 6.0"
+		"AbilityManaCost"				"75 85 95"
+		"AbilityValues"
+		{
+			"range"						"750 850 950"
+			"base_damage"				"95 165 235"
+			"int_pct"					"55 75 95"
+		}
+	}
+
+	"evo_slark_int_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"AbilityTextureName"			"slark_depth_shroud"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"						"3"
+		"AbilityValues"
+		{
+			"max_stacks"				"4 5 6"
+			"blast_damage"				"45 75 105"
+		}
+	}
+
+	"evo_slark_int_r"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"AbilityTextureName"			"slark_shadow_dance"
+		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastRange"				"650"
+		"AbilityCooldown"				"55.0"
+		"AbilityManaCost"				"150"
+		"AbilityValues"
+		{
+			"radius"					"450"
+			"duration"					"5.0"
+			"base_dps"					"90"
+			"int_pct"					"65"
+		}
+	}
+}

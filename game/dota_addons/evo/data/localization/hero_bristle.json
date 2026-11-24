@@ -1,0 +1,365 @@
+{
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline": {
+    "ru": "Боевой адреналин",
+    "en": "Battle Adrenaline"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_Description": {
+    "ru": "Применение способности или получение %damage_threshold% урона от вражеских героев даёт заряд Ярости на %stack_duration% сек. (до %max_stacks%): +%as_per_stack% к скорости атаки и +%ms_pct_per_stack%%% к скорости передвижения за заряд. Снижает входящий урон со спины на %rear_reduction%%% и с боков на %side_reduction%%%.",
+    "en": "Casting abilities or taking %damage_threshold% hero damage grants a Fury stack for %stack_duration%s (max %max_stacks%): +%as_per_stack% Attack Speed and +%ms_pct_per_stack%%% Move Speed per stack. Reduces rear incoming damage by %rear_reduction%%% and side damage by %side_reduction%%%."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_adrenaline_stack": {
+    "ru": "Боевой адреналин",
+    "en": "Battle Adrenaline"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_adrenaline_stack_Description": {
+    "ru": "+12 скорости атаки и +2.5% скорости передвижения за заряд.",
+    "en": "+12 attack speed and +2.5% movement speed per stack."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit": {
+    "ru": "Едкий плевок",
+    "en": "Acid Spit"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_Description": {
+    "ru": "Метает сгусток кислоты, нанося %damage% магического урона (%creep_mult%x по крипам), замедляя цель на %slow_pct%%% и снижая её броню на %armor_per_stack% на %duration% сек. (до %max_stacks% зарядов).",
+    "en": "Launches acid dealing %damage% magic damage (%creep_mult%x vs creeps), slowing by %slow_pct%%% and shredding %armor_per_stack% armor for %duration%s (up to %max_stacks% stacks)."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_t1_acid_spit": {
+    "ru": "Едкий плевок",
+    "en": "Acid Spit"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_t1_acid_spit_Description": {
+    "ru": "Замедление на 18% и снижение брони за стак.",
+    "en": "Slowed by 18% with reduced armor per stack."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_quill_burst": {
+    "ru": "Выброс щетины",
+    "en": "Quill Burst"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_quill_burst_Description": {
+    "ru": "Разбрасывает иглы в радиусе %radius%, нанося %base_damage% + %attr_pct%%% от наибольшего атрибута физического урона (%creep_mult%x по крипам) и мгновенно давая заряд Боевого адреналина (2 заряда при попадании по 3+ врагам).",
+    "en": "Sprays quills in %radius% radius dealing %base_damage% + %attr_pct%%% highest attribute physical damage (%creep_mult%x vs creeps) and granting 1 Fury stack (2 stacks if 3+ enemies hit)."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_max_stacks": {
+    "ru": "МАКС. ЗАРЯДОВ:",
+    "en": "MAX STACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_stack_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ЗАРЯДА:",
+    "en": "STACK DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_as_per_stack": {
+    "ru": "СКОРОСТЬ АТАКИ ЗА ЗАРЯД:",
+    "en": "AS PER STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_ms_pct_per_stack": {
+    "ru": "%СКОРОСТЬ БЕГА ЗА ЗАРЯД:",
+    "en": "%MS PER STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_rear_reduction": {
+    "ru": "%БЛОК СО СПИНЫ:",
+    "en": "%REAR REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_adrenaline_side_reduction": {
+    "ru": "%БЛОК С БОКОВ:",
+    "en": "%SIDE REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_damage": {
+    "ru": "МАГИЧЕСКИЙ УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЕ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_armor_per_stack": {
+    "ru": "СНИЖЕНИЕ БРОНИ ЗА ЗАРЯД:",
+    "en": "ARMOR PER STACK:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_max_stacks": {
+    "ru": "МАКС. ЗАРЯДОВ:",
+    "en": "MAX STACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_acid_spit_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_quill_burst_radius": {
+    "ru": "РАДИУС:",
+    "en": "RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_quill_burst_base_damage": {
+    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "en": "BASE PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_t1_quill_burst_attr_pct": {
+    "ru": "%УРОН ОТ МАКС. АТРИБУТА:",
+    "en": "%HIGHEST ATTR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q": {
+    "ru": "Вязкая смола",
+    "en": "Viscous Tar"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_Description": {
+    "ru": "Метает сгусток смолы в радиусе %radius%, нанося %base_damage% + %str_pct%%% от Силы магического урона, замедляя на %slow_pct%%% и снижая броню на %armor_per_stack% на 5 сек. (до 4 стаков).<br><b>T3:</b> -35%% скорости поворота и запрет на блинки (1.2с) при первом попадании.<br><b>T4:</b> оставляет лужу на 3.5с (35 + 20%% Силы урона/сек и обновление дебаффа).",
+    "en": "Hurls tar in %radius% radius dealing %base_damage% + %str_pct%%% STR magic damage, slowing by %slow_pct%%% and shredding %armor_per_stack% armor for 5s (max 4 stacks).<br><b>T3:</b> -35%% turn rate and 1.2s Leash on first hit.<br><b>T4:</b> leaves a tar puddle for 3.5s (35 + 20%% STR DPS and refreshes debuff)."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_base_damage": { "ru": "БАЗОВЫЙ МАГ. УРОН:", "en": "BASE MAGIC DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_slow_pct": { "ru": "%ЗАМЕДЛЕНИЕ:", "en": "%MOVE SLOW:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_q_armor_per_stack": { "ru": "СРЕЗ БРОНИ/ЗАРЯД:", "en": "ARMOR SHRED/STACK:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w": {
+    "ru": "Стальной веер",
+    "en": "Steel Fan"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_Description": {
+    "ru": "Выпускает стальные иглы в радиусе %radius%, нанося %base_damage% + %str_pct%%% от Силы физ. урона (1.3x по крипам) + %stack_damage% за стак Рваной щетины и вешая новый стак (макс %max_stacks%).<br><b>T3:</b> игнорирует блок урона и снижает исходящий урон цели на 15%% при 3+ стаках.<br><b>T4:</b> отталкивает врагов в радиусе 225 на 110 и сбивает касты.",
+    "en": "Sprays steel quills in %radius% radius dealing %base_damage% + %str_pct%%% STR physical damage (1.3x vs creeps) + %stack_damage% per Quill stack and applying 1 stack (max %max_stacks%).<br><b>T3:</b> pierces damage block and reduces target outgoing damage by 15%% at 3+ stacks.<br><b>T4:</b> knocks back enemies within 225 by 110 units and interrupts."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_stack_damage": { "ru": "ДОП. УРОН ЗА СТАК:", "en": "BONUS DMG PER STACK:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_w_max_stacks": { "ru": "МАКС. СТАКОВ:", "en": "MAX STACKS:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_e": {
+    "ru": "Непробиваемый панцирь",
+    "en": "Impenetrable Shell"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_e_Description": {
+    "ru": "<b>Пассивно:</b> +%bonus_armor% брони и отражает %reflect_pct%%% получаемого физ. урона в радиусе 450.<br><b>T3 (Активно — Упор спиной):</b> провоцирует врагов вокруг атаковать героя и даёт щит на %active_duration% сек.<br><b>T4:</b> во время Упора спиной защита спины работает на 360°, а атакующие замедляются на 25%%.",
+    "en": "<b>Passive:</b> +%bonus_armor% Armor and reflects %reflect_pct%%% incoming physical damage within 450 radius.<br><b>T3 (Active — Back Brace):</b> taunts nearby enemies and grants a barrier for %active_duration%s.<br><b>T4:</b> Back Brace extends rear reduction to 360 deg and slows attackers by 25%%."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_e_bonus_armor": { "ru": "ДОП. БРОНЯ:", "en": "BONUS ARMOR:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_e_reflect_pct": { "ru": "%ВОЗВРАТ УРОНА:", "en": "%DAMAGE REFLECT:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_e_active_duration": { "ru": "ДЛИТ. УПОРА (T3):", "en": "BRACE DURATION (T3):" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r": {
+    "ru": "Осадный каток",
+    "en": "Siege Roller"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r_Description": {
+    "ru": "Сильное развеивание и режим тарана на %duration% сек.: +%bonus_ms_pct%%% MS, иммунитет к замедлениям, авто-выпуск Стального веера каждые 0.8с. Столкновение оглушает врагов на 0.5с и наносит %ram_damage% + %str_pct%%% от Силы физ. урона.",
+    "en": "Strong dispel and Siege Ram mode for %duration%s: +%bonus_ms_pct%%% MS, slow immunity, auto-fires Steel Fan every 0.8s. Collisions stun enemies for 0.5s and deal %ram_damage% + %str_pct%%% STR physical damage."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r_duration": { "ru": "ДЛИТЕЛЬНОСТЬ:", "en": "DURATION:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r_bonus_ms_pct": { "ru": "%СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:", "en": "%MOVE SPEED:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r_ram_damage": { "ru": "УРОН СТОЛКНОВЕНИЯ:", "en": "RAM DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_dread_r_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q": {
+    "ru": "Рывок Берсерка",
+    "en": "Berserker Rush"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_Description": {
+    "ru": "Разбег на %duration% сек.: +%bonus_ms_pct%%% MS, Phase и 2 стака Адреналина. Следующий удар бьёт по конусу на %base_damage% + %str_pct%%% Силы физ. урона, оглушает на %stun_duration% сек. и вешает 2 стака Пролома костей.<br><b>T3:</b> лечит на 60/100 + 25%% Силы и замедляет на 25%% (2с).<br><b>T4:</b> убийство героя сокращает КД на 70%%.",
+    "en": "Rushes for %duration%s: +%bonus_ms_pct%%% MS, Phase, and 2 Adrenaline stacks. Next attack cleaves a cone for %base_damage% + %str_pct%%% STR physical damage, stuns %stun_duration%s, and applies 2 Bone Sunder stacks.<br><b>T3:</b> heals 60/100 + 25%% STR and slows 25%% (2s).<br><b>T4:</b> hero kills cut remaining CD by 70%%."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_duration": { "ru": "ДЛИТЕЛЬНОСТЬ:", "en": "DURATION:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_bonus_ms_pct": { "ru": "%СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:", "en": "%MOVE SPEED:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_q_stun_duration": { "ru": "ОГЛУШЕНИЕ:", "en": "STUN DURATION:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_w": {
+    "ru": "Круговой размах",
+    "en": "Whirlwind Flail"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_w_Description": {
+    "ru": "Взмах цепом в радиусе %radius%: %base_damage% + %str_pct%%% от Силы физ. урона (1.35x по крипам), стак Пролома костей и стак Адреналина.<br><b>T3:</b> применяет эффекты атак ко всем задетым.<br><b>T4:</b> повторный взмах через 0.35с на 65%% урона.",
+    "en": "Sweeps %radius% AoE for %base_damage% + %str_pct%%% STR physical damage (1.35x vs creeps), applying Bone Sunder and granting 1 Adrenaline stack.<br><b>T3:</b> applies attack modifiers to all hit.<br><b>T4:</b> strikes a second time after 0.35s for 65%% damage."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_w_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_w_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_w_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_e": {
+    "ru": "Жажда рубки",
+    "en": "Bloodlust Cleave"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_e_Description": {
+    "ru": "Атаки получают %cleave_pct%%% клива (275 AoE) и %lifesteal_pct%%% вампиризма от физ. урона (50%% по крипам).<br><b>T3:</b> каждые 4 атаки по героям (6 по крипам) выпускают шипы (55 + 30%% Силы).<br><b>T4:</b> до +45%% вампиризма и +35%% сопр. эффектам при снижении HP до 35%%.",
+    "en": "Attacks gain %cleave_pct%%% cleave (275 AoE) and %lifesteal_pct%%% physical lifesteal (50%% vs creeps).<br><b>T3:</b> every 4 hero hits (6 creep hits) bursts spikes for 55 + 30%% STR.<br><b>T4:</b> up to +45%% bonus lifesteal and +35%% status res down to 35%% HP."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_e_cleave_pct": { "ru": "%КЛИВ:", "en": "%CLEAVE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_e_lifesteal_pct": { "ru": "%ВАМПИРИЗМ:", "en": "%LIFESTEAL:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r": {
+    "ru": "Безумие Арены",
+    "en": "Arena Frenzy"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r_Description": {
+    "ru": "На %duration% сек. даёт максимум стаков Адреналина (не спадают), +%bonus_str_pct%%% Силы и +%bonus_attack_range% дальности атаки. Удары по целям с 4 стаками Пролома костей наносят +%pure_bonus% + 25%% Силы чистого урона.",
+    "en": "For %duration%s, grants max Adrenaline stacks (never decay), +%bonus_str_pct%%% STR, and +%bonus_attack_range% Attack Range. Hits against 4-stack Bone Sunder enemies deal +%pure_bonus% + 25%% STR pure damage."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r_duration": { "ru": "ДЛИТЕЛЬНОСТЬ:", "en": "DURATION:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r_bonus_str_pct": { "ru": "%БОНУС СИЛЫ:", "en": "%BONUS STR:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r_bonus_attack_range": { "ru": "ДАЛЬНОСТЬ АТАКИ:", "en": "ATTACK RANGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_crush_r_pure_bonus": { "ru": "ЧИСТЫЙ УРОН:", "en": "PURE BONUS DMG:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_q": {
+    "ru": "Капсула реагента",
+    "en": "Reagent Capsule"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_q_Description": {
+    "ru": "Бросает колбу в радиусе %radius%: %base_damage% + %attr_pct%%% от (СИЛ+ЛОВ+ИНТ) маг. урона (1.3x по крипам), 2 стака Катализатора и лужа на 4с (25 + 8%% суммы статов/сек).<br><b>T3:</b> лужа раскрывает невидимость (True Sight).",
+    "en": "Throws a chemical flask in %radius% radius dealing %base_damage% + %attr_pct%%% of (STR+AGI+INT) magic damage (1.3x vs creeps), 2 Catalyst stacks, and a 4s acid puddle (25 + 8%% sum DPS).<br><b>T3:</b> puddle grants True Sight."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_q_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_q_base_damage": { "ru": "БАЗОВЫЙ МАГ. УРОН:", "en": "BASE MAGIC DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_q_attr_pct": { "ru": "%УРОН ОТ (С+Л+И):", "en": "%ALL STATS DMG:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_w": {
+    "ru": "Реактивный залп",
+    "en": "Reactive Volley"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_w_Description": {
+    "ru": "Веер игл по конусу (%range%): %base_damage% + %attr_pct%%% от (СИЛ+ЛОВ+ИНТ) физ. урона. Взрывает лужи от [Q] на 80/130/180 + 25%% суммы статов, оглушая цели с 3+ стаками Катализатора.<br><b>T3:</b> +15%% MS и +25 AS (2.5с).<br><b>T4:</b> при 5 стаках Ярости бьёт на 360°.",
+    "en": "Cone volley (%range% range) dealing %base_damage% + %attr_pct%%% (STR+AGI+INT) physical damage. Detonates [Q] puddles for 80/130/180 + 25%% sum damage and stuns enemies with 3+ Catalyst stacks.<br><b>T3:</b> +15%% MS and +25 AS (2.5s).<br><b>T4:</b> fires 360 deg at 5 Adrenaline stacks."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_w_range": { "ru": "ДАЛЬНОСТЬ:", "en": "RANGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_w_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_w_attr_pct": { "ru": "%УРОН ОТ (С+Л+И):", "en": "%ALL STATS DMG:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_e": {
+    "ru": "Мутагенный синтез",
+    "en": "Mutagenic Synthesis"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_e_Description": {
+    "ru": "<b>Пассивно:</b> +%bonus_range% дальности атаки, +%on_hit_damage% + 10%% суммы статов маг. урона и 1 стак Катализатора при ударе.<br><b>T3 (Активно — Сброс давления):</b> щит от стаков Ярости, базовое развеивание и облако пара (-25%% MS, 30%% промахов).<br><b>T4:</b> +2 ко всем атрибутам за каждый стак Катализатора рядом (до +24).",
+    "en": "<b>Passive:</b> +%bonus_range% Attack Range, +%on_hit_damage% + 10%% all-stats magic damage and 1 Catalyst stack on hit.<br><b>T3 (Active — Vent Pressure):</b> Adrenaline barrier, basic dispel, and steam cloud (-25%% MS, 30%% miss).<br><b>T4:</b> +2 all stats per nearby Catalyst stack (up to +24)."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_e_bonus_range": { "ru": "БОНУС ДАЛЬНОСТИ:", "en": "ATTACK RANGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_e_on_hit_damage": { "ru": "МАГ. УРОН С УДАРА:", "en": "ON-HIT MAGIC DMG:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_r": {
+    "ru": "Цепная реакция",
+    "en": "Chain Reaction"
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_r_Description": {
+    "ru": "Зона реактора (%radius% AoE) на %duration% сек.: каждые 1.1с вешает стак Катализатора, наносит %pulse_damage% + %attr_pct%%% от (СИЛ+ЛОВ+ИНТ) маг. урона и стягивает к центру. Попадание [W] вызывает мгновенный импульс.",
+    "en": "Reactor zone (%radius% AoE) for %duration%s: every 1.1s applies Catalyst, deals %pulse_damage% + %attr_pct%%% (STR+AGI+INT) magic damage, and pulls inward. [W] triggers an instant pulse."
+  },
+  "DOTA_Tooltip_ability_evo_bristle_react_r_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_r_duration": { "ru": "ДЛИТЕЛЬНОСТЬ:", "en": "DURATION:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_r_pulse_damage": { "ru": "УРОН ИМПУЛЬСА:", "en": "PULSE DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_bristle_react_r_attr_pct": { "ru": "%УРОН ОТ (С+Л+И):", "en": "%ALL STATS DMG:" },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_q_debuff": {
+    "ru": "Вязкая смола",
+    "en": "Viscous Tar"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_q_debuff_Description": {
+    "ru": "Снижение скорости передвижения, брони и скорости поворота (T3+).",
+    "en": "Movement speed, armor, and turn rate (T3+) reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_q_leash": {
+    "ru": "Липкая смола",
+    "en": "Tar Leash"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_q_leash_Description": {
+    "ru": "Запрещено использовать способности перемещения.",
+    "en": "Leashed and unable to blink."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_w_quill": {
+    "ru": "Рваная щетина",
+    "en": "Jagged Quills"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_w_quill_Description": {
+    "ru": "-1.5 брони за заряд и усиленный урон от Стального веера.",
+    "en": "-1.5 armor per stack and bonus damage from Steel Fan."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_w_dmg": {
+    "ru": "Пробитая броня щетиной",
+    "en": "Quill Suppression"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_w_dmg_Description": {
+    "ru": "Исходящий урон снижен на 15%.",
+    "en": "Outgoing damage reduced by 15%."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_e_active": {
+    "ru": "Упор спиной",
+    "en": "Back Brace"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_e_active_Description": {
+    "ru": "Поглощает урон щитом. На T4 защита спины работает на 360°.",
+    "en": "Barrier absorbing damage. At T4 rear damage reduction applies 360 deg."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_e_slow": {
+    "ru": "Отдача панциря",
+    "en": "Shell Recoil"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_e_slow_Description": {
+    "ru": "Скорость передвижения снижена на 25%.",
+    "en": "Movement speed reduced by 25%."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_r_ram": {
+    "ru": "Осадный каток",
+    "en": "Siege Roller"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_dread_r_ram_Description": {
+    "ru": "+30% MS, иммунитет к замедлениям, авто-веер каждые 0.8с и оглушение при столкновении.",
+    "en": "+30% MS, slow immunity, auto Steel Fan every 0.8s, and collision stuns."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_q_rush": {
+    "ru": "Рывок Берсерка",
+    "en": "Berserker Rush"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_q_rush_Description": {
+    "ru": "Повышенная скорость и Phase; следующая атака нанесёт сокрушительный удар по конусу.",
+    "en": "Bonus move speed and Phase; next attack delivers a crushing cone strike."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_q_slow": {
+    "ru": "Ошеломление ударом",
+    "en": "Crushed"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_q_slow_Description": {
+    "ru": "Скорость передвижения снижена на 25%.",
+    "en": "Movement speed reduced by 25%."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_w_sunder": {
+    "ru": "Пролом костей",
+    "en": "Bone Sunder"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_w_sunder_Description": {
+    "ru": "Снижение скорости атаки и повышенный входящий физический урон за заряд.",
+    "en": "Reduced attack speed and increased incoming physical damage per stack."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_r_frenzy": {
+    "ru": "Безумие Арены",
+    "en": "Arena Frenzy"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_crush_r_frenzy_Description": {
+    "ru": "+25% Силы, +225 дальности атаки, максимум Ярости и чистый урон по целям с Проломом костей.",
+    "en": "+25% STR, +225 attack range, max Adrenaline, and bonus pure damage vs 4-stack Bone Sunder."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_catalyst": {
+    "ru": "Кислотный катализатор",
+    "en": "Acid Catalyst"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_catalyst_Description": {
+    "ru": "Снижает сопротивление магии, броню и скорость передвижения за заряд.",
+    "en": "Magic resistance, armor, and movement speed reduced per stack."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_w_buff": {
+    "ru": "Реактивный разгон",
+    "en": "Reactive Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_w_buff_Description": {
+    "ru": "+15% скорости передвижения и +25 скорости атаки.",
+    "en": "+15% movement speed and +25 attack speed."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_shield": {
+    "ru": "Сброс давления",
+    "en": "Pressure Shield"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_shield_Description": {
+    "ru": "Алхимический щит, поглощающий входящий урон.",
+    "en": "Alchemical barrier absorbing incoming damage."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_cloud": {
+    "ru": "Паровое облако",
+    "en": "Steam Cloud"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_cloud_Description": {
+    "ru": "-25% скорости передвижения и 30% шанс промаха.",
+    "en": "-25% movement speed and 30% miss chance."
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_stats": {
+    "ru": "Реакторный резонанс",
+    "en": "Reactor Resonance"
+  },
+  "DOTA_Tooltip_modifier_evo_bristle_react_e_stats_Description": {
+    "ru": "Бонус ко всем атрибутам от стаков Кислотного катализатора на врагах рядом.",
+    "en": "Bonus to all attributes from Acid Catalyst stacks on nearby enemies."
+  }
+}
