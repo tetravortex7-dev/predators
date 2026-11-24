@@ -1,4 +1,22 @@
 const pushCooldownByEnt: Map<EntityIndex, number> = new Map();
+export const activeReactorZones: Set<CDOTA_BaseNPC> = new Set();
+
+export function applyReactorCatalystStacks(
+    caster: CDOTA_BaseNPC,
+    target: CDOTA_BaseNPC,
+    ability: CDOTABaseAbility,
+    count: number
+): void {
+    const eAb = caster.FindAbilityByName("evo_bristle_react_e");
+    const lvl = eAb && !eAb.IsNull() ? eAb.GetLevel() : ability.GetLevel();
+    const maxStacks = lvl >= 3 ? 6 : lvl >= 2 ? 5 : 4;
+    const ex = target.FindModifierByName("modifier_evo_bristle_react_catalyst");
+    const next = Math.min(maxStacks, (ex ? ex.GetStackCount() : 0) + count);
+    const mod = target.AddNewModifier(caster, ability, "modifier_evo_bristle_react_catalyst", { duration: 5.0 });
+    if (mod !== undefined) {
+        mod.SetStackCount(next);
+    }
+}
 
 export function getAllAttributesSum(unit: CDOTA_BaseNPC): number {
     if (!unit.IsRealHero()) return 0;

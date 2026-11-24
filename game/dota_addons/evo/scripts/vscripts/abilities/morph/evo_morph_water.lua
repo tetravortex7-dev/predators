@@ -5,7 +5,7 @@ local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local Set = ____lualib.Set
 local __TS__New = ____lualib.__TS__New
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 1,["11"] = 2,["12"] = 3,["13"] = 4,["14"] = 5,["15"] = 6,["16"] = 7,["17"] = 10,["18"] = 12,["19"] = 12,["20"] = 12,["21"] = 12,["22"] = 12,["23"] = 12,["24"] = 12,["25"] = 12,["26"] = 12,["27"] = 12,["28"] = 23,["29"] = 24,["31"] = 27,["32"] = 28,["33"] = 27,["34"] = 28,["35"] = 29,["36"] = 30,["37"] = 29,["38"] = 32,["39"] = 33,["40"] = 32,["41"] = 35,["42"] = 36,["43"] = 35,["44"] = 38,["45"] = 39,["46"] = 38,["47"] = 41,["48"] = 42,["49"] = 41,["50"] = 44,["51"] = 45,["52"] = 44,["53"] = 28,["54"] = 27,["55"] = 28,["57"] = 28,["58"] = 49,["59"] = 50,["60"] = 49,["61"] = 50,["62"] = 51,["63"] = 52,["66"] = 53,["67"] = 54,["70"] = 56,["71"] = 57,["72"] = 58,["73"] = 59,["74"] = 60,["75"] = 61,["76"] = 62,["77"] = 62,["78"] = 62,["79"] = 62,["80"] = 63,["81"] = 64,["82"] = 66,["83"] = 67,["84"] = 68,["85"] = 51,["86"] = 50,["87"] = 49,["88"] = 50,["90"] = 50,["91"] = 77,["92"] = 78,["93"] = 77,["94"] = 78,["96"] = 78,["97"] = 79,["98"] = 80,["99"] = 81,["100"] = 82,["101"] = 83,["102"] = 84,["103"] = 85,["104"] = 77,["105"] = 88,["106"] = 89,["107"] = 88,["108"] = 91,["109"] = 92,["110"] = 91,["111"] = 94,["112"] = 95,["113"] = 95,["114"] = 95,["115"] = 95,["116"] = 94,["117"] = 100,["118"] = 101,["121"] = 102,["122"] = 103,["123"] = 104,["124"] = 105,["125"] = 106,["126"] = 107,["127"] = 108,["128"] = 109,["129"] = 111,["130"] = 112,["131"] = 113,["133"] = 119,["134"] = 100,["135"] = 121,["136"] = 122,["139"] = 123,["140"] = 124,["141"] = 125,["144"] = 128,["145"] = 129,["146"] = 130,["147"] = 131,["148"] = 132,["149"] = 133,["150"] = 135,["151"] = 136,["152"] = 137,["153"] = 137,["154"] = 137,["155"] = 137,["156"] = 137,["157"] = 137,["158"] = 137,["159"] = 137,["160"] = 137,["162"] = 148,["163"] = 148,["164"] = 148,["165"] = 148,["166"] = 148,["167"] = 148,["168"] = 148,["169"] = 148,["170"] = 148,["171"] = 148,["172"] = 148,["173"] = 160,["175"] = 161,["176"] = 161,["178"] = 162,["179"] = 163,["180"] = 163,["182"] = 164,["183"] = 165,["184"] = 165,["185"] = 165,["186"] = 165,["187"] = 165,["188"] = 165,["189"] = 165,["190"] = 172,["191"] = 173,["196"] = 121,["197"] = 177,["198"] = 178,["201"] = 179,["202"] = 180,["203"] = 181,["204"] = 182,["206"] = 184,["207"] = 185,["210"] = 186,["211"] = 187,["212"] = 189,["213"] = 190,["214"] = 191,["215"] = 191,["216"] = 191,["217"] = 191,["218"] = 191,["219"] = 191,["220"] = 191,["221"] = 191,["222"] = 191,["223"] = 191,["224"] = 191,["225"] = 202,["227"] = 203,["228"] = 203,["230"] = 204,["231"] = 204,["232"] = 204,["233"] = 204,["234"] = 204,["235"] = 209,["236"] = 210,["237"] = 211,["238"] = 212,["239"] = 212,["240"] = 212,["241"] = 212,["242"] = 212,["243"] = 217,["245"] = 219,["246"] = 220,["251"] = 177,["252"] = 78,["253"] = 77,["254"] = 78,["256"] = 78,["257"] = 226,["258"] = 227,["259"] = 226,["260"] = 227,["261"] = 228,["262"] = 229,["263"] = 228,["264"] = 231,["265"] = 232,["266"] = 231,["267"] = 234,["268"] = 235,["271"] = 236,["272"] = 234,["273"] = 238,["274"] = 239,["277"] = 240,["278"] = 241,["279"] = 242,["282"] = 243,["283"] = 243,["284"] = 243,["285"] = 243,["286"] = 243,["287"] = 243,["288"] = 243,["289"] = 243,["290"] = 243,["291"] = 243,["292"] = 243,["293"] = 254,["295"] = 255,["296"] = 255,["298"] = 256,["299"] = 256,["300"] = 256,["301"] = 256,["302"] = 256,["303"] = 256,["307"] = 238,["308"] = 227,["309"] = 226,["310"] = 227,["312"] = 227,["313"] = 261,["314"] = 262,["315"] = 261,["316"] = 262,["317"] = 263,["318"] = 264,["321"] = 265,["322"] = 266,["323"] = 267,["326"] = 268,["327"] = 269,["328"] = 269,["329"] = 269,["330"] = 269,["331"] = 269,["332"] = 269,["333"] = 269,["334"] = 269,["335"] = 269,["336"] = 269,["337"] = 263,["338"] = 280,["339"] = 281,["340"] = 281,["342"] = 282,["343"] = 282,["345"] = 283,["346"] = 284,["347"] = 284,["349"] = 285,["350"] = 285,["352"] = 287,["353"] = 288,["354"] = 289,["355"] = 290,["356"] = 291,["357"] = 292,["358"] = 293,["360"] = 295,["361"] = 296,["362"] = 298,["363"] = 299,["364"] = 300,["366"] = 302,["367"] = 302,["368"] = 302,["369"] = 302,["370"] = 302,["371"] = 302,["372"] = 302,["373"] = 309,["374"] = 311,["375"] = 312,["377"] = 315,["378"] = 316,["379"] = 316,["380"] = 316,["381"] = 316,["382"] = 316,["383"] = 321,["384"] = 321,["385"] = 321,["386"] = 321,["387"] = 321,["388"] = 326,["389"] = 326,["390"] = 326,["391"] = 326,["392"] = 326,["393"] = 326,["394"] = 326,["395"] = 326,["396"] = 326,["397"] = 326,["398"] = 326,["399"] = 337,["401"] = 338,["402"] = 338,["404"] = 339,["405"] = 339,["406"] = 339,["407"] = 339,["408"] = 339,["409"] = 339,["410"] = 339,["411"] = 346,["416"] = 349,["417"] = 280,["418"] = 262,["419"] = 261,["420"] = 262,["422"] = 262,["423"] = 353,["424"] = 354,["425"] = 353,["426"] = 354,["427"] = 355,["428"] = 356,["429"] = 355,["430"] = 358,["431"] = 359,["432"] = 358,["433"] = 361,["434"] = 362,["435"] = 361,["436"] = 364,["437"] = 365,["438"] = 364,["439"] = 367,["440"] = 368,["441"] = 367,["442"] = 354,["443"] = 353,["444"] = 354,["446"] = 354,["447"] = 374,["448"] = 375,["449"] = 374,["450"] = 375,["451"] = 376,["452"] = 377,["453"] = 376,["454"] = 379,["455"] = 380,["456"] = 379,["457"] = 382,["458"] = 383,["459"] = 382,["460"] = 385,["461"] = 386,["462"] = 385,["463"] = 388,["464"] = 389,["465"] = 389,["466"] = 389,["467"] = 389,["468"] = 388,["469"] = 394,["470"] = 395,["471"] = 394,["472"] = 397,["473"] = 398,["476"] = 399,["477"] = 400,["480"] = 401,["481"] = 402,["484"] = 403,["485"] = 404,["486"] = 405,["487"] = 406,["489"] = 397,["490"] = 375,["491"] = 374,["492"] = 375,["494"] = 375,["495"] = 411,["496"] = 412,["497"] = 411,["498"] = 412,["499"] = 413,["500"] = 414,["501"] = 413,["502"] = 416,["503"] = 417,["506"] = 418,["507"] = 419,["510"] = 420,["511"] = 421,["512"] = 422,["513"] = 422,["514"] = 422,["515"] = 422,["516"] = 422,["517"] = 422,["518"] = 422,["520"] = 424,["521"] = 425,["522"] = 416,["523"] = 412,["524"] = 411,["525"] = 412,["527"] = 412,["528"] = 429,["529"] = 430,["530"] = 429,["531"] = 430,["532"] = 431,["533"] = 432,["534"] = 431,["535"] = 434,["536"] = 435,["537"] = 434,["538"] = 437,["539"] = 438,["540"] = 437,["541"] = 440,["542"] = 441,["543"] = 440,["544"] = 443,["545"] = 444,["546"] = 445,["547"] = 446,["549"] = 448,["550"] = 443,["551"] = 450,["552"] = 451,["553"] = 451,["554"] = 451,["555"] = 451,["556"] = 451,["557"] = 450,["558"] = 457,["559"] = 458,["560"] = 457,["561"] = 460,["562"] = 461,["563"] = 460,["564"] = 463,["565"] = 464,["566"] = 465,["567"] = 463,["568"] = 430,["569"] = 429,["570"] = 430,["572"] = 430,["573"] = 469,["574"] = 470,["575"] = 469,["576"] = 470,["577"] = 471,["578"] = 472,["579"] = 471,["580"] = 474,["581"] = 475,["582"] = 474,["583"] = 477,["584"] = 478,["585"] = 477,["586"] = 480,["587"] = 481,["588"] = 481,["589"] = 481,["590"] = 481,["591"] = 480,["592"] = 486,["593"] = 487,["594"] = 488,["595"] = 486,["596"] = 490,["597"] = 491,["598"] = 490,["599"] = 493,["600"] = 494,["601"] = 493,["602"] = 470,["603"] = 469,["604"] = 470,["606"] = 470,["607"] = 498,["608"] = 499,["609"] = 498,["610"] = 499,["611"] = 500,["612"] = 501,["615"] = 502,["616"] = 503,["619"] = 504,["620"] = 505,["621"] = 506,["622"] = 507,["623"] = 507,["624"] = 507,["625"] = 507,["626"] = 507,["627"] = 507,["628"] = 507,["629"] = 507,["630"] = 507,["631"] = 500,["632"] = 499,["633"] = 498,["634"] = 499,["636"] = 499,["637"] = 519,["638"] = 520,["639"] = 519,["640"] = 520,["642"] = 520,["643"] = 521,["644"] = 519,["645"] = 523,["646"] = 524,["647"] = 523,["648"] = 526,["649"] = 527,["650"] = 526,["651"] = 529,["652"] = 530,["655"] = 531,["656"] = 532,["657"] = 533,["658"] = 534,["659"] = 535,["660"] = 540,["661"] = 540,["662"] = 540,["663"] = 540,["664"] = 540,["665"] = 541,["666"] = 541,["667"] = 541,["668"] = 541,["669"] = 541,["670"] = 542,["672"] = 544,["673"] = 529,["674"] = 546,["675"] = 547,["678"] = 548,["679"] = 549,["680"] = 550,["683"] = 551,["684"] = 553,["685"] = 554,["686"] = 555,["687"] = 556,["688"] = 557,["689"] = 558,["690"] = 559,["691"] = 560,["692"] = 561,["697"] = 567,["698"] = 567,["699"] = 567,["700"] = 567,["701"] = 567,["702"] = 567,["703"] = 567,["704"] = 567,["705"] = 567,["706"] = 567,["707"] = 567,["708"] = 578,["710"] = 579,["711"] = 579,["713"] = 580,["714"] = 580,["715"] = 580,["716"] = 580,["717"] = 580,["718"] = 580,["722"] = 546,["723"] = 520,["724"] = 519,["725"] = 520,["727"] = 520});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 1,["11"] = 2,["12"] = 3,["13"] = 4,["14"] = 5,["15"] = 6,["16"] = 7,["17"] = 10,["18"] = 12,["19"] = 12,["20"] = 12,["21"] = 12,["22"] = 12,["23"] = 12,["24"] = 12,["25"] = 20,["26"] = 21,["28"] = 24,["29"] = 25,["30"] = 24,["31"] = 25,["32"] = 26,["33"] = 27,["34"] = 26,["35"] = 29,["36"] = 30,["37"] = 29,["38"] = 32,["39"] = 33,["40"] = 32,["41"] = 35,["42"] = 36,["43"] = 35,["44"] = 38,["45"] = 39,["46"] = 38,["47"] = 41,["48"] = 42,["49"] = 41,["50"] = 25,["51"] = 24,["52"] = 25,["54"] = 25,["55"] = 46,["56"] = 47,["57"] = 46,["58"] = 47,["59"] = 48,["60"] = 49,["63"] = 50,["64"] = 51,["67"] = 53,["68"] = 54,["69"] = 55,["70"] = 56,["71"] = 57,["72"] = 58,["73"] = 59,["74"] = 59,["75"] = 59,["76"] = 59,["77"] = 60,["78"] = 61,["79"] = 63,["80"] = 64,["81"] = 65,["82"] = 48,["83"] = 47,["84"] = 46,["85"] = 47,["87"] = 47,["88"] = 74,["89"] = 75,["90"] = 74,["91"] = 75,["93"] = 75,["94"] = 76,["95"] = 77,["96"] = 78,["97"] = 79,["98"] = 80,["99"] = 81,["100"] = 82,["101"] = 74,["102"] = 85,["103"] = 86,["104"] = 85,["105"] = 88,["106"] = 89,["107"] = 88,["108"] = 91,["109"] = 92,["110"] = 92,["111"] = 92,["112"] = 92,["113"] = 91,["114"] = 97,["115"] = 98,["118"] = 99,["119"] = 100,["120"] = 101,["121"] = 102,["122"] = 103,["123"] = 104,["124"] = 105,["125"] = 106,["126"] = 108,["127"] = 109,["128"] = 110,["130"] = 116,["131"] = 97,["132"] = 118,["133"] = 119,["136"] = 120,["137"] = 121,["138"] = 122,["141"] = 125,["142"] = 126,["143"] = 127,["144"] = 128,["145"] = 129,["146"] = 130,["147"] = 132,["148"] = 133,["149"] = 134,["150"] = 134,["151"] = 134,["152"] = 134,["153"] = 134,["154"] = 134,["155"] = 134,["156"] = 134,["157"] = 134,["159"] = 145,["160"] = 145,["161"] = 145,["162"] = 145,["163"] = 145,["164"] = 145,["165"] = 145,["166"] = 145,["167"] = 145,["168"] = 145,["169"] = 145,["170"] = 157,["172"] = 158,["173"] = 158,["175"] = 159,["176"] = 160,["177"] = 160,["179"] = 161,["180"] = 162,["181"] = 162,["182"] = 162,["183"] = 162,["184"] = 162,["185"] = 162,["186"] = 162,["187"] = 169,["188"] = 170,["193"] = 118,["194"] = 174,["195"] = 175,["198"] = 176,["199"] = 177,["200"] = 178,["201"] = 179,["203"] = 181,["204"] = 182,["207"] = 183,["208"] = 184,["209"] = 186,["210"] = 187,["211"] = 188,["212"] = 188,["213"] = 188,["214"] = 188,["215"] = 188,["216"] = 188,["217"] = 188,["218"] = 188,["219"] = 188,["220"] = 188,["221"] = 188,["222"] = 199,["224"] = 200,["225"] = 200,["227"] = 201,["228"] = 201,["229"] = 201,["230"] = 201,["231"] = 201,["232"] = 206,["233"] = 207,["234"] = 208,["235"] = 209,["236"] = 209,["237"] = 209,["238"] = 209,["239"] = 209,["240"] = 214,["242"] = 216,["243"] = 217,["248"] = 174,["249"] = 75,["250"] = 74,["251"] = 75,["253"] = 75,["254"] = 223,["255"] = 224,["256"] = 223,["257"] = 224,["258"] = 225,["259"] = 226,["260"] = 225,["261"] = 228,["262"] = 229,["263"] = 228,["264"] = 231,["265"] = 232,["268"] = 233,["269"] = 231,["270"] = 235,["271"] = 236,["274"] = 237,["275"] = 238,["276"] = 239,["279"] = 240,["280"] = 240,["281"] = 240,["282"] = 240,["283"] = 240,["284"] = 240,["285"] = 240,["286"] = 240,["287"] = 240,["288"] = 240,["289"] = 240,["290"] = 251,["292"] = 252,["293"] = 252,["295"] = 253,["296"] = 253,["297"] = 253,["298"] = 253,["299"] = 253,["300"] = 253,["304"] = 235,["305"] = 224,["306"] = 223,["307"] = 224,["309"] = 224,["310"] = 258,["311"] = 259,["312"] = 258,["313"] = 259,["314"] = 260,["315"] = 261,["318"] = 262,["319"] = 263,["320"] = 264,["323"] = 265,["324"] = 266,["325"] = 266,["326"] = 266,["327"] = 266,["328"] = 266,["329"] = 266,["330"] = 266,["331"] = 266,["332"] = 266,["333"] = 266,["334"] = 260,["335"] = 277,["336"] = 278,["337"] = 278,["339"] = 279,["340"] = 279,["342"] = 280,["343"] = 281,["344"] = 281,["346"] = 282,["347"] = 282,["349"] = 284,["350"] = 285,["351"] = 286,["352"] = 287,["353"] = 288,["354"] = 289,["355"] = 290,["357"] = 292,["358"] = 293,["359"] = 295,["360"] = 296,["361"] = 297,["363"] = 299,["364"] = 299,["365"] = 299,["366"] = 299,["367"] = 299,["368"] = 299,["369"] = 299,["370"] = 306,["371"] = 308,["372"] = 309,["374"] = 312,["375"] = 313,["376"] = 313,["377"] = 313,["378"] = 313,["379"] = 313,["380"] = 318,["381"] = 318,["382"] = 318,["383"] = 318,["384"] = 318,["385"] = 323,["386"] = 323,["387"] = 323,["388"] = 323,["389"] = 323,["390"] = 323,["391"] = 323,["392"] = 323,["393"] = 323,["394"] = 323,["395"] = 323,["396"] = 334,["398"] = 335,["399"] = 335,["401"] = 336,["402"] = 336,["403"] = 336,["404"] = 336,["405"] = 336,["406"] = 336,["407"] = 336,["408"] = 343,["413"] = 346,["414"] = 277,["415"] = 259,["416"] = 258,["417"] = 259,["419"] = 259,["420"] = 350,["421"] = 351,["422"] = 350,["423"] = 351,["424"] = 352,["425"] = 353,["426"] = 352,["427"] = 355,["428"] = 356,["429"] = 355,["430"] = 358,["431"] = 359,["432"] = 358,["433"] = 361,["434"] = 362,["435"] = 361,["436"] = 364,["437"] = 365,["438"] = 364,["439"] = 351,["440"] = 350,["441"] = 351,["443"] = 351,["444"] = 371,["445"] = 372,["446"] = 371,["447"] = 372,["448"] = 373,["449"] = 374,["450"] = 373,["451"] = 376,["452"] = 377,["453"] = 376,["454"] = 379,["455"] = 380,["456"] = 379,["457"] = 382,["458"] = 383,["459"] = 382,["460"] = 385,["461"] = 386,["462"] = 386,["463"] = 386,["464"] = 386,["465"] = 385,["466"] = 391,["467"] = 392,["468"] = 391,["469"] = 394,["470"] = 395,["473"] = 396,["474"] = 397,["477"] = 398,["478"] = 399,["481"] = 400,["482"] = 401,["483"] = 402,["484"] = 403,["486"] = 394,["487"] = 372,["488"] = 371,["489"] = 372,["491"] = 372});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -15,17 +15,14 @@ local dotaModifierState = ____dota_ts_adapter.dotaModifierState
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local SCRIPT_PATH = "abilities/morph/evo_morph_water"
-local WATER_MODS = {
+local WATER_QW_MODS = {
     "modifier_evo_morph_wet",
     "modifier_evo_morph_water_q_dash",
     "modifier_evo_morph_water_q_trail",
     "modifier_evo_morph_water_w_root",
-    "modifier_evo_morph_water_w_mr",
-    "modifier_evo_morph_water_e_buff",
-    "modifier_evo_morph_water_e_passive",
-    "modifier_evo_morph_water_r_thinker"
+    "modifier_evo_morph_water_w_mr"
 }
-for ____, modName in ipairs(WATER_MODS) do
+for ____, modName in ipairs(WATER_QW_MODS) do
     LinkLuaModifier(modName, SCRIPT_PATH, 0)
 end
 ____exports.modifier_evo_morph_wet = __TS__Class()
@@ -492,237 +489,4 @@ modifier_evo_morph_water_w_mr = __TS__DecorateLegacy(
     modifier_evo_morph_water_w_mr
 )
 ____exports.modifier_evo_morph_water_w_mr = modifier_evo_morph_water_w_mr
-____exports.evo_morph_water_e = __TS__Class()
-local evo_morph_water_e = ____exports.evo_morph_water_e
-evo_morph_water_e.name = "evo_morph_water_e"
-__TS__ClassExtends(evo_morph_water_e, BaseAbility)
-function evo_morph_water_e.prototype.GetIntrinsicModifierName(self)
-    return "modifier_evo_morph_water_e_passive"
-end
-function evo_morph_water_e.prototype.OnSpellStart(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    if not caster or caster:IsNull() or not IsValidEntity(caster) then
-        return
-    end
-    local dur = self:GetSpecialValueFor("duration")
-    if self:GetLevel() >= 2 then
-        caster:Purge(
-            false,
-            true,
-            false,
-            false,
-            false
-        )
-    end
-    caster:EmitSound("Hero_Morphling.MorphAgi")
-    caster:AddNewModifier(caster, self, "modifier_evo_morph_water_e_buff", {duration = dur})
-end
-evo_morph_water_e = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_morph_water_e")},
-    evo_morph_water_e
-)
-____exports.evo_morph_water_e = evo_morph_water_e
-____exports.modifier_evo_morph_water_e_buff = __TS__Class()
-local modifier_evo_morph_water_e_buff = ____exports.modifier_evo_morph_water_e_buff
-modifier_evo_morph_water_e_buff.name = "modifier_evo_morph_water_e_buff"
-__TS__ClassExtends(modifier_evo_morph_water_e_buff, BaseModifier)
-function modifier_evo_morph_water_e_buff.prototype.IsHidden(self)
-    return false
-end
-function modifier_evo_morph_water_e_buff.prototype.IsDebuff(self)
-    return false
-end
-function modifier_evo_morph_water_e_buff.prototype.IsPurgable(self)
-    return true
-end
-function modifier_evo_morph_water_e_buff.prototype.GetTexture(self)
-    return "morphling_morph_str"
-end
-function modifier_evo_morph_water_e_buff.prototype.CheckState(self)
-    local ab = self:GetAbility()
-    if ab and ab:GetLevel() >= 2 then
-        return {[dotaModifierState(nil, "MODIFIER_STATE_NO_UNIT_COLLISION")] = true}
-    end
-    return {}
-end
-function modifier_evo_morph_water_e_buff.prototype.DeclareFunctions(self)
-    return {
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_EVASION_CONSTANT"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING")
-    }
-end
-function modifier_evo_morph_water_e_buff.prototype.GetModifierMoveSpeedBonus_Percentage(self)
-    return 18
-end
-function modifier_evo_morph_water_e_buff.prototype.GetModifierEvasion_Constant(self)
-    return 25
-end
-function modifier_evo_morph_water_e_buff.prototype.GetModifierStatusResistanceStacking(self)
-    local ab = self:GetAbility()
-    return ab and ab:GetLevel() >= 3 and 25 or 0
-end
-modifier_evo_morph_water_e_buff = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_morph_water_e_buff")},
-    modifier_evo_morph_water_e_buff
-)
-____exports.modifier_evo_morph_water_e_buff = modifier_evo_morph_water_e_buff
-____exports.modifier_evo_morph_water_e_passive = __TS__Class()
-local modifier_evo_morph_water_e_passive = ____exports.modifier_evo_morph_water_e_passive
-modifier_evo_morph_water_e_passive.name = "modifier_evo_morph_water_e_passive"
-__TS__ClassExtends(modifier_evo_morph_water_e_passive, BaseModifier)
-function modifier_evo_morph_water_e_passive.prototype.IsHidden(self)
-    return true
-end
-function modifier_evo_morph_water_e_passive.prototype.IsPurgable(self)
-    return false
-end
-function modifier_evo_morph_water_e_passive.prototype.RemoveOnDeath(self)
-    return false
-end
-function modifier_evo_morph_water_e_passive.prototype.DeclareFunctions(self)
-    return {
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT")
-    }
-end
-function modifier_evo_morph_water_e_passive.prototype.isOnCooldownT4(self)
-    local ab = self:GetAbility()
-    return ab ~= nil and not ab:IsNull() and ab:GetLevel() >= 3 and not ab:IsCooldownReady()
-end
-function modifier_evo_morph_water_e_passive.prototype.GetModifierPhysicalArmorBonus(self)
-    return self:isOnCooldownT4() and 6 or 0
-end
-function modifier_evo_morph_water_e_passive.prototype.GetModifierConstantHealthRegen(self)
-    return self:isOnCooldownT4() and 5 or 0
-end
-modifier_evo_morph_water_e_passive = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_morph_water_e_passive")},
-    modifier_evo_morph_water_e_passive
-)
-____exports.modifier_evo_morph_water_e_passive = modifier_evo_morph_water_e_passive
-____exports.evo_morph_water_r = __TS__Class()
-local evo_morph_water_r = ____exports.evo_morph_water_r
-evo_morph_water_r.name = "evo_morph_water_r"
-__TS__ClassExtends(evo_morph_water_r, BaseAbility)
-function evo_morph_water_r.prototype.OnSpellStart(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    if not caster or caster:IsNull() or not IsValidEntity(caster) then
-        return
-    end
-    local pos = self:GetCursorPosition()
-    local dur = self:GetSpecialValueFor("duration")
-    caster:EmitSound("Hero_Slardar.Amplify_Damage")
-    CreateModifierThinker(
-        caster,
-        self,
-        "modifier_evo_morph_water_r_thinker",
-        {duration = dur},
-        pos,
-        caster:GetTeamNumber(),
-        false
-    )
-end
-evo_morph_water_r = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_morph_water_r")},
-    evo_morph_water_r
-)
-____exports.evo_morph_water_r = evo_morph_water_r
-____exports.modifier_evo_morph_water_r_thinker = __TS__Class()
-local modifier_evo_morph_water_r_thinker = ____exports.modifier_evo_morph_water_r_thinker
-modifier_evo_morph_water_r_thinker.name = "modifier_evo_morph_water_r_thinker"
-__TS__ClassExtends(modifier_evo_morph_water_r_thinker, BaseModifier)
-function modifier_evo_morph_water_r_thinker.prototype.____constructor(self, ...)
-    BaseModifier.prototype.____constructor(self, ...)
-    self.radius = 500
-end
-function modifier_evo_morph_water_r_thinker.prototype.IsHidden(self)
-    return true
-end
-function modifier_evo_morph_water_r_thinker.prototype.IsPurgable(self)
-    return false
-end
-function modifier_evo_morph_water_r_thinker.prototype.OnCreated(self)
-    if not IsServer() then
-        return
-    end
-    local ab = self:GetAbility()
-    self.radius = ab and ab:GetSpecialValueFor("radius") or 500
-    local parent = self:GetParent()
-    if parent and not parent:IsNull() then
-        local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_slardar/slardar_crush.vpcf", 8, nil)
-        ParticleManager:SetParticleControl(
-            pfx,
-            0,
-            parent:GetAbsOrigin()
-        )
-        ParticleManager:SetParticleControl(
-            pfx,
-            1,
-            Vector(self.radius, self.radius, self.radius)
-        )
-        ParticleManager:ReleaseParticleIndex(pfx)
-    end
-    self:StartIntervalThink(0.5)
-end
-function modifier_evo_morph_water_r_thinker.prototype.OnIntervalThink(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    local parent = self:GetParent()
-    if not caster or caster:IsNull() or not parent or parent:IsNull() then
-        return
-    end
-    local origin = parent:GetAbsOrigin()
-    if caster:IsAlive() then
-        local dist = (caster:GetAbsOrigin() - origin):Length2D()
-        if dist <= self.radius then
-            local q = caster:FindAbilityByName("evo_morph_water_q")
-            if q and not q:IsNull() then
-                local rem = q:GetCooldownTimeRemaining()
-                if rem > 0.3 then
-                    q:EndCooldown()
-                    q:StartCooldown(math.max(0.05, rem - 0.25))
-                end
-            end
-        end
-    end
-    local enemies = FindUnitsInRadius(
-        caster:GetTeamNumber(),
-        origin,
-        nil,
-        self.radius,
-        2,
-        1 + 18,
-        0,
-        0,
-        false
-    )
-    for ____, enemy in ipairs(enemies) do
-        do
-            if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue115
-            end
-            enemy:AddNewModifier(
-                caster,
-                self:GetAbility(),
-                "modifier_evo_morph_wet",
-                {duration = 1}
-            )
-        end
-        ::__continue115::
-    end
-end
-modifier_evo_morph_water_r_thinker = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_morph_water_r_thinker")},
-    modifier_evo_morph_water_r_thinker
-)
-____exports.modifier_evo_morph_water_r_thinker = modifier_evo_morph_water_r_thinker
 return ____exports

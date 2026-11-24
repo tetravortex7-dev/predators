@@ -7,6 +7,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BRANCHES_DIR = os.path.join(ROOT, "data", "branches")
 WEARABLES_PATH = os.path.join(ROOT, "reference", "wearables_catalog.json")
 OUT_TS_PATH = os.path.join(ROOT, "src", "vscripts", "data", "bodies_catalog.ts")
+OUT_BRANCHES_DIR = os.path.join(ROOT, "src", "vscripts", "data", "branches")
 RU_LOC_PATH = os.path.join(ROOT, "resource", "addon_russian.txt")
 EN_LOC_PATH = os.path.join(ROOT, "resource", "addon_english.txt")
 
@@ -148,6 +149,10 @@ def format_ts_value(val, indent=0):
     if isinstance(val, dict):
         if not val:
             return "{}"
+        if len(val) <= 2 and all(isinstance(v, (int, float, str, bool)) for v in val.values()):
+            inline = ", ".join(f"{k}: {format_ts_value(v, 0)}" for k, v in val.items())
+            if len(inline) <= 110:
+                return "{ " + inline + " }"
         lines = []
         for k, v in val.items():
             lines.append(f"{sp_in}{k}: {format_ts_value(v, indent + 4)},")
@@ -220,6 +225,7 @@ def main():
         "signatureAbility": starter_raw["signature"],
     }
     bodies.append(starter_body)
+    branch_modules = [("starter", "EVO_STARTER_BODIES", [starter_body])]
 
     if starter_raw.get("name_ru"):
         ru_tokens[starter_id] = starter_raw["name_ru"]
@@ -236,6 +242,7 @@ def main():
         if not stages:
             continue
 
+        branch_bodies = []
         stage_ids = []
         for idx, stage in enumerate(stages):
             tier_index = stage.get("tier_index", idx + 1)
@@ -313,6 +320,7 @@ def main():
                 body_obj["kitAbilityLevel"] = stage["ability_level"]
 
             bodies.append(body_obj)
+            branch_bodies.append(body_obj)
 
             if stage.get("name_ru"):
                 ru_tokens[stage_id] = stage["name_ru"]
@@ -323,12 +331,41 @@ def main():
             if stage.get("desc_en"):
                 en_tokens[f"{stage_id}_desc"] = stage["desc_en"]
 
+        safe_key = re.sub(r"[^a-zA-Z0-9_]", "_", key).lower()
+        const_name = f"EVO_BRANCH_{safe_key.upper()}_BODIES"
+        branch_modules.append((safe_key, const_name, branch_bodies))
+
+    os.makedirs(OUT_BRANCHES_DIR, exist_ok=True)
+    expected_files = {f"{mod_name}.ts" for mod_name, _, _ in branch_modules}
+    for existing_name in os.listdir(OUT_BRANCHES_DIR):
+        if existing_name.endswith(".ts") and existing_name not in expected_files:
+            os.remove(os.path.join(OUT_BRANCHES_DIR, existing_name))
+
+    for mod_name, const_name, mod_bodies in branch_modules:
+        mod_path = os.path.join(OUT_BRANCHES_DIR, f"{mod_name}.ts")
+        mod_lines = [
+            'import { BodyDefinition } from "../data_schemas";',
+            "",
+            f"export const {const_name}: readonly BodyDefinition[] = " + format_ts_value(mod_bodies, 0) + ";",
+            "",
+        ]
+        with open(mod_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(mod_lines))
+
+    import_lines = ['import { BodyDefinition } from "./data_schemas";']
+    spread_lines = []
+    for mod_name, const_name, _ in branch_modules:
+        import_lines.append(f'import {{ {const_name} }} from "./branches/{mod_name}";')
+        spread_lines.append(f"    ...{const_name},")
+
     ts_lines = [
-        'import { BodyDefinition } from "./data_schemas";',
+        *import_lines,
         "",
         f'export const EVO_DEFAULT_START_BODY_ID = "{starter_id}";',
         "",
-        "export const EVO_BODIES_CATALOG: readonly BodyDefinition[] = " + format_ts_value(bodies, 0) + ";",
+        "export const EVO_BODIES_CATALOG: readonly BodyDefinition[] = [",
+        *spread_lines,
+        "];",
         "",
         "export function getBodyDefinition(bodyId: string): BodyDefinition | undefined {",
         "    for (const body of EVO_BODIES_CATALOG) {",

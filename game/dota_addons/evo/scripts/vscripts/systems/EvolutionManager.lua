@@ -2,13 +2,10 @@ local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
 local Map = ____lualib.Map
 local __TS__New = ____lualib.__TS__New
-local __TS__StringStartsWith = ____lualib.__TS__StringStartsWith
-local __TS__ArrayIncludes = ____lualib.__TS__ArrayIncludes
 local __TS__ArrayMap = ____lualib.__TS__ArrayMap
 local __TS__ArrayFilter = ____lualib.__TS__ArrayFilter
-local Set = ____lualib.Set
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["13"] = 3,["14"] = 4,["15"] = 5,["16"] = 6,["17"] = 9,["18"] = 10,["19"] = 11,["20"] = 12,["21"] = 13,["22"] = 15,["23"] = 15,["24"] = 15,["25"] = 16,["26"] = 16,["27"] = 54,["28"] = 60,["29"] = 60,["30"] = 60,["31"] = 64,["32"] = 64,["33"] = 65,["34"] = 66,["35"] = 61,["36"] = 63,["37"] = 69,["38"] = 70,["39"] = 70,["40"] = 70,["41"] = 70,["42"] = 70,["43"] = 71,["44"] = 71,["45"] = 71,["46"] = 71,["47"] = 71,["48"] = 73,["49"] = 73,["50"] = 73,["51"] = 74,["52"] = 73,["53"] = 73,["54"] = 76,["55"] = 76,["56"] = 76,["57"] = 77,["58"] = 76,["59"] = 76,["60"] = 79,["61"] = 79,["62"] = 79,["63"] = 80,["64"] = 79,["65"] = 79,["66"] = 83,["67"] = 83,["68"] = 83,["69"] = 83,["70"] = 83,["71"] = 83,["72"] = 83,["73"] = 84,["74"] = 83,["75"] = 83,["76"] = 86,["77"] = 86,["78"] = 86,["79"] = 86,["80"] = 86,["81"] = 86,["82"] = 86,["83"] = 87,["84"] = 86,["85"] = 86,["86"] = 89,["87"] = 89,["88"] = 89,["89"] = 89,["90"] = 89,["91"] = 89,["92"] = 89,["93"] = 89,["94"] = 89,["95"] = 90,["96"] = 89,["97"] = 89,["98"] = 69,["99"] = 94,["100"] = 95,["101"] = 96,["102"] = 96,["104"] = 97,["105"] = 94,["106"] = 100,["107"] = 101,["108"] = 100,["109"] = 104,["110"] = 105,["111"] = 106,["112"] = 106,["114"] = 107,["115"] = 108,["116"] = 109,["117"] = 110,["120"] = 113,["121"] = 104,["122"] = 116,["123"] = 117,["126"] = 118,["127"] = 119,["128"] = 120,["129"] = 116,["130"] = 123,["131"] = 124,["134"] = 125,["135"] = 126,["136"] = 127,["137"] = 129,["138"] = 136,["139"] = 137,["140"] = 123,["141"] = 140,["142"] = 141,["143"] = 141,["145"] = 142,["146"] = 143,["147"] = 143,["149"] = 145,["150"] = 146,["151"] = 146,["153"] = 148,["154"] = 150,["155"] = 155,["156"] = 156,["157"] = 157,["158"] = 158,["159"] = 158,["160"] = 158,["161"] = 158,["162"] = 159,["163"] = 158,["164"] = 158,["165"] = 161,["167"] = 164,["168"] = 140,["169"] = 167,["170"] = 168,["171"] = 168,["173"] = 169,["174"] = 170,["175"] = 170,["177"] = 172,["178"] = 173,["179"] = 173,["181"] = 175,["182"] = 176,["183"] = 178,["184"] = 179,["185"] = 180,["186"] = 184,["187"] = 184,["189"] = 185,["190"] = 186,["192"] = 189,["193"] = 191,["194"] = 192,["196"] = 195,["197"] = 196,["198"] = 197,["199"] = 198,["201"] = 200,["202"] = 201,["203"] = 203,["204"] = 210,["205"] = 211,["206"] = 212,["207"] = 167,["208"] = 215,["209"] = 219,["211"] = 220,["212"] = 220,["214"] = 221,["215"] = 222,["216"] = 222,["218"] = 223,["219"] = 224,["220"] = 224,["222"] = 225,["223"] = 225,["225"] = 226,["226"] = 226,["228"] = 227,["231"] = 220,["234"] = 229,["235"] = 215,["236"] = 232,["237"] = 233,["239"] = 234,["240"] = 234,["242"] = 235,["243"] = 236,["244"] = 236,["246"] = 237,["250"] = 232,["251"] = 243,["252"] = 244,["253"] = 245,["256"] = 246,["259"] = 248,["260"] = 249,["263"] = 251,["264"] = 252,["265"] = 253,["266"] = 254,["267"] = 255,["268"] = 256,["269"] = 257,["270"] = 258,["271"] = 259,["272"] = 260,["274"] = 262,["276"] = 269,["278"] = 243,["279"] = 273,["280"] = 274,["281"] = 275,["284"] = 276,["287"] = 278,["288"] = 279,["291"] = 281,["292"] = 282,["293"] = 283,["294"] = 284,["295"] = 285,["296"] = 286,["297"] = 292,["299"] = 273,["300"] = 296,["301"] = 297,["304"] = 298,["305"] = 299,["306"] = 300,["307"] = 301,["310"] = 304,["311"] = 305,["312"] = 296,["313"] = 308,["314"] = 309,["315"] = 310,["318"] = 312,["319"] = 313,["320"] = 315,["321"] = 317,["323"] = 318,["324"] = 318,["326"] = 319,["327"] = 320,["328"] = 321,["329"] = 322,["330"] = 322,["331"] = 322,["332"] = 322,["333"] = 322,["334"] = 322,["335"] = 322,["336"] = 325,["337"] = 326,["339"] = 328,["340"] = 329,["341"] = 330,["342"] = 330,["343"] = 330,["344"] = 330,["351"] = 336,["353"] = 337,["354"] = 337,["355"] = 338,["356"] = 339,["357"] = 340,["358"] = 341,["359"] = 342,["360"] = 343,["361"] = 348,["362"] = 349,["363"] = 350,["368"] = 337,["372"] = 358,["374"] = 359,["375"] = 359,["376"] = 360,["377"] = 361,["378"] = 362,["379"] = 363,["380"] = 364,["381"] = 365,["382"] = 366,["383"] = 367,["384"] = 368,["385"] = 368,["386"] = 368,["387"] = 368,["391"] = 359,["395"] = 308,["396"] = 376,["397"] = 377,["398"] = 378,["401"] = 380,["402"] = 381,["405"] = 383,["406"] = 384,["409"] = 386,["410"] = 387,["413"] = 391,["414"] = 392,["417"] = 396,["418"] = 397,["419"] = 399,["420"] = 400,["421"] = 376,["422"] = 403,["423"] = 404,["424"] = 405,["427"] = 407,["428"] = 408,["431"] = 410,["432"] = 411,["435"] = 413,["436"] = 414,["439"] = 418,["440"] = 419,["441"] = 403,["442"] = 422,["443"] = 423,["446"] = 424,["447"] = 425,["450"] = 427,["451"] = 428,["454"] = 430,["455"] = 431,["458"] = 433,["459"] = 434,["462"] = 436,["463"] = 437,["466"] = 441,["467"] = 442,["468"] = 443,["471"] = 445,["472"] = 446,["473"] = 447,["474"] = 449,["475"] = 453,["476"] = 459,["477"] = 460,["478"] = 422,["479"] = 463,["480"] = 464,["481"] = 464,["482"] = 464,["483"] = 464,["484"] = 464,["485"] = 464,["486"] = 464,["488"] = 472,["489"] = 472,["491"] = 473,["492"] = 474,["493"] = 474,["495"] = 475,["496"] = 476,["497"] = 476,["499"] = 477,["500"] = 477,["502"] = 478,["505"] = 472,["508"] = 463,["509"] = 482,["510"] = 487,["511"] = 488,["512"] = 490,["513"] = 491,["514"] = 492,["516"] = 494,["517"] = 496,["518"] = 502,["519"] = 504,["520"] = 504,["521"] = 504,["522"] = 504,["523"] = 505,["524"] = 506,["525"] = 507,["526"] = 509,["527"] = 510,["528"] = 511,["529"] = 512,["530"] = 514,["531"] = 515,["532"] = 516,["533"] = 517,["534"] = 518,["535"] = 519,["536"] = 520,["540"] = 524,["541"] = 525,["542"] = 526,["543"] = 526,["546"] = 528,["547"] = 529,["548"] = 530,["549"] = 530,["552"] = 533,["553"] = 534,["554"] = 535,["555"] = 536,["556"] = 537,["557"] = 538,["558"] = 539,["559"] = 540,["560"] = 541,["561"] = 542,["562"] = 543,["563"] = 544,["564"] = 545,["567"] = 548,["568"] = 549,["569"] = 551,["570"] = 551,["571"] = 551,["572"] = 552,["573"] = 553,["576"] = 556,["578"] = 558,["579"] = 559,["580"] = 560,["582"] = 562,["583"] = 563,["584"] = 564,["585"] = 565,["586"] = 565,["590"] = 568,["591"] = 570,["592"] = 571,["593"] = 572,["594"] = 573,["597"] = 576,["598"] = 577,["599"] = 578,["600"] = 579,["603"] = 583,["604"] = 585,["605"] = 586,["606"] = 587,["607"] = 588,["608"] = 589,["611"] = 593,["612"] = 594,["613"] = 595,["614"] = 596,["615"] = 597,["616"] = 598,["619"] = 602,["620"] = 603,["623"] = 606,["624"] = 607,["625"] = 608,["627"] = 611,["628"] = 482,["629"] = 614,["630"] = 615,["631"] = 616,["633"] = 617,["634"] = 617,["635"] = 618,["636"] = 619,["637"] = 620,["638"] = 620,["639"] = 620,["640"] = 620,["641"] = 620,["642"] = 620,["645"] = 617,["649"] = 625,["650"] = 614,["651"] = 628,["652"] = 633,["655"] = 634,["656"] = 635,["657"] = 636,["658"] = 637,["659"] = 638,["660"] = 639,["663"] = 628,["664"] = 644,["665"] = 645,["666"] = 646,["667"] = 647,["670"] = 650,["671"] = 651,["672"] = 652,["673"] = 653,["676"] = 656,["677"] = 657,["678"] = 658,["681"] = 659,["682"] = 660,["683"] = 661,["686"] = 644,["687"] = 666,["688"] = 667,["689"] = 668,["690"] = 669,["691"] = 670,["694"] = 673,["695"] = 666,["696"] = 676,["697"] = 677,["698"] = 678,["699"] = 679,["700"] = 679,["701"] = 679,["702"] = 679,["703"] = 679,["704"] = 679,["705"] = 679,["706"] = 679,["707"] = 679,["708"] = 679,["709"] = 679,["710"] = 679,["711"] = 679,["712"] = 679,["713"] = 693,["715"] = 695,["716"] = 676,["717"] = 698,["718"] = 699,["719"] = 700,["720"] = 701,["721"] = 702,["722"] = 702,["723"] = 702,["725"] = 702,["726"] = 707,["727"] = 708,["728"] = 709,["729"] = 710,["730"] = 711,["731"] = 712,["732"] = 713,["733"] = 714,["734"] = 715,["735"] = 717,["736"] = 718,["737"] = 719,["739"] = 720,["740"] = 721,["741"] = 721,["743"] = 722,["744"] = 726,["745"] = 726,["746"] = 726,["747"] = 726,["748"] = 726,["749"] = 726,["750"] = 726,["751"] = 726,["752"] = 726,["753"] = 726,["758"] = 738,["759"] = 740,["760"] = 698});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 9,["15"] = 10,["16"] = 11,["17"] = 12,["18"] = 14,["19"] = 14,["20"] = 14,["21"] = 15,["22"] = 15,["23"] = 17,["24"] = 18,["25"] = 19,["26"] = 20,["27"] = 22,["28"] = 23,["29"] = 28,["30"] = 29,["31"] = 30,["32"] = 33,["33"] = 33,["34"] = 33,["35"] = 37,["36"] = 37,["37"] = 38,["38"] = 39,["39"] = 34,["40"] = 36,["41"] = 42,["42"] = 43,["43"] = 43,["44"] = 43,["45"] = 43,["46"] = 43,["47"] = 44,["48"] = 44,["49"] = 44,["50"] = 44,["51"] = 44,["52"] = 46,["53"] = 46,["54"] = 46,["55"] = 47,["56"] = 46,["57"] = 46,["58"] = 49,["59"] = 49,["60"] = 49,["61"] = 50,["62"] = 49,["63"] = 49,["64"] = 52,["65"] = 52,["66"] = 52,["67"] = 53,["68"] = 52,["69"] = 52,["70"] = 56,["71"] = 56,["72"] = 56,["73"] = 56,["74"] = 56,["75"] = 56,["76"] = 56,["77"] = 57,["78"] = 56,["79"] = 56,["80"] = 59,["81"] = 59,["82"] = 59,["83"] = 59,["84"] = 59,["85"] = 59,["86"] = 59,["87"] = 60,["88"] = 59,["89"] = 59,["90"] = 62,["91"] = 62,["92"] = 62,["93"] = 62,["94"] = 62,["95"] = 62,["96"] = 62,["97"] = 62,["98"] = 62,["99"] = 63,["100"] = 62,["101"] = 62,["102"] = 42,["103"] = 67,["104"] = 68,["105"] = 69,["106"] = 69,["108"] = 70,["109"] = 67,["110"] = 73,["111"] = 74,["112"] = 73,["113"] = 77,["114"] = 78,["115"] = 79,["116"] = 79,["118"] = 80,["119"] = 81,["120"] = 82,["121"] = 83,["124"] = 86,["125"] = 77,["126"] = 89,["127"] = 90,["130"] = 91,["131"] = 92,["132"] = 93,["133"] = 89,["134"] = 96,["135"] = 97,["138"] = 98,["139"] = 99,["140"] = 100,["141"] = 102,["142"] = 109,["143"] = 110,["144"] = 96,["145"] = 113,["146"] = 114,["147"] = 114,["149"] = 115,["150"] = 116,["151"] = 116,["153"] = 118,["154"] = 119,["155"] = 119,["157"] = 121,["158"] = 123,["159"] = 128,["160"] = 129,["161"] = 130,["162"] = 131,["163"] = 131,["164"] = 131,["165"] = 131,["166"] = 132,["167"] = 131,["168"] = 131,["169"] = 134,["171"] = 137,["172"] = 113,["173"] = 140,["174"] = 141,["175"] = 141,["177"] = 142,["178"] = 143,["179"] = 143,["181"] = 145,["182"] = 146,["183"] = 146,["185"] = 148,["186"] = 149,["187"] = 151,["188"] = 152,["189"] = 153,["190"] = 157,["191"] = 157,["193"] = 158,["194"] = 159,["196"] = 162,["197"] = 164,["198"] = 165,["200"] = 168,["201"] = 169,["202"] = 170,["203"] = 171,["205"] = 173,["206"] = 174,["207"] = 176,["208"] = 183,["209"] = 184,["210"] = 185,["211"] = 140,["212"] = 188,["213"] = 189,["214"] = 190,["217"] = 191,["220"] = 193,["221"] = 194,["224"] = 196,["225"] = 197,["226"] = 198,["227"] = 199,["228"] = 200,["229"] = 201,["230"] = 202,["231"] = 203,["232"] = 204,["233"] = 205,["235"] = 207,["237"] = 214,["239"] = 188,["240"] = 218,["241"] = 219,["242"] = 220,["245"] = 221,["248"] = 223,["249"] = 224,["252"] = 226,["253"] = 227,["254"] = 228,["255"] = 229,["256"] = 230,["257"] = 231,["258"] = 237,["260"] = 218,["261"] = 241,["262"] = 242,["265"] = 243,["266"] = 244,["267"] = 245,["268"] = 246,["271"] = 249,["272"] = 250,["273"] = 241,["274"] = 253,["275"] = 254,["276"] = 255,["279"] = 257,["280"] = 258,["281"] = 260,["282"] = 262,["284"] = 263,["285"] = 263,["287"] = 264,["288"] = 265,["289"] = 266,["290"] = 267,["291"] = 267,["292"] = 267,["293"] = 267,["294"] = 267,["295"] = 267,["296"] = 267,["297"] = 270,["298"] = 271,["300"] = 273,["301"] = 274,["302"] = 275,["303"] = 275,["304"] = 275,["305"] = 275,["312"] = 281,["314"] = 282,["315"] = 282,["316"] = 283,["317"] = 284,["318"] = 285,["319"] = 286,["320"] = 287,["321"] = 288,["322"] = 293,["323"] = 294,["324"] = 295,["329"] = 282,["333"] = 303,["335"] = 304,["336"] = 304,["337"] = 305,["338"] = 306,["339"] = 307,["340"] = 308,["341"] = 309,["342"] = 310,["343"] = 311,["344"] = 312,["345"] = 313,["346"] = 313,["347"] = 313,["348"] = 313,["352"] = 304,["356"] = 253,["357"] = 321,["358"] = 322,["359"] = 323,["362"] = 325,["363"] = 326,["366"] = 328,["367"] = 329,["370"] = 331,["371"] = 332,["374"] = 336,["375"] = 337,["378"] = 341,["379"] = 342,["380"] = 344,["381"] = 345,["382"] = 321,["383"] = 348,["384"] = 349,["385"] = 350,["388"] = 352,["389"] = 353,["392"] = 355,["393"] = 356,["396"] = 358,["397"] = 359,["400"] = 363,["401"] = 364,["402"] = 348,["403"] = 367,["404"] = 368,["407"] = 369,["408"] = 370,["411"] = 372,["412"] = 373,["415"] = 375,["416"] = 376,["419"] = 378,["420"] = 379,["423"] = 381,["424"] = 382,["427"] = 386,["428"] = 387,["429"] = 388,["432"] = 390,["433"] = 391,["434"] = 392,["435"] = 394,["436"] = 398,["437"] = 404,["438"] = 405,["439"] = 367,["440"] = 408,["441"] = 409,["442"] = 410,["443"] = 411,["446"] = 414,["447"] = 415,["448"] = 416,["449"] = 417,["452"] = 420,["453"] = 421,["454"] = 422,["457"] = 423,["458"] = 424,["459"] = 425,["462"] = 408,["463"] = 430,["464"] = 431,["465"] = 432,["466"] = 433,["467"] = 433,["468"] = 433,["469"] = 433,["470"] = 433,["471"] = 433,["472"] = 433,["473"] = 433,["474"] = 433,["475"] = 433,["476"] = 433,["477"] = 433,["478"] = 433,["479"] = 433,["480"] = 447,["482"] = 449,["483"] = 430});
 local ____exports = {}
 local ____bodies_catalog = require("data.bodies_catalog")
 local EVO_DEFAULT_START_BODY_ID = ____bodies_catalog.EVO_DEFAULT_START_BODY_ID
@@ -18,13 +15,20 @@ local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
 local EVO_TIERS = ____game_constants.EVO_TIERS
 local getNextTierConfig = ____game_constants.getNextTierConfig
-local getTierConfig = ____game_constants.getTierConfig
 local ____mutations_catalog = require("data.mutations_catalog")
 local getMutationDefinition = ____mutations_catalog.getMutationDefinition
 local getMutationsForSlot = ____mutations_catalog.getMutationsForSlot
 local ____HeroAppearance = require("lib.HeroAppearance")
 local HeroAppearance = ____HeroAppearance.HeroAppearance
-local MUTATION_SLOT_ORDER = {"ACTIVE_UPGRADE", "PASSIVE_SLOT_1", "PASSIVE_SLOT_2"}
+local ____evolution_hero_kit = require("systems.evolution.evolution_hero_kit")
+local applyBodyToHero = ____evolution_hero_kit.applyBodyToHero
+local collectPurchasedAbilities = ____evolution_hero_kit.collectPurchasedAbilities
+local stripDefaultHeroAbilities = ____evolution_hero_kit.stripDefaultHeroAbilities
+local ____evolution_types = require("systems.evolution.evolution_types")
+local MUTATION_SLOT_ORDER = ____evolution_types.MUTATION_SLOT_ORDER
+local findFloorEvoThreshold = ____evolution_types.findFloorEvoThreshold
+local reapplyMutationsToHero = ____evolution_types.reapplyMutationsToHero
+local syncPlayerEvoNetTable = ____evolution_types.syncPlayerEvoNetTable
 ____exports.EvolutionManager = __TS__Class()
 local EvolutionManager = ____exports.EvolutionManager
 EvolutionManager.name = "EvolutionManager"
@@ -136,7 +140,7 @@ function EvolutionManager.prototype.addEvoPoints(self, playerId, delta)
     state.evoPoints = math.max(0, state.evoPoints + delta)
     self.eventBus:emit("evo_points_changed", {playerId = playerId, previousPoints = previousPoints, newPoints = state.evoPoints, delta = state.evoPoints - previousPoints})
     self:checkEvolutionProgress(playerId)
-    self:syncPlayerEvo(playerId)
+    syncPlayerEvoNetTable(nil, playerId, state)
 end
 function EvolutionManager.prototype.morphHero(self, playerId, bodyId)
     if not PlayerResource:IsValidPlayerID(playerId) then
@@ -154,7 +158,7 @@ function EvolutionManager.prototype.morphHero(self, playerId, bodyId)
     if body.heroClass and #body.heroClass > 0 and hero:GetUnitName() ~= body.heroClass and not self.lazyPrecacheManager:isHeroReady(playerId, body.heroClass) then
         state.pendingDraftType = "NONE"
         state.draftOptions = {}
-        self:syncPlayerEvo(playerId)
+        syncPlayerEvoNetTable(nil, playerId, state)
         self.lazyPrecacheManager:ensureHeroReady(
             playerId,
             body.heroClass,
@@ -181,15 +185,15 @@ function EvolutionManager.prototype.completeMorphHero(self, playerId, bodyId)
     local state = self:getOrCreateState(playerId)
     local previousBodyId = state.bodyId
     if body.heroClass and #body.heroClass > 0 and hero:GetUnitName() ~= body.heroClass then
-        local preservedAbilities = self:collectPurchasedAbilities(hero, state)
+        local preservedAbilities = collectPurchasedAbilities(nil, hero, state)
         local replaced = HeroAppearance:replaceHeroPreservingState(playerId, body.heroClass, {stripDefaultAbilities = body.keepDefaultHeroAbilities ~= true, preserveAbilities = preservedAbilities})
         if not replaced then
             return false
         end
         hero = replaced
-        self:reapplyMutationsToHero(hero, state)
+        reapplyMutationsToHero(nil, hero, state)
     end
-    self:applyBodyToHero(hero, state, body)
+    applyBodyToHero(nil, hero, state, body)
     if body.appearance then
         HeroAppearance:applyPreset(hero, body.appearance)
     end
@@ -202,51 +206,8 @@ function EvolutionManager.prototype.completeMorphHero(self, playerId, bodyId)
     state.draftOptions = {}
     self.eventBus:emit("body_morphed", {playerId = playerId, previousBodyId = previousBodyId, newBodyId = body.id, tierIndex = body.tierIndex})
     self:checkEvolutionProgress(playerId)
-    self:syncPlayerEvo(playerId)
+    syncPlayerEvoNetTable(nil, playerId, state)
     return true
-end
-function EvolutionManager.prototype.collectPurchasedAbilities(self, hero, state)
-    local result = {}
-    do
-        local i = 0
-        while i < hero:GetAbilityCount() do
-            do
-                local ability = hero:GetAbilityByIndex(i)
-                if not ability or ability:IsNull() or ability:IsHidden() then
-                    goto __continue39
-                end
-                local name = ability:GetAbilityName()
-                if __TS__StringStartsWith(name, "special_bonus_") then
-                    goto __continue39
-                end
-                if name == state.innateAbilityName or name == state.signatureAbilityName then
-                    goto __continue39
-                end
-                if __TS__ArrayIncludes(state.kitAbilityNames, name) then
-                    goto __continue39
-                end
-                result[#result + 1] = name
-            end
-            ::__continue39::
-            i = i + 1
-        end
-    end
-    return result
-end
-function EvolutionManager.prototype.reapplyMutationsToHero(self, hero, state)
-    for ____, mutationId in ipairs(state.mutations) do
-        do
-            if not mutationId then
-                goto __continue45
-            end
-            local mutationDef = getMutationDefinition(nil, mutationId)
-            if not mutationDef then
-                goto __continue45
-            end
-            hero:AddNewModifier(hero, nil, mutationDef.modifierName, {mutation_id = mutationDef.id})
-        end
-        ::__continue45::
-    end
 end
 function EvolutionManager.prototype.onNpcSpawned(self, event)
     local unit = EntIndexToHScript(event.entindex)
@@ -263,17 +224,17 @@ function EvolutionManager.prototype.onNpcSpawned(self, event)
     if not self.playerStates:has(playerId) then
         self.lazyPrecacheManager:precacheForPlayer(playerId)
         local hero = unit
-        self:stripDefaultHeroAbilities(hero)
+        stripDefaultHeroAbilities(nil, hero)
         local state = self:getOrCreateState(playerId)
         local starter = getBodyDefinition(nil, EVO_DEFAULT_START_BODY_ID)
         if starter then
-            self:applyBodyToHero(hero, state, starter)
+            applyBodyToHero(nil, hero, state, starter)
             if starter.appearance then
                 HeroAppearance:applyPreset(hero, starter.appearance)
             end
             self.eventBus:emit("body_morphed", {playerId = playerId, previousBodyId = "", newBodyId = starter.id, tierIndex = starter.tierIndex})
         end
-        self:syncPlayerEvo(playerId)
+        syncPlayerEvoNetTable(nil, playerId, state)
     end
 end
 function EvolutionManager.prototype.onEntityKilled(self, event)
@@ -289,12 +250,12 @@ function EvolutionManager.prototype.onEntityKilled(self, event)
         return
     end
     local state = self:getOrCreateState(playerId)
-    local floorThreshold = self:findFloorEvoThreshold(state.evoPoints)
+    local floorThreshold = findFloorEvoThreshold(nil, state.evoPoints)
     if floorThreshold < state.evoPoints then
         local previousPoints = state.evoPoints
         state.evoPoints = floorThreshold
         self.eventBus:emit("evo_points_changed", {playerId = playerId, previousPoints = previousPoints, newPoints = state.evoPoints, delta = state.evoPoints - previousPoints})
-        self:syncPlayerEvo(playerId)
+        syncPlayerEvoNetTable(nil, playerId, state)
     end
 end
 function EvolutionManager.prototype.onHeroLeveledUp(self, playerId, newLevel)
@@ -308,7 +269,7 @@ function EvolutionManager.prototype.onHeroLeveledUp(self, playerId, newLevel)
         end
     end
     self:checkEvolutionProgress(playerId)
-    self:syncPlayerEvo(playerId)
+    syncPlayerEvoNetTable(nil, playerId, state)
 end
 function EvolutionManager.prototype.checkEvolutionProgress(self, playerId)
     local state = self:getOrCreateState(playerId)
@@ -321,7 +282,7 @@ function EvolutionManager.prototype.checkEvolutionProgress(self, playerId)
     for ____, tier in ipairs(EVO_TIERS) do
         do
             if tier.tierIndex <= state.tierIndex then
-                goto __continue68
+                goto __continue57
             end
             if heroLevel >= tier.requiredHeroLevel then
                 local candidates = {}
@@ -346,7 +307,7 @@ function EvolutionManager.prototype.checkEvolutionProgress(self, playerId)
                 end
             end
         end
-        ::__continue68::
+        ::__continue57::
     end
     if EVO_CONSTANTS.ENABLE_ABILITY_DRAFT then
         do
@@ -355,9 +316,9 @@ function EvolutionManager.prototype.checkEvolutionProgress(self, playerId)
                 local reqLevel = EVO_CONSTANTS.ABILITY_DRAFT_LEVELS[slotIndex + 1]
                 if heroLevel >= reqLevel and not state.unlockedAbilitySlots[slotIndex + 1] then
                     state.unlockedAbilitySlots[slotIndex + 1] = true
-                    local currentBody = getBodyDefinition(nil, state.bodyId)
-                    if currentBody then
-                        local choices = self.spellShopManager:rollAbilityDraftChoices(playerId, currentBody, EVO_CONSTANTS.ABILITY_DRAFT_CHOICES)
+                    local draftBody = getBodyDefinition(nil, state.bodyId)
+                    if draftBody then
+                        local choices = self.spellShopManager:rollAbilityDraftChoices(playerId, draftBody, EVO_CONSTANTS.ABILITY_DRAFT_CHOICES)
                         if #choices > 0 then
                             state.pendingDraftType = "ABILITY"
                             state.draftOptions = choices
@@ -417,7 +378,7 @@ function EvolutionManager.prototype.onSelectAbilityDraft(self, event)
     state.pendingDraftType = "NONE"
     state.draftOptions = {}
     self:checkEvolutionProgress(playerId)
-    self:syncPlayerEvo(playerId)
+    syncPlayerEvoNetTable(nil, playerId, state)
 end
 function EvolutionManager.prototype.onSelectBodyDraft(self, event)
     local playerId = event.PlayerID
@@ -474,192 +435,7 @@ function EvolutionManager.prototype.onSelectMutation(self, event)
     hero:AddNewModifier(hero, nil, mutationDef.modifierName, {mutation_id = mutationDef.id})
     self.eventBus:emit("mutation_applied", {playerId = playerId, slotIndex = slotIndex, mutationId = mutationDef.id})
     self:checkEvolutionProgress(playerId)
-    self:syncPlayerEvo(playerId)
-end
-function EvolutionManager.prototype.stripDefaultHeroAbilities(self, hero)
-    local keep = __TS__New(Set, {
-        "abyssal_underlord_portal_warp",
-        "twin_gate_portal_warp",
-        "ability_pluck_famango",
-        "ability_capture",
-        "ability_lamp_use"
-    })
-    do
-        local i = 0
-        while i < hero:GetAbilityCount() do
-            do
-                local ability = hero:GetAbilityByIndex(i)
-                if not ability or ability:IsNull() then
-                    goto __continue108
-                end
-                local name = ability:GetAbilityName()
-                if __TS__StringStartsWith(name, "special_bonus_") or __TS__StringStartsWith(name, "evo_empty_slot_") or keep:has(name) then
-                    goto __continue108
-                end
-                if ability:IsHidden() then
-                    goto __continue108
-                end
-                hero:RemoveAbilityByHandle(ability)
-            end
-            ::__continue108::
-            i = i + 1
-        end
-    end
-end
-function EvolutionManager.prototype.applyBodyToHero(self, hero, state, body)
-    local tierConfig = getTierConfig(nil, body.tierIndex)
-    local mult = tierConfig.statMultiplier
-    if not body.heroClass or #body.heroClass == 0 then
-        hero:SetOriginalModel(body.model)
-        hero:SetModel(body.model)
-    end
-    hero:SetModelScale(body.modelScale)
-    local attrMap = {STR = 0, AGI = 1, INT = 2, ALL = 3}
-    hero:SetPrimaryAttribute(attrMap[body.primaryAttribute])
-    local levelOffset = math.max(
-        0,
-        hero:GetLevel() - 1
-    )
-    hero:SetBaseStrength(math.floor((body.baseStr + body.strGain * levelOffset) * mult))
-    hero:SetBaseAgility(math.floor((body.baseAgi + body.agiGain * levelOffset) * mult))
-    hero:SetBaseIntellect(math.floor((body.baseInt + body.intGain * levelOffset) * mult))
-    hero:SetBaseMoveSpeed(body.baseMoveSpeed)
-    hero:SetBaseDamageMin(math.floor(body.baseAttackDamageMin * mult))
-    hero:SetBaseDamageMax(math.floor(body.baseAttackDamageMax * mult))
-    hero:SetPhysicalArmorBaseValue(body.baseArmor)
-    if body.keepDefaultHeroAbilities ~= true then
-        if body.kitAbilities and #body.kitAbilities > 0 then
-            for ____, oldName in ipairs(state.kitAbilityNames) do
-                if not __TS__ArrayIncludes(body.kitAbilities, oldName) then
-                    local oldAb = hero:FindAbilityByName(oldName)
-                    if oldAb then
-                        self:removeAbilityPreservingSlot(hero, oldAb)
-                    end
-                end
-            end
-            if state.innateAbilityName and not __TS__ArrayIncludes(body.kitAbilities, state.innateAbilityName) then
-                local oldInnate = hero:FindAbilityByName(state.innateAbilityName)
-                if oldInnate then
-                    self:removeAbilityPreservingSlot(hero, oldInnate)
-                end
-            end
-            if state.signatureAbilityName and not __TS__ArrayIncludes(body.kitAbilities, state.signatureAbilityName) then
-                local oldSig = hero:FindAbilityByName(state.signatureAbilityName)
-                if oldSig then
-                    self:removeAbilityPreservingSlot(hero, oldSig)
-                end
-            end
-            local granted = {}
-            local targetKitLevel = body.kitAbilityLevel or 1
-            local activeSlot = 0
-            for ____, abName in ipairs(body.kitAbilities) do
-                local ab = hero:FindAbilityByName(abName) or hero:AddAbility(abName)
-                if ab and not ab:IsNull() then
-                    local isInnate = abName == body.innateAbility
-                    if not isInnate then
-                        local isUltimate = ab:GetAbilityType() == 1
-                        local targetSlot = isUltimate and 5 or activeSlot
-                        self:placeAbilityInSlot(hero, ab, targetSlot)
-                        if not isUltimate then
-                            activeSlot = activeSlot + 1
-                        end
-                    end
-                    ab:SetHidden(false)
-                    local desiredLevel = isInnate and 1 or math.min(
-                        ab:GetMaxLevel(),
-                        math.max(1, targetKitLevel)
-                    )
-                    if ab:GetLevel() ~= desiredLevel then
-                        ab:SetLevel(desiredLevel)
-                    end
-                end
-                granted[#granted + 1] = abName
-            end
-            state.kitAbilityNames = granted
-            state.innateAbilityName = nil
-            state.signatureAbilityName = nil
-        else
-            for ____, oldName in ipairs(state.kitAbilityNames) do
-                if oldName ~= body.innateAbility and oldName ~= body.signatureAbility then
-                    local oldAb = hero:FindAbilityByName(oldName)
-                    if oldAb then
-                        self:removeAbilityPreservingSlot(hero, oldAb)
-                    end
-                end
-            end
-            state.kitAbilityNames = {}
-            if state.innateAbilityName and state.innateAbilityName ~= body.innateAbility then
-                local oldInnate = hero:FindAbilityByName(state.innateAbilityName)
-                if oldInnate then
-                    self:removeAbilityPreservingSlot(hero, oldInnate)
-                end
-            end
-            if state.signatureAbilityName and state.signatureAbilityName ~= body.signatureAbility then
-                local oldSig = hero:FindAbilityByName(state.signatureAbilityName)
-                if oldSig then
-                    self:removeAbilityPreservingSlot(hero, oldSig)
-                end
-            end
-            local signature = hero:FindAbilityByName(body.signatureAbility) or hero:AddAbility(body.signatureAbility)
-            if signature and not signature:IsNull() then
-                self:placeAbilityInSlot(hero, signature, 0)
-                signature:SetHidden(false)
-                if signature:GetLevel() == 0 then
-                    signature:SetLevel(1)
-                end
-            end
-            local innate = hero:FindAbilityByName(body.innateAbility) or hero:AddAbility(body.innateAbility)
-            if innate and not innate:IsNull() then
-                self:placeAbilityInSlot(hero, innate, 1)
-                innate:SetHidden(false)
-                if innate:GetLevel() == 0 then
-                    innate:SetLevel(1)
-                end
-            end
-            state.innateAbilityName = body.innateAbility
-            state.signatureAbilityName = body.signatureAbility
-        end
-    else
-        state.innateAbilityName = nil
-        state.signatureAbilityName = nil
-        state.kitAbilityNames = {}
-    end
-    hero:CalculateStatBonus(true)
-end
-function EvolutionManager.prototype.removeAbilityPreservingSlot(self, hero, ability)
-    local idx = ability:GetAbilityIndex()
-    if idx >= 0 and idx < 6 then
-        do
-            local s = 1
-            while s <= 6 do
-                local placeholder = hero:FindAbilityByName("evo_empty_slot_" .. tostring(s))
-                if placeholder and not placeholder:IsNull() and placeholder:GetAbilityIndex() >= 6 then
-                    hero:SwapAbilities(
-                        ability:GetAbilityName(),
-                        placeholder:GetAbilityName(),
-                        false,
-                        false
-                    )
-                    break
-                end
-                s = s + 1
-            end
-        end
-    end
-    hero:RemoveAbilityByHandle(ability)
-end
-function EvolutionManager.prototype.placeAbilityInSlot(self, hero, ability, targetSlot)
-    if ability:GetAbilityIndex() == targetSlot then
-        return
-    end
-    local occupant = hero:GetAbilityByIndex(targetSlot)
-    if occupant and not occupant:IsNull() then
-        local occupantName = occupant:GetAbilityName()
-        local abilityName = ability:GetAbilityName()
-        if occupantName ~= abilityName then
-            hero:SwapAbilities(occupantName, abilityName, false, true)
-        end
-    end
+    syncPlayerEvoNetTable(nil, playerId, state)
 end
 function EvolutionManager.prototype.onDevCommand(self, playerId, command, args)
     if command == "-evo_evo" then
@@ -684,15 +460,6 @@ function EvolutionManager.prototype.onDevCommand(self, playerId, command, args)
         end
     end
 end
-function EvolutionManager.prototype.findFloorEvoThreshold(self, points)
-    local floorValue = 0
-    for ____, threshold in ipairs(EVO_CONSTANTS.EVO_THRESHOLDS) do
-        if points >= threshold then
-            floorValue = threshold
-        end
-    end
-    return floorValue
-end
 function EvolutionManager.prototype.getOrCreateState(self, playerId)
     local state = self.playerStates:get(playerId)
     if not state then
@@ -713,49 +480,5 @@ function EvolutionManager.prototype.getOrCreateState(self, playerId)
         self.playerStates:set(playerId, state)
     end
     return state
-end
-function EvolutionManager.prototype.syncPlayerEvo(self, playerId)
-    local state = self:getOrCreateState(playerId)
-    local tierConfig = getTierConfig(nil, state.tierIndex)
-    local key = tostring(playerId)
-    local ____temp_2 = CustomNetTables:GetTableValue("player_evo", key)
-    if ____temp_2 == nil then
-        ____temp_2 = {}
-    end
-    local existing = ____temp_2
-    existing.body_id = state.bodyId
-    existing.tier_index = state.tierIndex
-    existing.tier_label = tierConfig.label
-    existing.evo_points = state.evoPoints
-    existing.biomass = state.biomass
-    existing.mutations = state.mutations
-    existing.pending_draft_type = state.pendingDraftType
-    existing.pending_mutation_slot = state.pendingMutationSlot
-    existing.draft_options = state.draftOptions
-    local draftMeta = {}
-    if state.pendingDraftType == "BODY" then
-        for ____, optId in ipairs(state.draftOptions) do
-            do
-                local b = getBodyDefinition(nil, optId)
-                if not b then
-                    goto __continue166
-                end
-                local abList = b.kitAbilities and #b.kitAbilities > 0 and b.kitAbilities or ({b.signatureAbility, b.innateAbility})
-                draftMeta[optId] = {
-                    hero_class = b.heroClass or "",
-                    attr = b.primaryAttribute,
-                    abilities = abList,
-                    ms = b.baseMoveSpeed,
-                    str = b.baseStr,
-                    agi = b.baseAgi,
-                    int = b.baseInt,
-                    tier_index = b.tierIndex
-                }
-            end
-            ::__continue166::
-        end
-    end
-    existing.draft_meta = draftMeta
-    CustomNetTables:SetTableValue("player_evo", key, existing)
 end
 return ____exports

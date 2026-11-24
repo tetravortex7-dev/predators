@@ -48,7 +48,7 @@
 	"evo_bristle_dread_e"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought_er"
 		"AbilityTextureName"			"bristleback_bristleback"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
@@ -67,7 +67,7 @@
 	"evo_bristle_dread_r"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought"
+		"ScriptFile"					"abilities/bristle/evo_bristle_dreadnought_er"
 		"AbilityTextureName"			"bristleback_warpath"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -210,7 +210,7 @@
 	"evo_bristle_react_e"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor_er"
 		"AbilityTextureName"			"alchemist_chemical_rage"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -228,7 +228,7 @@
 	"evo_bristle_react_r"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/bristle/evo_bristle_reactor"
+		"ScriptFile"					"abilities/bristle/evo_bristle_reactor_er"
 		"AbilityTextureName"			"alchemist_acid_spray"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"

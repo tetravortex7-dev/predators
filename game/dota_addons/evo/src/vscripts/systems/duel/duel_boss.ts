@@ -1,0 +1,171 @@
+import { EVO_CONSTANTS } from "../../data/game_constants";
+import { prepareDuelistSnapshot } from "./duel_arena";
+import {
+    ActiveBossDuel,
+    BOSS_DUEL_BET_BOSS,
+    BOSS_DUEL_BET_TEAM,
+    DuelBet,
+    DuelBetPayload,
+    DuelPair,
+    PreDuelSnapshot,
+    debugDuelChat,
+} from "./duel_types";
+
+export function prepareBossChallengers(
+    challengers: readonly PlayerID[],
+    spawnA: Vector,
+    spawnB: Vector,
+    snapshots: Map<PlayerID, PreDuelSnapshot>,
+    activeDuelistEntIndexes: Set<EntityIndex>
+): void {
+    const perpDir = Vector(-(spawnB.y - spawnA.y), spawnB.x - spawnA.x, 0).Normalized();
+    for (let i = 0; i < challengers.length; i++) {
+        const offset = (i - (challengers.length - 1) / 2) * 140;
+        const spawnPos = Vector(
+            spawnA.x + perpDir.x * offset,
+            spawnA.y + perpDir.y * offset,
+            spawnA.z
+        );
+        prepareDuelistSnapshot(
+            challengers[i],
+            spawnPos,
+            spawnB,
+            snapshots,
+            activeDuelistEntIndexes
+        );
+    }
+}
+
+export function spawnDevSparringDummy(
+    hero: CDOTA_BaseNPC_Hero,
+    spawnPos: Vector,
+    activeDuelistEntIndexes: Set<EntityIndex>
+): CDOTA_BaseNPC | undefined {
+    const dummy = CreateUnitByName(
+        "npc_dota_hero_tidehunter",
+        spawnPos,
+        true,
+        undefined,
+        undefined,
+        DotaTeam.CUSTOM_5
+    );
+    if (dummy && !dummy.IsNull()) {
+        activeDuelistEntIndexes.add(dummy.entindex());
+        if (dummy.IsHero()) {
+            while (dummy.GetLevel() < hero.GetLevel()) {
+                dummy.HeroLevelUp(false);
+            }
+        }
+        ExecuteOrderFromTable({
+            UnitIndex: dummy.entindex(),
+            OrderType: UnitOrder.ATTACK_TARGET,
+            TargetIndex: hero.entindex(),
+            Queue: false,
+        });
+        return dummy;
+    }
+    return undefined;
+}
+
+export function processDuelBetPlacement(params: {
+    event: DuelBetPayload;
+    active: boolean;
+    betsOpen: boolean;
+    activeBossDuel?: ActiveBossDuel;
+    currentPair?: DuelPair;
+    activeBets: Map<PlayerID, DuelBet>;
+}): void {
+    const bettorId = params.event.PlayerID;
+    if (!params.active || !params.betsOpen) return;
+    if (!PlayerResource.IsValidPlayerID(bettorId)) return;
+    if (params.activeBets.has(bettorId)) return;
+
+    const backedTarget = tonumber(params.event.backed_player_id);
+    if (backedTarget === undefined) return;
+
+    if (params.activeBossDuel) {
+        if (PlayerResource.GetTeam(bettorId) === params.activeBossDuel.challengingTeam) return;
+        if (backedTarget !== BOSS_DUEL_BET_TEAM && backedTarget !== BOSS_DUEL_BET_BOSS) return;
+    } else if (params.currentPair) {
+        if (bettorId === params.currentPair.playerA || bettorId === params.currentPair.playerB) return;
+        if (backedTarget !== params.currentPair.playerA && backedTarget !== params.currentPair.playerB) return;
+    } else {
+        return;
+    }
+
+    const amount = Math.floor(tonumber(params.event.gold_amount) ?? 0);
+    if (amount < 10) return;
+
+    const currentGold = PlayerResource.GetGold(bettorId);
+    if (currentGold < amount) return;
+
+    PlayerResource.SpendGold(bettorId, amount, ModifyGoldReason.UNSPECIFIED);
+    params.activeBets.set(bettorId, {
+        bettorId,
+        backedTarget,
+        goldAmount: amount,
+    });
+}
+
+export type DuelKillOutcome =
+    | { kind: "none" }
+    | { kind: "boss_duel_end"; teamWon: boolean }
+    | { kind: "pvp_duel_end"; winnerId: PlayerID; loserId?: PlayerID };
+
+export function evaluateActiveDuelKill(params: {
+    killedIndex: EntityIndex;
+    activeBossDuel?: ActiveBossDuel;
+    currentPair?: DuelPair;
+    sparringDummy?: CDOTA_BaseNPC;
+}): DuelKillOutcome {
+    const victim = EntIndexToHScript(params.killedIndex);
+    if (!victim || victim.IsNull() || !IsValidEntity(victim) || !victim.IsBaseNPC()) {
+        return { kind: "none" };
+    }
+    if (victim.IsReincarnating()) return { kind: "none" };
+
+    if (params.activeBossDuel) {
+        if (params.killedIndex === params.activeBossDuel.bossEntIndex) {
+            const now = GameRules.GetDOTATime(false, false);
+            params.activeBossDuel.lootEndTime = now + EVO_CONSTANTS.BOSS_DUEL_LOOT_WINDOW_SECONDS;
+            debugDuelChat(
+                `[Evo] Boss slain! Grab the Boss Core (${EVO_CONSTANTS.BOSS_DUEL_LOOT_WINDOW_SECONDS}s)...`
+            );
+            return { kind: "none" };
+        }
+        const anyAlive = params.activeBossDuel.challengerIds.some((pid) => {
+            const h = PlayerResource.GetSelectedHeroEntity(pid);
+            return h !== undefined && !h.IsNull() && IsValidEntity(h) && (h.IsAlive() || h.IsReincarnating());
+        });
+        return anyAlive ? { kind: "none" } : { kind: "boss_duel_end", teamWon: false };
+    }
+
+    if (!params.currentPair) return { kind: "none" };
+
+    if (
+        params.sparringDummy &&
+        !params.sparringDummy.IsNull() &&
+        params.killedIndex === params.sparringDummy.entindex()
+    ) {
+        return { kind: "pvp_duel_end", winnerId: params.currentPair.playerA };
+    }
+
+    const victimPlayerId = victim.GetPlayerOwnerID();
+    if (victimPlayerId === params.currentPair.playerA) {
+        return {
+            kind: "pvp_duel_end",
+            winnerId: params.currentPair.playerB,
+            loserId: params.currentPair.playerA,
+        };
+    }
+    if (victimPlayerId === params.currentPair.playerB) {
+        return {
+            kind: "pvp_duel_end",
+            winnerId: params.currentPair.playerA,
+            loserId: params.currentPair.playerB,
+        };
+    }
+
+    return { kind: "none" };
+}
+

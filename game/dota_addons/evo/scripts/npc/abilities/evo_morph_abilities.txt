@@ -121,7 +121,7 @@
 	"evo_morph_water_e"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/morph/evo_morph_water"
+		"ScriptFile"					"abilities/morph/evo_morph_water_er"
 		"AbilityTextureName"			"morphling_morph_str"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"MaxLevel"						"3"
@@ -142,7 +142,7 @@
 	"evo_morph_water_r"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/morph/evo_morph_water"
+		"ScriptFile"					"abilities/morph/evo_morph_water_er"
 		"AbilityTextureName"			"slardar_slithereen_crush"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"

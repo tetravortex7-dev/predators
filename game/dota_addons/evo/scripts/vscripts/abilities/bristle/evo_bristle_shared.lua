@@ -1,10 +1,26 @@
 local ____lualib = require("lualib_bundle")
 local Map = ____lualib.Map
 local __TS__New = ____lualib.__TS__New
+local Set = ____lualib.Set
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 1,["8"] = 3,["9"] = 4,["10"] = 4,["12"] = 5,["13"] = 6,["14"] = 3,["15"] = 9,["16"] = 10,["17"] = 11,["20"] = 12,["21"] = 13,["22"] = 14,["23"] = 15,["24"] = 16,["25"] = 17,["26"] = 18,["27"] = 19,["28"] = 20,["29"] = 21,["31"] = 9,["32"] = 25,["33"] = 26,["34"] = 27,["35"] = 28,["36"] = 29,["37"] = 30,["38"] = 31,["39"] = 32,["40"] = 33,["41"] = 34,["42"] = 36,["43"] = 37,["44"] = 42,["45"] = 44,["46"] = 44,["47"] = 44,["48"] = 44,["49"] = 44,["50"] = 44,["51"] = 44,["52"] = 44,["53"] = 44,["54"] = 44,["55"] = 44,["56"] = 56,["57"] = 57,["59"] = 58,["60"] = 58,["62"] = 59,["63"] = 60,["64"] = 61,["65"] = 62,["66"] = 63,["68"] = 65,["69"] = 65,["70"] = 65,["71"] = 65,["72"] = 65,["73"] = 65,["74"] = 65,["75"] = 65,["76"] = 74,["77"] = 75,["78"] = 76,["79"] = 77,["81"] = 80,["82"] = 81,["84"] = 84,["85"] = 85,["86"] = 86,["87"] = 87,["88"] = 88,["89"] = 89,["90"] = 90,["91"] = 92,["92"] = 92,["93"] = 92,["94"] = 91,["95"] = 98,["96"] = 98,["97"] = 98,["98"] = 98,["99"] = 98,["100"] = 103,["101"] = 104,["107"] = 25});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 4,["11"] = 10,["12"] = 11,["13"] = 12,["14"] = 13,["15"] = 14,["16"] = 14,["17"] = 14,["18"] = 14,["19"] = 15,["20"] = 16,["21"] = 17,["23"] = 4,["24"] = 21,["25"] = 22,["26"] = 22,["28"] = 23,["29"] = 24,["30"] = 21,["31"] = 27,["32"] = 28,["33"] = 29,["36"] = 30,["37"] = 31,["38"] = 32,["39"] = 33,["40"] = 34,["41"] = 35,["42"] = 36,["43"] = 37,["44"] = 38,["45"] = 39,["47"] = 27,["48"] = 43,["49"] = 44,["50"] = 45,["51"] = 46,["52"] = 47,["53"] = 48,["54"] = 49,["55"] = 50,["56"] = 51,["57"] = 52,["58"] = 54,["59"] = 55,["60"] = 60,["61"] = 62,["62"] = 62,["63"] = 62,["64"] = 62,["65"] = 62,["66"] = 62,["67"] = 62,["68"] = 62,["69"] = 62,["70"] = 62,["71"] = 62,["72"] = 74,["73"] = 75,["75"] = 76,["76"] = 76,["78"] = 77,["79"] = 78,["80"] = 79,["81"] = 80,["82"] = 81,["84"] = 83,["85"] = 83,["86"] = 83,["87"] = 83,["88"] = 83,["89"] = 83,["90"] = 83,["91"] = 83,["92"] = 92,["93"] = 93,["94"] = 94,["95"] = 95,["97"] = 98,["98"] = 99,["100"] = 102,["101"] = 103,["102"] = 104,["103"] = 105,["104"] = 106,["105"] = 107,["106"] = 108,["107"] = 110,["108"] = 110,["109"] = 110,["110"] = 109,["111"] = 116,["112"] = 116,["113"] = 116,["114"] = 116,["115"] = 116,["116"] = 121,["117"] = 122,["123"] = 43});
 local ____exports = {}
 local pushCooldownByEnt = __TS__New(Map)
+____exports.activeReactorZones = __TS__New(Set)
+function ____exports.applyReactorCatalystStacks(self, caster, target, ability, count)
+    local eAb = caster:FindAbilityByName("evo_bristle_react_e")
+    local lvl = eAb and not eAb:IsNull() and eAb:GetLevel() or ability:GetLevel()
+    local maxStacks = lvl >= 3 and 6 or (lvl >= 2 and 5 or 4)
+    local ex = target:FindModifierByName("modifier_evo_bristle_react_catalyst")
+    local next = math.min(
+        maxStacks,
+        (ex and ex:GetStackCount() or 0) + count
+    )
+    local mod = target:AddNewModifier(caster, ability, "modifier_evo_bristle_react_catalyst", {duration = 5})
+    if mod ~= nil then
+        mod:SetStackCount(next)
+    end
+end
 function ____exports.getAllAttributesSum(self, unit)
     if not unit:IsRealHero() then
         return 0
@@ -57,7 +73,7 @@ function ____exports.fireDreadnoughtQuillFan(self, caster, ability)
     for ____, enemy in ipairs(enemies) do
         do
             if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue8
+                goto __continue10
             end
             local ex = enemy:FindModifierByName("modifier_evo_bristle_dread_w_quill")
             local curStacks = ex and ex:GetStackCount() or 0
@@ -102,7 +118,7 @@ function ____exports.fireDreadnoughtQuillFan(self, caster, ability)
                 end
             end
         end
-        ::__continue8::
+        ::__continue10::
     end
 end
 return ____exports

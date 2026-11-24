@@ -46,7 +46,7 @@
 	"evo_slark_agi_e"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"ScriptFile"					"abilities/slark/evo_slark_agi_er"
 		"AbilityTextureName"			"slark_essence_shift"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
@@ -63,7 +63,7 @@
 	"evo_slark_agi_r"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/slark/evo_slark_agi"
+		"ScriptFile"					"abilities/slark/evo_slark_agi_er"
 		"AbilityTextureName"			"slark_shadow_dance"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -211,7 +211,7 @@
 	"evo_slark_int_e"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"ScriptFile"					"abilities/slark/evo_slark_int_er"
 		"AbilityTextureName"			"slark_depth_shroud"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -226,7 +226,7 @@
 	"evo_slark_int_r"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/slark/evo_slark_int"
+		"ScriptFile"					"abilities/slark/evo_slark_int_er"
 		"AbilityTextureName"			"slark_shadow_dance"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
