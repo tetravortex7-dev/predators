@@ -35,7 +35,11 @@ export class EvoGameMode {
         this.lazyPrecacheManager = new LazyPrecacheManager();
         this.levelingManager = new LevelingManager(this.eventBus);
         this.spellShopManager = new SpellShopManager(this.eventBus);
-        this.evolutionManager = new EvolutionManager(this.eventBus, this.spellShopManager);
+        this.evolutionManager = new EvolutionManager(
+            this.eventBus,
+            this.spellShopManager,
+            this.lazyPrecacheManager
+        );
         this.phaseManager = new PhaseManager(this.eventBus);
         this.neutralCampsManager = new NeutralCampsManager(this.eventBus);
         this.runeManager = new RuneManager();

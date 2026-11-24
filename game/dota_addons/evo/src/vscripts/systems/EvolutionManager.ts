@@ -1,4 +1,5 @@
 import { EventBus } from "../core/EventBus";
+import { LazyPrecacheManager } from "../core/LazyPrecacheManager";
 import {
     EVO_DEFAULT_START_BODY_ID,
     getBodiesForTier,
@@ -61,7 +62,8 @@ export class EvolutionManager {
 
     constructor(
         private readonly eventBus: EventBus,
-        private readonly spellShopManager: SpellShopManager
+        private readonly spellShopManager: SpellShopManager,
+        private readonly lazyPrecacheManager: LazyPrecacheManager
     ) {}
 
     public init(): void {
@@ -136,6 +138,33 @@ export class EvolutionManager {
     }
 
     public morphHero(playerId: PlayerID, bodyId: string): boolean {
+        if (!PlayerResource.IsValidPlayerID(playerId)) return false;
+        const hero = PlayerResource.GetSelectedHeroEntity(playerId);
+        if (!hero || hero.IsNull() || !IsValidEntity(hero)) return false;
+
+        const body = getBodyDefinition(bodyId);
+        if (!body) return false;
+
+        const state = this.getOrCreateState(playerId);
+        if (
+            body.heroClass &&
+            body.heroClass.length > 0 &&
+            hero.GetUnitName() !== body.heroClass &&
+            !this.lazyPrecacheManager.isHeroReady(playerId, body.heroClass)
+        ) {
+            state.pendingDraftType = "NONE";
+            state.draftOptions = [];
+            this.syncPlayerEvo(playerId);
+            this.lazyPrecacheManager.ensureHeroReady(playerId, body.heroClass, () => {
+                this.completeMorphHero(playerId, bodyId);
+            });
+            return true;
+        }
+
+        return this.completeMorphHero(playerId, bodyId);
+    }
+
+    private completeMorphHero(playerId: PlayerID, bodyId: string): boolean {
         if (!PlayerResource.IsValidPlayerID(playerId)) return false;
         let hero = PlayerResource.GetSelectedHeroEntity(playerId);
         if (!hero || hero.IsNull() || !IsValidEntity(hero)) return false;
@@ -220,6 +249,7 @@ export class EvolutionManager {
         if (!PlayerResource.IsValidPlayerID(playerId)) return;
 
         if (!this.playerStates.has(playerId)) {
+            this.lazyPrecacheManager.precacheForPlayer(playerId);
             const hero = unit as CDOTA_BaseNPC_Hero;
             this.stripDefaultHeroAbilities(hero);
             const state = this.getOrCreateState(playerId);

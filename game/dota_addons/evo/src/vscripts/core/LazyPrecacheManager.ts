@@ -1,34 +1,99 @@
 import { EVO_BODIES_CATALOG } from "../data/bodies_catalog";
 import { EVO_BOSSES_CATALOG } from "../data/bosses_catalog";
 
-const INITIAL_DELAY_SECONDS = 0.8;
-const STEP_INTERVAL_SECONDS = 1.2;
+const INITIAL_DELAY_SECONDS = 0.4;
+const STEP_INTERVAL_SECONDS = 0.9;
 
 export class LazyPrecacheManager {
-    private queue: string[] = [];
-    private cursor = 0;
+    private heroUnits: string[] = [];
+    private bossUnits: string[] = [];
+    private readonly readyByPlayer: Map<PlayerID, Set<string>> = new Map();
+    private readonly inFlightByPlayer: Map<PlayerID, Map<string, Array<() => void>>> = new Map();
+    private readonly startedPlayers: Set<PlayerID> = new Set();
 
     public init(): void {
-        this.queue = this.collectUniqueHeroUnits();
-        this.cursor = 0;
-        if (this.queue.length === 0) return;
+        this.collectUnits();
+        this.startBossPrecache();
+    }
 
+    public precacheForPlayer(playerId: PlayerID): void {
+        if (!PlayerResource.IsValidPlayerID(playerId)) return;
+        if (this.startedPlayers.has(playerId)) return;
+        this.startedPlayers.add(playerId);
+
+        let cursor = 0;
         GameRules.GetGameModeEntity().SetContextThink(
-            "EvoLazyPrecacheThink",
-            () => this.onThink(),
+            `EvoLazyPrecacheP${playerId}`,
+            () => {
+                if (cursor >= this.heroUnits.length) {
+                    return undefined;
+                }
+                const unitName = this.heroUnits[cursor];
+                cursor += 1;
+                this.ensureHeroReady(playerId, unitName, () => {});
+                if (cursor >= this.heroUnits.length) {
+                    return undefined;
+                }
+                return STEP_INTERVAL_SECONDS;
+            },
             INITIAL_DELAY_SECONDS
         );
     }
 
-    private collectUniqueHeroUnits(): string[] {
-        const seen = new Set<string>();
-        const result: string[] = [];
+    public isHeroReady(playerId: PlayerID, heroClass: string): boolean {
+        return this.readyByPlayer.get(playerId)?.has(heroClass) ?? false;
+    }
+
+    public ensureHeroReady(playerId: PlayerID, heroClass: string, onReady: () => void): void {
+        if (this.isHeroReady(playerId, heroClass)) {
+            onReady();
+            return;
+        }
+
+        let inFlightMap = this.inFlightByPlayer.get(playerId);
+        if (!inFlightMap) {
+            inFlightMap = new Map();
+            this.inFlightByPlayer.set(playerId, inFlightMap);
+        }
+
+        const existingCallbacks = inFlightMap.get(heroClass);
+        if (existingCallbacks) {
+            existingCallbacks.push(onReady);
+            return;
+        }
+
+        inFlightMap.set(heroClass, [onReady]);
+        PrecacheUnitByNameAsync(
+            heroClass,
+            () => {
+                let readySet = this.readyByPlayer.get(playerId);
+                if (!readySet) {
+                    readySet = new Set();
+                    this.readyByPlayer.set(playerId, readySet);
+                }
+                readySet.add(heroClass);
+
+                const callbacks = this.inFlightByPlayer.get(playerId)?.get(heroClass) ?? [];
+                this.inFlightByPlayer.get(playerId)?.delete(heroClass);
+                for (const cb of callbacks) {
+                    cb();
+                }
+            },
+            playerId
+        );
+    }
+
+    private collectUnits(): void {
+        const seenHeroes = new Set<string>();
+        const heroes: string[] = [];
+        const seenBoss = new Set<string>();
+        const bosses: string[] = [];
 
         for (const body of EVO_BODIES_CATALOG) {
             if (body.tierIndex === 0) continue;
-            if (body.heroClass && body.heroClass.length > 0 && !seen.has(body.heroClass)) {
-                seen.add(body.heroClass);
-                result.push(body.heroClass);
+            if (body.heroClass && body.heroClass.length > 0 && !seenHeroes.has(body.heroClass)) {
+                seenHeroes.add(body.heroClass);
+                heroes.push(body.heroClass);
             }
         }
 
@@ -37,28 +102,30 @@ export class LazyPrecacheManager {
                 boss.ownerHeroName &&
                 boss.ownerHeroName.length > 0 &&
                 boss.ownerHeroName !== boss.unitName &&
-                !seen.has(boss.ownerHeroName)
+                !seenBoss.has(boss.ownerHeroName)
             ) {
-                seen.add(boss.ownerHeroName);
-                result.push(boss.ownerHeroName);
+                seenBoss.add(boss.ownerHeroName);
+                bosses.push(boss.ownerHeroName);
             }
         }
 
-        return result;
+        this.heroUnits = heroes;
+        this.bossUnits = bosses;
     }
 
-    private onThink(): number | undefined {
-        if (this.cursor >= this.queue.length) {
-            return undefined;
-        }
-        const unitName = this.queue[this.cursor];
-        this.cursor += 1;
-
-        PrecacheUnitByNameAsync(unitName, () => {});
-
-        if (this.cursor >= this.queue.length) {
-            return undefined;
-        }
-        return STEP_INTERVAL_SECONDS;
+    private startBossPrecache(): void {
+        if (this.bossUnits.length === 0) return;
+        let idx = 0;
+        GameRules.GetGameModeEntity().SetContextThink(
+            "EvoLazyBossPrecache",
+            () => {
+                if (idx >= this.bossUnits.length) return undefined;
+                const unitName = this.bossUnits[idx];
+                idx += 1;
+                PrecacheUnitByNameAsync(unitName, () => {});
+                return idx < this.bossUnits.length ? STEP_INTERVAL_SECONDS : undefined;
+            },
+            2.5
+        );
     }
 }

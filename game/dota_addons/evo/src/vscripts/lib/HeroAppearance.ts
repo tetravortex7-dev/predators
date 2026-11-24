@@ -305,7 +305,16 @@ export class HeroAppearance {
         }
 
         if (oldHero !== newHero && !oldHero.IsNull() && IsValidEntity(oldHero)) {
-            UTIL_Remove(oldHero);
+            GameRules.GetGameModeEntity().SetContextThink(
+                DoUniqueString("EvoRemoveOldHero"),
+                () => {
+                    if (!oldHero.IsNull() && IsValidEntity(oldHero)) {
+                        UTIL_Remove(oldHero);
+                    }
+                    return undefined;
+                },
+                0.05
+            );
         }
 
         while (newHero.GetLevel() < savedLevel) {
