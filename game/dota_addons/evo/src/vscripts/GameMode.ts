@@ -1,4 +1,5 @@
 import { EventBus } from "./core/EventBus";
+import { LazyPrecacheManager } from "./core/LazyPrecacheManager";
 import { LevelingManager } from "./core/LevelingManager";
 import { EVO_CONSTANTS } from "./data/game_constants";
 import { DevCheats } from "./dev/DevCheats";
@@ -15,6 +16,7 @@ import { TalentTreeManager } from "./systems/TalentTreeManager";
 
 export class EvoGameMode {
     public readonly eventBus: EventBus;
+    public readonly lazyPrecacheManager: LazyPrecacheManager;
     public readonly levelingManager: LevelingManager;
     public readonly evolutionManager: EvolutionManager;
     public readonly spellShopManager: SpellShopManager;
@@ -30,6 +32,7 @@ export class EvoGameMode {
 
     constructor() {
         this.eventBus = new EventBus();
+        this.lazyPrecacheManager = new LazyPrecacheManager();
         this.levelingManager = new LevelingManager(this.eventBus);
         this.spellShopManager = new SpellShopManager(this.eventBus);
         this.evolutionManager = new EvolutionManager(this.eventBus, this.spellShopManager);
@@ -162,6 +165,7 @@ export class EvoGameMode {
         );
 
         this.initFountains();
+        this.lazyPrecacheManager.init();
         this.levelingManager.init();
         this.spellShopManager.init();
         this.evolutionManager.init();
