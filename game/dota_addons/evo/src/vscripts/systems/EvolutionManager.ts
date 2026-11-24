@@ -355,17 +355,19 @@ export class EvolutionManager {
             }
         }
 
-        for (let slotIndex = 0; slotIndex < EVO_CONSTANTS.MUTATION_DRAFT_LEVELS.length; slotIndex++) {
-            const reqLevel = EVO_CONSTANTS.MUTATION_DRAFT_LEVELS[slotIndex];
-            if (heroLevel >= reqLevel && !state.unlockedMutationSlots[slotIndex]) {
-                state.unlockedMutationSlots[slotIndex] = true;
-                const slotType = MUTATION_SLOT_ORDER[slotIndex];
-                const mutations = getMutationsForSlot(slotType);
-                if (mutations.length > 0) {
-                    state.pendingDraftType = "MUTATION";
-                    state.pendingMutationSlot = slotIndex;
-                    state.draftOptions = mutations.map((m) => m.id);
-                    return;
+        if (EVO_CONSTANTS.ENABLE_MUTATION_DRAFT) {
+            for (let slotIndex = 0; slotIndex < EVO_CONSTANTS.MUTATION_DRAFT_LEVELS.length; slotIndex++) {
+                const reqLevel = EVO_CONSTANTS.MUTATION_DRAFT_LEVELS[slotIndex];
+                if (heroLevel >= reqLevel && !state.unlockedMutationSlots[slotIndex]) {
+                    state.unlockedMutationSlots[slotIndex] = true;
+                    const slotType = MUTATION_SLOT_ORDER[slotIndex];
+                    const mutations = getMutationsForSlot(slotType);
+                    if (mutations.length > 0) {
+                        state.pendingDraftType = "MUTATION";
+                        state.pendingMutationSlot = slotIndex;
+                        state.draftOptions = mutations.map((m) => m.id);
+                        return;
+                    }
                 }
             }
         }
@@ -418,6 +420,7 @@ export class EvolutionManager {
     }
 
     private onSelectMutation(event: SelectMutationPayload): void {
+        if (!EVO_CONSTANTS.ENABLE_MUTATION_DRAFT) return;
         const playerId = event.PlayerID;
         if (!PlayerResource.IsValidPlayerID(playerId)) return;
 

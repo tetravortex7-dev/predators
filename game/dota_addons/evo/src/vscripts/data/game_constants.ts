@@ -72,6 +72,7 @@ export const EVO_CONSTANTS = {
     EVO_THRESHOLDS: [0, 10, 15, 25, 40, 50] as readonly number[],
     MUTATION_SLOT_THRESHOLDS: [10, 25, 40] as readonly number[],
     ENABLE_ABILITY_DRAFT: false,
+    ENABLE_MUTATION_DRAFT: false,
     ABILITY_DRAFT_LEVELS: [3, 7, 13] as readonly number[],
     MUTATION_DRAFT_LEVELS: [5, 10, 15] as readonly number[],
     ABILITY_DRAFT_CHOICES: 3,
