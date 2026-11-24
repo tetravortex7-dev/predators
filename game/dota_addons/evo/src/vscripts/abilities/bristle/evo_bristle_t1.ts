@@ -6,37 +6,22 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
-import { fireDreadnoughtQuillFan } from "./evo_bristle_dreadnought";
-import { getAllAttributesSum } from "./evo_bristle_reactor";
+import {
+    fireDreadnoughtQuillFan,
+    getAllAttributesSum,
+    grantBristleAdrenalineStacks,
+} from "./evo_bristle_shared";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_t1";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_bristle_adrenaline", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_bristle_adrenaline_stack", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_bristle_t1_acid_spit", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_bristle_adrenaline", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_bristle_adrenaline_stack", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_bristle_t1_acid_spit", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 function getHighestAttribute(unit: CDOTA_BaseNPC): number {
     if (!unit.IsRealHero()) return 0;
     const hero = unit as CDOTA_BaseNPC_Hero;
     return Math.max(hero.GetStrength(), hero.GetAgility(), hero.GetIntellect(false));
-}
-
-export function grantBristleAdrenalineStacks(hero: CDOTA_BaseNPC, count: number): void {
-    const ab = hero.FindAbilityByName("evo_bristle_adrenaline");
-    if (!ab || ab.IsNull()) return;
-    const dreadE = hero.FindAbilityByName("evo_bristle_dread_e");
-    const baseMax = ab.GetSpecialValueFor("max_stacks");
-    const maxStacks = dreadE && !dreadE.IsNull() && dreadE.GetLevel() >= 2 ? 7 : baseMax;
-    const duration = ab.GetSpecialValueFor("stack_duration");
-    const existing = hero.FindModifierByName("modifier_evo_bristle_adrenaline_stack");
-    const current = existing ? existing.GetStackCount() : 0;
-    const next = Math.min(maxStacks, current + count);
-    const mod = hero.AddNewModifier(hero, ab, "modifier_evo_bristle_adrenaline_stack", { duration });
-    if (mod !== undefined) {
-        mod.SetStackCount(next);
-    }
 }
 
 @registerAbility("evo_bristle_adrenaline")

@@ -2,20 +2,18 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/common/evo_generic_talents";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_special_bonus_evo_agi_int_1", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_int_str_1", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_hp_100", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_mana_125", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_ms_25", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_armor_6", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_all_stats_5", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_magic_resist_15", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_hp_regen_15", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_mana_regen_75", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_damage_75", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_special_bonus_evo_spell_amp_28", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_special_bonus_evo_agi_int_1", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_int_str_1", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_hp_100", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_mana_125", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_ms_25", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_armor_6", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_all_stats_5", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_magic_resist_15", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_hp_regen_15", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_mana_regen_75", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_damage_75", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_special_bonus_evo_spell_amp_28", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 class BaseTalentModifier extends BaseModifier {
     IsHidden(): boolean {

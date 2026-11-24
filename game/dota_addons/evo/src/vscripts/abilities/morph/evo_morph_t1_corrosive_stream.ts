@@ -8,9 +8,7 @@ import {
 
 const SCRIPT_PATH = "abilities/morph/evo_morph_t1_corrosive_stream";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_morph_t1_corrosive_armor", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_morph_t1_corrosive_armor", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_morph_t1_corrosive_stream")
 export class evo_morph_t1_corrosive_stream extends BaseAbility {

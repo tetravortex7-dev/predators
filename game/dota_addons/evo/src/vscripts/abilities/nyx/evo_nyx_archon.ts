@@ -15,10 +15,8 @@ const ARCHON_MODS: readonly string[] = [
     "modifier_evo_nyx_archon_r_ascend",
 ];
 
-if (IsServer()) {
-    for (const modName of ARCHON_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of ARCHON_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function getInt(unit: CDOTA_BaseNPC): number {

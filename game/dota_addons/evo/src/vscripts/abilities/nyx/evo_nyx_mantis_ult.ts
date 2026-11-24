@@ -15,10 +15,8 @@ const MANTIS_ULT_MODS: readonly string[] = [
     "modifier_evo_nyx_mantis_r_break",
 ];
 
-if (IsServer()) {
-    for (const modName of MANTIS_ULT_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of MANTIS_ULT_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function getAgi(unit: CDOTA_BaseNPC): number {

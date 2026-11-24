@@ -2,10 +2,8 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_tidal_lunge";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_elasmyr_puddle_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_elasmyr_puddle_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_elasmyr_puddle_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_elasmyr_puddle_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_elasmyr_tidal_lunge")
 export class evo_elasmyr_tidal_lunge extends BaseAbility {

@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 3,["15"] = 5,["16"] = 6,["18"] = 9,["19"] = 10,["20"] = 9,["21"] = 10,["22"] = 11,["23"] = 12,["24"] = 11,["25"] = 10,["26"] = 9,["27"] = 10,["29"] = 10,["30"] = 16,["31"] = 17,["32"] = 16,["33"] = 17,["34"] = 18,["35"] = 19,["36"] = 18,["37"] = 21,["38"] = 22,["39"] = 21,["40"] = 24,["41"] = 25,["42"] = 24,["43"] = 27,["44"] = 28,["45"] = 27,["46"] = 30,["47"] = 31,["48"] = 30,["49"] = 33,["50"] = 34,["53"] = 35,["54"] = 36,["57"] = 37,["60"] = 38,["61"] = 39,["64"] = 40,["67"] = 42,["68"] = 43,["69"] = 44,["70"] = 46,["71"] = 47,["72"] = 48,["73"] = 49,["74"] = 51,["75"] = 52,["76"] = 53,["77"] = 53,["78"] = 53,["79"] = 53,["80"] = 53,["81"] = 53,["82"] = 53,["84"] = 61,["86"] = 33,["87"] = 17,["88"] = 16,["89"] = 17,["91"] = 17});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 3,["15"] = 5,["16"] = 7,["17"] = 8,["18"] = 7,["19"] = 8,["20"] = 9,["21"] = 10,["22"] = 9,["23"] = 8,["24"] = 7,["25"] = 8,["27"] = 8,["28"] = 14,["29"] = 15,["30"] = 14,["31"] = 15,["32"] = 16,["33"] = 17,["34"] = 16,["35"] = 19,["36"] = 20,["37"] = 19,["38"] = 22,["39"] = 23,["40"] = 22,["41"] = 25,["42"] = 26,["43"] = 25,["44"] = 28,["45"] = 29,["46"] = 28,["47"] = 31,["48"] = 32,["51"] = 33,["52"] = 34,["55"] = 35,["58"] = 36,["59"] = 37,["62"] = 38,["65"] = 40,["66"] = 41,["67"] = 42,["68"] = 44,["69"] = 45,["70"] = 46,["71"] = 47,["72"] = 49,["73"] = 50,["74"] = 51,["75"] = 51,["76"] = 51,["77"] = 51,["78"] = 51,["79"] = 51,["80"] = 51,["82"] = 59,["84"] = 31,["85"] = 15,["86"] = 14,["87"] = 15,["89"] = 15});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -12,9 +12,7 @@ local dotaModifierFunction = ____dota_ts_adapter.dotaModifierFunction
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local SCRIPT_PATH = "abilities/bosses/evo_elasmyr_bash"
-if IsServer() then
-    LinkLuaModifier("modifier_evo_elasmyr_bash", SCRIPT_PATH, 0)
-end
+LinkLuaModifier("modifier_evo_elasmyr_bash", SCRIPT_PATH, 0)
 ____exports.evo_elasmyr_bash = __TS__Class()
 local evo_elasmyr_bash = ____exports.evo_elasmyr_bash
 evo_elasmyr_bash.name = "evo_elasmyr_bash"

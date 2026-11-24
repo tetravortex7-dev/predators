@@ -21,10 +21,8 @@ const SLARK_AGI_MODS: readonly string[] = [
     "modifier_evo_slark_agi_r_shadow",
 ];
 
-if (IsServer()) {
-    for (const modName of SLARK_AGI_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of SLARK_AGI_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function grantEssenceStack(caster: CDOTA_BaseNPC, target: CDOTA_BaseNPC, stacks: number): void {

@@ -17,10 +17,8 @@ const SCARAB_MODS: readonly string[] = [
     "modifier_evo_nyx_scarab_r_citadel",
 ];
 
-if (IsServer()) {
-    for (const modName of SCARAB_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of SCARAB_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function getStr(unit: CDOTA_BaseNPC): number {

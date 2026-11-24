@@ -17,10 +17,8 @@ const BLOOD_MODS: readonly string[] = [
     "modifier_evo_morph_blood_r_caster",
 ];
 
-if (IsServer()) {
-    for (const modName of BLOOD_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of BLOOD_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 @registerModifier("modifier_evo_morph_bleed")

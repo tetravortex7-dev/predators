@@ -8,10 +8,8 @@ import {
 
 const SCRIPT_PATH = "abilities/nyx/evo_nyx_t1";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_nyx_living_chitin", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_nyx_t1_chitin_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_nyx_living_chitin", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_t1_chitin_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 function getHighestAttribute(unit: CDOTA_BaseNPC): number {
     if (!unit.IsRealHero()) return 0;

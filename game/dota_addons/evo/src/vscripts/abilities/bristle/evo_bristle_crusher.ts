@@ -6,7 +6,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
-import { grantBristleAdrenalineStacks } from "./evo_bristle_t1";
+import { grantBristleAdrenalineStacks } from "./evo_bristle_shared";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_crusher";
 
@@ -18,10 +18,8 @@ const CRUSH_MODS: readonly string[] = [
     "modifier_evo_bristle_crush_r_frenzy",
 ];
 
-if (IsServer()) {
-    for (const modName of CRUSH_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of CRUSH_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function applySunderStacks(caster: CDOTA_BaseNPC, target: CDOTA_BaseNPC, ability: CDOTABaseAbility, count: number): void {

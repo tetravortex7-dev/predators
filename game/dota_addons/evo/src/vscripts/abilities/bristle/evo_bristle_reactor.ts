@@ -6,6 +6,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import { getAllAttributesSum } from "./evo_bristle_shared";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_reactor";
 
@@ -20,20 +21,12 @@ const REACTOR_MODS: readonly string[] = [
     "modifier_evo_bristle_react_r_thinker",
 ];
 
-if (IsServer()) {
-    for (const modName of REACTOR_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of REACTOR_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 const activePuddles: Set<CDOTA_BaseNPC> = new Set();
 const activeReactorZones: Set<CDOTA_BaseNPC> = new Set();
-
-export function getAllAttributesSum(unit: CDOTA_BaseNPC): number {
-    if (!unit.IsRealHero()) return 0;
-    const hero = unit as CDOTA_BaseNPC_Hero;
-    return hero.GetStrength() + hero.GetAgility() + hero.GetIntellect(false);
-}
 
 function applyCatalystStacks(
     caster: CDOTA_BaseNPC,

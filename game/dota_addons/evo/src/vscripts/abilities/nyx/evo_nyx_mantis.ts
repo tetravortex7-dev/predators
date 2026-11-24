@@ -17,10 +17,8 @@ const MANTIS_MODS: readonly string[] = [
     "modifier_evo_nyx_mantis_e_passive",
 ];
 
-if (IsServer()) {
-    for (const modName of MANTIS_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of MANTIS_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 function getAgi(unit: CDOTA_BaseNPC): number {

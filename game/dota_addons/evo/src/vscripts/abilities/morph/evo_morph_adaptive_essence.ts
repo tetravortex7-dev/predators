@@ -2,9 +2,7 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/morph/evo_morph_adaptive_essence";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_morph_adaptive_essence", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_morph_adaptive_essence", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_morph_adaptive_essence")
 export class evo_morph_adaptive_essence extends BaseAbility {

@@ -2,11 +2,9 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_abyssal_flood";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_elasmyr_flood_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_elasmyr_flood_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
-    LinkLuaModifier("modifier_evo_elasmyr_flood_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_elasmyr_flood_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_elasmyr_flood_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_elasmyr_flood_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_elasmyr_abyssal_flood")
 export class evo_elasmyr_abyssal_flood extends BaseAbility {

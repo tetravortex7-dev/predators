@@ -2,9 +2,7 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_bash";
 
-if (IsServer()) {
-    LinkLuaModifier("modifier_evo_elasmyr_bash", SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
+LinkLuaModifier("modifier_evo_elasmyr_bash", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_elasmyr_bash")
 export class evo_elasmyr_bash extends BaseAbility {

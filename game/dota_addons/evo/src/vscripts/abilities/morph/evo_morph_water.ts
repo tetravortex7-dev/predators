@@ -20,10 +20,8 @@ const WATER_MODS: readonly string[] = [
     "modifier_evo_morph_water_r_thinker",
 ];
 
-if (IsServer()) {
-    for (const modName of WATER_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of WATER_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 @registerModifier("modifier_evo_morph_wet")

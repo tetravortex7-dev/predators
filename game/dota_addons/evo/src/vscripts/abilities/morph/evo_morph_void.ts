@@ -20,10 +20,8 @@ const VOID_MODS: readonly string[] = [
     "modifier_evo_morph_void_r_root",
 ];
 
-if (IsServer()) {
-    for (const modName of VOID_MODS) {
-        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-    }
+for (const modName of VOID_MODS) {
+    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
 }
 
 @registerAbility("evo_morph_void_q")
