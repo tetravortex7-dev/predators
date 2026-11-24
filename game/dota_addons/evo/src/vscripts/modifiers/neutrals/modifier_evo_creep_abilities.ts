@@ -16,7 +16,7 @@ const ALL_ABILITY_MODS: readonly string[] = [
     "modifier_evo_creep_debuff_stomp",
 ];
 
-if (IsServer()) {
+export function linkCreepAbilityModifiers(): void {
     for (const modName of ALL_ABILITY_MODS) {
         LinkLuaModifier(modName, ABILITY_SCRIPT_PATH, LuaModifierMotionType.NONE);
     }

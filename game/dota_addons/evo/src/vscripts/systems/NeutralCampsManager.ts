@@ -1,7 +1,7 @@
 import { EventBus } from "../core/EventBus";
 import { EVO_CONSTANTS } from "../data/game_constants";
-import { EVO_CREEP_AURA_MODIFIERS } from "../modifiers/neutrals/modifier_evo_creep_auras";
-import { EVO_CREEP_ABILITY_MODIFIERS } from "../modifiers/neutrals/modifier_evo_creep_abilities";
+import { EVO_CREEP_AURA_MODIFIERS, linkCreepAuraModifiers } from "../modifiers/neutrals/modifier_evo_creep_auras";
+import { EVO_CREEP_ABILITY_MODIFIERS, linkCreepAbilityModifiers } from "../modifiers/neutrals/modifier_evo_creep_abilities";
 
 interface CampTriggerState {
     trigger: CBaseEntity;
@@ -48,6 +48,8 @@ export class NeutralCampsManager {
     constructor(private readonly eventBus: EventBus) {}
 
     public init(): void {
+        linkCreepAuraModifiers();
+        linkCreepAbilityModifiers();
         this.initNeutralAiGlobals();
         this.loadCampConfig();
         this.discoverCampTriggers();
