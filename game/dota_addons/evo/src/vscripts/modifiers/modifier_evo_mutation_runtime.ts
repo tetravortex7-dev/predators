@@ -25,6 +25,8 @@ export class modifier_evo_mutation_runtime extends BaseModifier {
     }
 
     public OnCreated(params: { mutation_id?: string }): void {
+        this.lastTriggerTime = -999;
+        this.triggerBuffUntil = 0;
         if (!IsServer()) return;
         if (params && params.mutation_id) {
             this.mutationDef = getMutationDefinition(params.mutation_id);

@@ -22,8 +22,10 @@ const DREAD_MODS: readonly string[] = [
     "modifier_evo_bristle_dread_r_ram",
 ];
 
-for (const modName of DREAD_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of DREAD_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 const pushCooldownByEnt: Map<EntityIndex, number> = new Map();

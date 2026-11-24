@@ -21,8 +21,10 @@ const SLARK_AGI_MODS: readonly string[] = [
     "modifier_evo_slark_agi_r_shadow",
 ];
 
-for (const modName of SLARK_AGI_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of SLARK_AGI_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 function grantEssenceStack(caster: CDOTA_BaseNPC, target: CDOTA_BaseNPC, stacks: number): void {
@@ -449,6 +451,9 @@ export class modifier_evo_slark_agi_e_passive extends BaseModifier {
     }
     RemoveOnDeath(): boolean {
         return false;
+    }
+    OnCreated(): void {
+        this.hitCounter = 0;
     }
     DeclareFunctions(): ModifierFunction[] {
         return [dotaModifierFunction("MODIFIER_EVENT_ON_ATTACK_LANDED")];

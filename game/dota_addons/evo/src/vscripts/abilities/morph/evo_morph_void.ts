@@ -20,8 +20,10 @@ const VOID_MODS: readonly string[] = [
     "modifier_evo_morph_void_r_root",
 ];
 
-for (const modName of VOID_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of VOID_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 @registerAbility("evo_morph_void_q")
@@ -191,6 +193,9 @@ export class modifier_evo_morph_void_w_mark extends BaseModifier {
     }
     GetTexture(): string {
         return "enigma_malefice";
+    }
+    OnCreated(): void {
+        this.triggered = false;
     }
     DeclareFunctions(): ModifierFunction[] {
         return [dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE")];

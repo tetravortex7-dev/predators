@@ -22,8 +22,10 @@ const SLARK_INT_MODS: readonly string[] = [
     "modifier_evo_slark_int_r_enemy",
 ];
 
-for (const modName of SLARK_INT_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of SLARK_INT_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 @registerAbility("evo_slark_int_q")

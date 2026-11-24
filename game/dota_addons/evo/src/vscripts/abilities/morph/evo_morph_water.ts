@@ -20,8 +20,10 @@ const WATER_MODS: readonly string[] = [
     "modifier_evo_morph_water_r_thinker",
 ];
 
-for (const modName of WATER_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of WATER_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 @registerModifier("modifier_evo_morph_wet")
@@ -105,6 +107,7 @@ export class modifier_evo_morph_water_q_dash extends BaseModifier {
         const ab = this.GetAbility();
         this.damage = ab ? ab.GetSpecialValueFor("damage") : 80;
         this.level = ab ? ab.GetLevel() : 1;
+        this.tickCount = 0;
         this.hitTargets = new Set();
 
         const parent = this.GetParent();

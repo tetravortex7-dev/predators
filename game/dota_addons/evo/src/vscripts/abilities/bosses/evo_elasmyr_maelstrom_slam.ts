@@ -2,7 +2,9 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_maelstrom_slam";
 
-LinkLuaModifier("modifier_evo_elasmyr_maelstrom_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_elasmyr_maelstrom_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 @registerAbility("evo_elasmyr_maelstrom_slam")
 export class evo_elasmyr_maelstrom_slam extends BaseAbility {

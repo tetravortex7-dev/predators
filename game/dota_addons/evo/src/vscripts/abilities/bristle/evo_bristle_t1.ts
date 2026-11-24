@@ -11,9 +11,11 @@ import { getAllAttributesSum } from "./evo_bristle_reactor";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_t1";
 
-LinkLuaModifier("modifier_evo_bristle_adrenaline", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_bristle_adrenaline_stack", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_bristle_t1_acid_spit", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_bristle_adrenaline", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_bristle_adrenaline_stack", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_bristle_t1_acid_spit", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 function getHighestAttribute(unit: CDOTA_BaseNPC): number {
     if (!unit.IsRealHero()) return 0;
@@ -57,6 +59,10 @@ export class modifier_evo_bristle_adrenaline extends BaseModifier {
     }
     RemoveOnDeath(): boolean {
         return false;
+    }
+    OnCreated(): void {
+        this.damageAccum = 0;
+        this.rearAbsorbAccum = 0;
     }
     DeclareFunctions(): ModifierFunction[] {
         return [

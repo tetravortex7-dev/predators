@@ -9,8 +9,10 @@ import {
 
 const SCRIPT_PATH = "abilities/morph/evo_morph_t1_water_splash";
 
-LinkLuaModifier("modifier_evo_morph_t1_water_splash_dash", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_morph_t1_water_splash_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_morph_t1_water_splash_dash", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_morph_t1_water_splash_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 @registerAbility("evo_morph_t1_water_splash")
 export class evo_morph_t1_water_splash extends BaseAbility {

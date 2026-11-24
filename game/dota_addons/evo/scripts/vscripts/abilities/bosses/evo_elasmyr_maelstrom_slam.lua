@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 3,["15"] = 5,["16"] = 7,["17"] = 8,["18"] = 7,["19"] = 8,["20"] = 9,["21"] = 10,["24"] = 11,["25"] = 12,["28"] = 14,["29"] = 15,["30"] = 16,["31"] = 17,["32"] = 19,["33"] = 21,["34"] = 26,["35"] = 27,["36"] = 27,["37"] = 27,["38"] = 27,["39"] = 27,["40"] = 28,["41"] = 30,["42"] = 30,["43"] = 30,["44"] = 30,["45"] = 30,["46"] = 30,["47"] = 30,["48"] = 30,["49"] = 30,["50"] = 30,["51"] = 30,["52"] = 42,["54"] = 43,["55"] = 43,["57"] = 44,["58"] = 45,["59"] = 46,["60"] = 47,["61"] = 48,["62"] = 49,["63"] = 50,["64"] = 51,["66"] = 53,["67"] = 53,["68"] = 53,["69"] = 53,["70"] = 53,["71"] = 53,["72"] = 53,["73"] = 60,["77"] = 9,["78"] = 8,["79"] = 7,["80"] = 8,["82"] = 8,["83"] = 67,["84"] = 68,["85"] = 67,["86"] = 68,["87"] = 69,["88"] = 70,["89"] = 69,["90"] = 72,["91"] = 73,["92"] = 72,["93"] = 75,["94"] = 76,["95"] = 75,["96"] = 78,["97"] = 79,["98"] = 78,["99"] = 81,["100"] = 82,["101"] = 81,["102"] = 84,["103"] = 85,["104"] = 84,["105"] = 68,["106"] = 67,["107"] = 68,["109"] = 68});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 3,["15"] = 5,["16"] = 6,["18"] = 9,["19"] = 10,["20"] = 9,["21"] = 10,["22"] = 11,["23"] = 12,["26"] = 13,["27"] = 14,["30"] = 16,["31"] = 17,["32"] = 18,["33"] = 19,["34"] = 21,["35"] = 23,["36"] = 28,["37"] = 29,["38"] = 29,["39"] = 29,["40"] = 29,["41"] = 29,["42"] = 30,["43"] = 32,["44"] = 32,["45"] = 32,["46"] = 32,["47"] = 32,["48"] = 32,["49"] = 32,["50"] = 32,["51"] = 32,["52"] = 32,["53"] = 32,["54"] = 44,["56"] = 45,["57"] = 45,["59"] = 46,["60"] = 47,["61"] = 48,["62"] = 49,["63"] = 50,["64"] = 51,["65"] = 52,["66"] = 53,["68"] = 55,["69"] = 55,["70"] = 55,["71"] = 55,["72"] = 55,["73"] = 55,["74"] = 55,["75"] = 62,["79"] = 11,["80"] = 10,["81"] = 9,["82"] = 10,["84"] = 10,["85"] = 69,["86"] = 70,["87"] = 69,["88"] = 70,["89"] = 71,["90"] = 72,["91"] = 71,["92"] = 74,["93"] = 75,["94"] = 74,["95"] = 77,["96"] = 78,["97"] = 77,["98"] = 80,["99"] = 81,["100"] = 80,["101"] = 83,["102"] = 84,["103"] = 83,["104"] = 86,["105"] = 87,["106"] = 86,["107"] = 70,["108"] = 69,["109"] = 70,["111"] = 70});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -12,7 +12,9 @@ local dotaModifierFunction = ____dota_ts_adapter.dotaModifierFunction
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local SCRIPT_PATH = "abilities/bosses/evo_elasmyr_maelstrom_slam"
-LinkLuaModifier("modifier_evo_elasmyr_maelstrom_slow", SCRIPT_PATH, 0)
+if IsServer() then
+    LinkLuaModifier("modifier_evo_elasmyr_maelstrom_slow", SCRIPT_PATH, 0)
+end
 ____exports.evo_elasmyr_maelstrom_slam = __TS__Class()
 local evo_elasmyr_maelstrom_slam = ____exports.evo_elasmyr_maelstrom_slam
 evo_elasmyr_maelstrom_slam.name = "evo_elasmyr_maelstrom_slam"
@@ -52,7 +54,7 @@ function evo_elasmyr_maelstrom_slam.prototype.OnSpellStart(self)
     for ____, enemy in ipairs(enemies) do
         do
             if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue5
+                goto __continue6
             end
             local pos = enemy:GetAbsOrigin()
             local toCaster = Vector(origin.x - pos.x, origin.y - pos.y, 0)
@@ -72,7 +74,7 @@ function evo_elasmyr_maelstrom_slam.prototype.OnSpellStart(self)
             })
             enemy:AddNewModifier(caster, self, "modifier_evo_elasmyr_maelstrom_slow", {duration = slowDuration})
         end
-        ::__continue5::
+        ::__continue6::
     end
 end
 evo_elasmyr_maelstrom_slam = __TS__DecorateLegacy(

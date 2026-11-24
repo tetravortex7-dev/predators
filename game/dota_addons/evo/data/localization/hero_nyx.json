@@ -39,60 +39,274 @@
     "ru": "Скорость передвижения снижена на 20%.",
     "en": "Movement speed reduced by 20%."
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_max_stacks": {
-    "ru": "МАКС. ПЛАСТИН:",
-    "en": "MAX PLATES:"
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_max_stacks": { "ru": "МАКС. ПЛАСТИН:", "en": "MAX PLATES:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_stack_interval": { "ru": "ИНТЕРВАЛ ЗАРЯДА:", "en": "STACK INTERVAL:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_armor_per_stack": { "ru": "БРОНЯ ЗА ПЛАСТИНУ:", "en": "ARMOR PER PLATE:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_mr_per_stack": { "ru": "%МАГРЕЗИСТ ЗА ПЛАСТИНУ:", "en": "%MAGIC RES PER PLATE:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_ms_per_stack": { "ru": "%СКОРОСТЬ БЕГА ЗА ПЛАСТИНУ:", "en": "%MOVE SPEED PER PLATE:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_base_block": { "ru": "БАЗОВЫЙ БЛОК УРОНА:", "en": "BASE BLOCK:" },
+  "DOTA_Tooltip_ability_evo_nyx_living_chitin_pulse_damage": { "ru": "УРОН ИМПУЛЬСА:", "en": "PULSE DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_range": { "ru": "ДАЛЬНОСТЬ:", "en": "RANGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_damage": { "ru": "ЧИСТЫЙ УРОН:", "en": "PURE DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_stun_duration": { "ru": "ОГЛУШЕНИЕ:", "en": "STUN DURATION:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_attr_pct": { "ru": "%УРОН ОТ МАКС. АТРИБУТА:", "en": "%HIGHEST ATTR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_per_stack": { "ru": "ЧИСТЫЙ УРОН ЗА ПЛАСТИНУ:", "en": "PURE DMG PER PLATE:" },
+  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_radius": { "ru": "РАДИУС ВЗРЫВА:", "en": "BLAST RADIUS:" },
+
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q": {
+    "ru": "Тектонический удар",
+    "en": "Tectonic Impale"
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_stack_interval": {
-    "ru": "ИНТЕРВАЛ ЗАРЯДА:",
-    "en": "STACK INTERVAL:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q_Description": {
+    "ru": "Шипы прорывают землю на расстояние %range%, оглушая врагов на %stun_duration% сек. и нанося %base_damage% + %str_pct%%% от Силы физ. урона (%creep_mult%x по крипам).<br><b>T3:</b> подтягивает врагов к вам и снижает броню на 4 на 4с.<br><b>T4:</b> даёт +2 пластины Хитина при попадании по герою и вызывает афтершок (50%% урона) на конце линии.",
+    "en": "Spikes erupt across %range% range stunning enemies for %stun_duration%s and dealing %base_damage% + %str_pct%%% STR physical damage (%creep_mult%x vs creeps).<br><b>T3:</b> pulls enemies toward you and reduces armor by 4 for 4s.<br><b>T4:</b> grants +2 Chitin Plates on hero hit and triggers an aftershock (50%% damage) at line end."
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_armor_per_stack": {
-    "ru": "БРОНЯ ЗА ПЛАСТИНУ:",
-    "en": "ARMOR PER PLATE:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q_range": { "ru": "ДАЛЬНОСТЬ:", "en": "RANGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_q_stun_duration": { "ru": "ОГЛУШЕНИЕ:", "en": "STUN DURATION:" },
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_q_armor": {
+    "ru": "Раскол брони",
+    "en": "Tectonic Armor Shred"
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_mr_per_stack": {
-    "ru": "%МАГРЕЗИСТ ЗА ПЛАСТИНУ:",
-    "en": "%MAGIC RES PER PLATE:"
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_q_armor_Description": {
+    "ru": "Броня снижена на 4.",
+    "en": "Armor reduced by 4."
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_ms_per_stack": {
-    "ru": "%СКОРОСТЬ БЕГА ЗА ПЛАСТИНУ:",
-    "en": "%MOVE SPEED PER PLATE:"
+
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w": {
+    "ru": "Всплеск панциря",
+    "en": "Carapace Surge"
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_base_block": {
-    "ru": "БАЗОВЫЙ БЛОК УРОНА:",
-    "en": "BASE BLOCK:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_Description": {
+    "ru": "Укрепляет панцирь на %duration% сек. (+%bonus_armor% брони, возврат %reflect_pct%%% урона героев чистым уроном) и выпускает волну в радиусе %radius% на %base_damage% + %str_pct%%% Силы маг. урона с замедлением на 25%%.<br><b>T3:</b> первый атакующий герой оглушается на 1.2с.<br><b>T4:</b> +25%% сопротивления эффектам и лечение на 30%% от отражённого урона.",
+    "en": "Hardens carapace for %duration%s (+%bonus_armor% armor, reflects %reflect_pct%%% hero damage as pure) and blasts %radius% radius for %base_damage% + %str_pct%%% STR magic damage with a 25%% slow.<br><b>T3:</b> first attacking hero is stunned for 1.2s.<br><b>T4:</b> +25%% status resistance and heals for 30%% of reflected damage."
   },
-  "DOTA_Tooltip_ability_evo_nyx_living_chitin_pulse_damage": {
-    "ru": "УРОН ИМПУЛЬСА:",
-    "en": "PULSE DAMAGE:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_base_damage": { "ru": "БАЗОВЫЙ МАГ. УРОН:", "en": "BASE MAGIC DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_str_pct": { "ru": "%УРОН ОТ СИЛЫ:", "en": "%STR DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_bonus_armor": { "ru": "БОНУС БРОНИ:", "en": "BONUS ARMOR:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_w_reflect_pct": { "ru": "%ОТРАЖЕНИЕ УРОНА:", "en": "%DAMAGE REFLECT:" },
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_w_buff": {
+    "ru": "Всплеск панциря",
+    "en": "Carapace Surge"
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_range": {
-    "ru": "ДАЛЬНОСТЬ:",
-    "en": "RANGE:"
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_w_buff_Description": {
+    "ru": "Повышенная броня и чистое отражение урона от героев.",
+    "en": "Increased armor and pure hero damage reflection."
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_damage": {
-    "ru": "ЧИСТЫЙ УРОН:",
-    "en": "PURE DAMAGE:"
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_w_slow": {
+    "ru": "Сейсмическая волна",
+    "en": "Seismic Wave"
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_burrow_spike_stun_duration": {
-    "ru": "ОГЛУШЕНИЕ:",
-    "en": "STUN DURATION:"
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_w_slow_Description": {
+    "ru": "Скорость передвижения снижена на 25%.",
+    "en": "Movement speed reduced by 25%."
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_base_damage": {
-    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
-    "en": "BASE PHYS DAMAGE:"
+
+  "DOTA_Tooltip_ability_evo_nyx_scarab_e": {
+    "ru": "Хитиновый бастион",
+    "en": "Chitin Bastion"
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_attr_pct": {
-    "ru": "%УРОН ОТ МАКС. АТРИБУТА:",
-    "en": "%HIGHEST ATTR DAMAGE:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_e_Description": {
+    "ru": "Пассивно даёт +%bonus_str% Силы, +%hp_regen% реген HP и возвращает %thorns_base% + %thorns_str_pct%%% Силы чистого урона атакующим вблизи.<br><b>T3:</b> лимит пластин Хитина 5, удвоенная броня за пластину и чистое отражение (40 + 45%% Силы) при блоке.<br><b>T4:</b> блок пластиной оглушает врагов вокруг на 0.35с.",
+    "en": "Passively grants +%bonus_str% STR, +%hp_regen% HP regen, and returns %thorns_base% + %thorns_str_pct%%% STR pure damage to nearby attackers.<br><b>T3:</b> max Chitin Plates raised to 5, doubled armor per plate, and pure reflect (40 + 45%% STR) on block.<br><b>T4:</b> Chitin block stuns nearby enemies for 0.35s."
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_per_stack": {
-    "ru": "ЧИСТЫЙ УРОН ЗА ПЛАСТИНУ:",
-    "en": "PURE DMG PER PLATE:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_e_bonus_str": { "ru": "СИЛА:", "en": "BONUS STR:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_e_hp_regen": { "ru": "РЕГЕН HP:", "en": "HP REGEN:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_e_thorns_base": { "ru": "ШИПЫ (ЧИСТ. УРОН):", "en": "THORNS PURE DMG:" },
+
+  "DOTA_Tooltip_ability_evo_nyx_scarab_r": {
+    "ru": "Цитадель Роя",
+    "en": "Hive Citadel"
   },
-  "DOTA_Tooltip_ability_evo_nyx_t1_chitin_burst_burst_radius": {
-    "ru": "РАДИУС ВЗРЫВА:",
-    "en": "BLAST RADIUS:"
+  "DOTA_Tooltip_ability_evo_nyx_scarab_r_Description": {
+    "ru": "Скарабей набирает максимум пластин Хитина, восстанавливает %heal_pct%%% HP и усиливается на %duration% сек.: +%str_bonus_pct%%% Силы, +20%% скорости и импульс каждые 1.5с в радиусе %pulse_radius% на %pulse_damage% + %pulse_str_pct%%% Силы чистого урона.",
+    "en": "Gains max Chitin Plates, heals %heal_pct%%% Max HP, and ascends for %duration%s: +%str_bonus_pct%%% STR, +20%% MS, and a 1.5s pulse in %pulse_radius% radius for %pulse_damage% + %pulse_str_pct%%% STR pure damage."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_r_duration": { "ru": "ДЛИТЕЛЬНОСТЬ:", "en": "DURATION:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_r_str_bonus_pct": { "ru": "%БОНУС СИЛЫ:", "en": "%BONUS STR:" },
+  "DOTA_Tooltip_ability_evo_nyx_scarab_r_pulse_damage": { "ru": "УРОН ИМПУЛЬСА:", "en": "PULSE DAMAGE:" },
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_r_citadel": {
+    "ru": "Цитадель Роя",
+    "en": "Hive Citadel"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_scarab_r_citadel_Description": {
+    "ru": "+25% к Силе, +20% скорости и периодические сейсмические импульсы.",
+    "en": "+25% STR, +20% MS, and periodic seismic pulses."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q": {
+    "ru": "Выпад жнеца",
+    "en": "Reaper Lunge"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q_Description": {
+    "ru": "Рывок на %range%, нанося %base_damage% + %agi_pct%%% от Ловкости физ. урона (%creep_mult%x по крипам) и накладывая Рваную рану (%bleed_dps% урона/сек на %bleed_duration%с, до 4 стаков).<br><b>T3:</b> крит 150%% и микростан 0.5с по целям ниже 50%% HP.<br><b>T4:</b> убийство в течение 3с откатывает 70%% перезарядки.",
+    "en": "Dashes %range% dealing %base_damage% + %agi_pct%%% AGI physical damage (%creep_mult%x vs creeps) and applying Laceration (%bleed_dps% DPS for %bleed_duration%s, max 4 stacks).<br><b>T3:</b> 150%% crit & 0.5s stun vs targets below 50%% HP.<br><b>T4:</b> takedowns within 3s refund 70%% cooldown."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q_range": { "ru": "ДАЛЬНОСТЬ:", "en": "RANGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q_agi_pct": { "ru": "%УРОН ОТ ЛОВКОСТИ:", "en": "%AGI DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_q_bleed_dps": { "ru": "КРОВОТЕЧЕНИЕ/СЕК:", "en": "BLEED DPS:" },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_bleed": {
+    "ru": "Рваная рана",
+    "en": "Laceration"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_bleed_Description": {
+    "ru": "Получает физический урон от кровотечения каждую секунду.",
+    "en": "Taking physical bleed damage every second."
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_q_mark": {
+    "ru": "Прицел жнеца",
+    "en": "Reaper Mark"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_q_mark_Description": {
+    "ru": "Смерть цели снизит перезарядку Выпада жнеца на 70%.",
+    "en": "Dying refunds 70% of Reaper Lunge cooldown."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w": {
+    "ru": "Танец лезвий",
+    "en": "Mantis Flurry"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w_Description": {
+    "ru": "Круговой взмах когтями в радиусе %radius% на %base_damage% + %agi_pct%%% Ловкости физ. урона (%creep_mult%x по крипам) с безмолвием на %silence_duration%с. Тратит пластины Хитина ради +%burst_per_plate% чистого урона за пластину.<br><b>T3:</b> метка на 4с (-25%% скорости, +12%% урона от вас).<br><b>T4:</b> второй быстрый взмах через 0.25с (50%% урона).",
+    "en": "Slashes in %radius% radius for %base_damage% + %agi_pct%%% AGI physical damage (%creep_mult%x vs creeps) and silences for %silence_duration%s. Consumes Chitin Plates for +%burst_per_plate% pure damage each.<br><b>T3:</b> marks foes for 4s (-25%% MS, +12%% incoming damage).<br><b>T4:</b> triggers a second slash 0.25s later (50%% damage)."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w_base_damage": { "ru": "БАЗОВЫЙ ФИЗ. УРОН:", "en": "BASE PHYS DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w_agi_pct": { "ru": "%УРОН ОТ ЛОВКОСТИ:", "en": "%AGI DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_w_silence_duration": { "ru": "БЕЗМОЛВИЕ:", "en": "SILENCE:" },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_w_mark": {
+    "ru": "Багровая метка",
+    "en": "Crimson Mark"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_w_mark_Description": {
+    "ru": "-25% скорости передвижения и +12% получаемого урона от Богомола.",
+    "en": "-25% move speed and +12% incoming damage from Mantis."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_mantis_e": {
+    "ru": "Кровавый азарт",
+    "en": "Predator Instinct"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_e_Description": {
+    "ru": "Пассивно: +%bonus_agi% Ловкости и %crit_chance%%% шанс крита на %crit_mult%%%, накладывающего Рваную рану.<br><b>T3:</b> каждая пластина Живого хитина даёт +12 AS и +4%% уклонения.<br><b>T4:</b> блок пластиной при HP > 70%% не тратит её (перезарядка 2.5с).",
+    "en": "Passive: +%bonus_agi% AGI and %crit_chance%%% chance for a %crit_mult%%% crit that applies Laceration.<br><b>T3:</b> each Living Chitin plate grants +12 AS and +4%% Evasion.<br><b>T4:</b> Chitin blocks above 70%% HP do not consume stacks (2.5s CD)."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_e_bonus_agi": { "ru": "ЛОВКОСТЬ:", "en": "BONUS AGI:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_e_crit_chance": { "ru": "%ШАНС КРИТА:", "en": "%CRIT CHANCE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_e_crit_mult": { "ru": "%МНОЖИТЕЛЬ КРИТА:", "en": "%CRIT MULT:" },
+
+  "DOTA_Tooltip_ability_evo_nyx_mantis_r": {
+    "ru": "Багровая вендетта",
+    "en": "Crimson Vendetta"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_r_Description": {
+    "ru": "Невидимость на %stealth_duration%с (+%bonus_ms_pct%%% скорости, прохождение сквозь юнитов). Атака из невидимости наносит %base_damage% + %agi_pct%%% Ловкости чистого урона, накладывает Истощение на %break_duration%с и запускает Бойню на %frenzy_duration%с (+%frenzy_as% AS и +25%% вампиризма).",
+    "en": "Stealth for %stealth_duration%s (+%bonus_ms_pct%%% MS, phased). Attacking from stealth deals %base_damage% + %agi_pct%%% AGI pure damage, applies Break for %break_duration%s, and triggers Frenzy for %frenzy_duration%s (+%frenzy_as% AS & +25%% Lifesteal)."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_r_base_damage": { "ru": "ЧИСТЫЙ УРОН ИЗ ИНВИЗА:", "en": "STEALTH PURE DMG:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_r_agi_pct": { "ru": "%УРОН ОТ ЛОВКОСТИ:", "en": "%AGI DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_mantis_r_frenzy_as": { "ru": "СКОРОСТЬ АТАКИ ПОСЛЕ:", "en": "FRENZY AS:" },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_stealth": {
+    "ru": "Багровая вендетта",
+    "en": "Crimson Vendetta"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_stealth_Description": {
+    "ru": "Невидимость, бонус скорости и усиленный чистый удар.",
+    "en": "Invisible with bonus move speed and an empowered pure strike."
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_frenzy": {
+    "ru": "Азарт резни",
+    "en": "Slaughter Frenzy"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_frenzy_Description": {
+    "ru": "+100 скорости атаки и +25% физического вампиризма.",
+    "en": "+100 Attack Speed and +25% physical lifesteal."
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_break": {
+    "ru": "Разрушение хитина",
+    "en": "Vendetta Break"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_mantis_r_break_Description": {
+    "ru": "Пассивные способности отключены.",
+    "en": "Passive abilities disabled."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_archon_q": {
+    "ru": "Психический импульс",
+    "en": "Mind Pulse"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_q_Description": {
+    "ru": "Сжигает %mana_burn_pct%%% от макс. маны цели и наносит %base_damage% + %int_pct%%% Интеллекта + 1x сожжённой маны маг. урона (%creep_mult%x по крипам).<br><b>T3:</b> безмолвие на 1.5с и отскок в радиусе 450 (65%% силы).<br><b>T4:</b> вешает Пси-эхо на 3с (взрыв на 45%% урона при касте или истечении).",
+    "en": "Burns %mana_burn_pct%%% of target's Max Mana and deals %base_damage% + %int_pct%%% INT + 1x burned mana magic damage (%creep_mult%x vs creeps).<br><b>T3:</b> silences for 1.5s and bounces within 450 range (65%% power).<br><b>T4:</b> applies Psychic Echo for 3s (detonates for 45%% damage on cast or expiry)."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_q_base_damage": { "ru": "БАЗОВЫЙ МАГ. УРОН:", "en": "BASE MAGIC DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_q_int_pct": { "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:", "en": "%INT DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_q_mana_burn_pct": { "ru": "%ВЫЖИГ МАНЫ:", "en": "%MANA BURN:" },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_q_echo": {
+    "ru": "Психическое эхо",
+    "en": "Psychic Echo"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_q_echo_Description": {
+    "ru": "Взорвётся дополнительным магическим уроном по окончании или при касте заклинания.",
+    "en": "Will detonate for bonus magic damage on spell cast or expiry."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_archon_w": {
+    "ru": "Разлом сознания",
+    "en": "Mind Rift"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_Description": {
+    "ru": "Взрывает точку в радиусе %radius%: %base_damage% + %int_pct%%% Интеллекта маг. урона (%creep_mult%x по крипам), оглушение на %stun_duration%с и -%mr_shred%%% маг. сопротивления на 4с.<br><b>T3:</b> стяжка к центру и True Sight в зоне.<br><b>T4:</b> каждый задетый герой возвращает 10%% маны и -1.5с перезарядок.",
+    "en": "Blasts %radius% AoE for %base_damage% + %int_pct%%% INT magic damage (%creep_mult%x vs creeps), %stun_duration%s stun, and -%mr_shred%%% Magic Res for 4s.<br><b>T3:</b> pulls to center and reveals area.<br><b>T4:</b> each hero hit restores 10%% Max Mana and shaves 1.5s off cooldowns."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_radius": { "ru": "РАДИУС:", "en": "RADIUS:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_base_damage": { "ru": "БАЗОВЫЙ МАГ. УРОН:", "en": "BASE MAGIC DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_int_pct": { "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:", "en": "%INT DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_stun_duration": { "ru": "ОГЛУШЕНИЕ:", "en": "STUN DURATION:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_w_mr_shred": { "ru": "%СРЕЗ МАГРЕЗИСТА:", "en": "%MR SHRED:" },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_w_shred": {
+    "ru": "Уязвимость разума",
+    "en": "Mind Shatter"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_w_shred_Description": {
+    "ru": "Сопротивление магии снижено.",
+    "en": "Magic resistance reduced."
+  },
+
+  "DOTA_Tooltip_ability_evo_nyx_archon_e": {
+    "ru": "Эхо разума",
+    "en": "Psionic Resonance"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_e_Description": {
+    "ru": "Пассивно: +%bonus_int% Интеллекта, +%cast_range% к дальности заклинаний и +%spell_amp%%% усиления заклинаний. Каждый каст выпускает искру в ближайшего врага (650): %spark_damage% + %spark_int_pct%%% Интеллекта маг. урона.<br><b>T3:</b> пластина Хитина даёт +3%% Spell Amp и +2.5 мана-регена, каждый 2-й каст даёт пластину.<br><b>T4:</b> блок пластиной сжигает врагам вокруг 40 + 35%% Интеллекта маны.",
+    "en": "Passive: +%bonus_int% INT, +%cast_range% Cast Range, and +%spell_amp%%% Spell Amp. Every cast zaps nearest foe (650): %spark_damage% + %spark_int_pct%%% INT magic damage.<br><b>T3:</b> each Chitin Plate grants +3%% Spell Amp & +2.5 Mana Regen; every 2 casts grants 1 plate.<br><b>T4:</b> Chitin block burns 40 + 35%% INT mana from nearby heroes."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_e_bonus_int": { "ru": "ИНТЕЛЛЕКТ:", "en": "BONUS INT:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_e_cast_range": { "ru": "ДАЛЬНОСТЬ КАСТА:", "en": "CAST RANGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_e_spell_amp": { "ru": "%УСИЛЕНИЕ ЗАКЛ.:", "en": "%SPELL AMP:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_e_spark_damage": { "ru": "УРОН ИСКРЫ:", "en": "SPARK DAMAGE:" },
+
+  "DOTA_Tooltip_ability_evo_nyx_archon_r": {
+    "ru": "Перегрузка Дагона",
+    "en": "Dagon Overdrive"
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_r_Description": {
+    "ru": "Обрушивает луч Дагона: %base_damage% + %int_pct%%% Интеллекта маг. урона, выжигание %mana_burn_pct%%% макс. маны и оглушение на %stun_duration%с. Затем Архонт возносится на %ascension_duration%с: -%cdr_pct%%% перезарядки, +%bonus_amp%%% усиления заклинаний и +200 к дальности каста.",
+    "en": "Fires an overloaded Dagon beam: %base_damage% + %int_pct%%% INT magic damage, %mana_burn_pct%%% max mana burn, and %stun_duration%s stun. Ascends for %ascension_duration%s: -%cdr_pct%%% Cooldowns, +%bonus_amp%%% Spell Amp, and +200 Cast Range."
+  },
+  "DOTA_Tooltip_ability_evo_nyx_archon_r_base_damage": { "ru": "УРОН ДАГОНА:", "en": "DAGON DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_r_int_pct": { "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:", "en": "%INT DAMAGE:" },
+  "DOTA_Tooltip_ability_evo_nyx_archon_r_cdr_pct": { "ru": "%СНИЖЕНИЕ КД:", "en": "%CDR:" },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_r_ascend": {
+    "ru": "Вознесение Архонта",
+    "en": "Archon Ascension"
+  },
+  "DOTA_Tooltip_modifier_evo_nyx_archon_r_ascend_Description": {
+    "ru": "-35% перезарядки заклинаний, +20% усиления магии и +200 к дальности каста.",
+    "en": "-35% Cooldowns, +20% Spell Amp, and +200 Cast Range."
   }
 }

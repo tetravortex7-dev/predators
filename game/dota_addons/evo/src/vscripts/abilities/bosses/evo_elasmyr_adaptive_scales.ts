@@ -2,8 +2,10 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_adaptive_scales";
 
-LinkLuaModifier("modifier_evo_elasmyr_adaptive_scales", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_elasmyr_scales_burst_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_elasmyr_adaptive_scales", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_elasmyr_scales_burst_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 @registerAbility("evo_elasmyr_adaptive_scales")
 export class evo_elasmyr_adaptive_scales extends BaseAbility {
@@ -30,6 +32,7 @@ export class modifier_evo_elasmyr_adaptive_scales extends BaseModifier {
     }
     OnCreated(): void {
         if (!IsServer()) return;
+        this.lastStackTime = 0;
         this.StartIntervalThink(1.0);
     }
     OnIntervalThink(): void {

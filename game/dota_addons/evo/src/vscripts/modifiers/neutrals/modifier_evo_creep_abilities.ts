@@ -16,8 +16,10 @@ const ALL_ABILITY_MODS: readonly string[] = [
     "modifier_evo_creep_debuff_stomp",
 ];
 
-for (const modName of ALL_ABILITY_MODS) {
-    LinkLuaModifier(modName, ABILITY_SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of ALL_ABILITY_MODS) {
+        LinkLuaModifier(modName, ABILITY_SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 export const EVO_CREEP_ABILITY_MODIFIERS: readonly string[] = [
@@ -357,6 +359,7 @@ export class modifier_evo_creep_ability_stomp extends BaseModifier {
     }
     OnCreated(): void {
         if (!IsServer()) return;
+        this.nextReadyTime = 0;
         this.StartIntervalThink(1.0);
     }
     OnIntervalThink(): void {

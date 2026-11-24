@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 9,["15"] = 11,["16"] = 12,["17"] = 14,["18"] = 15,["19"] = 15,["21"] = 16,["22"] = 17,["23"] = 17,["24"] = 17,["25"] = 17,["26"] = 17,["27"] = 14,["28"] = 20,["29"] = 21,["30"] = 22,["33"] = 23,["34"] = 24,["35"] = 25,["36"] = 25,["37"] = 25,["38"] = 25,["39"] = 25,["40"] = 25,["41"] = 25,["42"] = 20,["43"] = 28,["44"] = 29,["45"] = 28,["46"] = 29,["47"] = 30,["48"] = 31,["49"] = 30,["50"] = 29,["51"] = 28,["52"] = 29,["54"] = 29,["55"] = 35,["56"] = 36,["57"] = 35,["58"] = 36,["59"] = 37,["60"] = 38,["61"] = 37,["62"] = 40,["63"] = 41,["64"] = 40,["65"] = 43,["66"] = 44,["67"] = 43,["68"] = 46,["69"] = 47,["70"] = 46,["71"] = 49,["72"] = 50,["73"] = 49,["74"] = 52,["75"] = 53,["78"] = 54,["79"] = 55,["80"] = 56,["81"] = 57,["82"] = 52,["83"] = 59,["84"] = 60,["87"] = 61,["88"] = 62,["91"] = 63,["92"] = 59,["93"] = 65,["94"] = 66,["95"] = 66,["96"] = 66,["97"] = 66,["98"] = 66,["99"] = 66,["100"] = 66,["101"] = 65,["102"] = 74,["103"] = 75,["104"] = 76,["105"] = 77,["106"] = 74,["107"] = 79,["108"] = 80,["109"] = 81,["110"] = 82,["111"] = 79,["112"] = 84,["113"] = 85,["114"] = 86,["115"] = 87,["116"] = 84,["117"] = 89,["118"] = 90,["121"] = 91,["122"] = 92,["125"] = 93,["128"] = 94,["129"] = 89,["130"] = 96,["131"] = 97,["132"] = 97,["134"] = 98,["135"] = 99,["136"] = 100,["137"] = 100,["139"] = 101,["140"] = 101,["142"] = 102,["143"] = 102,["145"] = 103,["146"] = 103,["148"] = 104,["149"] = 104,["151"] = 106,["152"] = 107,["153"] = 108,["154"] = 109,["155"] = 110,["156"] = 111,["157"] = 113,["158"] = 113,["159"] = 113,["160"] = 113,["161"] = 113,["162"] = 113,["163"] = 113,["164"] = 113,["165"] = 113,["166"] = 113,["167"] = 113,["168"] = 124,["170"] = 125,["171"] = 125,["173"] = 126,["174"] = 126,["175"] = 126,["176"] = 126,["177"] = 126,["178"] = 126,["179"] = 126,["183"] = 135,["184"] = 96,["185"] = 36,["186"] = 35,["187"] = 36,["189"] = 36,["190"] = 139,["191"] = 140,["192"] = 139,["193"] = 140,["194"] = 141,["195"] = 142,["198"] = 143,["199"] = 144,["202"] = 146,["203"] = 147,["204"] = 148,["205"] = 149,["206"] = 150,["207"] = 151,["208"] = 152,["209"] = 154,["210"] = 155,["211"] = 156,["212"] = 158,["213"] = 159,["214"] = 164,["215"] = 165,["216"] = 166,["217"] = 168,["218"] = 168,["219"] = 168,["220"] = 168,["221"] = 168,["222"] = 168,["223"] = 168,["224"] = 168,["225"] = 168,["226"] = 168,["227"] = 179,["229"] = 180,["230"] = 180,["232"] = 181,["233"] = 182,["234"] = 183,["235"] = 183,["236"] = 183,["237"] = 183,["238"] = 183,["239"] = 183,["240"] = 183,["244"] = 141,["245"] = 140,["246"] = 139,["247"] = 140,["249"] = 140,["250"] = 194,["251"] = 195,["252"] = 194,["253"] = 195,["254"] = 196,["255"] = 197,["258"] = 198,["259"] = 199,["260"] = 200,["263"] = 201,["266"] = 203,["267"] = 204,["268"] = 205,["269"] = 206,["270"] = 207,["271"] = 209,["272"] = 210,["273"] = 211,["274"] = 212,["276"] = 215,["277"] = 216,["278"] = 217,["279"] = 217,["280"] = 217,["281"] = 217,["282"] = 217,["283"] = 217,["284"] = 217,["285"] = 225,["286"] = 227,["287"] = 228,["288"] = 229,["289"] = 229,["290"] = 229,["291"] = 229,["292"] = 229,["293"] = 229,["294"] = 229,["295"] = 229,["296"] = 229,["297"] = 229,["298"] = 229,["299"] = 240,["301"] = 241,["302"] = 241,["304"] = 242,["305"] = 242,["306"] = 242,["307"] = 242,["308"] = 242,["309"] = 242,["310"] = 242,["311"] = 249,["312"] = 250,["313"] = 251,["319"] = 256,["320"] = 257,["322"] = 196,["323"] = 195,["324"] = 194,["325"] = 195,["327"] = 195,["328"] = 262,["329"] = 263,["330"] = 262,["331"] = 263,["332"] = 264,["333"] = 265,["334"] = 264,["335"] = 267,["336"] = 268,["337"] = 267,["338"] = 270,["339"] = 271,["340"] = 270,["341"] = 273,["342"] = 274,["343"] = 273,["344"] = 276,["345"] = 277,["346"] = 276,["347"] = 279,["348"] = 280,["349"] = 279,["350"] = 263,["351"] = 262,["352"] = 263,["354"] = 263});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 9,["15"] = 11,["16"] = 12,["17"] = 13,["19"] = 16,["20"] = 17,["21"] = 17,["23"] = 18,["24"] = 19,["25"] = 19,["26"] = 19,["27"] = 19,["28"] = 19,["29"] = 16,["30"] = 22,["31"] = 23,["32"] = 24,["33"] = 25,["34"] = 26,["36"] = 28,["37"] = 22,["38"] = 31,["39"] = 32,["40"] = 33,["43"] = 34,["44"] = 35,["45"] = 36,["46"] = 36,["47"] = 36,["48"] = 36,["49"] = 36,["50"] = 36,["51"] = 36,["52"] = 31,["53"] = 39,["54"] = 40,["55"] = 39,["56"] = 40,["57"] = 41,["58"] = 42,["59"] = 41,["60"] = 40,["61"] = 39,["62"] = 40,["64"] = 40,["65"] = 46,["66"] = 47,["67"] = 46,["68"] = 47,["70"] = 47,["71"] = 48,["72"] = 49,["73"] = 46,["74"] = 51,["75"] = 52,["76"] = 51,["77"] = 54,["78"] = 55,["79"] = 54,["80"] = 57,["81"] = 58,["82"] = 57,["83"] = 60,["84"] = 61,["85"] = 60,["86"] = 63,["87"] = 64,["88"] = 63,["89"] = 66,["90"] = 67,["91"] = 68,["92"] = 69,["95"] = 70,["96"] = 71,["97"] = 72,["98"] = 73,["99"] = 66,["100"] = 75,["101"] = 76,["104"] = 77,["105"] = 78,["108"] = 79,["109"] = 75,["110"] = 81,["111"] = 82,["112"] = 82,["113"] = 82,["114"] = 82,["115"] = 82,["116"] = 82,["117"] = 82,["118"] = 82,["119"] = 82,["120"] = 82,["121"] = 82,["122"] = 82,["123"] = 81,["124"] = 95,["125"] = 96,["126"] = 97,["127"] = 98,["128"] = 99,["129"] = 99,["130"] = 99,["132"] = 99,["134"] = 99,["135"] = 100,["136"] = 101,["137"] = 95,["138"] = 103,["139"] = 104,["140"] = 105,["141"] = 106,["142"] = 103,["143"] = 108,["144"] = 109,["145"] = 110,["146"] = 111,["147"] = 108,["148"] = 113,["149"] = 114,["150"] = 115,["151"] = 115,["153"] = 116,["154"] = 117,["155"] = 118,["157"] = 120,["158"] = 113,["159"] = 122,["160"] = 123,["161"] = 124,["162"] = 124,["164"] = 125,["165"] = 126,["166"] = 127,["168"] = 129,["169"] = 122,["170"] = 131,["171"] = 132,["172"] = 133,["173"] = 133,["175"] = 134,["176"] = 135,["177"] = 136,["179"] = 138,["180"] = 131,["181"] = 140,["182"] = 141,["183"] = 142,["184"] = 142,["186"] = 143,["187"] = 144,["188"] = 145,["190"] = 147,["191"] = 140,["192"] = 149,["193"] = 150,["196"] = 151,["197"] = 152,["200"] = 153,["203"] = 154,["204"] = 155,["205"] = 156,["206"] = 157,["207"] = 158,["208"] = 159,["211"] = 149,["212"] = 163,["213"] = 164,["216"] = 165,["217"] = 166,["220"] = 167,["223"] = 168,["224"] = 163,["225"] = 170,["226"] = 171,["227"] = 171,["229"] = 172,["230"] = 173,["231"] = 174,["232"] = 174,["234"] = 175,["235"] = 175,["237"] = 176,["238"] = 176,["240"] = 177,["241"] = 177,["243"] = 178,["244"] = 178,["246"] = 180,["247"] = 181,["248"] = 182,["249"] = 183,["250"] = 184,["251"] = 185,["252"] = 186,["255"] = 189,["256"] = 190,["258"] = 193,["259"] = 194,["260"] = 195,["261"] = 196,["262"] = 197,["263"] = 199,["264"] = 200,["265"] = 201,["266"] = 202,["267"] = 204,["268"] = 205,["269"] = 206,["270"] = 206,["271"] = 206,["272"] = 206,["273"] = 206,["274"] = 206,["275"] = 206,["276"] = 206,["278"] = 216,["279"] = 216,["280"] = 216,["281"] = 216,["282"] = 216,["283"] = 216,["284"] = 216,["285"] = 216,["286"] = 216,["287"] = 216,["288"] = 216,["289"] = 227,["290"] = 228,["292"] = 229,["293"] = 229,["295"] = 230,["296"] = 230,["297"] = 230,["298"] = 230,["299"] = 230,["300"] = 230,["301"] = 230,["302"] = 237,["303"] = 238,["305"] = 240,["306"] = 241,["307"] = 242,["312"] = 246,["313"] = 170,["314"] = 47,["315"] = 46,["316"] = 47,["318"] = 47,["319"] = 250,["320"] = 251,["321"] = 250,["322"] = 251,["323"] = 252,["324"] = 253,["327"] = 254,["328"] = 255,["331"] = 257,["332"] = 258,["333"] = 259,["334"] = 260,["335"] = 261,["336"] = 262,["337"] = 263,["338"] = 265,["339"] = 266,["340"] = 267,["341"] = 269,["342"] = 270,["343"] = 275,["344"] = 276,["345"] = 277,["346"] = 279,["347"] = 279,["348"] = 279,["349"] = 279,["350"] = 279,["351"] = 279,["352"] = 279,["353"] = 279,["354"] = 279,["355"] = 279,["356"] = 290,["358"] = 291,["359"] = 291,["361"] = 292,["362"] = 293,["363"] = 294,["364"] = 294,["365"] = 294,["366"] = 294,["367"] = 294,["368"] = 294,["369"] = 294,["373"] = 252,["374"] = 251,["375"] = 250,["376"] = 251,["378"] = 251,["379"] = 305,["380"] = 306,["381"] = 305,["382"] = 306,["383"] = 307,["384"] = 308,["387"] = 309,["388"] = 310,["389"] = 311,["392"] = 312,["395"] = 314,["396"] = 315,["397"] = 316,["398"] = 317,["399"] = 318,["400"] = 320,["401"] = 321,["402"] = 322,["403"] = 323,["405"] = 326,["406"] = 327,["407"] = 328,["408"] = 328,["409"] = 328,["410"] = 328,["411"] = 328,["412"] = 328,["413"] = 328,["414"] = 336,["415"] = 338,["416"] = 339,["417"] = 340,["418"] = 340,["419"] = 340,["420"] = 340,["421"] = 340,["422"] = 340,["423"] = 340,["424"] = 340,["425"] = 340,["426"] = 340,["427"] = 340,["428"] = 351,["430"] = 352,["431"] = 352,["433"] = 353,["434"] = 353,["435"] = 353,["436"] = 353,["437"] = 353,["438"] = 353,["439"] = 353,["440"] = 360,["441"] = 361,["442"] = 362,["448"] = 367,["449"] = 368,["451"] = 307,["452"] = 306,["453"] = 305,["454"] = 306,["456"] = 306,["457"] = 373,["458"] = 374,["459"] = 373,["460"] = 374,["461"] = 375,["462"] = 376,["463"] = 375,["464"] = 378,["465"] = 379,["466"] = 378,["467"] = 381,["468"] = 382,["469"] = 381,["470"] = 384,["471"] = 385,["472"] = 384,["473"] = 387,["474"] = 388,["475"] = 387,["476"] = 390,["477"] = 391,["478"] = 390,["479"] = 374,["480"] = 373,["481"] = 374,["483"] = 374});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -12,8 +12,10 @@ local dotaModifierFunction = ____dota_ts_adapter.dotaModifierFunction
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local SCRIPT_PATH = "abilities/nyx/evo_nyx_t1"
-LinkLuaModifier("modifier_evo_nyx_living_chitin", SCRIPT_PATH, 0)
-LinkLuaModifier("modifier_evo_nyx_t1_chitin_slow", SCRIPT_PATH, 0)
+if IsServer() then
+    LinkLuaModifier("modifier_evo_nyx_living_chitin", SCRIPT_PATH, 0)
+    LinkLuaModifier("modifier_evo_nyx_t1_chitin_slow", SCRIPT_PATH, 0)
+end
 local function getHighestAttribute(self, unit)
     if not unit:IsRealHero() then
         return 0
@@ -25,13 +27,21 @@ local function getHighestAttribute(self, unit)
         hero:GetIntellect(false)
     )
 end
+function ____exports.getNyxMaxChitinPlates(self, hero, ability)
+    local baseMax = ability and ability:GetSpecialValueFor("max_stacks") or 3
+    local scarabE = hero:FindAbilityByName("evo_nyx_scarab_e")
+    if scarabE and not scarabE:IsNull() and scarabE:GetLevel() >= 2 then
+        return 5
+    end
+    return baseMax
+end
 function ____exports.addNyxChitinStacks(self, hero, delta)
     local mod = hero:FindModifierByName("modifier_evo_nyx_living_chitin")
     if not mod then
         return
     end
     local ab = mod:GetAbility()
-    local maxStacks = ab and ab:GetSpecialValueFor("max_stacks") or 3
+    local maxStacks = ____exports.getNyxMaxChitinPlates(nil, hero, ab)
     mod:SetStackCount(math.min(
         maxStacks,
         math.max(
@@ -56,6 +66,11 @@ ____exports.modifier_evo_nyx_living_chitin = __TS__Class()
 local modifier_evo_nyx_living_chitin = ____exports.modifier_evo_nyx_living_chitin
 modifier_evo_nyx_living_chitin.name = "modifier_evo_nyx_living_chitin"
 __TS__ClassExtends(modifier_evo_nyx_living_chitin, BaseModifier)
+function modifier_evo_nyx_living_chitin.prototype.____constructor(self, ...)
+    BaseModifier.prototype.____constructor(self, ...)
+    self.lastFreeBlockTime = -999
+    self.archonCastCounter = 0
+end
 function modifier_evo_nyx_living_chitin.prototype.IsHidden(self)
     return false
 end
@@ -72,6 +87,8 @@ function modifier_evo_nyx_living_chitin.prototype.GetTexture(self)
     return "nyx_assassin_spiked_carapace"
 end
 function modifier_evo_nyx_living_chitin.prototype.OnCreated(self)
+    self.lastFreeBlockTime = -999
+    self.archonCastCounter = 0
     if not IsServer() then
         return
     end
@@ -95,14 +112,28 @@ function modifier_evo_nyx_living_chitin.prototype.DeclareFunctions(self)
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"),
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"),
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_EVASION_CONSTANT"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"),
+        dotaModifierFunction(nil, "MODIFIER_EVENT_ON_ABILITY_EXECUTED"),
         dotaModifierFunction(nil, "MODIFIER_EVENT_ON_DEATH"),
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK")
     }
 end
 function modifier_evo_nyx_living_chitin.prototype.GetModifierPhysicalArmorBonus(self)
+    local parent = self:GetParent()
     local ability = self:GetAbility()
-    local val = ability and ability:GetSpecialValueFor("armor_per_stack") or 1.5
-    return self:GetStackCount() * val
+    local base = ability and ability:GetSpecialValueFor("armor_per_stack") or 1.5
+    local ____temp_0
+    if parent and not parent:IsNull() then
+        ____temp_0 = parent:FindAbilityByName("evo_nyx_scarab_e")
+    else
+        ____temp_0 = nil
+    end
+    local scarabE = ____temp_0
+    local mult = scarabE and not scarabE:IsNull() and scarabE:GetLevel() >= 2 and 2 or 1
+    return self:GetStackCount() * base * mult
 end
 function modifier_evo_nyx_living_chitin.prototype.GetModifierMagicalResistanceBonus(self)
     local ability = self:GetAbility()
@@ -113,6 +144,70 @@ function modifier_evo_nyx_living_chitin.prototype.GetModifierMoveSpeedBonus_Perc
     local ability = self:GetAbility()
     local val = ability and ability:GetSpecialValueFor("ms_per_stack") or 3
     return self:GetStackCount() * val
+end
+function modifier_evo_nyx_living_chitin.prototype.GetModifierAttackSpeedBonus_Constant(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return 0
+    end
+    local mantisE = parent:FindAbilityByName("evo_nyx_mantis_e")
+    if mantisE and not mantisE:IsNull() and mantisE:GetLevel() >= 2 then
+        return self:GetStackCount() * 12
+    end
+    return 0
+end
+function modifier_evo_nyx_living_chitin.prototype.GetModifierEvasion_Constant(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return 0
+    end
+    local mantisE = parent:FindAbilityByName("evo_nyx_mantis_e")
+    if mantisE and not mantisE:IsNull() and mantisE:GetLevel() >= 2 then
+        return self:GetStackCount() * 4
+    end
+    return 0
+end
+function modifier_evo_nyx_living_chitin.prototype.GetModifierSpellAmplify_Percentage(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return 0
+    end
+    local archonE = parent:FindAbilityByName("evo_nyx_archon_e")
+    if archonE and not archonE:IsNull() and archonE:GetLevel() >= 2 then
+        return self:GetStackCount() * 3
+    end
+    return 0
+end
+function modifier_evo_nyx_living_chitin.prototype.GetModifierConstantManaRegen(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return 0
+    end
+    local archonE = parent:FindAbilityByName("evo_nyx_archon_e")
+    if archonE and not archonE:IsNull() and archonE:GetLevel() >= 2 then
+        return self:GetStackCount() * 2.5
+    end
+    return 0
+end
+function modifier_evo_nyx_living_chitin.prototype.OnAbilityExecuted(self, event)
+    if not IsServer() then
+        return
+    end
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() or event.unit ~= parent then
+        return
+    end
+    if not event.ability or event.ability:IsItem() or event.ability:IsToggle() then
+        return
+    end
+    local archonE = parent:FindAbilityByName("evo_nyx_archon_e")
+    if archonE and not archonE:IsNull() and archonE:GetLevel() >= 2 then
+        self.archonCastCounter = self.archonCastCounter + 1
+        if self.archonCastCounter >= 2 then
+            self.archonCastCounter = 0
+            ____exports.addNyxChitinStacks(nil, parent, 1)
+        end
+    end
 end
 function modifier_evo_nyx_living_chitin.prototype.OnDeath(self, event)
     if not IsServer() then
@@ -148,12 +243,38 @@ function modifier_evo_nyx_living_chitin.prototype.GetModifierTotal_ConstantBlock
     if self:GetStackCount() <= 0 or event.damage < 10 then
         return 0
     end
-    self:SetStackCount(self:GetStackCount() - 1)
+    local mantisE = parent:FindAbilityByName("evo_nyx_mantis_e")
+    local now = GameRules:GetDOTATime(false, false)
+    local consumeStack = true
+    if mantisE and not mantisE:IsNull() and mantisE:GetLevel() >= 3 and parent:GetHealthPercent() >= 70 then
+        if now - self.lastFreeBlockTime >= 2.5 then
+            self.lastFreeBlockTime = now
+            consumeStack = false
+        end
+    end
+    if consumeStack then
+        self:SetStackCount(self:GetStackCount() - 1)
+    end
     local ability = self:GetAbility()
     local baseBlock = ability and ability:GetSpecialValueFor("base_block") or 25
     local attrPct = (ability and ability:GetSpecialValueFor("block_attr_pct") or 30) / 100
     local pulseDmg = ability and ability:GetSpecialValueFor("pulse_damage") or 25
     local pulseRadius = ability and ability:GetSpecialValueFor("pulse_radius") or 250
+    local scarabE = parent:FindAbilityByName("evo_nyx_scarab_e")
+    local archonE = parent:FindAbilityByName("evo_nyx_archon_e")
+    local scarabLvl = scarabE and not scarabE:IsNull() and scarabE:GetLevel() or 0
+    local archonLvl = archonE and not archonE:IsNull() and archonE:GetLevel() or 0
+    if scarabLvl >= 2 and attacker:IsAlive() then
+        local strVal = parent:IsRealHero() and parent:GetStrength() or 0
+        ApplyDamage({
+            victim = attacker,
+            attacker = parent,
+            ability = ability,
+            damage = 40 + strVal * 0.45,
+            damage_type = 4,
+            damage_flags = 16
+        })
+    end
     local enemies = FindUnitsInRadius(
         parent:GetTeamNumber(),
         parent:GetAbsOrigin(),
@@ -165,10 +286,11 @@ function modifier_evo_nyx_living_chitin.prototype.GetModifierTotal_ConstantBlock
         0,
         false
     )
+    local intVal = parent:IsRealHero() and parent:GetIntellect(false) or 0
     for ____, enemy in ipairs(enemies) do
         do
             if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue32
+                goto __continue57
             end
             ApplyDamage({
                 victim = enemy,
@@ -177,8 +299,15 @@ function modifier_evo_nyx_living_chitin.prototype.GetModifierTotal_ConstantBlock
                 damage = pulseDmg,
                 damage_type = 2
             })
+            if scarabLvl >= 3 then
+                enemy:AddNewModifier(parent, ability, "modifier_stunned", {duration = 0.35})
+            end
+            if archonLvl >= 3 and ability and enemy:IsHero() and enemy:GetMaxMana() > 0 then
+                local manaDrain = 40 + intVal * 0.35
+                enemy:Script_ReduceMana(manaDrain, ability)
+            end
         end
-        ::__continue32::
+        ::__continue57::
     end
     return baseBlock + getHighestAttribute(nil, parent) * attrPct
 end
@@ -227,7 +356,7 @@ function evo_nyx_t1_burrow_spike.prototype.OnSpellStart(self)
     for ____, enemy in ipairs(enemies) do
         do
             if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue38
+                goto __continue65
             end
             local dmg = enemy:IsCreep() and baseDmg * creepMult or baseDmg
             enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = stunDur})
@@ -239,7 +368,7 @@ function evo_nyx_t1_burrow_spike.prototype.OnSpellStart(self)
                 damage_type = 4
             })
         end
-        ::__continue38::
+        ::__continue65::
     end
 end
 evo_nyx_t1_burrow_spike = __TS__DecorateLegacy(
@@ -299,7 +428,7 @@ function evo_nyx_t1_chitin_burst.prototype.OnSpellStart(self)
         for ____, enemy in ipairs(enemies) do
             do
                 if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                    goto __continue47
+                    goto __continue74
                 end
                 ApplyDamage({
                     victim = enemy,
@@ -313,7 +442,7 @@ function evo_nyx_t1_chitin_burst.prototype.OnSpellStart(self)
                     killedCreep = true
                 end
             end
-            ::__continue47::
+            ::__continue74::
         end
     end
     if killedCreep then

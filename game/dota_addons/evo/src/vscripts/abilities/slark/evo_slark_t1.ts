@@ -9,12 +9,14 @@ import {
 
 const SCRIPT_PATH = "abilities/slark/evo_slark_t1";
 
-LinkLuaModifier("modifier_evo_slark_deep_predator", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_slark_deep_predator_active", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_slark_t1_leap_motion", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_slark_t1_leap_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_slark_t1_greedy_bite_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_slark_t1_greedy_bite_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_slark_deep_predator", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_slark_deep_predator_active", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_slark_t1_leap_motion", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_slark_t1_leap_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_slark_t1_greedy_bite_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_slark_t1_greedy_bite_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 @registerAbility("evo_slark_deep_predator")
 export class evo_slark_deep_predator extends BaseAbility {
@@ -38,6 +40,7 @@ export class modifier_evo_slark_deep_predator extends BaseModifier {
     }
     OnCreated(): void {
         if (!IsServer()) return;
+        this.unseenDuration = 0;
         this.StartIntervalThink(0.25);
     }
     OnIntervalThink(): void {

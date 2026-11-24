@@ -2,9 +2,11 @@ import { BaseAbility, BaseModifier, dotaModifierFunction, registerAbility, regis
 
 const SCRIPT_PATH = "abilities/bosses/evo_elasmyr_abyssal_flood";
 
-LinkLuaModifier("modifier_evo_elasmyr_flood_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_elasmyr_flood_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_elasmyr_flood_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    LinkLuaModifier("modifier_evo_elasmyr_flood_thinker", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_elasmyr_flood_buff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+    LinkLuaModifier("modifier_evo_elasmyr_flood_debuff", SCRIPT_PATH, LuaModifierMotionType.NONE);
+}
 
 @registerAbility("evo_elasmyr_abyssal_flood")
 export class evo_elasmyr_abyssal_flood extends BaseAbility {
@@ -42,6 +44,7 @@ export class modifier_evo_elasmyr_flood_thinker extends BaseModifier {
     }
     OnCreated(): void {
         if (!IsServer()) return;
+        this.tickCount = 0;
         const ability = this.GetAbility();
         this.radius = ability ? ability.GetSpecialValueFor("radius") : 600;
         this.dps = ability ? ability.GetSpecialValueFor("dps") : 45;

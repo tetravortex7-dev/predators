@@ -20,8 +20,10 @@ const REACTOR_MODS: readonly string[] = [
     "modifier_evo_bristle_react_r_thinker",
 ];
 
-for (const modName of REACTOR_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of REACTOR_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 const activePuddles: Set<CDOTA_BaseNPC> = new Set();

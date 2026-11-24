@@ -18,8 +18,10 @@ const CRUSH_MODS: readonly string[] = [
     "modifier_evo_bristle_crush_r_frenzy",
 ];
 
-for (const modName of CRUSH_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of CRUSH_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 function applySunderStacks(caster: CDOTA_BaseNPC, target: CDOTA_BaseNPC, ability: CDOTABaseAbility, count: number): void {
@@ -292,6 +294,10 @@ export class modifier_evo_bristle_crush_e_passive extends BaseModifier {
     RemoveOnDeath(): boolean {
         return false;
     }
+    OnCreated(): void {
+        this.heroHitCount = 0;
+        this.creepHitCount = 0;
+    }
     DeclareFunctions(): ModifierFunction[] {
         return [
             dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE"),
@@ -460,6 +466,7 @@ export class modifier_evo_bristle_crush_r_frenzy extends BaseModifier {
         return "bristleback_warpath";
     }
     OnCreated(): void {
+        this.bonusStr = 0;
         if (!IsServer()) return;
         const parent = this.GetParent();
         if (parent && !parent.IsNull() && parent.IsRealHero()) {

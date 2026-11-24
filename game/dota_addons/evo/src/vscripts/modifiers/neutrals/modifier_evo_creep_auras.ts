@@ -19,8 +19,10 @@ const ALL_AURA_MODS: readonly string[] = [
     "modifier_evo_creep_aura_ward",
 ];
 
-for (const modName of ALL_AURA_MODS) {
-    LinkLuaModifier(modName, AURA_SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of ALL_AURA_MODS) {
+        LinkLuaModifier(modName, AURA_SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 export const EVO_CREEP_AURA_MODIFIERS: readonly string[] = [

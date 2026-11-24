@@ -4,6 +4,7 @@ Stack: TSTL (`src/vscripts/` → `scripts/vscripts/`), Panorama (`src/panorama/`
 
 ## Core Rules
 - **MCP first:** Use `dota2-workshop` MCP when available (KV/VScript/Panorama API, launch/reload, VConsole2). 2-step Tools launch: `addon_launch_tools` → wait `"Finished requesting news data"` → `dota_launch_custom_game evo zxc`.
+- **NEVER hide or minimize Dota 2 window:** When launching Dota 2 from a closed state for the user to test, launch via `steam.exe -applaunch 570 -novid -tools -addon evo -console -dev -vconport 29000` (NOT `addon_launch_tools`, which spawns without a visible window), ALWAYS ensure the `dota2.exe` window is visible, restored (`minimized=false`), and brought to the foreground (`dota_focus_window` / `dota_window("focus")`). NEVER pass `-invisible`, `-silent`, hide, or minimize flags/commands.
 - **Zero comments:** NO `//`, `/* */`, JSDoc in TS/Panorama/KV (except `<!-- kv3 ... -->`). Always verify with `verify-zero-comments` skill script.
 - **File size & modularity:** Any file exceeding **500 lines** (as well as any large system) MUST be split logically into focused submodules.
 - **Clean build output:** After every build, clean output logs & VConsole buffer down to 0 lines using `.agents/skills/clean-build-output/scripts/clean_build_output.py` (and `dota_send_console_command` `clear`) so tokens are never wasted re-reading bloated output.

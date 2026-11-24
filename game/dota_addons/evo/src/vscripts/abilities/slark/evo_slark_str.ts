@@ -20,8 +20,10 @@ const SLARK_STR_MODS: readonly string[] = [
     "modifier_evo_slark_str_r_caster",
 ];
 
-for (const modName of SLARK_STR_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of SLARK_STR_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 @registerAbility("evo_slark_str_q")
@@ -297,6 +299,9 @@ export class modifier_evo_slark_str_e_passive extends BaseModifier {
     }
     RemoveOnDeath(): boolean {
         return false;
+    }
+    OnCreated(): void {
+        this.lastReturnTime = -999;
     }
     DeclareFunctions(): ModifierFunction[] {
         return [

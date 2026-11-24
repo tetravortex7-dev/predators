@@ -17,8 +17,10 @@ const BLOOD_MODS: readonly string[] = [
     "modifier_evo_morph_blood_r_caster",
 ];
 
-for (const modName of BLOOD_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+if (IsServer()) {
+    for (const modName of BLOOD_MODS) {
+        LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
+    }
 }
 
 @registerModifier("modifier_evo_morph_bleed")
@@ -42,6 +44,7 @@ export class modifier_evo_morph_bleed extends BaseModifier {
     }
     OnCreated(params: { dps?: number; slow_on_move?: number }): void {
         if (!IsServer()) return;
+        this.isMoving = false;
         this.dps = params.dps ?? 25;
         this.slowOnMove = (params.slow_on_move ?? 0) === 1;
         const parent = this.GetParent();
