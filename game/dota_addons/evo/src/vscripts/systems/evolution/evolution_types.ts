@@ -44,6 +44,17 @@ export const MUTATION_SLOT_ORDER: readonly MutationSlotType[] = [
     "PASSIVE_SLOT_2",
 ];
 
+export function pickRandomSubset<T>(items: readonly T[], maxCount: number): T[] {
+    const pool = [...items];
+    for (let i = pool.length - 1; i > 0; i--) {
+        const j = RandomInt(0, i);
+        const tmp = pool[i];
+        pool[i] = pool[j];
+        pool[j] = tmp;
+    }
+    return pool.slice(0, Math.min(maxCount, pool.length));
+}
+
 export function findFloorEvoThreshold(points: number): number {
     let floorValue = 0;
     for (const threshold of EVO_CONSTANTS.EVO_THRESHOLDS) {

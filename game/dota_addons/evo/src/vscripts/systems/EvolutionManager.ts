@@ -26,6 +26,7 @@ import {
     SelectBodyDraftPayload,
     SelectMutationPayload,
     findFloorEvoThreshold,
+    pickRandomSubset,
     reapplyMutationsToHero,
     syncPlayerEvoNetTable,
 } from "./evolution/evolution_types";
@@ -271,8 +272,12 @@ export class EvolutionManager {
                     candidates = getBodiesForTier(tier.tierIndex);
                 }
                 if (candidates.length > 0) {
+                    const selected =
+                        state.tierIndex === 0 && tier.tierIndex === 1
+                            ? pickRandomSubset(candidates, EVO_CONSTANTS.BODY_DRAFT_T1_CHOICES)
+                            : candidates;
                     state.pendingDraftType = "BODY";
-                    state.draftOptions = candidates.map((b) => b.id);
+                    state.draftOptions = selected.map((b) => b.id);
                     return;
                 }
             }
