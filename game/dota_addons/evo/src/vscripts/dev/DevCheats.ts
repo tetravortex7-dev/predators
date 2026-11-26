@@ -19,7 +19,8 @@ export class DevCheats {
         }
 
         const text = (event.text ?? "").trim();
-        if (!text.startsWith("-evo_")) {
+        const isPlusLevel = text === "+" || (text.startsWith("+") && tonumber(text.slice(1).trim()) !== undefined);
+        if (!isPlusLevel && !text.startsWith("-evo_")) {
             return;
         }
 
@@ -30,6 +31,12 @@ export class DevCheats {
 
         const hero = PlayerResource.GetSelectedHeroEntity(playerId);
         if (!hero || hero.IsNull() || !IsValidEntity(hero)) {
+            return;
+        }
+
+        if (isPlusLevel) {
+            const count = text === "+" ? 1 : tonumber(text.slice(1).trim()) ?? 1;
+            this.levelUpHero(hero, count);
             return;
         }
 
@@ -45,12 +52,7 @@ export class DevCheats {
                 break;
             }
             case "-evo_lvl": {
-                const levels = Math.max(1, Math.min(EVO_CONSTANTS.MAX_HERO_LEVEL, tonumber(args[0]) ?? 1));
-                for (let i = 0; i < levels; i++) {
-                    if (hero.GetLevel() >= EVO_CONSTANTS.MAX_HERO_LEVEL) break;
-                    hero.HeroLevelUp(true);
-                }
-                this.say(`[Dev] Hero level is now ${hero.GetLevel()}`);
+                this.levelUpHero(hero, tonumber(args[0]) ?? 1);
                 break;
             }
             case "-evo_fortify": {
@@ -166,6 +168,15 @@ export class DevCheats {
             HeroAppearance.setScale(hero, 1.0);
             this.say("[Dev] Hero appearance reset.");
         }
+    }
+
+    private levelUpHero(hero: CDOTA_BaseNPC_Hero, rawLevels: number): void {
+        const levels = Math.max(1, Math.min(EVO_CONSTANTS.MAX_HERO_LEVEL, rawLevels));
+        for (let i = 0; i < levels; i++) {
+            if (hero.GetLevel() >= EVO_CONSTANTS.MAX_HERO_LEVEL) break;
+            hero.HeroLevelUp(true);
+        }
+        this.say(`[Dev] Hero level is now ${hero.GetLevel()}`);
     }
 
     private say(message: string): void {

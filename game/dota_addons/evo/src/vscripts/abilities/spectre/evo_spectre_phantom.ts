@@ -38,7 +38,7 @@ export class evo_spectre_phantom_q extends BaseAbility {
 
         const projId = ProjectileManager.CreateLinearProjectile({
             Ability: this,
-            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
+            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
             vSpawnOrigin: origin,
             fDistance: range,
             fStartRadius: width,

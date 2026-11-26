@@ -1,5 +1,6 @@
 #base units/bosses/evo_bosses.txt
 #base units/buildings/npc_dota_fountain/unit.txt
+#base units/evo_veno_units.txt
 #base units/neutrals/npc_dota_neutral_centaur_small/unit.txt
 #base units/neutrals/npc_dota_neutral_doomling/unit.txt
 #base units/neutrals/npc_dota_neutral_ghost_small/unit.txt

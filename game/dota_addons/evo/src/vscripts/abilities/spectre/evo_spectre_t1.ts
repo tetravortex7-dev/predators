@@ -9,7 +9,6 @@ import {
 import {
     applyDispersionAroundOrigin,
     applySpectreCreepDamage,
-    computeDispersionPct,
     detectSpectreBranchAndTier,
     findNearestSpectrePortal,
     findSpectreEnemies,
@@ -174,9 +173,7 @@ export class modifier_evo_spectre_dispersion extends BaseModifier {
         if (!parent || parent.IsNull() || !ability || ability.IsNull() || parent.PassivesDisabled()) {
             return 0;
         }
-        const basePct = ability.GetSpecialValueFor("base_pct");
-        const maxPct = ability.GetSpecialValueFor("max_pct");
-        return -computeDispersionPct(parent, basePct, maxPct);
+        return -ability.GetSpecialValueFor("absorb_pct");
     }
     OnTakeDamage(event: ModifierInstanceEvent): void {
         if (!IsServer()) return;
@@ -187,9 +184,7 @@ export class modifier_evo_spectre_dispersion extends BaseModifier {
         if (bit.band(event.damage_flags, DamageFlag.REFLECTION) !== 0) return;
         if (bit.band(event.damage_flags, DamageFlag.HPLOSS) !== 0) return;
 
-        const basePct = ability.GetSpecialValueFor("base_pct");
-        const maxPct = ability.GetSpecialValueFor("max_pct");
-        const pct = computeDispersionPct(parent, basePct, maxPct) / 100;
+        const pct = ability.GetSpecialValueFor("absorb_pct") / 100;
         if (pct <= 0) return;
 
         const raw = event.original_damage > 0 ? event.original_damage : event.damage / Math.max(0.1, 1 - pct);
@@ -262,76 +257,6 @@ export class modifier_evo_spectre_dispersion extends BaseModifier {
                 }
             }
         }
-    }
-}
-
-@registerAbility("evo_spectre_t1_q")
-export class evo_spectre_t1_q extends BaseAbility {
-    private hitSets: Record<number, Set<EntityIndex>> = {};
-
-    OnSpellStart(): void {
-        if (!IsServer()) return;
-        const caster = this.GetCaster();
-        const origin = caster.GetAbsOrigin();
-        let dir = (this.GetCursorPosition() - origin) as Vector;
-        dir.z = 0;
-        if (dir.Length2D() < 1) {
-            dir = caster.GetForwardVector();
-        }
-        dir = dir.Normalized();
-
-        const range = this.GetSpecialValueFor("range");
-        const width = this.GetSpecialValueFor("width");
-        const speed = this.GetSpecialValueFor("speed");
-        const pathDur = this.GetSpecialValueFor("path_duration");
-
-        caster.EmitSound("Hero_Spectre.DaggerCast");
-        caster.AddNewModifier(caster, this, "modifier_evo_spectre_shadow_path", { duration: pathDur });
-
-        const projId = ProjectileManager.CreateLinearProjectile({
-            Ability: this,
-            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
-            vSpawnOrigin: origin,
-            fDistance: range,
-            fStartRadius: width,
-            fEndRadius: width,
-            Source: caster,
-            bHasFrontalCone: false,
-            iUnitTargetTeam: UnitTargetTeam.ENEMY,
-            iUnitTargetFlags: UnitTargetFlags.NONE,
-            iUnitTargetType: (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            vVelocity: (dir * speed) as Vector,
-            bProvidesVision: true,
-            iVisionRadius: 200,
-            iVisionTeamNumber: caster.GetTeamNumber(),
-        });
-        this.hitSets[projId] = new Set<EntityIndex>();
-    }
-
-    OnProjectileHitHandle(
-        target: CDOTA_BaseNPC | undefined,
-        _location: Vector,
-        projectileHandle: ProjectileID
-    ): boolean {
-        if (!IsServer()) return false;
-        if (!target || target.IsNull() || !IsValidEntity(target) || !target.IsAlive()) {
-            delete this.hitSets[projectileHandle];
-            return false;
-        }
-        const set = this.hitSets[projectileHandle];
-        const idx = target.GetEntityIndex();
-        if (set !== undefined && set.has(idx)) return false;
-        if (set !== undefined) set.add(idx);
-
-        const caster = this.GetCaster();
-        const dmg = this.GetSpecialValueFor("damage");
-        const creepMult = this.GetSpecialValueFor("creep_mult");
-        const slowDur = this.GetSpecialValueFor("slow_duration");
-
-        target.EmitSound("Hero_Spectre.DaggerImpact");
-        applySpectreCreepDamage(caster, target, this, dmg, DamageTypes.MAGICAL, creepMult);
-        target.AddNewModifier(caster, this, "modifier_evo_spectre_dagger_slow", { duration: slowDur });
-        return false;
     }
 }
 

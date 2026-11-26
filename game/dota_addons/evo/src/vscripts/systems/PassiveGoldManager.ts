@@ -4,6 +4,7 @@ import { EVO_CONSTANTS } from "../data/game_constants";
 export class PassiveGoldManager {
     private started = false;
     private matchEnded = false;
+    private readonly startingGoldEnsured: Set<PlayerID> = new Set();
 
     constructor(private readonly eventBus: EventBus) {}
 
@@ -13,14 +14,45 @@ export class PassiveGoldManager {
             this.matchEnded = true;
         });
 
-        if (GameRules.State_Get() === GameState.GAME_IN_PROGRESS) {
+        const state = GameRules.State_Get();
+        if (state === GameState.PRE_GAME || state === GameState.GAME_IN_PROGRESS) {
+            this.ensureStartingGold();
+        }
+        if (state === GameState.GAME_IN_PROGRESS) {
             this.startTicker();
         }
     }
 
     private onGameStateChange(): void {
-        if (GameRules.State_Get() === GameState.GAME_IN_PROGRESS) {
+        const state = GameRules.State_Get();
+        if (state === GameState.PRE_GAME || state === GameState.GAME_IN_PROGRESS) {
+            this.ensureStartingGold();
+        }
+        if (state === GameState.GAME_IN_PROGRESS) {
             this.startTicker();
+        }
+    }
+
+    private ensureStartingGold(): void {
+        for (let i = 0; i < DOTA_MAX_TEAM_PLAYERS; i++) {
+            const playerId = i as PlayerID;
+            if (this.startingGoldEnsured.has(playerId)) continue;
+            if (!PlayerResource.IsValidPlayerID(playerId)) continue;
+
+            const team = PlayerResource.GetTeam(playerId);
+            if (team === DotaTeam.NOTEAM || team === DotaTeam.CUSTOM_5 || team === DotaTeam.CUSTOM_8) {
+                continue;
+            }
+
+            this.startingGoldEnsured.add(playerId);
+            if (PlayerResource.GetGold(playerId) === 0) {
+                PlayerResource.ModifyGold(
+                    playerId,
+                    EVO_CONSTANTS.STARTING_GOLD,
+                    true,
+                    ModifyGoldReason.UNSPECIFIED
+                );
+            }
         }
     }
 

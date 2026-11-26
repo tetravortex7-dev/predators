@@ -10,7 +10,7 @@ export const EVO_STARTER_BODIES: readonly BodyDefinition[] = [
         model: "models/heroes/wisp/wisp.vmdl",
         modelScale: 1.0,
         heroClass: "npc_dota_hero_wisp",
-        nextBodyIds: ["evo_body_t1_bristle", "evo_body_t15_morph_mini", "evo_body_t1_nyx", "evo_body_t1_slark", "evo_body_t1_spectre"],
+        nextBodyIds: ["evo_body_t1_bristle", "evo_body_t15_morph_mini", "evo_body_t1_nyx", "evo_body_t1_slark", "evo_body_t1_spectre", "evo_body_t1_venomancer"],
         appearance: {
             scale: 1.0,
             hideBaseWearables: true,
@@ -31,7 +31,7 @@ export const EVO_STARTER_BODIES: readonly BodyDefinition[] = [
         baseAttackDamageMax: 28,
         baseAttackRange: 150,
         baseArmor: 1,
-        innateAbility: "slardar_sprint",
-        signatureAbility: "tidehunter_gush",
+        innateAbility: "evo_wisp_surge",
+        signatureAbility: "evo_wisp_pulse",
     },
 ];

@@ -1,7 +1,9 @@
 local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
+local Set = ____lualib.Set
+local __TS__New = ____lualib.__TS__New
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 2,["7"] = 2,["8"] = 4,["9"] = 4,["10"] = 4,["11"] = 8,["12"] = 8,["13"] = 5,["14"] = 6,["15"] = 8,["16"] = 10,["17"] = 11,["18"] = 11,["19"] = 11,["20"] = 11,["21"] = 11,["22"] = 12,["23"] = 12,["24"] = 12,["25"] = 13,["26"] = 12,["27"] = 12,["28"] = 16,["29"] = 17,["31"] = 10,["32"] = 21,["33"] = 22,["34"] = 23,["36"] = 21,["37"] = 27,["38"] = 28,["41"] = 29,["42"] = 30,["43"] = 30,["44"] = 30,["45"] = 30,["46"] = 30,["47"] = 27,["48"] = 37,["49"] = 38,["50"] = 39,["52"] = 41,["53"] = 42,["56"] = 45,["57"] = 45,["59"] = 46,["60"] = 47,["61"] = 47,["63"] = 48,["64"] = 48,["66"] = 50,["67"] = 51,["68"] = 51,["70"] = 53,["73"] = 45,["76"] = 61,["77"] = 37});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 2,["9"] = 2,["10"] = 4,["11"] = 4,["12"] = 4,["13"] = 9,["14"] = 9,["15"] = 5,["16"] = 6,["17"] = 7,["18"] = 9,["19"] = 11,["20"] = 12,["21"] = 12,["22"] = 12,["23"] = 12,["24"] = 12,["25"] = 13,["26"] = 13,["27"] = 13,["28"] = 14,["29"] = 13,["30"] = 13,["31"] = 17,["32"] = 18,["33"] = 19,["35"] = 21,["36"] = 22,["38"] = 11,["39"] = 26,["40"] = 27,["41"] = 28,["42"] = 29,["44"] = 31,["45"] = 32,["47"] = 26,["48"] = 36,["50"] = 37,["51"] = 37,["53"] = 38,["54"] = 39,["55"] = 39,["57"] = 40,["58"] = 40,["60"] = 42,["61"] = 43,["62"] = 44,["64"] = 47,["65"] = 48,["66"] = 49,["70"] = 37,["73"] = 36,["74"] = 59,["75"] = 60,["78"] = 61,["79"] = 62,["80"] = 62,["81"] = 62,["82"] = 62,["83"] = 62,["84"] = 59,["85"] = 69,["86"] = 70,["87"] = 71,["89"] = 73,["90"] = 74,["93"] = 77,["94"] = 77,["96"] = 78,["97"] = 79,["98"] = 79,["100"] = 80,["101"] = 80,["103"] = 82,["104"] = 83,["105"] = 83,["107"] = 85,["110"] = 77,["113"] = 93,["114"] = 69});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
@@ -12,6 +14,7 @@ function PassiveGoldManager.prototype.____constructor(self, eventBus)
     self.eventBus = eventBus
     self.started = false
     self.matchEnded = false
+    self.startingGoldEnsured = __TS__New(Set)
 end
 function PassiveGoldManager.prototype.init(self)
     ListenToGameEvent(
@@ -25,13 +28,47 @@ function PassiveGoldManager.prototype.init(self)
             self.matchEnded = true
         end
     )
-    if GameRules:State_Get() == 10 then
+    local state = GameRules:State_Get()
+    if state == 8 or state == 10 then
+        self:ensureStartingGold()
+    end
+    if state == 10 then
         self:startTicker()
     end
 end
 function PassiveGoldManager.prototype.onGameStateChange(self)
-    if GameRules:State_Get() == 10 then
+    local state = GameRules:State_Get()
+    if state == 8 or state == 10 then
+        self:ensureStartingGold()
+    end
+    if state == 10 then
         self:startTicker()
+    end
+end
+function PassiveGoldManager.prototype.ensureStartingGold(self)
+    do
+        local i = 0
+        while i < DOTA_MAX_TEAM_PLAYERS do
+            do
+                local playerId = i
+                if self.startingGoldEnsured:has(playerId) then
+                    goto __continue12
+                end
+                if not PlayerResource:IsValidPlayerID(playerId) then
+                    goto __continue12
+                end
+                local team = PlayerResource:GetTeam(playerId)
+                if team == 5 or team == 10 or team == 13 then
+                    goto __continue12
+                end
+                self.startingGoldEnsured:add(playerId)
+                if PlayerResource:GetGold(playerId) == 0 then
+                    PlayerResource:ModifyGold(playerId, EVO_CONSTANTS.STARTING_GOLD, true, 0)
+                end
+            end
+            ::__continue12::
+            i = i + 1
+        end
     end
 end
 function PassiveGoldManager.prototype.startTicker(self)
@@ -58,18 +95,18 @@ function PassiveGoldManager.prototype.onThink(self)
             do
                 local playerId = i
                 if not PlayerResource:IsValidPlayerID(playerId) then
-                    goto __continue15
+                    goto __continue23
                 end
                 if not PlayerResource:HasSelectedHero(playerId) then
-                    goto __continue15
+                    goto __continue23
                 end
                 local team = PlayerResource:GetTeam(playerId)
                 if team == 5 or team == 10 then
-                    goto __continue15
+                    goto __continue23
                 end
                 PlayerResource:ModifyGold(playerId, EVO_CONSTANTS.GOLD_PER_TICK, true, 10)
             end
-            ::__continue15::
+            ::__continue23::
             i = i + 1
         end
     end

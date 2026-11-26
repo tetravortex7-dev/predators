@@ -4,9 +4,8 @@ local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local Set = ____lualib.Set
 local __TS__New = ____lualib.__TS__New
-local __TS__Delete = ____lualib.__TS__Delete
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["11"] = 1,["12"] = 2,["13"] = 3,["14"] = 4,["15"] = 5,["16"] = 6,["17"] = 7,["18"] = 9,["19"] = 10,["20"] = 11,["21"] = 12,["22"] = 13,["23"] = 14,["24"] = 15,["25"] = 16,["26"] = 17,["27"] = 19,["28"] = 21,["29"] = 23,["30"] = 24,["31"] = 25,["32"] = 27,["33"] = 28,["34"] = 27,["35"] = 28,["36"] = 29,["37"] = 30,["38"] = 29,["39"] = 28,["40"] = 27,["41"] = 28,["43"] = 28,["44"] = 34,["45"] = 35,["46"] = 34,["47"] = 35,["48"] = 35,["49"] = 34,["50"] = 35,["52"] = 35,["53"] = 37,["54"] = 38,["55"] = 37,["56"] = 38,["58"] = 38,["59"] = 39,["60"] = 37,["61"] = 40,["62"] = 41,["63"] = 40,["64"] = 43,["65"] = 44,["66"] = 43,["67"] = 46,["68"] = 47,["69"] = 46,["70"] = 49,["71"] = 50,["72"] = 49,["73"] = 52,["74"] = 53,["75"] = 54,["76"] = 55,["77"] = 56,["78"] = 57,["79"] = 57,["82"] = 52,["83"] = 60,["84"] = 61,["85"] = 60,["86"] = 65,["87"] = 66,["88"] = 65,["89"] = 68,["90"] = 69,["91"] = 68,["92"] = 38,["93"] = 37,["94"] = 38,["96"] = 38,["97"] = 73,["98"] = 74,["99"] = 73,["100"] = 74,["101"] = 75,["102"] = 76,["103"] = 75,["104"] = 78,["105"] = 79,["106"] = 78,["107"] = 81,["108"] = 82,["109"] = 81,["110"] = 84,["111"] = 85,["112"] = 84,["113"] = 87,["114"] = 88,["115"] = 87,["116"] = 90,["117"] = 91,["118"] = 92,["120"] = 90,["121"] = 95,["122"] = 96,["123"] = 95,["124"] = 98,["125"] = 99,["128"] = 100,["129"] = 101,["130"] = 102,["133"] = 103,["136"] = 104,["139"] = 105,["142"] = 107,["143"] = 108,["146"] = 109,["147"] = 110,["148"] = 111,["149"] = 112,["150"] = 114,["151"] = 115,["152"] = 115,["153"] = 115,["154"] = 115,["155"] = 115,["156"] = 115,["157"] = 115,["159"] = 123,["160"] = 124,["161"] = 125,["162"] = 126,["163"] = 127,["164"] = 128,["165"] = 129,["166"] = 130,["170"] = 134,["171"] = 135,["172"] = 136,["174"] = 98,["175"] = 74,["176"] = 73,["177"] = 74,["179"] = 74,["180"] = 141,["181"] = 142,["182"] = 141,["183"] = 142,["185"] = 142,["186"] = 143,["187"] = 144,["188"] = 141,["189"] = 146,["190"] = 147,["191"] = 146,["192"] = 149,["193"] = 150,["194"] = 149,["195"] = 152,["196"] = 153,["197"] = 152,["198"] = 155,["199"] = 156,["200"] = 155,["201"] = 158,["202"] = 159,["203"] = 158,["204"] = 161,["205"] = 162,["206"] = 163,["207"] = 161,["208"] = 165,["209"] = 166,["210"] = 166,["211"] = 166,["212"] = 166,["213"] = 165,["214"] = 171,["215"] = 172,["216"] = 173,["217"] = 174,["218"] = 175,["220"] = 177,["221"] = 178,["222"] = 179,["223"] = 171,["224"] = 181,["225"] = 182,["228"] = 183,["229"] = 184,["230"] = 185,["233"] = 186,["236"] = 187,["239"] = 188,["242"] = 190,["243"] = 191,["244"] = 192,["245"] = 193,["248"] = 195,["249"] = 196,["250"] = 197,["253"] = 199,["254"] = 200,["255"] = 201,["256"] = 202,["257"] = 204,["258"] = 205,["260"] = 208,["261"] = 208,["262"] = 208,["263"] = 208,["264"] = 208,["265"] = 208,["266"] = 208,["267"] = 208,["268"] = 208,["269"] = 208,["270"] = 208,["271"] = 219,["272"] = 220,["275"] = 222,["276"] = 223,["277"] = 224,["279"] = 227,["280"] = 227,["281"] = 227,["282"] = 227,["283"] = 227,["284"] = 228,["285"] = 229,["286"] = 230,["287"] = 230,["288"] = 230,["289"] = 230,["290"] = 230,["291"] = 230,["292"] = 230,["293"] = 230,["294"] = 230,["295"] = 230,["296"] = 230,["298"] = 242,["299"] = 243,["300"] = 244,["301"] = 245,["302"] = 246,["303"] = 247,["304"] = 248,["305"] = 249,["306"] = 255,["307"] = 256,["308"] = 257,["310"] = 259,["316"] = 181,["317"] = 142,["318"] = 141,["319"] = 142,["321"] = 142,["322"] = 268,["323"] = 269,["324"] = 268,["325"] = 269,["327"] = 269,["328"] = 270,["329"] = 268,["330"] = 272,["331"] = 273,["334"] = 274,["335"] = 275,["336"] = 276,["337"] = 277,["338"] = 278,["339"] = 279,["341"] = 281,["342"] = 283,["343"] = 284,["344"] = 285,["345"] = 286,["346"] = 288,["347"] = 289,["348"] = 291,["349"] = 291,["350"] = 291,["351"] = 291,["352"] = 291,["353"] = 291,["354"] = 291,["355"] = 291,["356"] = 291,["357"] = 291,["358"] = 291,["359"] = 291,["360"] = 291,["361"] = 291,["362"] = 291,["363"] = 291,["364"] = 291,["365"] = 308,["366"] = 272,["367"] = 311,["368"] = 316,["369"] = 316,["371"] = 317,["372"] = 318,["373"] = 319,["375"] = 321,["376"] = 322,["377"] = 323,["378"] = 323,["380"] = 324,["381"] = 324,["383"] = 326,["384"] = 327,["385"] = 328,["386"] = 329,["387"] = 331,["388"] = 332,["389"] = 332,["390"] = 332,["391"] = 332,["392"] = 332,["393"] = 332,["394"] = 332,["395"] = 332,["396"] = 332,["397"] = 333,["398"] = 334,["399"] = 311,["400"] = 269,["401"] = 268,["402"] = 269,["404"] = 269,["405"] = 338,["406"] = 339,["407"] = 338,["408"] = 339,["409"] = 340,["410"] = 341,["411"] = 340,["412"] = 343,["413"] = 344,["416"] = 345,["417"] = 346,["418"] = 347,["421"] = 348,["424"] = 350,["425"] = 351,["426"] = 352,["427"] = 354,["428"] = 355,["429"] = 360,["430"] = 362,["431"] = 362,["432"] = 362,["433"] = 362,["434"] = 362,["435"] = 362,["436"] = 362,["437"] = 370,["438"] = 371,["439"] = 374,["440"] = 375,["441"] = 376,["443"] = 379,["444"] = 380,["445"] = 381,["446"] = 381,["447"] = 381,["448"] = 381,["449"] = 381,["450"] = 381,["452"] = 382,["453"] = 382,["455"] = 383,["456"] = 383,["457"] = 383,["458"] = 383,["459"] = 383,["460"] = 383,["461"] = 383,["462"] = 383,["463"] = 383,["467"] = 343,["468"] = 339,["469"] = 338,["470"] = 339,["472"] = 339});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 1,["11"] = 2,["12"] = 3,["13"] = 4,["14"] = 5,["15"] = 6,["16"] = 7,["17"] = 9,["18"] = 10,["19"] = 11,["20"] = 12,["21"] = 13,["22"] = 14,["23"] = 15,["24"] = 16,["25"] = 18,["26"] = 20,["27"] = 22,["28"] = 23,["29"] = 24,["30"] = 26,["31"] = 27,["32"] = 26,["33"] = 27,["34"] = 28,["35"] = 29,["36"] = 28,["37"] = 27,["38"] = 26,["39"] = 27,["41"] = 27,["42"] = 33,["43"] = 34,["44"] = 33,["45"] = 34,["46"] = 34,["47"] = 33,["48"] = 34,["50"] = 34,["51"] = 36,["52"] = 37,["53"] = 36,["54"] = 37,["56"] = 37,["57"] = 38,["58"] = 36,["59"] = 39,["60"] = 40,["61"] = 39,["62"] = 42,["63"] = 43,["64"] = 42,["65"] = 45,["66"] = 46,["67"] = 45,["68"] = 48,["69"] = 49,["70"] = 48,["71"] = 51,["72"] = 52,["73"] = 53,["74"] = 54,["75"] = 55,["76"] = 56,["77"] = 56,["80"] = 51,["81"] = 59,["82"] = 60,["83"] = 59,["84"] = 64,["85"] = 65,["86"] = 64,["87"] = 67,["88"] = 68,["89"] = 67,["90"] = 37,["91"] = 36,["92"] = 37,["94"] = 37,["95"] = 72,["96"] = 73,["97"] = 72,["98"] = 73,["99"] = 74,["100"] = 75,["101"] = 74,["102"] = 77,["103"] = 78,["104"] = 77,["105"] = 80,["106"] = 81,["107"] = 80,["108"] = 83,["109"] = 84,["110"] = 83,["111"] = 86,["112"] = 87,["113"] = 86,["114"] = 89,["115"] = 90,["116"] = 91,["118"] = 89,["119"] = 94,["120"] = 95,["121"] = 94,["122"] = 97,["123"] = 98,["126"] = 99,["127"] = 100,["128"] = 101,["131"] = 102,["134"] = 103,["137"] = 104,["140"] = 106,["141"] = 107,["144"] = 108,["145"] = 109,["146"] = 110,["147"] = 111,["148"] = 113,["149"] = 114,["150"] = 114,["151"] = 114,["152"] = 114,["153"] = 114,["154"] = 114,["155"] = 114,["157"] = 122,["158"] = 123,["159"] = 124,["160"] = 125,["161"] = 126,["162"] = 127,["163"] = 128,["164"] = 129,["168"] = 133,["169"] = 134,["170"] = 135,["172"] = 97,["173"] = 73,["174"] = 72,["175"] = 73,["177"] = 73,["178"] = 140,["179"] = 141,["180"] = 140,["181"] = 141,["183"] = 141,["184"] = 142,["185"] = 143,["186"] = 140,["187"] = 145,["188"] = 146,["189"] = 145,["190"] = 148,["191"] = 149,["192"] = 148,["193"] = 151,["194"] = 152,["195"] = 151,["196"] = 154,["197"] = 155,["198"] = 154,["199"] = 157,["200"] = 158,["201"] = 157,["202"] = 160,["203"] = 161,["204"] = 162,["205"] = 160,["206"] = 164,["207"] = 165,["208"] = 165,["209"] = 165,["210"] = 165,["211"] = 164,["212"] = 170,["213"] = 171,["214"] = 172,["215"] = 173,["216"] = 174,["218"] = 176,["219"] = 170,["220"] = 178,["221"] = 179,["224"] = 180,["225"] = 181,["226"] = 182,["229"] = 183,["232"] = 184,["235"] = 185,["238"] = 187,["239"] = 188,["242"] = 190,["243"] = 191,["244"] = 192,["247"] = 194,["248"] = 195,["249"] = 196,["250"] = 197,["251"] = 199,["252"] = 200,["254"] = 203,["255"] = 203,["256"] = 203,["257"] = 203,["258"] = 203,["259"] = 203,["260"] = 203,["261"] = 203,["262"] = 203,["263"] = 203,["264"] = 203,["265"] = 214,["266"] = 215,["269"] = 217,["270"] = 218,["271"] = 219,["273"] = 222,["274"] = 222,["275"] = 222,["276"] = 222,["277"] = 222,["278"] = 223,["279"] = 224,["280"] = 225,["281"] = 225,["282"] = 225,["283"] = 225,["284"] = 225,["285"] = 225,["286"] = 225,["287"] = 225,["288"] = 225,["289"] = 225,["290"] = 225,["292"] = 237,["293"] = 238,["294"] = 239,["295"] = 240,["296"] = 241,["297"] = 242,["298"] = 243,["299"] = 244,["300"] = 250,["301"] = 251,["302"] = 252,["304"] = 254,["310"] = 178,["311"] = 141,["312"] = 140,["313"] = 141,["315"] = 141,["316"] = 263,["317"] = 264,["318"] = 263,["319"] = 264,["320"] = 265,["321"] = 266,["322"] = 265,["323"] = 268,["324"] = 269,["327"] = 270,["328"] = 271,["329"] = 272,["332"] = 273,["335"] = 275,["336"] = 276,["337"] = 277,["338"] = 279,["339"] = 280,["340"] = 285,["341"] = 287,["342"] = 287,["343"] = 287,["344"] = 287,["345"] = 287,["346"] = 287,["347"] = 287,["348"] = 295,["349"] = 296,["350"] = 299,["351"] = 300,["352"] = 301,["354"] = 304,["355"] = 305,["356"] = 306,["357"] = 306,["358"] = 306,["359"] = 306,["360"] = 306,["361"] = 306,["363"] = 307,["364"] = 307,["366"] = 308,["367"] = 308,["368"] = 308,["369"] = 308,["370"] = 308,["371"] = 308,["372"] = 308,["373"] = 308,["374"] = 308,["378"] = 268,["379"] = 264,["380"] = 263,["381"] = 264,["383"] = 264});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -18,7 +17,6 @@ local registerModifier = ____dota_ts_adapter.registerModifier
 local ____evo_spectre_shared = require("abilities.spectre.evo_spectre_shared")
 local applyDispersionAroundOrigin = ____evo_spectre_shared.applyDispersionAroundOrigin
 local applySpectreCreepDamage = ____evo_spectre_shared.applySpectreCreepDamage
-local computeDispersionPct = ____evo_spectre_shared.computeDispersionPct
 local detectSpectreBranchAndTier = ____evo_spectre_shared.detectSpectreBranchAndTier
 local findNearestSpectrePortal = ____evo_spectre_shared.findNearestSpectrePortal
 local findSpectreEnemies = ____evo_spectre_shared.findSpectreEnemies
@@ -217,9 +215,7 @@ function modifier_evo_spectre_dispersion.prototype.GetModifierIncomingDamage_Per
     if not parent or parent:IsNull() or not ability or ability:IsNull() or parent:PassivesDisabled() then
         return 0
     end
-    local basePct = ability:GetSpecialValueFor("base_pct")
-    local maxPct = ability:GetSpecialValueFor("max_pct")
-    return -computeDispersionPct(nil, parent, basePct, maxPct)
+    return -ability:GetSpecialValueFor("absorb_pct")
 end
 function modifier_evo_spectre_dispersion.prototype.OnTakeDamage(self, event)
     if not IsServer() then
@@ -239,9 +235,7 @@ function modifier_evo_spectre_dispersion.prototype.OnTakeDamage(self, event)
     if bit.band(event.damage_flags, 32) ~= 0 then
         return
     end
-    local basePct = ability:GetSpecialValueFor("base_pct")
-    local maxPct = ability:GetSpecialValueFor("max_pct")
-    local pct = computeDispersionPct(nil, parent, basePct, maxPct) / 100
+    local pct = ability:GetSpecialValueFor("absorb_pct") / 100
     if pct <= 0 then
         return
     end
@@ -319,89 +313,6 @@ modifier_evo_spectre_dispersion = __TS__DecorateLegacy(
     modifier_evo_spectre_dispersion
 )
 ____exports.modifier_evo_spectre_dispersion = modifier_evo_spectre_dispersion
-____exports.evo_spectre_t1_q = __TS__Class()
-local evo_spectre_t1_q = ____exports.evo_spectre_t1_q
-evo_spectre_t1_q.name = "evo_spectre_t1_q"
-__TS__ClassExtends(evo_spectre_t1_q, BaseAbility)
-function evo_spectre_t1_q.prototype.____constructor(self, ...)
-    BaseAbility.prototype.____constructor(self, ...)
-    self.hitSets = {}
-end
-function evo_spectre_t1_q.prototype.OnSpellStart(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    local origin = caster:GetAbsOrigin()
-    local dir = self:GetCursorPosition() - origin
-    dir.z = 0
-    if dir:Length2D() < 1 then
-        dir = caster:GetForwardVector()
-    end
-    dir = dir:Normalized()
-    local range = self:GetSpecialValueFor("range")
-    local width = self:GetSpecialValueFor("width")
-    local speed = self:GetSpecialValueFor("speed")
-    local pathDur = self:GetSpecialValueFor("path_duration")
-    caster:EmitSound("Hero_Spectre.DaggerCast")
-    caster:AddNewModifier(caster, self, "modifier_evo_spectre_shadow_path", {duration = pathDur})
-    local projId = ProjectileManager:CreateLinearProjectile({
-        Ability = self,
-        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
-        vSpawnOrigin = origin,
-        fDistance = range,
-        fStartRadius = width,
-        fEndRadius = width,
-        Source = caster,
-        bHasFrontalCone = false,
-        iUnitTargetTeam = 2,
-        iUnitTargetFlags = 0,
-        iUnitTargetType = 1 + 18,
-        vVelocity = dir * speed,
-        bProvidesVision = true,
-        iVisionRadius = 200,
-        iVisionTeamNumber = caster:GetTeamNumber()
-    })
-    self.hitSets[projId] = __TS__New(Set)
-end
-function evo_spectre_t1_q.prototype.OnProjectileHitHandle(self, target, _location, projectileHandle)
-    if not IsServer() then
-        return false
-    end
-    if not target or target:IsNull() or not IsValidEntity(target) or not target:IsAlive() then
-        __TS__Delete(self.hitSets, projectileHandle)
-        return false
-    end
-    local set = self.hitSets[projectileHandle]
-    local idx = target:GetEntityIndex()
-    if set ~= nil and set:has(idx) then
-        return false
-    end
-    if set ~= nil then
-        set:add(idx)
-    end
-    local caster = self:GetCaster()
-    local dmg = self:GetSpecialValueFor("damage")
-    local creepMult = self:GetSpecialValueFor("creep_mult")
-    local slowDur = self:GetSpecialValueFor("slow_duration")
-    target:EmitSound("Hero_Spectre.DaggerImpact")
-    applySpectreCreepDamage(
-        nil,
-        caster,
-        target,
-        self,
-        dmg,
-        2,
-        creepMult
-    )
-    target:AddNewModifier(caster, self, "modifier_evo_spectre_dagger_slow", {duration = slowDur})
-    return false
-end
-evo_spectre_t1_q = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_spectre_t1_q")},
-    evo_spectre_t1_q
-)
-____exports.evo_spectre_t1_q = evo_spectre_t1_q
 ____exports.evo_spectre_t1_w = __TS__Class()
 local evo_spectre_t1_w = ____exports.evo_spectre_t1_w
 evo_spectre_t1_w.name = "evo_spectre_t1_w"
@@ -450,7 +361,7 @@ function evo_spectre_t1_w.prototype.OnSpellStart(self)
     )) do
         do
             if not enemy or enemy:IsNull() or not enemy:IsAlive() then
-                goto __continue74
+                goto __continue66
             end
             applySpectreCreepDamage(
                 nil,
@@ -462,7 +373,7 @@ function evo_spectre_t1_w.prototype.OnSpellStart(self)
                 creepMult
             )
         end
-        ::__continue74::
+        ::__continue66::
     end
 end
 evo_spectre_t1_w = __TS__DecorateLegacy(

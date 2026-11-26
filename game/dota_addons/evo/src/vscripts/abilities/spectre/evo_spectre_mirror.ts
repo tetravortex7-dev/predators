@@ -85,7 +85,7 @@ export class evo_spectre_mirror_q extends BaseAbility {
         caster.EmitSound("Hero_VoidSpirit.AetherRemnant.Cast");
         const projId = ProjectileManager.CreateLinearProjectile({
             Ability: this,
-            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
+            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
             vSpawnOrigin: origin,
             fDistance: range,
             fStartRadius: width,

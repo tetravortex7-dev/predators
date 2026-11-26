@@ -6,5 +6,7 @@
     <scripts>
         <include src="file://{resources}/scripts/custom_game/evo_boss_killfeed.js" />
     </scripts>
-    <Panel id="EvoBossKillFeed" class="EvoBossKillFeed" hittest="false" />
+    <Panel class="EvoBossKillFeedRoot" hittest="false">
+        <Panel id="EvoBossKillFeed" class="EvoBossKillFeed" hittest="false" />
+    </Panel>
 </root>

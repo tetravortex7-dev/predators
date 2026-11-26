@@ -36,8 +36,8 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 2,
         innateAbility = "evo_spectre_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
-        kitAbilities = {"evo_spectre_t1_q", "evo_spectre_t1_w", "evo_spectre_dispersion"},
+        signatureAbility = "spectre_spectral_dagger",
+        kitAbilities = {"spectre_spectral_dagger", "evo_spectre_t1_w", "evo_spectre_dispersion"},
         kitAbilityLevel = 1
     },
     {
@@ -72,7 +72,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_spectre_phantom_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_phantom_q",
             "evo_spectre_phantom_w",
@@ -114,7 +114,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_phantom_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_phantom_q",
             "evo_spectre_phantom_w",
@@ -161,7 +161,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_phantom_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_phantom_q",
             "evo_spectre_phantom_w",
@@ -204,7 +204,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_spectre_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {"evo_spectre_bastion_q", "evo_spectre_bastion_w", "evo_spectre_bastion_e", "evo_spectre_dispersion"},
         kitAbilityLevel = 1
     },
@@ -240,7 +240,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {"evo_spectre_bastion_q", "evo_spectre_bastion_w", "evo_spectre_bastion_e", "evo_spectre_dispersion"},
         kitAbilityLevel = 1
     },
@@ -281,7 +281,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_dispersion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_bastion_q",
             "evo_spectre_bastion_w",
@@ -323,7 +323,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_spectre_mirror_inversion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {"evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_inversion"},
         kitAbilityLevel = 1
     },
@@ -359,7 +359,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_mirror_inversion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {"evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_inversion"},
         kitAbilityLevel = 1
     },
@@ -400,7 +400,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackRange = 150,
         baseArmor = 5,
         innateAbility = "evo_spectre_mirror_inversion",
-        signatureAbility = "evo_spectre_t1_q",
+        signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_mirror_q",
             "evo_spectre_mirror_w",

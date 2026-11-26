@@ -6,42 +6,96 @@
 
 .EvoFountainTeleportBtn
 {
-    visibility: collapse;
-    horizontal-align: left;
-    vertical-align: bottom;
-    margin-left: 12px;
-    margin-bottom: 266px;
-    min-width: 108px;
-    padding: 6px 14px;
-    background-image: url("s2r://panorama/images/hud/reborn/bg_scoreboard_psd.vtex");
-    background-size: cover;
-    background-color: #10171ef2;
-    border: 1px solid #3c4856cc;
-    border-top: 1px solid #8a7246aa;
-    box-shadow: #000000cc 0px 2px 8px 0px;
-    transition-property: brightness, border-color;
-    transition-duration: 0.12s;
-}
-
-.EvoFountainTeleportBtn.Visible
-{
     visibility: visible;
+    horizontal-align: left;
+    vertical-align: top;
+    width: 42px;
+    height: 42px;
+    margin-left: 250px;
+    margin-top: 949px;
+    border-radius: 50%;
+    overflow: clip;
+    background-color: #00000000;
+    border: 1px solid #00000000;
+    transition-property: brightness, saturation, border-color, box-shadow, pre-transform-scale2d, opacity;
+    transition-duration: 0.2s;
+    saturation: 0.25;
+    brightness: 0.65;
+    opacity: 0.92;
 }
 
 .EvoFountainTeleportBtn:hover
 {
-    brightness: 1.24;
-    border: 1px solid #8a7246dd;
+    brightness: 0.85;
 }
 
-.EvoFountainTeleportLabel
+.EvoFountainTeleportBtn.Active
 {
+    saturation: 1.0;
+    brightness: 1.12;
+    opacity: 1.0;
+    border: 1.5px solid #ffd266cc;
+    box-shadow: inset #ffd86655 0px 0px 8px 1px;
+    animation-name: EvoTeleportGoldPulse;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.EvoFountainTeleportBtn.Active:hover
+{
+    brightness: 1.28;
+    border-color: #ffe699ff;
+}
+
+.EvoFountainTeleportBtn.Active:active
+{
+    pre-transform-scale2d: 0.94;
+}
+
+@keyframes 'EvoTeleportGoldPulse'
+{
+    0%
+    {
+        brightness: 1.04;
+        border-color: #e6a63299;
+    }
+    50%
+    {
+        brightness: 1.24;
+        border-color: #ffd866ee;
+    }
+    100%
+    {
+        brightness: 1.04;
+        border-color: #e6a63299;
+    }
+}
+
+.EvoFountainTeleportGlow
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.0;
+    background-color: gradient( radial, 50% 50%, 0% 0%, 55% 55%, from( #ffd86677 ), color-stop( 0.65, #f5b94233 ), to( #00000000 ) );
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.EvoFountainTeleportBtn.Active .EvoFountainTeleportGlow
+{
+    opacity: 1.0;
+}
+
+.EvoFountainTeleportIcon
+{
+    width: 40px;
+    height: 40px;
     horizontal-align: center;
-    font-family: titleFont;
-    font-size: 12px;
-    font-weight: semi-bold;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: #d4b876;
-    text-shadow: 0px 1px 2px #000000dd;
+    vertical-align: center;
+    background-image: url("file://{images}/custom_game/evo_fountain_teleport_icon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

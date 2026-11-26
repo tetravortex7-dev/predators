@@ -1,6 +1,13 @@
 import { EVO_CONSTANTS } from "../../data/game_constants";
 import { focusPlayerCamera } from "../../lib/unit_helpers";
-import { ActiveBossDuel, DuelPair, PreDuelSnapshot } from "./duel_types";
+import {
+    ActiveBossDuel,
+    DuelBet,
+    DuelPair,
+    PreDuelSnapshot,
+    debugDuelChat,
+    settleBets,
+} from "./duel_types";
 
 export function prepareDuelistSnapshot(
     playerId: PlayerID,
@@ -296,4 +303,49 @@ export function resolveAndRecordPvpOutcome(params: {
     }
 
     return { validWinner, validLoser };
+}
+
+export function finalizePvpDuelOutcome(params: {
+    winnerId: PlayerID | undefined;
+    loserId: PlayerID | undefined;
+    pair?: DuelPair;
+    sparringDummy?: CDOTA_BaseNPC;
+    activeBets: Map<PlayerID, DuelBet>;
+    snapshots: Map<PlayerID, PreDuelSnapshot>;
+    isTiebreaker: boolean;
+    roundIndex: number;
+    reason: "kill" | "hp" | "draw";
+    duelWins: Map<PlayerID, number>;
+    duelLosses: Map<PlayerID, number>;
+}): { validWinner: PlayerID | undefined; validLoser: PlayerID | undefined } {
+    if (params.sparringDummy && !params.sparringDummy.IsNull() && IsValidEntity(params.sparringDummy)) {
+        UTIL_Remove(params.sparringDummy);
+    }
+    const totalBetPayout = settleBets(params.activeBets, params.winnerId);
+    if (params.pair) {
+        restoreDuelistAfterDuel(params.pair.playerA, params.winnerId === params.pair.playerA, params.snapshots);
+        restoreDuelistAfterDuel(params.pair.playerB, params.winnerId === params.pair.playerB, params.snapshots);
+    }
+    params.snapshots.clear();
+
+    const outcome = resolveAndRecordPvpOutcome({
+        winnerId: params.winnerId,
+        loserId: params.loserId,
+        pair: params.pair,
+        isTiebreaker: params.isTiebreaker,
+        roundIndex: params.roundIndex,
+        reason: params.reason,
+        totalBetPayout,
+        duelWins: params.duelWins,
+        duelLosses: params.duelLosses,
+    });
+    broadcastDuelEvent("finished", outcome.validWinner);
+
+    if (outcome.validWinner !== undefined) {
+        const winnerName = PlayerResource.GetPlayerName(outcome.validWinner);
+        debugDuelChat(`[Evo] Duel winner: ${winnerName || `Player ${outcome.validWinner + 1}`}!`);
+    } else {
+        debugDuelChat("[Evo] Duel ended in a draw!");
+    }
+    return outcome;
 }

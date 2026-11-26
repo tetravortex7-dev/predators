@@ -168,12 +168,20 @@
     "en": "Teleport"
   },
   "evo_fountain_teleport_tooltip_title": {
-    "ru": "Телепорт с базы",
+    "ru": "Телепорт с фонтана",
     "en": "Fountain Teleport"
   },
   "evo_fountain_teleport_tooltip_body": {
     "ru": "Переносит героя с фонтана в случайную безопасную точку карты, чтобы избежать преследования с базы.",
     "en": "Teleports your hero from the fountain to a random safe location on the map to avoid base camping."
+  },
+  "evo_fountain_teleport_tooltip_body_active": {
+    "ru": "Нажмите, чтобы телепортироваться с фонтана в случайную безопасную точку карты и выйти из-под засады.\n\nСтатус: Доступно (вы на фонтане).",
+    "en": "Click to teleport from the fountain to a random safe location on the map and escape base camping.\n\nStatus: Ready (on fountain)."
+  },
+  "evo_fountain_teleport_tooltip_body_inactive": {
+    "ru": "Особая способность базы: переносит героя с фонтана в случайную безопасную точку карты.\n\nСтатус: Неактивно — вернитесь на фонтан (иконка засветится золотым).",
+    "en": "Base ability: teleports your hero from the fountain to a random safe map location.\n\nStatus: Inactive — return to the fountain (icon glows gold when ready)."
   },
   "evo_draft_body_title": {
     "ru": "Выбор эволюции",
@@ -262,6 +270,10 @@
   "evo_duel_result_reward_draw": {
     "ru": "Награда: 0 очк. (ставки возвращены)",
     "en": "Reward: 0 pts (bets refunded)"
+  },
+  "evo_duel_skipped_rest": {
+    "ru": "Дуэль пропущена: бойцам дано время на восстановление, никто не вызывается дважды подряд.",
+    "en": "Duel skipped: recent fighters are resting so no one is pulled twice in a row."
   },
   "evo_talent_tree_title": {
     "ru": "ДЕРЕВО ТАЛАНТОВ",

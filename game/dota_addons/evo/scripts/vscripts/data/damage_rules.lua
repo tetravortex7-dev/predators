@@ -1,11 +1,13 @@
 local ____lualib = require("lualib_bundle")
 local __TS__ObjectEntries = ____lualib.__TS__ObjectEntries
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 6,["7"] = 6,["8"] = 18,["9"] = 22,["10"] = 23,["11"] = 24,["12"] = 25,["13"] = 25,["14"] = 25,["15"] = 26,["18"] = 29,["19"] = 22,["20"] = 32,["21"] = 33,["22"] = 34,["24"] = 35,["25"] = 35,["27"] = 36,["28"] = 37,["33"] = 40,["34"] = 32,["35"] = 43,["36"] = 44,["37"] = 46,["38"] = 47,["39"] = 46,["40"] = 50,["41"] = 51,["42"] = 50});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 6,["7"] = 6,["8"] = 7,["9"] = 7,["10"] = 19,["11"] = 24,["12"] = 25,["13"] = 26,["14"] = 27,["15"] = 27,["16"] = 27,["17"] = 28,["20"] = 31,["21"] = 24,["22"] = 34,["23"] = 35,["24"] = 36,["26"] = 37,["27"] = 37,["29"] = 38,["30"] = 39,["35"] = 42,["36"] = 34,["37"] = 45,["38"] = 46,["39"] = 48,["40"] = 49,["41"] = 48,["42"] = 52,["43"] = 53,["44"] = 52});
 local ____exports = {}
 local ____dmgFilterNyx = require("data.damage.dmgFilterNyx")
 local DMG_FILTER_NYX = ____dmgFilterNyx.DMG_FILTER_NYX
-local HERO_DAMAGE_MODULES = {DMG_FILTER_NYX}
+local ____dmgFilterSpectre = require("data.damage.dmgFilterSpectre")
+local DMG_FILTER_SPECTRE = ____dmgFilterSpectre.DMG_FILTER_SPECTRE
+local HERO_DAMAGE_MODULES = {DMG_FILTER_NYX, DMG_FILTER_SPECTRE}
 local function collectDamageRules(self)
     local merged = {}
     for ____, mod in ipairs(HERO_DAMAGE_MODULES) do

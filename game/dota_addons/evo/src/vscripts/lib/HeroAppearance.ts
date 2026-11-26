@@ -1,3 +1,8 @@
+import {
+    captureHeroTransferState,
+    restoreHeroTransferState,
+} from "./hero_state_transfer";
+
 export type RgbColor = readonly [number, number, number];
 
 export interface WearableSpec {
@@ -273,17 +278,7 @@ export class HeroAppearance {
             return oldHero;
         }
 
-        const savedPos = oldHero.GetAbsOrigin();
-        const savedForward = oldHero.GetForwardVector();
         const resetHeroLevel = options.resetHeroLevel === true;
-        const savedLevel = resetHeroLevel ? 1 : oldHero.GetLevel();
-        const savedXp = resetHeroLevel ? 0 : oldHero.GetCurrentXP();
-        const savedGold = PlayerResource.GetGold(playerId);
-        const savedHpPct = resetHeroLevel ? 1.0 : Math.max(0.05, oldHero.GetHealthPercent() / 100);
-        const savedMpPct = resetHeroLevel ? 1.0 : Math.max(0, oldHero.GetManaPercent() / 100);
-
-        const peaceMod = oldHero.FindModifierByName("modifier_evo_peace_time");
-        const savedPeaceRemaining = peaceMod ? Math.max(0, peaceMod.GetRemainingTime()) : 0;
 
         const savedAbilities: SavedAbilityState[] = [];
         if (options.preserveAbilities) {
@@ -298,20 +293,20 @@ export class HeroAppearance {
             }
         }
 
+        const transferSnapshot = captureHeroTransferState(playerId, oldHero, resetHeroLevel);
+
         this.clearCustomWearables(oldHero);
         this.stateByHero.delete(oldHero.entindex());
 
-        const newHero = PlayerResource.ReplaceHeroWith(playerId, newHeroClass, savedGold, savedXp);
+        PlayerResource.ReplaceHeroWithNoTransfer(
+            playerId,
+            newHeroClass,
+            transferSnapshot.totalGold,
+            transferSnapshot.xp
+        );
+        const newHero = PlayerResource.GetSelectedHeroEntity(playerId);
         if (!newHero || newHero.IsNull() || !IsValidEntity(newHero)) {
             return undefined;
-        }
-
-        for (let slot = 0; slot <= 16; slot++) {
-            const item = oldHero.GetItemInSlot(slot);
-            if (item && !item.IsNull() && IsValidEntity(item)) {
-                oldHero.TakeItem(item);
-                newHero.AddItem(item);
-            }
         }
 
         if (oldHero !== newHero && !oldHero.IsNull() && IsValidEntity(oldHero)) {
@@ -330,7 +325,7 @@ export class HeroAppearance {
         if (resetHeroLevel) {
             newHero.SetAbilityPoints(1);
         } else {
-            while (newHero.GetLevel() < savedLevel) {
+            while (newHero.GetLevel() < transferSnapshot.level) {
                 newHero.HeroLevelUp(false);
             }
         }
@@ -363,16 +358,7 @@ export class HeroAppearance {
             }
         }
 
-        FindClearSpaceForUnit(newHero, savedPos, true);
-        newHero.SetForwardVector(savedForward);
-        newHero.SetHealth(Math.max(1, Math.floor(newHero.GetMaxHealth() * savedHpPct)));
-        newHero.SetMana(Math.floor(newHero.GetMaxMana() * savedMpPct));
-
-        if (savedPeaceRemaining > 0) {
-            newHero.AddNewModifier(newHero, undefined, "modifier_evo_peace_time", {
-                duration: savedPeaceRemaining,
-            });
-        }
+        restoreHeroTransferState(playerId, newHero, transferSnapshot);
 
         if (options.appearance) {
             this.applyPreset(newHero, options.appearance);

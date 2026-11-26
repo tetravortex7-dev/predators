@@ -117,7 +117,7 @@ function evo_spectre_mirror_q.prototype.OnSpellStart(self)
     caster:EmitSound("Hero_VoidSpirit.AetherRemnant.Cast")
     local projId = ProjectileManager:CreateLinearProjectile({
         Ability = self,
-        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
+        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
         vSpawnOrigin = origin,
         fDistance = range,
         fStartRadius = width,

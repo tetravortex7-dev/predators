@@ -48,7 +48,7 @@ function evo_spectre_phantom_q.prototype.launchCrescent(self, origin, dir, isRet
     local speed = self:GetSpecialValueFor("speed")
     local projId = ProjectileManager:CreateLinearProjectile({
         Ability = self,
-        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
+        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
         vSpawnOrigin = origin,
         fDistance = range,
         fStartRadius = width,

@@ -4,18 +4,21 @@ local Set = ____lualib.Set
 local __TS__ArraySome = ____lualib.__TS__ArraySome
 local __TS__ArrayFind = ____lualib.__TS__ArrayFind
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 2,["13"] = 2,["14"] = 3,["15"] = 5,["16"] = 6,["17"] = 11,["18"] = 12,["19"] = 15,["20"] = 22,["22"] = 23,["23"] = 23,["24"] = 24,["25"] = 25,["26"] = 30,["27"] = 30,["28"] = 30,["29"] = 30,["30"] = 30,["31"] = 30,["32"] = 30,["33"] = 30,["34"] = 23,["37"] = 15,["38"] = 40,["39"] = 45,["40"] = 45,["41"] = 45,["42"] = 45,["43"] = 45,["44"] = 45,["45"] = 45,["46"] = 45,["47"] = 53,["48"] = 54,["49"] = 55,["50"] = 56,["51"] = 57,["54"] = 60,["55"] = 60,["56"] = 60,["57"] = 60,["58"] = 60,["59"] = 60,["60"] = 66,["62"] = 68,["63"] = 40,["64"] = 71,["65"] = 79,["66"] = 80,["69"] = 81,["72"] = 82,["75"] = 84,["76"] = 85,["79"] = 87,["80"] = 88,["83"] = 89,["86"] = 90,["87"] = 91,["90"] = 92,["96"] = 97,["97"] = 98,["100"] = 100,["101"] = 101,["104"] = 103,["105"] = 104,["106"] = 71,["107"] = 116,["108"] = 122,["109"] = 123,["110"] = 124,["112"] = 126,["113"] = 126,["115"] = 128,["116"] = 129,["117"] = 130,["118"] = 131,["119"] = 132,["120"] = 132,["121"] = 132,["122"] = 132,["123"] = 135,["125"] = 137,["126"] = 137,["127"] = 137,["128"] = 138,["129"] = 139,["130"] = 137,["131"] = 137,["132"] = 141,["134"] = 144,["135"] = 144,["137"] = 147,["138"] = 151,["140"] = 154,["141"] = 155,["142"] = 156,["144"] = 162,["145"] = 163,["147"] = 170,["148"] = 116,["149"] = 173,["150"] = 174,["151"] = 175,["153"] = 177,["154"] = 177,["155"] = 177,["156"] = 177,["157"] = 173,["158"] = 180,["159"] = 184,["160"] = 185,["161"] = 186,["163"] = 189,["164"] = 189,["165"] = 190,["167"] = 191,["169"] = 189,["170"] = 193,["171"] = 193,["172"] = 194,["174"] = 195,["176"] = 192,["177"] = 197,["178"] = 198,["179"] = 200,["180"] = 201,["182"] = 204,["183"] = 205,["184"] = 205,["185"] = 205,["186"] = 205,["188"] = 211,["189"] = 211,["190"] = 211,["191"] = 211,["192"] = 180,["193"] = 217,["194"] = 218,["195"] = 219,["197"] = 220,["198"] = 220,["200"] = 221,["201"] = 222,["206"] = 226,["207"] = 226,["208"] = 226,["209"] = 226,["210"] = 227,["211"] = 227,["212"] = 227,["213"] = 227,["214"] = 227,["215"] = 227,["216"] = 227,["217"] = 234,["218"] = 217,["219"] = 237,["220"] = 244,["221"] = 245,["222"] = 245,["224"] = 246,["225"] = 246,["226"] = 246,["227"] = 246,["228"] = 246,["229"] = 246,["230"] = 246,["231"] = 246,["232"] = 253,["233"] = 237});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 2,["10"] = 2,["11"] = 2,["12"] = 4,["13"] = 4,["14"] = 4,["15"] = 4,["16"] = 5,["17"] = 7,["18"] = 8,["19"] = 13,["20"] = 14,["21"] = 15,["22"] = 18,["23"] = 25,["25"] = 26,["26"] = 26,["27"] = 27,["28"] = 28,["29"] = 33,["30"] = 33,["31"] = 33,["32"] = 33,["33"] = 33,["34"] = 33,["35"] = 33,["36"] = 33,["37"] = 26,["40"] = 18,["41"] = 43,["42"] = 48,["43"] = 48,["44"] = 48,["45"] = 48,["46"] = 48,["47"] = 48,["48"] = 48,["49"] = 48,["50"] = 56,["51"] = 57,["52"] = 58,["53"] = 59,["54"] = 60,["57"] = 63,["58"] = 63,["59"] = 63,["60"] = 63,["61"] = 63,["62"] = 63,["63"] = 69,["65"] = 71,["66"] = 43,["67"] = 74,["68"] = 82,["69"] = 83,["72"] = 84,["75"] = 85,["78"] = 87,["79"] = 88,["82"] = 90,["83"] = 91,["86"] = 92,["89"] = 93,["90"] = 94,["93"] = 95,["99"] = 100,["100"] = 101,["103"] = 103,["104"] = 104,["107"] = 106,["108"] = 107,["109"] = 74,["110"] = 119,["111"] = 125,["112"] = 126,["113"] = 127,["115"] = 129,["116"] = 129,["118"] = 131,["119"] = 132,["120"] = 133,["121"] = 134,["122"] = 135,["123"] = 135,["124"] = 135,["125"] = 135,["126"] = 138,["128"] = 140,["129"] = 140,["130"] = 140,["131"] = 141,["132"] = 142,["133"] = 140,["134"] = 140,["135"] = 144,["137"] = 147,["138"] = 147,["140"] = 150,["141"] = 154,["143"] = 157,["144"] = 158,["145"] = 159,["147"] = 165,["148"] = 166,["150"] = 173,["151"] = 119,["152"] = 176,["153"] = 177,["154"] = 178,["156"] = 180,["157"] = 180,["158"] = 180,["159"] = 180,["160"] = 176,["161"] = 183,["162"] = 187,["163"] = 188,["164"] = 189,["166"] = 192,["167"] = 192,["168"] = 193,["170"] = 194,["172"] = 192,["173"] = 196,["174"] = 196,["175"] = 197,["177"] = 198,["179"] = 195,["180"] = 200,["181"] = 201,["182"] = 203,["183"] = 204,["185"] = 207,["186"] = 208,["187"] = 208,["188"] = 208,["189"] = 208,["191"] = 214,["192"] = 214,["193"] = 214,["194"] = 214,["195"] = 183,["196"] = 220,["197"] = 221,["198"] = 222,["200"] = 223,["201"] = 223,["203"] = 224,["204"] = 225,["209"] = 229,["210"] = 229,["211"] = 229,["212"] = 229,["213"] = 230,["214"] = 230,["215"] = 230,["216"] = 230,["217"] = 230,["218"] = 230,["219"] = 230,["220"] = 237,["221"] = 220,["222"] = 240,["223"] = 241,["224"] = 241,["225"] = 241,["226"] = 241,["227"] = 241,["228"] = 241,["229"] = 240,["230"] = 249,["231"] = 256,["232"] = 257,["233"] = 257,["235"] = 258,["236"] = 258,["237"] = 258,["238"] = 258,["239"] = 258,["240"] = 258,["241"] = 258,["242"] = 258,["243"] = 265,["244"] = 249,["245"] = 268,["246"] = 272,["247"] = 272,["248"] = 272,["249"] = 272,["250"] = 272,["251"] = 272,["252"] = 272,["253"] = 273,["254"] = 274,["255"] = 274,["256"] = 274,["257"] = 274,["258"] = 279,["259"] = 279,["260"] = 279,["261"] = 279,["262"] = 279,["263"] = 268,["264"] = 286,["265"] = 298,["266"] = 299,["267"] = 299,["269"] = 300,["270"] = 301,["271"] = 301,["273"] = 302,["274"] = 303,["275"] = 303,["277"] = 305,["278"] = 306,["279"] = 307,["280"] = 307,["281"] = 307,["282"] = 307,["283"] = 307,["284"] = 307,["285"] = 307,["286"] = 307,["287"] = 314,["288"] = 315,["289"] = 316,["290"] = 317,["291"] = 317,["292"] = 317,["293"] = 317,["294"] = 318,["295"] = 318,["296"] = 318,["297"] = 318,["298"] = 318,["299"] = 318,["300"] = 318,["301"] = 286,["302"] = 327,["303"] = 336,["304"] = 337,["305"] = 338,["307"] = 340,["308"] = 341,["309"] = 346,["310"] = 347,["311"] = 353,["312"] = 354,["313"] = 354,["314"] = 354,["315"] = 354,["316"] = 327});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
 local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
 local ____duel_arena = require("systems.duel.duel_arena")
+local broadcastDuelEvent = ____duel_arena.broadcastDuelEvent
 local prepareDuelistSnapshot = ____duel_arena.prepareDuelistSnapshot
+local restoreDuelistAfterDuel = ____duel_arena.restoreDuelistAfterDuel
 local ____duel_types = require("systems.duel.duel_types")
 local BOSS_DUEL_BET_BOSS = ____duel_types.BOSS_DUEL_BET_BOSS
 local BOSS_DUEL_BET_TEAM = ____duel_types.BOSS_DUEL_BET_TEAM
 local debugDuelChat = ____duel_types.debugDuelChat
 local getTeamPlayerIds = ____duel_types.getTeamPlayerIds
+local settleBossDuelBets = ____duel_types.settleBossDuelBets
 function ____exports.prepareBossChallengers(self, challengers, spawnA, spawnB, snapshots, activeDuelistEntIndexes)
     local perpDir = Vector(-(spawnB.y - spawnA.y), spawnB.x - spawnA.x, 0):Normalized()
     do
@@ -216,6 +219,14 @@ function ____exports.ensureDevTestBot(self, callerId)
     )
     return botHero ~= nil and not botHero:IsNull()
 end
+function ____exports.createDevSparringPair(self, playerId)
+    return {
+        playerA = playerId,
+        playerB = -1,
+        teamA = PlayerResource:GetTeam(playerId),
+        teamB = 10
+    }
+end
 function ____exports.launchDevSparringFallback(self, params)
     local hero = PlayerResource:GetSelectedHeroEntity(params.playerId)
     if not hero or hero:IsNull() or not IsValidEntity(hero) then
@@ -230,5 +241,77 @@ function ____exports.launchDevSparringFallback(self, params)
         params.activeDuelistEntIndexes
     )
     return ____exports.spawnDevSparringDummy(nil, hero, params.spawnB, params.activeDuelistEntIndexes)
+end
+function ____exports.prepareDevTestCountdown(self, callerId, rawDelay)
+    local delay = math.max(
+        6,
+        math.min(
+            30,
+            tonumber(rawDelay) or 8
+        )
+    )
+    local hasBot = ____exports.ensureDevTestBot(nil, callerId)
+    debugDuelChat(
+        nil,
+        hasBot and ("[Evo] Test duel countdown set to " .. tostring(delay)) .. "s vs NoobBot!" or "[Evo] Failed to spawn test bot!"
+    )
+    return {
+        delay = delay,
+        nextDuelTime = GameRules:GetDOTATime(false, false) + delay,
+        hasBot = hasBot
+    }
+end
+function ____exports.launchBossArenaDuelState(self, params)
+    local bossInfo = params.bossManager:getStrongestAliveBoss()
+    if not bossInfo then
+        return nil
+    end
+    local challengers = getTeamPlayerIds(nil, params.challengingTeam)
+    if #challengers == 0 then
+        return nil
+    end
+    local bossReturnPos = params.bossManager:prepareBossForArena(bossInfo.bossId, params.spawnB, params.spawnA)
+    if not bossReturnPos then
+        return nil
+    end
+    params:onRecordDuelists(challengers)
+    params:onBeginStage()
+    ____exports.prepareBossChallengers(
+        nil,
+        challengers,
+        params.spawnA,
+        params.spawnB,
+        params.snapshots,
+        params.activeDuelistEntIndexes
+    )
+    params.activeDuelistEntIndexes:add(bossInfo.unit:entindex())
+    params.eventBus:emit("duel_started", {roundIndex = params.roundIndex, isTiebreaker = false})
+    broadcastDuelEvent(nil, "started")
+    debugDuelChat(
+        nil,
+        ((((("[Evo] BOSS ARENA! Team " .. tostring(params.challengingTeam)) .. " vs ") .. bossInfo.bossId) .. " (Lv.") .. tostring(bossInfo.level)) .. ")"
+    )
+    return {
+        bossId = bossInfo.bossId,
+        bossEntIndex = bossInfo.unit:entindex(),
+        bossReturnPos = bossReturnPos,
+        challengingTeam = params.challengingTeam,
+        challengerIds = challengers
+    }
+end
+function ____exports.completeBossArenaDuelState(self, params)
+    settleBossDuelBets(nil, params.activeBets, params.teamWon)
+    for ____, pid in ipairs(params.bossDuel.challengerIds) do
+        restoreDuelistAfterDuel(nil, pid, params.teamWon, params.snapshots)
+    end
+    params.snapshots:clear()
+    params.bossManager:returnBossFromArena(params.bossDuel.bossId, params.bossDuel.bossReturnPos, not params.teamWon)
+    local leadWinner = params.teamWon and params.bossDuel.challengerIds[1] or nil
+    params.eventBus:emit("duel_finished", {roundIndex = params.roundIndex, winnerId = leadWinner, loserId = nil, isTiebreaker = false})
+    broadcastDuelEvent(nil, "finished", leadWinner)
+    debugDuelChat(
+        nil,
+        params.teamWon and ((("[Evo] Team " .. tostring(params.bossDuel.challengingTeam)) .. " defeated ") .. params.bossDuel.bossId) .. " in the Boss Arena!" or ("[Evo] " .. params.bossDuel.bossId) .. " crushed the challengers and entered COURAGE mode!"
+    )
 end
 return ____exports

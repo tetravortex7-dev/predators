@@ -8,7 +8,8 @@
     </scripts>
     <Panel class="EvoFountainTeleportRoot" hittest="false">
         <Button id="EvoFountainTeleportBtn" class="EvoFountainTeleportBtn">
-            <Label class="EvoFountainTeleportLabel" text="#evo_fountain_teleport_btn" />
+            <Panel class="EvoFountainTeleportGlow" hittest="false" />
+            <Panel id="EvoFountainTeleportIcon" class="EvoFountainTeleportIcon" hittest="false" />
         </Button>
     </Panel>
 </root>

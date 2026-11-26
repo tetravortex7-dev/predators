@@ -4,6 +4,7 @@ import {
     DamageScaleRule,
 } from "./damage/damage_filter_types";
 import { DMG_FILTER_NYX } from "./damage/dmgFilterNyx";
+import { DMG_FILTER_SPECTRE } from "./damage/dmgFilterSpectre";
 
 export type {
     CustomDamageResult,
@@ -17,6 +18,7 @@ export type {
 
 const HERO_DAMAGE_MODULES: readonly DamageFilterModule[] = [
     DMG_FILTER_NYX,
+    DMG_FILTER_SPECTRE,
 ];
 
 function collectDamageRules(): Record<string, DamageScaleRule> {

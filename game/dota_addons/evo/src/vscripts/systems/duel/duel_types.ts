@@ -83,12 +83,37 @@ export function discoverArenaLocations(): {
     return { arenaCenter, spawnA, spawnB };
 }
 
-export function getTeamPlayerIds(team: DotaTeam): PlayerID[] {
+export function isActiveConnectedPlayer(playerId: PlayerID): boolean {
+    if (!PlayerResource.IsValidPlayerID(playerId)) return false;
+    const state = PlayerResource.GetConnectionState(playerId);
+    if (PlayerResource.IsFakeClient(playerId)) {
+        return state !== ConnectionState.ABANDONED;
+    }
+    return state === ConnectionState.CONNECTED;
+}
+
+export function getActiveDuelPlayerCount(): number {
+    let count = 0;
+    for (let i = 0; i < DOTA_MAX_TEAM_PLAYERS; i++) {
+        const pid = i as PlayerID;
+        if (!isActiveConnectedPlayer(pid)) continue;
+        if (EVO_PLAYABLE_TEAMS.includes(PlayerResource.GetTeam(pid))) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+export function getTeamPlayerIds(
+    team: DotaTeam,
+    excludedIds?: ReadonlySet<PlayerID>
+): PlayerID[] {
     const result: PlayerID[] = [];
     for (let i = 0; i < DOTA_MAX_TEAM_PLAYERS; i++) {
         const pid = i as PlayerID;
-        if (!PlayerResource.IsValidPlayerID(pid)) continue;
+        if (!isActiveConnectedPlayer(pid)) continue;
         if (PlayerResource.GetTeam(pid) !== team) continue;
+        if (excludedIds && excludedIds.has(pid)) continue;
         const hero = PlayerResource.GetSelectedHeroEntity(pid);
         if (!hero || hero.IsNull() || !IsValidEntity(hero)) continue;
         result.push(pid);
@@ -96,9 +121,30 @@ export function getTeamPlayerIds(team: DotaTeam): PlayerID[] {
     return result;
 }
 
-export function pickWeightedChampion(team: DotaTeam, applicants: ReadonlySet<PlayerID>): PlayerID | undefined {
-    const candidates = getTeamPlayerIds(team);
-    if (candidates.length === 0) return undefined;
+export function getActiveTeamCount(): number {
+    let count = 0;
+    for (const team of EVO_PLAYABLE_TEAMS) {
+        if (getTeamPlayerIds(team).length > 0) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+export function pickWeightedChampion(
+    team: DotaTeam,
+    applicants: ReadonlySet<PlayerID>,
+    excludedIds?: ReadonlySet<PlayerID>,
+    preferredIds?: ReadonlySet<PlayerID>
+): PlayerID | undefined {
+    const allCandidates = getTeamPlayerIds(team, excludedIds);
+    if (allCandidates.length === 0) return undefined;
+
+    const preferred =
+        preferredIds && preferredIds.size > 0
+            ? allCandidates.filter((pid) => preferredIds.has(pid))
+            : [];
+    const candidates = preferred.length > 0 ? preferred : allCandidates;
 
     let totalWeight = 0;
     const weights: number[] = [];
@@ -118,10 +164,13 @@ export function pickWeightedChampion(team: DotaTeam, applicants: ReadonlySet<Pla
     return candidates[candidates.length - 1];
 }
 
-export function pickWeightedBossDuelTeam(applicants: ReadonlySet<PlayerID>): DotaTeam | undefined {
+export function pickWeightedBossDuelTeam(
+    applicants: ReadonlySet<PlayerID>,
+    excludedIds?: ReadonlySet<PlayerID>
+): DotaTeam | undefined {
     const activeTeams: DotaTeam[] = [];
     for (const team of EVO_PLAYABLE_TEAMS) {
-        if (getTeamPlayerIds(team).length > 0) {
+        if (getTeamPlayerIds(team, excludedIds).length > 0) {
             activeTeams.push(team);
         }
     }
@@ -131,7 +180,7 @@ export function pickWeightedBossDuelTeam(applicants: ReadonlySet<PlayerID>): Dot
     const weights: number[] = [];
     for (const team of activeTeams) {
         let teamWeight = 1.0;
-        for (const pid of getTeamPlayerIds(team)) {
+        for (const pid of getTeamPlayerIds(team, excludedIds)) {
             if (applicants.has(pid)) {
                 teamWeight += EVO_CONSTANTS.DUEL_APPLY_WEIGHT_MULTIPLIER;
             }
@@ -161,7 +210,8 @@ export function hasMultiPlayerTeams(): boolean {
 
 function pickWeightedTeam(
     teams: readonly DotaTeam[],
-    applicants: ReadonlySet<PlayerID>
+    applicants: ReadonlySet<PlayerID>,
+    excludedIds?: ReadonlySet<PlayerID>
 ): DotaTeam | undefined {
     if (teams.length === 0) return undefined;
 
@@ -169,7 +219,7 @@ function pickWeightedTeam(
     const weights: number[] = [];
     for (const team of teams) {
         let teamWeight = 1.0;
-        for (const pid of getTeamPlayerIds(team)) {
+        for (const pid of getTeamPlayerIds(team, excludedIds)) {
             if (applicants.has(pid)) {
                 teamWeight += EVO_CONSTANTS.DUEL_APPLY_WEIGHT_MULTIPLIER;
             }
@@ -188,28 +238,77 @@ function pickWeightedTeam(
     return teams[teams.length - 1];
 }
 
-export function generateDuelPairs(applicants: ReadonlySet<PlayerID>): DuelPair[] {
+export function generateDuelPairs(
+    applicants: ReadonlySet<PlayerID>,
+    excludedIds?: ReadonlySet<PlayerID>,
+    priorityIds?: ReadonlySet<PlayerID>
+): DuelPair[] {
     const activeTeams: DotaTeam[] = [];
     for (const team of EVO_PLAYABLE_TEAMS) {
-        if (getTeamPlayerIds(team).length > 0) {
+        if (getTeamPlayerIds(team, excludedIds).length > 0) {
             activeTeams.push(team);
         }
     }
 
     if (activeTeams.length < 2) return [];
 
-    const teamA = pickWeightedTeam(activeTeams, applicants);
+    const priorityTeams =
+        priorityIds && priorityIds.size > 0
+            ? activeTeams.filter((team) =>
+                  getTeamPlayerIds(team, excludedIds).some((pid) => priorityIds.has(pid))
+              )
+            : [];
+    const teamA =
+        priorityTeams.length > 0
+            ? pickWeightedTeam(priorityTeams, applicants, excludedIds)
+            : pickWeightedTeam(activeTeams, applicants, excludedIds);
     if (teamA === undefined) return [];
 
     const remainingTeams = activeTeams.filter((team) => team !== teamA);
-    const teamB = pickWeightedTeam(remainingTeams, applicants);
+    const teamB = pickWeightedTeam(remainingTeams, applicants, excludedIds);
     if (teamB === undefined) return [];
 
-    const playerA = pickWeightedChampion(teamA, applicants);
-    const playerB = pickWeightedChampion(teamB, applicants);
+    const playerA = pickWeightedChampion(teamA, applicants, excludedIds, priorityIds);
+    const playerB = pickWeightedChampion(teamB, applicants, excludedIds);
     if (playerA === undefined || playerB === undefined) return [];
 
     return [{ playerA, playerB, teamA, teamB }];
+}
+
+export function resolveSkippedDuelCooldown(
+    lastDuelistIds: Set<PlayerID>,
+    skippedPriorityIds: Set<PlayerID>
+): boolean {
+    if (getActiveTeamCount() < 2) {
+        debugDuelChat("[Evo] Duel skipped: not enough active teams.");
+        return false;
+    }
+
+    for (const team of EVO_PLAYABLE_TEAMS) {
+        for (const pid of getTeamPlayerIds(team, lastDuelistIds)) {
+            skippedPriorityIds.add(pid);
+        }
+    }
+    lastDuelistIds.clear();
+    GameRules.SendCustomMessage("#evo_duel_skipped_rest", 0, 0);
+    debugDuelChat("[Evo] Duel skipped: rest cycle so no player fights twice in a row.");
+    return true;
+}
+
+export function resolveAdaptiveWaitDeadline(
+    waitCycleStartTime: number,
+    currentDeadline: number,
+    now: number,
+    intervalSeconds: number
+): { changed: boolean; nextDeadline: number } {
+    const targetTime = waitCycleStartTime + intervalSeconds;
+    if (Math.abs(targetTime - currentDeadline) <= 1) {
+        return { changed: false, nextDeadline: currentDeadline };
+    }
+    return {
+        changed: true,
+        nextDeadline: Math.max(now + EVO_CONSTANTS.DUEL_COUNTDOWN_SECONDS + 2, targetTime),
+    };
 }
 
 export function settleBets(activeBets: Map<PlayerID, DuelBet>, winnerId: PlayerID | undefined): number {

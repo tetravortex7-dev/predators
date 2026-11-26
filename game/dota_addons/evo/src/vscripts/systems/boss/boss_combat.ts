@@ -5,9 +5,11 @@ import {
     tryUseMobilityItem,
 } from "./boss_abilities";
 import { consumeRuneForBoss, tryMaintainBossHealth } from "./boss_progression";
+import { isCampSizeAllowedAtTime } from "../../data/game_constants";
 import {
     ActiveBossRuntime,
     BOSS_TEAM,
+    BossSpawnPoint,
     PatrolWaypoint,
     RECOVER_HP_THRESHOLD,
     RETREAT_HP_THRESHOLD,
@@ -16,23 +18,12 @@ import {
     isNearAnyFountain,
 } from "./boss_types";
 
-function getAllowedCampSizes(bossLevel: number): ReadonlySet<string> {
-    if (bossLevel <= 15) {
-        return new Set(["small", "medium"]);
-    }
-    if (bossLevel <= 40) {
-        return new Set(["small", "medium", "hard"]);
-    }
-    return new Set(["small", "medium", "hard", "strong", "random"]);
-}
-
 export function pickSmartWaypoint(
     currentPos: Vector,
-    bossLevel: number,
+    matchTime: number,
     patrolWaypoints: readonly PatrolWaypoint[]
 ): Vector {
-    const allowedSizes = getAllowedCampSizes(bossLevel);
-    const preferred = patrolWaypoints.filter((w) => allowedSizes.has(w.campSize));
+    const preferred = patrolWaypoints.filter((w) => isCampSizeAllowedAtTime(w.campSize, matchTime));
     const pool = preferred.length > 0 ? preferred : patrolWaypoints;
 
     if (pool.length === 1) {
@@ -53,12 +44,20 @@ export function pickSmartWaypoint(
 
 function pickRetreatPosition(
     currentPos: Vector,
-    bossSpawnPoints: readonly Vector[],
+    matchTime: number,
+    bossSpawnPoints: readonly BossSpawnPoint[],
     patrolWaypoints: readonly PatrolWaypoint[]
 ): Vector {
-    let best = bossSpawnPoints[0] ?? Vector(0, 0, 128);
+    const allowedWaypoints = patrolWaypoints.filter((wp) => isCampSizeAllowedAtTime(wp.campSize, matchTime));
+    const waypointPool = allowedWaypoints.length > 0 ? allowedWaypoints : patrolWaypoints;
+    const allowedSpawns = bossSpawnPoints.filter(
+        (sp) => sp.campSize === undefined || isCampSizeAllowedAtTime(sp.campSize, matchTime)
+    );
+    const fallbackSpawn = (allowedSpawns[0] ?? bossSpawnPoints[0])?.position ?? Vector(0, 0, 128);
+
+    let best = fallbackSpawn;
     let bestDist = -1;
-    for (const wp of patrolWaypoints) {
+    for (const wp of waypointPool) {
         const dist = distance2D(currentPos, wp.position);
         if (dist >= 1200 && dist <= 2600 && dist > bestDist) {
             bestDist = dist;
@@ -70,24 +69,29 @@ function pickRetreatPosition(
 
 export function pickRandomBossSpawnOrigin(
     runtime: ActiveBossRuntime,
-    bossSpawnPoints: readonly Vector[],
+    bossSpawnPoints: readonly BossSpawnPoint[],
     fountainPositions: readonly Vector[]
 ): Vector {
-    const safePool = bossSpawnPoints.filter((pos) => !isNearAnyFountain(pos, fountainPositions, 1600));
-    const basePool = safePool.length > 0 ? safePool : bossSpawnPoints;
+    const now = GameRules.GetDOTATime(false, false);
+    const timeAllowed = bossSpawnPoints.filter(
+        (pt) => pt.campSize === undefined || isCampSizeAllowedAtTime(pt.campSize, now)
+    );
+    const unlockedPool = timeAllowed.length > 0 ? timeAllowed : bossSpawnPoints;
+    const safePool = unlockedPool.filter((pt) => !isNearAnyFountain(pt.position, fountainPositions, 1600));
+    const basePool = safePool.length > 0 ? safePool : unlockedPool;
     if (basePool.length === 0) {
         return Vector(0, 0, 128);
     }
 
     const nonRepeat = runtime.lastSpawnPosition
-        ? basePool.filter((pos) => distance2D(pos, runtime.lastSpawnPosition!) > 400)
+        ? basePool.filter((pt) => distance2D(pt.position, runtime.lastSpawnPosition!) > 400)
         : basePool;
     const candidates = nonRepeat.length > 0 ? nonRepeat : basePool;
 
-    const awayFromHeroes = candidates.filter((pos) => {
+    const awayFromHeroes = candidates.filter((pt) => {
         const nearby = FindUnitsInRadius(
             BOSS_TEAM,
-            pos,
+            pt.position,
             undefined,
             1100,
             UnitTargetTeam.ENEMY,
@@ -100,7 +104,7 @@ export function pickRandomBossSpawnOrigin(
     });
 
     const finalPool = awayFromHeroes.length > 0 ? awayFromHeroes : candidates;
-    const chosen = finalPool[RandomInt(0, finalPool.length - 1)];
+    const chosen = finalPool[RandomInt(0, finalPool.length - 1)].position;
     runtime.lastSpawnPosition = chosen;
     return chosen;
 }
@@ -173,7 +177,7 @@ export function tickBossRoamingAI(
     unit: CDOTA_BaseNPC,
     now: number,
     fountainPositions: readonly Vector[],
-    bossSpawnPoints: readonly Vector[],
+    bossSpawnPoints: readonly BossSpawnPoint[],
     patrolWaypoints: readonly PatrolWaypoint[]
 ): void {
     if (unit.IsChanneling() || unit.IsStunned() || unit.IsHexed()) return;
@@ -190,7 +194,7 @@ export function tickBossRoamingAI(
     tryMaintainBossHealth(runtime, unit, hpRatio, now);
 
     if (isNearAnyFountain(origin, fountainPositions, 1450)) {
-        const safeWaypoint = pickSmartWaypoint(origin, runtime.level, patrolWaypoints);
+        const safeWaypoint = pickSmartWaypoint(origin, now, patrolWaypoints);
         runtime.targetWaypoint = safeWaypoint;
         if (!unit.IsMoving() || now - runtime.lastMoveOrderTime >= 1.0) {
             runtime.lastMoveOrderTime = now;
@@ -207,7 +211,7 @@ export function tickBossRoamingAI(
     if (!runtime.inCourage) {
         if (!runtime.retreating && hpRatio <= RETREAT_HP_THRESHOLD) {
             runtime.retreating = true;
-            runtime.retreatPosition = pickRetreatPosition(origin, bossSpawnPoints, patrolWaypoints);
+            runtime.retreatPosition = pickRetreatPosition(origin, now, bossSpawnPoints, patrolWaypoints);
             runtime.lastMoveOrderTime = -999;
         } else if (runtime.retreating && hpRatio >= RECOVER_HP_THRESHOLD) {
             runtime.retreating = false;
@@ -248,7 +252,7 @@ export function tickBossRoamingAI(
         }
 
         if (!runtime.retreatPosition || distance2D(origin, runtime.retreatPosition) <= 220) {
-            runtime.retreatPosition = pickRetreatPosition(origin, bossSpawnPoints, patrolWaypoints);
+            runtime.retreatPosition = pickRetreatPosition(origin, now, bossSpawnPoints, patrolWaypoints);
             runtime.lastMoveOrderTime = -999;
         }
 
@@ -345,7 +349,7 @@ export function tickBossRoamingAI(
     }
 
     if (!runtime.targetWaypoint || distance2D(origin, runtime.targetWaypoint) <= 280) {
-        runtime.targetWaypoint = pickSmartWaypoint(origin, runtime.level, patrolWaypoints);
+        runtime.targetWaypoint = pickSmartWaypoint(origin, now, patrolWaypoints);
         runtime.lastMoveOrderTime = -999;
     }
 

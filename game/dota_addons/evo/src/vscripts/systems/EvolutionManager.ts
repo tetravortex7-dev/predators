@@ -12,6 +12,7 @@ import {
     getNextTierConfig,
 } from "../data/game_constants";
 import { HeroAppearance } from "../lib/HeroAppearance";
+import { applyHeroResourceRatios } from "../lib/hero_state_transfer";
 import { SpellShopManager } from "./SpellShopManager";
 import {
     applyBodyToHero,
@@ -159,6 +160,8 @@ export class EvolutionManager {
         const targetHeroClass =
             body.heroClass && body.heroClass.length > 0 ? body.heroClass : hero.GetUnitName();
         const resetHeroLevel = previousBodyId !== body.id || state.tierIndex !== body.tierIndex;
+        const preMorphHpPct = Math.max(0.01, Math.min(1, hero.GetHealthPercent() / 100));
+        const preMorphMpPct = Math.max(0, Math.min(1, hero.GetManaPercent() / 100));
         if (hero.GetUnitName() !== targetHeroClass || resetHeroLevel) {
             const preservedAbilities = collectPurchasedAbilities(hero, state);
             const replaced = HeroAppearance.replaceHeroPreservingState(playerId, targetHeroClass, {
@@ -191,6 +194,8 @@ export class EvolutionManager {
             newBodyId: body.id,
             tierIndex: body.tierIndex,
         });
+
+        applyHeroResourceRatios(hero, preMorphHpPct, preMorphMpPct);
 
         this.checkEvolutionProgress(playerId);
         syncPlayerEvoNetTable(playerId, state);

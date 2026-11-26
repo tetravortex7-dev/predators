@@ -5,8 +5,11 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__StringStartsWith = ____lualib.__TS__StringStartsWith
 local Map = ____lualib.Map
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 40,["11"] = 42,["12"] = 42,["13"] = 42,["14"] = 42,["15"] = 42,["16"] = 42,["17"] = 42,["18"] = 50,["19"] = 50,["20"] = 50,["22"] = 50,["23"] = 53,["24"] = 54,["27"] = 55,["28"] = 53,["29"] = 58,["30"] = 65,["33"] = 66,["34"] = 66,["35"] = 66,["36"] = 66,["37"] = 66,["38"] = 66,["39"] = 66,["40"] = 67,["41"] = 67,["42"] = 67,["43"] = 67,["44"] = 67,["45"] = 67,["46"] = 67,["47"] = 68,["48"] = 68,["49"] = 68,["50"] = 68,["51"] = 68,["52"] = 68,["53"] = 68,["54"] = 69,["55"] = 70,["56"] = 70,["57"] = 70,["58"] = 70,["59"] = 70,["60"] = 70,["61"] = 72,["62"] = 73,["63"] = 74,["64"] = 75,["66"] = 78,["67"] = 79,["68"] = 80,["70"] = 83,["71"] = 58,["72"] = 86,["73"] = 87,["74"] = 87,["75"] = 87,["76"] = 87,["77"] = 87,["78"] = 87,["79"] = 87,["80"] = 86,["81"] = 90,["82"] = 91,["85"] = 92,["86"] = 93,["87"] = 94,["88"] = 95,["90"] = 97,["92"] = 90,["93"] = 101,["94"] = 102,["97"] = 103,["98"] = 104,["99"] = 105,["100"] = 106,["102"] = 108,["104"] = 101,["105"] = 112,["106"] = 113,["109"] = 114,["110"] = 115,["113"] = 117,["114"] = 118,["115"] = 119,["117"] = 121,["118"] = 123,["119"] = 124,["120"] = 125,["123"] = 128,["124"] = 112,["125"] = 131,["126"] = 135,["127"] = 136,["128"] = 137,["130"] = 139,["131"] = 140,["132"] = 141,["133"] = 142,["138"] = 131,["139"] = 149,["140"] = 153,["141"] = 154,["143"] = 156,["144"] = 157,["146"] = 149,["147"] = 161,["148"] = 162,["151"] = 163,["152"] = 165,["153"] = 167,["155"] = 168,["156"] = 168,["158"] = 170,["159"] = 174,["160"] = 174,["162"] = 175,["163"] = 177,["164"] = 178,["165"] = 179,["167"] = 181,["168"] = 182,["170"] = 185,["171"] = 185,["172"] = 187,["173"] = 188,["175"] = 189,["176"] = 189,["178"] = 190,["179"] = 195,["180"] = 195,["188"] = 161,["189"] = 201,["190"] = 204,["191"] = 204,["193"] = 206,["196"] = 208,["197"] = 209,["199"] = 212,["200"] = 213,["201"] = 214,["202"] = 215,["203"] = 215,["204"] = 215,["206"] = 215,["207"] = 219,["208"] = 220,["210"] = 201,["211"] = 224,["212"] = 225,["215"] = 227,["216"] = 228,["217"] = 229,["219"] = 232,["220"] = 233,["221"] = 234,["222"] = 235,["224"] = 238,["225"] = 239,["227"] = 242,["228"] = 243,["229"] = 243,["230"] = 243,["231"] = 243,["232"] = 243,["233"] = 243,["234"] = 243,["235"] = 244,["236"] = 245,["237"] = 246,["238"] = 247,["239"] = 247,["240"] = 247,["241"] = 247,["242"] = 247,["243"] = 247,["244"] = 247,["246"] = 250,["247"] = 251,["249"] = 254,["250"] = 255,["252"] = 224,["253"] = 259,["254"] = 262,["255"] = 262,["257"] = 264,["258"] = 264,["260"] = 266,["261"] = 267,["262"] = 267,["264"] = 269,["265"] = 270,["266"] = 271,["268"] = 273,["270"] = 276,["271"] = 277,["272"] = 278,["273"] = 279,["274"] = 280,["275"] = 281,["276"] = 282,["277"] = 282,["278"] = 282,["279"] = 282,["280"] = 283,["281"] = 283,["282"] = 283,["283"] = 283,["284"] = 285,["285"] = 286,["286"] = 286,["287"] = 286,["288"] = 286,["289"] = 288,["290"] = 289,["291"] = 290,["293"] = 291,["294"] = 292,["295"] = 292,["297"] = 293,["298"] = 293,["299"] = 293,["300"] = 293,["301"] = 293,["306"] = 301,["307"] = 302,["308"] = 304,["309"] = 305,["310"] = 306,["313"] = 309,["314"] = 309,["315"] = 310,["316"] = 311,["317"] = 312,["318"] = 313,["320"] = 309,["323"] = 317,["324"] = 318,["325"] = 318,["326"] = 320,["327"] = 321,["328"] = 322,["330"] = 324,["331"] = 318,["332"] = 318,["333"] = 318,["335"] = 330,["336"] = 331,["338"] = 333,["339"] = 334,["342"] = 338,["344"] = 339,["345"] = 339,["347"] = 340,["348"] = 341,["349"] = 341,["351"] = 342,["352"] = 344,["353"] = 349,["355"] = 351,["358"] = 339,["362"] = 355,["364"] = 356,["365"] = 357,["366"] = 357,["368"] = 358,["369"] = 359,["370"] = 359,["371"] = 359,["372"] = 359,["374"] = 361,["375"] = 362,["380"] = 366,["381"] = 367,["382"] = 368,["383"] = 368,["384"] = 368,["385"] = 368,["386"] = 369,["387"] = 371,["388"] = 372,["390"] = 377,["391"] = 378,["393"] = 381,["394"] = 259,["395"] = 384,["396"] = 388,["397"] = 389,["400"] = 391,["401"] = 392,["402"] = 393,["403"] = 394,["404"] = 395,["405"] = 396,["406"] = 397,["407"] = 398,["410"] = 401,["412"] = 404,["414"] = 405,["415"] = 405,["417"] = 406,["418"] = 407,["419"] = 408,["420"] = 409,["425"] = 384,["426"] = 414,["427"] = 415,["428"] = 416,["429"] = 417,["430"] = 421,["432"] = 423,["433"] = 414,["434"] = 426,["435"] = 427,["436"] = 426,["437"] = 51});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 1,["11"] = 2,["12"] = 3,["13"] = 45,["14"] = 47,["15"] = 47,["16"] = 47,["17"] = 47,["18"] = 47,["19"] = 47,["20"] = 47,["21"] = 55,["22"] = 55,["23"] = 55,["25"] = 55,["26"] = 58,["27"] = 59,["30"] = 60,["31"] = 58,["32"] = 63,["33"] = 70,["36"] = 71,["37"] = 71,["38"] = 71,["39"] = 71,["40"] = 71,["41"] = 71,["42"] = 71,["43"] = 72,["44"] = 72,["45"] = 72,["46"] = 72,["47"] = 72,["48"] = 72,["49"] = 72,["50"] = 73,["51"] = 73,["52"] = 73,["53"] = 73,["54"] = 73,["55"] = 73,["56"] = 73,["57"] = 74,["58"] = 75,["59"] = 75,["60"] = 75,["61"] = 75,["62"] = 75,["63"] = 75,["64"] = 77,["65"] = 78,["66"] = 79,["67"] = 80,["69"] = 83,["70"] = 84,["71"] = 85,["73"] = 88,["74"] = 63,["75"] = 91,["76"] = 92,["77"] = 92,["78"] = 92,["79"] = 92,["80"] = 92,["81"] = 92,["82"] = 92,["83"] = 91,["84"] = 95,["85"] = 96,["88"] = 97,["89"] = 98,["90"] = 99,["91"] = 100,["93"] = 102,["95"] = 95,["96"] = 106,["97"] = 107,["100"] = 108,["101"] = 109,["102"] = 110,["103"] = 111,["105"] = 113,["107"] = 106,["108"] = 117,["109"] = 118,["112"] = 119,["113"] = 120,["116"] = 122,["117"] = 123,["118"] = 124,["120"] = 126,["121"] = 128,["122"] = 129,["123"] = 130,["126"] = 133,["127"] = 117,["128"] = 136,["129"] = 140,["130"] = 141,["131"] = 142,["133"] = 144,["134"] = 145,["135"] = 146,["136"] = 147,["141"] = 136,["142"] = 154,["143"] = 158,["144"] = 159,["146"] = 161,["147"] = 162,["149"] = 154,["150"] = 166,["151"] = 167,["154"] = 168,["155"] = 170,["156"] = 172,["158"] = 173,["159"] = 173,["161"] = 175,["162"] = 179,["163"] = 179,["165"] = 180,["166"] = 182,["167"] = 183,["168"] = 184,["170"] = 186,["171"] = 187,["173"] = 190,["174"] = 190,["175"] = 192,["176"] = 193,["178"] = 194,["179"] = 194,["181"] = 195,["182"] = 200,["183"] = 200,["191"] = 166,["192"] = 206,["193"] = 209,["194"] = 209,["196"] = 211,["199"] = 213,["200"] = 214,["202"] = 217,["203"] = 218,["204"] = 219,["205"] = 220,["206"] = 220,["207"] = 220,["209"] = 220,["210"] = 224,["211"] = 225,["213"] = 206,["214"] = 229,["215"] = 230,["218"] = 232,["219"] = 233,["220"] = 234,["222"] = 237,["223"] = 238,["224"] = 239,["225"] = 240,["227"] = 243,["228"] = 244,["230"] = 247,["231"] = 248,["232"] = 248,["233"] = 248,["234"] = 248,["235"] = 248,["236"] = 248,["237"] = 248,["238"] = 249,["239"] = 250,["240"] = 251,["241"] = 252,["242"] = 252,["243"] = 252,["244"] = 252,["245"] = 252,["246"] = 252,["247"] = 252,["249"] = 255,["250"] = 256,["252"] = 259,["253"] = 260,["255"] = 229,["256"] = 264,["257"] = 267,["258"] = 267,["260"] = 269,["261"] = 269,["263"] = 271,["264"] = 272,["265"] = 272,["267"] = 274,["268"] = 275,["269"] = 276,["271"] = 278,["273"] = 281,["274"] = 283,["275"] = 284,["276"] = 285,["278"] = 286,["279"] = 287,["280"] = 287,["282"] = 288,["283"] = 288,["284"] = 288,["285"] = 288,["286"] = 288,["291"] = 296,["292"] = 298,["293"] = 299,["294"] = 301,["295"] = 307,["296"] = 308,["297"] = 309,["299"] = 312,["300"] = 313,["301"] = 313,["302"] = 315,["303"] = 316,["304"] = 317,["306"] = 319,["307"] = 313,["308"] = 313,["309"] = 313,["311"] = 325,["312"] = 326,["314"] = 328,["315"] = 329,["318"] = 333,["320"] = 334,["321"] = 334,["323"] = 335,["324"] = 336,["325"] = 336,["327"] = 337,["328"] = 339,["329"] = 344,["331"] = 346,["334"] = 334,["338"] = 350,["340"] = 351,["341"] = 352,["342"] = 352,["344"] = 353,["345"] = 354,["346"] = 354,["347"] = 354,["348"] = 354,["350"] = 356,["351"] = 357,["356"] = 361,["357"] = 363,["358"] = 364,["360"] = 367,["361"] = 264,["362"] = 370,["363"] = 374,["364"] = 375,["367"] = 377,["368"] = 378,["369"] = 379,["370"] = 380,["371"] = 381,["372"] = 382,["373"] = 383,["374"] = 384,["377"] = 387,["379"] = 390,["381"] = 391,["382"] = 391,["384"] = 392,["385"] = 393,["386"] = 394,["387"] = 395,["392"] = 370,["393"] = 400,["394"] = 401,["395"] = 402,["396"] = 403,["397"] = 407,["399"] = 409,["400"] = 400,["401"] = 412,["402"] = 413,["403"] = 412,["404"] = 56});
 local ____exports = {}
+local ____hero_state_transfer = require("lib.hero_state_transfer")
+local captureHeroTransferState = ____hero_state_transfer.captureHeroTransferState
+local restoreHeroTransferState = ____hero_state_transfer.restoreHeroTransferState
 local EF_NODRAW = 32
 local KEEP_MAP_UTILITY_ABILITIES = __TS__New(Set, {
     "abyssal_underlord_portal_warp",
@@ -267,25 +270,7 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
         end
         return oldHero
     end
-    local savedPos = oldHero:GetAbsOrigin()
-    local savedForward = oldHero:GetForwardVector()
     local resetHeroLevel = options.resetHeroLevel == true
-    local savedLevel = resetHeroLevel and 1 or oldHero:GetLevel()
-    local savedXp = resetHeroLevel and 0 or oldHero:GetCurrentXP()
-    local savedGold = PlayerResource:GetGold(playerId)
-    local savedHpPct = resetHeroLevel and 1 or math.max(
-        0.05,
-        oldHero:GetHealthPercent() / 100
-    )
-    local savedMpPct = resetHeroLevel and 1 or math.max(
-        0,
-        oldHero:GetManaPercent() / 100
-    )
-    local peaceMod = oldHero:FindModifierByName("modifier_evo_peace_time")
-    local savedPeaceRemaining = peaceMod and math.max(
-        0,
-        peaceMod:GetRemainingTime()
-    ) or 0
     local savedAbilities = {}
     if options.preserveAbilities then
         for ____, abilityName in ipairs(options.preserveAbilities) do
@@ -303,22 +288,13 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
             ::__continue69::
         end
     end
+    local transferSnapshot = captureHeroTransferState(nil, playerId, oldHero, resetHeroLevel)
     self:clearCustomWearables(oldHero)
     self.stateByHero:delete(oldHero:entindex())
-    local newHero = PlayerResource:ReplaceHeroWith(playerId, newHeroClass, savedGold, savedXp)
+    PlayerResource:ReplaceHeroWithNoTransfer(playerId, newHeroClass, transferSnapshot.totalGold, transferSnapshot.xp)
+    local newHero = PlayerResource:GetSelectedHeroEntity(playerId)
     if not newHero or newHero:IsNull() or not IsValidEntity(newHero) then
         return nil
-    end
-    do
-        local slot = 0
-        while slot <= 16 do
-            local item = oldHero:GetItemInSlot(slot)
-            if item and not item:IsNull() and IsValidEntity(item) then
-                oldHero:TakeItem(item)
-                newHero:AddItem(item)
-            end
-            slot = slot + 1
-        end
     end
     if oldHero ~= newHero and not oldHero:IsNull() and IsValidEntity(oldHero) then
         GameRules:GetGameModeEntity():SetContextThink(
@@ -335,7 +311,7 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
     if resetHeroLevel then
         newHero:SetAbilityPoints(1)
     else
-        while newHero:GetLevel() < savedLevel do
+        while newHero:GetLevel() < transferSnapshot.level do
             newHero:HeroLevelUp(false)
         end
     end
@@ -346,15 +322,15 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
                 do
                     local ability = newHero:GetAbilityByIndex(i)
                     if not ability or ability:IsNull() then
-                        goto __continue82
+                        goto __continue80
                     end
                     local name = ability:GetAbilityName()
                     if __TS__StringStartsWith(name, "special_bonus_") or __TS__StringStartsWith(name, "evo_empty_slot_") or name == "generic_hidden" or KEEP_MAP_UTILITY_ABILITIES:has(name) then
-                        goto __continue82
+                        goto __continue80
                     end
                     newHero:RemoveAbilityByHandle(ability)
                 end
-                ::__continue82::
+                ::__continue80::
                 i = i + 1
             end
         end
@@ -363,7 +339,7 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
         do
             local ability = newHero:FindAbilityByName(saved.name) or newHero:AddAbility(saved.name)
             if not ability or ability:IsNull() then
-                goto __continue85
+                goto __continue83
             end
             if saved.level > 0 then
                 ability:SetLevel(math.min(
@@ -375,18 +351,9 @@ function HeroAppearance.replaceHeroPreservingState(self, playerId, newHeroClass,
                 ability:StartCooldown(saved.cooldown)
             end
         end
-        ::__continue85::
+        ::__continue83::
     end
-    FindClearSpaceForUnit(newHero, savedPos, true)
-    newHero:SetForwardVector(savedForward)
-    newHero:SetHealth(math.max(
-        1,
-        math.floor(newHero:GetMaxHealth() * savedHpPct)
-    ))
-    newHero:SetMana(math.floor(newHero:GetMaxMana() * savedMpPct))
-    if savedPeaceRemaining > 0 then
-        newHero:AddNewModifier(newHero, nil, "modifier_evo_peace_time", {duration = savedPeaceRemaining})
-    end
+    restoreHeroTransferState(nil, playerId, newHero, transferSnapshot)
     if options.appearance then
         self:applyPreset(newHero, options.appearance)
     end
@@ -412,7 +379,7 @@ function HeroAppearance.applyColorToAttachedWearables(self, hero, state)
     for ____, wearable in ipairs(state.customWearables) do
         do
             if not wearable or wearable:IsNull() or not IsValidEntity(wearable) then
-                goto __continue97
+                goto __continue94
             end
             local modelEnt = wearable
             modelEnt:SetRenderColor(color[1], color[2], color[3])
@@ -420,7 +387,7 @@ function HeroAppearance.applyColorToAttachedWearables(self, hero, state)
                 modelEnt:SetRenderAlpha(state.alpha)
             end
         end
-        ::__continue97::
+        ::__continue94::
     end
 end
 function HeroAppearance.getOrCreateState(self, entIndex)

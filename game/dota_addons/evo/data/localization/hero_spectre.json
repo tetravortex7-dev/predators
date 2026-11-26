@@ -8,24 +8,24 @@
     "en": "Dispersion"
   },
   "DOTA_Tooltip_ability_evo_spectre_dispersion_Description": {
-    "ru": "Поглощает от %base_pct%%% до %max_pct%%% любого входящего урона (в зависимости от уровня 1–35) и отражает его тем же типом по врагам в %min_radius%–%max_radius% AoE.",
-    "en": "Absorbs %base_pct%%%–%max_pct%%% incoming damage (scaling Lv.1–35) and reflects that same damage type across %min_radius%–%max_radius% AoE."
+    "ru": "Поглощает %absorb_pct%%% любого входящего урона (растёт с уровнем героя) и отражает его тем же типом по врагам в %min_radius%–%max_radius% AoE.",
+    "en": "Absorbs %absorb_pct%%% incoming damage (scales with hero level) and reflects that same damage type across %min_radius%–%max_radius% AoE."
   },
-  "DOTA_Tooltip_ability_evo_spectre_dispersion_base_pct": {
-    "ru": "%ПОГЛОЩЕНИЯ (УР. 1):",
-    "en": "%MIN ABSORB (LV.1):"
-  },
-  "DOTA_Tooltip_ability_evo_spectre_dispersion_max_pct": {
-    "ru": "%ПОГЛОЩЕНИЯ (УР. 35):",
-    "en": "%MAX ABSORB (LV.35):"
+  "DOTA_Tooltip_ability_evo_spectre_dispersion_absorb_pct": {
+    "ru": "%ПОГЛОЩЕНИЯ УРОНА:",
+    "en": "%DAMAGE ABSORBED:"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion": {
     "ru": "Рассеивание Разлома",
     "en": "Rift Dispersion"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_Description": {
-    "ru": "Поглощает %base_pct%%%–%max_pct%%% входящего урона (ур. 1–35) и отражает его вокруг себя и ближайшего портала (в %portal_echo_radius% AoE). Урон от вражеских героев даёт +%ms_pct%%% MS и прохождение сквозь юнитов на %ms_duration%с.",
-    "en": "Absorbs %base_pct%%%–%max_pct%%% incoming damage (Lv.1–35) and echoes reflection around Spectre and her nearest portal (%portal_echo_radius% AoE). Hero damage grants +%ms_pct%%% MS and phasing for %ms_duration%s."
+    "ru": "Поглощает %absorb_pct%%% входящего урона (растёт с уровнем героя) и отражает его вокруг себя и ближайшего портала (в %portal_echo_radius% AoE). Урон от вражеских героев даёт +%ms_pct%%% MS и прохождение сквозь юнитов на %ms_duration%с.",
+    "en": "Absorbs %absorb_pct%%% incoming damage (scales with hero level) and echoes reflection around Spectre and her nearest portal (%portal_echo_radius% AoE). Hero damage grants +%ms_pct%%% MS and phasing for %ms_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_absorb_pct": {
+    "ru": "%ПОГЛОЩЕНИЯ УРОНА:",
+    "en": "%DAMAGE ABSORBED:"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_ms_pct": {
     "ru": "%БОНУС СКОРОСТИ:",
@@ -43,25 +43,9 @@
     "ru": "ОТКАТ [D] ЗА ЗАРЯД:",
     "en": "REALITY CD REDUCE:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_t1_q": {
-    "ru": "Призрачный кинжал",
-    "en": "Spectral Dagger"
-  },
-  "DOTA_Tooltip_ability_evo_spectre_t1_q_Description": {
-    "ru": "Выпускает теневой клинок по линии на %range%, нанося %damage% маг. урона (%creep_mult%x по крипам) и замедляя врагов на -%slow_pct%%% на %slow_duration%с. Даёт +%path_ms_pct%%% MS и прохождение сквозь препятствия на %path_duration%с.",
-    "en": "Hurls a shadow dagger along %range% range, dealing %damage% magic damage (%creep_mult%x vs creeps) and slowing enemies by -%slow_pct%%% for %slow_duration%s. Grants +%path_ms_pct%%% MS and unobstructed pathing for %path_duration%s."
-  },
-  "DOTA_Tooltip_ability_evo_spectre_t1_q_damage": {
-    "ru": "МАГ. УРОН:",
-    "en": "MAGIC DAMAGE:"
-  },
-  "DOTA_Tooltip_ability_evo_spectre_t1_q_slow_pct": {
-    "ru": "%ЗАМЕДЛЕНИЯ:",
-    "en": "%MOVE SLOW:"
-  },
-  "DOTA_Tooltip_ability_evo_spectre_t1_q_path_ms_pct": {
-    "ru": "%БОНУС СКОРОСТИ:",
-    "en": "%PATH MOVE SPEED:"
+  "DOTA_Tooltip_ability_spectre_spectral_dagger_Description": {
+    "ru": "Герой бросает кинжал, наносящий %damage% маг. урона (1.4x по крипам) и оставляющий теневой след, который замедляет врагов и ускоряет владельца на %bonus_movespeed%%%. Враги, поражённые кинжалом, также оставляют за собой след. Двигаясь по нему, Спектра преодолевает любые препятствия.",
+    "en": "Spectre flings a dagger dealing %damage% magic damage (1.4x vs creeps) and drawing a Shadow Path that slows enemies and speeds up Spectre by %bonus_movespeed%%%. Units hit also trail a Shadow Path. While treading it, Spectre phases through impassable terrain."
   },
   "DOTA_Tooltip_ability_evo_spectre_t1_w": {
     "ru": "Выброс пустоты",

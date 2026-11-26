@@ -1,0 +1,312 @@
+{
+  "key": "venomancer",
+  "hero": "npc_dota_hero_venomancer",
+  "model": "models/heroes/venomancer/venomancer.vmdl",
+  "diet": "CARNIVORE",
+  "attr": "AGI",
+  "keep_default_abilities": false,
+  "tags": ["venomancer", "spore", "toxic"],
+  "spell_pool_tags": ["poison", "summon", "utility"],
+  "innate": "evo_veno_glands",
+  "signature": "evo_veno_t1_q",
+  "stages": [
+    {
+      "id": "evo_body_t1_venomancer",
+      "tier_index": 1,
+      "attr": "AGI",
+      "name_ru": "Кислотный Побег",
+      "name_en": "Acid Sprout",
+      "desc_ru": "Дальнобойный симбиотический росток (дальность 450, обзор 1800/800) с Мутагенными железами, Сгустком слизи [Q] и Споровыми наростами [W].\nРазвивается в Иглострела Джунглей (AGI), Архитектора Улья (INT) или Спорового Симбионта (ALL).",
+      "desc_en": "Ranged symbiotic sprout (450 attack range, 1800/800 vision) with Mutagenic Glands, Slime Glob [Q], and Spore Growths [W].\nEvolves into Jungle Needle (AGI), Hive Architect (INT), or Spore Symbiont (Universal).",
+      "scale": 0.65,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 295
+      },
+      "abilities": [
+        "evo_veno_t1_q",
+        "evo_veno_t1_w",
+        "evo_veno_glands"
+      ],
+      "next_body_ids": [
+        "evo_body_t2_veno_needle",
+        "evo_body_t2_veno_hive",
+        "evo_body_t2_veno_symbiont"
+      ],
+      "color": [115, 200, 85],
+      "label_color": [140, 225, 105],
+      "wearables": []
+    },
+    {
+      "id": "evo_body_t2_veno_needle",
+      "tier_index": 2,
+      "attr": "AGI",
+      "name_ru": "Шипастый Плющ",
+      "name_en": "Barbed Ivy",
+      "desc_ru": "Иглострел Джунглей (AGI / дальнобойный снайпер): веерный Залп игл [Q], Разрывной стручок [W] и Ядовитое оперение [E].",
+      "desc_en": "Jungle Needle (AGI / ranged carry): conical Needle Volley [Q], Bursting Pod [W], and Venomous Plumage [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 500,
+        "move_speed": 305
+      },
+      "innate": "evo_veno_needle_glands",
+      "abilities": [
+        "evo_veno_needle_q",
+        "evo_veno_needle_w",
+        "evo_veno_needle_e",
+        "evo_veno_needle_glands"
+      ],
+      "next_body_ids": ["evo_body_t3_veno_needle"],
+      "color": [165, 225, 55],
+      "label_color": [180, 235, 75],
+      "wearables": [
+        "Tail of the Ferocious Toxicant"
+      ]
+    },
+    {
+      "id": "evo_body_t3_veno_needle",
+      "tier_index": 3,
+      "attr": "AGI",
+      "name_ru": "Хвостатый Снайпер",
+      "name_en": "Tailed Sniper",
+      "desc_ru": "Атакующие проки и срез хила на [Q], пробитие брони на [W], обездвиживание на [E] и усиленные железы.",
+      "desc_en": "Attack procs & heal cut on [Q], armor pierce on [W], hero root on [E], and empowered glands.",
+      "scale": 0.95,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 500,
+        "move_speed": 315
+      },
+      "innate": "evo_veno_needle_glands",
+      "abilities": [
+        "evo_veno_needle_q",
+        "evo_veno_needle_w",
+        "evo_veno_needle_e",
+        "evo_veno_needle_glands"
+      ],
+      "next_body_ids": ["evo_body_t4_veno_needle"],
+      "color": [225, 145, 45],
+      "label_color": [235, 165, 65],
+      "wearables": [
+        "Tail of the Ferocious Toxicant",
+        "Crest of the Ferocious Toxicant",
+        "Spitters of the Ferocious Toxicant"
+      ]
+    },
+    {
+      "id": "evo_body_t4_veno_needle",
+      "tier_index": 4,
+      "attr": "AGI",
+      "name_ru": "Иглострел Джунглей",
+      "name_en": "Jungle Needle",
+      "desc_ru": "Отскок назад со следом колючек [Q], откат [W] при добивании, расщепление стрел [E] и ульта Ливень Смертоцвета [R].",
+      "desc_en": "Back-leap with thorn trail [Q], [W] cooldown refund, split shots [E], and Deathbloom Barrage [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 500,
+        "move_speed": 325
+      },
+      "innate": "evo_veno_needle_glands",
+      "abilities": [
+        "evo_veno_needle_q",
+        "evo_veno_needle_w",
+        "evo_veno_needle_e",
+        "evo_veno_needle_r",
+        "evo_veno_needle_glands"
+      ],
+      "next_body_ids": [],
+      "color": [195, 45, 85],
+      "label_color": [225, 75, 115],
+      "wearables": [
+        "Tail of the Ferocious Toxicant",
+        "Crest of the Ferocious Toxicant",
+        "Spitters of the Ferocious Toxicant",
+        "Spines of the Ferocious Toxicant"
+      ]
+    },
+    {
+      "id": "evo_body_t2_veno_hive",
+      "tier_index": 2,
+      "attr": "INT",
+      "name_ru": "Рассадник Спор",
+      "name_en": "Spore Nursery",
+      "desc_ru": "Архитектор Улья (INT / саммонер турелей): Гейзер миазмов [Q], сеть живых Био-турелей [W] и Детонация кокона / Перегрузка улья [E].",
+      "desc_en": "Hive Architect (INT / turret summoner): Miasma Geyser [Q], Bio-Turret network [W], and Cocoon Detonation / Hive Overload [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 300
+      },
+      "innate": "evo_veno_hive_glands",
+      "abilities": [
+        "evo_veno_hive_q",
+        "evo_veno_hive_w",
+        "evo_veno_hive_e",
+        "evo_veno_hive_glands"
+      ],
+      "next_body_ids": ["evo_body_t3_veno_hive"],
+      "color": [65, 195, 115],
+      "label_color": [85, 215, 135],
+      "wearables": [
+        "Cult of Aktok"
+      ]
+    },
+    {
+      "id": "evo_body_t3_veno_hive",
+      "tier_index": 3,
+      "attr": "INT",
+      "name_ru": "Хранитель Гнезда",
+      "name_en": "Nest Keeper",
+      "desc_ru": "Облако промахов [Q], токсичные нити между турелями [W], взрыв выбранной турели с оглушением [E] и турельные железы.",
+      "desc_en": "Miss cloud [Q], toxic turret tethers [W], targeted turret blast stun [E], and turret glands.",
+      "scale": 0.95,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 310
+      },
+      "innate": "evo_veno_hive_glands",
+      "abilities": [
+        "evo_veno_hive_q",
+        "evo_veno_hive_w",
+        "evo_veno_hive_e",
+        "evo_veno_hive_glands"
+      ],
+      "next_body_ids": ["evo_body_t4_veno_hive"],
+      "color": [125, 75, 215],
+      "label_color": [155, 105, 240],
+      "wearables": [
+        "Cult of Aktok",
+        "Aktok's Armor",
+        "The Orb of Aktok"
+      ]
+    },
+    {
+      "id": "evo_body_t4_veno_hive",
+      "tier_index": 4,
+      "attr": "INT",
+      "name_ru": "Архитектор Улья",
+      "name_en": "Hive Architect",
+      "desc_ru": "Бесплатная турель с гейзера [Q], 50% MR и сплеш турелей [W], перенос урона в турель [E] и Материнский Обелиск [R].",
+      "desc_en": "Free geyser turret [Q], 50% MR & splash turrets [W], turret damage link [E], and Mother Obelisk [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 320
+      },
+      "innate": "evo_veno_hive_glands",
+      "abilities": [
+        "evo_veno_hive_q",
+        "evo_veno_hive_w",
+        "evo_veno_hive_e",
+        "evo_veno_hive_r",
+        "evo_veno_hive_glands"
+      ],
+      "next_body_ids": [],
+      "color": [45, 215, 195],
+      "label_color": [80, 235, 215],
+      "wearables": [
+        "Cult of Aktok",
+        "Aktok's Armor",
+        "The Orb of Aktok",
+        "Aktok's Emissaries"
+      ]
+    },
+    {
+      "id": "evo_body_t2_veno_symbiont",
+      "tier_index": 2,
+      "attr": "ALL",
+      "name_ru": "Цветущий Побег",
+      "name_en": "Blooming Sprout",
+      "desc_ru": "Споровый Симбионт (Универсал / боевой целитель): Волна пыльцы [Q], Живой кокон [W] и Аура мицелия [E].",
+      "desc_en": "Spore Symbiont (Universal / combat healer): Pollen Wave [Q], Living Cocoon [W], and Mycelium Aura [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 305
+      },
+      "innate": "evo_veno_symbiont_glands",
+      "abilities": [
+        "evo_veno_symbiont_q",
+        "evo_veno_symbiont_w",
+        "evo_veno_symbiont_e",
+        "evo_veno_symbiont_glands"
+      ],
+      "next_body_ids": ["evo_body_t3_veno_symbiont"],
+      "color": [95, 235, 185],
+      "label_color": [120, 245, 200],
+      "wearables": [
+        "Mechamancer - Back"
+      ]
+    },
+    {
+      "id": "evo_body_t3_veno_symbiont",
+      "tier_index": 3,
+      "attr": "ALL",
+      "name_ru": "Проводник Жизни",
+      "name_en": "Life Conduit",
+      "desc_ru": "Развеивание + щит на Волне [Q], паразитический рут на врагов [W], всплеск ауры [E] и лечащие железы.",
+      "desc_en": "Dispel + shield on Wave [Q], parasitic enemy root [W], aura surge [E], and healing spore pulses.",
+      "scale": 0.95,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 315
+      },
+      "innate": "evo_veno_symbiont_glands",
+      "abilities": [
+        "evo_veno_symbiont_q",
+        "evo_veno_symbiont_w",
+        "evo_veno_symbiont_e",
+        "evo_veno_symbiont_glands"
+      ],
+      "next_body_ids": ["evo_body_t4_veno_symbiont"],
+      "color": [85, 185, 250],
+      "label_color": [110, 205, 255],
+      "wearables": [
+        "Mechamancer - Back",
+        "Mechamancer - Head",
+        "Mechamancer - Arms"
+      ]
+    },
+    {
+      "id": "evo_body_t4_veno_symbiont",
+      "tier_index": 4,
+      "attr": "ALL",
+      "name_ru": "Споровый Симбионт",
+      "name_en": "Spore Symbiont",
+      "desc_ru": "Возвратная волна [Q], целебный взрыв кокона [W], статы за героев в пыльце [E] и Кольцо Возрождения [R].",
+      "desc_en": "Returning wave [Q], healing cocoon burst [W], bonus stats per pollen hero [E], and Ring of Rebirth [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "stats": {
+        "attack_range": 450,
+        "move_speed": 325
+      },
+      "innate": "evo_veno_symbiont_glands",
+      "abilities": [
+        "evo_veno_symbiont_q",
+        "evo_veno_symbiont_w",
+        "evo_veno_symbiont_e",
+        "evo_veno_symbiont_r",
+        "evo_veno_symbiont_glands"
+      ],
+      "next_body_ids": [],
+      "color": [235, 225, 115],
+      "label_color": [245, 235, 135],
+      "wearables": [
+        "Mechamancer - Back",
+        "Mechamancer - Head",
+        "Mechamancer - Arms",
+        "Mechamancer - Tail"
+      ]
+    }
+  ]
+}

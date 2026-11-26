@@ -6,6 +6,7 @@ import { EVO_BRANCH_NYX_BODIES } from "./branches/nyx";
 import { EVO_BRANCH_NYX_BODIES_2 } from "./branches/nyx_2";
 import { EVO_BRANCH_SLARK_BODIES } from "./branches/slark";
 import { EVO_BRANCH_SPECTRE_BODIES } from "./branches/spectre";
+import { EVO_BRANCH_VENOMANCER_BODIES } from "./branches/venomancer";
 
 export const EVO_DEFAULT_START_BODY_ID = "evo_body_t1_amoeba";
 
@@ -17,6 +18,7 @@ export const EVO_BODIES_CATALOG: readonly BodyDefinition[] = [
     ...EVO_BRANCH_NYX_BODIES_2,
     ...EVO_BRANCH_SLARK_BODIES,
     ...EVO_BRANCH_SPECTRE_BODIES,
+    ...EVO_BRANCH_VENOMANCER_BODIES,
 ];
 
 export function getBodyDefinition(bodyId: string): BodyDefinition | undefined {

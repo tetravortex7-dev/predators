@@ -3,7 +3,7 @@ local Set = ____lualib.Set
 local __TS__New = ____lualib.__TS__New
 local __TS__ObjectAssign = ____lualib.__TS__ObjectAssign
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 3,["14"] = 4,["15"] = 4,["16"] = 13,["17"] = 13,["18"] = 13,["19"] = 13,["20"] = 13,["21"] = 13,["22"] = 13,["23"] = 13,["24"] = 22,["25"] = 23,["26"] = 24,["27"] = 25,["29"] = 22,["30"] = 29,["31"] = 34,["34"] = 35,["35"] = 36,["36"] = 29,["37"] = 39,["38"] = 45,["41"] = 46,["42"] = 47,["45"] = 48,["47"] = 49,["48"] = 50,["49"] = 50,["51"] = 51,["53"] = 52,["54"] = 52,["56"] = 53,["57"] = 54,["64"] = 39,["65"] = 59,["66"] = 60,["67"] = 61,["68"] = 63,["69"] = 64,["70"] = 65,["71"] = 67,["72"] = 68,["73"] = 69,["74"] = 70,["75"] = 72,["76"] = 72,["77"] = 72,["78"] = 72,["79"] = 72,["80"] = 72,["81"] = 72,["82"] = 79,["83"] = 80,["84"] = 81,["85"] = 82,["88"] = 85,["89"] = 86,["90"] = 87,["91"] = 88,["92"] = 90,["93"] = 91,["95"] = 94,["96"] = 95,["97"] = 96,["98"] = 96,["99"] = 96,["100"] = 96,["101"] = 96,["102"] = 96,["103"] = 96,["105"] = 99,["106"] = 100,["107"] = 101,["109"] = 103,["110"] = 104,["111"] = 104,["112"] = 104,["113"] = 104,["114"] = 104,["115"] = 104,["116"] = 104,["118"] = 59,["119"] = 108,["120"] = 109,["121"] = 110,["122"] = 108,["123"] = 113,["124"] = 113,["125"] = 113,["126"] = 113});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 3,["14"] = 4,["15"] = 4,["16"] = 13,["17"] = 13,["18"] = 13,["19"] = 13,["20"] = 13,["21"] = 13,["22"] = 13,["23"] = 13,["24"] = 22,["25"] = 23,["26"] = 24,["27"] = 25,["29"] = 22,["30"] = 29,["31"] = 34,["34"] = 35,["35"] = 36,["36"] = 29,["37"] = 39,["38"] = 45,["41"] = 46,["42"] = 47,["45"] = 48,["47"] = 49,["48"] = 50,["49"] = 50,["51"] = 51,["53"] = 52,["54"] = 52,["56"] = 53,["57"] = 54,["64"] = 39,["65"] = 59,["66"] = 60,["67"] = 61,["68"] = 63,["69"] = 64,["70"] = 65,["71"] = 67,["72"] = 68,["73"] = 69,["74"] = 70,["75"] = 72,["76"] = 75,["77"] = 76,["79"] = 79,["80"] = 79,["81"] = 79,["82"] = 79,["83"] = 79,["84"] = 79,["85"] = 79,["86"] = 79,["87"] = 79,["88"] = 79,["89"] = 79,["90"] = 79,["91"] = 79,["92"] = 79,["93"] = 79,["94"] = 79,["95"] = 79,["96"] = 79,["97"] = 97,["98"] = 98,["99"] = 99,["100"] = 100,["103"] = 103,["104"] = 104,["105"] = 105,["106"] = 106,["107"] = 107,["108"] = 108,["109"] = 109,["110"] = 110,["111"] = 112,["112"] = 113,["114"] = 116,["115"] = 117,["116"] = 118,["117"] = 118,["118"] = 118,["119"] = 118,["120"] = 118,["121"] = 118,["122"] = 118,["124"] = 121,["125"] = 122,["126"] = 123,["128"] = 125,["129"] = 126,["130"] = 126,["131"] = 126,["132"] = 126,["133"] = 126,["134"] = 126,["135"] = 126,["137"] = 59,["138"] = 130,["139"] = 131,["140"] = 132,["141"] = 130,["142"] = 135,["143"] = 135,["144"] = 135,["145"] = 135});
 local ____exports = {}
 local ____GameMode = require("GameMode")
 local EvoGameMode = ____GameMode.EvoGameMode
@@ -72,12 +72,27 @@ local function Precache(context)
     seenParticles:add(lionImpaleVpcf)
     PrecacheResource("particle", lionImpaleVpcf, context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context)
+    local extraModels = {"models/heroes/venomancer/venomancer_ward.vmdl"}
+    for ____, modelPath in ipairs(extraModels) do
+        precacheUniqueModel(nil, modelPath, seenModels, context)
+    end
     local extraParticles = {
         "particles/items_fx/blink_dagger_start.vpcf",
         "particles/items_fx/blink_dagger_end.vpcf",
         "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
         "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield_explosion.vpcf",
-        "particles/units/heroes/hero_obsidian_destroyer/obsidian_destroyer_arcane_orb_hit.vpcf"
+        "particles/units/heroes/hero_obsidian_destroyer/obsidian_destroyer_arcane_orb_hit.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_venomous_gale.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_venomous_gale_impact.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_latent_poison_projectile.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_poison_nova.vpcf",
+        "particles/units/heroes/hero_viper/viper_nethertoxin.vpcf",
+        "particles/units/heroes/hero_treant/treant_bramble_root.vpcf",
+        "particles/units/heroes/hero_treant/scepter_overgrowth_aura.vpcf",
+        "particles/units/heroes/hero_wisp/wisp_guardian_explosion.vpcf",
+        "particles/units/heroes/hero_wisp/wisp_overcharge.vpcf"
     }
     for ____, vpcf in ipairs(extraParticles) do
         if not seenParticles:has(vpcf) then
@@ -85,10 +100,14 @@ local function Precache(context)
             PrecacheResource("particle", vpcf, context)
         end
     end
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_obsidian_destroyer.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts", context)
     for ____, modelPath in ipairs(EVO_NEUTRAL_CREEP_MODELS) do
         precacheUniqueModel(nil, modelPath, seenModels, context)
     end

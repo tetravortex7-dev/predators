@@ -19,6 +19,7 @@ import {
     BOSS_PASSIVE_GOLD_PER_SEC,
     BOSS_PASSIVE_XP_PER_SEC,
     BOSS_TEAM,
+    BossSpawnPoint,
     PatrolWaypoint,
     computeBossScale,
     discoverBossMapPositions,
@@ -30,7 +31,7 @@ export class BossManager {
     private readonly bosses: Map<string, ActiveBossRuntime> = new Map();
     private readonly entIndexToBossId: Map<EntityIndex, string> = new Map();
     private patrolWaypoints: PatrolWaypoint[] = [];
-    private bossSpawnPoints: Vector[] = [];
+    private bossSpawnPoints: BossSpawnPoint[] = [];
     private fountainPositions: Vector[] = [];
     private activeBossIds: string[] = [];
     private thinkerStarted = false;
@@ -242,7 +243,7 @@ export class BossManager {
         runtime.lastMoveOrderTime = -999;
         runtime.lastAttackTargetIndex = undefined;
         runtime.lastAttackOrderTime = -999;
-        runtime.targetWaypoint = pickSmartWaypoint(unit.GetAbsOrigin(), runtime.level, this.patrolWaypoints);
+        runtime.targetWaypoint = pickSmartWaypoint(unit.GetAbsOrigin(), now, this.patrolWaypoints);
         this.entIndexToBossId.set(unit.entindex(), runtime.definition.id);
 
         const targetScale = computeBossScale(runtime.definition, runtime.level);

@@ -11,6 +11,7 @@ import { EvolutionManager } from "./systems/EvolutionManager";
 import { FountainManager } from "./systems/FountainManager";
 import { MatchScoreManager } from "./systems/MatchScoreManager";
 import { NeutralCampsManager } from "./systems/NeutralCampsManager";
+import { OrderFilterManager } from "./systems/OrderFilterManager";
 import { PassiveGoldManager } from "./systems/PassiveGoldManager";
 import { PhaseManager } from "./systems/PhaseManager";
 import { RuneManager } from "./systems/RuneManager";
@@ -25,6 +26,7 @@ export class EvoGameMode {
     public readonly evolutionManager: EvolutionManager;
     public readonly spellShopManager: SpellShopManager;
     public readonly damageFilterManager: DamageFilterManager;
+    public readonly orderFilterManager: OrderFilterManager;
     public readonly passiveGoldManager: PassiveGoldManager;
     public readonly phaseManager: PhaseManager;
     public readonly neutralCampsManager: NeutralCampsManager;
@@ -48,6 +50,7 @@ export class EvoGameMode {
             this.lazyPrecacheManager
         );
         this.damageFilterManager = new DamageFilterManager();
+        this.orderFilterManager = new OrderFilterManager();
         this.passiveGoldManager = new PassiveGoldManager(this.eventBus);
         this.phaseManager = new PhaseManager(this.eventBus);
         this.neutralCampsManager = new NeutralCampsManager(this.eventBus);
@@ -87,7 +90,7 @@ export class EvoGameMode {
 
         GameRules.SetGoldPerTick(0);
         GameRules.SetGoldTickTime(EVO_CONSTANTS.GOLD_TICK_TIME);
-        GameRules.SetStartingGold(0);
+        GameRules.SetStartingGold(EVO_CONSTANTS.STARTING_GOLD);
         GameRules.SetUseUniversalShopMode(false);
         gameMode.SetFreeCourierModeEnabled(false);
         gameMode.SetNeutralStashEnabled(false);
@@ -106,6 +109,8 @@ export class EvoGameMode {
         gameMode.SetRuneEnabled(RuneType.SHIELD, true);
 
         gameMode.SetBuybackEnabled(true);
+        gameMode.SetCustomScanCooldown(EVO_CONSTANTS.SCAN_COOLDOWN_SECONDS);
+        gameMode.SetCustomScanMaxCharges(EVO_CONSTANTS.SCAN_MAX_CHARGES);
 
         if (IsInToolsMode()) {
             gameMode.SetFogOfWarDisabled(true);
@@ -161,6 +166,7 @@ export class EvoGameMode {
         this.spellShopManager.init();
         this.evolutionManager.init();
         this.damageFilterManager.init();
+        this.orderFilterManager.init();
         this.passiveGoldManager.init();
         this.phaseManager.init();
         this.damageFilterManager.registerGuard((event) => this.phaseManager.filterDamage(event));

@@ -1,9 +1,7 @@
 local ____lualib = require("lualib_bundle")
-local Set = ____lualib.Set
-local __TS__New = ____lualib.__TS__New
 local __TS__ArrayFilter = ____lualib.__TS__ArrayFilter
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 7,["14"] = 7,["15"] = 7,["16"] = 8,["17"] = 10,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 15,["22"] = 16,["23"] = 19,["24"] = 20,["25"] = 21,["27"] = 23,["28"] = 24,["30"] = 26,["31"] = 26,["32"] = 26,["33"] = 26,["34"] = 26,["35"] = 26,["36"] = 26,["37"] = 19,["38"] = 29,["39"] = 34,["40"] = 35,["41"] = 35,["42"] = 35,["43"] = 35,["44"] = 36,["45"] = 38,["46"] = 39,["48"] = 42,["50"] = 43,["51"] = 43,["52"] = 44,["53"] = 45,["54"] = 46,["55"] = 47,["58"] = 43,["61"] = 51,["62"] = 29,["63"] = 54,["64"] = 59,["65"] = 60,["66"] = 61,["67"] = 62,["68"] = 63,["69"] = 64,["70"] = 65,["73"] = 68,["74"] = 54,["75"] = 71,["76"] = 76,["77"] = 76,["78"] = 76,["79"] = 76,["80"] = 77,["81"] = 78,["82"] = 79,["84"] = 82,["85"] = 83,["86"] = 83,["87"] = 82,["88"] = 85,["89"] = 87,["90"] = 87,["91"] = 87,["92"] = 88,["93"] = 88,["94"] = 88,["95"] = 88,["96"] = 88,["97"] = 88,["98"] = 88,["99"] = 88,["100"] = 88,["101"] = 88,["102"] = 88,["103"] = 99,["104"] = 87,["105"] = 87,["106"] = 102,["107"] = 103,["108"] = 104,["109"] = 105,["110"] = 71,["111"] = 108,["112"] = 113,["113"] = 113,["115"] = 115,["116"] = 116,["117"] = 117,["118"] = 118,["119"] = 118,["120"] = 118,["121"] = 118,["122"] = 118,["123"] = 119,["124"] = 120,["125"] = 121,["126"] = 122,["127"] = 123,["128"] = 124,["131"] = 127,["132"] = 108,["133"] = 130,["134"] = 131,["135"] = 131,["137"] = 133,["138"] = 134,["139"] = 135,["140"] = 136,["141"] = 136,["142"] = 136,["143"] = 136,["144"] = 136,["145"] = 137,["146"] = 138,["147"] = 139,["148"] = 140,["149"] = 141,["152"] = 144,["153"] = 130,["154"] = 147,["155"] = 148,["156"] = 149,["157"] = 150,["158"] = 151,["160"] = 152,["161"] = 152,["163"] = 153,["164"] = 153,["165"] = 153,["166"] = 153,["167"] = 153,["168"] = 154,["169"] = 155,["170"] = 156,["175"] = 159,["176"] = 147,["177"] = 162,["178"] = 163,["179"] = 163,["180"] = 163,["181"] = 163,["182"] = 163,["183"] = 163,["184"] = 162,["185"] = 171,["186"] = 179,["189"] = 181,["190"] = 182,["193"] = 186,["194"] = 187,["195"] = 188,["196"] = 190,["197"] = 190,["198"] = 190,["199"] = 190,["200"] = 190,["201"] = 190,["202"] = 190,["203"] = 192,["204"] = 193,["205"] = 194,["206"] = 195,["207"] = 196,["208"] = 197,["209"] = 197,["210"] = 197,["211"] = 197,["212"] = 197,["213"] = 197,["217"] = 207,["218"] = 208,["219"] = 209,["220"] = 210,["221"] = 211,["222"] = 212,["223"] = 213,["224"] = 214,["225"] = 215,["228"] = 219,["229"] = 220,["230"] = 220,["231"] = 220,["232"] = 220,["233"] = 220,["234"] = 220,["235"] = 220,["236"] = 220,["237"] = 220,["238"] = 220,["239"] = 220,["240"] = 220,["241"] = 220,["242"] = 220,["243"] = 239,["244"] = 240,["245"] = 241,["246"] = 242,["247"] = 242,["248"] = 242,["249"] = 242,["250"] = 242,["251"] = 243,["252"] = 244,["257"] = 250,["258"] = 251,["259"] = 252,["261"] = 255,["262"] = 256,["263"] = 257,["264"] = 258,["265"] = 259,["266"] = 259,["267"] = 259,["268"] = 259,["269"] = 259,["270"] = 259,["274"] = 269,["275"] = 270,["276"] = 271,["277"] = 272,["278"] = 273,["279"] = 275,["280"] = 276,["281"] = 277,["282"] = 277,["283"] = 277,["284"] = 277,["285"] = 277,["286"] = 277,["287"] = 277,["288"] = 277,["289"] = 278,["293"] = 282,["294"] = 283,["296"] = 285,["297"] = 286,["298"] = 287,["299"] = 288,["302"] = 291,["303"] = 292,["304"] = 293,["305"] = 294,["309"] = 299,["310"] = 300,["311"] = 301,["312"] = 301,["313"] = 301,["314"] = 301,["315"] = 301,["316"] = 302,["317"] = 303,["320"] = 306,["321"] = 307,["322"] = 308,["323"] = 308,["324"] = 308,["325"] = 308,["326"] = 308,["327"] = 308,["331"] = 318,["332"] = 318,["333"] = 318,["334"] = 318,["335"] = 318,["336"] = 318,["337"] = 318,["338"] = 318,["339"] = 318,["340"] = 318,["341"] = 318,["342"] = 318,["343"] = 318,["344"] = 318,["345"] = 330,["346"] = 331,["347"] = 332,["348"] = 333,["349"] = 334,["350"] = 335,["351"] = 335,["352"] = 335,["353"] = 335,["354"] = 335,["355"] = 335,["356"] = 335,["357"] = 336,["361"] = 340,["362"] = 341,["363"] = 342,["367"] = 347,["368"] = 348,["369"] = 349,["371"] = 352,["372"] = 353,["373"] = 354,["374"] = 355,["376"] = 171});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 1,["7"] = 2,["8"] = 3,["9"] = 4,["10"] = 5,["11"] = 7,["12"] = 7,["13"] = 7,["14"] = 8,["15"] = 8,["16"] = 9,["17"] = 11,["18"] = 14,["19"] = 15,["20"] = 16,["21"] = 17,["22"] = 18,["23"] = 21,["24"] = 26,["25"] = 26,["26"] = 26,["27"] = 26,["28"] = 27,["29"] = 29,["30"] = 30,["32"] = 33,["34"] = 34,["35"] = 34,["36"] = 35,["37"] = 36,["38"] = 37,["39"] = 38,["42"] = 34,["45"] = 42,["46"] = 21,["47"] = 45,["48"] = 51,["49"] = 51,["50"] = 51,["51"] = 51,["52"] = 52,["53"] = 53,["54"] = 53,["55"] = 53,["56"] = 53,["57"] = 56,["58"] = 56,["59"] = 58,["60"] = 59,["61"] = 60,["62"] = 61,["63"] = 62,["64"] = 63,["65"] = 64,["68"] = 67,["69"] = 45,["70"] = 70,["71"] = 75,["72"] = 76,["73"] = 76,["74"] = 76,["75"] = 76,["76"] = 79,["77"] = 80,["78"] = 80,["79"] = 80,["80"] = 80,["81"] = 81,["82"] = 82,["83"] = 83,["85"] = 86,["86"] = 87,["87"] = 87,["88"] = 86,["89"] = 89,["90"] = 91,["91"] = 91,["92"] = 91,["93"] = 92,["94"] = 92,["95"] = 92,["96"] = 92,["97"] = 92,["98"] = 92,["99"] = 92,["100"] = 92,["101"] = 92,["102"] = 92,["103"] = 92,["104"] = 103,["105"] = 91,["106"] = 91,["107"] = 106,["108"] = 107,["109"] = 108,["110"] = 109,["111"] = 70,["112"] = 112,["113"] = 117,["114"] = 117,["116"] = 119,["117"] = 120,["118"] = 121,["119"] = 122,["120"] = 122,["121"] = 122,["122"] = 122,["123"] = 122,["124"] = 123,["125"] = 124,["126"] = 125,["127"] = 126,["128"] = 127,["129"] = 128,["132"] = 131,["133"] = 112,["134"] = 134,["135"] = 135,["136"] = 135,["138"] = 137,["139"] = 138,["140"] = 139,["141"] = 140,["142"] = 140,["143"] = 140,["144"] = 140,["145"] = 140,["146"] = 141,["147"] = 142,["148"] = 143,["149"] = 144,["150"] = 145,["153"] = 148,["154"] = 134,["155"] = 151,["156"] = 152,["157"] = 153,["158"] = 154,["159"] = 155,["161"] = 156,["162"] = 156,["164"] = 157,["165"] = 157,["166"] = 157,["167"] = 157,["168"] = 157,["169"] = 158,["170"] = 159,["171"] = 160,["176"] = 163,["177"] = 151,["178"] = 166,["179"] = 167,["180"] = 167,["181"] = 167,["182"] = 167,["183"] = 167,["184"] = 167,["185"] = 166,["186"] = 175,["187"] = 183,["190"] = 185,["191"] = 186,["194"] = 190,["195"] = 191,["196"] = 192,["197"] = 194,["198"] = 194,["199"] = 194,["200"] = 194,["201"] = 194,["202"] = 194,["203"] = 194,["204"] = 196,["205"] = 197,["206"] = 198,["207"] = 199,["208"] = 200,["209"] = 201,["210"] = 201,["211"] = 201,["212"] = 201,["213"] = 201,["214"] = 201,["218"] = 211,["219"] = 212,["220"] = 213,["221"] = 214,["222"] = 214,["223"] = 214,["224"] = 214,["225"] = 214,["226"] = 214,["227"] = 214,["228"] = 215,["229"] = 216,["230"] = 217,["231"] = 218,["232"] = 219,["235"] = 223,["236"] = 224,["237"] = 224,["238"] = 224,["239"] = 224,["240"] = 224,["241"] = 224,["242"] = 224,["243"] = 224,["244"] = 224,["245"] = 224,["246"] = 224,["247"] = 224,["248"] = 224,["249"] = 224,["250"] = 243,["251"] = 244,["252"] = 245,["253"] = 246,["254"] = 246,["255"] = 246,["256"] = 246,["257"] = 246,["258"] = 247,["259"] = 248,["264"] = 254,["265"] = 255,["266"] = 255,["267"] = 255,["268"] = 255,["269"] = 255,["270"] = 255,["271"] = 255,["272"] = 256,["274"] = 259,["275"] = 260,["276"] = 261,["277"] = 262,["278"] = 263,["279"] = 263,["280"] = 263,["281"] = 263,["282"] = 263,["283"] = 263,["287"] = 273,["288"] = 274,["289"] = 275,["290"] = 276,["291"] = 277,["292"] = 279,["293"] = 280,["294"] = 281,["295"] = 281,["296"] = 281,["297"] = 281,["298"] = 281,["299"] = 281,["300"] = 281,["301"] = 281,["302"] = 282,["306"] = 286,["307"] = 287,["309"] = 289,["310"] = 290,["311"] = 291,["312"] = 292,["315"] = 295,["316"] = 296,["317"] = 297,["318"] = 298,["322"] = 303,["323"] = 304,["324"] = 305,["325"] = 305,["326"] = 305,["327"] = 305,["328"] = 305,["329"] = 306,["330"] = 307,["333"] = 310,["334"] = 311,["335"] = 312,["336"] = 312,["337"] = 312,["338"] = 312,["339"] = 312,["340"] = 312,["344"] = 322,["345"] = 322,["346"] = 322,["347"] = 322,["348"] = 322,["349"] = 322,["350"] = 322,["351"] = 322,["352"] = 322,["353"] = 322,["354"] = 322,["355"] = 322,["356"] = 322,["357"] = 322,["358"] = 334,["359"] = 335,["360"] = 336,["361"] = 337,["362"] = 338,["363"] = 339,["364"] = 339,["365"] = 339,["366"] = 339,["367"] = 339,["368"] = 339,["369"] = 339,["370"] = 340,["374"] = 344,["375"] = 345,["376"] = 346,["380"] = 351,["381"] = 352,["382"] = 353,["384"] = 356,["385"] = 357,["386"] = 358,["387"] = 359,["389"] = 175});
 local ____exports = {}
 local ____boss_abilities = require("systems.boss.boss_abilities")
 local tryCastDefensiveItem = ____boss_abilities.tryCastDefensiveItem
@@ -13,6 +11,8 @@ local tryUseMobilityItem = ____boss_abilities.tryUseMobilityItem
 local ____boss_progression = require("systems.boss.boss_progression")
 local consumeRuneForBoss = ____boss_progression.consumeRuneForBoss
 local tryMaintainBossHealth = ____boss_progression.tryMaintainBossHealth
+local ____game_constants = require("data.game_constants")
+local isCampSizeAllowedAtTime = ____game_constants.isCampSizeAllowedAtTime
 local ____boss_types = require("systems.boss.boss_types")
 local BOSS_TEAM = ____boss_types.BOSS_TEAM
 local RECOVER_HP_THRESHOLD = ____boss_types.RECOVER_HP_THRESHOLD
@@ -20,26 +20,10 @@ local RETREAT_HP_THRESHOLD = ____boss_types.RETREAT_HP_THRESHOLD
 local distance2D = ____boss_types.distance2D
 local isHeroProtectedByFountain = ____boss_types.isHeroProtectedByFountain
 local isNearAnyFountain = ____boss_types.isNearAnyFountain
-local function getAllowedCampSizes(self, bossLevel)
-    if bossLevel <= 15 then
-        return __TS__New(Set, {"small", "medium"})
-    end
-    if bossLevel <= 40 then
-        return __TS__New(Set, {"small", "medium", "hard"})
-    end
-    return __TS__New(Set, {
-        "small",
-        "medium",
-        "hard",
-        "strong",
-        "random"
-    })
-end
-function ____exports.pickSmartWaypoint(self, currentPos, bossLevel, patrolWaypoints)
-    local allowedSizes = getAllowedCampSizes(nil, bossLevel)
+function ____exports.pickSmartWaypoint(self, currentPos, matchTime, patrolWaypoints)
     local preferred = __TS__ArrayFilter(
         patrolWaypoints,
-        function(____, w) return allowedSizes:has(w.campSize) end
+        function(____, w) return isCampSizeAllowedAtTime(nil, w.campSize, matchTime) end
     )
     local pool = #preferred > 0 and preferred or patrolWaypoints
     if #pool == 1 then
@@ -60,10 +44,21 @@ function ____exports.pickSmartWaypoint(self, currentPos, bossLevel, patrolWaypoi
     end
     return best
 end
-local function pickRetreatPosition(self, currentPos, bossSpawnPoints, patrolWaypoints)
-    local best = bossSpawnPoints[1] or Vector(0, 0, 128)
+local function pickRetreatPosition(self, currentPos, matchTime, bossSpawnPoints, patrolWaypoints)
+    local allowedWaypoints = __TS__ArrayFilter(
+        patrolWaypoints,
+        function(____, wp) return isCampSizeAllowedAtTime(nil, wp.campSize, matchTime) end
+    )
+    local waypointPool = #allowedWaypoints > 0 and allowedWaypoints or patrolWaypoints
+    local allowedSpawns = __TS__ArrayFilter(
+        bossSpawnPoints,
+        function(____, sp) return sp.campSize == nil or isCampSizeAllowedAtTime(nil, sp.campSize, matchTime) end
+    )
+    local ____opt_0 = allowedSpawns[1] or bossSpawnPoints[1]
+    local fallbackSpawn = ____opt_0 and ____opt_0.position or Vector(0, 0, 128)
+    local best = fallbackSpawn
     local bestDist = -1
-    for ____, wp in ipairs(patrolWaypoints) do
+    for ____, wp in ipairs(waypointPool) do
         local dist = distance2D(nil, currentPos, wp.position)
         if dist >= 1200 and dist <= 2600 and dist > bestDist then
             bestDist = dist
@@ -73,25 +68,31 @@ local function pickRetreatPosition(self, currentPos, bossSpawnPoints, patrolWayp
     return best
 end
 function ____exports.pickRandomBossSpawnOrigin(self, runtime, bossSpawnPoints, fountainPositions)
-    local safePool = __TS__ArrayFilter(
+    local now = GameRules:GetDOTATime(false, false)
+    local timeAllowed = __TS__ArrayFilter(
         bossSpawnPoints,
-        function(____, pos) return not isNearAnyFountain(nil, pos, fountainPositions, 1600) end
+        function(____, pt) return pt.campSize == nil or isCampSizeAllowedAtTime(nil, pt.campSize, now) end
     )
-    local basePool = #safePool > 0 and safePool or bossSpawnPoints
+    local unlockedPool = #timeAllowed > 0 and timeAllowed or bossSpawnPoints
+    local safePool = __TS__ArrayFilter(
+        unlockedPool,
+        function(____, pt) return not isNearAnyFountain(nil, pt.position, fountainPositions, 1600) end
+    )
+    local basePool = #safePool > 0 and safePool or unlockedPool
     if #basePool == 0 then
         return Vector(0, 0, 128)
     end
     local nonRepeat = runtime.lastSpawnPosition and __TS__ArrayFilter(
         basePool,
-        function(____, pos) return distance2D(nil, pos, runtime.lastSpawnPosition) > 400 end
+        function(____, pt) return distance2D(nil, pt.position, runtime.lastSpawnPosition) > 400 end
     ) or basePool
     local candidates = #nonRepeat > 0 and nonRepeat or basePool
     local awayFromHeroes = __TS__ArrayFilter(
         candidates,
-        function(____, pos)
+        function(____, pt)
             local nearby = FindUnitsInRadius(
                 BOSS_TEAM,
-                pos,
+                pt.position,
                 nil,
                 1100,
                 2,
@@ -104,7 +105,7 @@ function ____exports.pickRandomBossSpawnOrigin(self, runtime, bossSpawnPoints, f
         end
     )
     local finalPool = #awayFromHeroes > 0 and awayFromHeroes or candidates
-    local chosen = finalPool[RandomInt(0, #finalPool - 1) + 1]
+    local chosen = finalPool[RandomInt(0, #finalPool - 1) + 1].position
     runtime.lastSpawnPosition = chosen
     return chosen
 end
@@ -201,7 +202,7 @@ function ____exports.tickBossRoamingAI(self, runtime, unit, now, fountainPositio
         now
     )
     if isNearAnyFountain(nil, origin, fountainPositions, 1450) then
-        local safeWaypoint = ____exports.pickSmartWaypoint(nil, origin, runtime.level, patrolWaypoints)
+        local safeWaypoint = ____exports.pickSmartWaypoint(nil, origin, now, patrolWaypoints)
         runtime.targetWaypoint = safeWaypoint
         if not unit:IsMoving() or now - runtime.lastMoveOrderTime >= 1 then
             runtime.lastMoveOrderTime = now
@@ -217,7 +218,13 @@ function ____exports.tickBossRoamingAI(self, runtime, unit, now, fountainPositio
     if not runtime.inCourage then
         if not runtime.retreating and hpRatio <= RETREAT_HP_THRESHOLD then
             runtime.retreating = true
-            runtime.retreatPosition = pickRetreatPosition(nil, origin, bossSpawnPoints, patrolWaypoints)
+            runtime.retreatPosition = pickRetreatPosition(
+                nil,
+                origin,
+                now,
+                bossSpawnPoints,
+                patrolWaypoints
+            )
             runtime.lastMoveOrderTime = -999
         elseif runtime.retreating and hpRatio >= RECOVER_HP_THRESHOLD then
             runtime.retreating = false
@@ -255,7 +262,13 @@ function ____exports.tickBossRoamingAI(self, runtime, unit, now, fountainPositio
             end
         end
         if not runtime.retreatPosition or distance2D(nil, origin, runtime.retreatPosition) <= 220 then
-            runtime.retreatPosition = pickRetreatPosition(nil, origin, bossSpawnPoints, patrolWaypoints)
+            runtime.retreatPosition = pickRetreatPosition(
+                nil,
+                origin,
+                now,
+                bossSpawnPoints,
+                patrolWaypoints
+            )
             runtime.lastMoveOrderTime = -999
         end
         if not unit:IsMoving() or now - runtime.lastMoveOrderTime >= 1.5 then
@@ -365,7 +378,7 @@ function ____exports.tickBossRoamingAI(self, runtime, unit, now, fountainPositio
         return
     end
     if not runtime.targetWaypoint or distance2D(nil, origin, runtime.targetWaypoint) <= 280 then
-        runtime.targetWaypoint = ____exports.pickSmartWaypoint(nil, origin, runtime.level, patrolWaypoints)
+        runtime.targetWaypoint = ____exports.pickSmartWaypoint(nil, origin, now, patrolWaypoints)
         runtime.lastMoveOrderTime = -999
     end
     if not unit:IsAttacking() and not unit:IsMoving() then

@@ -11,8 +11,11 @@
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
-			"base_pct"					"4.0"
-			"max_pct"					"19.0"
+			"absorb_pct"
+			{
+				"value"					"4.0"
+				"hero_levelup"			"+0.45"
+			}
 			"min_radius"				"400"
 			"max_radius"				"800"
 		}
@@ -29,8 +32,11 @@
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
-			"base_pct"					"4.0"
-			"max_pct"					"19.0"
+			"absorb_pct"
+			{
+				"value"					"4.0"
+				"hero_levelup"			"+0.45"
+			}
 			"min_radius"				"400"
 			"max_radius"				"800"
 			"ms_pct"					"15"
@@ -41,35 +47,6 @@
 			"charge_dmg"				"0 45 75"
 			"charge_agi_pct"			"0 35 35"
 			"reality_cd_reduce"			"0 1.5 2.5"
-		}
-	}
-
-	"evo_spectre_t1_q"
-	{
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/spectre/evo_spectre_t1"
-		"AbilityTextureName"			"spectre_spectral_dagger"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"						"3"
-		"AbilityCastPoint"				"0.2"
-		"AbilityCastRange"				"700"
-		"AbilityCooldown"				"9.0 8.5 8.0"
-		"AbilityManaCost"				"60"
-		"AbilityValues"
-		{
-			"range"						"700"
-			"width"						"125"
-			"speed"						"1050"
-			"damage"					"70 85 100"
-			"creep_mult"				"1.4"
-			"slow_pct"					"20"
-			"slow_duration"				"2.5"
-			"path_ms_pct"				"16"
-			"path_duration"				"3.0"
 		}
 	}
 

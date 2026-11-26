@@ -1,0 +1,78 @@
+{
+  "DOTA_Tooltip_ability_evo_wisp_pulse": {
+    "ru": "Искровой импульс",
+    "en": "Spark Pulse"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_Description": {
+    "ru": "Выпускает энергетическую волну в радиусе %radius%, нанося %damage% магического урона героям (%creep_damage% по крипам) и замедляя врагов на %slow_pct%%% на %slow_duration% сек.",
+    "en": "Releases an energy wave in a %radius% radius, dealing %damage% magical damage to heroes (%creep_damage% vs creeps) and slowing enemies by %slow_pct%%% for %slow_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_radius": {
+    "ru": "РАДИУС:",
+    "en": "RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_damage": {
+    "ru": "УРОН ПО ГЕРОЯМ:",
+    "en": "HERO DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_creep_damage": {
+    "ru": "УРОН ПО КРИПАМ:",
+    "en": "CREEP DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_slow_pct": {
+    "ru": "ЗАМЕДЛЕНИЕ:",
+    "en": "MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_pulse_slow_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_modifier_evo_wisp_pulse_slow": {
+    "ru": "Искровой импульс",
+    "en": "Spark Pulse"
+  },
+  "DOTA_Tooltip_modifier_evo_wisp_pulse_slow_Description": {
+    "ru": "Скорость передвижения снижена на 20%.",
+    "en": "Movement speed reduced by 20%."
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge": {
+    "ru": "Перегрузка ядра",
+    "en": "Core Surge"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_Description": {
+    "ru": "На %duration% сек. даёт +%bonus_ms_pct%%% к скорости передвижения и +%bonus_attack_speed% к скорости атаки. Атаки наносят +%bonus_creep_damage% дополнительного магического урона крипам, а каждое убийство восстанавливает %kill_heal% здоровья и %kill_mana% маны.",
+    "en": "For %duration%s, grants +%bonus_ms_pct%%% Move Speed and +%bonus_attack_speed% Attack Speed. Attacks deal +%bonus_creep_damage% bonus magical damage to creeps, and each kill restores %kill_heal% HP and %kill_mana% Mana."
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ:",
+    "en": "DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_bonus_ms_pct": {
+    "ru": "БОНУС К СКОРОСТИ:",
+    "en": "MOVE SPEED BONUS:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_bonus_attack_speed": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_bonus_creep_damage": {
+    "ru": "ДОП. УРОН КРИПАМ:",
+    "en": "BONUS CREEP DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_kill_heal": {
+    "ru": "ЛЕЧЕНИЕ ЗА УБИЙСТВО:",
+    "en": "KILL HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_wisp_surge_kill_mana": {
+    "ru": "МАНА ЗА УБИЙСТВО:",
+    "en": "KILL MANA:"
+  },
+  "DOTA_Tooltip_modifier_evo_wisp_surge": {
+    "ru": "Перегрузка ядра",
+    "en": "Core Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_wisp_surge_Description": {
+    "ru": "Скорость передвижения и атаки увеличены; атаки наносят доп. урон крипам, а убийства восстанавливают здоровье и ману.",
+    "en": "Move and attack speed increased; attacks deal bonus damage to creeps and kills restore HP and mana."
+  }
+}

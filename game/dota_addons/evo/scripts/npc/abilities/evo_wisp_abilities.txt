@@ -1,0 +1,47 @@
+"DOTAAbilities"
+{
+	"evo_wisp_pulse"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/wisp/evo_wisp_t0"
+		"AbilityTextureName"			"wisp_spirits"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"4.0"
+		"AbilityManaCost"				"30"
+		"AbilityValues"
+		{
+			"radius"					"375"
+			"damage"					"50"
+			"creep_damage"				"85"
+			"slow_pct"					"20"
+			"slow_duration"				"2.5"
+		}
+	}
+
+	"evo_wisp_surge"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/wisp/evo_wisp_t0"
+		"AbilityTextureName"			"wisp_overcharge"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"1"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"7.0"
+		"AbilityManaCost"				"25"
+		"AbilityValues"
+		{
+			"duration"					"5.0"
+			"bonus_ms_pct"				"25"
+			"bonus_attack_speed"		"70"
+			"bonus_creep_damage"		"25"
+			"kill_heal"					"35"
+			"kill_mana"					"15"
+		}
+	}
+}

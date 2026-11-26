@@ -69,12 +69,30 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
     PrecacheResource("particle", lionImpaleVpcf, context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context);
 
+    const extraModels = [
+        "models/heroes/venomancer/venomancer_ward.vmdl",
+    ];
+    for (const modelPath of extraModels) {
+        precacheUniqueModel(modelPath, seenModels, context);
+    }
+
     const extraParticles = [
         "particles/items_fx/blink_dagger_start.vpcf",
         "particles/items_fx/blink_dagger_end.vpcf",
         "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
         "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield_explosion.vpcf",
         "particles/units/heroes/hero_obsidian_destroyer/obsidian_destroyer_arcane_orb_hit.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_venomous_gale.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_venomous_gale_impact.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_plague_ward_projectile.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_latent_poison_projectile.vpcf",
+        "particles/units/heroes/hero_venomancer/venomancer_poison_nova.vpcf",
+        "particles/units/heroes/hero_viper/viper_nethertoxin.vpcf",
+        "particles/units/heroes/hero_treant/treant_bramble_root.vpcf",
+        "particles/units/heroes/hero_treant/scepter_overgrowth_aura.vpcf",
+        "particles/units/heroes/hero_wisp/wisp_guardian_explosion.vpcf",
+        "particles/units/heroes/hero_wisp/wisp_overcharge.vpcf",
     ];
     for (const vpcf of extraParticles) {
         if (!seenParticles.has(vpcf)) {
@@ -82,10 +100,14 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
             PrecacheResource("particle", vpcf, context);
         }
     }
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_obsidian_destroyer.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts", context);
 
     for (const modelPath of EVO_NEUTRAL_CREEP_MODELS) {
         precacheUniqueModel(modelPath, seenModels, context);

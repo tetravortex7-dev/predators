@@ -142,11 +142,6 @@ export function findNearestSpectrePortal(owner: CDOTA_BaseNPC, point: Vector): C
     return best;
 }
 
-export function computeDispersionPct(unit: CDOTA_BaseNPC, basePct: number, maxPct: number): number {
-    const lvl = unit.IsRealHero() ? Math.min(35, Math.max(1, unit.GetLevel())) : 1;
-    return basePct + ((lvl - 1) * (maxPct - basePct)) / 34;
-}
-
 export function applyDispersionAroundOrigin(
     victim: CDOTA_BaseNPC,
     ability: CDOTABaseAbility,

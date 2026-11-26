@@ -149,15 +149,9 @@ function onBossKilledHero(raw: unknown): void {
         $.Schedule(delay, () => suppressDireKillToast(safeName));
     }
 
-    const root = getRootHud();
-    const toastMgr = root ? root.FindChildTraverse("ToastManager") : null;
-    if (toastMgr) {
-        createToastRow(toastMgr, message, victimHero);
-    } else {
-        const fallback = $("#EvoBossKillFeed");
-        if (fallback) {
-            createToastRow(fallback, message, victimHero);
-        }
+    const feed = $("#EvoBossKillFeed");
+    if (feed) {
+        createToastRow(feed, message, victimHero);
     }
 }
 

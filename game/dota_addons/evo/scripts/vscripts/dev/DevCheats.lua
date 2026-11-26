@@ -6,7 +6,7 @@ local __TS__StringSplit = ____lualib.__TS__StringSplit
 local __TS__ArrayFilter = ____lualib.__TS__ArrayFilter
 local __TS__ArraySlice = ____lualib.__TS__ArraySlice
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["11"] = 3,["12"] = 3,["13"] = 4,["14"] = 4,["15"] = 6,["16"] = 6,["17"] = 6,["18"] = 8,["19"] = 8,["20"] = 9,["21"] = 7,["22"] = 12,["23"] = 13,["24"] = 13,["25"] = 13,["26"] = 13,["27"] = 13,["28"] = 12,["29"] = 16,["30"] = 17,["33"] = 21,["34"] = 22,["37"] = 26,["38"] = 27,["41"] = 31,["42"] = 32,["45"] = 36,["46"] = 36,["47"] = 36,["48"] = 36,["49"] = 37,["50"] = 38,["52"] = 40,["53"] = 41,["56"] = 42,["57"] = 43,["58"] = 44,["62"] = 47,["65"] = 48,["66"] = 48,["67"] = 48,["68"] = 48,["69"] = 48,["70"] = 48,["71"] = 48,["73"] = 49,["74"] = 49,["75"] = 50,["78"] = 51,["79"] = 49,["82"] = 53,["86"] = 56,["89"] = 57,["90"] = 57,["91"] = 57,["92"] = 57,["93"] = 58,["94"] = 58,["95"] = 58,["96"] = 58,["97"] = 58,["98"] = 59,["99"] = 60,["103"] = 63,["106"] = 64,["110"] = 67,["113"] = 74,["114"] = 75,["120"] = 79,["125"] = 16,["126"] = 85,["127"] = 86,["128"] = 87,["129"] = 88,["130"] = 89,["131"] = 89,["132"] = 89,["133"] = 89,["134"] = 89,["135"] = 88,["136"] = 122,["139"] = 126,["140"] = 127,["141"] = 128,["142"] = 129,["143"] = 130,["144"] = 131,["148"] = 136,["149"] = 137,["150"] = 138,["151"] = 139,["152"] = 140,["153"] = 140,["154"] = 140,["156"] = 140,["158"] = 140,["159"] = 141,["160"] = 141,["161"] = 141,["162"] = 141,["163"] = 141,["164"] = 141,["165"] = 141,["166"] = 142,["169"] = 146,["170"] = 147,["171"] = 148,["172"] = 149,["175"] = 153,["176"] = 154,["177"] = 154,["178"] = 154,["179"] = 154,["180"] = 155,["181"] = 156,["182"] = 157,["186"] = 162,["187"] = 163,["188"] = 164,["189"] = 165,["190"] = 166,["191"] = 167,["193"] = 85,["194"] = 171,["195"] = 172,["196"] = 171});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["11"] = 3,["12"] = 3,["13"] = 4,["14"] = 4,["15"] = 6,["16"] = 6,["17"] = 6,["18"] = 8,["19"] = 8,["20"] = 9,["21"] = 7,["22"] = 12,["23"] = 13,["24"] = 13,["25"] = 13,["26"] = 13,["27"] = 13,["28"] = 12,["29"] = 16,["30"] = 17,["33"] = 21,["34"] = 22,["35"] = 23,["38"] = 27,["39"] = 28,["42"] = 32,["43"] = 33,["46"] = 37,["47"] = 38,["48"] = 39,["51"] = 43,["52"] = 43,["53"] = 43,["54"] = 43,["55"] = 44,["56"] = 45,["58"] = 47,["59"] = 48,["62"] = 49,["63"] = 50,["64"] = 51,["68"] = 54,["71"] = 55,["72"] = 55,["73"] = 55,["74"] = 55,["78"] = 58,["81"] = 59,["82"] = 59,["83"] = 59,["84"] = 59,["85"] = 60,["86"] = 60,["87"] = 60,["88"] = 60,["89"] = 60,["90"] = 61,["91"] = 62,["95"] = 65,["98"] = 66,["102"] = 69,["105"] = 76,["106"] = 77,["112"] = 81,["117"] = 16,["118"] = 87,["119"] = 88,["120"] = 89,["121"] = 90,["122"] = 91,["123"] = 91,["124"] = 91,["125"] = 91,["126"] = 91,["127"] = 90,["128"] = 124,["131"] = 128,["132"] = 129,["133"] = 130,["134"] = 131,["135"] = 132,["136"] = 133,["140"] = 138,["141"] = 139,["142"] = 140,["143"] = 141,["144"] = 142,["145"] = 142,["146"] = 142,["148"] = 142,["150"] = 142,["151"] = 143,["152"] = 143,["153"] = 143,["154"] = 143,["155"] = 143,["156"] = 143,["157"] = 143,["158"] = 144,["161"] = 148,["162"] = 149,["163"] = 150,["164"] = 151,["167"] = 155,["168"] = 156,["169"] = 156,["170"] = 156,["171"] = 156,["172"] = 157,["173"] = 158,["174"] = 159,["178"] = 164,["179"] = 165,["180"] = 166,["181"] = 167,["182"] = 168,["183"] = 169,["185"] = 87,["186"] = 173,["187"] = 174,["188"] = 174,["189"] = 174,["190"] = 174,["192"] = 175,["193"] = 175,["194"] = 176,["197"] = 177,["198"] = 175,["201"] = 179,["202"] = 173,["203"] = 182,["204"] = 183,["205"] = 182});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
@@ -31,7 +31,8 @@ function DevCheats.prototype.onPlayerChat(self, event)
         return
     end
     local text = __TS__StringTrim(event.text or "")
-    if not __TS__StringStartsWith(text, "-evo_") then
+    local isPlusLevel = text == "+" or __TS__StringStartsWith(text, "+") and tonumber(__TS__StringTrim(string.sub(text, 2))) ~= nil
+    if not isPlusLevel and not __TS__StringStartsWith(text, "-evo_") then
         return
     end
     local playerId = event.playerid
@@ -42,6 +43,11 @@ function DevCheats.prototype.onPlayerChat(self, event)
     if not hero or hero:IsNull() or not IsValidEntity(hero) then
         return
     end
+    if isPlusLevel then
+        local count = text == "+" and 1 or (tonumber(__TS__StringTrim(string.sub(text, 2))) or 1)
+        self:levelUpHero(hero, count)
+        return
+    end
     local parts = __TS__ArrayFilter(
         __TS__StringSplit(text, " "),
         function(____, token) return #token > 0 end
@@ -49,9 +55,9 @@ function DevCheats.prototype.onPlayerChat(self, event)
     local command = string.lower(parts[1])
     local args = __TS__ArraySlice(parts, 1)
     repeat
-        local ____switch11 = command
-        local ____cond11 = ____switch11 == "-evo_gold"
-        if ____cond11 then
+        local ____switch12 = command
+        local ____cond12 = ____switch12 == "-evo_gold"
+        if ____cond12 then
             do
                 local amount = tonumber(args[1]) or 1000
                 hero:ModifyGold(amount, true, 8)
@@ -59,32 +65,18 @@ function DevCheats.prototype.onPlayerChat(self, event)
                 break
             end
         end
-        ____cond11 = ____cond11 or ____switch11 == "-evo_lvl"
-        if ____cond11 then
+        ____cond12 = ____cond12 or ____switch12 == "-evo_lvl"
+        if ____cond12 then
             do
-                local levels = math.max(
-                    1,
-                    math.min(
-                        EVO_CONSTANTS.MAX_HERO_LEVEL,
-                        tonumber(args[1]) or 1
-                    )
+                self:levelUpHero(
+                    hero,
+                    tonumber(args[1]) or 1
                 )
-                do
-                    local i = 0
-                    while i < levels do
-                        if hero:GetLevel() >= EVO_CONSTANTS.MAX_HERO_LEVEL then
-                            break
-                        end
-                        hero:HeroLevelUp(true)
-                        i = i + 1
-                    end
-                end
-                self:say("[Dev] Hero level is now " .. tostring(hero:GetLevel()))
                 break
             end
         end
-        ____cond11 = ____cond11 or ____switch11 == "-evo_fortify"
-        if ____cond11 then
+        ____cond12 = ____cond12 or ____switch12 == "-evo_fortify"
+        if ____cond12 then
             do
                 local count = math.max(
                     1,
@@ -100,15 +92,15 @@ function DevCheats.prototype.onPlayerChat(self, event)
                 break
             end
         end
-        ____cond11 = ____cond11 or ____switch11 == "-evo_look"
-        if ____cond11 then
+        ____cond12 = ____cond12 or ____switch12 == "-evo_look"
+        if ____cond12 then
             do
                 self:handleLookCommand(playerId, hero, args)
                 break
             end
         end
-        ____cond11 = ____cond11 or (____switch11 == "-evo_evo" or ____switch11 == "-evo_morph" or ____switch11 == "-evo_duel" or ____switch11 == "-evo_boss" or ____switch11 == "-evo_score" or ____switch11 == "-evo_tp" or ____switch11 == "-evo_mut")
-        if ____cond11 then
+        ____cond12 = ____cond12 or (____switch12 == "-evo_evo" or ____switch12 == "-evo_morph" or ____switch12 == "-evo_duel" or ____switch12 == "-evo_boss" or ____switch12 == "-evo_score" or ____switch12 == "-evo_tp" or ____switch12 == "-evo_mut")
+        if ____cond12 then
             do
                 self.eventBus:emit("dev_command", {playerId = playerId, command = command, args = args})
                 self:say((("[Dev] Dispatched " .. command) .. " ") .. table.concat(args, " "))
@@ -190,6 +182,23 @@ function DevCheats.prototype.handleLookCommand(self, playerId, hero, args)
         HeroAppearance:setScale(hero, 1)
         self:say("[Dev] Hero appearance reset.")
     end
+end
+function DevCheats.prototype.levelUpHero(self, hero, rawLevels)
+    local levels = math.max(
+        1,
+        math.min(EVO_CONSTANTS.MAX_HERO_LEVEL, rawLevels)
+    )
+    do
+        local i = 0
+        while i < levels do
+            if hero:GetLevel() >= EVO_CONSTANTS.MAX_HERO_LEVEL then
+                break
+            end
+            hero:HeroLevelUp(true)
+            i = i + 1
+        end
+    end
+    self:say("[Dev] Hero level is now " .. tostring(hero:GetLevel()))
 end
 function DevCheats.prototype.say(self, message)
     GameRules:SendCustomMessage(message, 0, 0)

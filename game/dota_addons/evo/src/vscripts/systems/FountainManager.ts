@@ -1,10 +1,15 @@
 import { EventBus } from "../core/EventBus";
-import { EVO_CONSTANTS, EVO_MAP_ENTITIES, EVO_PLAYABLE_TEAMS } from "../data/game_constants";
+import { EVO_CONSTANTS, EVO_MAP_ENTITIES, EVO_PLAYABLE_TEAMS, isCampSizeAllowedAtTime } from "../data/game_constants";
 import { clearFountainCombatLock } from "../lib/fountain_combat_guard";
 import { focusPlayerCamera } from "../lib/unit_helpers";
 
 interface FountainTeleportPayload {
     PlayerID: PlayerID;
+}
+
+interface TeleportTarget {
+    position: Vector;
+    campSize?: string;
 }
 
 const PARTICLE_BLINK_START = "particles/items_fx/blink_dagger_start.vpcf";
@@ -14,7 +19,7 @@ export class FountainManager {
     private basePositions: Vector[] = [];
     private baseDirections: Vector[] = [];
     private allFountainPositions: Vector[] = [];
-    private teleportTargets: Vector[] = [];
+    private teleportTargets: TeleportTarget[] = [];
 
     private readonly playerBaseIndex: Map<PlayerID, number> = new Map();
     private readonly baseCounts: [number, number] = [0, 0];
@@ -63,14 +68,14 @@ export class FountainManager {
                 this.discoverTeleportTargets();
             }
             this.assignAllPlayersToBases();
-        }
-        if (state === GameState.GAME_IN_PROGRESS && !this.started) {
-            this.started = true;
-            GameRules.GetGameModeEntity().SetContextThink(
-                "EvoFountainHudThink",
-                () => this.onThink(),
-                0.25
-            );
+            if (!this.started) {
+                this.started = true;
+                GameRules.GetGameModeEntity().SetContextThink(
+                    "EvoFountainHudThink",
+                    () => this.onThink(),
+                    0.25
+                );
+            }
         }
     }
 
@@ -144,10 +149,13 @@ export class FountainManager {
 
         for (const trigger of Entities.FindAllByClassname("trigger_multiple")) {
             if (!trigger || trigger.IsNull() || !IsValidEntity(trigger)) continue;
-            if (!trigger.GetName().startsWith("neutralcamp_")) continue;
+            const name = trigger.GetName();
+            if (!name.startsWith("neutralcamp_")) continue;
             const pos = GetGroundPosition(trigger.GetAbsOrigin(), undefined);
             if (this.isSafeTeleportPoint(pos, duelCenter)) {
-                this.teleportTargets.push(pos);
+                const parts = name.split("_");
+                const campSize = parts[1] ?? "small";
+                this.teleportTargets.push({ position: pos, campSize });
             }
         }
 
@@ -155,7 +163,7 @@ export class FountainManager {
             if (!ent || ent.IsNull() || !IsValidEntity(ent)) continue;
             const pos = GetGroundPosition(ent.GetAbsOrigin(), undefined);
             if (this.isSafeTeleportPoint(pos, duelCenter)) {
-                this.teleportTargets.push(pos);
+                this.teleportTargets.push({ position: pos });
             }
         }
 
@@ -168,7 +176,7 @@ export class FountainManager {
                     undefined
                 );
                 if (this.isSafeTeleportPoint(probe, duelCenter)) {
-                    this.teleportTargets.push(probe);
+                    this.teleportTargets.push({ position: probe });
                 }
             }
         }
@@ -339,6 +347,12 @@ export class FountainManager {
             return Vector(0, 0, 128);
         }
 
+        const now = GameRules.GetDOTATime(false, false);
+        const timeAllowed = this.teleportTargets.filter(
+            (spot) => spot.campSize === undefined || isCampSizeAllowedAtTime(spot.campSize, now)
+        );
+        const eligible = timeAllowed.length > 0 ? timeAllowed : this.teleportTargets;
+
         const enemyPositions: Vector[] = [];
         for (let i = 0; i < DOTA_MAX_TEAM_PLAYERS; i++) {
             const pid = i as PlayerID;
@@ -350,17 +364,17 @@ export class FountainManager {
         }
 
         const minEnemyDistSq = 850 * 850;
-        const safe = this.teleportTargets.filter((spot) => {
+        const safe = eligible.filter((spot) => {
             for (const ePos of enemyPositions) {
-                const dx = spot.x - ePos.x;
-                const dy = spot.y - ePos.y;
+                const dx = spot.position.x - ePos.x;
+                const dy = spot.position.y - ePos.y;
                 if (dx * dx + dy * dy < minEnemyDistSq) return false;
             }
             return true;
         });
 
-        const pool = safe.length > 0 ? safe : this.teleportTargets;
-        return pool[RandomInt(0, pool.length - 1)];
+        const pool = safe.length > 0 ? safe : eligible;
+        return pool[RandomInt(0, pool.length - 1)].position;
     }
 
     private focusCameraBriefly(playerId: PlayerID, hero: CDOTA_BaseNPC_Hero): void {

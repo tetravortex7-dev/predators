@@ -1,0 +1,514 @@
+{
+  "evo_veno_sprout": {
+    "ru": "Споровый нарост",
+    "en": "Spore Growth"
+  },
+  "evo_veno_turret": {
+    "ru": "Био-турель",
+    "en": "Bio-Turret"
+  },
+  "evo_veno_obelisk": {
+    "ru": "Материнский Обелиск",
+    "en": "Mother Obelisk"
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands": {
+    "ru": "Мутагенные железы",
+    "en": "Mutagenic Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает споровый импульс в %pulse_radius% AoE, нанося %pulse_base_dmg% + %pulse_attr_pct%%% макс. атрибута маг. урона и замедляя на -%slow_pct%%% на %slow_duration%с.",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a %pulse_radius% AoE spore pulse dealing %pulse_base_dmg% + %pulse_attr_pct%%% highest stat magic damage and slowing by -%slow_pct%%% for %slow_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands_pulse_base_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands": {
+    "ru": "Железы Снайпера",
+    "en": "Needle Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_attr_pct%%% макс. стата маг. урона, -%slow_pct%%% MS). Импульс срезает -%armor_shred% брони и повышает физ. урон атак по цели на +%mark_amp_pct%%%.",
+    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_attr_pct%%% stat magic dmg, -%slow_pct%%% MS), shredding %armor_shred% armor and increasing attack damage against target by +%mark_amp_pct%%%."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_armor_shred": {
+    "ru": "СРЕЗ БРОНИ:",
+    "en": "ARMOR SHRED:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_mark_amp_pct": {
+    "ru": "%БОНУС ФИЗ. УРОНА:",
+    "en": "%PHYS AMP MARK:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands": {
+    "ru": "Железы Улья",
+    "en": "Hive Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_attr_pct%%% стата маг. урона). Даёт +%amp_per_turret%%% Spell Amp за каждую активную турель (до %max_turret_stacks%).",
+    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_attr_pct%%% stat magic dmg). Grants +%amp_per_turret%%% Spell Amp per active turret (max %max_turret_stacks%)."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_amp_per_turret": {
+    "ru": "%SPELL AMP ЗА ТУРЕЛЬ:",
+    "en": "%SPELL AMP / TURRET:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands": {
+    "ru": "Симбиотические железы",
+    "en": "Symbiotic Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_all_pct%%% суммы статов маг. урона). Лечит союзников в %heal_radius% AoE на %heal_base% + %heal_all_pct%%% суммы статов с бонусом +%ally_ms_pct%%% MS и +%ally_as% AS.",
+    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_all_pct%%% all stats magic dmg) and heals allies in %heal_radius% AoE for %heal_base% + %heal_all_pct%%% all stats plus +%ally_ms_pct%%% MS and +%ally_as% AS."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_heal_base": {
+    "ru": "БАЗОВЫЙ ХИЛ:",
+    "en": "BASE HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_q": {
+    "ru": "Сгусток слизи",
+    "en": "Slime Glob"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_q_Description": {
+    "ru": "Выпускает снаряд на %range% дальности (%damage% маг. урона, %creep_mult%x по крипам), замедляя на -%slow_pct%%% на %slow_duration%с и сразу вызывая Мутагенные железы на первой задетой цели.",
+    "en": "Fires a %range%-range slime projectile (%damage% magic damage, %creep_mult%x vs creeps), slowing by -%slow_pct%%% for %slow_duration%s and triggering Mutagenic Glands on the first target hit."
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_q_damage": {
+    "ru": "МАГ. УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_q_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_w": {
+    "ru": "Споровый нарост",
+    "en": "Spore Growth"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_w_Description": {
+    "ru": "Выращивает живой отросток на %duration%с (макс. %max_sprouts%), бьющий врагов в %attack_range% дальности каждые %attack_interval%с на %attack_damage% физ. урона (%creep_mult%x по крипам). Приоритет целям под Сгустком слизи.",
+    "en": "Grows a living sprout for %duration%s (max %max_sprouts%) attacking within %attack_range% range every %attack_interval%s for %attack_damage% physical damage (%creep_mult%x vs creeps), prioritizing Slime Glob targets."
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_w_attack_damage": {
+    "ru": "УРОН ОТРОСТКА:",
+    "en": "SPROUT DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q": {
+    "ru": "Залп игл",
+    "en": "Needle Volley"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q_Description": {
+    "ru": "Выпускает веер из %needle_count% шипов на %range% дальности (%base_damage% + %agi_pct%%% AGI физ. урона, %creep_mult%x по крипам), накладывая стак Хитинового осколка и -%slow_pct%%% MS на %slow_duration%с (цель может поймать до 2 шипов; второй наносит 50%% урона).",
+    "en": "Fires a cone of %needle_count% needles over %range% range (%base_damage% + %agi_pct%%% AGI physical damage, %creep_mult%x vs creeps), applying Chitin Shard and -%slow_pct%%% MS for %slow_duration%s (up to 2 hits per target; 2nd deals 50%% dmg)."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q_needle_count": {
+    "ru": "ШИПОВ В ВЕЕРЕ:",
+    "en": "NEEDLES:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q_base_damage": {
+    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "en": "BASE PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q_agi_pct": {
+    "ru": "%УРОНА ОТ AGI:",
+    "en": "%AGI DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w": {
+    "ru": "Разрывной стручок",
+    "en": "Bursting Pod"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w_Description": {
+    "ru": "Усиливает следующие %charges% атак (на %duration%с): +%bonus_as% AS, +%bonus_range% дальности и +%bonus_dmg% + %agi_pct%%% AGI физ. урона. Последний выстрел взрывает все стаки Хитинового осколка (%detonate_per_shard% физ. урона за стак).",
+    "en": "Empowers next %charges% attacks (%duration%s) with +%bonus_as% AS, +%bonus_range% range, and +%bonus_dmg% + %agi_pct%%% AGI physical damage. The final shot detonates all Chitin Shards for %detonate_per_shard% physical damage each."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w_charges": {
+    "ru": "ЗАРЯДОВ АТАК:",
+    "en": "EMPOWERED SHOTS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w_bonus_dmg": {
+    "ru": "БОНУС УРОН:",
+    "en": "BONUS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w_detonate_per_shard": {
+    "ru": "ДЕТОНАЦИЯ ЗА СТАК:",
+    "en": "SHARD DETONATE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_e": {
+    "ru": "Ядовитое оперение",
+    "en": "Venomous Plumage"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_e_Description": {
+    "ru": "Даёт +%bonus_range% дальности атаки. Атаки по замедленным целям наносят +%slow_bonus_dmg% + %slow_agi_pct%%% AGI физ. урона и разгоняют +%as_per_stack% AS на %as_duration%с (до %max_as_stacks% стаков).",
+    "en": "Grants +%bonus_range% attack range. Attacks against slowed enemies deal +%slow_bonus_dmg% + %slow_agi_pct%%% AGI bonus physical damage and grant +%as_per_stack% AS for %as_duration%s (max %max_as_stacks%)."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_e_bonus_range": {
+    "ru": "БОНУС ДАЛЬНОСТИ:",
+    "en": "BONUS RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_e_slow_bonus_dmg": {
+    "ru": "ДОП. УРОН ПО ЗАМЕДЛ.:",
+    "en": "VS SLOWED DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r": {
+    "ru": "Ливень Смертоцвета",
+    "en": "Deathbloom Barrage"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r_Description": {
+    "ru": "Снайперский режим на %duration%с: +%bonus_range% дальности, True Strike, +%agi_bonus_pct%%% AGI, а каждая атака выпускает самонаводящуюся иглу в самого раненого врага в %homing_radius% AoE (%homing_dmg_pct%%% урона атаки + Хитиновый осколок).",
+    "en": "Enters sniper stance for %duration%s: +%bonus_range% range, True Strike, +%agi_bonus_pct%%% AGI, and every attack launches a homing needle at the lowest-HP enemy within %homing_radius% AoE (%homing_dmg_pct%%% attack damage + Chitin Shard)."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r_agi_bonus_pct": {
+    "ru": "%БОНУС AGI:",
+    "en": "%AGI BONUS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_q": {
+    "ru": "Гейзер миазмов",
+    "en": "Miasma Geyser"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_q_Description": {
+    "ru": "Выброс спор в %radius% AoE: %base_damage% + %int_pct%%% INT маг. урона (%creep_mult%x по крипам), накладывает Споровое заражение, полностью лечит свои био-турели в зоне и продлевает их на %turret_extend%с.",
+    "en": "Erupts spores in %radius% AoE for %base_damage% + %int_pct%%% INT magic damage (%creep_mult%x vs creeps), applying Spore Infection while healing friendly turrets inside and extending them by %turret_extend%s."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_q_base_damage": {
+    "ru": "БАЗОВЫЙ МАГ. УРОН:",
+    "en": "BASE MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_q_int_pct": {
+    "ru": "%УРОНА ОТ INT:",
+    "en": "%INT DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_w": {
+    "ru": "Био-турель",
+    "en": "Bio-Turret"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_w_Description": {
+    "ru": "Выращивает турель на %duration%с (макс. %max_turrets%) с %base_hp% + %hp_int_pct%%% INT HP и дальностью %turret_range%. Бьёт каждые %attack_interval%с на %base_damage% + %int_pct%%% INT маг. урона (%creep_mult%x по крипам), фокуся заражённых врагов.",
+    "en": "Grows a Bio-Turret for %duration%s (max %max_turrets%) with %base_hp% + %hp_int_pct%%% INT HP and %turret_range% range. Fires every %attack_interval%s for %base_damage% + %int_pct%%% INT magic damage (%creep_mult%x vs creeps), prioritizing infected targets."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_w_max_turrets": {
+    "ru": "МАКС. ТУРЕЛЕЙ:",
+    "en": "MAX TURRETS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_w_base_damage": {
+    "ru": "УРОН ТУРЕЛИ:",
+    "en": "TURRET DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e": {
+    "ru": "Детонация кокона",
+    "en": "Cocoon Detonation"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e_Description": {
+    "ru": "Пассивно: гибель турели наносит %death_base_dmg% + %death_int_pct%%% INT маг. урона в %death_radius% AoE и возвращает %mana_return% маны. Активно (Перегрузка улья): все турели дают синхронный залп (%volley_dmg_pct%%% урона) в %volley_radius% AoE и получают +%volley_as% AS на %volley_as_dur%с.",
+    "en": "Passive: dying turrets burst %death_radius% AoE for %death_base_dmg% + %death_int_pct%%% INT magic damage and restore %mana_return% mana. Active (Hive Overload): all turrets fire a %volley_dmg_pct%%% synchronized volley at target %volley_radius% AoE and gain +%volley_as% AS for %volley_as_dur%s."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e_death_base_dmg": {
+    "ru": "ВЗРЫВ ТУРЕЛИ:",
+    "en": "TURRET BLAST DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e_mana_return": {
+    "ru": "ВОЗВРАТ МАНЫ:",
+    "en": "MANA RETURN:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e_volley_as": {
+    "ru": "AS ПЕРЕГРУЗКИ:",
+    "en": "OVERLOAD AS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_r": {
+    "ru": "Материнский Обелиск",
+    "en": "Mother Obelisk"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_r_Description": {
+    "ru": "Призывает Нексус на %duration%с (%base_hp% + %hp_int_pct%%% INT HP), порождая дополнительную Био-турель. Каждые %pulse_interval%с бьёт в %pulse_radius% AoE на %pulse_dmg% + %pulse_int_pct%%% INT маг. урона с заражением; турели в %link_radius% AoE бьют 2 цели сразу.",
+    "en": "Summons a Nexus for %duration%s (%base_hp% + %hp_int_pct%%% INT HP) and spawns a bonus Bio-Turret. Pulses %pulse_radius% AoE every %pulse_interval%s for %pulse_dmg% + %pulse_int_pct%%% INT magic damage + infection; turrets within %link_radius% attack 2 targets simultaneously."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_r_pulse_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_q": {
+    "ru": "Волна пыльцы",
+    "en": "Pollen Wave"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_q_Description": {
+    "ru": "Пускает волну на %range% дальности (ширина %width%), накладывая Симбиотическую пыльцу: лечит союзников на %heal_base% + %heal_all_pct%%% суммы статов и наносит врагам %dmg_base% + %dmg_all_pct%%% суммы статов маг. урона (%creep_mult%x по крипам).",
+    "en": "Unleashes a %range%-range wave (%width% width) applying Symbiotic Pollen: heals allies for %heal_base% + %heal_all_pct%%% all stats and damages enemies for %dmg_base% + %dmg_all_pct%%% all stats magic damage (%creep_mult%x vs creeps)."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_q_heal_base": {
+    "ru": "БАЗОВОЕ ЛЕЧЕНИЕ:",
+    "en": "BASE HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_q_dmg_base": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_w": {
+    "ru": "Живой кокон",
+    "en": "Living Cocoon"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_w_Description": {
+    "ru": "Защищает союзника или себя на %duration%с щитом %shield_base% + %shield_all_pct%%% суммы статов и +%status_res%%% сопр. эффектам. Каждые %pulse_interval%с импульсирует в %pulse_radius% AoE на %pulse_dmg% + %pulse_all_pct%%% суммы статов маг. урона.",
+    "en": "Shields an ally or self for %duration%s (%shield_base% + %shield_all_pct%%% all stats barrier, +%status_res%%% Status Res) and pulses %pulse_radius% AoE every %pulse_interval%s for %pulse_dmg% + %pulse_all_pct%%% all stats magic damage."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_w_shield_base": {
+    "ru": "БАЗОВЫЙ ЩИТ:",
+    "en": "BASE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_w_status_res": {
+    "ru": "%СОПР. ЭФФЕКТАМ:",
+    "en": "%STATUS RES:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_e": {
+    "ru": "Аура мицелия",
+    "en": "Mycelium Aura"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_e_Description": {
+    "ru": "Союзники в радиусе %aura_radius% получают +%all_stats_bonus% ко всем атрибутам и +%heal_amp_pct%%% усиления лечения и регенерации.",
+    "en": "Allies within %aura_radius% radius gain +%all_stats_bonus% to all attributes and +%heal_amp_pct%%% incoming heal amplification."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_e_all_stats_bonus": {
+    "ru": "+КО ВСЕМ СТАТАМ:",
+    "en": "+ALL ATTRIBUTES:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_e_heal_amp_pct": {
+    "ru": "%БОНУС ЛЕЧЕНИЯ:",
+    "en": "%HEAL AMP:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_r": {
+    "ru": "Кольцо Возрождения",
+    "en": "Ring of Rebirth"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_r_Description": {
+    "ru": "Святилище в %radius% AoE на %duration%с: Strong Dispel союзникам, -%ally_dmg_reduce%%% входящего урона и %ally_regen_base% + %ally_regen_all_pct%%% суммы статов регена HP/с; враги получают безмолвие на %silence_duration%с, -%enemy_slow_pct%%% MS и %enemy_dps_base% + %enemy_dps_all_pct%%% суммы статов маг. урона/с.",
+    "en": "Sanctuary in %radius% AoE for %duration%s: Strong Dispel allies, -%ally_dmg_reduce%%% damage taken, and %ally_regen_base% + %ally_regen_all_pct%%% all stats HP regen/s; silences enemies for %silence_duration%s, slows by -%enemy_slow_pct%%% MS, and deals %enemy_dps_base% + %enemy_dps_all_pct%%% all stats magic DPS."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_r_ally_regen_base": {
+    "ru": "РЕГЕН СОЮЗНИКАМ:",
+    "en": "ALLY HP REGEN/S:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_r_enemy_dps_base": {
+    "ru": "УРОН ВРАГАМ/С:",
+    "en": "ENEMY DPS:"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands": {
+    "ru": "Мутагенные железы",
+    "en": "Mutagenic Glands"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands_Description": {
+    "ru": "Заряжает споровый импульс с атак и заклинаний.",
+    "en": "Charges spore pulses from attacks and casts."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands_slow": {
+    "ru": "Споровый осадок",
+    "en": "Spore Residue"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Move speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands_shred": {
+    "ru": "Кислотный пробой",
+    "en": "Acid Breach"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_glands_shred_Description": {
+    "ru": "Броня снижена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
+    "en": "Armor reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_mark": {
+    "ru": "Метка Снайпера",
+    "en": "Sniper Mark"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_mark_Description": {
+    "ru": "Получает повышенный физический урон от атак Иглострела.",
+    "en": "Takes increased physical attack damage from Jungle Needle."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_glands_buff": {
+    "ru": "Бодрость пыльцы",
+    "en": "Pollen Vigor"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_glands_buff_Description": {
+    "ru": "Повышает скорость передвижения и атаки.",
+    "en": "Grants bonus move speed and attack speed."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_t1_q_slow": {
+    "ru": "Вязкая слизь",
+    "en": "Viscous Slime"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_t1_q_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Move speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_chitin_shard": {
+    "ru": "Хитиновый осколок",
+    "en": "Chitin Shard"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_chitin_shard_Description": {
+    "ru": "Снижает броню и скорость передвижения за стак.",
+    "en": "Reduces armor and move speed per stack."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_q_slow": {
+    "ru": "Залп игл",
+    "en": "Needle Slow"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_q_slow_Description": {
+    "ru": "Замедлен токсичными иглами.",
+    "en": "Slowed by toxic needles."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_heal_cut": {
+    "ru": "Глубокая рана",
+    "en": "Toxic Wound"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_heal_cut_Description": {
+    "ru": "Входящее лечение снижено на %dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%.",
+    "en": "Incoming healing reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_q_trail_slow": {
+    "ru": "Поле колючек",
+    "en": "Thorn Field"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_q_trail_slow_Description": {
+    "ru": "Скорость передвижения снижена на 30%.",
+    "en": "Move speed reduced by 30%."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_w": {
+    "ru": "Разрывной стручок",
+    "en": "Bursting Pod"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_w_Description": {
+    "ru": "Бонусные AS, дальность и физ. урон; последний выстрел детонирует Хитиновые осколки.",
+    "en": "Bonus AS, range, and physical damage; final shot detonates Chitin Shards."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_e_as": {
+    "ru": "Токсичный азарт",
+    "en": "Venom Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_e_as_Description": {
+    "ru": "Увеличивает скорость атаки на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%.",
+    "en": "Attack speed increased."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_e_root": {
+    "ru": "Шипастые путы",
+    "en": "Spine Snare"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_e_root_Description": {
+    "ru": "Обездвижен ядовитыми шипами.",
+    "en": "Rooted by venomous spines."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_r": {
+    "ru": "Ливень Смертоцвета",
+    "en": "Deathbloom Barrage"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_needle_r_Description": {
+    "ru": "Дальность, True Strike, бонус AGI и самонаводящиеся иглы с каждой атаки.",
+    "en": "Bonus range, True Strike, Agility, and homing needles on every attack."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_spore_infection": {
+    "ru": "Споровое заражение",
+    "en": "Spore Infection"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_spore_infection_Description": {
+    "ru": "Снижены магрезист и скорость; ближайшие био-турели фокусируются на цели.",
+    "en": "Reduced magic resistance and move speed; focused by nearby Bio-Turrets."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_q_cloud_debuff": {
+    "ru": "Облако спор",
+    "en": "Spore Cloud"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_q_cloud_debuff_Description": {
+    "ru": "Шанс промаха атак 25%.",
+    "en": "25% attack miss chance."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_turret_frenzy": {
+    "ru": "Перегрузка улья",
+    "en": "Hive Overload"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_turret_frenzy_Description": {
+    "ru": "Ускоренный темп стрельбы био-турели.",
+    "en": "Accelerated Bio-Turret firing cadence."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_tether_slow": {
+    "ru": "Токсичная нить",
+    "en": "Toxic Tether"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_tether_slow_Description": {
+    "ru": "Замедлен нитью между био-турелями.",
+    "en": "Slowed by a Bio-Turret tether."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_obelisk": {
+    "ru": "Материнский Обелиск",
+    "en": "Mother Obelisk"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_hive_obelisk_Description": {
+    "ru": "Периодически бьёт волнами по области и усиливает турели рядом.",
+    "en": "Periodically pulses AoE damage and empowers nearby Bio-Turrets."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_pollen": {
+    "ru": "Симбиотическая пыльца",
+    "en": "Symbiotic Pollen"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_pollen_Description": {
+    "ru": "Ускоряет и лечит союзников; ослабляет скорость и лечение врагов.",
+    "en": "Empowers and heals allies; slows enemies and reduces healing."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_shield": {
+    "ru": "Пыльцевой барьер",
+    "en": "Pollen Barrier"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_shield_Description": {
+    "ru": "Поглощает входящий урон.",
+    "en": "Absorbs incoming damage."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_w_ally": {
+    "ru": "Живой кокон",
+    "en": "Living Cocoon"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_w_ally_Description": {
+    "ru": "Щит, сопротивление эффектам и периодические импульсы вокруг носителя.",
+    "en": "Shield, Status Resistance, and periodic area magic pulses."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_w_enemy": {
+    "ru": "Паразитический кокон",
+    "en": "Parasitic Cocoon"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_w_enemy_Description": {
+    "ru": "Обездвижен и теряет здоровье в пользу Симбионта.",
+    "en": "Rooted and draining health to Spore Symbiont."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_e_aura_buff": {
+    "ru": "Аура мицелия",
+    "en": "Mycelium Aura"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_e_aura_buff_Description": {
+    "ru": "Увеличивает все атрибуты и усиливает входящее лечение.",
+    "en": "Increases all attributes and incoming healing."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_e_surge": {
+    "ru": "Всплеск спороношения",
+    "en": "Spore Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_e_surge_Description": {
+    "ru": "Атаки вызывают Мутагенные железы Симбионта.",
+    "en": "Attacks trigger Symbiont Mutagenic Glands."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_aura": {
+    "ru": "Кольцо Возрождения",
+    "en": "Ring of Rebirth"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_aura_Description": {
+    "ru": "Исцеляет и защищает союзников в святилище, нанося урон врагам.",
+    "en": "Heals and shields allies inside the sanctuary while damaging enemies."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_ally": {
+    "ru": "Благословение Возрождения",
+    "en": "Rebirth Ward"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_ally_Description": {
+    "ru": "Снижает входящий урон на 25% и сильно регенерирует здоровье.",
+    "en": "Reduces incoming damage by 25% and rapidly regenerates HP."
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_enemy_slow": {
+    "ru": "Угнетение спор",
+    "en": "Spore Suppression"
+  },
+  "DOTA_Tooltip_modifier_evo_veno_symbiont_r_enemy_slow_Description": {
+    "ru": "Скорость передвижения снижена на 35%.",
+    "en": "Move speed reduced by 35%."
+  }
+}

@@ -6,6 +6,11 @@ export interface PatrolWaypoint {
     campSize: string;
 }
 
+export interface BossSpawnPoint {
+    position: Vector;
+    campSize?: string;
+}
+
 export interface ActiveBossRuntime {
     definition: BossDefinition;
     unit?: CDOTA_BaseNPC;
@@ -102,11 +107,11 @@ export function revealBossOnMinimap(origin: Vector): void {
 
 export function discoverBossMapPositions(): {
     fountainPositions: Vector[];
-    bossSpawnPoints: Vector[];
+    bossSpawnPoints: BossSpawnPoint[];
     patrolWaypoints: PatrolWaypoint[];
 } {
     const fountainPositions: Vector[] = [];
-    const bossSpawnPoints: Vector[] = [];
+    const bossSpawnPoints: BossSpawnPoint[] = [];
     const patrolWaypoints: PatrolWaypoint[] = [];
 
     for (const fountain of Entities.FindAllByClassname("ent_dota_fountain")) {
@@ -117,7 +122,7 @@ export function discoverBossMapPositions(): {
 
     for (const ent of Entities.FindAllByName(`${EVO_MAP_ENTITIES.BOSS_SPAWN_PREFIX}*`)) {
         if (ent && !ent.IsNull() && IsValidEntity(ent)) {
-            bossSpawnPoints.push(ent.GetAbsOrigin());
+            bossSpawnPoints.push({ position: ent.GetAbsOrigin() });
         }
     }
 
@@ -146,12 +151,12 @@ export function discoverBossMapPositions(): {
     if (bossSpawnPoints.length < 4) {
         for (const wp of patrolWaypoints) {
             if (!isNearAnyFountain(wp.position, fountainPositions, 1600)) {
-                bossSpawnPoints.push(wp.position);
+                bossSpawnPoints.push({ position: wp.position, campSize: wp.campSize });
             }
         }
     }
     if (bossSpawnPoints.length === 0) {
-        bossSpawnPoints.push(Vector(-1800, 1800, 128), Vector(1800, -1800, 128));
+        bossSpawnPoints.push({ position: Vector(-1800, 1800, 128) }, { position: Vector(1800, -1800, 128) });
     }
 
     return { fountainPositions, bossSpawnPoints, patrolWaypoints };

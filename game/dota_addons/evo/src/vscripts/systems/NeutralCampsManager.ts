@@ -120,10 +120,16 @@ export class NeutralCampsManager {
     }
 
     private spawnAllCamps(): void {
+        const matchTime = GameRules.GetDOTATime(false, false);
+        const allowHardAndStrong = matchTime >= EVO_CONSTANTS.CAMP_HARD_SPAWN_UNLOCK_SECONDS;
         const targetLevel = this.getNeutralLevel();
 
         for (const camp of this.camps) {
             if (!camp.trigger || camp.trigger.IsNull() || !IsValidEntity(camp.trigger)) continue;
+
+            if (!allowHardAndStrong && (camp.size === "hard" || camp.size === "strong")) {
+                continue;
+            }
 
             camp.aliveCreepEntIndexes = camp.aliveCreepEntIndexes.filter((entIndex) => {
                 const ent = EntIndexToHScript(entIndex);
@@ -145,7 +151,11 @@ export class NeutralCampsManager {
 
             let size = camp.size;
             if (size.includes("random") && this.sizeKeys.length > 0) {
-                size = this.sizeKeys[RandomInt(0, this.sizeKeys.length - 1)];
+                const candidateSizes = allowHardAndStrong
+                    ? this.sizeKeys
+                    : this.sizeKeys.filter((s) => s !== "hard" && s !== "strong");
+                if (candidateSizes.length === 0) continue;
+                size = candidateSizes[RandomInt(0, candidateSizes.length - 1)];
             }
 
             const sizeData = this.campConfig[size];

@@ -100,6 +100,9 @@ export const EVO_CONSTANTS = {
     NEUTRAL_CAMP_RESPAWN_SECONDS: 30,
     NEUTRAL_CAMP_MAX_UNITS: 5,
     NEUTRAL_CAMP_MAX_UNITS_DEV: 3,
+    CAMP_TIER_MEDIUM_UNLOCK_SECONDS: 11 * 60,
+    CAMP_TIER_STRONG_UNLOCK_SECONDS: 19 * 60,
+    CAMP_HARD_SPAWN_UNLOCK_SECONDS: 15 * 60,
 
     BOUNTY_RUNE_INTERVAL_SECONDS: 120,
     POWER_RUNE_FIRST_SPAWN_SECONDS: 90,
@@ -118,6 +121,8 @@ export const EVO_CONSTANTS = {
     ITEM_SELL_REFUND_RATIO: 0.7,
     DEATH_GOLD_PENALTY_RATIO: 0.2,
     BUYBACK_COOLDOWN_SECONDS: 240,
+    SCAN_COOLDOWN_SECONDS: 60,
+    SCAN_MAX_CHARGES: 3,
     SOLO_KILL_BONUS_MULTIPLIER: 1.5,
 
     CREEP_SHARE_RADIUS: 1200,
@@ -131,6 +136,7 @@ export const EVO_CONSTANTS = {
     BASE_TP_COOLDOWN: 60,
     FOUNTAIN_TELEPORT_COOLDOWN: 3,
     FOUNTAIN_COMBAT_LOCK_SECONDS: 3,
+    STARTING_GOLD: 350,
     GOLD_PER_TICK: 1,
     GOLD_TICK_TIME: 2 / 3,
 
@@ -140,6 +146,11 @@ export const EVO_CONSTANTS = {
     BOSS_COURAGE_TIME_SECONDS: 480,
 
     DUEL_INTERVAL_SECONDS: 180,
+    DUEL_INTERVAL_7_8_PLAYERS: 180,
+    DUEL_INTERVAL_5_6_PLAYERS: 270,
+    DUEL_INTERVAL_4_PLAYERS: 360,
+    DUEL_INTERVAL_3_PLAYERS: 420,
+    DUEL_INTERVAL_2_PLAYERS: 480,
     DUEL_MAX_ROUNDS: 10,
     DUEL_DURATION_SECONDS: 60,
     DUEL_COUNTDOWN_SECONDS: 5,
@@ -276,4 +287,22 @@ export function calculateComebackKillXp(killerLevel: number, victimLevel: number
     const levelDiff = Math.max(0, victimLevel - killerLevel);
     const comebackBonus = levelDiff * 60;
     return baseKillXp + comebackBonus;
+}
+
+export function isCampSizeAllowedAtTime(campSize: string, elapsedTimeSeconds: number): boolean {
+    if (campSize === "small") {
+        return true;
+    }
+    if (campSize === "strong" || campSize === "random") {
+        return elapsedTimeSeconds >= EVO_CONSTANTS.CAMP_TIER_STRONG_UNLOCK_SECONDS;
+    }
+    return elapsedTimeSeconds >= EVO_CONSTANTS.CAMP_TIER_MEDIUM_UNLOCK_SECONDS;
+}
+
+export function getDuelIntervalSeconds(activePlayerCount: number): number {
+    if (activePlayerCount >= 7) return EVO_CONSTANTS.DUEL_INTERVAL_7_8_PLAYERS;
+    if (activePlayerCount >= 5) return EVO_CONSTANTS.DUEL_INTERVAL_5_6_PLAYERS;
+    if (activePlayerCount === 4) return EVO_CONSTANTS.DUEL_INTERVAL_4_PLAYERS;
+    if (activePlayerCount === 3) return EVO_CONSTANTS.DUEL_INTERVAL_3_PLAYERS;
+    return EVO_CONSTANTS.DUEL_INTERVAL_2_PLAYERS;
 }

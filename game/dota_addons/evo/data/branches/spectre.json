@@ -8,7 +8,7 @@
   "tags": ["spectre", "astral", "shadow"],
   "spell_pool_tags": ["burst", "utility"],
   "innate": "evo_spectre_dispersion",
-  "signature": "evo_spectre_t1_q",
+  "signature": "spectre_spectral_dagger",
   "stages": [
     {
       "id": "evo_body_t1_spectre",
@@ -20,7 +20,7 @@
       "scale": 0.65,
       "ability_level": 1,
       "abilities": [
-        "evo_spectre_t1_q",
+        "spectre_spectral_dagger",
         "evo_spectre_t1_w",
         "evo_spectre_dispersion"
       ],
