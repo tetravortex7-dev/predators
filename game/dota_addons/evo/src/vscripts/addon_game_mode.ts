@@ -93,6 +93,8 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
         "particles/units/heroes/hero_treant/scepter_overgrowth_aura.vpcf",
         "particles/units/heroes/hero_wisp/wisp_guardian_explosion.vpcf",
         "particles/units/heroes/hero_wisp/wisp_overcharge.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
+        "particles/evo_spectre/evo_spectre_void_surge.vpcf",
     ];
     for (const vpcf of extraParticles) {
         if (!seenParticles.has(vpcf)) {

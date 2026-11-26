@@ -1,0 +1,2889 @@
+{
+  "meta": {
+    "source": "pak01_dir.vpk/soundevents/voscripts",
+    "total_files": 206
+  },
+  "hero_vo": {
+    "abaddon": {
+      "precache": "soundevents/voscripts/game_sounds_vo_abaddon.vsndevts",
+      "count": 295,
+      "sample_keys": [
+        "abaddon_abad_spawn_01",
+        "abaddon_abad_spawn_02",
+        "abaddon_abad_spawn_03",
+        "abaddon_abad_spawn_04",
+        "abaddon_abad_spawn_05",
+        "abaddon_abad_begin_01",
+        "abaddon_abad_begin_02",
+        "abaddon_abad_firstblood_01"
+      ]
+    },
+    "abyssal_underlord": {
+      "precache": "soundevents/voscripts/game_sounds_vo_abyssal_underlord.vsndevts",
+      "count": 309,
+      "sample_keys": [
+        "abyssal_underlord_abys_spawn_02",
+        "abyssal_underlord_abys_spawn_03",
+        "abyssal_underlord_abys_spawn_04",
+        "abyssal_underlord_abys_spawn_05",
+        "abyssal_underlord_abys_spawn_06",
+        "abyssal_underlord_abys_spawn_07",
+        "abyssal_underlord_abys_spawn_08",
+        "abyssal_underlord_abys_battlebegins_01"
+      ]
+    },
+    "alchemist": {
+      "precache": "soundevents/voscripts/game_sounds_vo_alchemist.vsndevts",
+      "count": 359,
+      "sample_keys": [
+        "alchemist_alch_spawn_01",
+        "alchemist_alch_spawn_02",
+        "alchemist_alch_spawn_03",
+        "alchemist_alch_spawn_04",
+        "alchemist_alch_spawn_05",
+        "alchemist_alch_spawn_06",
+        "alchemist_alch_battlebegins_01",
+        "alchemist_alch_battlebegins_02"
+      ]
+    },
+    "ancient_apparition": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ancient_apparition.vsndevts",
+      "count": 226,
+      "sample_keys": [
+        "ancient_apparition_appa_spawn_01",
+        "ancient_apparition_appa_spawn_02",
+        "ancient_apparition_appa_spawn_03",
+        "ancient_apparition_appa_spawn_04",
+        "ancient_apparition_appa_battlebegins_01",
+        "ancient_apparition_appa_firstblood_01",
+        "ancient_apparition_appa_firstblood_02",
+        "ancient_apparition_appa_move_01"
+      ]
+    },
+    "antimage": {
+      "precache": "soundevents/voscripts/game_sounds_vo_antimage.vsndevts",
+      "count": 1164,
+      "sample_keys": [
+        "antimage_anti_spawn_01",
+        "antimage_anti_spawn_02",
+        "antimage_anti_spawn_03",
+        "antimage_anti_spawn_04",
+        "antimage_anti_move_01",
+        "antimage_anti_move_02",
+        "antimage_anti_move_03",
+        "antimage_anti_move_04"
+      ]
+    },
+    "arc_warden": {
+      "precache": "soundevents/voscripts/game_sounds_vo_arc_warden.vsndevts",
+      "count": 402,
+      "sample_keys": [
+        "arc_warden_arcwar_spawn_01",
+        "arc_warden_arcwar_spawn_02",
+        "arc_warden_arcwar_spawn_03",
+        "arc_warden_arcwar_spawn_04",
+        "arc_warden_arcwar_spawn_05",
+        "arc_warden_arcwar_spawn_06",
+        "arc_warden_arcwar_spawn_07",
+        "arc_warden_arcwar_spawn_08"
+      ]
+    },
+    "axe": {
+      "precache": "soundevents/voscripts/game_sounds_vo_axe.vsndevts",
+      "count": 1050,
+      "sample_keys": [
+        "axe_axe_spawn_01",
+        "axe_axe_spawn_02",
+        "axe_axe_spawn_03",
+        "axe_axe_spawn_04",
+        "axe_axe_spawn_05",
+        "axe_axe_spawn_06",
+        "axe_axe_spawn_07",
+        "axe_axe_spawn_08"
+      ]
+    },
+    "bane": {
+      "precache": "soundevents/voscripts/game_sounds_vo_bane.vsndevts",
+      "count": 284,
+      "sample_keys": [
+        "bane_bane_spawn_02",
+        "bane_bane_spawn_03",
+        "bane_bane_spawn_05",
+        "bane_bane_spawn_06",
+        "bane_bane_spawn_07",
+        "bane_bane_spawn_01",
+        "bane_bane_spawn_04",
+        "bane_bane_move_01"
+      ]
+    },
+    "batrider": {
+      "precache": "soundevents/voscripts/game_sounds_vo_batrider.vsndevts",
+      "count": 297,
+      "sample_keys": [
+        "batrider_bat_spawn_01",
+        "batrider_bat_spawn_02",
+        "batrider_bat_spawn_03",
+        "batrider_bat_spawn_04",
+        "batrider_bat_spawn_05",
+        "batrider_bat_battlebegins_01",
+        "batrider_bat_battlebegins_02",
+        "batrider_bat_firstblood_01"
+      ]
+    },
+    "beastmaster": {
+      "precache": "soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts",
+      "count": 251,
+      "sample_keys": [
+        "beastmaster_beas_spawn_01",
+        "beastmaster_beas_spawn_02",
+        "beastmaster_beas_spawn_03",
+        "beastmaster_beas_spawn_04",
+        "beastmaster_beas_spawn_05",
+        "beastmaster_beas_spawn_06",
+        "beastmaster_beas_move_01",
+        "beastmaster_beas_move_02"
+      ]
+    },
+    "bloodseeker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts",
+      "count": 254,
+      "sample_keys": [
+        "bloodseeker_blod_spawn_01",
+        "bloodseeker_blod_spawn_02",
+        "bloodseeker_blod_spawn_03",
+        "bloodseeker_blod_spawn_04",
+        "bloodseeker_blod_spawn_05",
+        "bloodseeker_blod_spawn_06",
+        "bloodseeker_blod_spawn_07",
+        "bloodseeker_blod_spawn_08"
+      ]
+    },
+    "bounty_hunter": {
+      "precache": "soundevents/voscripts/game_sounds_vo_bounty_hunter.vsndevts",
+      "count": 284,
+      "sample_keys": [
+        "bounty_hunter_bount_spawn_01",
+        "bounty_hunter_bount_spawn_02",
+        "bounty_hunter_bount_spawn_03",
+        "bounty_hunter_bount_spawn_04",
+        "bounty_hunter_bount_battlebegins_01",
+        "bounty_hunter_bount_firstblood_01",
+        "bounty_hunter_bount_move_01",
+        "bounty_hunter_bount_move_02"
+      ]
+    },
+    "brewmaster": {
+      "precache": "soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts",
+      "count": 296,
+      "sample_keys": [
+        "brewmaster_brew_spawn_01",
+        "brewmaster_brew_spawn_02",
+        "brewmaster_brew_spawn_03",
+        "brewmaster_brew_spawn_04",
+        "brewmaster_brew_spawn_05",
+        "brewmaster_brew_spawn_06",
+        "brewmaster_brew_battlebegins_01",
+        "brewmaster_brew_firstblood_01"
+      ]
+    },
+    "bristleback": {
+      "precache": "soundevents/voscripts/game_sounds_vo_bristleback.vsndevts",
+      "count": 637,
+      "sample_keys": [
+        "bristleback_bristle_spawn_01",
+        "bristleback_bristle_spawn_02",
+        "bristleback_bristle_spawn_03",
+        "bristleback_bristle_spawn_04",
+        "bristleback_bristle_spawn_05",
+        "bristleback_bristle_begin_01",
+        "bristleback_bristle_begin_02",
+        "bristleback_bristle_begin_03"
+      ]
+    },
+    "broodmother": {
+      "precache": "soundevents/voscripts/game_sounds_vo_broodmother.vsndevts",
+      "count": 251,
+      "sample_keys": [
+        "broodmother_broo_spawn_01",
+        "broodmother_broo_spawn_02",
+        "broodmother_broo_spawn_03",
+        "broodmother_broo_spawn_04",
+        "broodmother_broo_spawn_05",
+        "broodmother_broo_battlebegins_01",
+        "broodmother_broo_firstblood_01",
+        "broodmother_broo_firstblood_02"
+      ]
+    },
+    "centaur": {
+      "precache": "soundevents/voscripts/game_sounds_vo_centaur.vsndevts",
+      "count": 317,
+      "sample_keys": [
+        "centaur_cent_spawn_01",
+        "centaur_cent_spawn_02",
+        "centaur_cent_spawn_03",
+        "centaur_cent_spawn_06",
+        "centaur_cent_spawn_07",
+        "centaur_cent_battlebegins_01",
+        "centaur_cent_battlebegins_02",
+        "centaur_cent_firstblood_01"
+      ]
+    },
+    "chaos_knight": {
+      "precache": "soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts",
+      "count": 267,
+      "sample_keys": [
+        "chaos_knight_chaknight_spawn_01",
+        "chaos_knight_chaknight_spawn_02",
+        "chaos_knight_chaknight_spawn_03",
+        "chaos_knight_chaknight_spawn_04",
+        "chaos_knight_chaknight_spawn_05",
+        "chaos_knight_chaknight_battlebegins_01",
+        "chaos_knight_chaknight_firstblood_01",
+        "chaos_knight_chaknight_firstblood_02"
+      ]
+    },
+    "chen": {
+      "precache": "soundevents/voscripts/game_sounds_vo_chen.vsndevts",
+      "count": 212,
+      "sample_keys": [
+        "chen_chen_spawn_01",
+        "chen_chen_spawn_02",
+        "chen_chen_spawn_03",
+        "chen_chen_spawn_04",
+        "chen_chen_spawn_05",
+        "chen_chen_battlebegins_01",
+        "chen_chen_firstblood_01",
+        "chen_chen_firstblood_02"
+      ]
+    },
+    "clinkz": {
+      "precache": "soundevents/voscripts/game_sounds_vo_clinkz.vsndevts",
+      "count": 251,
+      "sample_keys": [
+        "clinkz_clinkz_spawn_01",
+        "clinkz_clinkz_spawn_02",
+        "clinkz_clinkz_spawn_03",
+        "clinkz_clinkz_spawn_04",
+        "clinkz_clinkz_battlebegins_01",
+        "clinkz_clinkz_battlebegins_02",
+        "clinkz_clinkz_first_01",
+        "clinkz_clinkz_move_01"
+      ]
+    },
+    "crystalmaiden": {
+      "precache": "soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts",
+      "count": 924,
+      "sample_keys": [
+        "crystalmaiden_cm_spawn_01",
+        "crystalmaiden_cm_spawn_02",
+        "crystalmaiden_cm_spawn_03",
+        "crystalmaiden_cm_spawn_04",
+        "crystalmaiden_cm_spawn_05",
+        "crystalmaiden_cm_spawn_06",
+        "crystalmaiden_cm_spawn_07",
+        "crystalmaiden_cm_spawn_08"
+      ]
+    },
+    "dark_seer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dark_seer.vsndevts",
+      "count": 227,
+      "sample_keys": [
+        "dark_seer_dkseer_spawn_01",
+        "dark_seer_dkseer_spawn_02",
+        "dark_seer_dkseer_spawn_03",
+        "dark_seer_dkseer_spawn_04",
+        "dark_seer_dkseer_spawn_05",
+        "dark_seer_dkseer_battlebegins_01",
+        "dark_seer_dkseer_firstblood_01",
+        "dark_seer_dkseer_firstblood_02"
+      ]
+    },
+    "dark_willow": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts",
+      "count": 1970,
+      "sample_keys": [
+        "dark_willow_sylph_spawn_01",
+        "dark_willow_sylph_spawn_02",
+        "dark_willow_sylph_spawn_03",
+        "dark_willow_sylph_spawn_04",
+        "dark_willow_sylph_spawn_06",
+        "dark_willow_sylph_spawn_07",
+        "dark_willow_sylph_spawn_08",
+        "dark_willow_sylph_spawn_09"
+      ]
+    },
+    "dawnbreaker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dawnbreaker.vsndevts",
+      "count": 856,
+      "sample_keys": [
+        "dawnbreaker_valora_purpose_01",
+        "dawnbreaker_valora_purpose_02",
+        "dawnbreaker_valora_purpose_03",
+        "dawnbreaker_valora_purpose_05",
+        "dawnbreaker_valora_purpose_06",
+        "dawnbreaker_valora_purpose_07",
+        "dawnbreaker_valora_purpose_08",
+        "dawnbreaker_valora_darkness_01"
+      ]
+    },
+    "dazzle": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dazzle.vsndevts",
+      "count": 236,
+      "sample_keys": [
+        "dazzle_dazz_spawn_01",
+        "dazzle_dazz_spawn_02",
+        "dazzle_dazz_spawn_03",
+        "dazzle_dazz_spawn_04",
+        "dazzle_dazz_spawn_05",
+        "dazzle_dazz_battlebegins_01",
+        "dazzle_dazz_firstblood_01",
+        "dazzle_dazz_move_01"
+      ]
+    },
+    "death_prophet": {
+      "precache": "soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts",
+      "count": 335,
+      "sample_keys": [
+        "death_prophet_dpro_spawn_01",
+        "death_prophet_dpro_spawn_02",
+        "death_prophet_dpro_spawn_03",
+        "death_prophet_dpro_spawn_04",
+        "death_prophet_dpro_spawn_05",
+        "death_prophet_dpro_spawn_06",
+        "death_prophet_dpro_begin_01",
+        "death_prophet_dpro_move_01"
+      ]
+    },
+    "disruptor": {
+      "precache": "soundevents/voscripts/game_sounds_vo_disruptor.vsndevts",
+      "count": 294,
+      "sample_keys": [
+        "disruptor_dis_spawn_01",
+        "disruptor_dis_spawn_02",
+        "disruptor_dis_spawn_03",
+        "disruptor_dis_spawn_04",
+        "disruptor_dis_begin_01",
+        "disruptor_dis_begin_02",
+        "disruptor_dis_first_01",
+        "disruptor_dis_first_02"
+      ]
+    },
+    "doom_bringer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts",
+      "count": 225,
+      "sample_keys": [
+        "doom_bringer_doom_spawn_01",
+        "doom_bringer_doom_spawn_03",
+        "doom_bringer_doom_spawn_04",
+        "doom_bringer_doom_battlebegins_01",
+        "doom_bringer_doom_battlebegins_02",
+        "doom_bringer_doom_move_01",
+        "doom_bringer_doom_move_02",
+        "doom_bringer_doom_move_03"
+      ]
+    },
+    "dragon_knight": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts",
+      "count": 1700,
+      "sample_keys": [
+        "dragon_knight_drag_spawn_01",
+        "dragon_knight_drag_spawn_02",
+        "dragon_knight_drag_spawn_03",
+        "dragon_knight_drag_spawn_04",
+        "dragon_knight_drag_battlebegins_01",
+        "dragon_knight_drag_battlebegins_02",
+        "dragon_knight_drag_firstblood_01",
+        "dragon_knight_drag_firstblood_02"
+      ]
+    },
+    "drowranger": {
+      "precache": "soundevents/voscripts/game_sounds_vo_drowranger.vsndevts",
+      "count": 1141,
+      "sample_keys": [
+        "drowranger_dro_spawn_01",
+        "drowranger_dro_spawn_02",
+        "drowranger_dro_spawn_03",
+        "drowranger_dro_spawn_04",
+        "drowranger_dro_spawn_05",
+        "drowranger_dro_spawn_06",
+        "drowranger_dro_spawn_07",
+        "drowranger_drow_battlebegins_01"
+      ]
+    },
+    "earth_spirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts",
+      "count": 402,
+      "sample_keys": [
+        "earth_spirit_earthspi_spawn_01",
+        "earth_spirit_earthspi_spawn_02",
+        "earth_spirit_earthspi_spawn_03",
+        "earth_spirit_earthspi_spawn_04",
+        "earth_spirit_earthspi_spawn_05",
+        "earth_spirit_earthspi_spawn_06",
+        "earth_spirit_earthspi_spawn_07",
+        "earth_spirit_earthspi_battlebegins_01"
+      ]
+    },
+    "earthshaker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts",
+      "count": 1202,
+      "sample_keys": [
+        "earthshaker_erth_spawn_01",
+        "earthshaker_erth_spawn_02",
+        "earthshaker_erth_spawn_03",
+        "earthshaker_erth_spawn_04",
+        "earthshaker_erth_spawn_05",
+        "earthshaker_erth_spawn_06",
+        "earthshaker_erth_battlebegins_01",
+        "earthshaker_erth_firstblood_01"
+      ]
+    },
+    "elder_titan": {
+      "precache": "soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts",
+      "count": 312,
+      "sample_keys": [
+        "elder_titan_elder_spawn_01",
+        "elder_titan_elder_spawn_02",
+        "elder_titan_elder_spawn_03",
+        "elder_titan_elder_spawn_04",
+        "elder_titan_elder_spawn_05",
+        "elder_titan_elder_spawn_06",
+        "elder_titan_elder_spawn_07",
+        "elder_titan_elder_spawn_08"
+      ]
+    },
+    "ember_spirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts",
+      "count": 407,
+      "sample_keys": [
+        "ember_spirit_embr_spawn_01",
+        "ember_spirit_embr_spawn_02",
+        "ember_spirit_embr_spawn_03",
+        "ember_spirit_embr_spawn_04",
+        "ember_spirit_embr_spawn_05",
+        "ember_spirit_embr_spawn_06",
+        "ember_spirit_embr_spawn_07",
+        "ember_spirit_embr_begin_01"
+      ]
+    },
+    "enchantress": {
+      "precache": "soundevents/voscripts/game_sounds_vo_enchantress.vsndevts",
+      "count": 225,
+      "sample_keys": [
+        "enchantress_ench_spawn_01",
+        "enchantress_ench_spawn_02",
+        "enchantress_ench_spawn_03",
+        "enchantress_ench_spawn_04",
+        "enchantress_ench_spawn_05",
+        "enchantress_ench_start_01",
+        "enchantress_ench_move_01",
+        "enchantress_ench_move_02"
+      ]
+    },
+    "enigma": {
+      "precache": "soundevents/voscripts/game_sounds_vo_enigma.vsndevts",
+      "count": 243,
+      "sample_keys": [
+        "enigma_enig_spawn_01",
+        "enigma_enig_spawn_02",
+        "enigma_enig_spawn_03",
+        "enigma_enig_spawn_04",
+        "enigma_enig_spawn_05",
+        "enigma_enig_spawn_06",
+        "enigma_enig_spawn_07",
+        "enigma_enig_spawn_08"
+      ]
+    },
+    "faceless_void": {
+      "precache": "soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts",
+      "count": 1048,
+      "sample_keys": [
+        "faceless_void_face_spawn_01",
+        "faceless_void_face_spawn_02",
+        "faceless_void_face_spawn_03",
+        "faceless_void_face_spawn_04",
+        "faceless_void_face_move_01",
+        "faceless_void_face_move_02",
+        "faceless_void_face_move_03",
+        "faceless_void_face_move_04"
+      ]
+    },
+    "furion": {
+      "precache": "soundevents/voscripts/game_sounds_vo_furion.vsndevts",
+      "count": 253,
+      "sample_keys": [
+        "furion_furi_spawn_01",
+        "furion_furi_spawn_02",
+        "furion_furi_spawn_03",
+        "furion_furi_battlebegins_01",
+        "furion_furi_firstblood_01",
+        "furion_furi_move_01",
+        "furion_furi_move_02",
+        "furion_furi_move_03"
+      ]
+    },
+    "grimstroke": {
+      "precache": "soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts",
+      "count": 876,
+      "sample_keys": [
+        "grimstroke_grimstroke_spawn_01_02",
+        "grimstroke_grimstroke_spawn_01_03",
+        "grimstroke_grimstroke_spawn_02",
+        "grimstroke_grimstroke_spawn_03_02",
+        "grimstroke_grimstroke_spawn_04",
+        "grimstroke_grimstroke_spawn_05",
+        "grimstroke_grimstroke_spawn_06",
+        "grimstroke_grimstroke_spawn_07"
+      ]
+    },
+    "gyrocopter": {
+      "precache": "soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts",
+      "count": 334,
+      "sample_keys": [
+        "gyrocopter_gyro_spawn_01",
+        "gyrocopter_gyro_spawn_02",
+        "gyrocopter_gyro_spawn_03",
+        "gyrocopter_gyro_spawn_04",
+        "gyrocopter_gyro_spawn_05",
+        "gyrocopter_gyro_spawn_06",
+        "gyrocopter_gyro_begins_01",
+        "gyrocopter_gyro_begins_02"
+      ]
+    },
+    "hoodwink": {
+      "precache": "soundevents/voscripts/game_sounds_vo_hoodwink.vsndevts",
+      "count": 1258,
+      "sample_keys": [
+        "hoodwink_hoodwink_ability_stop_01",
+        "hoodwink_hoodwink_ability_stop_02",
+        "hoodwink_hoodwink_ability_stop_02_02",
+        "hoodwink_hoodwink_ability_stop_03",
+        "hoodwink_hoodwink_ability_stop_04",
+        "hoodwink_hoodwink_ability_stop_05",
+        "hoodwink_hoodwink_ability_stop_05_02",
+        "hoodwink_hoodwink_ability_stop_06"
+      ]
+    },
+    "huskar": {
+      "precache": "soundevents/voscripts/game_sounds_vo_huskar.vsndevts",
+      "count": 246,
+      "sample_keys": [
+        "huskar_husk_spawn_01",
+        "huskar_husk_spawn_02",
+        "huskar_husk_spawn_03",
+        "huskar_husk_spawn_04",
+        "huskar_husk_spawn_05",
+        "huskar_husk_battlebegins_01",
+        "huskar_husk_firstblood_01",
+        "huskar_husk_move_01"
+      ]
+    },
+    "invoker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_invoker.vsndevts",
+      "count": 1652,
+      "sample_keys": [
+        "invoker_invo_spawn_01",
+        "invoker_invo_spawn_02",
+        "invoker_invo_spawn_03",
+        "invoker_invo_spawn_04",
+        "invoker_invo_spawn_05",
+        "invoker_invo_begin_01",
+        "invoker_invo_first_01",
+        "invoker_invo_move_01"
+      ]
+    },
+    "jakiro": {
+      "precache": "soundevents/voscripts/game_sounds_vo_jakiro.vsndevts",
+      "count": 268,
+      "sample_keys": [
+        "jakiro_jak_spawn_01",
+        "jakiro_jak_spawn_02",
+        "jakiro_jak_spawn_03",
+        "jakiro_jak_spawn_04",
+        "jakiro_jak_spawn_05",
+        "jakiro_jak_battlebegins_01",
+        "jakiro_jak_battlebegins_02",
+        "jakiro_jak_firstblood_01"
+      ]
+    },
+    "juggernaut": {
+      "precache": "soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts",
+      "count": 1123,
+      "sample_keys": [
+        "juggernaut_jug_spawn_01",
+        "juggernaut_jug_spawn_02",
+        "juggernaut_jug_spawn_03",
+        "juggernaut_jug_spawn_04",
+        "juggernaut_jug_spawn_05",
+        "juggernaut_jug_spawn_06",
+        "juggernaut_jug_spawn_07",
+        "juggernaut_jug_spawn_08"
+      ]
+    },
+    "keeper_of_the_light": {
+      "precache": "soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts",
+      "count": 311,
+      "sample_keys": [
+        "keeper_of_the_light_keep_spawn_01",
+        "keeper_of_the_light_keep_spawn_02",
+        "keeper_of_the_light_keep_spawn_03",
+        "keeper_of_the_light_keep_spawn_04",
+        "keeper_of_the_light_keep_spawn_05",
+        "keeper_of_the_light_keep_begin_01",
+        "keeper_of_the_light_keep_firstblood_01",
+        "keeper_of_the_light_keep_firstblood_02"
+      ]
+    },
+    "kez": {
+      "precache": "soundevents/voscripts/game_sounds_vo_kez.vsndevts",
+      "count": 1439,
+      "sample_keys": [
+        "kez_kez_ability_81_beak_buster_kat_01",
+        "kez_kez_ability_81_beak_buster_kat_02",
+        "kez_kez_ability_81_beak_buster_kat_03",
+        "kez_kez_ability_81_beak_buster_kat_04",
+        "kez_kez_ability_81_beak_buster_kat_05",
+        "kez_kez_ability_81_beak_buster_kat_06",
+        "kez_kez_ability_81_beak_buster_kat_07",
+        "kez_kez_ability_81_beak_buster_kat_08"
+      ]
+    },
+    "kunkka": {
+      "precache": "soundevents/voscripts/game_sounds_vo_kunkka.vsndevts",
+      "count": 285,
+      "sample_keys": [
+        "kunkka_kunk_spawn_01",
+        "kunkka_kunk_spawn_02",
+        "kunkka_kunk_spawn_03",
+        "kunkka_kunk_spawn_04",
+        "kunkka_kunk_spawn_05",
+        "kunkka_kunk_spawn_06",
+        "kunkka_kunk_spawn_07",
+        "kunkka_kunk_spawn_08"
+      ]
+    },
+    "largo": {
+      "precache": "soundevents/voscripts/game_sounds_vo_largo.vsndevts",
+      "count": 1451,
+      "sample_keys": [
+        "largo_largo_ally_001",
+        "largo_largo_ally_003",
+        "largo_largo_ally_005",
+        "largo_largo_ally_007",
+        "largo_largo_ally_009",
+        "largo_largo_ally_011",
+        "largo_largo_ally_012",
+        "largo_largo_ally_013"
+      ]
+    },
+    "legion_commander": {
+      "precache": "soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts",
+      "count": 1233,
+      "sample_keys": [
+        "legion_commander_legcom_spawn_01",
+        "legion_commander_legcom_spawn_02",
+        "legion_commander_legcom_spawn_03",
+        "legion_commander_legcom_spawn_04",
+        "legion_commander_legcom_spawn_05",
+        "legion_commander_legcom_begin_01",
+        "legion_commander_legcom_firstblood_01",
+        "legion_commander_legcom_firstblood_02"
+      ]
+    },
+    "leshrac": {
+      "precache": "soundevents/voscripts/game_sounds_vo_leshrac.vsndevts",
+      "count": 217,
+      "sample_keys": [
+        "leshrac_lesh_spawn_01",
+        "leshrac_lesh_spawn_02",
+        "leshrac_lesh_spawn_03",
+        "leshrac_lesh_spawn_04",
+        "leshrac_lesh_battlebegins_01",
+        "leshrac_lesh_firstblood_01",
+        "leshrac_lesh_firstblood_02",
+        "leshrac_lesh_move_01"
+      ]
+    },
+    "lich": {
+      "precache": "soundevents/voscripts/game_sounds_vo_lich.vsndevts",
+      "count": 258,
+      "sample_keys": [
+        "lich_lich_spawn_01",
+        "lich_lich_spawn_02",
+        "lich_lich_spawn_03",
+        "lich_lich_spawn_04",
+        "lich_lich_spawn_05",
+        "lich_lich_move_01",
+        "lich_lich_move_02",
+        "lich_lich_move_03"
+      ]
+    },
+    "life_stealer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_life_stealer.vsndevts",
+      "count": 281,
+      "sample_keys": [
+        "life_stealer_lifest_spawn_01",
+        "life_stealer_lifest_spawn_02",
+        "life_stealer_lifest_spawn_03",
+        "life_stealer_lifest_spawn_04",
+        "life_stealer_lifest_begin_01",
+        "life_stealer_lifest_first_01",
+        "life_stealer_lifest_move_01",
+        "life_stealer_lifest_move_02"
+      ]
+    },
+    "lina": {
+      "precache": "soundevents/voscripts/game_sounds_vo_lina.vsndevts",
+      "count": 258,
+      "sample_keys": [
+        "lina_lina_spawn_01",
+        "lina_lina_spawn_02",
+        "lina_lina_spawn_03",
+        "lina_lina_spawn_04",
+        "lina_lina_spawn_05",
+        "lina_lina_spawn_06",
+        "lina_lina_spawn_07",
+        "lina_lina_spawn_08"
+      ]
+    },
+    "lion": {
+      "precache": "soundevents/voscripts/game_sounds_vo_lion.vsndevts",
+      "count": 189,
+      "sample_keys": [
+        "lion_lion_spawn_01",
+        "lion_lion_spawn_02",
+        "lion_lion_spawn_03",
+        "lion_lion_spawn_04",
+        "lion_lion_spawn_05",
+        "lion_lion_spawn_06",
+        "lion_lion_move_01",
+        "lion_lion_move_02"
+      ]
+    },
+    "lone_druid": {
+      "precache": "soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts",
+      "count": 619,
+      "sample_keys": [
+        "lone_druid_lone_druid_spawn_01",
+        "lone_druid_lone_druid_spawn_02",
+        "lone_druid_lone_druid_spawn_03",
+        "lone_druid_lone_druid_spawn_04",
+        "lone_druid_lone_druid_spawn_05",
+        "lone_druid_lone_druid_spawn_06",
+        "lone_druid_lone_druid_battlebegins_01",
+        "lone_druid_lone_druid_battlebegins_02"
+      ]
+    },
+    "luna": {
+      "precache": "soundevents/voscripts/game_sounds_vo_luna.vsndevts",
+      "count": 288,
+      "sample_keys": [
+        "luna_luna_spawn_01",
+        "luna_luna_spawn_02",
+        "luna_luna_spawn_03",
+        "luna_luna_spawn_04",
+        "luna_luna_battlebegins_01",
+        "luna_luna_battlebegins_02",
+        "luna_luna_firstblood_01",
+        "luna_luna_move_01"
+      ]
+    },
+    "lycan": {
+      "precache": "soundevents/voscripts/game_sounds_vo_lycan.vsndevts",
+      "count": 295,
+      "sample_keys": [
+        "lycan_lycan_spawn_01",
+        "lycan_lycan_spawn_02",
+        "lycan_lycan_spawn_03",
+        "lycan_lycan_spawn_04",
+        "lycan_lycan_battlebegins_01",
+        "lycan_lycan_battlebegins_02",
+        "lycan_lycan_firstblood_01",
+        "lycan_lycan_firstblood_02"
+      ]
+    },
+    "magnataur": {
+      "precache": "soundevents/voscripts/game_sounds_vo_magnataur.vsndevts",
+      "count": 320,
+      "sample_keys": [
+        "magnataur_magn_spawn_02",
+        "magnataur_magn_spawn_04",
+        "magnataur_magn_spawn_05",
+        "magnataur_magn_spawn_06",
+        "magnataur_magn_begin_01",
+        "magnataur_magn_firstblood_01",
+        "magnataur_magn_move_01",
+        "magnataur_magn_move_02"
+      ]
+    },
+    "marci": {
+      "precache": "soundevents/voscripts/game_sounds_vo_marci.vsndevts",
+      "count": 10,
+      "sample_keys": [
+        "marci_marci_deny",
+        "marci_marci_immortality",
+        "marci_marci_move",
+        "marci_marci_move_2",
+        "marci_marci_move_3",
+        "marci_marci_taking_damage",
+        "marci_marci_thanks",
+        "marci_marci_laugh"
+      ]
+    },
+    "mars": {
+      "precache": "soundevents/voscripts/game_sounds_vo_mars.vsndevts",
+      "count": 1138,
+      "sample_keys": [
+        "mars_mars_spawn_01",
+        "mars_mars_spawn_01_02",
+        "mars_mars_spawn_02",
+        "mars_mars_spawn_03",
+        "mars_mars_spawn_04",
+        "mars_mars_spawn_05_02",
+        "mars_mars_spawn_05_03",
+        "mars_mars_spawn_06"
+      ]
+    },
+    "medusa": {
+      "precache": "soundevents/voscripts/game_sounds_vo_medusa.vsndevts",
+      "count": 367,
+      "sample_keys": [
+        "medusa_medus_spawn_01",
+        "medusa_medus_spawn_02",
+        "medusa_medus_spawn_03",
+        "medusa_medus_spawn_04",
+        "medusa_medus_spawn_05",
+        "medusa_medus_begin_01",
+        "medusa_medus_begin_02",
+        "medusa_medus_begin_03"
+      ]
+    },
+    "meepo": {
+      "precache": "soundevents/voscripts/game_sounds_vo_meepo.vsndevts",
+      "count": 385,
+      "sample_keys": [
+        "meepo_meepo_spawn_01",
+        "meepo_meepo_spawn_02",
+        "meepo_meepo_spawn_03",
+        "meepo_meepo_spawn_04",
+        "meepo_meepo_spawn_05",
+        "meepo_meepo_begin_01",
+        "meepo_meepo_begin_02",
+        "meepo_meepo_firstblood_01"
+      ]
+    },
+    "mirana": {
+      "precache": "soundevents/voscripts/game_sounds_vo_mirana.vsndevts",
+      "count": 1211,
+      "sample_keys": [
+        "mirana_mir_spawn_01",
+        "mirana_mir_spawn_02",
+        "mirana_mir_spawn_03",
+        "mirana_mir_spawn_04",
+        "mirana_mir_spawn_05",
+        "mirana_mir_spawn_06",
+        "mirana_mir_spawn_07",
+        "mirana_mir_spawn_08"
+      ]
+    },
+    "monkey_king": {
+      "precache": "soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts",
+      "count": 1876,
+      "sample_keys": [
+        "monkey_king_monkey_spawn_01",
+        "monkey_king_monkey_spawn_02",
+        "monkey_king_monkey_spawn_03",
+        "monkey_king_monkey_spawn_04",
+        "monkey_king_monkey_spawn_05",
+        "monkey_king_monkey_spawn_06",
+        "monkey_king_monkey_spawn_07",
+        "monkey_king_monkey_spawn_08"
+      ]
+    },
+    "morphling": {
+      "precache": "soundevents/voscripts/game_sounds_vo_morphling.vsndevts",
+      "count": 402,
+      "sample_keys": [
+        "morphling_mrph_spawn_01",
+        "morphling_mrph_spawn_04",
+        "morphling_mrph_spawn_05",
+        "morphling_mrph_spawn_06",
+        "morphling_mrph_spawn_08",
+        "morphling_mrph_move_01",
+        "morphling_mrph_move_01a",
+        "morphling_mrph_move_01b"
+      ]
+    },
+    "muerta": {
+      "precache": "soundevents/voscripts/game_sounds_vo_muerta.vsndevts",
+      "count": 1767,
+      "sample_keys": [
+        "muerta_eth_muerta_ally_035",
+        "muerta_eth_muerta_ally_045",
+        "muerta_eth_muerta_ally_073",
+        "muerta_eth_muerta_ally_074",
+        "muerta_eth_muerta_ally_113",
+        "muerta_eth_muerta_ally_131",
+        "muerta_eth_muerta_ally_132",
+        "muerta_eth_muerta_ally_141"
+      ]
+    },
+    "naga_siren": {
+      "precache": "soundevents/voscripts/game_sounds_vo_naga_siren.vsndevts",
+      "count": 293,
+      "sample_keys": [
+        "naga_siren_naga_spawn_01",
+        "naga_siren_naga_spawn_02",
+        "naga_siren_naga_spawn_03",
+        "naga_siren_naga_spawn_04",
+        "naga_siren_naga_spawn_05",
+        "naga_siren_naga_spawn_06",
+        "naga_siren_naga_begin_01",
+        "naga_siren_naga_firstblood_01"
+      ]
+    },
+    "necrolyte": {
+      "precache": "soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts",
+      "count": 221,
+      "sample_keys": [
+        "necrolyte_necr_spawn_01",
+        "necrolyte_necr_spawn_02",
+        "necrolyte_necr_spawn_03",
+        "necrolyte_necr_spawn_04",
+        "necrolyte_necr_move_01",
+        "necrolyte_necr_move_02",
+        "necrolyte_necr_move_03",
+        "necrolyte_necr_move_04"
+      ]
+    },
+    "nevermore": {
+      "precache": "soundevents/voscripts/game_sounds_vo_nevermore.vsndevts",
+      "count": 568,
+      "sample_keys": [
+        "nevermore_nev_spawn_01",
+        "nevermore_nev_spawn_02",
+        "nevermore_nev_spawn_03",
+        "nevermore_nev_spawn_04",
+        "nevermore_nev_spawn_05",
+        "nevermore_nev_spawn_06",
+        "nevermore_nev_spawn_07",
+        "nevermore_nev_spawn_09"
+      ]
+    },
+    "night_stalker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_night_stalker.vsndevts",
+      "count": 225,
+      "sample_keys": [
+        "night_stalker_nstalk_spawn_01",
+        "night_stalker_nstalk_spawn_02",
+        "night_stalker_nstalk_spawn_03",
+        "night_stalker_nstalk_spawn_04",
+        "night_stalker_nstalk_spawn_05",
+        "night_stalker_nstalk_battlebegins_01",
+        "night_stalker_nstalk_battlebegins_02",
+        "night_stalker_nstalk_move_01"
+      ]
+    },
+    "nyx_assassin": {
+      "precache": "soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts",
+      "count": 331,
+      "sample_keys": [
+        "nyx_assassin_nyx_spawn_01",
+        "nyx_assassin_nyx_spawn_02",
+        "nyx_assassin_nyx_spawn_03",
+        "nyx_assassin_nyx_spawn_04",
+        "nyx_assassin_nyx_spawn_05",
+        "nyx_assassin_nyx_begin_01",
+        "nyx_assassin_nyx_firstblood_01",
+        "nyx_assassin_nyx_firstblood_02"
+      ]
+    },
+    "ogre_magi": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts",
+      "count": 915,
+      "sample_keys": [
+        "ogre_magi_ogmag_spawn_01",
+        "ogre_magi_ogmag_spawn_02",
+        "ogre_magi_ogmag_spawn_03",
+        "ogre_magi_ogmag_spawn_04",
+        "ogre_magi_ogmag_spawn_05",
+        "ogre_magi_ogmag_spawn_06",
+        "ogre_magi_ogmag_battlebegins_01",
+        "ogre_magi_ogmag_firstblood_01"
+      ]
+    },
+    "omniknight": {
+      "precache": "soundevents/voscripts/game_sounds_vo_omniknight.vsndevts",
+      "count": 280,
+      "sample_keys": [
+        "omniknight_omni_spawn_01",
+        "omniknight_omni_spawn_02",
+        "omniknight_omni_spawn_03",
+        "omniknight_omni_spawn_04",
+        "omniknight_omni_spawn_05",
+        "omniknight_omni_battlebegins_01",
+        "omniknight_omni_firstblood_01",
+        "omniknight_omni_firstblood_02"
+      ]
+    },
+    "oracle": {
+      "precache": "soundevents/voscripts/game_sounds_vo_oracle.vsndevts",
+      "count": 938,
+      "sample_keys": [
+        "oracle_orac_spawn_01",
+        "oracle_orac_spawn_02",
+        "oracle_orac_spawn_03",
+        "oracle_orac_battlebegins_01",
+        "oracle_orac_battlebegins_02",
+        "oracle_orac_battlebegins_03",
+        "oracle_orac_firstblood_01",
+        "oracle_orac_firstblood_02"
+      ]
+    },
+    "oracle_fortune": {
+      "precache": "soundevents/voscripts/game_sounds_vo_oracle_fortune.vsndevts",
+      "count": 336,
+      "sample_keys": [
+        "oracle_fortune_cards_death_01",
+        "oracle_fortune_cards_death_02",
+        "oracle_fortune_cards_death_03",
+        "oracle_fortune_cards_devil_01",
+        "oracle_fortune_cards_devil_02",
+        "oracle_fortune_cards_devil_03",
+        "oracle_fortune_cards_emperor_01",
+        "oracle_fortune_cards_emperor_02"
+      ]
+    },
+    "outworld_destroyer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_outworld_destroyer.vsndevts",
+      "count": 271,
+      "sample_keys": [
+        "outworld_destroyer_odest_spawn_01",
+        "outworld_destroyer_odest_spawn_02",
+        "outworld_destroyer_odest_spawn_03",
+        "outworld_destroyer_odest_spawn_04",
+        "outworld_destroyer_odest_spawn_05",
+        "outworld_destroyer_odest_spawn_06",
+        "outworld_destroyer_odest_begin_01",
+        "outworld_destroyer_odest_begin_02"
+      ]
+    },
+    "pangolin": {
+      "precache": "soundevents/voscripts/game_sounds_vo_pangolin.vsndevts",
+      "count": 1001,
+      "sample_keys": [
+        "pangolin_pangolin_inthebag_02",
+        "pangolin_pangolin_inthebag_01",
+        "pangolin_pangolin_spawn_01",
+        "pangolin_pangolin_spawn_02",
+        "pangolin_pangolin_spawn_03",
+        "pangolin_pangolin_spawn_04",
+        "pangolin_pangolin_spawn_05",
+        "pangolin_pangolin_spawn_06"
+      ]
+    },
+    "phantom_assassin": {
+      "precache": "soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts",
+      "count": 1421,
+      "sample_keys": [
+        "phantom_assassin_phass_spawn_01",
+        "phantom_assassin_phass_spawn_02",
+        "phantom_assassin_phass_spawn_03",
+        "phantom_assassin_phass_spawn_04",
+        "phantom_assassin_phass_spawn_05",
+        "phantom_assassin_phass_battlebegins_01",
+        "phantom_assassin_phass_firstblood_01",
+        "phantom_assassin_phass_firstblood_02"
+      ]
+    },
+    "phantom_lancer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_phantom_lancer.vsndevts",
+      "count": 326,
+      "sample_keys": [
+        "phantom_lancer_plance_spawn_01",
+        "phantom_lancer_plance_spawn_02",
+        "phantom_lancer_plance_spawn_03",
+        "phantom_lancer_plance_spawn_04",
+        "phantom_lancer_plance_spawn_05",
+        "phantom_lancer_plance_battlebegins_01",
+        "phantom_lancer_plance_firstblood_01",
+        "phantom_lancer_plance_move_01"
+      ]
+    },
+    "phoenix": {
+      "precache": "soundevents/voscripts/game_sounds_vo_phoenix.vsndevts",
+      "count": 19,
+      "sample_keys": [
+        "phoenix_phoenix_bird_respawn",
+        "phoenix_phoenix_bird_victory",
+        "phoenix_phoenix_bird_moving01",
+        "phoenix_phoenix_bird_moving02",
+        "phoenix_phoenix_bird_attack",
+        "phoenix_phoenix_bird_level_up",
+        "phoenix_phoenix_bird_kill",
+        "phoenix_phoenix_bird_death_defeat"
+      ]
+    },
+    "primal_beast": {
+      "precache": "soundevents/voscripts/game_sounds_vo_primal_beast.vsndevts",
+      "count": 203,
+      "sample_keys": [
+        "primal_beast_primal_anger_01",
+        "primal_beast_primal_anger_02",
+        "primal_beast_primal_anger_03",
+        "primal_beast_primal_anger_04",
+        "primal_beast_primal_anger_05",
+        "primal_beast_primal_attack_01",
+        "primal_beast_primal_attack_02",
+        "primal_beast_primal_attack_03"
+      ]
+    },
+    "puck": {
+      "precache": "soundevents/voscripts/game_sounds_vo_puck.vsndevts",
+      "count": 236,
+      "sample_keys": [
+        "puck_puck_spawn_01",
+        "puck_puck_spawn_02",
+        "puck_puck_spawn_03",
+        "puck_puck_spawn_04",
+        "puck_puck_spawn_05",
+        "puck_puck_spawn_06",
+        "puck_puck_spawn_07",
+        "puck_puck_spawn_08"
+      ]
+    },
+    "pudge": {
+      "precache": "soundevents/voscripts/game_sounds_vo_pudge.vsndevts",
+      "count": 2099,
+      "sample_keys": [
+        "pudge_pud_spawn_01",
+        "pudge_pud_spawn_02",
+        "pudge_pud_spawn_03",
+        "pudge_pud_spawn_04",
+        "pudge_pud_spawn_06",
+        "pudge_pud_spawn_07",
+        "pudge_pud_spawn_08",
+        "pudge_pud_spawn_09"
+      ]
+    },
+    "pugna": {
+      "precache": "soundevents/voscripts/game_sounds_vo_pugna.vsndevts",
+      "count": 261,
+      "sample_keys": [
+        "pugna_pugna_spawn_01",
+        "pugna_pugna_spawn_02",
+        "pugna_pugna_spawn_03",
+        "pugna_pugna_spawn_04",
+        "pugna_pugna_spawn_05",
+        "pugna_pugna_battlebegins_01",
+        "pugna_pugna_firstblood_01",
+        "pugna_pugna_firstblood_02"
+      ]
+    },
+    "queenofpain": {
+      "precache": "soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts",
+      "count": 1070,
+      "sample_keys": [
+        "queenofpain_pain_spawn_01",
+        "queenofpain_pain_spawn_02",
+        "queenofpain_pain_spawn_03",
+        "queenofpain_pain_spawn_04",
+        "queenofpain_pain_begin_01",
+        "queenofpain_pain_first_01",
+        "queenofpain_pain_first_02",
+        "queenofpain_pain_move_01"
+      ]
+    },
+    "rattletrap": {
+      "precache": "soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts",
+      "count": 318,
+      "sample_keys": [
+        "rattletrap_ratt_spawn_01",
+        "rattletrap_ratt_spawn_02",
+        "rattletrap_ratt_spawn_03",
+        "rattletrap_ratt_spawn_04",
+        "rattletrap_ratt_spawn_05",
+        "rattletrap_ratt_move_01",
+        "rattletrap_ratt_move_02",
+        "rattletrap_ratt_move_03"
+      ]
+    },
+    "razor": {
+      "precache": "soundevents/voscripts/game_sounds_vo_razor.vsndevts",
+      "count": 889,
+      "sample_keys": [
+        "razor_raz_spawn_01",
+        "razor_raz_spawn_02",
+        "razor_raz_spawn_03",
+        "razor_raz_spawn_04",
+        "razor_raz_spawn_05",
+        "razor_raz_spawn_06",
+        "razor_raz_spawn_07",
+        "razor_raz_spawn_08"
+      ]
+    },
+    "riki": {
+      "precache": "soundevents/voscripts/game_sounds_vo_riki.vsndevts",
+      "count": 212,
+      "sample_keys": [
+        "riki_riki_spawn_01",
+        "riki_riki_spawn_02",
+        "riki_riki_spawn_03",
+        "riki_riki_spawn_04",
+        "riki_riki_spawn_05",
+        "riki_riki_spawn_06",
+        "riki_riki_spawn_07",
+        "riki_riki_spawn_08"
+      ]
+    },
+    "ringmaster": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ringmaster.vsndevts",
+      "count": 979,
+      "sample_keys": [
+        "ringmaster_ringmaster_anger_01",
+        "ringmaster_ringmaster_anger_02",
+        "ringmaster_ringmaster_anger_03",
+        "ringmaster_ringmaster_anger_04",
+        "ringmaster_ringmaster_anger_05",
+        "ringmaster_ringmaster_arcane_01",
+        "ringmaster_ringmaster_arcane_02",
+        "ringmaster_ringmaster_arcane_03"
+      ]
+    },
+    "rubick": {
+      "precache": "soundevents/voscripts/game_sounds_vo_rubick.vsndevts",
+      "count": 715,
+      "sample_keys": [
+        "rubick_rubick_spawn_01",
+        "rubick_rubick_spawn_02",
+        "rubick_rubick_spawn_03",
+        "rubick_rubick_spawn_04",
+        "rubick_rubick_spawn_05",
+        "rubick_rubick_spawn_06",
+        "rubick_rubick_begin_01",
+        "rubick_rubick_firstblood_01"
+      ]
+    },
+    "sandking": {
+      "precache": "soundevents/voscripts/game_sounds_vo_sandking.vsndevts",
+      "count": 272,
+      "sample_keys": [
+        "sandking_skg_spawn_01",
+        "sandking_skg_spawn_02",
+        "sandking_skg_spawn_03",
+        "sandking_skg_spawn_04",
+        "sandking_skg_spawn_05",
+        "sandking_skg_spawn_06",
+        "sandking_skg_spawn_07",
+        "sandking_skg_move_01"
+      ]
+    },
+    "secretshop": {
+      "precache": "soundevents/voscripts/game_sounds_vo_secretshop.vsndevts",
+      "count": 37,
+      "sample_keys": [
+        "secretshop_secretshop_welcome_01",
+        "secretshop_secretshop_welcome_02",
+        "secretshop_secretshop_welcome_03",
+        "secretshop_secretshop_welcome_04",
+        "secretshop_secretshop_openallnight",
+        "secretshop_secretshop_whatyoubuying_01",
+        "secretshop_secretshop_whatyoubuying_02",
+        "secretshop_secretshop_canservice"
+      ]
+    },
+    "shadow_demon": {
+      "precache": "soundevents/voscripts/game_sounds_vo_shadow_demon.vsndevts",
+      "count": 296,
+      "sample_keys": [
+        "shadow_demon_shadow_demon_spawn_01",
+        "shadow_demon_shadow_demon_spawn_02",
+        "shadow_demon_shadow_demon_spawn_03",
+        "shadow_demon_shadow_demon_spawn_04",
+        "shadow_demon_shadow_demon_spawn_05",
+        "shadow_demon_shadow_demon_battlebegins_01",
+        "shadow_demon_shadow_demon_battlebegins_02",
+        "shadow_demon_shadow_demon_first_01"
+      ]
+    },
+    "shadowshaman": {
+      "precache": "soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts",
+      "count": 222,
+      "sample_keys": [
+        "shadowshaman_shad_spawn_01",
+        "shadowshaman_shad_spawn_02",
+        "shadowshaman_shad_spawn_03",
+        "shadowshaman_shad_spawn_04",
+        "shadowshaman_shad_spawn_05",
+        "shadowshaman_shad_move_01",
+        "shadowshaman_shad_move_02",
+        "shadowshaman_shad_move_03"
+      ]
+    },
+    "shredder": {
+      "precache": "soundevents/voscripts/game_sounds_vo_shredder.vsndevts",
+      "count": 328,
+      "sample_keys": [
+        "shredder_timb_spawn_01",
+        "shredder_timb_spawn_02",
+        "shredder_timb_spawn_03",
+        "shredder_timb_spawn_04",
+        "shredder_timb_spawn_05",
+        "shredder_timb_begin_01",
+        "shredder_timb_begin_02",
+        "shredder_timb_firstblood_01"
+      ]
+    },
+    "silencer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_silencer.vsndevts",
+      "count": 269,
+      "sample_keys": [
+        "silencer_silen_spawn_01",
+        "silencer_silen_spawn_02",
+        "silencer_silen_spawn_03",
+        "silencer_silen_spawn_04",
+        "silencer_silen_battlebegins_01",
+        "silencer_silen_first_01",
+        "silencer_silen_move_01",
+        "silencer_silen_move_02"
+      ]
+    },
+    "skeleton_king": {
+      "precache": "soundevents/voscripts/game_sounds_vo_skeleton_king.vsndevts",
+      "count": 1251,
+      "sample_keys": [
+        "skeleton_king_wraith_spawn_01",
+        "skeleton_king_wraith_spawn_02",
+        "skeleton_king_wraith_spawn_03",
+        "skeleton_king_wraith_spawn_04",
+        "skeleton_king_wraith_battlebegins_01",
+        "skeleton_king_wraith_battlebegins_02",
+        "skeleton_king_wraith_battlebegins_03",
+        "skeleton_king_wraith_firstblood_01"
+      ]
+    },
+    "skywrath_mage": {
+      "precache": "soundevents/voscripts/game_sounds_vo_skywrath_mage.vsndevts",
+      "count": 1081,
+      "sample_keys": [
+        "skywrath_mage_drag_spawn_01",
+        "skywrath_mage_drag_spawn_02",
+        "skywrath_mage_drag_spawn_03",
+        "skywrath_mage_drag_spawn_04",
+        "skywrath_mage_drag_begin_01",
+        "skywrath_mage_drag_begin_02",
+        "skywrath_mage_drag_firstblood_01",
+        "skywrath_mage_drag_move_01"
+      ]
+    },
+    "slardar": {
+      "precache": "soundevents/voscripts/game_sounds_vo_slardar.vsndevts",
+      "count": 216,
+      "sample_keys": [
+        "slardar_slar_spawn_01",
+        "slardar_slar_spawn_02",
+        "slardar_slar_spawn_03",
+        "slardar_slar_spawn_04",
+        "slardar_slar_spawn_05",
+        "slardar_slar_move_01",
+        "slardar_slar_move_02",
+        "slardar_slar_move_03"
+      ]
+    },
+    "slark": {
+      "precache": "soundevents/voscripts/game_sounds_vo_slark.vsndevts",
+      "count": 282,
+      "sample_keys": [
+        "slark_slark_spawn_01",
+        "slark_slark_spawn_02",
+        "slark_slark_spawn_03",
+        "slark_slark_spawn_04",
+        "slark_slark_spawn_05",
+        "slark_slark_battlebegins_01",
+        "slark_slark_firstblood_01",
+        "slark_slark_move_01"
+      ]
+    },
+    "snapfire": {
+      "precache": "soundevents/voscripts/game_sounds_vo_snapfire.vsndevts",
+      "count": 2698,
+      "sample_keys": [
+        "snapfire_snapfire_spawn_01",
+        "snapfire_snapfire_spawn_01_02",
+        "snapfire_snapfire_spawn_02",
+        "snapfire_snapfire_spawn_03",
+        "snapfire_snapfire_spawn_04",
+        "snapfire_snapfire_spawn_05",
+        "snapfire_snapfire_spawn_06",
+        "snapfire_snapfire_spawn_07"
+      ]
+    },
+    "sniper": {
+      "precache": "soundevents/voscripts/game_sounds_vo_sniper.vsndevts",
+      "count": 526,
+      "sample_keys": [
+        "sniper_snip_spawn_01",
+        "sniper_snip_spawn_02",
+        "sniper_snip_spawn_03",
+        "sniper_snip_spawn_04",
+        "sniper_snip_spawn_05",
+        "sniper_snip_spawn_06",
+        "sniper_snip_move_01",
+        "sniper_snip_move_02"
+      ]
+    },
+    "spectre": {
+      "precache": "soundevents/voscripts/game_sounds_vo_spectre.vsndevts",
+      "count": 1600,
+      "sample_keys": [
+        "spectre_spec_spawn_01",
+        "spectre_spec_spawn_02",
+        "spectre_spec_spawn_03",
+        "spectre_spec_spawn_04",
+        "spectre_spec_firstblood_01",
+        "spectre_spec_move_01",
+        "spectre_spec_move_02",
+        "spectre_spec_move_03"
+      ]
+    },
+    "spirit_breaker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts",
+      "count": 261,
+      "sample_keys": [
+        "spirit_breaker_spir_spawn_01",
+        "spirit_breaker_spir_spawn_02",
+        "spirit_breaker_spir_spawn_03",
+        "spirit_breaker_spir_spawn_04",
+        "spirit_breaker_spir_battlebegins_01",
+        "spirit_breaker_spir_firstblood_01",
+        "spirit_breaker_spir_firstblood_02",
+        "spirit_breaker_spir_move_01"
+      ]
+    },
+    "stormspirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts",
+      "count": 272,
+      "sample_keys": [
+        "stormspirit_ss_spawn_01",
+        "stormspirit_ss_spawn_02",
+        "stormspirit_ss_spawn_03",
+        "stormspirit_ss_spawn_04",
+        "stormspirit_ss_spawn_05",
+        "stormspirit_ss_spawn_06",
+        "stormspirit_ss_spawn_07",
+        "stormspirit_ss_spawn_08"
+      ]
+    },
+    "sven": {
+      "precache": "soundevents/voscripts/game_sounds_vo_sven.vsndevts",
+      "count": 310,
+      "sample_keys": [
+        "sven_sven_spawn_01",
+        "sven_sven_spawn_02",
+        "sven_sven_spawn_03",
+        "sven_sven_spawn_04",
+        "sven_sven_spawn_05",
+        "sven_sven_spawn_06",
+        "sven_sven_spawn_07",
+        "sven_sven_battlebegins_01"
+      ]
+    },
+    "sylph": {
+      "precache": "soundevents/voscripts/game_sounds_vo_sylph.vsndevts",
+      "count": 0,
+      "sample_keys": []
+    },
+    "techies": {
+      "precache": "soundevents/voscripts/game_sounds_vo_techies.vsndevts",
+      "count": 658,
+      "sample_keys": [
+        "techies_tech_spawn_01",
+        "techies_tech_spawn_02",
+        "techies_tech_spawn_03",
+        "techies_tech_spawn_04",
+        "techies_tech_spawn_05",
+        "techies_tech_spawn_06",
+        "techies_tech_begin_01",
+        "techies_tech_firstblood_01"
+      ]
+    },
+    "templar_assassin": {
+      "precache": "soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts",
+      "count": 285,
+      "sample_keys": [
+        "templar_assassin_temp_spawn_01",
+        "templar_assassin_temp_spawn_02",
+        "templar_assassin_temp_spawn_03",
+        "templar_assassin_temp_spawn_04",
+        "templar_assassin_temp_begins_01",
+        "templar_assassin_temp_first_01",
+        "templar_assassin_temp_move_01",
+        "templar_assassin_temp_move_02"
+      ]
+    },
+    "terrorblade": {
+      "precache": "soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts",
+      "count": 1221,
+      "sample_keys": [
+        "terrorblade_terr_spawn_01",
+        "terrorblade_terr_spawn_02",
+        "terrorblade_terr_spawn_03",
+        "terrorblade_terr_spawn_04",
+        "terrorblade_terr_spawn_05",
+        "terrorblade_terr_battlebegins_01",
+        "terrorblade_terr_battlebegins_02",
+        "terrorblade_terr_firstblood_01"
+      ]
+    },
+    "tidehunter": {
+      "precache": "soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts",
+      "count": 897,
+      "sample_keys": [
+        "tidehunter_tide_spawn_01",
+        "tidehunter_tide_spawn_02",
+        "tidehunter_tide_spawn_03",
+        "tidehunter_tide_spawn_04",
+        "tidehunter_tide_spawn_05",
+        "tidehunter_tide_spawn_06",
+        "tidehunter_tide_spawn_07",
+        "tidehunter_tide_spawn_08"
+      ]
+    },
+    "tinker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_tinker.vsndevts",
+      "count": 293,
+      "sample_keys": [
+        "tinker_tink_spawn_01",
+        "tinker_tink_spawn_02",
+        "tinker_tink_spawn_03",
+        "tinker_tink_spawn_04",
+        "tinker_tink_spawn_05",
+        "tinker_tink_spawn_06",
+        "tinker_tink_spawn_07",
+        "tinker_tink_spawn_08"
+      ]
+    },
+    "tiny": {
+      "precache": "soundevents/voscripts/game_sounds_vo_tiny.vsndevts",
+      "count": 904,
+      "sample_keys": [
+        "tiny_tiny_spawn_01",
+        "tiny_tiny_spawn_02",
+        "tiny_tiny_spawn_03",
+        "tiny_tiny_spawn_04",
+        "tiny_tiny_spawn_05",
+        "tiny_tiny_spawn_06",
+        "tiny_tiny_spawn_07",
+        "tiny_tiny_spawn_08"
+      ]
+    },
+    "treant": {
+      "precache": "soundevents/voscripts/game_sounds_vo_treant.vsndevts",
+      "count": 334,
+      "sample_keys": [
+        "treant_treant_spawn_01",
+        "treant_treant_spawn_02",
+        "treant_treant_spawn_03",
+        "treant_treant_spawn_04",
+        "treant_treant_spawn_05",
+        "treant_treant_spawn_06",
+        "treant_treant_battlebegins_01",
+        "treant_treant_firstblood_01"
+      ]
+    },
+    "troll_warlord": {
+      "precache": "soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts",
+      "count": 321,
+      "sample_keys": [
+        "troll_warlord_troll_spawn_01",
+        "troll_warlord_troll_spawn_02",
+        "troll_warlord_troll_spawn_03",
+        "troll_warlord_troll_spawn_04",
+        "troll_warlord_troll_spawn_05",
+        "troll_warlord_troll_spawn_06",
+        "troll_warlord_troll_begin_01",
+        "troll_warlord_troll_firstblood_01"
+      ]
+    },
+    "tusk": {
+      "precache": "soundevents/voscripts/game_sounds_vo_tusk.vsndevts",
+      "count": 449,
+      "sample_keys": [
+        "tusk_tusk_spawn_01",
+        "tusk_tusk_spawn_02",
+        "tusk_tusk_spawn_03",
+        "tusk_tusk_spawn_04",
+        "tusk_tusk_spawn_05",
+        "tusk_tusk_spawn_06",
+        "tusk_tusk_spawn_07",
+        "tusk_tusk_spawn_08"
+      ]
+    },
+    "undying": {
+      "precache": "soundevents/voscripts/game_sounds_vo_undying.vsndevts",
+      "count": 706,
+      "sample_keys": [
+        "undying_undying_spawn_01",
+        "undying_undying_spawn_02",
+        "undying_undying_spawn_03",
+        "undying_undying_spawn_04",
+        "undying_undying_spawn_05",
+        "undying_undying_begin_01",
+        "undying_undying_firstblood_01",
+        "undying_undying_move_01"
+      ]
+    },
+    "ursa": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ursa.vsndevts",
+      "count": 344,
+      "sample_keys": [
+        "ursa_ursa_spawn_01",
+        "ursa_ursa_spawn_02",
+        "ursa_ursa_spawn_03",
+        "ursa_ursa_spawn_04",
+        "ursa_ursa_spawn_05",
+        "ursa_ursa_spawn_06",
+        "ursa_ursa_spawn_07",
+        "ursa_ursa_spawn_08"
+      ]
+    },
+    "vengefulspirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_vengefulspirit.vsndevts",
+      "count": 1966,
+      "sample_keys": [
+        "vengefulspirit_vng_spawn_01",
+        "vengefulspirit_vng_spawn_02",
+        "vengefulspirit_vng_spawn_03",
+        "vengefulspirit_vng_spawn_04",
+        "vengefulspirit_vng_spawn_05",
+        "vengefulspirit_vng_spawn_06",
+        "vengefulspirit_vng_spawn_07",
+        "vengefulspirit_vng_move_01"
+      ]
+    },
+    "venomancer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_venomancer.vsndevts",
+      "count": 240,
+      "sample_keys": [
+        "venomancer_venm_spawn_01",
+        "venomancer_venm_spawn_02",
+        "venomancer_venm_spawn_03",
+        "venomancer_venm_spawn_04",
+        "venomancer_venm_move_01",
+        "venomancer_venm_move_02",
+        "venomancer_venm_move_03",
+        "venomancer_venm_move_04"
+      ]
+    },
+    "viper": {
+      "precache": "soundevents/voscripts/game_sounds_vo_viper.vsndevts",
+      "count": 204,
+      "sample_keys": [
+        "viper_vipe_spawn_01",
+        "viper_vipe_spawn_02",
+        "viper_vipe_spawn_03",
+        "viper_vipe_spawn_04",
+        "viper_vipe_spawn_05",
+        "viper_vipe_battlebegins_01",
+        "viper_vipe_move_01",
+        "viper_vipe_move_02"
+      ]
+    },
+    "visage": {
+      "precache": "soundevents/voscripts/game_sounds_vo_visage.vsndevts",
+      "count": 346,
+      "sample_keys": [
+        "visage_visa_spawn_01",
+        "visage_visa_spawn_02",
+        "visage_visa_spawn_03",
+        "visage_visa_spawn_04",
+        "visage_visa_spawn_05",
+        "visage_visa_spawn_06",
+        "visage_visa_spawn_07",
+        "visage_visa_begin_01"
+      ]
+    },
+    "void_spirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts",
+      "count": 878,
+      "sample_keys": [
+        "void_spirit_voidspir_spawn_01",
+        "void_spirit_voidspir_spawn_02",
+        "void_spirit_voidspir_spawn_03",
+        "void_spirit_voidspir_spawn_04",
+        "void_spirit_voidspir_spawn_05",
+        "void_spirit_voidspir_spawn_06",
+        "void_spirit_voidspir_spawn_07",
+        "void_spirit_voidspir_spawn_08_02"
+      ]
+    },
+    "warlock": {
+      "precache": "soundevents/voscripts/game_sounds_vo_warlock.vsndevts",
+      "count": 228,
+      "sample_keys": [
+        "warlock_warl_spawn_01",
+        "warlock_warl_spawn_02",
+        "warlock_warl_spawn_03",
+        "warlock_warl_spawn_04",
+        "warlock_warl_move_01",
+        "warlock_warl_move_02",
+        "warlock_warl_move_03",
+        "warlock_warl_move_04"
+      ]
+    },
+    "warlock_golem": {
+      "precache": "soundevents/voscripts/game_sounds_vo_warlock_golem.vsndevts",
+      "count": 120,
+      "sample_keys": [
+        "warlock_golem_wargol_spawn_01",
+        "warlock_golem_wargol_spawn_02",
+        "warlock_golem_wargol_spawn_03",
+        "warlock_golem_wargol_spawn_03a",
+        "warlock_golem_wargol_spawn_04",
+        "warlock_golem_wargol_spawn_04a",
+        "warlock_golem_wargol_spawn_05",
+        "warlock_golem_wargol_spawn_06"
+      ]
+    },
+    "weaver": {
+      "precache": "soundevents/voscripts/game_sounds_vo_weaver.vsndevts",
+      "count": 224,
+      "sample_keys": [
+        "weaver_weav_spawn_01",
+        "weaver_weav_spawn_02",
+        "weaver_weav_spawn_03",
+        "weaver_weav_spawn_04",
+        "weaver_weav_spawn_05",
+        "weaver_weav_battlebegins_01",
+        "weaver_weav_firstblood_01",
+        "weaver_weav_firstblood_02"
+      ]
+    },
+    "windrunner": {
+      "precache": "soundevents/voscripts/game_sounds_vo_windrunner.vsndevts",
+      "count": 1154,
+      "sample_keys": [
+        "windrunner_wind_spawn_01",
+        "windrunner_wind_spawn_02",
+        "windrunner_wind_spawn_03",
+        "windrunner_wind_spawn_04",
+        "windrunner_wind_spawn_05",
+        "windrunner_wind_spawn_06",
+        "windrunner_wind_spawn_07",
+        "windrunner_wind_spawn_08"
+      ]
+    },
+    "winter_wyvern": {
+      "precache": "soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts",
+      "count": 322,
+      "sample_keys": [
+        "winter_wyvern_winwyv_spawn_01",
+        "winter_wyvern_winwyv_spawn_02",
+        "winter_wyvern_winwyv_spawn_03",
+        "winter_wyvern_winwyv_spawn_04",
+        "winter_wyvern_winwyv_spawn_05",
+        "winter_wyvern_winwyv_spawn_06",
+        "winter_wyvern_winwyv_spawn_07",
+        "winter_wyvern_winwyv_battlebegins_01"
+      ]
+    },
+    "wisp": {
+      "precache": "soundevents/voscripts/game_sounds_vo_wisp.vsndevts",
+      "count": 31,
+      "sample_keys": [
+        "wisp_spawn_respawn",
+        "wisp_battlebegins",
+        "wisp_firstblood",
+        "wisp_firstblood_arcana",
+        "wisp_move01",
+        "wisp_move02",
+        "wisp_move03",
+        "wisp_move04"
+      ]
+    },
+    "witchdoctor": {
+      "precache": "soundevents/voscripts/game_sounds_vo_witchdoctor.vsndevts",
+      "count": 203,
+      "sample_keys": [
+        "witchdoctor_wdoc_spawn_01",
+        "witchdoctor_wdoc_spawn_02",
+        "witchdoctor_wdoc_spawn_03",
+        "witchdoctor_wdoc_spawn_04",
+        "witchdoctor_wdoc_move_01",
+        "witchdoctor_wdoc_move_02",
+        "witchdoctor_wdoc_move_03",
+        "witchdoctor_wdoc_move_04"
+      ]
+    },
+    "zuus": {
+      "precache": "soundevents/voscripts/game_sounds_vo_zuus.vsndevts",
+      "count": 609,
+      "sample_keys": [
+        "zuus_zuus_spawn_01",
+        "zuus_zuus_spawn_02",
+        "zuus_zuus_spawn_03",
+        "zuus_zuus_spawn_04",
+        "zuus_zuus_spawn_05",
+        "zuus_zuus_spawn_06",
+        "zuus_zuus_spawn_07",
+        "zuus_zuus_spawn_08"
+      ]
+    }
+  },
+  "econ_vo": {
+    "game_sounds_vo_econ_crystal_maiden": {
+      "precache": "soundevents/voscripts/game_sounds_vo_econ_crystal_maiden.vsndevts",
+      "count": 70,
+      "sample_keys": [
+        "econ_crystal_maiden_cm_bpgame_bye_01",
+        "econ_crystal_maiden_cm_bpgame_bye_03",
+        "econ_crystal_maiden_cm_bpgame_bye_04",
+        "econ_crystal_maiden_cm_bpgame_bye_05",
+        "econ_crystal_maiden_cm_bpgame_bye_06",
+        "econ_crystal_maiden_cm_bpgame_rew_01",
+        "econ_crystal_maiden_cm_bpgame_rew_02",
+        "econ_crystal_maiden_cm_bpgame_rew_03"
+      ]
+    },
+    "game_sounds_vo_econ_lina": {
+      "precache": "soundevents/voscripts/game_sounds_vo_econ_lina.vsndevts",
+      "count": 72,
+      "sample_keys": [
+        "econ_lina_lina_bpgame_bye_01",
+        "econ_lina_lina_bpgame_bye_02",
+        "econ_lina_lina_bpgame_bye_04",
+        "econ_lina_lina_bpgame_bye_05",
+        "econ_lina_lina_bpgame_prob_01",
+        "econ_lina_lina_bpgame_prob_02",
+        "econ_lina_lina_bpgame_prob_03",
+        "econ_lina_lina_bpgame_prob_04"
+      ]
+    }
+  },
+  "announcers": {
+    "game_sounds_vo_announcer": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer.vsndevts",
+      "count": 2124,
+      "sample_keys": [
+        "announcer_announcer_welcome_01",
+        "announcer_announcer_welcome_02",
+        "announcer_announcer_welcome_03",
+        "announcer_announcer_welcome_04",
+        "announcer_announcer_welcome_05",
+        "announcer_announcer_welcome_06",
+        "announcer_announcer_welcome_07",
+        "announcer_announcer_welcome_08"
+      ]
+    },
+    "game_sounds_vo_announcer_diretide_2012": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_diretide_2012.vsndevts",
+      "count": 145,
+      "sample_keys": [
+        "announcer_diretide_2012_announcer_welcome_01",
+        "announcer_diretide_2012_announcer_welcome_01_alt",
+        "announcer_diretide_2012_announcer_welcome_02",
+        "announcer_diretide_2012_announcer_welcome_03",
+        "announcer_diretide_2012_announcer_welcome_04",
+        "announcer_diretide_2012_announcer_welcome_05",
+        "announcer_diretide_2012_announcer_pick_yr",
+        "announcer_diretide_2012_announcer_pick_enm"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_axe": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_axe.vsndevts",
+      "count": 290,
+      "sample_keys": [
+        "announcer_dlc_axe_announcer_welcome_01",
+        "announcer_dlc_axe_announcer_choose_hero",
+        "announcer_dlc_axe_announcer_pick_yr",
+        "announcer_dlc_axe_announcer_pick_enm",
+        "announcer_dlc_axe_announcer_pick_dire",
+        "announcer_dlc_axe_announcer_pick_rad",
+        "announcer_dlc_axe_announcer_ban_yr",
+        "announcer_dlc_axe_announcer_ban_enm"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_axe_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_axe_killing_spree.vsndevts",
+      "count": 28,
+      "sample_keys": [
+        "announcer_dlc_axe_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_dominate_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_mega_01",
+        "announcer_dlc_axe_killing_spree_announcer_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_bastion": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_bastion.vsndevts",
+      "count": 705,
+      "sample_keys": [
+        "announcer_dlc_bastion_announcer_pick_yr",
+        "announcer_dlc_bastion_announcer_pick_yr_02",
+        "announcer_dlc_bastion_announcer_pick_enm",
+        "announcer_dlc_bastion_announcer_pick_dire",
+        "announcer_dlc_bastion_announcer_pick_rad",
+        "announcer_dlc_bastion_announcer_ban_yr_01",
+        "announcer_dlc_bastion_announcer_ban_yr_02",
+        "announcer_dlc_bastion_announcer_ban_yr_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_bastion_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_bastion_killing_spree.vsndevts",
+      "count": 42,
+      "sample_keys": [
+        "announcer_dlc_bastion_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_spree_02",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_spree_03",
+        "announcer_dlc_bastion_killing_spree_announcer_kill_dominate_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_bristleback": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_bristleback.vsndevts",
+      "count": 246,
+      "sample_keys": [
+        "announcer_dlc_bristleback_bris_ann_choose_hero_01",
+        "announcer_dlc_bristleback_bris_ann_pick_dire_01",
+        "announcer_dlc_bristleback_bris_ann_pick_rad_01",
+        "announcer_dlc_bristleback_bris_ann_pick_enm_01",
+        "announcer_dlc_bristleback_bris_ann_pick_enm_02",
+        "announcer_dlc_bristleback_bris_ann_pick_yr_01",
+        "announcer_dlc_bristleback_bris_ann_pick_yr_02",
+        "announcer_dlc_bristleback_bris_ann_pick_yr_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_bristleback_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_bristleback_killing_spree.vsndevts",
+      "count": 25,
+      "sample_keys": [
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_double_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_triple_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_ultra_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_rampage_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_spree_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_dominate_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_mega_01",
+        "announcer_dlc_bristleback_killing_spree_bris_ann_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_cavej": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_cavej.vsndevts",
+      "count": 883,
+      "sample_keys": [
+        "announcer_dlc_cavej_cavej_ann_type_all_mid_01",
+        "announcer_dlc_cavej_cavej_ann_welcome_01",
+        "announcer_dlc_cavej_cavej_ann_welcome_02",
+        "announcer_dlc_cavej_cavej_ann_welcome_03",
+        "announcer_dlc_cavej_cavej_ann_welcome_04",
+        "announcer_dlc_cavej_cavej_ann_welcome_05",
+        "announcer_dlc_cavej_cavej_ann_welcome_06",
+        "announcer_dlc_cavej_cavej_ann_welcome_07"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_cavej_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_cavej_killing_spree.vsndevts",
+      "count": 239,
+      "sample_keys": [
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_01",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_02",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_03",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_04",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_05",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_01_06",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_02_01",
+        "announcer_dlc_cavej_killing_spree_cavej_ann_kill_double_02_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_clockwerk": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_clockwerk.vsndevts",
+      "count": 120,
+      "sample_keys": [
+        "announcer_dlc_clockwerk_announcer_welcome_01",
+        "announcer_dlc_clockwerk_announcer_pick_yr_01",
+        "announcer_dlc_clockwerk_announcer_pick_yr_02",
+        "announcer_dlc_clockwerk_announcer_pick_enm_01",
+        "announcer_dlc_clockwerk_announcer_pick_enm_02",
+        "announcer_dlc_clockwerk_announcer_pick_rad",
+        "announcer_dlc_clockwerk_announcer_pick_dire",
+        "announcer_dlc_clockwerk_announcer_ban_yr_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_clockwerk_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_clockwerk_killing_spree.vsndevts",
+      "count": 17,
+      "sample_keys": [
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_double_02",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_dominate_01",
+        "announcer_dlc_clockwerk_killing_spree_announcer_kill_mega_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_crystal_maiden": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_crystal_maiden.vsndevts",
+      "count": 350,
+      "sample_keys": [
+        "announcer_dlc_crystal_maiden_cm_ann_choose_hero_02",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_dire_01",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_rad_01",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_enm_01",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_enm_02",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_enm_03",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_enm_04",
+        "announcer_dlc_crystal_maiden_cm_ann_pick_yr_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_crystal_maiden_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_crystal_maiden_killing_spree.vsndevts",
+      "count": 27,
+      "sample_keys": [
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_double_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_triple_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_ultra_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_rampage_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_spree_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_dominate_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_mega_01",
+        "announcer_dlc_crystal_maiden_killing_spree_cm_ann_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_dark_willow": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_dark_willow.vsndevts",
+      "count": 431,
+      "sample_keys": [
+        "announcer_dlc_dark_willow_dark_willow_ann_choose_hero_01",
+        "announcer_dlc_dark_willow_dark_willow_ann_choose_hero_01_02",
+        "announcer_dlc_dark_willow_dark_willow_ann_choose_hero_02",
+        "announcer_dlc_dark_willow_dark_willow_ann_choose_hero_03",
+        "announcer_dlc_dark_willow_dark_willow_ann_pick_dire_01",
+        "announcer_dlc_dark_willow_dark_willow_ann_pick_dire_02",
+        "announcer_dlc_dark_willow_dark_willow_ann_pick_rad_01",
+        "announcer_dlc_dark_willow_dark_willow_ann_pick_rad_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_dark_willow_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_dark_willow_killing_spree.vsndevts",
+      "count": 35,
+      "sample_keys": [
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_double_01_02",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_triple_01_03",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_ultra_01_04",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_rampage_01_06",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_spree_01_02",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_dominate_01_02",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_mega_01_02",
+        "announcer_dlc_dark_willow_killing_spree_dark_willow_ann_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_darkest_dungeon": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_darkest_dungeon.vsndevts",
+      "count": 671,
+      "sample_keys": [
+        "announcer_dlc_darkest_dungeon_announcer_type_all_pick",
+        "announcer_dlc_darkest_dungeon_announcer_type_all_random",
+        "announcer_dlc_darkest_dungeon_announcer_type_all_random_letthecold",
+        "announcer_dlc_darkest_dungeon_announcer_type_capt_draft_01",
+        "announcer_dlc_darkest_dungeon_announcer_type_capt_mode",
+        "announcer_dlc_darkest_dungeon_announcer_type_random_draft_01",
+        "announcer_dlc_darkest_dungeon_announcer_type_single_draft_01",
+        "announcer_dlc_darkest_dungeon_announcer_type_death_match_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_darkest_dungeon_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_darkest_dungeon_killing_spree.vsndevts",
+      "count": 44,
+      "sample_keys": [
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_killstreak_firstblood_01",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_killstreak_firstblood_02",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_killstreak_firstblood_03",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_killstreak_firstblood_04",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_killstreak_firstblood_05",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_doublekill_01",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_doublekill_02",
+        "announcer_dlc_darkest_dungeon_killing_spree_announcer_doublekill_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_defensegrid": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_defensegrid.vsndevts",
+      "count": 401,
+      "sample_keys": [
+        "announcer_dlc_defensegrid_announcer_pick_yr",
+        "announcer_dlc_defensegrid_announcer_pick_yr_01",
+        "announcer_dlc_defensegrid_announcer_pick_enm",
+        "announcer_dlc_defensegrid_announcer_pick_enm_01",
+        "announcer_dlc_defensegrid_announcer_pick_enm_02",
+        "announcer_dlc_defensegrid_announcer_pick_enm_03",
+        "announcer_dlc_defensegrid_announcer_pick_dire",
+        "announcer_dlc_defensegrid_announcer_pick_dire_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_defensegrid_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_defensegrid_killing_spree.vsndevts",
+      "count": 48,
+      "sample_keys": [
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_double_02",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_double_03",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_double_04",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_double_05",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_triple_02",
+        "announcer_dlc_defensegrid_killing_spree_announcer_kill_triple_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_deus_ex": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_deus_ex.vsndevts",
+      "count": 756,
+      "sample_keys": [
+        "announcer_dlc_deus_ex_dlc_jensen_ann_pick_yr_001",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_pick_yr_002",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_pick_enm_001",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_pick_enm_002",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_ban_yr_001",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_ban_yr_002",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_ban_enm_001",
+        "announcer_dlc_deus_ex_dlc_jensen_ann_ban_enm_002"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_deus_ex_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_deus_ex_killing_spree.vsndevts",
+      "count": 56,
+      "sample_keys": [
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_double_001",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_double_002",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_triple_001",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_triple_002",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_ultra_001",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_ultra_002",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_rampage_001",
+        "announcer_dlc_deus_ex_killing_spree_dlc_jensen_ann_kill_rampage_002"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_diretide2020_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_diretide2020_killing_spree.vsndevts",
+      "count": 69,
+      "sample_keys": [
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_01",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_01a",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_02",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_03",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_03a",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_04",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_05",
+        "announcer_dlc_diretide2020_killing_spree_announcer_doublekill_05a"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_fallout4": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_fallout4.vsndevts",
+      "count": 208,
+      "sample_keys": [
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_banyours_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_pickyours_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_banenemys_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_pickenemys_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_bandireteam_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_banradiantteam_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_pickdireteam_01",
+        "announcer_dlc_fallout4_announcer_misterhandy_draftphase_pickradiantteam_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_fallout4_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_fallout4_killing_spree.vsndevts",
+      "count": 14,
+      "sample_keys": [
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_doublekill_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_triplekill_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_ultrakill_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_rampage_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_killingspree_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_dominating_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_megakill_01",
+        "announcer_dlc_fallout4_killing_spree_announcer_misterhandy_killingspree_unstoppable_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_gaben_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_gaben_killing_spree.vsndevts",
+      "count": 73,
+      "sample_keys": [
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_double_01",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_double_03",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_triple_01",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_triple_02",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_triple_03",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_no_01",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_ultra_01",
+        "announcer_dlc_gaben_killing_spree_gaben_ann_kill_rampage_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_glados": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_glados.vsndevts",
+      "count": 358,
+      "sample_keys": [
+        "announcer_dlc_glados_ann_glados_pick_dire_01",
+        "announcer_dlc_glados_ann_glados_pick_rad_01",
+        "announcer_dlc_glados_ann_glados_pick_yr_01",
+        "announcer_dlc_glados_ann_glados_pick_yr_02",
+        "announcer_dlc_glados_ann_glados_pick_yr_03",
+        "announcer_dlc_glados_ann_glados_pick_yr_04",
+        "announcer_dlc_glados_ann_glados_pick_enm_01",
+        "announcer_dlc_glados_ann_glados_ban_dire_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_glados_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_glados_killing_spree.vsndevts",
+      "count": 36,
+      "sample_keys": [
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_double_01",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_triple_01",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_ultra_01",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_ultra_02",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_rampage_01",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_rampage_02",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_spree_01",
+        "announcer_dlc_glados_killing_spree_ann_glados_kill_dominate_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_juggernaut": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_juggernaut.vsndevts",
+      "count": 239,
+      "sample_keys": [
+        "announcer_dlc_juggernaut_announcer_welcome_01",
+        "announcer_dlc_juggernaut_announcer_pick_yr",
+        "announcer_dlc_juggernaut_announcer_pick_enm",
+        "announcer_dlc_juggernaut_announcer_pick_dire",
+        "announcer_dlc_juggernaut_announcer_pick_rad",
+        "announcer_dlc_juggernaut_announcer_ban_yr",
+        "announcer_dlc_juggernaut_announcer_ban_enm",
+        "announcer_dlc_juggernaut_announcer_ban_dire"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_juggernaut_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_juggernaut_killing_spree.vsndevts",
+      "count": 17,
+      "sample_keys": [
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_dominate_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_mega_01",
+        "announcer_dlc_juggernaut_killing_spree_announcer_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_kleiner": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_kleiner.vsndevts",
+      "count": 342,
+      "sample_keys": [
+        "announcer_dlc_kleiner_announcer_welcome_01",
+        "announcer_dlc_kleiner_announcer_pick_yr",
+        "announcer_dlc_kleiner_announcer_pick_enm",
+        "announcer_dlc_kleiner_announcer_pick_dire",
+        "announcer_dlc_kleiner_announcer_pick_rad",
+        "announcer_dlc_kleiner_announcer_ban_yr",
+        "announcer_dlc_kleiner_announcer_ban_enm",
+        "announcer_dlc_kleiner_announcer_ban_dire"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_kunkka_tide": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_kunkka_tide.vsndevts",
+      "count": 398,
+      "sample_keys": [
+        "announcer_dlc_kunkka_tide_tiku_ann_choose_hero_02",
+        "announcer_dlc_kunkka_tide_tiku_ann_choose_hero_03",
+        "announcer_dlc_kunkka_tide_tiku_ann_choose_hero_04",
+        "announcer_dlc_kunkka_tide_tiku_ann_choose_hero_05",
+        "announcer_dlc_kunkka_tide_tiku_ann_choose_hero_06",
+        "announcer_dlc_kunkka_tide_tiku_ann_pick_dire_01",
+        "announcer_dlc_kunkka_tide_tiku_ann_pick_rad_01",
+        "announcer_dlc_kunkka_tide_tiku_ann_pick_enm_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_kunkka_tide_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_kunkka_tide_killing_spree.vsndevts",
+      "count": 51,
+      "sample_keys": [
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_double_01",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_double_02",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_triple_01",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_triple_02",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_ultra_01",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_ultra_02",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_rampage_01",
+        "announcer_dlc_kunkka_tide_killing_spree_tiku_ann_kill_rampage_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_lina": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_lina.vsndevts",
+      "count": 218,
+      "sample_keys": [
+        "announcer_dlc_lina_announcer_pick_dire_01",
+        "announcer_dlc_lina_announcer_pick_dire_02",
+        "announcer_dlc_lina_announcer_pick_dire_03",
+        "announcer_dlc_lina_announcer_pick_rad_01",
+        "announcer_dlc_lina_announcer_pick_rad_02",
+        "announcer_dlc_lina_announcer_pick_enm_01",
+        "announcer_dlc_lina_announcer_pick_enm_02",
+        "announcer_dlc_lina_announcer_pick_enm_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_lina_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_lina_killing_spree.vsndevts",
+      "count": 20,
+      "sample_keys": [
+        "announcer_dlc_lina_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_lina_killing_spree_announcer_kill_double_02",
+        "announcer_dlc_lina_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_lina_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_lina_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_lina_killing_spree_announcer_kill_rampage_02",
+        "announcer_dlc_lina_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_lina_killing_spree_announcer_kill_dominate_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_meepo": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_meepo.vsndevts",
+      "count": 480,
+      "sample_keys": [
+        "announcer_dlc_meepo_meepo_ann_choose_hero_01",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_01_02",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_02",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_02_02",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_03",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_04",
+        "announcer_dlc_meepo_meepo_ann_choose_hero_05",
+        "announcer_dlc_meepo_meepo_ann_pick_dire_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_meepo_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_meepo_killing_spree.vsndevts",
+      "count": 36,
+      "sample_keys": [
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_double_01_02",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_triple_01",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_ultra_01",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_rampage_01_03",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_spree_01_02",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_dominate_01",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_dominate_01_02",
+        "announcer_dlc_meepo_killing_spree_meepo_ann_kill_mega_01_04"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_monkey_king": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_monkey_king.vsndevts",
+      "count": 351,
+      "sample_keys": [
+        "announcer_dlc_monkey_king_mk_ann_choose_hero_02",
+        "announcer_dlc_monkey_king_mk_ann_choose_hero_03",
+        "announcer_dlc_monkey_king_mk_ann_choose_hero_04",
+        "announcer_dlc_monkey_king_mk_ann_pick_dire_01",
+        "announcer_dlc_monkey_king_mk_ann_pick_rad_01",
+        "announcer_dlc_monkey_king_mk_ann_pick_enm_01",
+        "announcer_dlc_monkey_king_mk_ann_pick_enm_02",
+        "announcer_dlc_monkey_king_mk_ann_pick_enm_03"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_monkey_king_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_monkey_king_killing_spree.vsndevts",
+      "count": 33,
+      "sample_keys": [
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_double_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_triple_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_ultra_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_rampage_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_spree_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_dominate_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_mega_01",
+        "announcer_dlc_monkey_king_killing_spree_mk_ann_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_naturesprophet": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_naturesprophet.vsndevts",
+      "count": 243,
+      "sample_keys": [
+        "announcer_dlc_naturesprophet_announcer_welcome_01",
+        "announcer_dlc_naturesprophet_announcer_pick_yr",
+        "announcer_dlc_naturesprophet_announcer_pick_enm",
+        "announcer_dlc_naturesprophet_announcer_pick_dire",
+        "announcer_dlc_naturesprophet_announcer_pick_rad",
+        "announcer_dlc_naturesprophet_announcer_ban_yr",
+        "announcer_dlc_naturesprophet_announcer_ban_enm",
+        "announcer_dlc_naturesprophet_announcer_ban_dire"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_naturesprophet_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_naturesprophet_killing_spree.vsndevts",
+      "count": 17,
+      "sample_keys": [
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_dominate_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_mega_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_unstop_01",
+        "announcer_dlc_naturesprophet_killing_spree_announcer_kill_wicked_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_pflax": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_pflax.vsndevts",
+      "count": 521,
+      "sample_keys": [
+        "announcer_dlc_pflax_announcer_pick_yr_03",
+        "announcer_dlc_pflax_announcer_pick_enm_01",
+        "announcer_dlc_pflax_announcer_pick_rad_02",
+        "announcer_dlc_pflax_announcer_pick_dire_01",
+        "announcer_dlc_pflax_announcer_ban_yr_01",
+        "announcer_dlc_pflax_announcer_ban_yr_02",
+        "announcer_dlc_pflax_announcer_ban_yr_03",
+        "announcer_dlc_pflax_announcer_ban_yr_04"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_pflax_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_pflax_killing_spree.vsndevts",
+      "count": 55,
+      "sample_keys": [
+        "announcer_dlc_pflax_killing_spree_boosh_01",
+        "announcer_dlc_pflax_killing_spree_boosh_02",
+        "announcer_dlc_pflax_killing_spree_boosh_03",
+        "announcer_dlc_pflax_killing_spree_boosh_04",
+        "announcer_dlc_pflax_killing_spree_boosh_07",
+        "announcer_dlc_pflax_killing_spree_boosh_aqua",
+        "announcer_dlc_pflax_killing_spree_morphling_take_steps_01",
+        "announcer_dlc_pflax_killing_spree_skadoosh"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_rick_and_morty": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_rick_and_morty.vsndevts",
+      "count": 601,
+      "sample_keys": [
+        "announcer_dlc_rick_and_morty_your_turn_to_ban_01",
+        "announcer_dlc_rick_and_morty_your_turn_to_ban_02",
+        "announcer_dlc_rick_and_morty_your_turn_to_ban_03",
+        "announcer_dlc_rick_and_morty_your_turn_to_ban_04",
+        "announcer_dlc_rick_and_morty_your_turn_to_pick_01",
+        "announcer_dlc_rick_and_morty_your_turn_to_pick_02",
+        "announcer_dlc_rick_and_morty_your_turn_to_pick_03",
+        "announcer_dlc_rick_and_morty_enemy_turn_to_ban_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_rick_and_morty_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_rick_and_morty_killing_spree.vsndevts",
+      "count": 98,
+      "sample_keys": [
+        "announcer_dlc_rick_and_morty_killing_spree_double_kill_01",
+        "announcer_dlc_rick_and_morty_killing_spree_double_kill_02",
+        "announcer_dlc_rick_and_morty_killing_spree_wubalub_01",
+        "announcer_dlc_rick_and_morty_killing_spree_wubalub_02",
+        "announcer_dlc_rick_and_morty_killing_spree_triple_kill_01",
+        "announcer_dlc_rick_and_morty_killing_spree_triple_kill_02",
+        "announcer_dlc_rick_and_morty_killing_spree_triple_kill_03",
+        "announcer_dlc_rick_and_morty_killing_spree_triple_kill_04"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_ringmaster": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_ringmaster.vsndevts",
+      "count": 387,
+      "sample_keys": [
+        "announcer_dlc_ringmaster_ring_ann_welcome_01",
+        "announcer_dlc_ringmaster_ring_ann_welcome_01_02",
+        "announcer_dlc_ringmaster_ring_ann_welcome_02",
+        "announcer_dlc_ringmaster_ring_ann_welcome_03",
+        "announcer_dlc_ringmaster_ring_ann_welcome_04",
+        "announcer_dlc_ringmaster_ring_ann_welcome_05",
+        "announcer_dlc_ringmaster_ring_ann_welcome_06",
+        "announcer_dlc_ringmaster_ring_ann_welcome_07"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_ringmaster_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_ringmaster_killing_spree.vsndevts",
+      "count": 31,
+      "sample_keys": [
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_double_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_triple_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_ultra_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_rampage_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_rampage_01_02",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_spree_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_dominate_01",
+        "announcer_dlc_ringmaster_killing_spree_ring_ann_kill_mega_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_stanleyparable": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_stanleyparable.vsndevts",
+      "count": 536,
+      "sample_keys": [
+        "announcer_dlc_stanleyparable_announcer_pick_yr_01",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_02",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_03",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_04",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_05",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_06",
+        "announcer_dlc_stanleyparable_announcer_pick_yr_07",
+        "announcer_dlc_stanleyparable_announcer_pick_enm"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_stanleyparable_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_stanleyparable_killing_spree.vsndevts",
+      "count": 114,
+      "sample_keys": [
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_02",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_03",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_04",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_05",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_06",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_07",
+        "announcer_dlc_stanleyparable_killing_spree_announcer_kill_double_08"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_stormspirit": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_stormspirit.vsndevts",
+      "count": 306,
+      "sample_keys": [
+        "announcer_dlc_stormspirit_announcer_welcome_01",
+        "announcer_dlc_stormspirit_announcer_welcome_02",
+        "announcer_dlc_stormspirit_announcer_pick_yr",
+        "announcer_dlc_stormspirit_announcer_pick_enm",
+        "announcer_dlc_stormspirit_announcer_pick_dire",
+        "announcer_dlc_stormspirit_announcer_pick_rad",
+        "announcer_dlc_stormspirit_announcer_ban_yr",
+        "announcer_dlc_stormspirit_announcer_ban_enm"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_stormspirit_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_stormspirit_killing_spree.vsndevts",
+      "count": 20,
+      "sample_keys": [
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_rampage_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_rampage_02",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_spree_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_dominate_01",
+        "announcer_dlc_stormspirit_killing_spree_announcer_kill_mega_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_techies": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_techies.vsndevts",
+      "count": 326,
+      "sample_keys": [
+        "announcer_dlc_techies_tech_ann_pick_yr_01",
+        "announcer_dlc_techies_tech_ann_pick_yr_02",
+        "announcer_dlc_techies_tech_ann_pick_enm_01",
+        "announcer_dlc_techies_tech_ann_pick_enm_02",
+        "announcer_dlc_techies_tech_ann_pick_their_01",
+        "announcer_dlc_techies_tech_ann_pick_their_02",
+        "announcer_dlc_techies_tech_ann_pick_dire_01",
+        "announcer_dlc_techies_tech_ann_pick_dire_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_techies_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_techies_killing_spree.vsndevts",
+      "count": 23,
+      "sample_keys": [
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_double_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_triple_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_ultra_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_rampage_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_spree_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_dominate_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_mega_01",
+        "announcer_dlc_techies_killing_spree_tech_ann_kill_unstop_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_ti10_vog": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_ti10_vog.vsndevts",
+      "count": 614,
+      "sample_keys": [
+        "announcer_dlc_ti10_vog_vog_ti_ann_choose_hero_01",
+        "announcer_dlc_ti10_vog_vog_ti_ann_choose_hero_02",
+        "announcer_dlc_ti10_vog_vog_ti_ann_choose_hero_03",
+        "announcer_dlc_ti10_vog_vog_ti_ann_pick_dire_01",
+        "announcer_dlc_ti10_vog_vog_ti_ann_pick_dire_01_02",
+        "announcer_dlc_ti10_vog_vog_ti_ann_pick_dire_02",
+        "announcer_dlc_ti10_vog_vog_ti_ann_pick_rad_01",
+        "announcer_dlc_ti10_vog_vog_ti_ann_pick_rad_01_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_ti10_vog_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_ti10_vog_killing_spree.vsndevts",
+      "count": 45,
+      "sample_keys": [
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_double_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_triple_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_ultra_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_rampage_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_rampage_01_03",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_spree_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_dominate_01",
+        "announcer_dlc_ti10_vog_killing_spree_vog_ti_ann_kill_dominate_01_02"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_trine": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_trine.vsndevts",
+      "count": 565,
+      "sample_keys": [
+        "announcer_dlc_trine_announcer_draft_pick_dire",
+        "announcer_dlc_trine_announcer_draft_pick_enm",
+        "announcer_dlc_trine_announcer_draft_pick_rad",
+        "announcer_dlc_trine_announcer_draft_pick_yr",
+        "announcer_dlc_trine_announcer_draft_ban_dire",
+        "announcer_dlc_trine_announcer_draft_ban_enm",
+        "announcer_dlc_trine_announcer_draft_ban_rad",
+        "announcer_dlc_trine_announcer_draft_ban_yr"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_trine_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_trine_killing_spree.vsndevts",
+      "count": 30,
+      "sample_keys": [
+        "announcer_dlc_trine_killing_spree_announcer_kill_double_01",
+        "announcer_dlc_trine_killing_spree_announcer_kill_double_02",
+        "announcer_dlc_trine_killing_spree_announcer_kill_triple_01",
+        "announcer_dlc_trine_killing_spree_announcer_kill_triple_02",
+        "announcer_dlc_trine_killing_spree_announcer_kill_triple_03",
+        "announcer_dlc_trine_killing_spree_announcer_kill_ultra_01",
+        "announcer_dlc_trine_killing_spree_announcer_kill_ultra_02",
+        "announcer_dlc_trine_killing_spree_announcer_kill_rampage_01"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_tusk": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_tusk.vsndevts",
+      "count": 162,
+      "sample_keys": [
+        "announcer_dlc_tusk_tusk_ann_welcome_01",
+        "announcer_dlc_tusk_tusk_ann_welcome_02",
+        "announcer_dlc_tusk_tusk_ann_welcome_03",
+        "announcer_dlc_tusk_tusk_ann_welcome_04",
+        "announcer_dlc_tusk_tusk_ann_welcome_05",
+        "announcer_dlc_tusk_tusk_ann_welcome_06",
+        "announcer_dlc_tusk_tusk_ann_welcome_07",
+        "announcer_dlc_tusk_tusk_ann_welcome_08"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_workshop_pirate": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_workshop_pirate.vsndevts",
+      "count": 291,
+      "sample_keys": [
+        "announcer_dlc_workshop_pirate_announcer_capn_welcome",
+        "announcer_dlc_workshop_pirate_announcer_capn_intro_arrhearties",
+        "announcer_dlc_workshop_pirate_announcer_capn_intro_allashore",
+        "announcer_dlc_workshop_pirate_announcer_capn_intro_landlubbers",
+        "announcer_dlc_workshop_pirate_announcer_capn_intro_whatbethis",
+        "announcer_dlc_workshop_pirate_announcer_capn_intro_welcomeaboard",
+        "announcer_dlc_workshop_pirate_announcer_capn_your_pick1",
+        "announcer_dlc_workshop_pirate_announcer_capn_your_pick2"
+      ]
+    },
+    "game_sounds_vo_announcer_dlc_workshop_pirate_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dlc_workshop_pirate_killing_spree.vsndevts",
+      "count": 38,
+      "sample_keys": [
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_doublekill",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_twoforone",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_doubloons",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_thricebenice",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_triplekill",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_ultrakill",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_plundered",
+        "announcer_dlc_workshop_pirate_killing_spree_announcer_capn_killing_rampage"
+      ]
+    },
+    "game_sounds_vo_announcer_dota_fighter": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_dota_fighter.vsndevts",
+      "count": 90,
+      "sample_keys": [
+        "announcer_dota_fighter_stage_intro_gen_01",
+        "announcer_dota_fighter_stage_intro_gen_02",
+        "announcer_dota_fighter_stage_intro_gen_03",
+        "announcer_dota_fighter_stage_intro_gen_04",
+        "announcer_dota_fighter_stage_intro_gen_10",
+        "announcer_dota_fighter_stage_intro_gen_11",
+        "announcer_dota_fighter_stage_intro_gen_12",
+        "announcer_dota_fighter_stage_intro_gen_13"
+      ]
+    },
+    "game_sounds_vo_announcer_killing_spree": {
+      "precache": "soundevents/voscripts/game_sounds_vo_announcer_killing_spree.vsndevts",
+      "count": 14,
+      "sample_keys": [
+        "announcer_killing_spree_announcer_kill_double_01",
+        "announcer_killing_spree_announcer_kill_triple_01",
+        "announcer_killing_spree_announcer_kill_ultra_01",
+        "announcer_killing_spree_announcer_kill_rampage_01",
+        "announcer_killing_spree_announcer_kill_spree_01",
+        "announcer_killing_spree_announcer_kill_dominate_01",
+        "announcer_killing_spree_announcer_kill_mega_01",
+        "announcer_killing_spree_announcer_kill_unstop_01"
+      ]
+    }
+  },
+  "events_vo": {
+    "game_sounds_vo_dark_carnival_vn_part1": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dark_carnival_vn_part1.vsndevts",
+      "count": 632,
+      "sample_keys": [
+        "dc01_hddn101_010",
+        "dc01_hddn101_020",
+        "dc01_hddn101_030",
+        "dc01_hddn101_040",
+        "dc01_hddn101_050",
+        "dc01_hddn101_060",
+        "dc01_hddn101_070",
+        "dc01_hddn101_080"
+      ]
+    },
+    "game_sounds_vo_dark_carnival_vn_part2": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dark_carnival_vn_part2.vsndevts",
+      "count": 439,
+      "sample_keys": [
+        "dc01_blimp01_010",
+        "dc01_blimp01_020",
+        "dc01_blimp01_030",
+        "dc01_blimp01_040",
+        "dc01_blimp01_050",
+        "dc01_blimp01_060",
+        "dc01_blimp01_070",
+        "dc01_blimp01_080"
+      ]
+    },
+    "game_sounds_vo_dark_carnival_vn_part3": {
+      "precache": "soundevents/voscripts/game_sounds_vo_dark_carnival_vn_part3.vsndevts",
+      "count": 281,
+      "sample_keys": [
+        "dc01_cldrn01_010",
+        "dc01_cldrn01_020",
+        "dc01_cldrn01_030",
+        "dc01_cldrn01_040",
+        "dc01_cldrn01_050",
+        "dc01_cldrn01_060",
+        "dc01_cldrn01_070",
+        "dc01_cldrn01_080"
+      ]
+    },
+    "game_sounds_vo_event_ann_dw_morokai": {
+      "precache": "soundevents/voscripts/game_sounds_vo_event_ann_dw_morokai.vsndevts",
+      "count": 124,
+      "sample_keys": [
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_01_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_02_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_03_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_04_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_05_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_06_01",
+        "event_ann_dw_morokai_dark_willow_mkai_mnl_07",
+        "event_ann_dw_morokai_dark_willow_mkai_pg_01"
+      ]
+    },
+    "game_sounds_vo_event_dark_carnival_axehw_game": {
+      "precache": "soundevents/voscripts/game_sounds_vo_event_dark_carnival_axehw_game.vsndevts",
+      "count": 131,
+      "sample_keys": [
+        "event_dark_carnival_axehw_game_aamg_duo_bad_01",
+        "event_dark_carnival_axehw_game_aamg_duo_bad_02",
+        "event_dark_carnival_axehw_game_aamg_duo_bad_03",
+        "event_dark_carnival_axehw_game_aamg_duo_bad_04",
+        "event_dark_carnival_axehw_game_aamg_duo_bad_05",
+        "event_dark_carnival_axehw_game_aamg_duo_end_01",
+        "event_dark_carnival_axehw_game_aamg_duo_end_02",
+        "event_dark_carnival_axehw_game_aamg_duo_end_03"
+      ]
+    },
+    "game_sounds_vo_event_dark_carnival_slark_games": {
+      "precache": "soundevents/voscripts/game_sounds_vo_event_dark_carnival_slark_games.vsndevts",
+      "count": 106,
+      "sample_keys": [
+        "event_dark_carnival_slark_games_slark_blimp_fall_01",
+        "event_dark_carnival_slark_games_slark_blimp_fall_02",
+        "event_dark_carnival_slark_games_slark_blimp_fall_03",
+        "event_dark_carnival_slark_games_slark_blimp_fall_04",
+        "event_dark_carnival_slark_games_slark_blimp_fall_05",
+        "event_dark_carnival_slark_games_slark_blimp_fall_06",
+        "event_dark_carnival_slark_games_slark_blimp_happy_01",
+        "event_dark_carnival_slark_games_slark_blimp_happy_02"
+      ]
+    },
+    "game_sounds_vo_event_dark_carnival_tinker_game": {
+      "precache": "soundevents/voscripts/game_sounds_vo_event_dark_carnival_tinker_game.vsndevts",
+      "count": 78,
+      "sample_keys": [
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_01",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_02",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_03",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_04",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_05",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_06",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_07",
+        "event_dark_carnival_tinker_game_tinker_minigame_caught_bad_07_02"
+      ]
+    },
+    "game_sounds_vo_ringmaster_carnival_part1": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ringmaster_carnival_part1.vsndevts",
+      "count": 28,
+      "sample_keys": [
+        "ringmaster_carnival_ring_prison_01",
+        "ringmaster_carnival_ring_prison_02",
+        "ringmaster_carnival_ring_prison_03",
+        "ringmaster_carnival_ring_prison_04",
+        "ringmaster_carnival_ring_prison_05",
+        "ringmaster_carnival_ring_prison_05a",
+        "ringmaster_carnival_ring_prison_05b",
+        "ringmaster_carnival_ring_prison_07"
+      ]
+    },
+    "game_sounds_vo_ringmaster_carnival_part2": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ringmaster_carnival_part2.vsndevts",
+      "count": 11,
+      "sample_keys": [
+        "ringmaster_carnival_ring_blimp_after_01",
+        "ringmaster_carnival_ring_blimp_after_02",
+        "ringmaster_carnival_ring_blimp_after_03",
+        "ringmaster_carnival_ring_ganked_02",
+        "ringmaster_carnival_ring_ganked_03",
+        "ringmaster_carnival_ring_ganked_04",
+        "ringmaster_carnival_ring_ganked_05",
+        "ringmaster_carnival_ring_workshop_01"
+      ]
+    },
+    "game_sounds_vo_ringmaster_carnival_part3": {
+      "precache": "soundevents/voscripts/game_sounds_vo_ringmaster_carnival_part3.vsndevts",
+      "count": 9,
+      "sample_keys": [
+        "ringmaster_carnival_ring_cauldron_01",
+        "ringmaster_carnival_ring_cauldron_02",
+        "ringmaster_carnival_ring_cauldron_03",
+        "ringmaster_carnival_ring_cauldron_04",
+        "ringmaster_carnival_ring_engine_01",
+        "ringmaster_carnival_ring_engine_02",
+        "ringmaster_carnival_ring_engine_03",
+        "ringmaster_carnival_ring_engine_04"
+      ]
+    },
+    "game_sounds_vo_siltbreaker": {
+      "precache": "soundevents/voscripts/game_sounds_vo_siltbreaker.vsndevts",
+      "count": 242,
+      "sample_keys": [
+        "siltbreaker_silt_offscreen_01",
+        "siltbreaker_silt_offscreen_02",
+        "siltbreaker_silt_offscreen_03",
+        "siltbreaker_silt_offscreen_04",
+        "siltbreaker_silt_offscreen_05",
+        "siltbreaker_silt_intro_01",
+        "siltbreaker_silt_intro_03",
+        "siltbreaker_silt_intro_04"
+      ]
+    }
+  }
+}

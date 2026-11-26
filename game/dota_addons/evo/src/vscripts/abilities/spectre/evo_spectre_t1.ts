@@ -276,12 +276,19 @@ export class evo_spectre_t1_w extends BaseAbility {
         const attrPct = this.GetSpecialValueFor("attr_pct");
         const physDmg = physBase + (getSpectreHighestAttr(caster) * attrPct) / 100;
 
-        caster.EmitSound("Hero_Spectre.Desolate");
+        const targetPos = target.GetAbsOrigin();
+        const dir = targetPos.__sub(caster.GetAbsOrigin());
+        dir.z = 0;
+        const forward = dir.Length2D() > 1 ? dir.Normalized() : caster.GetForwardVector();
+
+        caster.EmitSound("Hero_VoidSpirit.Pulse.Cast");
+        target.EmitSound("Hero_VoidSpirit.AstralStep.Target");
         const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
+            "particles/evo_spectre/evo_spectre_void_surge.vpcf",
             ParticleAttachment.ABSORIGIN_FOLLOW,
             target
         );
+        ParticleManager.SetParticleControlForward(pfx, 0, forward);
         ParticleManager.ReleaseParticleIndex(pfx);
 
         ApplyDamage({

@@ -24,7 +24,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 2,
         label: "T2",
-        requiredHeroLevel: 6,
+        requiredHeroLevel: 7,
         requiredEvoPoints: 15,
         statMultiplier: 1.25,
         spellShopSlots: 3,
@@ -34,7 +34,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 3,
         label: "T3",
-        requiredHeroLevel: 13,
+        requiredHeroLevel: 14,
         requiredEvoPoints: 35,
         statMultiplier: 1.45,
         spellShopSlots: 3,
@@ -44,7 +44,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 4,
         label: "T4",
-        requiredHeroLevel: 19,
+        requiredHeroLevel: 20,
         requiredEvoPoints: 60,
         statMultiplier: 1.7,
         spellShopSlots: 4,
