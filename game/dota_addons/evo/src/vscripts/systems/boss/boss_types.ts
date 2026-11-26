@@ -1,5 +1,5 @@
 import { BossDefinition, BossItemStep } from "../../data/bosses_catalog";
-import { EVO_CONSTANTS, EVO_MAP_ENTITIES } from "../../data/game_constants";
+import { EVO_CONSTANTS, EVO_MAP_ENTITIES, EVO_PLAYABLE_TEAMS } from "../../data/game_constants";
 
 export interface PatrolWaypoint {
     position: Vector;
@@ -53,15 +53,6 @@ export const IGNORED_BOSS_ABILITIES: ReadonlySet<string> = new Set([
     "ability_pluck_famango",
 ]);
 
-const PLAYER_TEAMS: readonly DotaTeam[] = [
-    DotaTeam.GOODGUYS,
-    DotaTeam.BADGUYS,
-    DotaTeam.CUSTOM_1,
-    DotaTeam.CUSTOM_2,
-    DotaTeam.CUSTOM_3,
-    DotaTeam.CUSTOM_4,
-];
-
 export function distance2D(a: Vector, b: Vector): number {
     const dx = a.x - b.x;
     const dy = a.y - b.y;
@@ -104,7 +95,7 @@ export function isHeroProtectedByFountain(
 }
 
 export function revealBossOnMinimap(origin: Vector): void {
-    for (const team of PLAYER_TEAMS) {
+    for (const team of EVO_PLAYABLE_TEAMS) {
         AddFOWViewer(team, origin, 220, BOSS_AI_TICK_SECONDS + 0.15, false);
     }
 }

@@ -4,8 +4,12 @@ local Set = ____lualib.Set
 local __TS__New = ____lualib.__TS__New
 local __TS__Iterator = ____lualib.__TS__Iterator
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 3,["10"] = 10,["13"] = 11,["14"] = 12,["17"] = 14,["18"] = 15,["19"] = 15,["20"] = 15,["21"] = 15,["22"] = 17,["24"] = 18,["25"] = 18,["27"] = 19,["28"] = 20,["29"] = 20,["31"] = 21,["32"] = 22,["33"] = 23,["34"] = 23,["35"] = 23,["36"] = 23,["40"] = 18,["43"] = 27,["45"] = 28,["46"] = 28,["48"] = 29,["49"] = 30,["50"] = 30,["52"] = 31,["53"] = 32,["54"] = 33,["58"] = 28,["61"] = 37,["62"] = 37,["63"] = 37,["64"] = 37,["65"] = 37,["66"] = 37,["67"] = 37,["68"] = 37,["69"] = 37,["70"] = 37,["71"] = 37,["72"] = 37,["73"] = 47,["74"] = 48,["76"] = 51,["77"] = 52,["78"] = 53,["79"] = 53,["80"] = 53,["81"] = 53,["82"] = 53,["83"] = 53,["84"] = 53,["85"] = 54,["86"] = 55,["88"] = 57,["89"] = 57,["90"] = 58,["91"] = 59,["92"] = 60,["94"] = 57,["98"] = 63,["99"] = 63,["100"] = 64,["101"] = 65,["102"] = 66,["104"] = 63,["107"] = 70,["108"] = 71,["109"] = 72,["110"] = 73,["111"] = 75,["112"] = 3,["113"] = 78,["114"] = 83,["117"] = 84,["118"] = 85,["119"] = 86,["122"] = 88,["123"] = 89,["125"] = 92,["126"] = 93,["127"] = 95,["128"] = 96,["129"] = 96,["130"] = 96,["131"] = 96,["132"] = 96,["133"] = 96,["134"] = 96,["135"] = 97,["136"] = 97,["137"] = 97,["138"] = 97,["139"] = 97,["140"] = 97,["141"] = 97,["142"] = 98,["143"] = 98,["144"] = 98,["145"] = 98,["146"] = 98,["147"] = 98,["148"] = 98,["150"] = 100,["151"] = 100,["153"] = 101,["154"] = 102,["155"] = 102,["157"] = 103,["158"] = 104,["159"] = 105,["160"] = 106,["164"] = 100,["168"] = 110,["169"] = 110,["171"] = 111,["172"] = 112,["173"] = 112,["175"] = 113,["176"] = 114,["177"] = 115,["178"] = 116,["182"] = 110,["186"] = 121,["187"] = 122,["189"] = 78,["190"] = 128,["191"] = 129,["192"] = 130,["193"] = 131,["194"] = 132,["197"] = 135,["198"] = 128,["199"] = 138,["200"] = 142,["201"] = 144,["202"] = 144,["203"] = 144,["204"] = 144,["205"] = 144,["206"] = 144,["207"] = 144,["208"] = 144,["209"] = 144,["210"] = 144,["211"] = 144,["212"] = 156,["214"] = 157,["215"] = 157,["217"] = 158,["218"] = 158,["220"] = 159,["221"] = 160,["226"] = 163,["227"] = 163,["229"] = 164,["230"] = 165,["231"] = 165,["233"] = 166,["234"] = 167,["235"] = 167,["237"] = 168,["238"] = 168,["240"] = 169,["241"] = 170,["244"] = 163,["247"] = 138,["248"] = 174,["249"] = 175,["250"] = 174,["251"] = 184,["252"] = 195,["253"] = 196,["254"] = 196,["255"] = 199,["256"] = 197,["257"] = 197,["258"] = 197,["259"] = 197,["261"] = 201,["263"] = 196,["264"] = 202,["265"] = 202,["266"] = 202,["267"] = 202,["268"] = 204,["269"] = 205,["270"] = 205,["271"] = 205,["272"] = 206,["274"] = 209,["275"] = 213,["276"] = 214,["277"] = 217,["278"] = 218,["279"] = 219,["280"] = 220,["281"] = 220,["282"] = 221,["283"] = 209,["284"] = 212,["285"] = 212,["286"] = 212,["287"] = 212,["288"] = 212,["289"] = 212,["290"] = 212,["291"] = 212,["292"] = 212,["293"] = 212,["294"] = 212,["295"] = 212,["296"] = 209,["297"] = 184});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 1,["10"] = 1,["11"] = 2,["12"] = 2,["13"] = 5,["14"] = 12,["17"] = 13,["18"] = 14,["21"] = 16,["22"] = 17,["23"] = 17,["24"] = 17,["25"] = 17,["26"] = 19,["28"] = 20,["29"] = 20,["31"] = 21,["32"] = 22,["33"] = 22,["35"] = 23,["36"] = 24,["37"] = 25,["38"] = 25,["39"] = 25,["40"] = 25,["44"] = 20,["47"] = 29,["49"] = 30,["50"] = 30,["52"] = 31,["53"] = 32,["54"] = 32,["56"] = 33,["57"] = 34,["58"] = 35,["62"] = 30,["65"] = 39,["66"] = 39,["67"] = 39,["68"] = 39,["69"] = 39,["70"] = 39,["71"] = 39,["72"] = 39,["73"] = 39,["74"] = 39,["75"] = 39,["76"] = 39,["77"] = 49,["78"] = 50,["80"] = 53,["81"] = 54,["82"] = 55,["83"] = 55,["84"] = 55,["85"] = 55,["86"] = 55,["87"] = 55,["88"] = 55,["89"] = 56,["90"] = 57,["92"] = 59,["93"] = 59,["94"] = 60,["95"] = 61,["96"] = 62,["98"] = 59,["102"] = 65,["103"] = 65,["104"] = 66,["105"] = 67,["106"] = 68,["108"] = 65,["111"] = 72,["112"] = 73,["113"] = 74,["114"] = 75,["115"] = 76,["116"] = 77,["117"] = 79,["118"] = 80,["119"] = 5,["120"] = 83,["121"] = 88,["124"] = 89,["125"] = 90,["126"] = 91,["129"] = 93,["130"] = 94,["131"] = 95,["133"] = 98,["134"] = 99,["135"] = 100,["136"] = 102,["137"] = 103,["138"] = 103,["139"] = 103,["140"] = 103,["141"] = 103,["142"] = 103,["143"] = 103,["144"] = 104,["145"] = 104,["146"] = 104,["147"] = 104,["148"] = 104,["149"] = 104,["150"] = 104,["151"] = 105,["152"] = 105,["153"] = 105,["154"] = 105,["155"] = 105,["156"] = 105,["157"] = 105,["159"] = 107,["160"] = 107,["162"] = 108,["163"] = 109,["164"] = 109,["166"] = 110,["167"] = 111,["168"] = 112,["169"] = 113,["173"] = 107,["177"] = 117,["178"] = 117,["180"] = 118,["181"] = 119,["182"] = 119,["184"] = 120,["185"] = 121,["186"] = 122,["187"] = 123,["191"] = 117,["195"] = 128,["196"] = 129,["198"] = 83,["199"] = 135,["200"] = 136,["201"] = 135,["202"] = 145,["203"] = 146,["205"] = 147,["206"] = 147,["208"] = 148,["209"] = 149,["210"] = 149,["212"] = 150,["213"] = 151,["217"] = 145,["218"] = 159,["219"] = 172,["220"] = 173,["221"] = 173,["222"] = 176,["223"] = 174,["224"] = 174,["225"] = 174,["226"] = 174,["228"] = 178,["230"] = 173,["231"] = 179,["232"] = 179,["233"] = 179,["234"] = 179,["235"] = 181,["236"] = 182,["237"] = 182,["238"] = 182,["239"] = 183,["241"] = 186,["243"] = 187,["244"] = 187,["246"] = 188,["247"] = 189,["248"] = 189,["250"] = 190,["251"] = 190,["252"] = 190,["253"] = 190,["256"] = 187,["259"] = 196,["260"] = 200,["261"] = 201,["262"] = 204,["263"] = 205,["264"] = 206,["265"] = 207,["266"] = 207,["267"] = 208,["268"] = 196,["269"] = 199,["270"] = 199,["271"] = 199,["272"] = 199,["273"] = 199,["274"] = 199,["275"] = 199,["276"] = 199,["277"] = 199,["278"] = 199,["279"] = 199,["280"] = 199,["281"] = 199,["282"] = 196,["283"] = 159,["284"] = 217,["285"] = 227,["286"] = 230,["287"] = 230,["288"] = 230,["289"] = 230,["290"] = 230,["291"] = 230,["292"] = 230,["293"] = 230,["294"] = 227,["295"] = 217,["296"] = 243,["297"] = 254,["298"] = 258,["299"] = 262,["300"] = 263,["301"] = 264,["302"] = 265,["305"] = 269,["306"] = 270,["307"] = 271,["308"] = 272,["309"] = 273,["310"] = 273,["311"] = 273,["312"] = 273,["313"] = 274,["314"] = 275,["315"] = 275,["316"] = 275,["317"] = 275,["319"] = 277,["320"] = 278,["321"] = 279,["322"] = 280,["323"] = 281,["324"] = 282,["325"] = 283,["326"] = 283,["327"] = 283,["328"] = 283,["329"] = 283,["330"] = 283,["331"] = 283,["334"] = 286,["335"] = 286,["336"] = 286,["337"] = 286,["338"] = 286,["339"] = 286,["340"] = 286,["341"] = 286,["342"] = 286,["343"] = 286,["345"] = 298,["346"] = 243});
 local ____exports = {}
+local ____game_constants = require("data.game_constants")
+local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
+local ____unit_helpers = require("lib.unit_helpers")
+local focusPlayerCamera = ____unit_helpers.focusPlayerCamera
 function ____exports.prepareDuelistSnapshot(self, playerId, spawnPos, lookTarget, snapshots, activeDuelistEntIndexes)
     if not PlayerResource:IsValidPlayerID(playerId) then
         return
@@ -74,7 +78,7 @@ function ____exports.prepareDuelistSnapshot(self, playerId, spawnPos, lookTarget
         hero:RespawnHero(false, false)
     end
     hero:RemoveModifierByName("modifier_evo_peace_time")
-    hero:RemoveModifierByName("modifier_evo_world_pause")
+    hero:RemoveModifierByName("modifier_fountain_buff_lua")
     hero:Purge(
         false,
         true,
@@ -105,10 +109,13 @@ function ____exports.prepareDuelistSnapshot(self, playerId, spawnPos, lookTarget
         end
     end
     FindClearSpaceForUnit(hero, spawnPos, true)
+    hero:RemoveModifierByName("modifier_fountain_buff_lua")
     hero:Stop()
     local dir = Vector(lookTarget.x - spawnPos.x, lookTarget.y - spawnPos.y, 0):Normalized()
     hero:SetForwardVector(dir)
+    focusPlayerCamera(nil, playerId, hero, spawnPos)
     activeDuelistEntIndexes:add(hero:entindex())
+    hero:RemoveModifierByName("modifier_fountain_buff_lua")
 end
 function ____exports.restoreDuelistAfterDuel(self, playerId, isWinner, snapshots)
     if not PlayerResource:IsValidPlayerID(playerId) then
@@ -119,12 +126,14 @@ function ____exports.restoreDuelistAfterDuel(self, playerId, isWinner, snapshots
     if not hero or hero:IsNull() or not IsValidEntity(hero) or not snapshot then
         return
     end
-    if not hero:IsAlive() then
+    local survivedDuel = hero:IsAlive()
+    if not survivedDuel then
         hero:RespawnHero(false, false)
     end
     FindClearSpaceForUnit(hero, snapshot.position, true)
     hero:Stop()
-    if isWinner then
+    focusPlayerCamera(nil, playerId, hero, snapshot.position)
+    if isWinner or survivedDuel then
         hero:Purge(
             false,
             true,
@@ -187,66 +196,24 @@ function ____exports.restoreDuelistAfterDuel(self, playerId, isWinner, snapshots
         hero:AddNewModifier(hero, nil, "modifier_evo_peace_time", {duration = snapshot.peaceTimeRemaining})
     end
 end
-function ____exports.releaseWorldPause(self, pausedEntIndexes)
-    for ____, entIndex in __TS__Iterator(pausedEntIndexes) do
-        local ent = EntIndexToHScript(entIndex)
-        if ent and not ent:IsNull() and IsValidEntity(ent) and ent:IsBaseNPC() then
-            ent:RemoveModifierByName("modifier_evo_world_pause")
-        end
-    end
-    pausedEntIndexes:clear()
-end
-function ____exports.applyWorldPause(self, activeDuelistEntIndexes, pausedEntIndexes)
-    ____exports.releaseWorldPause(nil, pausedEntIndexes)
-    local allUnits = FindUnitsInRadius(
-        2,
-        Vector(0, 0, 0),
-        nil,
-        FIND_UNITS_EVERYWHERE,
-        3,
-        bit.bor(1, 18),
-        bit.bor(64, 16),
-        0,
-        false
-    )
-    for ____, unit in ipairs(allUnits) do
-        do
-            if not unit or unit:IsNull() or not IsValidEntity(unit) or not unit:IsAlive() then
-                goto __continue33
-            end
-            if activeDuelistEntIndexes:has(unit:entindex()) then
-                goto __continue33
-            end
-            unit:AddNewModifier(unit, nil, "modifier_evo_world_pause", {})
-            pausedEntIndexes:add(unit:entindex())
-        end
-        ::__continue33::
-    end
-    do
-        local i = 0
-        while i < DOTA_MAX_TEAM_PLAYERS do
-            do
-                local pid = i
-                if not PlayerResource:IsValidPlayerID(pid) then
-                    goto __continue37
-                end
-                local hero = PlayerResource:GetSelectedHeroEntity(pid)
-                if not hero or hero:IsNull() or not IsValidEntity(hero) or not hero:IsAlive() then
-                    goto __continue37
-                end
-                if activeDuelistEntIndexes:has(hero:entindex()) then
-                    goto __continue37
-                end
-                hero:AddNewModifier(hero, nil, "modifier_evo_world_pause", {})
-                pausedEntIndexes:add(hero:entindex())
-            end
-            ::__continue37::
-            i = i + 1
-        end
-    end
-end
 function ____exports.broadcastDuelEvent(self, eventName, winnerId)
     CustomGameEventManager:Send_ServerToAllClients("evo_duel_event", {event = eventName, winner_id = winnerId})
+end
+function ____exports.notifyPreDuelCountdown(self, pair, secondsLeft)
+    for ____, pid in ipairs({pair.playerA, pair.playerB}) do
+        do
+            if not PlayerResource:IsValidPlayerID(pid) then
+                goto __continue30
+            end
+            local player = PlayerResource:GetPlayer(pid)
+            if not player or player:IsNull() then
+                goto __continue30
+            end
+            EmitSoundOnClient("General.Ping", player)
+            CustomGameEventManager:Send_ServerToPlayer(player, "evo_duel_countdown_tick", {seconds_left = secondsLeft})
+        end
+        ::__continue30::
+    end
 end
 function ____exports.syncDuelNetState(self, params)
     local now = GameRules:GetDOTATime(false, false)
@@ -271,6 +238,24 @@ function ____exports.syncDuelNetState(self, params)
         local wins = ____value[2]
         tiebreakerPayload[tostring(team)] = wins
     end
+    local playerRecords = {}
+    do
+        local i = 0
+        while i < DOTA_MAX_TEAM_PLAYERS do
+            do
+                local pid = i
+                if not PlayerResource:IsValidPlayerID(pid) then
+                    goto __continue37
+                end
+                playerRecords[tostring(pid)] = {
+                    wins = params.duelWins:get(pid) or 0,
+                    losses = params.duelLosses:get(pid) or 0
+                }
+            end
+            ::__continue37::
+            i = i + 1
+        end
+    end
     local ____CustomNetTables_SetTableValue_13 = CustomNetTables.SetTableValue
     local ____params_active_7 = params.active
     local ____params_roundIndex_8 = params.roundIndex
@@ -292,7 +277,71 @@ function ____exports.syncDuelNetState(self, params)
         challenging_team = ____opt_5 and ____opt_5.challengingTeam or -1,
         player_a = params.currentPair and params.currentPair.playerA or -1,
         player_b = params.currentPair and params.currentPair.playerB or -1,
-        tiebreaker_scores = tiebreakerPayload
+        tiebreaker_scores = tiebreakerPayload,
+        player_records = playerRecords
     })
+end
+function ____exports.syncDuelResultNetState(self, params)
+    CustomNetTables:SetTableValue("duel_state", "last_result", {
+        round_index = params.roundIndex,
+        winner_id = params.winnerId or -1,
+        is_draw = params.isDraw,
+        reason = params.reason,
+        score_reward = params.scoreReward,
+        gold_reward = params.goldReward,
+        bet_payout = params.betPayout,
+        expires_at = params.expiresAt
+    })
+end
+function ____exports.resolveAndRecordPvpOutcome(self, params)
+    local validWinner = params.winnerId ~= nil and PlayerResource:IsValidPlayerID(params.winnerId) and params.winnerId or nil
+    local validLoser = params.loserId ~= nil and PlayerResource:IsValidPlayerID(params.loserId) and params.loserId or nil
+    if validLoser == nil and validWinner ~= nil and params.pair then
+        local candidate = params.pair.playerA == validWinner and params.pair.playerB or params.pair.playerA
+        if candidate >= 0 and PlayerResource:IsValidPlayerID(candidate) then
+            validLoser = candidate
+        end
+    end
+    if not params.isTiebreaker then
+        local now = GameRules:GetDOTATime(false, false)
+        local goldReward = 0
+        if validWinner ~= nil then
+            params.duelWins:set(
+                validWinner,
+                (params.duelWins:get(validWinner) or 0) + 1
+            )
+            if validLoser ~= nil and validLoser ~= validWinner then
+                params.duelLosses:set(
+                    validLoser,
+                    (params.duelLosses:get(validLoser) or 0) + 1
+                )
+            end
+            local elapsedMinutes = math.floor(now / 60)
+            goldReward = EVO_CONSTANTS.DUEL_WIN_BASE_GOLD + elapsedMinutes * 15
+            local xpReward = EVO_CONSTANTS.DUEL_WIN_BASE_XP + elapsedMinutes * 20
+            PlayerResource:ModifyGold(validWinner, goldReward, true, 12)
+            local winnerHero = PlayerResource:GetSelectedHeroEntity(validWinner)
+            if winnerHero and not winnerHero:IsNull() and IsValidEntity(winnerHero) then
+                winnerHero:AddExperience(
+                    xpReward,
+                    1,
+                    false,
+                    true,
+                    0
+                )
+            end
+        end
+        ____exports.syncDuelResultNetState(nil, {
+            roundIndex = params.roundIndex,
+            winnerId = validWinner,
+            isDraw = validWinner == nil,
+            reason = validWinner == nil and "draw" or params.reason,
+            scoreReward = validWinner ~= nil and EVO_CONSTANTS.SCORE_DUEL_WIN or 0,
+            goldReward = goldReward,
+            betPayout = params.totalBetPayout,
+            expiresAt = now + EVO_CONSTANTS.DUEL_RESULT_BANNER_SECONDS
+        })
+    end
+    return {validWinner = validWinner, validLoser = validLoser}
 end
 return ____exports

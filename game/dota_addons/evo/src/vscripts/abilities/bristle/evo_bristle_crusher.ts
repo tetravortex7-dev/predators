@@ -6,6 +6,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
 import { grantBristleAdrenalineStacks } from "./evo_bristle_shared";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_crusher";
@@ -216,7 +217,7 @@ export class evo_bristle_crush_w extends BaseAbility {
         );
         for (const enemy of enemies) {
             if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            const dmg = enemy.IsCreep() ? dmgBase * 1.35 : dmgBase;
+            const dmg = isEvoCreepUnit(enemy) ? dmgBase * 1.35 : dmgBase;
             ApplyDamage({
                 victim: enemy,
                 attacker: caster,
@@ -327,7 +328,7 @@ export class modifier_evo_bristle_crush_e_passive extends BaseModifier {
             lifesteal += 0.45 * ratio;
         }
         const victim = event.unit;
-        if (victim && !victim.IsNull() && victim.IsCreep()) {
+        if (isEvoCreepUnit(victim)) {
             lifesteal *= 0.5;
         }
         parent.Heal(event.damage * lifesteal, ab);

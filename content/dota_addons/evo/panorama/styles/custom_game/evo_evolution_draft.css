@@ -404,3 +404,55 @@
 {
     color: #ffe8a3;
 }
+
+.EvoDraftRerollRow
+{
+    visibility: collapse;
+    width: 100%;
+    padding: 0px 16px 14px 16px;
+}
+
+.EvoDraftRerollRow.Visible
+{
+    visibility: visible;
+}
+
+.EvoDraftRerollBtn
+{
+    horizontal-align: center;
+    min-width: 168px;
+    padding: 6px 18px;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #222c38ee ), to( #141b23f6 ) );
+    border: 1px solid #445364cc;
+    border-top: 1px solid #8a7246aa;
+    transition-property: brightness, border-color, opacity;
+    transition-duration: 0.12s;
+}
+
+.EvoDraftRerollBtn:hover
+{
+    brightness: 1.24;
+    border: 1px solid #d4b876;
+}
+
+.EvoDraftRerollBtn.Disabled
+{
+    opacity: 0.45;
+}
+
+.EvoDraftRerollBtn.Disabled:hover
+{
+    brightness: 1.0;
+    border: 1px solid #445364cc;
+}
+
+.EvoDraftRerollLabel
+{
+    horizontal-align: center;
+    font-family: titleFont;
+    font-size: 12px;
+    font-weight: semi-bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #d4b876;
+}

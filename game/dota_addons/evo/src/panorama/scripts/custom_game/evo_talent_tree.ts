@@ -213,9 +213,65 @@ function refreshFromNetTable(): void {
     }
 }
 
+function hasAvailableTalentPoint(): boolean {
+    const rows = getEffectiveRows();
+    const heroLevel = latestData?.hero_level ?? 1;
+    const abilityPoints = latestData?.ability_points ?? 0;
+    if (abilityPoints <= 0) return false;
+    for (const row of rows) {
+        const leftLearned = row.left_learned === 1;
+        const rightLearned = row.right_learned === 1;
+        const canLearnMore = heroLevel >= 30 || (!leftLearned && !rightLearned);
+        if (heroLevel >= row.level && (!leftLearned || !rightLearned) && canLearnMore) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function updateStatBranchUpgradeIndicator(): void {
+    const root = findHudRoot();
+    if (!root) return;
+    const statBranch = root.FindChildTraverse("StatBranch");
+    if (!statBranch) return;
+    const canUpgrade = hasAvailableTalentPoint();
+
+    statBranch.SetHasClass("could_level_up", canUpgrade);
+    statBranch.SetHasClass("show_level_up_tab", canUpgrade);
+    statBranch.SetHasClass("show_level_up_frame", canUpgrade);
+
+    const targets: (Panel | null | undefined)[] = [
+        statBranch.FindChildTraverse("LevelUpTab"),
+        statBranch.FindChildTraverse("LevelUpButton"),
+        statBranch.FindChildTraverse("LevelUpIcon"),
+        statBranch.FindChildTraverse("LevelUpLight"),
+        statBranch.FindChildTraverse("UpgradeOverlay"),
+        statBranch.FindChildTraverse("StatLevelUpTab"),
+    ];
+    const parent = statBranch.GetParent();
+    if (parent && !parent.FindChildTraverse("abilities")) {
+        parent.SetHasClass("could_level_up", canUpgrade);
+        parent.SetHasClass("show_level_up_tab", canUpgrade);
+        targets.push(
+            parent.FindChildTraverse("LevelUpTab"),
+            parent.FindChildTraverse("LevelUpButton"),
+            parent.FindChildTraverse("LevelUpIcon"),
+            parent.FindChildTraverse("LevelUpLight"),
+            parent.FindChildTraverse("StatLevelUpTab")
+        );
+    }
+
+    for (const panel of targets) {
+        if (!panel) continue;
+        panel.style.opacity = canUpgrade ? null : "0";
+        panel.visible = canUpgrade;
+    }
+}
+
 function periodicTick(): void {
     hookPopupHover();
     hookNativeStatBranch();
+    updateStatBranchUpgradeIndicator();
     const { nativeClickOpen, nativeHoverOpen } = getNativeStatBranchState();
     const shouldShow = isPinnedOpen || nativeClickOpen || nativeHoverOpen || isHoveringPopup;
     const tooltipOnly = !isPinnedOpen && !nativeClickOpen && (nativeHoverOpen || isHoveringPopup);

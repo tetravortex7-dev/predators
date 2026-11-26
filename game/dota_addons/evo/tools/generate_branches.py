@@ -332,8 +332,21 @@ def main():
                 en_tokens[f"{stage_id}_desc"] = stage["desc_en"]
 
         safe_key = re.sub(r"[^a-zA-Z0-9_]", "_", key).lower()
-        const_name = f"EVO_BRANCH_{safe_key.upper()}_BODIES"
-        branch_modules.append((safe_key, const_name, branch_bodies))
+        const_base = f"EVO_BRANCH_{safe_key.upper()}_BODIES"
+        chunk_idx = 1
+        start = 0
+        while start < len(branch_bodies):
+            end = len(branch_bodies)
+            while end > start + 1:
+                probe_text = format_ts_value(branch_bodies[start:end], 0)
+                if len(probe_text.splitlines()) <= 450:
+                    break
+                end -= 1
+            mod_name = safe_key if chunk_idx == 1 else f"{safe_key}_{chunk_idx}"
+            const_name = const_base if chunk_idx == 1 else f"{const_base}_{chunk_idx}"
+            branch_modules.append((mod_name, const_name, branch_bodies[start:end]))
+            start = end
+            chunk_idx += 1
 
     os.makedirs(OUT_BRANCHES_DIR, exist_ok=True)
     expected_files = {f"{mod_name}.ts" for mod_name, _, _ in branch_modules}

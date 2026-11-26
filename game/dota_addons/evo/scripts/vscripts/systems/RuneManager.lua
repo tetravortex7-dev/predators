@@ -121,7 +121,7 @@ function RuneManager.prototype.onGameStateChange(self)
                 self:spawnRunesByKind("powerup")
                 return EVO_CONSTANTS.POWER_RUNE_INTERVAL_SECONDS
             end,
-            EVO_CONSTANTS.POWER_RUNE_INTERVAL_SECONDS
+            EVO_CONSTANTS.POWER_RUNE_FIRST_SPAWN_SECONDS
         )
     end
 end

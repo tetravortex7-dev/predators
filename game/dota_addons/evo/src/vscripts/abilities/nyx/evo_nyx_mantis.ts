@@ -2,72 +2,74 @@ import {
     BaseAbility,
     BaseModifier,
     dotaModifierFunction,
-    dotaModifierState,
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import {
+    addLivingChitinStacks,
+    findEnemiesInRadius,
+    getNyxAgi,
+    getNyxBranchMaxLevel,
+    getNyxTier,
+} from "./evo_nyx_shared";
 
 const SCRIPT_PATH = "abilities/nyx/evo_nyx_mantis";
 
-const MANTIS_MODS: readonly string[] = [
-    "modifier_evo_nyx_mantis_q_dash",
-    "modifier_evo_nyx_mantis_bleed",
-    "modifier_evo_nyx_mantis_q_mark",
-    "modifier_evo_nyx_mantis_w_mark",
-    "modifier_evo_nyx_mantis_e_passive",
-];
-
-for (const modName of MANTIS_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
-
-function getAgi(unit: CDOTA_BaseNPC): number {
-    return unit.IsRealHero() ? (unit as CDOTA_BaseNPC_Hero).GetAgility() : 0;
-}
-
-function applyLaceration(caster: CDOTA_BaseNPC, target: CDOTA_BaseNPC, ability: CDOTABaseAbility, dps: number, dur: number): void {
-    const mod = target.AddNewModifier(caster, ability, "modifier_evo_nyx_mantis_bleed", {
-        duration: dur,
-        dps,
-    });
-    if (mod !== undefined) {
-        const next = Math.min(4, mod.GetStackCount() + 1);
-        mod.SetStackCount(next);
-    }
-}
+LinkLuaModifier("modifier_evo_nyx_mantis_q_flurry", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_mantis_q_ms", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_mantis_w", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_mantis_w_as", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_mantis_w_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_mantis_w_shield", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_nyx_mantis_q")
 export class evo_nyx_mantis_q extends BaseAbility {
+    GetMaxLevel(): number {
+        return getNyxBranchMaxLevel(this.GetCaster());
+    }
+    GetCooldown(level: number): number {
+        const base = [10.0, 9.0, 8.0, 7.0, 6.5][Math.max(0, Math.min(4, level))] ?? 10.0;
+        const caster = this.GetCaster();
+        if (caster && !caster.IsNull() && caster.HasModifier("modifier_evo_nyx_mantis_r")) {
+            return base * 0.5;
+        }
+        return base;
+    }
     OnSpellStart(): void {
         if (!IsServer()) return;
         const caster = this.GetCaster();
-        if (!caster || caster.IsNull() || !IsValidEntity(caster)) return;
+        const target = this.GetCursorTarget();
+        if (!target || target.IsNull() || !IsValidEntity(target) || !target.IsAlive()) return;
+        if (target.TriggerSpellAbsorb(this)) return;
 
-        const origin = caster.GetAbsOrigin();
-        const cursor = this.GetCursorPosition();
-        const range = this.GetSpecialValueFor("range");
-        const delta = Vector(cursor.x - origin.x, cursor.y - origin.y, 0);
-        const dir = delta.Length2D() > 1 ? delta.Normalized() : caster.GetForwardVector();
-        const dist = Math.min(range, Math.max(200, delta.Length2D() > 1 ? delta.Length2D() : range));
-        const speed = 1900;
-        const dur = Math.max(0.12, dist / speed);
+        const tier = getNyxTier(caster);
+        let hits = this.GetSpecialValueFor("hit_count");
+        let dur = this.GetSpecialValueFor("duration");
 
-        caster.EmitSound("Hero_PhantomAssassin.Strike.End");
-        caster.AddNewModifier(caster, this, "modifier_evo_nyx_mantis_q_dash", {
-            duration: dur,
-            dir_x: dir.x,
-            dir_y: dir.y,
-            speed,
+        if (tier >= 4) {
+            const wound = target.FindModifierByName("modifier_evo_nyx_mantis_e_wound");
+            if (wound && wound.GetStackCount() >= 5) {
+                hits = 4;
+                dur = dur * (4 / 3);
+            }
+        }
+
+        target.AddNewModifier(caster, this, "modifier_stunned", { duration: dur });
+        caster.AddNewModifier(caster, this, "modifier_evo_nyx_mantis_q_flurry", {
+            duration: dur + 0.1,
+            targetIdx: target.GetEntityIndex(),
+            hits,
+            interval: dur / hits,
         });
     }
 }
 
-@registerModifier("modifier_evo_nyx_mantis_q_dash")
-export class modifier_evo_nyx_mantis_q_dash extends BaseModifier {
-    private dirX = 1;
-    private dirY = 0;
-    private speed = 1900;
-    private hitSet: Set<EntityIndex> = new Set();
+@registerModifier("modifier_evo_nyx_mantis_q_flurry")
+export class modifier_evo_nyx_mantis_q_flurry extends BaseModifier {
+    private targetIdx: EntityIndex = -1 as EntityIndex;
+    private remainingHits = 0;
+    private bonusPerStrike = 0;
+    private dmgPctDelta = -45;
 
     IsHidden(): boolean {
         return true;
@@ -75,247 +77,225 @@ export class modifier_evo_nyx_mantis_q_dash extends BaseModifier {
     IsPurgable(): boolean {
         return false;
     }
-    CheckState(): Partial<Record<ModifierState, boolean>> {
-        return {
-            [dotaModifierState("MODIFIER_STATE_NO_UNIT_COLLISION")]: true,
-            [dotaModifierState("MODIFIER_STATE_COMMAND_RESTRICTED")]: true,
-        };
-    }
-    OnCreated(params: { dir_x?: number; dir_y?: number; speed?: number }): void {
-        this.dirX = params?.dir_x ?? 1;
-        this.dirY = params?.dir_y ?? 0;
-        this.speed = params?.speed ?? 1900;
-        this.hitSet = new Set();
+    OnCreated(params: { targetIdx?: EntityIndex; hits?: number; interval?: number }): void {
+        this.targetIdx = -1 as EntityIndex;
+        this.remainingHits = 0;
+        this.bonusPerStrike = 0;
+        this.dmgPctDelta = -45;
+
+        const parent = this.GetParent();
+        const ability = this.GetAbility();
+        if (ability && !ability.IsNull()) {
+            const pct = ability.GetSpecialValueFor("attack_damage_pct");
+            this.dmgPctDelta = pct - 100;
+        }
+        const tier = parent && !parent.IsNull() ? getNyxTier(parent) : 2;
+        if (tier >= 3) {
+            this.bonusPerStrike = tier >= 4 ? 25 : 15;
+        }
         if (!IsServer()) return;
-        this.StartIntervalThink(0.03);
+        this.targetIdx = (params.targetIdx ?? -1) as EntityIndex;
+        this.remainingHits = params.hits ?? 3;
+        const interval = params.interval ?? 0.15;
+        this.doStrike();
+        if (this.remainingHits > 0) {
+            this.StartIntervalThink(interval);
+        }
     }
     OnIntervalThink(): void {
         if (!IsServer()) return;
+        this.doStrike();
+    }
+    private doStrike(): void {
         const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !IsValidEntity(parent) || !parent.IsAlive() || !ab) {
+        const ability = this.GetAbility();
+        if (!parent || parent.IsNull() || !parent.IsAlive() || parent.IsStunned()) {
+            this.Destroy();
+            return;
+        }
+        const targetEnt = EntIndexToHScript(this.targetIdx);
+        if (!targetEnt || targetEnt.IsNull() || !IsValidEntity(targetEnt) || !targetEnt.IsBaseNPC() || !targetEnt.IsAlive()) {
             this.Destroy();
             return;
         }
 
-        const pos = parent.GetAbsOrigin();
-        const step = this.speed * 0.03;
-        const nextPos = Vector(pos.x + this.dirX * step, pos.y + this.dirY * step, pos.z);
-        nextPos.z = GetGroundHeight(nextPos, parent);
-        parent.SetAbsOrigin(nextPos);
+        parent.EmitSound("Hero_Pangolier.Swashbuckle.Attack");
+        parent.PerformAttack(targetEnt, true, true, true, true, false, false, true);
+        this.remainingHits -= 1;
 
-        const level = ab.GetLevel();
-        const width = ab.GetSpecialValueFor("width");
-        const baseDmg = ab.GetSpecialValueFor("base_damage");
-        const agiPct = ab.GetSpecialValueFor("agi_pct") / 100;
-        const creepMult = ab.GetSpecialValueFor("creep_mult");
-        const bleedDps = ab.GetSpecialValueFor("bleed_dps");
-        const bleedDur = ab.GetSpecialValueFor("bleed_duration");
-        let dmg = baseDmg + getAgi(parent) * agiPct;
-
-        const enemies = FindUnitsInRadius(
-            parent.GetTeamNumber(),
-            nextPos,
-            undefined,
-            width,
-            UnitTargetTeam.ENEMY,
-            (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            UnitTargetFlags.NONE,
-            FindOrder.ANY,
-            false
-        );
-        for (const enemy of enemies) {
-            if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            const id = enemy.entindex();
-            if (this.hitSet.has(id)) continue;
-            this.hitSet.add(id);
-
-            let hitDmg = enemy.IsCreep() ? dmg * creepMult : dmg;
-            if (level >= 2 && enemy.GetHealthPercent() <= 50) {
-                hitDmg *= 1.5;
-                enemy.AddNewModifier(parent, ab, "modifier_stunned", { duration: 0.5 });
+        if (this.remainingHits <= 0) {
+            if (targetEnt.IsRealHero()) {
+                addLivingChitinStacks(parent, 1);
             }
-            if (level >= 3) {
-                enemy.AddNewModifier(parent, ab, "modifier_evo_nyx_mantis_q_mark", { duration: 3.0 });
+            if (ability && !ability.IsNull() && getNyxTier(parent) >= 3) {
+                parent.AddNewModifier(parent, ability, "modifier_evo_nyx_mantis_q_ms", { duration: 2.5 });
             }
-            ApplyDamage({
-                victim: enemy,
-                attacker: parent,
-                ability: ab,
-                damage: hitDmg,
-                damage_type: DamageTypes.PHYSICAL,
-            });
-            applyLaceration(parent, enemy, ab, bleedDps, bleedDur);
+            this.Destroy();
         }
-    }
-    OnDestroy(): void {
-        if (!IsServer()) return;
-        const parent = this.GetParent();
-        if (parent && !parent.IsNull() && IsValidEntity(parent)) {
-            FindClearSpaceForUnit(parent, parent.GetAbsOrigin(), true);
-        }
-    }
-}
-
-@registerModifier("modifier_evo_nyx_mantis_bleed")
-export class modifier_evo_nyx_mantis_bleed extends BaseModifier {
-    private dps = 20;
-
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "bloodseeker_rupture";
-    }
-    OnCreated(params: { dps?: number }): void {
-        this.dps = params?.dps ?? 20;
-        if (!IsServer()) return;
-        this.StartIntervalThink(1.0);
-    }
-    OnRefresh(params: { dps?: number }): void {
-        if (!IsServer()) return;
-        if (params?.dps !== undefined && params.dps > this.dps) {
-            this.dps = params.dps;
-        }
-    }
-    OnIntervalThink(): void {
-        if (!IsServer()) return;
-        const parent = this.GetParent();
-        const caster = this.GetCaster();
-        if (!parent || parent.IsNull() || !IsValidEntity(parent) || !parent.IsAlive()) return;
-        if (!caster || caster.IsNull()) return;
-
-        const stacks = Math.max(1, this.GetStackCount());
-        ApplyDamage({
-            victim: parent,
-            attacker: caster,
-            ability: this.GetAbility(),
-            damage: (this.dps ?? 20) * stacks,
-            damage_type: DamageTypes.PHYSICAL,
-        });
-    }
-}
-
-@registerModifier("modifier_evo_nyx_mantis_q_mark")
-export class modifier_evo_nyx_mantis_q_mark extends BaseModifier {
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "phantom_assassin_phantom_strike";
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_EVENT_ON_DEATH")];
+        return [
+            dotaModifierFunction("MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"),
+            dotaModifierFunction("MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"),
+        ];
     }
-    OnDeath(event: ModifierInstanceEvent): void {
-        if (!IsServer()) return;
+    GetModifierDamageOutgoing_Percentage(): number {
+        return this.dmgPctDelta;
+    }
+    GetModifierPreAttack_BonusDamage(): number {
+        return this.bonusPerStrike;
+    }
+}
+
+@registerModifier("modifier_evo_nyx_mantis_q_ms")
+export class modifier_evo_nyx_mantis_q_ms extends BaseModifier {
+    IsHidden(): boolean {
+        return false;
+    }
+    IsDebuff(): boolean {
+        return false;
+    }
+    IsPurgable(): boolean {
+        return true;
+    }
+    GetTexture(): string {
+        return "pangolier_swashbuckle";
+    }
+    DeclareFunctions(): ModifierFunction[] {
+        return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
+    }
+    GetModifierMoveSpeedBonus_Percentage(): number {
         const parent = this.GetParent();
-        const caster = this.GetCaster();
-        if (!parent || parent.IsNull() || event.unit !== parent || !caster || caster.IsNull()) return;
-        const qAb = caster.FindAbilityByName("evo_nyx_mantis_q");
-        if (qAb && !qAb.IsNull()) {
-            const rem = qAb.GetCooldownTimeRemaining();
-            if (rem > 0) {
-                qAb.EndCooldown();
-                qAb.StartCooldown(rem * 0.3);
-            }
-        }
+        return parent && !parent.IsNull() && getNyxTier(parent) >= 4 ? 25 : 20;
     }
 }
 
 @registerAbility("evo_nyx_mantis_w")
 export class evo_nyx_mantis_w extends BaseAbility {
+    GetMaxLevel(): number {
+        return getNyxBranchMaxLevel(this.GetCaster());
+    }
     OnSpellStart(): void {
         if (!IsServer()) return;
         const caster = this.GetCaster();
-        if (!caster || caster.IsNull() || !IsValidEntity(caster)) return;
+        const tier = getNyxTier(caster);
+        const duration = this.GetSpecialValueFor("duration");
+        const charges = tier >= 4 ? 3 : this.GetSpecialValueFor("block_charges");
 
-        const level = this.GetLevel();
-        const chitinMod = caster.FindModifierByName("modifier_evo_nyx_living_chitin");
-        const plates = chitinMod ? chitinMod.GetStackCount() : 0;
-        if (chitinMod && plates > 0) {
-            chitinMod.SetStackCount(0);
+        if (tier >= 3) {
+            caster.Purge(false, true, false, false, false);
         }
-
-        this.performSlash(caster, level, plates, 1.0);
-        if (level >= 3) {
-            caster.SetContextThink(
-                DoUniqueString("evo_nyx_mantis_w_second"),
-                () => {
-                    if (!caster || caster.IsNull() || !IsValidEntity(caster) || !caster.IsAlive()) return undefined;
-                    this.performSlash(caster, level, 0, 0.5);
-                    return undefined;
-                },
-                0.25
-            );
-        }
-    }
-
-    private performSlash(caster: CDOTA_BaseNPC, level: number, plates: number, mult: number): void {
-        const radius = this.GetSpecialValueFor("radius");
-        const baseDmg = this.GetSpecialValueFor("base_damage");
-        const agiPct = this.GetSpecialValueFor("agi_pct") / 100;
-        const silenceDur = this.GetSpecialValueFor("silence_duration");
-        const burstPerPlate = this.GetSpecialValueFor("burst_per_plate");
-        const creepMult = this.GetSpecialValueFor("creep_mult");
-
         caster.EmitSound("Hero_Riki.TricksOfTheTrade");
-        const physDmg = (baseDmg + getAgi(caster) * agiPct) * mult;
-        const plateBurst = plates * burstPerPlate;
-
-        const enemies = FindUnitsInRadius(
-            caster.GetTeamNumber(),
-            caster.GetAbsOrigin(),
-            undefined,
-            radius,
-            UnitTargetTeam.ENEMY,
-            (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            UnitTargetFlags.NONE,
-            FindOrder.ANY,
-            false
-        );
-        for (const enemy of enemies) {
-            if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            ApplyDamage({
-                victim: enemy,
-                attacker: caster,
-                ability: this,
-                damage: enemy.IsCreep() ? physDmg * creepMult : physDmg,
-                damage_type: DamageTypes.PHYSICAL,
-            });
-            if (plateBurst > 0 && enemy.IsAlive()) {
-                ApplyDamage({
-                    victim: enemy,
-                    attacker: caster,
-                    ability: this,
-                    damage: plateBurst,
-                    damage_type: DamageTypes.PURE,
-                });
-            }
-            if (mult === 1.0 && enemy.IsAlive()) {
-                enemy.AddNewModifier(caster, this, "modifier_silence", { duration: silenceDur });
-                if (level >= 2) {
-                    enemy.AddNewModifier(caster, this, "modifier_evo_nyx_mantis_w_mark", { duration: 4.0 });
-                }
-            }
+        const mod = caster.AddNewModifier(caster, this, "modifier_evo_nyx_mantis_w", { duration });
+        if (mod !== undefined) {
+            mod.SetStackCount(charges);
         }
     }
 }
 
-@registerModifier("modifier_evo_nyx_mantis_w_mark")
-export class modifier_evo_nyx_mantis_w_mark extends BaseModifier {
+@registerModifier("modifier_evo_nyx_mantis_w")
+export class modifier_evo_nyx_mantis_w extends BaseModifier {
+    private lastRecord = -1;
+    private lastPct = 0;
+
+    IsHidden(): boolean {
+        return false;
+    }
+    IsDebuff(): boolean {
+        return false;
+    }
+    IsPurgable(): boolean {
+        return true;
+    }
+    GetTexture(): string {
+        return "riki_tricks_of_the_trade";
+    }
+    OnCreated(): void {
+        this.lastRecord = -1;
+        this.lastPct = 0;
+    }
+    DeclareFunctions(): ModifierFunction[] {
+        return [dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE")];
+    }
+    GetModifierIncomingDamage_Percentage(event: ModifierAttackEvent): number {
+        if (!IsServer()) return 0;
+        const parent = this.GetParent();
+        const ability = this.GetAbility();
+        if (!parent || parent.IsNull() || !ability || ability.IsNull()) return 0;
+        if (event.damage <= 0 || this.GetStackCount() <= 0) return 0;
+        if (bit.band(event.damage_flags, DamageFlag.REFLECTION) !== 0) return 0;
+        if (event.record !== undefined && event.record === this.lastRecord) {
+            return this.lastPct;
+        }
+        const attacker = event.attacker;
+        if (!attacker || attacker.IsNull() || !IsValidEntity(attacker) || !attacker.IsRealHero()) return 0;
+        if (attacker.GetTeamNumber() === parent.GetTeamNumber()) return 0;
+
+        const blockPct = parent.HasModifier("modifier_evo_nyx_mantis_r") ? 65 : ability.GetSpecialValueFor("block_pct");
+        const nextCharges = this.GetStackCount() - 1;
+        this.SetStackCount(nextCharges);
+        addLivingChitinStacks(parent, 1);
+
+        parent.EmitSound("DOTA_Item.BladeMail.Activate");
+        const tier = getNyxTier(parent);
+        if (tier >= 3) {
+            const asMod = parent.AddNewModifier(parent, ability, "modifier_evo_nyx_mantis_w_as", { duration: 3.0 });
+            if (asMod !== undefined) {
+                asMod.IncrementStackCount();
+            }
+            for (const enemy of findEnemiesInRadius(parent, parent.GetAbsOrigin(), 250)) {
+                enemy.AddNewModifier(parent, ability, "modifier_evo_nyx_mantis_w_slow", { duration: 1.5 });
+            }
+        }
+        if (tier >= 4 && nextCharges <= 0) {
+            const shieldAmt = Math.ceil(150 + getNyxAgi(parent) * 0.4);
+            const shieldMod = parent.AddNewModifier(parent, ability, "modifier_evo_nyx_mantis_w_shield", {
+                duration: 3.0,
+            });
+            if (shieldMod !== undefined) {
+                shieldMod.SetStackCount(shieldAmt);
+            }
+            const qAb = parent.FindAbilityByName("evo_nyx_mantis_q");
+            if (qAb && !qAb.IsNull()) {
+                qAb.EndCooldown();
+            }
+            this.Destroy();
+        } else if (nextCharges <= 0) {
+            this.Destroy();
+        }
+
+        if (event.record !== undefined) {
+            this.lastRecord = event.record;
+            this.lastPct = -blockPct;
+        }
+        return -blockPct;
+    }
+}
+
+@registerModifier("modifier_evo_nyx_mantis_w_as")
+export class modifier_evo_nyx_mantis_w_as extends BaseModifier {
+    IsHidden(): boolean {
+        return false;
+    }
+    IsDebuff(): boolean {
+        return false;
+    }
+    IsPurgable(): boolean {
+        return true;
+    }
+    GetTexture(): string {
+        return "riki_tricks_of_the_trade";
+    }
+    DeclareFunctions(): ModifierFunction[] {
+        return [dotaModifierFunction("MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT")];
+    }
+    GetModifierAttackSpeedBonus_Constant(): number {
+        return this.GetStackCount() * 25;
+    }
+}
+
+@registerModifier("modifier_evo_nyx_mantis_w_slow")
+export class modifier_evo_nyx_mantis_w_slow extends BaseModifier {
     IsHidden(): boolean {
         return false;
     }
@@ -329,76 +309,40 @@ export class modifier_evo_nyx_mantis_w_mark extends BaseModifier {
         return "riki_tricks_of_the_trade";
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [
-            dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"),
-            dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"),
-        ];
+        return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
     }
     GetModifierMoveSpeedBonus_Percentage(): number {
-        return -25;
-    }
-    GetModifierIncomingDamage_Percentage(): number {
-        return 12;
+        return -20;
     }
 }
 
-@registerAbility("evo_nyx_mantis_e")
-export class evo_nyx_mantis_e extends BaseAbility {
-    GetIntrinsicModifierName(): string {
-        return "modifier_evo_nyx_mantis_e_passive";
-    }
-}
-
-@registerModifier("modifier_evo_nyx_mantis_e_passive")
-export class modifier_evo_nyx_mantis_e_passive extends BaseModifier {
-    private critArmed = false;
-
+@registerModifier("modifier_evo_nyx_mantis_w_shield")
+export class modifier_evo_nyx_mantis_w_shield extends BaseModifier {
     IsHidden(): boolean {
-        return true;
+        return false;
+    }
+    IsDebuff(): boolean {
+        return false;
     }
     IsPurgable(): boolean {
-        return false;
+        return true;
     }
-    RemoveOnDeath(): boolean {
-        return false;
-    }
-    OnCreated(): void {
-        this.critArmed = false;
+    GetTexture(): string {
+        return "riki_tricks_of_the_trade";
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [
-            dotaModifierFunction("MODIFIER_PROPERTY_STATS_AGILITY_BONUS"),
-            dotaModifierFunction("MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"),
-            dotaModifierFunction("MODIFIER_EVENT_ON_ATTACK_LANDED"),
-        ];
+        return [dotaModifierFunction("MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK")];
     }
-    GetModifierBonusStats_Agility(): number {
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || parent.PassivesDisabled()) return 0;
-        return ab.GetSpecialValueFor("bonus_agi");
-    }
-    GetModifierPreAttack_CriticalStrike(): number {
+    GetModifierTotal_ConstantBlock(event: ModifierAttackEvent): number {
         if (!IsServer()) return 0;
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || parent.PassivesDisabled()) return 0;
-        const chance = ab.GetSpecialValueFor("crit_chance");
-        if (RollPercentage(chance)) {
-            this.critArmed = true;
-            return ab.GetSpecialValueFor("crit_mult");
+        const pool = this.GetStackCount();
+        if (pool <= 0 || event.damage <= 0) return 0;
+        const blocked = Math.min(pool, Math.ceil(event.damage));
+        const rem = pool - blocked;
+        this.SetStackCount(Math.max(0, rem));
+        if (rem <= 0) {
+            this.Destroy();
         }
-        this.critArmed = false;
-        return 0;
-    }
-    OnAttackLanded(event: ModifierAttackEvent): void {
-        if (!IsServer() || !this.critArmed) return;
-        this.critArmed = false;
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        const target = event.target;
-        if (!parent || parent.IsNull() || !ab || event.attacker !== parent) return;
-        if (!target || target.IsNull() || !IsValidEntity(target) || target.IsBuilding()) return;
-        applyLaceration(parent, target, ab, 28, 4.0);
+        return blocked;
     }
 }

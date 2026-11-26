@@ -1,0 +1,10 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="file://{resources}/styles/custom_game/evo_boss_killfeed.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_boss_killfeed.js" />
+    </scripts>
+    <Panel id="EvoBossKillFeed" class="EvoBossKillFeed" hittest="false" />
+</root>

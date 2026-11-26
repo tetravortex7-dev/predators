@@ -5,20 +5,14 @@ local __TS__New = ____lualib.__TS__New
 local __TS__Iterator = ____lualib.__TS__Iterator
 local __TS__ArrayIncludes = ____lualib.__TS__ArrayIncludes
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 2,["11"] = 3,["12"] = 4,["13"] = 5,["14"] = 8,["15"] = 8,["16"] = 8,["17"] = 8,["18"] = 8,["19"] = 8,["20"] = 8,["21"] = 8,["22"] = 24,["23"] = 24,["24"] = 24,["25"] = 29,["26"] = 29,["27"] = 25,["28"] = 26,["29"] = 27,["30"] = 29,["31"] = 31,["32"] = 32,["33"] = 32,["34"] = 32,["35"] = 32,["36"] = 32,["37"] = 33,["38"] = 33,["39"] = 33,["40"] = 33,["41"] = 33,["42"] = 35,["43"] = 35,["44"] = 35,["45"] = 35,["46"] = 35,["47"] = 35,["48"] = 35,["49"] = 36,["52"] = 37,["53"] = 38,["54"] = 40,["55"] = 35,["56"] = 35,["57"] = 43,["58"] = 43,["59"] = 43,["60"] = 43,["61"] = 43,["62"] = 43,["63"] = 43,["64"] = 43,["65"] = 43,["66"] = 43,["67"] = 43,["68"] = 44,["71"] = 45,["72"] = 45,["73"] = 45,["74"] = 45,["75"] = 46,["76"] = 50,["77"] = 43,["78"] = 43,["79"] = 53,["80"] = 53,["81"] = 53,["82"] = 53,["83"] = 53,["84"] = 53,["85"] = 53,["86"] = 53,["87"] = 53,["88"] = 54,["89"] = 53,["90"] = 53,["91"] = 57,["92"] = 57,["93"] = 57,["94"] = 57,["95"] = 57,["96"] = 57,["97"] = 57,["98"] = 58,["101"] = 59,["102"] = 60,["103"] = 57,["104"] = 57,["105"] = 63,["106"] = 63,["107"] = 63,["108"] = 63,["109"] = 63,["110"] = 64,["111"] = 65,["113"] = 67,["114"] = 63,["115"] = 63,["116"] = 70,["117"] = 70,["118"] = 70,["119"] = 71,["120"] = 70,["121"] = 70,["122"] = 74,["123"] = 74,["124"] = 74,["125"] = 74,["126"] = 74,["127"] = 74,["128"] = 74,["129"] = 74,["130"] = 74,["131"] = 75,["134"] = 76,["135"] = 77,["136"] = 78,["137"] = 74,["138"] = 74,["139"] = 31,["140"] = 82,["141"] = 83,["142"] = 82,["143"] = 86,["144"] = 87,["145"] = 86,["146"] = 90,["147"] = 91,["150"] = 92,["153"] = 94,["154"] = 95,["155"] = 96,["156"] = 97,["157"] = 98,["158"] = 99,["159"] = 99,["160"] = 99,["161"] = 99,["162"] = 99,["163"] = 100,["164"] = 100,["165"] = 100,["166"] = 100,["168"] = 103,["169"] = 104,["170"] = 105,["171"] = 107,["172"] = 108,["173"] = 109,["174"] = 109,["175"] = 109,["176"] = 109,["178"] = 112,["179"] = 119,["180"] = 121,["181"] = 122,["183"] = 90,["184"] = 126,["185"] = 127,["186"] = 128,["187"] = 129,["188"] = 130,["190"] = 126,["191"] = 134,["192"] = 135,["195"] = 136,["196"] = 137,["199"] = 138,["202"] = 140,["203"] = 141,["206"] = 143,["207"] = 144,["208"] = 146,["211"] = 147,["212"] = 148,["215"] = 150,["216"] = 151,["219"] = 153,["220"] = 154,["221"] = 155,["223"] = 134,["224"] = 159,["225"] = 160,["226"] = 161,["227"] = 162,["230"] = 164,["231"] = 165,["232"] = 166,["233"] = 167,["234"] = 168,["235"] = 169,["236"] = 170,["237"] = 171,["238"] = 172,["241"] = 176,["242"] = 177,["245"] = 181,["246"] = 159,["247"] = 186,["248"] = 187,["251"] = 188,["252"] = 190,["253"] = 194,["254"] = 186,["255"] = 197,["257"] = 198,["258"] = 198,["260"] = 199,["261"] = 200,["262"] = 200,["264"] = 201,["265"] = 202,["266"] = 203,["268"] = 205,["269"] = 206,["273"] = 198,["276"] = 197,["277"] = 211,["278"] = 212,["279"] = 213,["280"] = 214,["281"] = 215,["284"] = 218,["285"] = 211,["286"] = 221,["287"] = 222,["288"] = 223,["289"] = 224,["290"] = 225,["293"] = 228,["294"] = 221,["295"] = 231,["296"] = 232,["297"] = 231,["298"] = 235,["299"] = 236,["300"] = 237,["301"] = 238,["302"] = 239,["303"] = 241,["304"] = 242,["305"] = 244,["306"] = 245,["307"] = 246,["308"] = 248,["310"] = 250,["311"] = 250,["313"] = 251,["314"] = 252,["315"] = 252,["317"] = 253,["318"] = 253,["320"] = 254,["321"] = 255,["322"] = 256,["325"] = 250,["328"] = 259,["330"] = 267,["331"] = 235});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 2,["11"] = 3,["12"] = 4,["13"] = 5,["14"] = 6,["15"] = 7,["16"] = 17,["17"] = 17,["18"] = 17,["19"] = 22,["20"] = 22,["21"] = 18,["22"] = 19,["23"] = 20,["24"] = 22,["25"] = 24,["26"] = 25,["27"] = 25,["28"] = 25,["29"] = 25,["30"] = 25,["31"] = 26,["32"] = 26,["33"] = 26,["34"] = 26,["35"] = 26,["36"] = 28,["37"] = 28,["38"] = 28,["39"] = 28,["40"] = 28,["41"] = 28,["42"] = 28,["43"] = 29,["46"] = 30,["47"] = 31,["48"] = 33,["49"] = 28,["50"] = 28,["51"] = 36,["52"] = 36,["53"] = 36,["54"] = 36,["55"] = 36,["56"] = 36,["57"] = 36,["58"] = 36,["59"] = 36,["60"] = 36,["61"] = 36,["62"] = 37,["65"] = 38,["66"] = 38,["67"] = 38,["68"] = 38,["69"] = 39,["70"] = 43,["71"] = 36,["72"] = 36,["73"] = 46,["74"] = 46,["75"] = 46,["76"] = 46,["77"] = 46,["78"] = 46,["79"] = 46,["80"] = 46,["81"] = 46,["82"] = 47,["83"] = 46,["84"] = 46,["85"] = 50,["86"] = 50,["87"] = 50,["88"] = 50,["89"] = 50,["90"] = 50,["91"] = 50,["92"] = 51,["95"] = 52,["96"] = 53,["97"] = 54,["98"] = 57,["99"] = 58,["100"] = 59,["102"] = 50,["103"] = 50,["104"] = 63,["105"] = 63,["106"] = 63,["107"] = 64,["108"] = 63,["109"] = 63,["110"] = 67,["111"] = 67,["112"] = 67,["113"] = 68,["114"] = 67,["115"] = 67,["116"] = 71,["117"] = 71,["118"] = 71,["119"] = 71,["120"] = 71,["121"] = 71,["122"] = 71,["123"] = 71,["124"] = 71,["125"] = 72,["128"] = 73,["129"] = 74,["130"] = 75,["131"] = 71,["132"] = 71,["133"] = 24,["134"] = 79,["135"] = 80,["136"] = 79,["137"] = 83,["138"] = 84,["139"] = 83,["140"] = 87,["141"] = 88,["142"] = 88,["144"] = 89,["145"] = 89,["147"] = 91,["148"] = 92,["149"] = 93,["150"] = 94,["151"] = 95,["152"] = 96,["153"] = 96,["154"] = 96,["155"] = 96,["156"] = 96,["157"] = 97,["158"] = 97,["159"] = 97,["160"] = 97,["162"] = 100,["163"] = 101,["164"] = 102,["165"] = 104,["166"] = 105,["167"] = 106,["168"] = 106,["169"] = 106,["170"] = 106,["172"] = 109,["173"] = 116,["174"] = 118,["175"] = 119,["176"] = 120,["178"] = 122,["179"] = 87,["180"] = 125,["181"] = 126,["182"] = 127,["183"] = 128,["184"] = 129,["186"] = 125,["187"] = 133,["188"] = 134,["191"] = 135,["192"] = 136,["195"] = 137,["198"] = 139,["199"] = 140,["202"] = 142,["203"] = 143,["204"] = 145,["207"] = 146,["208"] = 147,["211"] = 149,["212"] = 150,["215"] = 152,["216"] = 153,["217"] = 154,["219"] = 133,["220"] = 158,["221"] = 159,["224"] = 160,["225"] = 162,["226"] = 166,["227"] = 158,["228"] = 169,["230"] = 170,["231"] = 170,["233"] = 171,["234"] = 172,["235"] = 172,["237"] = 173,["238"] = 174,["239"] = 175,["241"] = 177,["242"] = 178,["246"] = 170,["249"] = 169,["250"] = 183,["251"] = 184,["252"] = 185,["253"] = 186,["254"] = 187,["257"] = 190,["258"] = 183,["259"] = 193,["260"] = 194,["261"] = 195,["262"] = 196,["263"] = 197,["266"] = 200,["267"] = 193,["268"] = 203,["269"] = 204,["270"] = 203,["271"] = 207,["272"] = 208,["273"] = 209,["274"] = 210,["275"] = 211,["276"] = 213,["277"] = 214,["278"] = 216,["279"] = 217,["280"] = 218,["281"] = 220,["283"] = 222,["284"] = 222,["286"] = 223,["287"] = 224,["288"] = 224,["290"] = 225,["291"] = 225,["293"] = 226,["294"] = 227,["295"] = 228,["298"] = 222,["301"] = 231,["303"] = 239,["304"] = 239,["305"] = 239,["306"] = 242,["307"] = 242,["308"] = 242,["309"] = 242,["310"] = 242,["311"] = 239,["312"] = 239,["313"] = 207});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
+local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
 local calculateComebackScoreMultiplier = ____game_constants.calculateComebackScoreMultiplier
 local calculateEscalationMultiplier = ____game_constants.calculateEscalationMultiplier
-local PLAYABLE_TEAMS = {
-    2,
-    3,
-    6,
-    7,
-    8,
-    9
-}
+local calculateTargetTeamScore = ____game_constants.calculateTargetTeamScore
 ____exports.MatchScoreManager = __TS__Class()
 local MatchScoreManager = ____exports.MatchScoreManager
 MatchScoreManager.name = "MatchScoreManager"
@@ -99,17 +93,17 @@ function MatchScoreManager.prototype.init(self)
                 return
             end
             local team = PlayerResource:GetTeam(winnerId)
-            self:addScore(team, EVO_CONSTANTS.SCORE_DUEL_WIN, "duel_win", winnerId)
+            local awarded = self:addScore(team, EVO_CONSTANTS.SCORE_DUEL_WIN, "duel_win", winnerId)
+            local existing = CustomNetTables:GetTableValue("duel_state", "last_result")
+            if existing then
+                existing.score_reward = awarded
+                CustomNetTables:SetTableValue("duel_state", "last_result", existing)
+            end
         end
     )
     self.eventBus:on(
         "phase_changed",
-        function(____, ____bindingPattern0)
-            local newPhase
-            newPhase = ____bindingPattern0.newPhase
-            if newPhase == "TIEBREAKER" and not self.matchEnded then
-                self:resolveTimeLimitEnd()
-            end
+        function()
             self:syncScoresNetTable()
         end
     )
@@ -145,10 +139,10 @@ function MatchScoreManager.prototype.getPlayerScore(self, playerId)
 end
 function MatchScoreManager.prototype.addScore(self, team, baseDelta, reason, playerId)
     if self.matchEnded or baseDelta == 0 then
-        return
+        return 0
     end
     if not self:isPlayableTeam(team) then
-        return
+        return 0
     end
     local effectiveDelta = baseDelta
     if baseDelta > 0 then
@@ -177,9 +171,11 @@ function MatchScoreManager.prototype.addScore(self, team, baseDelta, reason, pla
     end
     self.eventBus:emit("team_score_changed", {team = team, delta = effectiveDelta, newScore = newTeamScore, reason = reason})
     self:syncScoresNetTable()
-    if newTeamScore >= EVO_CONSTANTS.TARGET_TEAM_SCORE then
+    local targetScore = calculateTargetTeamScore(nil)
+    if newTeamScore >= targetScore then
         self:declareWinner(team, "score_limit")
     end
+    return effectiveDelta
 end
 function MatchScoreManager.prototype.onGameStateChange(self)
     local state = GameRules:State_Get()
@@ -221,29 +217,6 @@ function MatchScoreManager.prototype.onEntityKilled(self, event)
         self:addScore(killerTeam, EVO_CONSTANTS.SCORE_HERO_KILL, "hero_kill", killerPlayerId)
     end
 end
-function MatchScoreManager.prototype.resolveTimeLimitEnd(self)
-    self:ensureActiveTeamsRegistered()
-    local activeTeams = self:getActiveTeams()
-    if #activeTeams == 0 then
-        return
-    end
-    local maxScore = -1
-    local leaders = {}
-    for ____, team in ipairs(activeTeams) do
-        local score = self:getTeamScore(team)
-        if score > maxScore then
-            maxScore = score
-            leaders = {team}
-        elseif score == maxScore then
-            leaders[#leaders + 1] = team
-        end
-    end
-    if #leaders == 1 then
-        self:declareWinner(leaders[1], "time_limit")
-        return
-    end
-    self.eventBus:emit("tiebreaker_requested", {tiedTeams = leaders})
-end
 function MatchScoreManager.prototype.declareWinner(self, team, reason)
     if self.matchEnded then
         return
@@ -259,7 +232,7 @@ function MatchScoreManager.prototype.ensureActiveTeamsRegistered(self)
             do
                 local playerId = i
                 if not PlayerResource:IsValidPlayerID(playerId) then
-                    goto __continue47
+                    goto __continue40
                 end
                 local team = PlayerResource:GetTeam(playerId)
                 if self:isPlayableTeam(team) and not self.teamScores:has(team) then
@@ -269,14 +242,14 @@ function MatchScoreManager.prototype.ensureActiveTeamsRegistered(self)
                     self.playerScores:set(playerId, 0)
                 end
             end
-            ::__continue47::
+            ::__continue40::
             i = i + 1
         end
     end
 end
 function MatchScoreManager.prototype.getActiveTeams(self)
     local result = {}
-    for ____, team in ipairs(PLAYABLE_TEAMS) do
+    for ____, team in ipairs(EVO_PLAYABLE_TEAMS) do
         if PlayerResource:GetPlayerCountForTeam(team) > 0 or self.teamScores:has(team) then
             result[#result + 1] = team
         end
@@ -293,7 +266,7 @@ function MatchScoreManager.prototype.getLeaderScore(self)
     return leader
 end
 function MatchScoreManager.prototype.isPlayableTeam(self, team)
-    return __TS__ArrayIncludes(PLAYABLE_TEAMS, team)
+    return __TS__ArrayIncludes(EVO_PLAYABLE_TEAMS, team)
 end
 function MatchScoreManager.prototype.syncScoresNetTable(self)
     self:ensureActiveTeamsRegistered()
@@ -312,21 +285,30 @@ function MatchScoreManager.prototype.syncScoresNetTable(self)
                 do
                     local pid = i
                     if not PlayerResource:IsValidPlayerID(pid) then
-                        goto __continue62
+                        goto __continue55
                     end
                     if PlayerResource:GetTeam(pid) ~= team then
-                        goto __continue62
+                        goto __continue55
                     end
                     local pScore = self:getPlayerScore(pid)
                     teamPlayers[tostring(pid)] = pScore
                     playerScoresPayload[tostring(pid)] = pScore
                 end
-                ::__continue62::
+                ::__continue55::
                 i = i + 1
             end
         end
         teamsPayload[tostring(team)] = {team_id = team, score = teamScore, comeback_mult = comeback, players = teamPlayers}
     end
-    CustomNetTables:SetTableValue("match_state", "scores", {target_score = EVO_CONSTANTS.TARGET_TEAM_SCORE, escalation_mult = escalation, teams = teamsPayload, player_scores = playerScoresPayload})
+    CustomNetTables:SetTableValue(
+        "match_state",
+        "scores",
+        {
+            target_score = calculateTargetTeamScore(nil),
+            escalation_mult = escalation,
+            teams = teamsPayload,
+            player_scores = playerScoresPayload
+        }
+    )
 end
 return ____exports

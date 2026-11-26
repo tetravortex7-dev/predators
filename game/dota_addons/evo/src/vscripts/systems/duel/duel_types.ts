@@ -1,4 +1,4 @@
-import { EVO_CONSTANTS, EVO_MAP_ENTITIES } from "../../data/game_constants";
+import { EVO_CONSTANTS, EVO_MAP_ENTITIES, EVO_PLAYABLE_TEAMS } from "../../data/game_constants";
 
 export interface PreDuelSnapshot {
     position: Vector;
@@ -41,15 +41,6 @@ export interface DuelBetPayload {
     backed_player_id?: number;
     gold_amount?: number;
 }
-
-export const PLAYABLE_TEAMS: readonly DotaTeam[] = [
-    DotaTeam.GOODGUYS,
-    DotaTeam.BADGUYS,
-    DotaTeam.CUSTOM_1,
-    DotaTeam.CUSTOM_2,
-    DotaTeam.CUSTOM_3,
-    DotaTeam.CUSTOM_4,
-];
 
 export const DUEL_BET_WINDOW_SECONDS = 8;
 export const BOSS_DUEL_BET_TEAM = 1;
@@ -129,7 +120,7 @@ export function pickWeightedChampion(team: DotaTeam, applicants: ReadonlySet<Pla
 
 export function pickWeightedBossDuelTeam(applicants: ReadonlySet<PlayerID>): DotaTeam | undefined {
     const activeTeams: DotaTeam[] = [];
-    for (const team of PLAYABLE_TEAMS) {
+    for (const team of EVO_PLAYABLE_TEAMS) {
         if (getTeamPlayerIds(team).length > 0) {
             activeTeams.push(team);
         }
@@ -159,9 +150,47 @@ export function pickWeightedBossDuelTeam(applicants: ReadonlySet<PlayerID>): Dot
     return activeTeams[activeTeams.length - 1];
 }
 
+export function hasMultiPlayerTeams(): boolean {
+    for (const team of EVO_PLAYABLE_TEAMS) {
+        if (getTeamPlayerIds(team).length >= 2) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function pickWeightedTeam(
+    teams: readonly DotaTeam[],
+    applicants: ReadonlySet<PlayerID>
+): DotaTeam | undefined {
+    if (teams.length === 0) return undefined;
+
+    let totalWeight = 0;
+    const weights: number[] = [];
+    for (const team of teams) {
+        let teamWeight = 1.0;
+        for (const pid of getTeamPlayerIds(team)) {
+            if (applicants.has(pid)) {
+                teamWeight += EVO_CONSTANTS.DUEL_APPLY_WEIGHT_MULTIPLIER;
+            }
+        }
+        weights.push(teamWeight);
+        totalWeight += teamWeight;
+    }
+
+    let roll = RandomFloat(0, totalWeight);
+    for (let i = 0; i < teams.length; i++) {
+        roll -= weights[i];
+        if (roll <= 0) {
+            return teams[i];
+        }
+    }
+    return teams[teams.length - 1];
+}
+
 export function generateDuelPairs(applicants: ReadonlySet<PlayerID>): DuelPair[] {
     const activeTeams: DotaTeam[] = [];
-    for (const team of PLAYABLE_TEAMS) {
+    for (const team of EVO_PLAYABLE_TEAMS) {
         if (getTeamPlayerIds(team).length > 0) {
             activeTeams.push(team);
         }
@@ -169,38 +198,22 @@ export function generateDuelPairs(applicants: ReadonlySet<PlayerID>): DuelPair[]
 
     if (activeTeams.length < 2) return [];
 
-    const shuffled = [...activeTeams];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = RandomInt(0, i);
-        const tmp = shuffled[i];
-        shuffled[i] = shuffled[j];
-        shuffled[j] = tmp;
-    }
+    const teamA = pickWeightedTeam(activeTeams, applicants);
+    if (teamA === undefined) return [];
 
-    const teamPairs: Array<[DotaTeam, DotaTeam]> = [];
-    if (shuffled.length === 2) {
-        teamPairs.push([shuffled[0], shuffled[1]]);
-    } else if (shuffled.length === 3) {
-        teamPairs.push([shuffled[0], shuffled[1]]);
-        teamPairs.push([shuffled[1], shuffled[2]]);
-        teamPairs.push([shuffled[2], shuffled[0]]);
-    } else {
-        teamPairs.push([shuffled[0], shuffled[1]]);
-        teamPairs.push([shuffled[2], shuffled[3]]);
-    }
+    const remainingTeams = activeTeams.filter((team) => team !== teamA);
+    const teamB = pickWeightedTeam(remainingTeams, applicants);
+    if (teamB === undefined) return [];
 
-    const result: DuelPair[] = [];
-    for (const [teamA, teamB] of teamPairs) {
-        const playerA = pickWeightedChampion(teamA, applicants);
-        const playerB = pickWeightedChampion(teamB, applicants);
-        if (playerA !== undefined && playerB !== undefined) {
-            result.push({ playerA, playerB, teamA, teamB });
-        }
-    }
-    return result;
+    const playerA = pickWeightedChampion(teamA, applicants);
+    const playerB = pickWeightedChampion(teamB, applicants);
+    if (playerA === undefined || playerB === undefined) return [];
+
+    return [{ playerA, playerB, teamA, teamB }];
 }
 
-export function settleBets(activeBets: Map<PlayerID, DuelBet>, winnerId: PlayerID | undefined): void {
+export function settleBets(activeBets: Map<PlayerID, DuelBet>, winnerId: PlayerID | undefined): number {
+    let totalPayout = 0;
     for (const bet of activeBets.values()) {
         if (!PlayerResource.IsValidPlayerID(bet.bettorId)) continue;
         if (winnerId === undefined) {
@@ -208,9 +221,11 @@ export function settleBets(activeBets: Map<PlayerID, DuelBet>, winnerId: PlayerI
         } else if (bet.backedTarget === winnerId) {
             const payout = Math.floor(bet.goldAmount * EVO_CONSTANTS.DUEL_BET_PAYOUT_MULTIPLIER);
             PlayerResource.ModifyGold(bet.bettorId, payout, false, ModifyGoldReason.UNSPECIFIED);
+            totalPayout += payout;
         }
     }
     activeBets.clear();
+    return totalPayout;
 }
 
 export function settleBossDuelBets(activeBets: Map<PlayerID, DuelBet>, teamWon: boolean): void {

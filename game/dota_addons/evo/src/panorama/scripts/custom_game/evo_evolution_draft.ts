@@ -8,11 +8,13 @@
         agi?: number;
         int?: number;
         tier_index?: number;
+        icon?: string;
     }
 
     interface PlayerEvoNetPayload {
         pending_draft_type?: string;
         pending_mutation_slot?: number;
+        mutation_rerolls?: number;
         draft_options?: Record<string, string>;
         draft_meta?: Record<string, DraftBodyMeta>;
     }
@@ -23,6 +25,9 @@
     const titleLabel = $("#EvoDraftTitle") as LabelPanel | null;
     const cardsContainer = $("#EvoDraftCards");
     const minimizeBtn = $("#EvoDraftMinimizeBtn");
+    const rerollRow = $("#EvoDraftRerollRow");
+    const rerollBtn = $("#EvoDraftRerollBtn") as Button | null;
+    const rerollLabel = $("#EvoDraftRerollLabel") as LabelPanel | null;
 
     let minimized = false;
     let currentState: PlayerEvoNetPayload | null = null;
@@ -38,6 +43,14 @@
         reopenBtn.SetPanelEvent("onactivate", () => {
             minimized = false;
             refreshVisibility();
+        });
+    }
+
+    if (rerollBtn) {
+        rerollBtn.SetPanelEvent("onactivate", () => {
+            if (!currentState || currentState.pending_draft_type !== "MUTATION") return;
+            if ((currentState.mutation_rerolls ?? 0) <= 0) return;
+            GameEvents.SendCustomGameEventToServer("evo_reroll_mutation" as never, {} as never);
         });
     }
 
@@ -114,6 +127,19 @@
         }
         if (reopenLabel) {
             reopenLabel.text = $.Localize(headerToken);
+        }
+
+        const isMutationDraft = draftType === "MUTATION";
+        const rerollsLeft = Math.max(0, currentState.mutation_rerolls ?? 0);
+        if (rerollRow) {
+            rerollRow.SetHasClass("Visible", isMutationDraft);
+        }
+        if (rerollBtn) {
+            rerollBtn.SetHasClass("Disabled", rerollsLeft <= 0);
+            rerollBtn.enabled = isMutationDraft && rerollsLeft > 0;
+        }
+        if (rerollLabel) {
+            rerollLabel.text = $.Localize("#evo_draft_reroll_btn").replace("{count}", String(rerollsLeft));
         }
 
         const rawOptions = currentState.draft_options ?? {};
@@ -246,6 +272,13 @@
                     card.SetPanelEvent("onmouseout", () => {
                         $.DispatchEvent("DOTAHideAbilityTooltip", card);
                     });
+                } else if (draftType === "MUTATION") {
+                    const iconName = meta?.icon && meta.icon.length > 0 ? meta.icon : "alchemist_chemical_rage";
+                    const iconWrap = $.CreatePanel("Panel", body, "");
+                    iconWrap.AddClass("EvoDraftAbilityIconWrap");
+                    const icon = $.CreatePanel("DOTAAbilityImage", iconWrap, "") as AbilityImage;
+                    icon.AddClass("EvoDraftAbilityIcon");
+                    icon.abilityname = iconName;
                 }
 
                 const nameLabel = $.CreatePanel("Label", body, "");

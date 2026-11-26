@@ -2,49 +2,64 @@ import {
     BaseAbility,
     BaseModifier,
     dotaModifierFunction,
+    dotaModifierState,
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
-import { addNyxChitinStacks } from "./evo_nyx_t1";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
+import {
+    findEnemiesInRadius,
+    getNyxBranchMaxLevel,
+    getNyxStr,
+    getNyxTier,
+    isNyxBurrowed,
+    knockbackUnitFrom,
+} from "./evo_nyx_shared";
 
 const SCRIPT_PATH = "abilities/nyx/evo_nyx_scarab";
 
-const SCARAB_MODS: readonly string[] = [
-    "modifier_evo_nyx_scarab_q_armor",
-    "modifier_evo_nyx_scarab_w_buff",
-    "modifier_evo_nyx_scarab_w_slow",
-    "modifier_evo_nyx_scarab_e_passive",
-    "modifier_evo_nyx_scarab_r_citadel",
-];
-
-for (const modName of SCARAB_MODS) {
-    LinkLuaModifier(modName, SCRIPT_PATH, LuaModifierMotionType.NONE);
-}
-
-function getStr(unit: CDOTA_BaseNPC): number {
-    return unit.IsRealHero() ? (unit as CDOTA_BaseNPC_Hero).GetStrength() : 0;
-}
+LinkLuaModifier("modifier_evo_nyx_scarab_q_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_scarab_q_dot", SCRIPT_PATH, LuaModifierMotionType.NONE);
+LinkLuaModifier("modifier_evo_nyx_scarab_w", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerAbility("evo_nyx_scarab_q")
 export class evo_nyx_scarab_q extends BaseAbility {
+    GetMaxLevel(): number {
+        return getNyxBranchMaxLevel(this.GetCaster());
+    }
+    GetCooldown(level: number): number {
+        const caster = this.GetCaster();
+        if (caster && !caster.IsNull() && caster.HasModifier("modifier_evo_nyx_scarab_r_aura")) {
+            return 4.5;
+        }
+        return [11.0, 10.0, 9.0, 8.0, 7.0][Math.max(0, Math.min(4, level))] ?? 11.0;
+    }
+    GetAOERadius(): number {
+        const caster = this.GetCaster();
+        const base = this.GetSpecialValueFor("radius");
+        if (!caster || caster.IsNull() || !isNyxBurrowed(caster)) return base;
+        const w = caster.FindAbilityByName("evo_nyx_scarab_w");
+        return base + (w && !w.IsNull() ? w.GetSpecialValueFor("q_radius_bonus") : 85);
+    }
     OnSpellStart(): void {
         if (!IsServer()) return;
         const caster = this.GetCaster();
-        if (!caster || caster.IsNull() || !IsValidEntity(caster)) return;
+        const tier = getNyxTier(caster);
+        const burrowed = isNyxBurrowed(caster);
+        const wAb = caster.FindAbilityByName("evo_nyx_scarab_w");
+        const forwardBonus = burrowed ? (wAb && !wAb.IsNull() ? wAb.GetSpecialValueFor("q_range_bonus") : 225) : 0;
+        const radiusBonus = burrowed ? (wAb && !wAb.IsNull() ? wAb.GetSpecialValueFor("q_radius_bonus") : 85) : 0;
 
-        const origin = caster.GetAbsOrigin();
-        const cursor = this.GetCursorPosition();
-        const level = this.GetLevel();
-        const range = this.GetSpecialValueFor("range");
-        const width = this.GetSpecialValueFor("width");
+        const dist = this.GetSpecialValueFor("forward_distance") + forwardBonus;
+        const radius = this.GetSpecialValueFor("radius") + radiusBonus;
+        const forward = caster.GetForwardVector().Normalized();
+        const center = GetGroundPosition((caster.GetAbsOrigin() + forward * dist) as Vector, caster);
+
         const baseDmg = this.GetSpecialValueFor("base_damage");
         const strPct = this.GetSpecialValueFor("str_pct") / 100;
-        const stunDur = this.GetSpecialValueFor("stun_duration");
+        const rawDmg = baseDmg + getNyxStr(caster) * strPct;
         const creepMult = this.GetSpecialValueFor("creep_mult");
-
-        const delta = Vector(cursor.x - origin.x, cursor.y - origin.y, 0);
-        const dir = delta.Length2D() > 1 ? delta.Normalized() : caster.GetForwardVector();
-        const endPos = Vector(origin.x + dir.x * range, origin.y + dir.y * range, origin.z);
+        const stunDur = this.GetSpecialValueFor("stun_duration");
 
         caster.EmitSound("Hero_NyxAssassin.Impale");
         const pfx = ParticleManager.CreateParticle(
@@ -52,90 +67,56 @@ export class evo_nyx_scarab_q extends BaseAbility {
             ParticleAttachment.WORLDORIGIN,
             undefined
         );
-        ParticleManager.SetParticleControl(pfx, 0, origin);
-        ParticleManager.SetParticleControl(pfx, 1, endPos);
+        ParticleManager.SetParticleControl(pfx, 0, caster.GetAbsOrigin());
+        ParticleManager.SetParticleControl(pfx, 1, center);
         ParticleManager.ReleaseParticleIndex(pfx);
 
-        const totalDmg = baseDmg + getStr(caster) * strPct;
-        const enemies = FindUnitsInLine(
-            caster.GetTeamNumber(),
-            origin,
-            endPos,
-            undefined,
-            width,
-            UnitTargetTeam.ENEMY,
-            (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            UnitTargetFlags.NONE
-        );
-
-        let hitHero = false;
+        const enemies = findEnemiesInRadius(caster, center, radius);
+        let heroHits = 0;
         for (const enemy of enemies) {
-            if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            if (enemy.IsHero()) hitHero = true;
-
-            if (level >= 2) {
-                enemy.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_q_armor", { duration: 4.0 });
-                const toCaster = Vector(origin.x - enemy.GetAbsOrigin().x, origin.y - enemy.GetAbsOrigin().y, 0);
-                if (toCaster.Length2D() > 140) {
-                    const pullDir = toCaster.Normalized();
-                    const pulled = Vector(
-                        enemy.GetAbsOrigin().x + pullDir.x * 130,
-                        enemy.GetAbsOrigin().y + pullDir.y * 130,
-                        enemy.GetAbsOrigin().z
-                    );
-                    FindClearSpaceForUnit(enemy, pulled, true);
-                }
+            if (enemy.IsRealHero()) {
+                heroHits += 1;
             }
-
-            enemy.AddNewModifier(caster, this, "modifier_stunned", { duration: stunDur });
+            const dmg = isEvoCreepUnit(enemy) ? rawDmg * creepMult : rawDmg;
             ApplyDamage({
                 victim: enemy,
                 attacker: caster,
                 ability: this,
-                damage: enemy.IsCreep() ? totalDmg * creepMult : totalDmg,
-                damage_type: DamageTypes.PHYSICAL,
+                damage: dmg,
+                damage_type: DamageTypes.MAGICAL,
             });
+            enemy.AddNewModifier(caster, this, "modifier_knockback", {
+                center_x: enemy.GetAbsOrigin().x,
+                center_y: enemy.GetAbsOrigin().y,
+                center_z: enemy.GetAbsOrigin().z,
+                duration: 0.5,
+                knockback_duration: 0.5,
+                knockback_distance: 0,
+                knockback_height: 180,
+                should_stun: 1,
+            });
+            enemy.AddNewModifier(caster, this, "modifier_stunned", { duration: stunDur });
+            if (tier >= 3) {
+                enemy.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_q_slow", { duration: 2.5 });
+            }
+            if (tier >= 4) {
+                enemy.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_q_dot", { duration: 3.0 });
+            }
         }
 
-        if (level >= 3) {
-            if (hitHero) {
-                addNyxChitinStacks(caster, 2);
-            }
-            const shockPfx = ParticleManager.CreateParticle(
-                "particles/units/heroes/hero_sandking/sandking_epicenter_ring.vpcf",
-                ParticleAttachment.WORLDORIGIN,
-                undefined
-            );
-            ParticleManager.SetParticleControl(shockPfx, 0, endPos);
-            ParticleManager.ReleaseParticleIndex(shockPfx);
-
-            const afterEnemies = FindUnitsInRadius(
-                caster.GetTeamNumber(),
-                endPos,
-                undefined,
-                260,
-                UnitTargetTeam.ENEMY,
-                (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-                UnitTargetFlags.NONE,
-                FindOrder.ANY,
-                false
-            );
-            for (const enemy of afterEnemies) {
-                if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-                ApplyDamage({
-                    victim: enemy,
-                    attacker: caster,
-                    ability: this,
-                    damage: totalDmg * 0.5,
-                    damage_type: DamageTypes.PHYSICAL,
-                });
+        if (tier >= 3 && heroHits > 0) {
+            const rem = this.GetCooldownTimeRemaining();
+            if (rem > 0) {
+                this.EndCooldown();
+                const nextCd = Math.max(0.25, rem - heroHits * 1.0);
+                this.StartCooldown(nextCd);
             }
         }
     }
 }
 
-@registerModifier("modifier_evo_nyx_scarab_q_armor")
-export class modifier_evo_nyx_scarab_q_armor extends BaseModifier {
+@registerModifier("modifier_evo_nyx_scarab_q_slow")
+export class modifier_evo_nyx_scarab_q_slow extends BaseModifier {
     IsHidden(): boolean {
         return false;
     }
@@ -149,148 +130,6 @@ export class modifier_evo_nyx_scarab_q_armor extends BaseModifier {
         return "nyx_assassin_impale";
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS")];
-    }
-    GetModifierPhysicalArmorBonus(): number {
-        return -4;
-    }
-}
-
-@registerAbility("evo_nyx_scarab_w")
-export class evo_nyx_scarab_w extends BaseAbility {
-    OnSpellStart(): void {
-        if (!IsServer()) return;
-        const caster = this.GetCaster();
-        if (!caster || caster.IsNull() || !IsValidEntity(caster)) return;
-
-        const radius = this.GetSpecialValueFor("radius");
-        const baseDmg = this.GetSpecialValueFor("base_damage");
-        const strPct = this.GetSpecialValueFor("str_pct") / 100;
-        const duration = this.GetSpecialValueFor("duration");
-        const creepMult = this.GetSpecialValueFor("creep_mult");
-
-        caster.EmitSound("Hero_NyxAssassin.SpikedCarapace");
-        caster.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_w_buff", { duration });
-
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf",
-            ParticleAttachment.ABSORIGIN_FOLLOW,
-            caster
-        );
-        ParticleManager.ReleaseParticleIndex(pfx);
-
-        const totalDmg = baseDmg + getStr(caster) * strPct;
-        const enemies = FindUnitsInRadius(
-            caster.GetTeamNumber(),
-            caster.GetAbsOrigin(),
-            undefined,
-            radius,
-            UnitTargetTeam.ENEMY,
-            (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            UnitTargetFlags.NONE,
-            FindOrder.ANY,
-            false
-        );
-        for (const enemy of enemies) {
-            if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            ApplyDamage({
-                victim: enemy,
-                attacker: caster,
-                ability: this,
-                damage: enemy.IsCreep() ? totalDmg * creepMult : totalDmg,
-                damage_type: DamageTypes.MAGICAL,
-            });
-            enemy.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_w_slow", { duration: 2.5 });
-        }
-    }
-}
-
-@registerModifier("modifier_evo_nyx_scarab_w_buff")
-export class modifier_evo_nyx_scarab_w_buff extends BaseModifier {
-    private stunnedAttacker = false;
-
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return false;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "nyx_assassin_spiked_carapace";
-    }
-    OnCreated(): void {
-        this.stunnedAttacker = false;
-    }
-    OnRefresh(): void {
-        this.stunnedAttacker = false;
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [
-            dotaModifierFunction("MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"),
-            dotaModifierFunction("MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
-            dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE"),
-        ];
-    }
-    GetModifierPhysicalArmorBonus(): number {
-        const ab = this.GetAbility();
-        return ab ? ab.GetSpecialValueFor("bonus_armor") : 6;
-    }
-    GetModifierStatusResistanceStacking(): number {
-        const ab = this.GetAbility();
-        return ab && ab.GetLevel() >= 3 ? 25 : 0;
-    }
-    OnTakeDamage(event: ModifierInstanceEvent): void {
-        if (!IsServer()) return;
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || event.unit !== parent || event.damage <= 0) return;
-        const attacker = event.attacker;
-        if (!attacker || attacker.IsNull() || !IsValidEntity(attacker) || attacker === parent) return;
-        if (!attacker.IsHero() && !attacker.IsConsideredHero()) return;
-        if (bit.band(event.damage_flags, DamageFlag.REFLECTION) !== 0) return;
-
-        const reflectPct = ab.GetSpecialValueFor("reflect_pct") / 100;
-        const reflectDmg = event.original_damage * reflectPct;
-        if (reflectDmg > 0) {
-            ApplyDamage({
-                victim: attacker,
-                attacker: parent,
-                ability: ab,
-                damage: reflectDmg,
-                damage_type: DamageTypes.PURE,
-                damage_flags: DamageFlag.REFLECTION,
-            });
-            if (ab.GetLevel() >= 3) {
-                parent.Heal(reflectDmg * 0.3, ab);
-            }
-        }
-
-        if (ab.GetLevel() >= 2 && !this.stunnedAttacker && attacker.IsAlive()) {
-            this.stunnedAttacker = true;
-            attacker.EmitSound("Hero_NyxAssassin.SpikedCarapace.Stun");
-            attacker.AddNewModifier(parent, ab, "modifier_stunned", { duration: 1.2 });
-        }
-    }
-}
-
-@registerModifier("modifier_evo_nyx_scarab_w_slow")
-export class modifier_evo_nyx_scarab_w_slow extends BaseModifier {
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "nyx_assassin_spiked_carapace";
-    }
-    DeclareFunctions(): ModifierFunction[] {
         return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
     }
     GetModifierMoveSpeedBonus_Percentage(): number {
@@ -298,96 +137,78 @@ export class modifier_evo_nyx_scarab_w_slow extends BaseModifier {
     }
 }
 
-@registerAbility("evo_nyx_scarab_e")
-export class evo_nyx_scarab_e extends BaseAbility {
-    GetIntrinsicModifierName(): string {
-        return "modifier_evo_nyx_scarab_e_passive";
-    }
-}
-
-@registerModifier("modifier_evo_nyx_scarab_e_passive")
-export class modifier_evo_nyx_scarab_e_passive extends BaseModifier {
-    private lastThornsTime = -999;
-
+@registerModifier("modifier_evo_nyx_scarab_q_dot")
+export class modifier_evo_nyx_scarab_q_dot extends BaseModifier {
     IsHidden(): boolean {
+        return false;
+    }
+    IsDebuff(): boolean {
         return true;
     }
     IsPurgable(): boolean {
-        return false;
+        return true;
     }
-    RemoveOnDeath(): boolean {
-        return false;
+    GetTexture(): string {
+        return "nyx_assassin_impale";
     }
     OnCreated(): void {
-        this.lastThornsTime = -999;
+        if (!IsServer()) return;
+        this.StartIntervalThink(1.0);
     }
-    DeclareFunctions(): ModifierFunction[] {
-        return [
-            dotaModifierFunction("MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"),
-            dotaModifierFunction("MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"),
-            dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE"),
-        ];
-    }
-    GetModifierBonusStats_Strength(): number {
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || parent.PassivesDisabled()) return 0;
-        return ab.GetSpecialValueFor("bonus_str");
-    }
-    GetModifierConstantHealthRegen(): number {
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || parent.PassivesDisabled()) return 0;
-        return ab.GetSpecialValueFor("hp_regen");
-    }
-    OnTakeDamage(event: ModifierInstanceEvent): void {
+    OnIntervalThink(): void {
         if (!IsServer()) return;
         const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || event.unit !== parent || parent.PassivesDisabled()) return;
-        const attacker = event.attacker;
-        if (!attacker || attacker.IsNull() || !IsValidEntity(attacker) || attacker === parent) return;
-        if (attacker.GetTeamNumber() === parent.GetTeamNumber()) return;
-        if (bit.band(event.damage_flags, DamageFlag.REFLECTION) !== 0) return;
+        const caster = this.GetCaster();
+        const ability = this.GetAbility();
+        if (!parent || parent.IsNull() || !parent.IsAlive() || !caster || caster.IsNull()) return;
+        const dmg = 35 + getNyxStr(caster) * 0.2;
+        ApplyDamage({
+            victim: parent,
+            attacker: caster,
+            ability,
+            damage: dmg,
+            damage_type: DamageTypes.MAGICAL,
+        });
+    }
+    DeclareFunctions(): ModifierFunction[] {
+        return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
+    }
+    GetModifierMoveSpeedBonus_Percentage(): number {
+        return -20;
+    }
+}
 
-        const now = GameRules.GetDOTATime(false, false);
-        const dist = ((parent.GetAbsOrigin() - attacker.GetAbsOrigin()) as Vector).Length2D();
-        if (dist <= 325 && now - (this.lastThornsTime ?? -999) >= 0.7) {
-            this.lastThornsTime = now;
-            const thornsBase = ab.GetSpecialValueFor("thorns_base");
-            const thornsPct = ab.GetSpecialValueFor("thorns_str_pct") / 100;
-            ApplyDamage({
-                victim: attacker,
-                attacker: parent,
-                ability: ab,
-                damage: thornsBase + getStr(parent) * thornsPct,
-                damage_type: DamageTypes.PURE,
-                damage_flags: DamageFlag.REFLECTION,
-            });
+@registerAbility("evo_nyx_scarab_w")
+export class evo_nyx_scarab_w extends BaseAbility {
+    GetMaxLevel(): number {
+        return getNyxBranchMaxLevel(this.GetCaster());
+    }
+    GetCastPoint(): number {
+        return this.GetToggleState() ? 0 : 0.8;
+    }
+    OnToggle(): void {
+        if (!IsServer()) return;
+        const caster = this.GetCaster();
+        if (this.GetToggleState()) {
+            caster.EmitSound("Hero_NyxAssassin.Burrow.In");
+            caster.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_w", {});
+        } else {
+            caster.RemoveModifierByName("modifier_evo_nyx_scarab_w");
+            caster.EmitSound("Hero_NyxAssassin.Burrow.Out");
+            if (getNyxTier(caster) >= 3) {
+                caster.Purge(false, true, false, false, false);
+                for (const enemy of findEnemiesInRadius(caster, caster.GetAbsOrigin(), 225)) {
+                    knockbackUnitFrom(caster, enemy, caster.GetAbsOrigin(), 150, 0.25, 45);
+                }
+            }
+            this.UseResources(false, false, false, true);
         }
     }
 }
 
-@registerAbility("evo_nyx_scarab_r")
-export class evo_nyx_scarab_r extends BaseAbility {
-    OnSpellStart(): void {
-        if (!IsServer()) return;
-        const caster = this.GetCaster();
-        if (!caster || caster.IsNull() || !IsValidEntity(caster)) return;
-
-        const dur = this.GetSpecialValueFor("duration");
-        const healPct = this.GetSpecialValueFor("heal_pct") / 100;
-
-        caster.EmitSound("Hero_SandKing.Epicenter");
-        caster.Heal(caster.GetMaxHealth() * healPct, this);
-        addNyxChitinStacks(caster, 5);
-        caster.AddNewModifier(caster, this, "modifier_evo_nyx_scarab_r_citadel", { duration: dur });
-    }
-}
-
-@registerModifier("modifier_evo_nyx_scarab_r_citadel")
-export class modifier_evo_nyx_scarab_r_citadel extends BaseModifier {
-    private bonusStr = 0;
+@registerModifier("modifier_evo_nyx_scarab_w")
+export class modifier_evo_nyx_scarab_w extends BaseModifier {
+    private qCdAccum = 0;
 
     IsHidden(): boolean {
         return false;
@@ -399,70 +220,60 @@ export class modifier_evo_nyx_scarab_r_citadel extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "sandking_epicenter";
+        return "nyx_assassin_burrow";
     }
     OnCreated(): void {
-        this.bonusStr = 0;
+        this.qCdAccum = 0;
         if (!IsServer()) return;
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (parent && !parent.IsNull() && ab) {
-            const pct = ab.GetSpecialValueFor("str_bonus_pct") / 100;
-            this.bonusStr = Math.round(getStr(parent) * pct);
-        }
-        this.StartIntervalThink(1.5);
+        this.StartIntervalThink(0.2);
     }
     OnIntervalThink(): void {
         if (!IsServer()) return;
         const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !IsValidEntity(parent) || !parent.IsAlive() || !ab) return;
+        const ability = this.GetAbility();
+        if (!parent || parent.IsNull() || !parent.IsAlive() || !ability || ability.IsNull()) return;
 
-        const radius = ab.GetSpecialValueFor("pulse_radius");
-        const baseDmg = ab.GetSpecialValueFor("pulse_damage");
-        const strPct = ab.GetSpecialValueFor("pulse_str_pct") / 100;
-        const totalDmg = baseDmg + getStr(parent) * strPct;
+        const regenPct = ability.GetSpecialValueFor("regen_pct") / 100;
+        parent.Heal(parent.GetMaxHealth() * regenPct * 0.2, ability);
+        parent.GiveMana(parent.GetMaxMana() * regenPct * 0.2);
 
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_sandking/sandking_epicenter_ring.vpcf",
-            ParticleAttachment.ABSORIGIN_FOLLOW,
-            parent
-        );
-        ParticleManager.ReleaseParticleIndex(pfx);
-
-        const enemies = FindUnitsInRadius(
-            parent.GetTeamNumber(),
-            parent.GetAbsOrigin(),
-            undefined,
-            radius,
-            UnitTargetTeam.ENEMY,
-            (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            UnitTargetFlags.NONE,
-            FindOrder.ANY,
-            false
-        );
-        for (const enemy of enemies) {
-            if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
-            ApplyDamage({
-                victim: enemy,
-                attacker: parent,
-                ability: ab,
-                damage: totalDmg,
-                damage_type: DamageTypes.PURE,
-            });
-            enemy.AddNewModifier(parent, ab, "modifier_evo_nyx_scarab_w_slow", { duration: 1.5 });
+        if (getNyxTier(parent) >= 4) {
+            const qAb = parent.FindAbilityByName("evo_nyx_scarab_q");
+            if (qAb && !qAb.IsNull()) {
+                const rem = qAb.GetCooldownTimeRemaining();
+                if (rem > 0.06) {
+                    qAb.EndCooldown();
+                    qAb.StartCooldown(Math.max(0.01, rem - 0.05));
+                }
+            }
+            GridNav.DestroyTreesAroundPoint(parent.GetAbsOrigin(), 100, false);
         }
+    }
+    CheckState(): Partial<Record<ModifierState, boolean>> {
+        const parent = this.GetParent();
+        const t4 = parent && !parent.IsNull() && getNyxTier(parent) >= 4;
+        return {
+            [dotaModifierState("MODIFIER_STATE_ROOTED")]: !t4,
+            [dotaModifierState("MODIFIER_STATE_DISARMED")]: true,
+            [dotaModifierState("MODIFIER_STATE_NO_UNIT_COLLISION")]: t4,
+        };
     }
     DeclareFunctions(): ModifierFunction[] {
         return [
-            dotaModifierFunction("MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"),
-            dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"),
+            dotaModifierFunction("MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
+            dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE"),
         ];
     }
-    GetModifierBonusStats_Strength(): number {
-        return this.bonusStr ?? 0;
+    GetModifierStatusResistanceStacking(): number {
+        const parent = this.GetParent();
+        if (!parent || parent.IsNull()) return 0;
+        const tier = getNyxTier(parent);
+        if (tier < 3) return 0;
+        return tier >= 4 ? 35 : 25;
     }
-    GetModifierMoveSpeedBonus_Percentage(): number {
-        return 20;
+    GetModifierMoveSpeed_Absolute(): number {
+        const parent = this.GetParent();
+        if (!parent || parent.IsNull() || getNyxTier(parent) < 4) return 0;
+        return 175;
     }
 }

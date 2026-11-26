@@ -1,0 +1,56 @@
+.EvoLoadingRoot {
+    width: 100%;
+    height: 100%;
+    background-color: #06090d;
+    overflow: clip;
+}
+
+#EvoLoadingCanvas {
+    width: 100%;
+    height: 100%;
+    horizontal-align: center;
+    vertical-align: center;
+    overflow: clip;
+    animation-name: EvoLoadingDrift;
+    animation-duration: 30s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes 'EvoLoadingDrift' {
+    0% {
+        pre-transform-scale2d: 1.06;
+    }
+    100% {
+        pre-transform-scale2d: 1.0;
+    }
+}
+
+.EvoLoadingArtwork {
+    width: 100%;
+    height: 100%;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+#EvoLoadingImage16x9 {
+    visibility: visible;
+}
+
+#EvoLoadingImage21x9 {
+    visibility: collapse;
+}
+
+.AspectRatio21x9 #EvoLoadingImage16x9 {
+    visibility: collapse;
+}
+
+.AspectRatio21x9 #EvoLoadingImage21x9 {
+    visibility: visible;
+}
+
+#EvoLoadingVignette {
+    width: 100%;
+    height: 100%;
+    background-color: gradient( linear, 0% 62%, 0% 100%, from( #00000000 ), to( #060a0ed9 ) );
+}

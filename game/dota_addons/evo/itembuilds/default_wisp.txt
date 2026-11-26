@@ -2,57 +2,63 @@
 {
 	"author"		"Turbo-"
 	"Title"			"Recommended items for every hero"
-	
-		"Items"
-	{		
+
+	"Items"
+	{
 		"#DOTA_Item_Build_Potions"
 		{
 			"item"		"item_mana_potion"
 			"item"		"item_heal_potion"
-			"item"      "item_strength_potion"
+			"item"		"item_strength_potion"
 			"item"		"item_agility_potion"
 			"item"		"item_intellegence_potion"
 			"item"		"item_combined_potion"
 			"item"		"item_bottle"
+			"item"		"item_experience_tome"
+			"item"		"item_spellshop_sell_lua"
 		}
-		
+
 		"#DOTA_Item_Build_Early_Game"
-		{	
-			"item"		"item_fireblend_lua"
+		{
 			"item"		"item_leaf_buckler_lua"
-			"item"		"item_hand_of_midas_custom"
-			"item"		"item_midas_sword"
-			"item"		"item_phase_boots_2"
-			"item"		"item_might_treads_lua"
+			"item"		"item_fireblend_lua"
+			"item"		"item_polar_spear_lua"
+			"item"		"item_mask_of_rage_lua"
 		}
-		
+
+		"#DOTA_Item_Build_Support"
+		{
+			"item"		"item_mantlet_lua"
+			"item"		"item_pavise_cape_lua"
+		}
+
 		"#DOTA_Item_Build_Mage"
 		{
-			"item"		"item_ultra_null_talisman"
 			"item"		"item_quibbela"
-			"item"      "item_refresher_core_lua"
-			"item"      "item_aether_lens_2"
-			"item"		"item_mana_heart"
-			"item"		"item_durandal"
-			"item"		"item_asura_staff"
-			"item"		"item_manteau_invis"
 			"item"		"item_solomon_book"
+			"item"		"item_slice_of_static_lua"
+			"item"		"item_durandal"
 		}
-		
+
 		"#DOTA_Item_Build_Carry"
 		{
-
+			"item"		"item_blaze_lance_lua"
+			"item"		"item_amulet_of_chronos_lua"
 		}
-		
+
 		"#DOTA_Item_Build_Ganker"
 		{
 			"item"		"item_stalker_coat"
+			"item"		"item_manteau_invis"
 		}
-		
-		"#DOTA_Item_Build_Ascention"
-		{
 
-			
+		"#DOTA_Item_Build_Boss"
+		{
+			"item"		"item_awful_mask_lua"
+			"item"		"item_demons_claw_lua"
+			"item"		"item_ring_of_the_void_lua"
+			"item"		"item_evo_boss_core_alpha"
+			"item"		"item_evo_boss_core_beta"
 		}
 	}
 }

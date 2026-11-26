@@ -1,4 +1,4 @@
-import { EVO_CONSTANTS } from "../../data/game_constants";
+import { EVO_CONSTANTS, EVO_PLAYABLE_TEAMS } from "../../data/game_constants";
 import { prepareDuelistSnapshot } from "./duel_arena";
 import {
     ActiveBossDuel,
@@ -9,6 +9,7 @@ import {
     DuelPair,
     PreDuelSnapshot,
     debugDuelChat,
+    getTeamPlayerIds,
 } from "./duel_types";
 
 export function prepareBossChallengers(
@@ -167,5 +168,88 @@ export function evaluateActiveDuelKill(params: {
     }
 
     return { kind: "none" };
+}
+
+function getUnitHpPercentExact(unit: CDOTA_BaseNPC | undefined): number {
+    if (!unit || unit.IsNull() || !IsValidEntity(unit) || !unit.IsAlive()) {
+        return 0;
+    }
+    return (unit.GetHealth() / Math.max(1, unit.GetMaxHealth())) * 100;
+}
+
+export function evaluateDuelTimeoutOutcome(params: {
+    currentPair?: DuelPair;
+    sparringDummy?: CDOTA_BaseNPC;
+}): { winnerId: PlayerID | undefined; loserId: PlayerID | undefined } {
+    const pair = params.currentPair;
+    if (!pair) {
+        return { winnerId: undefined, loserId: undefined };
+    }
+
+    const heroA = PlayerResource.IsValidPlayerID(pair.playerA)
+        ? PlayerResource.GetSelectedHeroEntity(pair.playerA)
+        : undefined;
+    const heroB =
+        pair.playerB >= 0 && PlayerResource.IsValidPlayerID(pair.playerB)
+            ? PlayerResource.GetSelectedHeroEntity(pair.playerB)
+            : params.sparringDummy;
+
+    const pctA = getUnitHpPercentExact(heroA);
+    const pctB = getUnitHpPercentExact(heroB);
+
+    if (Math.abs(pctA - pctB) < 0.01) {
+        return { winnerId: undefined, loserId: undefined };
+    }
+
+    if (pctA > pctB) {
+        return {
+            winnerId: PlayerResource.IsValidPlayerID(pair.playerA) ? pair.playerA : undefined,
+            loserId: pair.playerB >= 0 && PlayerResource.IsValidPlayerID(pair.playerB) ? pair.playerB : undefined,
+        };
+    }
+
+    return {
+        winnerId: pair.playerB >= 0 && PlayerResource.IsValidPlayerID(pair.playerB) ? pair.playerB : undefined,
+        loserId: PlayerResource.IsValidPlayerID(pair.playerA) ? pair.playerA : undefined,
+    };
+}
+
+export function ensureDevTestBot(callerId: PlayerID): boolean {
+    const myTeam = PlayerResource.GetTeam(callerId);
+    for (const team of EVO_PLAYABLE_TEAMS) {
+        if (team === myTeam) continue;
+        if (getTeamPlayerIds(team).length > 0) {
+            return true;
+        }
+    }
+
+    const botTeam = EVO_PLAYABLE_TEAMS.find((team) => team !== myTeam) ?? DotaTeam.BADGUYS;
+    const botHero = GameRules.AddBotPlayerWithEntityScript(
+        EVO_CONSTANTS.BASE_HERO_NAME,
+        "NoobBot",
+        botTeam,
+        "",
+        false
+    );
+    return botHero !== undefined && !botHero.IsNull();
+}
+
+export function launchDevSparringFallback(params: {
+    playerId: PlayerID;
+    spawnA: Vector;
+    spawnB: Vector;
+    snapshots: Map<PlayerID, PreDuelSnapshot>;
+    activeDuelistEntIndexes: Set<EntityIndex>;
+}): CDOTA_BaseNPC | undefined {
+    const hero = PlayerResource.GetSelectedHeroEntity(params.playerId);
+    if (!hero || hero.IsNull() || !IsValidEntity(hero)) return undefined;
+    prepareDuelistSnapshot(
+        params.playerId,
+        params.spawnA,
+        params.spawnB,
+        params.snapshots,
+        params.activeDuelistEntIndexes
+    );
+    return spawnDevSparringDummy(hero, params.spawnB, params.activeDuelistEntIndexes);
 }
 

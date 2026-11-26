@@ -21,6 +21,8 @@
         7: "#bf7d3b",
         8: "#8f5ca6",
         9: "#b5a84a",
+        11: "#3ea89c",
+        12: "#c96b96",
     };
 
     const PLAYABLE_TEAMS: readonly DOTATeam_t[] = [
@@ -30,6 +32,8 @@
         DOTATeam_t.DOTA_TEAM_CUSTOM_2,
         DOTATeam_t.DOTA_TEAM_CUSTOM_3,
         DOTATeam_t.DOTA_TEAM_CUSTOM_4,
+        11 as DOTATeam_t,
+        12 as DOTATeam_t,
     ];
 
     const leftContainer = $("#EvoTopBarLeft");

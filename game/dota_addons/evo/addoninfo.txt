@@ -8,7 +8,7 @@
 	map_options =
 	[
 		{
-			MaxPlayers = 12
+			MaxPlayers = 8
 			map = "zxc"
 		}
 	]
@@ -24,6 +24,6 @@
 	}
 	MinimalPrecache = false
 	MinPlayers = 1
-	MaxPlayers = 12
+	MaxPlayers = 8
 	PenaltiesEnabled = false
 }

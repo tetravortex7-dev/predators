@@ -1,7 +1,7 @@
 import { getBodyDefinition } from "../../data/bodies_catalog";
 import { MutationSlotType } from "../../data/data_schemas";
 import { EVO_CONSTANTS, getTierConfig } from "../../data/game_constants";
-import { getMutationDefinition } from "../../data/mutations_catalog";
+import { EVO_MUTATIONS_CATALOG, getMutationDefinition } from "../../data/mutations_catalog";
 
 export type PendingDraftType = "NONE" | "BODY" | "ABILITY" | "MUTATION";
 
@@ -14,6 +14,7 @@ export interface PlayerEvolutionState {
     mutations: [string | undefined, string | undefined, string | undefined];
     unlockedAbilitySlots: boolean[];
     unlockedMutationSlots: boolean[];
+    mutationRerollsRemaining: number;
     pendingDraftType: PendingDraftType;
     pendingMutationSlot: number;
     draftOptions: string[];
@@ -76,6 +77,36 @@ export function reapplyMutationsToHero(hero: CDOTA_BaseNPC_Hero, state: PlayerEv
     }
 }
 
+export function rollMutationChoices(
+    state: PlayerEvolutionState,
+    excludeIds: readonly string[],
+    count: number
+): string[] {
+    const owned = new Set<string>();
+    for (const mutId of state.mutations) {
+        if (mutId) owned.add(mutId);
+    }
+    const excluded = new Set<string>(excludeIds);
+
+    const available = EVO_MUTATIONS_CATALOG.filter((m) => !owned.has(m.id));
+    const fresh = available.filter((m) => !excluded.has(m.id));
+
+    const picked = pickRandomSubset(
+        fresh.map((m) => m.id),
+        count
+    );
+
+    if (picked.length < count) {
+        const pickedSet = new Set<string>(picked);
+        const fallback = available.filter((m) => !pickedSet.has(m.id)).map((m) => m.id);
+        for (const id of pickRandomSubset(fallback, count - picked.length)) {
+            picked.push(id);
+        }
+    }
+
+    return picked;
+}
+
 export function syncPlayerEvoNetTable(playerId: PlayerID, state: PlayerEvolutionState): void {
     const tierConfig = getTierConfig(state.tierIndex);
     const key = tostring(playerId);
@@ -90,6 +121,7 @@ export function syncPlayerEvoNetTable(playerId: PlayerID, state: PlayerEvolution
     existing.evo_points = state.evoPoints;
     existing.biomass = state.biomass;
     existing.mutations = state.mutations;
+    existing.mutation_rerolls = state.mutationRerollsRemaining;
     existing.pending_draft_type = state.pendingDraftType;
     existing.pending_mutation_slot = state.pendingMutationSlot;
     existing.draft_options = state.draftOptions;
@@ -112,6 +144,14 @@ export function syncPlayerEvoNetTable(playerId: PlayerID, state: PlayerEvolution
                 agi: b.baseAgi,
                 int: b.baseInt,
                 tier_index: b.tierIndex,
+            };
+        }
+    } else if (state.pendingDraftType === "MUTATION") {
+        for (const optId of state.draftOptions) {
+            const m = getMutationDefinition(optId);
+            if (!m) continue;
+            draftMeta[optId] = {
+                icon: m.iconAbility ?? "alchemist_chemical_rage",
             };
         }
     }

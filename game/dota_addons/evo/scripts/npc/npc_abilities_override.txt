@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"nyx_assassin_impale"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"3"
+		"AbilityCastRange"				"550"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"12.0 11.0 10.0"
+		"AbilityManaCost"				"55 65 75"
+		"AbilityValues"
+		{
+			"width"						"125"
+			"duration"					"0.7 0.85 1.0"
+			"length"					"550"
+			"speed"						"1600"
+			"impale_damage"
+			{
+				"value"					"50 75 100"
+				"special_bonus_unique_nyx_2"	"0"
+			}
+		}
+	}
+
+	"lion_impale"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.25"
+		"AbilityManaCost"				"75 85 95 105 115"
+		"AbilityValues"
+		{
+			"AbilityCooldown"			"12 11 10 9 8"
+			"AbilityCastRange"
+			{
+				"value"					"700 775 850 925 1000"
+				"special_bonus_unique_lion_2"	"0"
+			}
+			"damage"					"80 125 170 215 260"
+			"width"						"145"
+			"duration"					"1.0 1.2 1.4 1.6 1.8"
+			"length_buffer"				"150"
+			"speed"						"1800"
+		}
+	}
+}

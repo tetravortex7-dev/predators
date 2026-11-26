@@ -3,6 +3,7 @@
 #base abilities/evo_morph_abilities.txt
 #base abilities/evo_nyx_abilities.txt
 #base abilities/evo_slark_abilities.txt
+#base abilities/evo_spectre_abilities.txt
 #base abilities/evo_t1_heroes_abilities.txt
 #base units/bosses/evo_boss_elasmyr_abilities.txt
 #base units/buildings/npc_dota_fountain/abilities.txt

@@ -91,29 +91,6 @@
 		}
 	}
 
-	"evo_nyx_t1_burrow_spike"
-	{
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
-		"AbilityTextureName"			"nyx_assassin_impale"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"						"1"
-		"AbilityCastPoint"				"0.3"
-		"AbilityCastRange"				"550"
-		"AbilityCooldown"				"11.0"
-		"AbilityManaCost"				"65"
-		"AbilityValues"
-		{
-			"range"						"550"
-			"width"						"125"
-			"stun_duration"				"0.85"
-			"damage"					"70"
-			"creep_mult"				"1.5"
-		}
-	}
-
 	"evo_nyx_t1_chitin_burst"
 	{
 		"BaseClass"						"ability_lua"
@@ -124,16 +101,16 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"						"1"
+		"MaxLevel"						"3"
 		"AbilityCastPoint"				"0.2"
 		"AbilityCastRange"				"200"
-		"AbilityCooldown"				"6.0"
-		"AbilityManaCost"				"40"
+		"AbilityCooldown"				"7.0 6.0 5.0"
+		"AbilityManaCost"				"35 40 45"
 		"AbilityValues"
 		{
-			"base_damage"				"45"
-			"attr_pct"					"40"
-			"burst_per_stack"			"45"
+			"base_damage"				"35 55 75"
+			"attr_pct"					"30 40 50"
+			"burst_per_stack"			"35 50 65"
 			"burst_radius"				"275"
 			"slow_duration"				"2.0"
 		}

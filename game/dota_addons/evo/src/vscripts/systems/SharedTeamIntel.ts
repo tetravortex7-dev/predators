@@ -1,3 +1,4 @@
+import { EVO_PLAYABLE_TEAMS } from "../data/game_constants";
 import { EvolutionManager } from "./EvolutionManager";
 
 interface EnemyDossierEntry {
@@ -10,15 +11,6 @@ interface EnemyDossierEntry {
     mutations: string[];
     last_seen_time: number;
 }
-
-const PLAYABLE_TEAMS: readonly DotaTeam[] = [
-    DotaTeam.GOODGUYS,
-    DotaTeam.BADGUYS,
-    DotaTeam.CUSTOM_1,
-    DotaTeam.CUSTOM_2,
-    DotaTeam.CUSTOM_3,
-    DotaTeam.CUSTOM_4,
-];
 
 const INTEL_TICK_SECONDS = 1.0;
 const LAST_SEEN_REFRESH_SECONDS = 5;
@@ -58,7 +50,7 @@ export class SharedTeamIntel {
             if (!hero || hero.IsNull() || !IsValidEntity(hero)) continue;
 
             const team = PlayerResource.GetTeam(playerId);
-            if (!PLAYABLE_TEAMS.includes(team)) continue;
+            if (!EVO_PLAYABLE_TEAMS.includes(team)) continue;
 
             allHeroes.push({ playerId, team, hero });
             if (!teamObservers.has(team)) {

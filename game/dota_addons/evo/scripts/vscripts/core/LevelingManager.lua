@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local Map = ____lualib.Map
 local __TS__New = ____lualib.__TS__New
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 2,["9"] = 2,["10"] = 2,["11"] = 9,["12"] = 9,["13"] = 9,["14"] = 12,["15"] = 12,["16"] = 10,["17"] = 12,["18"] = 14,["19"] = 15,["20"] = 16,["21"] = 17,["22"] = 18,["23"] = 20,["24"] = 20,["25"] = 20,["26"] = 20,["27"] = 20,["28"] = 14,["29"] = 23,["30"] = 24,["31"] = 23,["32"] = 27,["33"] = 27,["34"] = 27,["36"] = 27,["37"] = 27,["39"] = 28,["42"] = 29,["43"] = 30,["44"] = 32,["45"] = 33,["46"] = 27,["47"] = 40,["48"] = 41,["49"] = 42,["50"] = 43,["52"] = 45,["53"] = 46,["54"] = 47,["55"] = 40,["56"] = 50,["57"] = 51,["58"] = 52,["61"] = 54,["62"] = 55,["65"] = 57,["66"] = 58,["67"] = 60,["68"] = 66,["69"] = 67,["70"] = 68,["71"] = 69,["74"] = 50,["75"] = 74,["76"] = 75,["77"] = 76,["78"] = 77,["79"] = 81,["81"] = 83,["82"] = 74,["83"] = 86,["84"] = 87,["85"] = 88,["86"] = 88,["87"] = 88,["89"] = 88,["90"] = 89,["91"] = 90,["92"] = 86});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 2,["9"] = 2,["10"] = 2,["11"] = 9,["12"] = 9,["13"] = 9,["14"] = 12,["15"] = 12,["16"] = 10,["17"] = 12,["18"] = 14,["19"] = 15,["20"] = 16,["21"] = 17,["22"] = 18,["23"] = 20,["24"] = 21,["25"] = 21,["26"] = 21,["27"] = 21,["29"] = 24,["30"] = 24,["31"] = 24,["32"] = 24,["33"] = 24,["34"] = 25,["35"] = 25,["36"] = 25,["37"] = 25,["38"] = 25,["39"] = 14,["40"] = 28,["41"] = 29,["42"] = 30,["45"] = 31,["46"] = 32,["49"] = 33,["52"] = 34,["53"] = 35,["54"] = 36,["55"] = 37,["56"] = 38,["57"] = 39,["58"] = 40,["60"] = 28,["61"] = 44,["62"] = 45,["63"] = 46,["65"] = 48,["66"] = 44,["67"] = 51,["68"] = 52,["69"] = 51,["70"] = 55,["71"] = 55,["72"] = 55,["74"] = 55,["75"] = 55,["77"] = 56,["80"] = 57,["81"] = 58,["82"] = 60,["83"] = 61,["84"] = 55,["85"] = 68,["86"] = 69,["87"] = 70,["88"] = 71,["90"] = 73,["91"] = 74,["92"] = 75,["93"] = 68,["94"] = 78,["95"] = 79,["96"] = 80,["99"] = 82,["100"] = 83,["103"] = 85,["104"] = 86,["105"] = 88,["106"] = 94,["107"] = 95,["108"] = 96,["109"] = 97,["112"] = 78,["113"] = 102,["114"] = 103,["115"] = 104,["116"] = 105,["117"] = 109,["119"] = 111,["120"] = 102,["121"] = 114,["122"] = 115,["123"] = 116,["124"] = 116,["125"] = 116,["127"] = 116,["128"] = 117,["129"] = 118,["130"] = 114});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
@@ -20,11 +20,49 @@ function LevelingManager.prototype.init(self)
     gameMode:SetUseCustomHeroLevels(true)
     gameMode:SetCustomHeroMaxLevel(EVO_CONSTANTS.MAX_HERO_LEVEL)
     gameMode:SetCustomXPRequiredToReachNextLevel(EVO_XP_PER_LEVEL_TABLE)
+    if IsInToolsMode() then
+        gameMode:SetModifyExperienceFilter(
+            function(____, event) return self:onModifyExperience(event) end,
+            self
+        )
+    end
     ListenToGameEvent(
         "dota_player_gained_level",
         function(event) return self:onPlayerGainedLevel(event) end,
         nil
     )
+    ListenToGameEvent(
+        "dota_player_learned_ability",
+        function(event) return self:onAbilityLearned(event) end,
+        nil
+    )
+end
+function LevelingManager.prototype.onAbilityLearned(self, event)
+    local playerId = event.PlayerID
+    if playerId == nil or not PlayerResource:IsValidPlayerID(playerId) then
+        return
+    end
+    local hero = PlayerResource:GetSelectedHeroEntity(playerId)
+    if not hero or hero:IsNull() or not IsValidEntity(hero) then
+        return
+    end
+    if event.abilityname ~= "lion_impale" then
+        return
+    end
+    local tierMod = hero:FindModifierByName("modifier_evo_hero_tier")
+    local tier = tierMod and tierMod:GetStackCount() or 1
+    local maxAllowed = tier <= 1 and 3 or (tier == 2 and 4 or 5)
+    local ab = hero:FindAbilityByName("lion_impale")
+    if ab and not ab:IsNull() and ab:GetLevel() > maxAllowed then
+        ab:SetLevel(maxAllowed)
+        hero:SetAbilityPoints(hero:GetAbilityPoints() + 1)
+    end
+end
+function LevelingManager.prototype.onModifyExperience(self, event)
+    if event.experience > 0 then
+        event.experience = math.floor(event.experience * EVO_CONSTANTS.DEV_XP_MULTIPLIER)
+    end
+    return true
 end
 function LevelingManager.prototype.getFortificationCharges(self, playerId)
     return self:getOrCreateState(playerId).fortificationCharges

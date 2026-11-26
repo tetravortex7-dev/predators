@@ -162,5 +162,9 @@
   "DOTA_Tooltip_ability_evo_elasmyr_abyssal_flood_dps": {
     "ru": "УРОН В СЕКУНДУ:",
     "en": "DAMAGE PER SECOND:"
+  },
+  "evo_boss_killed_hero": {
+    "ru": "Босс убивает {player} за {gold} золота!",
+    "en": "Boss killed {player} for {gold} gold!"
   }
 }

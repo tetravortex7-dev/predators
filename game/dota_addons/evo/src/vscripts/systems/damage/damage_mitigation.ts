@@ -1,4 +1,5 @@
 import { DamageContext, DamageScaleRule, DamageStatKey } from "../../data/damage_rules";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
 
 export function resolveLevelValue(
     value: number | readonly number[] | undefined,
@@ -138,7 +139,7 @@ export function computeModifiedDamage(
         }
     }
 
-    if (rule.creepMultiplier !== undefined && ctx.victim.IsCreep()) {
+    if (rule.creepMultiplier !== undefined && isEvoCreepUnit(ctx.victim)) {
         nextDamage *= Math.max(0, rule.creepMultiplier);
     }
 

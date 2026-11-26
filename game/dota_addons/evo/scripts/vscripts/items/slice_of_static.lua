@@ -44,5 +44,3 @@ function modifier_item_slice_of_static_active_lua:OnAbilityFullyCast(kv)
 		ApplyDamage({victim=enemy, attacker=kv.unit, damage=enemy:GetHealth()*self:GetAbility():GetSpecialValueFor("damage_pct")/100, damage_type=DAMAGE_TYPE_MAGICAL, damage_flags=DOTA_DAMAGE_FLAG_NONE, ability=self:GetAbility()})
 	end
 end
-
-item_static_amulet_lua = item_static_amulet_lua or class(item_slice_of_static_lua)

@@ -69,11 +69,17 @@ export interface MutationDefinition {
     readonly slotType: MutationSlotType;
     readonly triggerType: MutationTriggerType;
     readonly modifierName: string;
+    readonly iconAbility?: string;
     readonly bonusDamage?: number;
     readonly bonusArmor?: number;
     readonly bonusMoveSpeed?: number;
     readonly bonusAttackSpeed?: number;
     readonly bonusHealth?: number;
+    readonly bonusManaRegen?: number;
+    readonly bonusHealthRegen?: number;
+    readonly bonusStrength?: number;
+    readonly bonusAgility?: number;
+    readonly bonusIntellect?: number;
     readonly cooldown?: number;
     readonly thresholdPercent?: number;
     readonly intervalSeconds?: number;

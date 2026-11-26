@@ -46,6 +46,17 @@
     }
     GameEvents.Subscribe("dota_player_update_selected_unit", () => refreshSelectedUnitName());
     GameEvents.Subscribe("dota_player_update_query_unit", () => refreshSelectedUnitName());
+    GameEvents.Subscribe("evo_focus_camera", (rawEvent) => {
+        const ev = rawEvent;
+        if (!ev)
+            return;
+        if (ev.x !== undefined && ev.y !== undefined && ev.z !== undefined) {
+            GameUI.SetCameraTargetPosition([ev.x, ev.y, ev.z], 0.05);
+        }
+        if (ev.entindex !== undefined) {
+            GameUI.MoveCameraToEntity(ev.entindex);
+        }
+    });
     function periodicSync() {
         refreshSelectedUnitName();
         $.Schedule(0.25, periodicSync);

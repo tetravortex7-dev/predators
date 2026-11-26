@@ -11,7 +11,6 @@ import {
     EVO_TIERS,
     getNextTierConfig,
 } from "../data/game_constants";
-import { getMutationDefinition, getMutationsForSlot } from "../data/mutations_catalog";
 import { HeroAppearance } from "../lib/HeroAppearance";
 import { SpellShopManager } from "./SpellShopManager";
 import {
@@ -20,7 +19,11 @@ import {
     stripDefaultHeroAbilities,
 } from "./evolution/evolution_hero_kit";
 import {
-    MUTATION_SLOT_ORDER,
+    handleRerollMutationDraft,
+    handleSelectMutationDraft,
+    openDevMutationDraft,
+} from "./evolution/evolution_mutations";
+import {
     PlayerEvolutionState,
     SelectAbilityDraftPayload,
     SelectBodyDraftPayload,
@@ -28,6 +31,7 @@ import {
     findFloorEvoThreshold,
     pickRandomSubset,
     reapplyMutationsToHero,
+    rollMutationChoices,
     syncPlayerEvoNetTable,
 } from "./evolution/evolution_types";
 
@@ -52,6 +56,9 @@ export class EvolutionManager {
         });
         CustomGameEventManager.RegisterListener("evo_select_mutation", (_, event) => {
             this.onSelectMutation(event as unknown as SelectMutationPayload);
+        });
+        CustomGameEventManager.RegisterListener("evo_reroll_mutation", (_, event) => {
+            this.onRerollMutation(event as unknown as { PlayerID: PlayerID });
         });
 
         this.eventBus.on("hero_leveled_up", ({ playerId, newLevel }) => {
@@ -149,11 +156,15 @@ export class EvolutionManager {
         const state = this.getOrCreateState(playerId);
         const previousBodyId = state.bodyId;
 
-        if (body.heroClass && body.heroClass.length > 0 && hero.GetUnitName() !== body.heroClass) {
+        const targetHeroClass =
+            body.heroClass && body.heroClass.length > 0 ? body.heroClass : hero.GetUnitName();
+        const resetHeroLevel = previousBodyId !== body.id || state.tierIndex !== body.tierIndex;
+        if (hero.GetUnitName() !== targetHeroClass || resetHeroLevel) {
             const preservedAbilities = collectPurchasedAbilities(hero, state);
-            const replaced = HeroAppearance.replaceHeroPreservingState(playerId, body.heroClass, {
+            const replaced = HeroAppearance.replaceHeroPreservingState(playerId, targetHeroClass, {
                 stripDefaultAbilities: body.keepDefaultHeroAbilities !== true,
                 preserveAbilities: preservedAbilities,
+                resetHeroLevel,
             });
             if (!replaced) return false;
             hero = replaced;
@@ -273,7 +284,7 @@ export class EvolutionManager {
                 }
                 if (candidates.length > 0) {
                     const selected =
-                        state.tierIndex === 0 && tier.tierIndex === 1
+                        state.tierIndex === 0 && tier.tierIndex === 1 && !IsInToolsMode()
                             ? pickRandomSubset(candidates, EVO_CONSTANTS.BODY_DRAFT_T1_CHOICES)
                             : candidates;
                     state.pendingDraftType = "BODY";
@@ -306,16 +317,19 @@ export class EvolutionManager {
         }
 
         if (EVO_CONSTANTS.ENABLE_MUTATION_DRAFT) {
-            for (let slotIndex = 0; slotIndex < EVO_CONSTANTS.MUTATION_DRAFT_LEVELS.length; slotIndex++) {
-                const reqLevel = EVO_CONSTANTS.MUTATION_DRAFT_LEVELS[slotIndex];
-                if (heroLevel >= reqLevel && !state.unlockedMutationSlots[slotIndex]) {
+            for (let slotIndex = 0; slotIndex < EVO_CONSTANTS.MUTATION_DRAFT_TIERS.length; slotIndex++) {
+                const reqTier = EVO_CONSTANTS.MUTATION_DRAFT_TIERS[slotIndex];
+                if (state.tierIndex >= reqTier && !state.unlockedMutationSlots[slotIndex]) {
                     state.unlockedMutationSlots[slotIndex] = true;
-                    const slotType = MUTATION_SLOT_ORDER[slotIndex];
-                    const mutations = getMutationsForSlot(slotType);
-                    if (mutations.length > 0) {
+                    const choices = rollMutationChoices(
+                        state,
+                        [],
+                        EVO_CONSTANTS.MUTATION_DRAFT_CHOICES
+                    );
+                    if (choices.length > 0) {
                         state.pendingDraftType = "MUTATION";
                         state.pendingMutationSlot = slotIndex;
-                        state.draftOptions = mutations.map((m) => m.id);
+                        state.draftOptions = choices;
                         return;
                     }
                 }
@@ -370,47 +384,26 @@ export class EvolutionManager {
     }
 
     private onSelectMutation(event: SelectMutationPayload): void {
-        if (!EVO_CONSTANTS.ENABLE_MUTATION_DRAFT) return;
-        const playerId = event.PlayerID;
-        if (!PlayerResource.IsValidPlayerID(playerId)) return;
-
-        const hero = PlayerResource.GetSelectedHeroEntity(playerId);
-        if (!hero || hero.IsNull() || !IsValidEntity(hero) || !hero.IsAlive()) return;
-
-        const state = this.getOrCreateState(playerId);
-        if (state.pendingDraftType !== "MUTATION") return;
-
-        const slotIndex = event.slot ?? state.pendingMutationSlot;
-        if (slotIndex !== state.pendingMutationSlot) return;
-
-        const optionIndex = event.option_index;
-        if (optionIndex === undefined || optionIndex < 0 || optionIndex >= state.draftOptions.length) {
-            return;
-        }
-
-        const mutationId = state.draftOptions[optionIndex];
-        const mutationDef = getMutationDefinition(mutationId);
-        if (!mutationDef) return;
-
-        state.mutations[slotIndex] = mutationDef.id;
-        state.pendingDraftType = "NONE";
-        state.draftOptions = [];
-
-        hero.AddNewModifier(hero, undefined, mutationDef.modifierName, {
-            mutation_id: mutationDef.id,
+        handleSelectMutationDraft({
+            event,
+            eventBus: this.eventBus,
+            getState: (pid) => this.getOrCreateState(pid),
+            checkProgress: (pid) => this.checkEvolutionProgress(pid),
         });
+    }
 
-        this.eventBus.emit("mutation_applied", {
-            playerId,
-            slotIndex,
-            mutationId: mutationDef.id,
+    private onRerollMutation(event: { PlayerID: PlayerID }): void {
+        handleRerollMutationDraft({
+            playerId: event.PlayerID,
+            getState: (pid) => this.getOrCreateState(pid),
         });
-
-        this.checkEvolutionProgress(playerId);
-        syncPlayerEvoNetTable(playerId, state);
     }
 
     private onDevCommand(playerId: PlayerID, command: string, args: string[]): void {
+        if (command === "-evo_mut") {
+            openDevMutationDraft(playerId, (pid) => this.getOrCreateState(pid));
+            return;
+        }
         if (command === "-evo_evo") {
             const amount = tonumber(args[0]) ?? 10;
             this.addEvoPoints(playerId, amount);
@@ -444,6 +437,7 @@ export class EvolutionManager {
                 mutations: [undefined, undefined, undefined],
                 unlockedAbilitySlots: [false, false, false],
                 unlockedMutationSlots: [false, false, false],
+                mutationRerollsRemaining: EVO_CONSTANTS.MUTATION_REROLLS_PER_MATCH,
                 pendingDraftType: "NONE",
                 pendingMutationSlot: -1,
                 draftOptions: [],

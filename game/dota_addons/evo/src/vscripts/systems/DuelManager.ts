@@ -2,18 +2,20 @@ import { EventBus } from "../core/EventBus";
 import { EVO_CONSTANTS } from "../data/game_constants";
 import { BossManager } from "./BossManager";
 import {
-    applyWorldPause,
     broadcastDuelEvent,
+    notifyPreDuelCountdown,
     prepareDuelistSnapshot,
-    releaseWorldPause,
+    resolveAndRecordPvpOutcome,
     restoreDuelistAfterDuel,
     syncDuelNetState,
 } from "./duel/duel_arena";
 import {
+    ensureDevTestBot,
     evaluateActiveDuelKill,
+    evaluateDuelTimeoutOutcome,
+    launchDevSparringFallback,
     prepareBossChallengers,
     processDuelBetPlacement,
-    spawnDevSparringDummy,
 } from "./duel/duel_boss";
 import {
     ActiveBossDuel,
@@ -27,8 +29,8 @@ import {
     discoverArenaLocations,
     generateDuelPairs,
     getTeamPlayerIds,
+    hasMultiPlayerTeams,
     pickWeightedBossDuelTeam,
-    pickWeightedChampion,
     settleBets,
     settleBossDuelBets,
 } from "./duel/duel_types";
@@ -50,17 +52,20 @@ export class DuelManager {
     private betCloseTime = 0;
 
     private pendingPairs: DuelPair[] = [];
+    private preselectedPairs: DuelPair[] = [];
+    private preselectedForRound = 0;
+    private lastCountdownTickSec = -1;
     private currentPair?: DuelPair;
     private activeBossDuel?: ActiveBossDuel;
     private readonly activeDuelistEntIndexes: Set<EntityIndex> = new Set();
     private readonly snapshots: Map<PlayerID, PreDuelSnapshot> = new Map();
     private readonly applicants: Set<PlayerID> = new Set();
     private readonly activeBets: Map<PlayerID, DuelBet> = new Map();
-    private readonly pausedEntIndexes: Set<EntityIndex> = new Set();
+    private readonly duelWinsByPlayer: Map<PlayerID, number> = new Map();
+    private readonly duelLossesByPlayer: Map<PlayerID, number> = new Map();
 
     private sparringDummy?: CDOTA_BaseNPC;
-    private tiebreakerTeams: [DotaTeam, DotaTeam] | undefined;
-    private tiebreakerWins: Map<DotaTeam, number> = new Map();
+    private readonly tiebreakerWins: Map<DotaTeam, number> = new Map();
 
     constructor(
         private readonly eventBus: EventBus,
@@ -90,12 +95,8 @@ export class DuelManager {
             });
         });
 
-        this.eventBus.on("tiebreaker_requested", ({ tiedTeams }) => {
-            this.startTiebreaker(tiedTeams);
-        });
         this.eventBus.on("match_ended", () => {
             this.matchEnded = true;
-            releaseWorldPause(this.pausedEntIndexes);
         });
         this.eventBus.on("dev_command", ({ playerId, command, args }) => {
             if (command === "-evo_duel") {
@@ -146,37 +147,84 @@ export class DuelManager {
                 return 1.0;
             }
             if (now >= this.duelEndTime) {
-                this.finishCurrentDuel(undefined, undefined);
+                const outcome = evaluateDuelTimeoutOutcome({
+                    currentPair: this.currentPair,
+                    sparringDummy: this.sparringDummy,
+                });
+                const endReason = outcome.winnerId !== undefined ? "hp" : "draw";
+                this.finishCurrentDuel(outcome.winnerId, outcome.loserId, endReason);
             } else {
                 this.syncDuelState();
             }
             return 1.0;
         }
 
-        if (!this.isTiebreaker && this.roundIndex < EVO_CONSTANTS.DUEL_MAX_ROUNDS && now >= this.nextDuelTime) {
-            this.nextDuelTime = now + EVO_CONSTANTS.DUEL_INTERVAL_SECONDS;
-            this.startRegularDuelSeries();
+        if (!this.isTiebreaker) {
+            const secondsLeft = Math.ceil(this.nextDuelTime - now);
+            if (now >= this.nextDuelTime) {
+                this.nextDuelTime = now + EVO_CONSTANTS.DUEL_INTERVAL_SECONDS;
+                this.startRegularDuelSeries();
+            } else {
+                if (secondsLeft <= EVO_CONSTANTS.DUEL_COUNTDOWN_SECONDS && secondsLeft >= 1) {
+                    this.tickPreDuelCountdown(secondsLeft);
+                }
+                this.syncDuelState();
+            }
         }
 
         return 1.0;
     }
 
+    private tickPreDuelCountdown(secondsLeft: number): void {
+        const upcomingRound = this.roundIndex + 1;
+        const willBeBossDuel =
+            hasMultiPlayerTeams() &&
+            upcomingRound % EVO_CONSTANTS.BOSS_DUEL_EVERY_N_ROUNDS === 0 &&
+            this.bossManager.getStrongestAliveBoss() !== undefined;
+        if (willBeBossDuel) return;
+
+        if (this.preselectedForRound !== upcomingRound) {
+            this.preselectedForRound = upcomingRound;
+            this.preselectedPairs = generateDuelPairs(this.applicants);
+        }
+
+        if (this.preselectedPairs.length === 0 || secondsLeft === this.lastCountdownTickSec) {
+            return;
+        }
+        this.lastCountdownTickSec = secondsLeft;
+        notifyPreDuelCountdown(this.preselectedPairs[0], secondsLeft);
+    }
+
     private startRegularDuelSeries(): void {
         const nextRound = this.roundIndex + 1;
         if (
+            hasMultiPlayerTeams() &&
             nextRound % EVO_CONSTANTS.BOSS_DUEL_EVERY_N_ROUNDS === 0 &&
             this.bossManager.getStrongestAliveBoss() !== undefined
         ) {
             const team = pickWeightedBossDuelTeam(this.applicants);
             if (team !== undefined && this.startBossArenaDuel(team)) {
+                this.preselectedPairs = [];
+                this.preselectedForRound = 0;
+                this.lastCountdownTickSec = -1;
                 this.applicants.clear();
                 return;
             }
         }
 
-        const pairs = generateDuelPairs(this.applicants);
+        const preselected = this.preselectedPairs.filter(
+            (pair) =>
+                PlayerResource.IsValidPlayerID(pair.playerA) &&
+                PlayerResource.IsValidPlayerID(pair.playerB)
+        );
+        const pairs = preselected.length > 0 ? preselected : generateDuelPairs(this.applicants);
+        this.preselectedPairs = [];
+        this.preselectedForRound = 0;
+        this.lastCountdownTickSec = -1;
+
         if (pairs.length === 0) {
             debugDuelChat("[Evo] Duel skipped: not enough teams.");
+            this.syncDuelState();
             return;
         }
 
@@ -190,24 +238,15 @@ export class DuelManager {
     private startBossArenaDuel(challengingTeam: DotaTeam): boolean {
         const bossInfo = this.bossManager.getStrongestAliveBoss();
         if (!bossInfo) return false;
-
         const challengers = getTeamPlayerIds(challengingTeam);
         if (challengers.length === 0) return false;
-
         const bossReturnPos = this.bossManager.prepareBossForArena(bossInfo.bossId, this.spawnB, this.spawnA);
         if (!bossReturnPos) return false;
 
         this.roundIndex += 1;
         this.isTiebreaker = false;
         this.beginActiveStage(true, EVO_CONSTANTS.BOSS_DUEL_DURATION_SECONDS);
-
-        prepareBossChallengers(
-            challengers,
-            this.spawnA,
-            this.spawnB,
-            this.snapshots,
-            this.activeDuelistEntIndexes
-        );
+        prepareBossChallengers(challengers, this.spawnA, this.spawnB, this.snapshots, this.activeDuelistEntIndexes);
         this.activeDuelistEntIndexes.add(bossInfo.unit.entindex());
         this.activeBossDuel = {
             bossId: bossInfo.bossId,
@@ -216,15 +255,10 @@ export class DuelManager {
             challengingTeam,
             challengerIds: challengers,
         };
-
-        applyWorldPause(this.activeDuelistEntIndexes, this.pausedEntIndexes);
         this.eventBus.emit("duel_started", { roundIndex: this.roundIndex, isTiebreaker: false });
         broadcastDuelEvent("started");
         this.syncDuelState();
-
-        debugDuelChat(
-            `[Evo] BOSS ARENA! Team ${challengingTeam} vs ${bossInfo.bossId} (Lv.${bossInfo.level}) — ${EVO_CONSTANTS.BOSS_DUEL_DURATION_SECONDS}s!`
-        );
+        debugDuelChat(`[Evo] BOSS ARENA! Team ${challengingTeam} vs ${bossInfo.bossId} (Lv.${bossInfo.level})`);
         return true;
     }
 
@@ -244,7 +278,6 @@ export class DuelManager {
         this.snapshots.clear();
 
         this.bossManager.returnBossFromArena(bossDuel.bossId, bossDuel.bossReturnPos, !teamWon);
-        releaseWorldPause(this.pausedEntIndexes);
 
         const leadWinner = teamWon ? bossDuel.challengerIds[0] : undefined;
         this.eventBus.emit("duel_finished", {
@@ -263,43 +296,30 @@ export class DuelManager {
         );
     }
 
-    private startTiebreaker(tiedTeams: DotaTeam[]): void {
-        if (this.matchEnded || tiedTeams.length < 2) return;
-
-        this.isTiebreaker = true;
-        this.tiebreakerTeams = [tiedTeams[0], tiedTeams[1]];
-        this.tiebreakerWins.clear();
-        this.tiebreakerWins.set(tiedTeams[0], 0);
-        this.tiebreakerWins.set(tiedTeams[1], 0);
-        this.pendingPairs = [];
-
-        debugDuelChat("[Evo] TIEBREAKER Bo3 started!");
-        this.queueNextTiebreakerPair();
-    }
-
-    private queueNextTiebreakerPair(): void {
-        if (!this.tiebreakerTeams) return;
-        const [teamA, teamB] = this.tiebreakerTeams;
-        const playerA = pickWeightedChampion(teamA, this.applicants);
-        const playerB = pickWeightedChampion(teamB, this.applicants);
-        if (playerA === undefined || playerB === undefined) {
-            this.finishTiebreaker(playerA !== undefined ? teamA : teamB);
-            return;
-        }
-
-        this.roundIndex += 1;
-        this.pendingPairs = [{ playerA, playerB, teamA, teamB }];
-        this.beginNextPair();
-    }
-
     private triggerDevDuel(playerId: PlayerID, args: string[]): void {
         const sub = (args[0] ?? "").toLowerCase();
         if (this.active) {
             if (this.activeBossDuel) {
                 this.finalizeBossDuel(false);
             } else {
-                this.finishCurrentDuel(playerId, undefined);
+                this.finishCurrentDuel(playerId, undefined, "kill");
             }
+            return;
+        }
+
+        if (sub === "test") {
+            const delay = Math.max(6, Math.min(30, tonumber(args[1]) ?? 8));
+            const hasBot = ensureDevTestBot(playerId);
+            this.preselectedPairs = [];
+            this.preselectedForRound = 0;
+            this.lastCountdownTickSec = -1;
+            this.nextDuelTime = GameRules.GetDOTATime(false, false) + delay;
+            this.syncDuelState();
+            debugDuelChat(
+                hasBot
+                    ? `[Evo] Test duel countdown set to ${delay}s vs NoobBot!`
+                    : "[Evo] Failed to spawn test bot!"
+            );
             return;
         }
 
@@ -323,9 +343,6 @@ export class DuelManager {
             return;
         }
 
-        const hero = PlayerResource.GetSelectedHeroEntity(playerId);
-        if (!hero || hero.IsNull() || !IsValidEntity(hero)) return;
-
         this.roundIndex += 1;
         this.isTiebreaker = false;
         this.beginActiveStage(false, EVO_CONSTANTS.DUEL_DURATION_SECONDS, {
@@ -334,13 +351,15 @@ export class DuelManager {
             teamA: PlayerResource.GetTeam(playerId),
             teamB: DotaTeam.CUSTOM_5,
         });
-        prepareDuelistSnapshot(playerId, this.spawnA, this.spawnB, this.snapshots, this.activeDuelistEntIndexes);
-        this.sparringDummy = spawnDevSparringDummy(hero, this.spawnB, this.activeDuelistEntIndexes);
-
-        applyWorldPause(this.activeDuelistEntIndexes, this.pausedEntIndexes);
+        this.sparringDummy = launchDevSparringFallback({
+            playerId,
+            spawnA: this.spawnA,
+            spawnB: this.spawnB,
+            snapshots: this.snapshots,
+            activeDuelistEntIndexes: this.activeDuelistEntIndexes,
+        });
         broadcastDuelEvent("started");
         this.syncDuelState();
-        debugDuelChat("[Evo] Dev solo duel started on arena!");
     }
 
     private beginActiveStage(betsOpen: boolean, durationSeconds: number, pair?: DuelPair): void {
@@ -360,7 +379,6 @@ export class DuelManager {
         if (!nextPair) {
             this.active = false;
             this.currentPair = undefined;
-            releaseWorldPause(this.pausedEntIndexes);
             this.syncDuelState();
             return;
         }
@@ -369,7 +387,6 @@ export class DuelManager {
 
         prepareDuelistSnapshot(nextPair.playerA, this.spawnA, this.spawnB, this.snapshots, this.activeDuelistEntIndexes);
         prepareDuelistSnapshot(nextPair.playerB, this.spawnB, this.spawnA, this.snapshots, this.activeDuelistEntIndexes);
-        applyWorldPause(this.activeDuelistEntIndexes, this.pausedEntIndexes);
 
         this.eventBus.emit("duel_started", { roundIndex: this.roundIndex, isTiebreaker: this.isTiebreaker });
         broadcastDuelEvent("started");
@@ -392,11 +409,15 @@ export class DuelManager {
         if (outcome.kind === "boss_duel_end") {
             this.finalizeBossDuel(outcome.teamWon);
         } else if (outcome.kind === "pvp_duel_end") {
-            this.finishCurrentDuel(outcome.winnerId, outcome.loserId);
+            this.finishCurrentDuel(outcome.winnerId, outcome.loserId, "kill");
         }
     }
 
-    private finishCurrentDuel(winnerId: PlayerID | undefined, loserId: PlayerID | undefined): void {
+    private finishCurrentDuel(
+        winnerId: PlayerID | undefined,
+        loserId: PlayerID | undefined,
+        reason: "kill" | "hp" | "draw" = "kill"
+    ): void {
         if (!this.active) return;
 
         const pair = this.currentPair;
@@ -410,17 +431,24 @@ export class DuelManager {
         }
         this.sparringDummy = undefined;
 
-        settleBets(this.activeBets, winnerId);
+        const totalBetPayout = settleBets(this.activeBets, winnerId);
         if (pair) {
             restoreDuelistAfterDuel(pair.playerA, winnerId === pair.playerA, this.snapshots);
             restoreDuelistAfterDuel(pair.playerB, winnerId === pair.playerB, this.snapshots);
         }
         this.snapshots.clear();
 
-        const validWinner =
-            winnerId !== undefined && PlayerResource.IsValidPlayerID(winnerId) ? winnerId : undefined;
-        const validLoser =
-            loserId !== undefined && PlayerResource.IsValidPlayerID(loserId) ? loserId : undefined;
+        const { validWinner, validLoser } = resolveAndRecordPvpOutcome({
+            winnerId,
+            loserId,
+            pair,
+            isTiebreaker: this.isTiebreaker,
+            roundIndex: this.roundIndex,
+            reason,
+            totalBetPayout,
+            duelWins: this.duelWinsByPlayer,
+            duelLosses: this.duelLossesByPlayer,
+        });
 
         this.eventBus.emit("duel_finished", {
             roundIndex: this.roundIndex,
@@ -437,36 +465,11 @@ export class DuelManager {
             debugDuelChat("[Evo] Duel ended in a draw!");
         }
 
-        if (this.isTiebreaker && this.tiebreakerTeams) {
-            if (validWinner !== undefined) {
-                const winTeam = PlayerResource.GetTeam(validWinner);
-                const newWins = (this.tiebreakerWins.get(winTeam) ?? 0) + 1;
-                this.tiebreakerWins.set(winTeam, newWins);
-                if (newWins >= 2) {
-                    this.finishTiebreaker(winTeam);
-                    return;
-                }
-            }
-            this.queueNextTiebreakerPair();
-            return;
-        }
-
         if (this.pendingPairs.length > 0) {
             this.beginNextPair();
         } else {
-            releaseWorldPause(this.pausedEntIndexes);
             this.syncDuelState();
         }
-    }
-
-    private finishTiebreaker(winnerTeam: DotaTeam): void {
-        this.isTiebreaker = false;
-        this.tiebreakerTeams = undefined;
-        releaseWorldPause(this.pausedEntIndexes);
-        this.syncDuelState();
-
-        this.eventBus.emit("match_ended", { winnerTeam, reason: "tiebreaker" });
-        GameRules.SetGameWinner(winnerTeam);
     }
 
     private onDuelApply(event: DuelApplyPayload): void {
@@ -486,6 +489,8 @@ export class DuelManager {
             activeBossDuel: this.activeBossDuel,
             currentPair: this.currentPair,
             tiebreakerWins: this.tiebreakerWins,
+            duelWins: this.duelWinsByPlayer,
+            duelLosses: this.duelLossesByPlayer,
         });
     }
 }

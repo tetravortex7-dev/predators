@@ -21,6 +21,7 @@ export interface ReplaceHeroOptions {
     readonly stripDefaultAbilities?: boolean;
     readonly preserveAbilities?: readonly string[];
     readonly appearance?: HeroAppearancePreset;
+    readonly resetHeroLevel?: boolean;
 }
 
 interface SavedAbilityState {
@@ -265,7 +266,7 @@ export class HeroAppearance {
         const oldHero = PlayerResource.GetSelectedHeroEntity(playerId);
         if (!oldHero || oldHero.IsNull() || !IsValidEntity(oldHero)) return undefined;
 
-        if (oldHero.GetUnitName() === newHeroClass) {
+        if (oldHero.GetUnitName() === newHeroClass && !options.resetHeroLevel) {
             if (options.appearance) {
                 this.applyPreset(oldHero, options.appearance);
             }
@@ -274,11 +275,12 @@ export class HeroAppearance {
 
         const savedPos = oldHero.GetAbsOrigin();
         const savedForward = oldHero.GetForwardVector();
-        const savedLevel = oldHero.GetLevel();
-        const savedXp = oldHero.GetCurrentXP();
+        const resetHeroLevel = options.resetHeroLevel === true;
+        const savedLevel = resetHeroLevel ? 1 : oldHero.GetLevel();
+        const savedXp = resetHeroLevel ? 0 : oldHero.GetCurrentXP();
         const savedGold = PlayerResource.GetGold(playerId);
-        const savedHpPct = Math.max(0.05, oldHero.GetHealthPercent() / 100);
-        const savedMpPct = Math.max(0, oldHero.GetManaPercent() / 100);
+        const savedHpPct = resetHeroLevel ? 1.0 : Math.max(0.05, oldHero.GetHealthPercent() / 100);
+        const savedMpPct = resetHeroLevel ? 1.0 : Math.max(0, oldHero.GetManaPercent() / 100);
 
         const peaceMod = oldHero.FindModifierByName("modifier_evo_peace_time");
         const savedPeaceRemaining = peaceMod ? Math.max(0, peaceMod.GetRemainingTime()) : 0;
@@ -304,6 +306,14 @@ export class HeroAppearance {
             return undefined;
         }
 
+        for (let slot = 0; slot <= 16; slot++) {
+            const item = oldHero.GetItemInSlot(slot);
+            if (item && !item.IsNull() && IsValidEntity(item)) {
+                oldHero.TakeItem(item);
+                newHero.AddItem(item);
+            }
+        }
+
         if (oldHero !== newHero && !oldHero.IsNull() && IsValidEntity(oldHero)) {
             GameRules.GetGameModeEntity().SetContextThink(
                 DoUniqueString("EvoRemoveOldHero"),
@@ -317,8 +327,12 @@ export class HeroAppearance {
             );
         }
 
-        while (newHero.GetLevel() < savedLevel) {
-            newHero.HeroLevelUp(false);
+        if (resetHeroLevel) {
+            newHero.SetAbilityPoints(1);
+        } else {
+            while (newHero.GetLevel() < savedLevel) {
+                newHero.HeroLevelUp(false);
+            }
         }
 
         if (options.stripDefaultAbilities === true) {

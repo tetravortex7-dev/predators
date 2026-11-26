@@ -28,18 +28,18 @@ ____exports.EVO_BOSSES_CATALOG = {{
     }, {abilityName = "evo_elasmyr_abyssal_flood", usage = "ULTIMATE_COMBAT", maxCastDistance = 580}},
     itemBuilds = {{
         {itemName = "item_phase_boots", goldCost = 1500},
-        {itemName = "item_cursed_sange_lua", goldCost = 5000},
-        {itemName = "item_amaliels_cuirass_lua", goldCost = 6500},
-        {itemName = "item_angels_armor_lua", goldCost = 7500},
-        {itemName = "item_heart_of_alaron_lua", goldCost = 8500},
-        {itemName = "item_dead_boots_lua", goldCost = 10000}
+        {itemName = "item_heart", goldCost = 5000},
+        {itemName = "item_assault", goldCost = 6500},
+        {itemName = "item_shivas_guard", goldCost = 7500},
+        {itemName = "item_satanic", goldCost = 8500},
+        {itemName = "item_skadi", goldCost = 10000}
     }, {
         {itemName = "item_power_treads", goldCost = 1400},
-        {itemName = "item_bfury_lua", goldCost = 4200},
-        {itemName = "item_saint_yasha_lua", goldCost = 5000},
+        {itemName = "item_bfury", goldCost = 4200},
+        {itemName = "item_sange_and_yasha", goldCost = 5000},
         {itemName = "item_demons_claw_lua", goldCost = 7500},
-        {itemName = "item_burning_blades_lua", goldCost = 8000},
-        {itemName = "item_piercing_blade_lua", goldCost = 9000}
+        {itemName = "item_butterfly", goldCost = 8000},
+        {itemName = "item_monkey_king_bar", goldCost = 9000}
     }},
     baseScoreReward = 50,
     maxScoreReward = 125,

@@ -1,0 +1,278 @@
+{
+  "key": "spectre",
+  "hero": "npc_dota_hero_spectre",
+  "model": "models/heroes/spectre/spectre.vmdl",
+  "diet": "CARNIVORE",
+  "attr": "AGI",
+  "keep_default_abilities": false,
+  "tags": ["spectre", "astral", "shadow"],
+  "spell_pool_tags": ["burst", "utility"],
+  "innate": "evo_spectre_dispersion",
+  "signature": "evo_spectre_t1_q",
+  "stages": [
+    {
+      "id": "evo_body_t1_spectre",
+      "tier_index": 1,
+      "name_ru": "Блуждающий Сгусток",
+      "name_en": "Wandering Wisp",
+      "desc_ru": "Полупрозрачная тень Разлома с обзором 1400/1400 и врождённым Рассеиванием (поглощает и отражает входящий урон по области).\nРазвивается в Фантома Разломов (AGI), Астрального Бастиона (STR) или Зеркало Инверсии (INT).",
+      "desc_en": "Translucent Rift shadow with 1400/1400 vision and innate Dispersion (absorbs and reflects incoming damage in an area).\nEvolves into Rift Phantom (AGI), Astral Bastion (STR), or Mirror of Inversion (INT).",
+      "scale": 0.65,
+      "ability_level": 1,
+      "abilities": [
+        "evo_spectre_t1_q",
+        "evo_spectre_t1_w",
+        "evo_spectre_dispersion"
+      ],
+      "next_body_ids": [
+        "evo_body_t2_spectre_phantom",
+        "evo_body_t2_spectre_bastion",
+        "evo_body_t2_spectre_mirror"
+      ],
+      "color": [115, 70, 175],
+      "alpha": 195,
+      "label_color": [170, 130, 235],
+      "wearables": []
+    },
+    {
+      "id": "evo_body_t2_spectre_phantom",
+      "tier_index": 2,
+      "attr": "AGI",
+      "name_ru": "Тень Клинков",
+      "name_en": "Blade Shadow",
+      "desc_ru": "Фантом Разломов (AGI / мобильный фарм-ассасин): Теневой серп [Q], Зеркальное лезвие [W], Астральный портал [E] и Материализация [D]. При получении урона ускоряется, а Рассеивание бьёт ещё и из ближайшего портала.",
+      "desc_en": "Rift Phantom (AGI / portal assassin): Shadow Crescent [Q], Mirror Blade [W], Astral Portal [E], and Reality [D]. Gains haste when hurt and echoes Dispersion around the nearest portal.",
+      "scale": 0.8,
+      "ability_level": 1,
+      "innate": "evo_spectre_phantom_dispersion",
+      "abilities": [
+        "evo_spectre_phantom_q",
+        "evo_spectre_phantom_w",
+        "evo_spectre_phantom_e",
+        "evo_spectre_phantom_d",
+        "evo_spectre_phantom_dispersion"
+      ],
+      "next_body_ids": ["evo_body_t3_spectre_phantom"],
+      "color": [155, 65, 235],
+      "label_color": [185, 110, 255],
+      "wearables": [
+        "Soul Diffuser"
+      ]
+    },
+    {
+      "id": "evo_body_t3_spectre_phantom",
+      "tier_index": 3,
+      "attr": "AGI",
+      "name_ru": "Охотник Пустоты",
+      "name_en": "Void Hunter",
+      "desc_ru": "Возвратный серп [Q], обездвиживание и срез брони от выпада [W], True Sight в порталах [E] и Теневые заряды от Рассеивания.",
+      "desc_en": "Returning crescent [Q], rooting armor-shred strike on [W], True Sight portals [E], and Shadow Charges from Dispersion.",
+      "scale": 0.95,
+      "ability_level": 1,
+      "innate": "evo_spectre_phantom_dispersion",
+      "abilities": [
+        "evo_spectre_phantom_q",
+        "evo_spectre_phantom_w",
+        "evo_spectre_phantom_e",
+        "evo_spectre_phantom_d",
+        "evo_spectre_phantom_dispersion"
+      ],
+      "next_body_ids": ["evo_body_t4_spectre_phantom"],
+      "color": [115, 35, 210],
+      "label_color": [150, 90, 245],
+      "wearables": [
+        "Soul Diffuser",
+        "Crown of Enduring Solitude",
+        "Transversant Soul"
+      ]
+    },
+    {
+      "id": "evo_body_t4_spectre_phantom",
+      "tier_index": 4,
+      "attr": "AGI",
+      "name_ru": "Фантом Разломов",
+      "name_en": "Rift Phantom",
+      "desc_ru": "Серп накладывает модификаторы атак [Q], каждый 2-й удар с чистым кливом после рывка [W], ударная волна портала [E] и ультимейт Шторм Разломов [R].",
+      "desc_en": "Crescent procs attack modifiers [Q], every 2nd hit cleaves after burst/Reality [W], portal shockwave [E], and Rift Storm [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "innate": "evo_spectre_phantom_dispersion",
+      "abilities": [
+        "evo_spectre_phantom_q",
+        "evo_spectre_phantom_w",
+        "evo_spectre_phantom_e",
+        "evo_spectre_phantom_d",
+        "evo_spectre_phantom_r",
+        "evo_spectre_phantom_dispersion"
+      ],
+      "next_body_ids": [],
+      "color": [75, 20, 165],
+      "label_color": [135, 75, 235],
+      "wearables": [
+        "Crescent Huntress Weapon",
+        "Crescent Huntress Head",
+        "Crescent Huntress Shoulder",
+        "Crescent Huntress Belt",
+        "Crescent Huntress Arms"
+      ]
+    },
+    {
+      "id": "evo_body_t2_spectre_bastion",
+      "tier_index": 2,
+      "attr": "STR",
+      "name_ru": "Сгусток Барьера",
+      "name_en": "Barrier Wisp",
+      "desc_ru": "Астральный Бастион (STR / повелитель щитов): Астральный кокон [Q], подрыв всех щитов Разрядом барьера [W] и накопление щита вне боя [E]. Рассеивание остаётся неизменным.",
+      "desc_en": "Astral Bastion (STR / shield protector): Astral Cocoon [Q], Barrier Discharge [W] detonating active shields, and Aegis Repose [E] out-of-combat barrier regeneration.",
+      "scale": 0.8,
+      "ability_level": 1,
+      "innate": "evo_spectre_dispersion",
+      "abilities": [
+        "evo_spectre_bastion_q",
+        "evo_spectre_bastion_w",
+        "evo_spectre_bastion_e",
+        "evo_spectre_dispersion"
+      ],
+      "next_body_ids": ["evo_body_t3_spectre_bastion"],
+      "color": [120, 200, 255],
+      "label_color": [135, 210, 255],
+      "wearables": [
+        "Transversant Soul"
+      ]
+    },
+    {
+      "id": "evo_body_t3_spectre_bastion",
+      "tier_index": 3,
+      "attr": "STR",
+      "name_ru": "Страж Грани",
+      "name_en": "Edge Warden",
+      "desc_ru": "Сильное развеивание и лечение от кокона [Q], реген щита при пустом разряде [W] и восстановление щита в бою [E].",
+      "desc_en": "Strong Dispel and heal on Cocoon [Q], combat shield surge when discharging empty [W], and in-combat barrier trickle [E].",
+      "scale": 0.95,
+      "ability_level": 1,
+      "innate": "evo_spectre_dispersion",
+      "abilities": [
+        "evo_spectre_bastion_q",
+        "evo_spectre_bastion_w",
+        "evo_spectre_bastion_e",
+        "evo_spectre_dispersion"
+      ],
+      "next_body_ids": ["evo_body_t4_spectre_bastion"],
+      "color": [75, 155, 245],
+      "label_color": [110, 185, 255],
+      "wearables": [
+        "Transversant Soul",
+        "Conservator's Headguard",
+        "Conservator's Blade"
+      ]
+    },
+    {
+      "id": "evo_body_t4_spectre_bastion",
+      "tier_index": 4,
+      "attr": "STR",
+      "name_ru": "Астральный Бастион",
+      "name_en": "Astral Bastion",
+      "desc_ru": "Кокон накладывается в контроле и дублируется на себя [Q], стяжка врагов [W], конвертация урона в щит [E] и Несокрушимый Купол [R].",
+      "desc_en": "Castable while stunned/silenced & self-mirroring Cocoon [Q], enemy pull [W], damage-to-shield leech [E], and Unbreakable Dome [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "innate": "evo_spectre_dispersion",
+      "abilities": [
+        "evo_spectre_bastion_q",
+        "evo_spectre_bastion_w",
+        "evo_spectre_bastion_e",
+        "evo_spectre_bastion_r",
+        "evo_spectre_dispersion"
+      ],
+      "next_body_ids": [],
+      "color": [240, 215, 110],
+      "label_color": [245, 220, 125],
+      "wearables": [
+        "Transversant Soul",
+        "Conservator's Headguard",
+        "Conservator's Blade",
+        "Conservator's Vanguard",
+        "Conservator's Bracers"
+      ]
+    },
+    {
+      "id": "evo_body_t2_spectre_mirror",
+      "tier_index": 2,
+      "attr": "INT",
+      "name_ru": "Осколок Зазеркалья",
+      "name_en": "Mirror Shard",
+      "desc_ru": "Зеркало Инверсии (INT / анти-физ дуэлянт): Рассеивание заменяется Астральной Инверсией (отражает весь физ. урон как магию), Луч инверсии [Q], Эфирные клинки [W], Зеркальная оболочка [E].",
+      "desc_en": "Mirror of Inversion (INT / anti-physical duelist): Replaces Dispersion with Astral Inversion (reflects physical damage as magic), Inversion Beam [Q], Ethereal Blades [W], Mirror Shell [E].",
+      "scale": 0.8,
+      "ability_level": 1,
+      "innate": "evo_spectre_mirror_inversion",
+      "abilities": [
+        "evo_spectre_mirror_q",
+        "evo_spectre_mirror_w",
+        "evo_spectre_mirror_e",
+        "evo_spectre_mirror_inversion"
+      ],
+      "next_body_ids": ["evo_body_t3_spectre_mirror"],
+      "color": [65, 235, 205],
+      "label_color": [95, 240, 215],
+      "wearables": [
+        "Crest of the Flowering Shade"
+      ]
+    },
+    {
+      "id": "evo_body_t3_spectre_mirror",
+      "tier_index": 3,
+      "attr": "INT",
+      "name_ru": "Исказитель Материи",
+      "name_en": "Matter Distorter",
+      "desc_ru": "Безмолвие и срез MR от Луча [Q], True Strike, маг. клив и выжигание маны [W], 35% физ. блока под провокацией [E] и срез MR при Инверсии.",
+      "desc_en": "Silence & MR shred on Beam [Q], True Strike, arcane cleave & mana drain [W], 35% phys mitigation during taunt [E], and MR shred on Inversion.",
+      "scale": 0.95,
+      "ability_level": 1,
+      "innate": "evo_spectre_mirror_inversion",
+      "abilities": [
+        "evo_spectre_mirror_q",
+        "evo_spectre_mirror_w",
+        "evo_spectre_mirror_e",
+        "evo_spectre_mirror_inversion"
+      ],
+      "next_body_ids": ["evo_body_t4_spectre_mirror"],
+      "color": [45, 160, 240],
+      "label_color": [90, 190, 255],
+      "wearables": [
+        "Crest of the Flowering Shade",
+        "Drape of the Flowering Shade",
+        "Edge of the Flowering Shade"
+      ]
+    },
+    {
+      "id": "evo_body_t4_spectre_mirror",
+      "tier_index": 4,
+      "attr": "INT",
+      "name_ru": "Зеркало Инверсии",
+      "name_en": "Mirror of Inversion",
+      "desc_ru": "Зеркальный разлом на Луче [Q], оглушение на каждом 4-м ударе [W], сброс [W] от отражения [E] и Сингулярность Зазеркалья [R].",
+      "desc_en": "Mirror rift DoT on Beam [Q], 4th-strike stun [W], [W] reset on taunt reflect [E], and Looking-Glass Singularity [R].",
+      "scale": 1.1,
+      "ability_level": 1,
+      "innate": "evo_spectre_mirror_inversion",
+      "abilities": [
+        "evo_spectre_mirror_q",
+        "evo_spectre_mirror_w",
+        "evo_spectre_mirror_e",
+        "evo_spectre_mirror_r",
+        "evo_spectre_mirror_inversion"
+      ],
+      "next_body_ids": [],
+      "color": [215, 75, 185],
+      "label_color": [235, 115, 215],
+      "wearables": [
+        "Crest of the Flowering Shade",
+        "Drape of the Flowering Shade",
+        "Edge of the Flowering Shade",
+        "Flow of the Flowering Shade",
+        "Bracers of Malicious Efflorescence"
+      ]
+    }
+  ]
+}

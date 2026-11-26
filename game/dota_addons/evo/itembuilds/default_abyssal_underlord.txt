@@ -20,21 +20,12 @@
 		{	
 			"item"		"item_fireblend_lua"
 			"item"		"item_leaf_buckler_lua"
-			"item"		"item_hand_of_midas_custom"
-			"item"		"item_midas_sword"
-			"item"		"item_phase_boots_2"
-			"item"		"item_might_treads_lua"
 		}
 		
 		"#DOTA_Item_Build_Mage"
 		{
-			"item"		"item_ultra_null_talisman"
 			"item"		"item_quibbela"
-			"item"      "item_refresher_core_lua"
-			"item"      "item_aether_lens_2"
-			"item"		"item_mana_heart"
 			"item"		"item_durandal"
-			"item"		"item_asura_staff"
 			"item"		"item_manteau_invis"
 			"item"		"item_solomon_book"
 		}

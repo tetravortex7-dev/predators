@@ -1,0 +1,23 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+    </styles>
+    <Panel class="EvoLoadingRoot">
+        <Panel id="EvoLoadingCanvas">
+            <Image
+                id="EvoLoadingImage16x9"
+                class="EvoLoadingArtwork"
+                scaling="stretch-to-cover-preserving-aspect"
+                src="file://{images}/custom_game/loading_screen/evo_loading_16x9.png"
+            />
+            <Image
+                id="EvoLoadingImage21x9"
+                class="EvoLoadingArtwork"
+                scaling="stretch-to-cover-preserving-aspect"
+                src="file://{images}/custom_game/loading_screen/evo_loading_21x9.png"
+            />
+        </Panel>
+        <Panel id="EvoLoadingVignette" hittest="false" />
+    </Panel>
+</root>

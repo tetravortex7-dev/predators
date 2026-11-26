@@ -17,7 +17,35 @@ export class LevelingManager {
         gameMode.SetCustomHeroMaxLevel(EVO_CONSTANTS.MAX_HERO_LEVEL);
         gameMode.SetCustomXPRequiredToReachNextLevel(EVO_XP_PER_LEVEL_TABLE);
 
+        if (IsInToolsMode()) {
+            gameMode.SetModifyExperienceFilter((event) => this.onModifyExperience(event), this);
+        }
+
         ListenToGameEvent("dota_player_gained_level", (event) => this.onPlayerGainedLevel(event), undefined);
+        ListenToGameEvent("dota_player_learned_ability", (event) => this.onAbilityLearned(event), undefined);
+    }
+
+    private onAbilityLearned(event: GameEventProvidedProperties & DotaPlayerLearnedAbilityEvent): void {
+        const playerId = event.PlayerID as PlayerID | undefined;
+        if (playerId === undefined || !PlayerResource.IsValidPlayerID(playerId)) return;
+        const hero = PlayerResource.GetSelectedHeroEntity(playerId);
+        if (!hero || hero.IsNull() || !IsValidEntity(hero)) return;
+        if (event.abilityname !== "lion_impale") return;
+        const tierMod = hero.FindModifierByName("modifier_evo_hero_tier");
+        const tier = tierMod ? tierMod.GetStackCount() : 1;
+        const maxAllowed = tier <= 1 ? 3 : tier === 2 ? 4 : 5;
+        const ab = hero.FindAbilityByName("lion_impale");
+        if (ab && !ab.IsNull() && ab.GetLevel() > maxAllowed) {
+            ab.SetLevel(maxAllowed);
+            hero.SetAbilityPoints(hero.GetAbilityPoints() + 1);
+        }
+    }
+
+    private onModifyExperience(event: ModifyExperienceFilterEvent): boolean {
+        if (event.experience > 0) {
+            event.experience = Math.floor(event.experience * EVO_CONSTANTS.DEV_XP_MULTIPLIER);
+        }
+        return true;
     }
 
     public getFortificationCharges(playerId: PlayerID): number {

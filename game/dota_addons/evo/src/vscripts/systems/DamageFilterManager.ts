@@ -1,19 +1,33 @@
-import { DamageScaleRule, getDamageRule } from "../data/damage_rules";
+import {
+    DamageContext,
+    DamagePostModifier,
+    DamageScaleRule,
+    getDamageRule,
+    getGlobalDamagePostModifiers,
+} from "../data/damage_rules";
 import { computeModifiedDamage } from "./damage/damage_mitigation";
 
 export type DamageGuardHook = (event: DamageFilterEvent) => boolean;
 
 export class DamageFilterManager {
     private readonly guards: DamageGuardHook[] = [];
+    private readonly postModifiers: DamagePostModifier[] = [];
     private readonly runtimeRules: Map<string, DamageScaleRule> = new Map();
 
     public init(): void {
+        for (const hook of getGlobalDamagePostModifiers()) {
+            this.postModifiers.push(hook);
+        }
         const gameMode = GameRules.GetGameModeEntity();
         gameMode.SetDamageFilter((event) => this.onDamageFilter(event), this);
     }
 
     public registerGuard(guard: DamageGuardHook): void {
         this.guards.push(guard);
+    }
+
+    public registerPostModifier(hook: DamagePostModifier): void {
+        this.postModifiers.push(hook);
     }
 
     public registerRule(inflictorName: string, rule: DamageScaleRule): void {
@@ -73,24 +87,23 @@ export class DamageFilterManager {
         }
 
         const rule = this.runtimeRules.get(abilityName) ?? getDamageRule(abilityName);
-        if (!rule) {
-            return true;
-        }
-
         const level = inflictor ? Math.max(1, inflictor.GetLevel()) : 1;
-        event.damage = computeModifiedDamage(
-            {
-                attacker,
-                victim,
-                inflictor,
-                abilityName,
-                isItem,
-                damageType: event.damagetype_const as DamageTypes,
-                damage: event.damage,
-                level,
-            },
-            rule
-        );
+        const ctx: DamageContext = {
+            attacker,
+            victim,
+            inflictor,
+            abilityName,
+            isItem,
+            damageType: event.damagetype_const as DamageTypes,
+            damage: event.damage,
+            level,
+        };
+
+        let nextDamage = rule ? computeModifiedDamage(ctx, rule) : event.damage;
+        for (const postMod of this.postModifiers) {
+            nextDamage = postMod(ctx, nextDamage);
+        }
+        event.damage = Math.max(0, nextDamage);
 
         return true;
     }

@@ -177,9 +177,59 @@ function refreshFromNetTable() {
         }
     }
 }
+function hasAvailableTalentPoint() {
+    var _a, _b;
+    const rows = getEffectiveRows();
+    const heroLevel = (_a = latestData === null || latestData === void 0 ? void 0 : latestData.hero_level) !== null && _a !== void 0 ? _a : 1;
+    const abilityPoints = (_b = latestData === null || latestData === void 0 ? void 0 : latestData.ability_points) !== null && _b !== void 0 ? _b : 0;
+    if (abilityPoints <= 0)
+        return false;
+    for (const row of rows) {
+        const leftLearned = row.left_learned === 1;
+        const rightLearned = row.right_learned === 1;
+        const canLearnMore = heroLevel >= 30 || (!leftLearned && !rightLearned);
+        if (heroLevel >= row.level && (!leftLearned || !rightLearned) && canLearnMore) {
+            return true;
+        }
+    }
+    return false;
+}
+function updateStatBranchUpgradeIndicator() {
+    const root = findHudRoot();
+    if (!root)
+        return;
+    const statBranch = root.FindChildTraverse("StatBranch");
+    if (!statBranch)
+        return;
+    const canUpgrade = hasAvailableTalentPoint();
+    statBranch.SetHasClass("could_level_up", canUpgrade);
+    statBranch.SetHasClass("show_level_up_tab", canUpgrade);
+    statBranch.SetHasClass("show_level_up_frame", canUpgrade);
+    const targets = [
+        statBranch.FindChildTraverse("LevelUpTab"),
+        statBranch.FindChildTraverse("LevelUpButton"),
+        statBranch.FindChildTraverse("LevelUpIcon"),
+        statBranch.FindChildTraverse("LevelUpLight"),
+        statBranch.FindChildTraverse("UpgradeOverlay"),
+        statBranch.FindChildTraverse("StatLevelUpTab"),
+    ];
+    const parent = statBranch.GetParent();
+    if (parent && !parent.FindChildTraverse("abilities")) {
+        parent.SetHasClass("could_level_up", canUpgrade);
+        parent.SetHasClass("show_level_up_tab", canUpgrade);
+        targets.push(parent.FindChildTraverse("LevelUpTab"), parent.FindChildTraverse("LevelUpButton"), parent.FindChildTraverse("LevelUpIcon"), parent.FindChildTraverse("LevelUpLight"), parent.FindChildTraverse("StatLevelUpTab"));
+    }
+    for (const panel of targets) {
+        if (!panel)
+            continue;
+        panel.style.opacity = canUpgrade ? null : "0";
+        panel.visible = canUpgrade;
+    }
+}
 function periodicTick() {
     hookPopupHover();
     hookNativeStatBranch();
+    updateStatBranchUpgradeIndicator();
     const { nativeClickOpen, nativeHoverOpen } = getNativeStatBranchState();
     const shouldShow = isPinnedOpen || nativeClickOpen || nativeHoverOpen || isHoveringPopup;
     const tooltipOnly = !isPinnedOpen && !nativeClickOpen && (nativeHoverOpen || isHoveringPopup);

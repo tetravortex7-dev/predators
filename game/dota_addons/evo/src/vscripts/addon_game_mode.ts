@@ -64,6 +64,29 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
     seenParticles.add(stealVpcf);
     PrecacheResource("particle", stealVpcf, context);
 
+    const lionImpaleVpcf = "particles/units/heroes/hero_lion/lion_spell_impale.vpcf";
+    seenParticles.add(lionImpaleVpcf);
+    PrecacheResource("particle", lionImpaleVpcf, context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_lion.vsndevts", context);
+
+    const extraParticles = [
+        "particles/items_fx/blink_dagger_start.vpcf",
+        "particles/items_fx/blink_dagger_end.vpcf",
+        "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
+        "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield_explosion.vpcf",
+        "particles/units/heroes/hero_obsidian_destroyer/obsidian_destroyer_arcane_orb_hit.vpcf",
+    ];
+    for (const vpcf of extraParticles) {
+        if (!seenParticles.has(vpcf)) {
+            seenParticles.add(vpcf);
+            PrecacheResource("particle", vpcf, context);
+        }
+    }
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_obsidian_destroyer.vsndevts", context);
+
     for (const modelPath of EVO_NEUTRAL_CREEP_MODELS) {
         precacheUniqueModel(modelPath, seenModels, context);
     }

@@ -10,9 +10,10 @@
         <Panel id="EvoDuelBanner" class="EvoDuelBanner">
             <Panel class="EvoDuelTopRow">
                 <Label id="EvoDuelTitle" class="EvoDuelTitle" text="#evo_duel_title" />
-                <Label id="EvoDuelTimer" class="EvoDuelTimer" text="30s" />
+                <Label id="EvoDuelTimer" class="EvoDuelTimer" text="60s" />
             </Panel>
             <Label id="EvoDuelMatchup" class="EvoDuelMatchup" text="" />
+            <Label id="EvoDuelReward" class="EvoDuelReward" text="" />
             <Panel id="EvoDuelBetRow" class="EvoDuelBetRow">
                 <Button id="EvoBetLeftBtn" class="EvoDuelBetBtn">
                     <Label id="EvoBetLeftLabel" class="EvoDuelBetLabel" text="" />

@@ -1,11 +1,8 @@
 local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
 local __TS__New = ____lualib.__TS__New
-local Set = ____lualib.Set
-local __TS__ArraySlice = ____lualib.__TS__ArraySlice
-local __TS__ArrayEvery = ____lualib.__TS__ArrayEvery
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 1,["11"] = 1,["12"] = 2,["13"] = 2,["14"] = 3,["15"] = 3,["16"] = 4,["17"] = 4,["18"] = 5,["19"] = 5,["20"] = 6,["21"] = 6,["22"] = 7,["23"] = 7,["24"] = 8,["25"] = 8,["26"] = 9,["27"] = 9,["28"] = 10,["29"] = 10,["30"] = 11,["31"] = 11,["32"] = 12,["33"] = 12,["34"] = 13,["35"] = 13,["36"] = 14,["37"] = 14,["38"] = 15,["39"] = 15,["40"] = 16,["41"] = 16,["42"] = 18,["43"] = 18,["44"] = 18,["46"] = 36,["47"] = 37,["48"] = 38,["49"] = 39,["50"] = 40,["51"] = 45,["52"] = 46,["53"] = 47,["54"] = 48,["55"] = 49,["56"] = 50,["57"] = 51,["58"] = 52,["59"] = 53,["60"] = 54,["61"] = 56,["62"] = 57,["63"] = 58,["64"] = 60,["65"] = 35,["66"] = 63,["67"] = 64,["68"] = 66,["69"] = 67,["70"] = 68,["71"] = 69,["72"] = 70,["73"] = 71,["74"] = 73,["75"] = 74,["76"] = 75,["77"] = 76,["78"] = 77,["79"] = 78,["80"] = 79,["81"] = 80,["82"] = 81,["83"] = 82,["84"] = 83,["85"] = 84,["86"] = 85,["87"] = 86,["88"] = 87,["89"] = 88,["90"] = 89,["91"] = 90,["92"] = 91,["93"] = 93,["94"] = 95,["95"] = 96,["96"] = 97,["98"] = 63,["99"] = 101,["100"] = 102,["101"] = 103,["102"] = 104,["103"] = 111,["104"] = 111,["105"] = 111,["106"] = 111,["107"] = 115,["108"] = 116,["109"] = 117,["111"] = 118,["112"] = 118,["113"] = 119,["114"] = 120,["115"] = 118,["120"] = 125,["121"] = 126,["122"] = 127,["123"] = 128,["124"] = 128,["125"] = 128,["126"] = 128,["128"] = 101,["129"] = 132,["130"] = 133,["131"] = 134,["132"] = 135,["133"] = 136,["136"] = 139,["137"] = 132,["138"] = 142,["139"] = 143,["140"] = 148,["141"] = 153,["142"] = 158,["143"] = 163,["144"] = 168,["145"] = 174,["146"] = 175,["147"] = 176,["148"] = 177,["149"] = 178,["150"] = 179,["151"] = 180,["152"] = 181,["153"] = 182,["154"] = 183,["155"] = 184,["156"] = 185,["157"] = 186,["158"] = 187,["159"] = 188,["160"] = 189,["161"] = 142,["162"] = 192,["163"] = 193,["164"] = 194,["166"] = 195,["167"] = 195,["169"] = 196,["170"] = 197,["174"] = 192});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 1,["8"] = 1,["9"] = 2,["10"] = 2,["11"] = 3,["12"] = 3,["13"] = 4,["14"] = 4,["15"] = 4,["16"] = 5,["17"] = 5,["18"] = 6,["19"] = 6,["20"] = 7,["21"] = 7,["22"] = 8,["23"] = 8,["24"] = 9,["25"] = 9,["26"] = 10,["27"] = 10,["28"] = 11,["29"] = 11,["30"] = 12,["31"] = 12,["32"] = 13,["33"] = 13,["34"] = 14,["35"] = 14,["36"] = 15,["37"] = 15,["38"] = 16,["39"] = 16,["40"] = 17,["41"] = 17,["42"] = 18,["43"] = 18,["44"] = 19,["45"] = 19,["46"] = 21,["47"] = 21,["48"] = 21,["50"] = 41,["51"] = 42,["52"] = 43,["53"] = 44,["54"] = 45,["55"] = 50,["56"] = 51,["57"] = 52,["58"] = 53,["59"] = 54,["60"] = 55,["61"] = 56,["62"] = 57,["63"] = 58,["64"] = 58,["65"] = 58,["66"] = 58,["67"] = 58,["68"] = 61,["69"] = 62,["70"] = 63,["71"] = 65,["72"] = 66,["73"] = 67,["74"] = 69,["75"] = 40,["76"] = 72,["77"] = 73,["78"] = 75,["79"] = 76,["80"] = 77,["81"] = 78,["82"] = 81,["83"] = 86,["84"] = 88,["85"] = 89,["86"] = 90,["87"] = 91,["88"] = 92,["89"] = 93,["90"] = 94,["91"] = 95,["92"] = 96,["93"] = 97,["94"] = 98,["95"] = 99,["96"] = 100,["97"] = 101,["98"] = 102,["99"] = 103,["100"] = 104,["101"] = 105,["102"] = 106,["103"] = 108,["104"] = 110,["105"] = 111,["106"] = 112,["108"] = 72,["109"] = 116,["110"] = 117,["111"] = 118,["113"] = 120,["114"] = 120,["115"] = 121,["116"] = 122,["117"] = 120,["120"] = 116,["121"] = 126,["122"] = 127,["123"] = 132,["124"] = 133,["125"] = 138,["126"] = 143,["127"] = 148,["128"] = 153,["129"] = 159,["130"] = 160,["131"] = 161,["132"] = 162,["133"] = 163,["134"] = 164,["135"] = 165,["136"] = 166,["137"] = 167,["138"] = 168,["139"] = 169,["140"] = 170,["141"] = 171,["142"] = 172,["143"] = 173,["144"] = 174,["145"] = 175,["146"] = 126});
 local ____exports = {}
 local ____EventBus = require("core.EventBus")
 local EventBus = ____EventBus.EventBus
@@ -15,8 +12,11 @@ local ____LevelingManager = require("core.LevelingManager")
 local LevelingManager = ____LevelingManager.LevelingManager
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
+local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
 local ____DevCheats = require("dev.DevCheats")
 local DevCheats = ____DevCheats.DevCheats
+local ____modifier_evo_mutation_runtime = require("modifiers.modifier_evo_mutation_runtime")
+local linkMutationModifiers = ____modifier_evo_mutation_runtime.linkMutationModifiers
 local ____BossManager = require("systems.BossManager")
 local BossManager = ____BossManager.BossManager
 local ____DamageFilterManager = require("systems.DamageFilterManager")
@@ -25,10 +25,14 @@ local ____DuelManager = require("systems.DuelManager")
 local DuelManager = ____DuelManager.DuelManager
 local ____EvolutionManager = require("systems.EvolutionManager")
 local EvolutionManager = ____EvolutionManager.EvolutionManager
+local ____FountainManager = require("systems.FountainManager")
+local FountainManager = ____FountainManager.FountainManager
 local ____MatchScoreManager = require("systems.MatchScoreManager")
 local MatchScoreManager = ____MatchScoreManager.MatchScoreManager
 local ____NeutralCampsManager = require("systems.NeutralCampsManager")
 local NeutralCampsManager = ____NeutralCampsManager.NeutralCampsManager
+local ____PassiveGoldManager = require("systems.PassiveGoldManager")
+local PassiveGoldManager = ____PassiveGoldManager.PassiveGoldManager
 local ____PhaseManager = require("systems.PhaseManager")
 local PhaseManager = ____PhaseManager.PhaseManager
 local ____RuneManager = require("systems.RuneManager")
@@ -49,12 +53,18 @@ function EvoGameMode.prototype.____constructor(self)
     self.spellShopManager = __TS__New(SpellShopManager, self.eventBus)
     self.evolutionManager = __TS__New(EvolutionManager, self.eventBus, self.spellShopManager, self.lazyPrecacheManager)
     self.damageFilterManager = __TS__New(DamageFilterManager)
+    self.passiveGoldManager = __TS__New(PassiveGoldManager, self.eventBus)
     self.phaseManager = __TS__New(PhaseManager, self.eventBus)
     self.neutralCampsManager = __TS__New(NeutralCampsManager, self.eventBus)
     self.runeManager = __TS__New(RuneManager)
     self.bossManager = __TS__New(BossManager, self.eventBus)
     self.matchScoreManager = __TS__New(MatchScoreManager, self.eventBus)
     self.duelManager = __TS__New(DuelManager, self.eventBus, self.bossManager)
+    self.fountainManager = __TS__New(
+        FountainManager,
+        self.eventBus,
+        function(____, unit) return self.duelManager:isActiveDuelist(unit) end
+    )
     self.sharedTeamIntel = __TS__New(SharedTeamIntel, self.evolutionManager)
     self.talentTreeManager = __TS__New(TalentTreeManager, self.eventBus)
     self.devCheats = __TS__New(DevCheats, self.eventBus, self.levelingManager)
@@ -68,11 +78,11 @@ function EvoGameMode.prototype.configureGameRules(self)
     GameRules:SetHeroSelectionTime(0)
     GameRules:SetStrategyTime(0)
     GameRules:SetShowcaseTime(0)
-    GameRules:SetPreGameTime(5)
-    GameRules:SetCustomGameSetupAutoLaunchDelay(IsInToolsMode() and 2 or 10)
+    GameRules:SetPreGameTime(IsInToolsMode() and EVO_CONSTANTS.PRE_GAME_TIME_DEV or EVO_CONSTANTS.PRE_GAME_TIME_PROD)
+    GameRules:SetCustomGameSetupAutoLaunchDelay(IsInToolsMode() and EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_DEV or EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_PROD)
     gameMode:SetCustomGameForceHero(EVO_CONSTANTS.BASE_HERO_NAME)
     GameRules:SetGoldPerTick(0)
-    GameRules:SetGoldTickTime(1)
+    GameRules:SetGoldTickTime(EVO_CONSTANTS.GOLD_TICK_TIME)
     GameRules:SetStartingGold(0)
     GameRules:SetUseUniversalShopMode(false)
     gameMode:SetFreeCourierModeEnabled(false)
@@ -98,56 +108,30 @@ function EvoGameMode.prototype.configureGameRules(self)
 end
 function EvoGameMode.prototype.configureTeams(self, teamCount, playersPerTeam)
     GameRules:SetCustomGameTeamMaxPlayers(10, 0)
-    local customSpawnTeams = self:detectCustomSpawnTeams()
-    local customTeams = {6, 7, 8, 9}
-    local hasAllCustomSpawns = __TS__ArrayEvery(
-        __TS__ArraySlice(customTeams, 0, teamCount),
-        function(____, team) return customSpawnTeams:has(team) end
-    )
-    if hasAllCustomSpawns then
-        GameRules:SetCustomGameTeamMaxPlayers(2, 0)
-        GameRules:SetCustomGameTeamMaxPlayers(3, 0)
-        do
-            local i = 0
-            while i < #customTeams do
-                local slots = i < teamCount and playersPerTeam or 0
-                GameRules:SetCustomGameTeamMaxPlayers(customTeams[i + 1], slots)
-                i = i + 1
-            end
-        end
-        return
-    end
-    GameRules:SetCustomGameTeamMaxPlayers(2, playersPerTeam)
-    GameRules:SetCustomGameTeamMaxPlayers(3, playersPerTeam)
-    for ____, team in ipairs(customTeams) do
-        GameRules:SetCustomGameTeamMaxPlayers(
-            team,
-            customSpawnTeams:has(team) and playersPerTeam or 0
-        )
-    end
-end
-function EvoGameMode.prototype.detectCustomSpawnTeams(self)
-    local found = __TS__New(Set)
-    for ____, entity in ipairs(Entities:FindAllByClassname("info_player_start_dota")) do
-        if entity and not entity:IsNull() and IsValidEntity(entity) then
-            found:add(entity:GetTeamNumber())
+    GameRules:SetCustomGameTeamMaxPlayers(13, 0)
+    do
+        local i = 0
+        while i < #EVO_PLAYABLE_TEAMS do
+            local slots = i < teamCount and playersPerTeam or 0
+            GameRules:SetCustomGameTeamMaxPlayers(EVO_PLAYABLE_TEAMS[i + 1], slots)
+            i = i + 1
         end
     end
-    return found
 end
 function EvoGameMode.prototype.initManagers(self)
     LinkLuaModifier("modifier_evo_peace_time", "modifiers/modifier_evo_peace_time", 0)
-    LinkLuaModifier("modifier_evo_mutation_runtime", "modifiers/modifier_evo_mutation_runtime", 0)
+    linkMutationModifiers(nil)
     LinkLuaModifier("modifier_evo_boss_courage", "modifiers/modifier_evo_boss_courage", 0)
     LinkLuaModifier("modifier_evo_world_pause", "modifiers/modifier_evo_world_pause", 0)
     LinkLuaModifier("modifier_fountain_aura_lua", "modifiers/modifier_fountain_aura_lua", 0)
     LinkLuaModifier("modifier_fountain_buff_lua", "modifiers/modifier_fountain_buff_lua", 0)
-    self:initFountains()
+    LinkLuaModifier("modifier_evo_hero_tier", "modifiers/modifier_evo_hero_tier", 0)
     self.lazyPrecacheManager:init()
     self.levelingManager:init()
     self.spellShopManager:init()
     self.evolutionManager:init()
     self.damageFilterManager:init()
+    self.passiveGoldManager:init()
     self.phaseManager:init()
     self.damageFilterManager:registerGuard(function(____, event) return self.phaseManager:filterDamage(event) end)
     self.neutralCampsManager:init()
@@ -155,21 +139,9 @@ function EvoGameMode.prototype.initManagers(self)
     self.bossManager:init()
     self.matchScoreManager:init()
     self.duelManager:init()
+    self.fountainManager:init()
     self.sharedTeamIntel:init()
     self.talentTreeManager:init()
     self.devCheats:init()
-end
-function EvoGameMode.prototype.initFountains(self)
-    local fountains = Entities:FindAllByClassname("ent_dota_fountain")
-    for ____, fountain in ipairs(fountains) do
-        do
-            if not fountain or fountain:IsNull() or not IsValidEntity(fountain) or not fountain:IsBaseNPC() then
-                goto __continue18
-            end
-            fountain:AddNewModifier(fountain, nil, "modifier_fountain_aura_lua", {})
-            fountain:RemoveModifierByName("modifier_fountain_aura")
-        end
-        ::__continue18::
-    end
 end
 return ____exports

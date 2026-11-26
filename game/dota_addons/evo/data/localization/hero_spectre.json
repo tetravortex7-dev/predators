@@ -1,0 +1,594 @@
+{
+  "evo_spectre_no_portal_error": {
+    "ru": "Нет активных астральных порталов",
+    "en": "No active Astral Portals"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_dispersion": {
+    "ru": "Рассеивание",
+    "en": "Dispersion"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_dispersion_Description": {
+    "ru": "Поглощает от %base_pct%%% до %max_pct%%% любого входящего урона (в зависимости от уровня 1–35) и отражает его тем же типом по врагам в %min_radius%–%max_radius% AoE.",
+    "en": "Absorbs %base_pct%%%–%max_pct%%% incoming damage (scaling Lv.1–35) and reflects that same damage type across %min_radius%–%max_radius% AoE."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_dispersion_base_pct": {
+    "ru": "%ПОГЛОЩЕНИЯ (УР. 1):",
+    "en": "%MIN ABSORB (LV.1):"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_dispersion_max_pct": {
+    "ru": "%ПОГЛОЩЕНИЯ (УР. 35):",
+    "en": "%MAX ABSORB (LV.35):"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion": {
+    "ru": "Рассеивание Разлома",
+    "en": "Rift Dispersion"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_Description": {
+    "ru": "Поглощает %base_pct%%%–%max_pct%%% входящего урона (ур. 1–35) и отражает его вокруг себя и ближайшего портала (в %portal_echo_radius% AoE). Урон от вражеских героев даёт +%ms_pct%%% MS и прохождение сквозь юнитов на %ms_duration%с.",
+    "en": "Absorbs %base_pct%%%–%max_pct%%% incoming damage (Lv.1–35) and echoes reflection around Spectre and her nearest portal (%portal_echo_radius% AoE). Hero damage grants +%ms_pct%%% MS and phasing for %ms_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_ms_pct": {
+    "ru": "%БОНУС СКОРОСТИ:",
+    "en": "%HASTE MS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_charge_dmg": {
+    "ru": "МАГ. УРОН ЗАРЯДА:",
+    "en": "CHARGE MAGIC DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_charge_agi_pct": {
+    "ru": "%УРОНА ЗАРЯДА ОТ AGI:",
+    "en": "%CHARGE AGI DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_reality_cd_reduce": {
+    "ru": "ОТКАТ [D] ЗА ЗАРЯД:",
+    "en": "REALITY CD REDUCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_q": {
+    "ru": "Призрачный кинжал",
+    "en": "Spectral Dagger"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_q_Description": {
+    "ru": "Выпускает теневой клинок по линии на %range%, нанося %damage% маг. урона (%creep_mult%x по крипам) и замедляя врагов на -%slow_pct%%% на %slow_duration%с. Даёт +%path_ms_pct%%% MS и прохождение сквозь препятствия на %path_duration%с.",
+    "en": "Hurls a shadow dagger along %range% range, dealing %damage% magic damage (%creep_mult%x vs creeps) and slowing enemies by -%slow_pct%%% for %slow_duration%s. Grants +%path_ms_pct%%% MS and unobstructed pathing for %path_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_q_damage": {
+    "ru": "МАГ. УРОН:",
+    "en": "MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_q_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_q_path_ms_pct": {
+    "ru": "%БОНУС СКОРОСТИ:",
+    "en": "%PATH MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_w": {
+    "ru": "Выброс пустоты",
+    "en": "Void Surge"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_w_Description": {
+    "ru": "Удар в %cast_range% дальности на %phys_base% + %attr_pct%%% макс. атрибута физ. урона плюс %pure_base% чистого урона в %aoe_radius% AoE (%creep_mult%x по крипам). Если Рассеивание срабатывало от героев за %dispersion_window%с, чистый урон выше на +%dispersion_bonus_pct%%%.",
+    "en": "Strikes target for %phys_base% + %attr_pct%%% highest stat physical damage plus %pure_base% pure damage in %aoe_radius% AoE (%creep_mult%x vs creeps). Deals +%dispersion_bonus_pct%%% more pure damage if Dispersion triggered vs heroes within %dispersion_window%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_w_phys_base": {
+    "ru": "ФИЗ. УРОН:",
+    "en": "PHYSICAL DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_t1_w_pure_base": {
+    "ru": "ЧИСТЫЙ УРОН В AOE:",
+    "en": "AOE PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q": {
+    "ru": "Теневой серп",
+    "en": "Shadow Crescent"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q_Description": {
+    "ru": "Выпускает призрачный полумесяц на %range% дальности, нанося %base_damage% + %agi_pct%%% AGI физ. урона (%creep_mult%x по крипам) и замедляя на -%slow_pct%%% на %slow_duration%с. Даёт Спектре +%path_ms_pct%%% MS и сквозное движение на %path_duration%с.",
+    "en": "Launches a wide phantom crescent over %range% range dealing %base_damage% + %agi_pct%%% AGI physical damage (%creep_mult%x vs creeps) and slowing by -%slow_pct%%% for %slow_duration%s. Grants +%path_ms_pct%%% MS and unobstructed pathing for %path_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q_base_damage": {
+    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "en": "BASE PHYS DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q_agi_pct": {
+    "ru": "%УРОНА ОТ AGI:",
+    "en": "%AGI DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_q_path_ms_pct": {
+    "ru": "%БОНУС СКОРОСТИ:",
+    "en": "%PATH MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w": {
+    "ru": "Зеркальное лезвие",
+    "en": "Mirror Blade"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_Description": {
+    "ru": "Пассивно: +%bonus_as% AS; каждая 3-я атака (или удар по цели под Теневым серпом) наносит %pure_base% + %pure_agi_pct%%% AGI чистого урона и рассекает врагов в %cleave_radius% AoE на %cleave_pct%%%. Активно: +%evasion_pct%%% уклонения и True Strike на %active_duration%с; следующая атака получает +%bonus_range% дальности, бьёт чистым кливом и крадёт %ms_steal_pct%%% MS.",
+    "en": "Passive: +%bonus_as% AS; every 3rd attack (or hit vs Crescent-slowed targets) deals %pure_base% + %pure_agi_pct%%% AGI pure damage and cleaves %cleave_pct%%% in %cleave_radius% AoE. Active: +%evasion_pct%%% evasion & True Strike for %active_duration%s; next attack gains +%bonus_range% range, triggers pure cleave, and steals %ms_steal_pct%%% MS."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_bonus_as": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_pure_base": {
+    "ru": "БАЗОВЫЙ ЧИСТЫЙ УРОН:",
+    "en": "BASE PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_pure_agi_pct": {
+    "ru": "%ЧИСТОГО ОТ AGI:",
+    "en": "%AGI PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_evasion_pct": {
+    "ru": "%УКЛОНЕНИЯ (АКТ.):",
+    "en": "%ACTIVE EVASION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_ms_steal_pct": {
+    "ru": "%КРАЖИ СКОРОСТИ:",
+    "en": "%MS STEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e": {
+    "ru": "Астральный портал",
+    "en": "Astral Portal"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_Description": {
+    "ru": "Открывает постоянный неуязвимый портал с обзором %vision_radius% (до %max_portals% на карте; при установке нового исчезает самый старый). Позволяет телепортироваться через [D] Материализация.",
+    "en": "Opens a persistent invulnerable portal with %vision_radius% vision (up to %max_portals% active; placing a 4th removes the oldest). Enables teleporting via [D] Reality."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_max_portals": {
+    "ru": "МАКС. ПОРТАЛОВ:",
+    "en": "MAX PORTALS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_vision_radius": {
+    "ru": "ОБЗОР ПОРТАЛА:",
+    "en": "PORTAL VISION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d": {
+    "ru": "Материализация",
+    "en": "Reality"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_Description": {
+    "ru": "Мгновенно переносит Спектру к Астральному порталу, ближайшему к курсору, сбрасывает летящие снаряды и даёт +%ms_pct%%% MS с прохождением сквозь юнитов на %ms_duration%с.",
+    "en": "Instantly teleports Spectre to the Astral Portal closest to cursor, disjointing projectiles and granting +%ms_pct%%% MS and phasing for %ms_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_ms_pct": {
+    "ru": "%БОНУС СКОРОСТИ:",
+    "en": "%BONUS MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_r": {
+    "ru": "Шторм Разломов",
+    "en": "Rift Storm"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_r_Description": {
+    "ru": "Перегружает сеть порталов на %duration%с: мгновенно сбрасывает КД [D] Материализация и убирает у неё КД на %free_d_duration%с. Каждые %pulse_interval%с все порталы бьют в %pulse_radius% AoE на %pulse_dmg% + %pulse_agi_pct%%% AGI маг. урона и замедляют врагов на -%slow_pct%%%.",
+    "en": "Overloads all portals for %duration%s: resets [D] Reality CD and removes its cooldown for %free_d_duration%s. Every %pulse_interval%s portals pulse %pulse_radius% AoE for %pulse_dmg% + %pulse_agi_pct%%% AGI magic damage and slow enemies by -%slow_pct%%%."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_r_pulse_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_r_pulse_agi_pct": {
+    "ru": "%ИМПУЛЬСА ОТ AGI:",
+    "en": "%PULSE AGI DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q": {
+    "ru": "Астральный кокон",
+    "en": "Astral Cocoon"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_Description": {
+    "ru": "Окутывает себя или союзника барьером прочностью %base_shield% + %str_pct%%% STR на %duration%с. При разрушении или окончании кокон взрывается в %blast_radius% AoE, нанося %base_shield% + %str_pct%%% STR маг. урона и замедляя врагов на -%slow_pct%%% на %slow_duration%с.",
+    "en": "Surrounds Spectre or an ally with a %base_shield% + %str_pct%%% STR barrier for %duration%s. On break or expiration it detonates in %blast_radius% AoE for full barrier capacity magic damage and slows by -%slow_pct%%% for %slow_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_base_shield": {
+    "ru": "БАЗОВЫЙ ЩИТ:",
+    "en": "BASE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_str_pct": {
+    "ru": "%ЩИТА ОТ STR:",
+    "en": "%STR SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_blast_radius": {
+    "ru": "РАДИУС ВЗРЫВА:",
+    "en": "BLAST RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w": {
+    "ru": "Разряд барьера",
+    "en": "Barrier Discharge"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_Description": {
+    "ru": "Подрывает все текущие щиты Спектры (активный кокон и пассивный щит покоя), нанося в %radius% AoE %base_damage% + %str_pct%%% STR + 100%% объёма взорванных щитов маг. урона (%creep_mult%x по крипам), оглушая на %stun_duration%с и возвращая %refund_pct%%% взорванного запаса в пассивный щит.",
+    "en": "Detonates all shields on Spectre (Cocoon + passive barrier) in %radius% AoE for %base_damage% + %str_pct%%% STR + 100%% detonated shield capacity magic damage (%creep_mult%x vs creeps), stunning for %stun_duration%s and refunding %refund_pct%%% as passive barrier."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_str_pct": {
+    "ru": "%УРОНА ОТ STR:",
+    "en": "%STR DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_stun_duration": {
+    "ru": "ОГЛУШЕНИЕ:",
+    "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e": {
+    "ru": "Покой Эгиды",
+    "en": "Aegis Repose"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_Description": {
+    "ru": "Если Спектра %idle_delay%с не наносит и не получает урона от вражеских героев, она копит пассивный щит по %regen_per_sec% + %regen_str_pct%%% STR в сек. до %max_shield% + %max_str_pct%%% STR. Пока есть любой щит: +%status_res%%% сопр. эффектам и +%bonus_as% AS.",
+    "en": "After %idle_delay%s out of PvP combat, passively builds an Astral Shield at %regen_per_sec% + %regen_str_pct%%% STR per sec up to %max_shield% + %max_str_pct%%% STR. While shielded: +%status_res%%% Status Res and +%bonus_as% AS."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_regen_per_sec": {
+    "ru": "ЩИТ В СЕК.:",
+    "en": "SHIELD PER SEC:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_max_shield": {
+    "ru": "МАКС. ПАССИВНЫЙ ЩИТ:",
+    "en": "MAX PASSIVE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_status_res": {
+    "ru": "%СОПР. ЭФФЕКТАМ:",
+    "en": "%STATUS RES:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_bonus_as": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_r": {
+    "ru": "Несокрушимый Купол",
+    "en": "Unbreakable Dome"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_r_Description": {
+    "ru": "Создаёт мобильную силовую сферу (%radius% AoE) на %duration%с: союзники получают щит %ally_shield% + %shield_str_pct%%% STR, а вражеские атаки и снаряды извне купола полностью поглощаются. Каждые %pulse_interval%с наносит %pulse_dmg% + %pulse_str_pct%%% STR маг. урона, замедляет на -%slow_pct%%% и даёт +%shield_per_enemy% щита за врага.",
+    "en": "Deploys a %radius% AoE force sphere for %duration%s granting allies %ally_shield% + %shield_str_pct%%% STR shield and blocking enemy damage originating outside the dome. Pulses every %pulse_interval%s for %pulse_dmg% + %pulse_str_pct%%% STR magic damage, -%slow_pct%%% slow, and +%shield_per_enemy% shield per enemy hit."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_r_ally_shield": {
+    "ru": "ЩИТ СОЮЗНИКАМ:",
+    "en": "ALLY SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_r_pulse_dmg": {
+    "ru": "УРОН ПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion": {
+    "ru": "Астральная Инверсия",
+    "en": "Astral Inversion"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_Description": {
+    "ru": "Заменяет Рассеивание. Любой входящий физический урон (до снижения) точечно отражается обратно в атакующего как %reflect_pct%%% магического урона плюс %flat_dmg% + %int_pct%%% INT. Повторное срабатывание снижает MR атакующего на -%mr_shred%%% и восстанавливает %mana_restore% маны.",
+    "en": "Replaces Dispersion. Incoming pre-mitigation physical damage reflects back into the attacker as %reflect_pct%%% magic damage plus %flat_dmg% + %int_pct%%% INT."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_reflect_pct": {
+    "ru": "%ОТРАЖЕНИЯ ФИЗ. УРОНА:",
+    "en": "%PHYS REFLECT AS MAGIC:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_flat_dmg": {
+    "ru": "БАЗОВЫЙ ОТВЕТНЫЙ УРОН:",
+    "en": "FLAT REFLECT DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q": {
+    "ru": "Луч инверсии",
+    "en": "Inversion Beam"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_Description": {
+    "ru": "Пробивающий луч на %range% дальности (%base_damage% + %int_pct%%% INT маг. урона, %creep_mult%x по крипам), замедляет на -%slow_pct%%% и вешает «Обратную полярность» на %polarity_dur%с: %polarity_pct%%% физ. урона цели по союзникам отражается в неё магическим уроном.",
+    "en": "Piercing beam over %range% range (%base_damage% + %int_pct%%% INT magic damage, %creep_mult%x vs creeps), slowing by -%slow_pct%%% and applying Reverse Polarity for %polarity_dur%s: %polarity_pct%%% of target's physical damage dealt to Spectre's allies reflects back as magic."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_base_damage": {
+    "ru": "БАЗОВЫЙ МАГ. УРОН:",
+    "en": "BASE MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_int_pct": {
+    "ru": "%УРОНА ОТ INT:",
+    "en": "%INT DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_polarity_pct": {
+    "ru": "%ОТРАЖЕНИЯ ПОЛЯРНОСТИ:",
+    "en": "%POLARITY REFLECT:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w": {
+    "ru": "Эфирные клинки",
+    "en": "Ethereal Blades"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_Description": {
+    "ru": "Наделяет следующие %charges% атаки (до %duration%с) силой астрала: +%bonus_as% AS, +%bonus_range% дальности, полная конвертация физ. урона атак в магический и +%bonus_dmg% + %int_pct%%% INT маг. урона за удар.",
+    "en": "Empowers next %charges% attacks (up to %duration%s) with +%bonus_as% AS, +%bonus_range% range, full physical-to-magic attack conversion, and +%bonus_dmg% + %int_pct%%% INT bonus magic damage."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_charges": {
+    "ru": "УСИЛЕННЫХ АТАК:",
+    "en": "EMPOWERED ATTACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_bonus_dmg": {
+    "ru": "ДОП. МАГ. УРОН:",
+    "en": "BONUS MAGIC DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_int_pct": {
+    "ru": "%БОНУСА ОТ INT:",
+    "en": "%INT BONUS DMG:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e": {
+    "ru": "Зеркальная оболочка",
+    "en": "Mirror Shell"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_Description": {
+    "ru": "Пассивно: +%passive_mr%%% сопр. магии и +%passive_amp%%% усиления заклинаний. Активно: Basic Dispel, маг. щит %magic_shield% + %shield_int_pct%%% INT и провокация врагов в %taunt_radius% AoE на %taunt_dur%с.",
+    "en": "Passive: +%passive_mr%%% Magic Res and +%passive_amp%%% Spell Amp. Active: Basic Dispel, %magic_shield% + %shield_int_pct%%% INT magic barrier, and %taunt_radius% AoE taunt for %taunt_dur%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_passive_mr": {
+    "ru": "%ПАСС. МАГРЕЗИСТ:",
+    "en": "%PASSIVE MAGIC RES:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_passive_amp": {
+    "ru": "%SPELL AMP:",
+    "en": "%SPELL AMP:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_magic_shield": {
+    "ru": "МАГИЧЕСКИЙ ЩИТ:",
+    "en": "MAGIC SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_r": {
+    "ru": "Сингулярность Зазеркалья",
+    "en": "Looking-Glass Singularity"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_r_Description": {
+    "ru": "Создаёт зеркальную арену (%radius% AoE) на %duration%с: Астральная Инверсия распространяется на всех союзников внутри, а Эфирные клинки получают бесконечные заряды.",
+    "en": "Creates a %radius% AoE mirror arena for %duration%s sharing Astral Inversion with all allies inside and granting infinite Ethereal Blades charges."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_r_radius": {
+    "ru": "РАДИУС АРЕНЫ:",
+    "en": "ARENA RADIUS:"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion": {
+    "ru": "Рассеивание",
+    "en": "Dispersion"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion_Description": {
+    "ru": "Поглощает часть любого входящего урона и отражает его вокруг.",
+    "en": "Absorbs a portion of incoming damage and reflects it around Spectre."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion_haste": {
+    "ru": "Ускорение Разлома",
+    "en": "Rift Haste"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion_haste_Description": {
+    "ru": "Увеличивает скорость передвижения и даёт прохождение сквозь юнитов.",
+    "en": "Grants bonus move speed and unobstructed movement."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion_charge": {
+    "ru": "Теневой заряд",
+    "en": "Shadow Charge"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dispersion_charge_Description": {
+    "ru": "Следующая атака расходует заряд, наносит бонусный маг. урон и сокращает КД Материализации.",
+    "en": "Next attack consumes a charge to deal bonus magic damage and reduce Reality cooldown."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dagger_slow": {
+    "ru": "Теневой след",
+    "en": "Shadow Trail"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_dagger_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Move speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_shadow_path": {
+    "ru": "Теневая тропа",
+    "en": "Shadow Path"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_shadow_path_Description": {
+    "ru": "Повышенная скорость передвижения и свободное прохождение препятствий.",
+    "en": "Grants bonus move speed and unobstructed pathing."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_armor_shred": {
+    "ru": "Раскол брони",
+    "en": "Shattered Armor"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_armor_shred_Description": {
+    "ru": "Броня снижена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
+    "en": "Armor reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_reality_ms": {
+    "ru": "Рывок Материализации",
+    "en": "Reality Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_reality_ms_Description": {
+    "ru": "Повышенная скорость передвижения и прохождение сквозь юнитов.",
+    "en": "Increased move speed and phasing."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_portal_slow": {
+    "ru": "Аура Разлома",
+    "en": "Rift Slow"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_portal_slow_Description": {
+    "ru": "Замедлен полем Астрального портала.",
+    "en": "Slowed by an Astral Portal."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_w_active": {
+    "ru": "Призрачный выпад",
+    "en": "Phantom Lunge"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_w_active_Description": {
+    "ru": "Уклонение, True Strike и усиленная следующая атака с повышенной дальностью.",
+    "en": "Grants evasion, True Strike, and an empowered extended-range strike."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_ms_steal": {
+    "ru": "Похищение скорости",
+    "en": "Velocity Theft"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_ms_steal_Description": {
+    "ru": "Модифицирует скорость передвижения на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%.",
+    "en": "Modifies move speed."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_root": {
+    "ru": "Теневые путы",
+    "en": "Shadow Bind"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_root_Description": {
+    "ru": "Цель обездвижена.",
+    "en": "Rooted and unable to move."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_r_storm": {
+    "ru": "Шторм Разломов",
+    "en": "Rift Storm"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_r_storm_Description": {
+    "ru": "Все активные порталы периодически испускают импульсы маг. урона и замедления.",
+    "en": "All active portals periodically pulse magic damage and slow enemies."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_r_free_d": {
+    "ru": "Свободная Материализация",
+    "en": "Unbound Reality"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_phantom_r_free_d_Description": {
+    "ru": "Материализация перезаряжается мгновенно.",
+    "en": "Reality has no cooldown."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_q_shield": {
+    "ru": "Астральный кокон",
+    "en": "Astral Cocoon"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_q_shield_Description": {
+    "ru": "Поглощает урон и взрывается магическим уроном по области при разрушении.",
+    "en": "Absorbs damage and detonates in an area on expiration or break."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_slow": {
+    "ru": "Удар барьера",
+    "en": "Barrier Shock"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Move speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_e_passive": {
+    "ru": "Покой Эгиды",
+    "en": "Aegis Repose"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_e_passive_Description": {
+    "ru": "Пассивно накапливает силовой щит и даёт сопротивление эффектам с AS пока активен любой щит.",
+    "en": "Builds a passive Astral Shield and grants Status Res + Attack Speed while shielded."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_e_surge": {
+    "ru": "Прилив Эгиды",
+    "en": "Aegis Surge"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_e_surge_Description": {
+    "ru": "Ускоренно восстанавливает пассивный щит даже в бою.",
+    "en": "Rapidly generates passive Astral Shield even during combat."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_break_ms": {
+    "ru": "Прорыв барьера",
+    "en": "Shatter Rush"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_break_ms_Description": {
+    "ru": "Повышает скорость передвижения после разрушения щита.",
+    "en": "Grants bonus move speed after a shield breaks."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_r_dome": {
+    "ru": "Несокрушимый Купол",
+    "en": "Unbreakable Dome"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_r_dome_Description": {
+    "ru": "Периодически бьёт врагов внутри сферы и пополняет пассивный щит.",
+    "en": "Pulses magic damage to enemies inside and restores passive barrier."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_r_shield": {
+    "ru": "Эгида Купола",
+    "en": "Dome Barrier"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_bastion_r_shield_Description": {
+    "ru": "Поглощает урон и полностью блокирует атаки врагов из-за пределов купола.",
+    "en": "Absorbs damage and nullifies enemy attacks from outside the dome."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_inversion": {
+    "ru": "Астральная Инверсия",
+    "en": "Astral Inversion"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_inversion_Description": {
+    "ru": "Отражает весь входящий физический урон атакующему в виде магии.",
+    "en": "Reflects incoming physical damage back to the attacker as magic damage."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_q_slow": {
+    "ru": "Луч инверсии",
+    "en": "Inversion Chill"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_q_slow_Description": {
+    "ru": "Скорость передвижения снижена.",
+    "en": "Move speed reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_polarity": {
+    "ru": "Обратная полярность",
+    "en": "Reverse Polarity"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_polarity_Description": {
+    "ru": "Часть физического урона по союзникам отражается в атакующего магией.",
+    "en": "Portion of physical damage dealt to allies reflects back as magic."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_mr_shred": {
+    "ru": "Искажение защиты",
+    "en": "Matter Fracture"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_mr_shred_Description": {
+    "ru": "Сопротивление магии снижено на %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%.",
+    "en": "Magic resistance reduced."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_inv_shred": {
+    "ru": "Резонанс инверсии",
+    "en": "Inversion Burn"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_inv_shred_Description": {
+    "ru": "Сопротивление магии снижено после отражения физического урона.",
+    "en": "Magic resistance reduced from physical reflection."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_q_phase": {
+    "ru": "Зеркальный разлом",
+    "en": "Mirror Rift"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_q_phase_Description": {
+    "ru": "Повышает скорость передвижения и даёт прохождение сквозь юнитов.",
+    "en": "Grants bonus move speed and phasing."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_w_buff": {
+    "ru": "Эфирные клинки",
+    "en": "Ethereal Blades"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_w_buff_Description": {
+    "ru": "Физический урон атак конвертируется в магический с бонусным магическим уроном.",
+    "en": "Converts physical attack damage to magic with bonus arcane damage."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_e_active": {
+    "ru": "Зеркальная оболочка",
+    "en": "Mirror Shell"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_e_active_Description": {
+    "ru": "Поглощает магический урон барьером.",
+    "en": "Absorbs incoming magic damage."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_e_taunt": {
+    "ru": "Притяжение клинков",
+    "en": "Blade Attraction"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_e_taunt_Description": {
+    "ru": "Вынужден атаковать Спектру.",
+    "en": "Forced to attack Spectre."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_r_aura": {
+    "ru": "Сингулярность Зазеркалья",
+    "en": "Looking-Glass Singularity"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_r_aura_Description": {
+    "ru": "Распространяет Астральную Инверсию на союзников вокруг и снимает расход зарядов Эфирных клинков.",
+    "en": "Shares Astral Inversion with nearby allies and grants infinite Ethereal Blades."
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_r_ally": {
+    "ru": "Покров Инверсии",
+    "en": "Inversion Ward"
+  },
+  "DOTA_Tooltip_modifier_evo_spectre_mirror_r_ally_Description": {
+    "ru": "Входящий физический урон отражается в атакующего как магия.",
+    "en": "Incoming physical damage reflects back to the attacker as magic."
+  }
+}

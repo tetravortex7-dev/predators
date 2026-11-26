@@ -104,8 +104,8 @@
     "en": "Predator Pounce"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_Description": {
-    "ru": "Прыгает вперёд на %leap_distance% (преодолевая возвышенности), привязывая первого вражеского героя на %leash_duration% сек. в радиусе %leash_radius% и нанося %base_damage% + %agi_pct%%% от Ловкости физического урона.<br><b>T3:</b> мгновенно наносит атаку по привязанной цели и даёт 2 заряда Кражи Сути.<br><b>T4:</b> убийство привязанного героя сбрасывает КД и восстанавливает 25%% маны.",
-    "en": "Leaps forward %leap_distance% units (crosses cliffs), leashing the first enemy hero for %leash_duration%s within %leash_radius% radius and dealing %base_damage% + %agi_pct%%% AGI physical damage.<br><b>T3:</b> immediately strikes the leashed target and grants 2 Essence Theft stacks.<br><b>T4:</b> killing a leashed hero resets cooldown and restores 25%% mana."
+    "ru": "Прыгает вперёд на %leap_distance% (преодолевая возвышенности), привязывая первого вражеского героя на %leash_duration% сек. в радиусе %leash_radius% и нанося %base_damage% + %agi_pct%%% от Ловкости физического урона.",
+    "en": "Leaps forward %leap_distance% units (crosses cliffs), leashing the first enemy hero for %leash_duration%s within %leash_radius% radius and dealing %base_damage% + %agi_pct%%% AGI physical damage."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_leap_distance": {
     "ru": "ДАЛЬНОСТЬ ПРЫЖКА:",
@@ -128,8 +128,8 @@
     "en": "Dark Pact"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w_Description": {
-    "ru": "Через %delay% сек. выпускает серию импульсов в радиусе %radius%, применяя <b>сильное развеивание</b> на себя и нанося %base_damage% + %agi_pct%%% от Ловкости магического урона (35%% урона по себе, нелетально).<br><b>T3:</b> дарует +20%% скорости передвижения и прохождение сквозь юнитов на 2.5 сек.<br><b>T4:</b> каждый задетый вражеский герой даёт +10%% уклонения и +20 скорости атаки на 4 сек.",
-    "en": "After %delay%s, pulses in %radius% radius applying a <b>strong dispel</b> to Slark and dealing %base_damage% + %agi_pct%%% AGI magic damage (35%% non-lethal self-damage).<br><b>T3:</b> grants +20%% Move Speed and phased movement for 2.5s.<br><b>T4:</b> each enemy hero hit grants +10%% Evasion and +20 Attack Speed for 4s."
+    "ru": "Через %delay% сек. выпускает серию импульсов в радиусе %radius%, применяя <b>сильное развеивание</b> на себя и нанося %base_damage% + %agi_pct%%% от Ловкости магического урона (35%% урона по себе, нелетально).",
+    "en": "After %delay%s, pulses in %radius% radius applying a <b>strong dispel</b> to Slark and dealing %base_damage% + %agi_pct%%% AGI magic damage (35%% non-lethal self-damage)."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w_delay": {
     "ru": "ЗАДЕРЖКА:",
@@ -152,8 +152,8 @@
     "en": "Essence Theft"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e_Description": {
-    "ru": "Атаки по героям похищают +%agi_per_stack% Ловкости на %hero_duration% сек. и снижают все атрибуты жертвы на %enemy_stat_loss% (атаки по крипам дают +1 Ловкости на %creep_duration% сек.).<br><b>T3:</b> каждая 4-я атака по одному герою наносит 70 + 60%% Ловкости доп. физ. урона и крадёт 1 доп. заряд.<br><b>T4:</b> при 10+ зарядах даёт +15%% вампиризма и +10%% MS.",
-    "en": "Attacks vs heroes steal +%agi_per_stack% AGI for %hero_duration%s and reduce all victim stats by %enemy_stat_loss% (creeps grant +1 AGI for %creep_duration%s).<br><b>T3:</b> every 4th hit on the same hero deals 70 + 60%% AGI bonus physical damage and steals 1 extra stack.<br><b>T4:</b> at 10+ stacks grants +15%% lifesteal and +10%% MS."
+    "ru": "Атаки по героям похищают +%agi_per_stack% Ловкости на %hero_duration% сек. и снижают все атрибуты жертвы на %enemy_stat_loss% (атаки по крипам дают +1 Ловкости на %creep_duration% сек.).",
+    "en": "Attacks vs heroes steal +%agi_per_stack% AGI for %hero_duration%s and reduce all victim stats by %enemy_stat_loss% (creeps grant +1 AGI for %creep_duration%s)."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e_agi_per_stack": {
     "ru": "ЛОВКОСТЬ ЗА УДАР:",
@@ -212,16 +212,16 @@
     "en": "Dark Pact"
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_w_buff_Description": {
-    "ru": "+20% скорости передвижения и прохождение сквозь юнитов (на T4 +10% уклонения и +20 AS за задетого героя).",
-    "en": "+20% movement speed and phased movement (at T4 +10% evasion and +20 AS per hero hit)."
+    "ru": "+20% скорости передвижения и прохождение сквозь юнитов.",
+    "en": "+20% movement speed and phased movement."
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff": {
     "ru": "Кража Сути",
     "en": "Essence Theft"
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff_Description": {
-    "ru": "Похищенная Ловкость. На T4 при 10+ зарядах даёт +15% вампиризма и +10% скорости передвижения.",
-    "en": "Stolen Agility. At T4 with 10+ stacks grants +15% lifesteal and +10% movement speed."
+    "ru": "Похищенная Ловкость.",
+    "en": "Stolen Agility."
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_essence_debuff": {
     "ru": "Истощённая суть",
@@ -244,8 +244,8 @@
     "en": "Shark Slam"
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_Description": {
-    "ru": "Прыгает в точку на расстояние до %leap_distance% и обрушивается в радиусе %radius%, нанося %base_damage% + %str_pct%%% от Силы физического урона и оглушая врагов на %stun_duration% сек.<br><b>T3:</b> снижает броню задетых врагов на 4 на 5 сек.<br><b>T4:</b> при приземлении даёт щит на 12%% макс. HP на 4 сек.",
-    "en": "Leaps up to %leap_distance% units and slams %radius% AoE for %base_damage% + %str_pct%%% STR physical damage, stunning enemies for %stun_duration%s.<br><b>T3:</b> shreds 4 Armor for 5s.<br><b>T4:</b> grants a 12%% Max HP barrier for 4s on landing."
+    "ru": "Прыгает в точку на расстояние до %leap_distance% и обрушивается в радиусе %radius%, нанося %base_damage% + %str_pct%%% от Силы физического урона и оглушая врагов на %stun_duration% сек.",
+    "en": "Leaps up to %leap_distance% units and slams %radius% AoE for %base_damage% + %str_pct%%% STR physical damage, stunning enemies for %stun_duration%s."
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_leap_distance": {
     "ru": "ДАЛЬНОСТЬ ПРЫЖКА:",
@@ -272,8 +272,8 @@
     "en": "Rending Bite"
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_Description": {
-    "ru": "Мощный укус на %base_damage% + %str_pct%%% от Силы физического урона, исцеляющий на %heal_pct%%% от нанесённого урона.<br><b>T3:</b> наносит доп. урон в размере 6%% от макс. HP цели и замедляет на 25%% на 3 сек.<br><b>T4:</b> по целям ниже 40%% HP наносит 1.5× урона и лечит 100%% от нанесённого урона.",
-    "en": "Ferocious bite dealing %base_damage% + %str_pct%%% STR physical damage and healing for %heal_pct%%% of damage dealt.<br><b>T3:</b> deals +6%% of target's Max HP bonus damage and slows 25%% for 3s.<br><b>T4:</b> vs targets below 40%% HP deals 1.5x damage and heals 100%% of damage dealt."
+    "ru": "Мощный укус на %base_damage% + %str_pct%%% от Силы физического урона, исцеляющий на %heal_pct%%% от нанесённого урона.",
+    "en": "Ferocious bite dealing %base_damage% + %str_pct%%% STR physical damage and healing for %heal_pct%%% of damage dealt."
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_base_damage": {
     "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
@@ -292,8 +292,8 @@
     "en": "Abyssal Carapace"
   },
   "DOTA_Tooltip_ability_evo_slark_str_e_Description": {
-    "ru": "Даёт +%bonus_armor% брони и возвращает %return_damage% + 25%% от Силы физического урона атакующим в радиусе 350.<br><b>T3:</b> урон от героев накапливает до 5 зарядов Ярости глубин (+4 Силы и +4%% вампиризма за заряд на 6 сек.).<br><b>T4:</b> при здоровье ниже 45%% броня и возвращаемый урон удваиваются.",
-    "en": "Grants +%bonus_armor% Armor and reflects %return_damage% + 25%% STR physical damage to attackers within 350 range.<br><b>T3:</b> hero damage grants up to 5 Deep Fury stacks (+4 STR and +4%% lifesteal per stack for 6s).<br><b>T4:</b> below 45%% HP, armor and reflect damage are doubled."
+    "ru": "Даёт +%bonus_armor% брони и возвращает %return_damage% + 25%% от Силы физического урона атакующим в радиусе 350.",
+    "en": "Grants +%bonus_armor% Armor and reflects %return_damage% + 25%% STR physical damage to attackers within 350 range."
   },
   "DOTA_Tooltip_ability_evo_slark_str_e_bonus_armor": {
     "ru": "ДОП. БРОНЯ:",
@@ -328,8 +328,8 @@
     "en": "Abyssal Net"
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_Description": {
-    "ru": "Бросает сеть в радиусе %radius%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и обездвиживая врагов на %root_duration% сек.<br><b>T3:</b> снижает маг. сопротивление целей на 15%% на 4 сек.<br><b>T4:</b> стягивает врагов к центру сети и накладывает безмолвие на 1.5 сек.",
-    "en": "Throws an arcane net in %radius% radius dealing %base_damage% + %int_pct%%% INT magic damage and rooting enemies for %root_duration%s.<br><b>T3:</b> reduces magic resistance by 15%% for 4s.<br><b>T4:</b> pulls enemies toward the center and silences for 1.5s."
+    "ru": "Бросает сеть в радиусе %radius%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и обездвиживая врагов на %root_duration% сек.",
+    "en": "Throws an arcane net in %radius% radius dealing %base_damage% + %int_pct%%% INT magic damage and rooting enemies for %root_duration%s."
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_radius": {
     "ru": "РАДИУС:",
@@ -352,8 +352,8 @@
     "en": "Dark Tide"
   },
   "DOTA_Tooltip_ability_evo_slark_int_w_Description": {
-    "ru": "Выпускает волну на %range%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и замедляя врагов на 25%% на 3 сек.<br><b>T3:</b> попадание по герою восстанавливает 12%% макс. маны и сокращает КД Глубинной Сети на 2 сек.<br><b>T4:</b> оставляет тёмный след на 4 сек. (65 + 35%% ИНТ маг. урона/сек).",
-    "en": "Sends a %range%-range wave dealing %base_damage% + %int_pct%%% INT magic damage and slowing by 25%% for 3s.<br><b>T3:</b> hitting a hero restores 12%% Max Mana and reduces Abyssal Net CD by 2s.<br><b>T4:</b> leaves a dark wake for 4s dealing 65 + 35%% INT magic DPS."
+    "ru": "Выпускает волну на %range%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и замедляя врагов на 25%% на 3 сек.",
+    "en": "Sends a %range%-range wave dealing %base_damage% + %int_pct%%% INT magic damage and slowing by 25%% for 3s."
   },
   "DOTA_Tooltip_ability_evo_slark_int_w_range": {
     "ru": "ДАЛЬНОСТЬ:",
@@ -372,8 +372,8 @@
     "en": "Lantern Call"
   },
   "DOTA_Tooltip_ability_evo_slark_int_e_Description": {
-    "ru": "Каждое применение способности заряжает фонарь (до %max_stacks% зарядов на 8 сек.): +4%% к урону заклинаний за заряд. Следующая атака тратит заряд для взрыва (325 AoE) на %blast_damage% + 40%% от Интеллекта маг. урона.<br><b>T3:</b> взрыв замедляет на 20%% (2.5с) и лечит 4%% макс. HP за героя.<br><b>T4:</b> каст при 3+ зарядах автоматически бьёт ближайшего врага на 90 + 60%% ИНТ.",
-    "en": "Each ability cast charges the lantern (max %max_stacks% stacks for 8s): +4%% Spell Amp per stack. Your next attack consumes 1 stack for a 325-AoE blast dealing %blast_damage% + 40%% INT magic damage.<br><b>T3:</b> blast slows 20%% (2.5s) and heals 4%% Max HP per hero hit.<br><b>T4:</b> casting at 3+ stacks auto-zaps the nearest enemy hero for 90 + 60%% INT."
+    "ru": "Каждое применение способности заряжает фонарь (до %max_stacks% зарядов на 8 сек.): +4%% к урону заклинаний за заряд. Следующая атака тратит заряд для взрыва (325 AoE) на %blast_damage% + 40%% от Интеллекта маг. урона.",
+    "en": "Each ability cast charges the lantern (max %max_stacks% stacks for 8s): +4%% Spell Amp per stack. Your next attack consumes 1 stack for a 325-AoE blast dealing %blast_damage% + 40%% INT magic damage."
   },
   "DOTA_Tooltip_ability_evo_slark_int_e_max_stacks": {
     "ru": "МАКС. ЗАРЯДОВ:",

@@ -1,3 +1,4 @@
+import { EVO_PLAYABLE_TEAMS } from "../../data/game_constants";
 import {
     BaseAbility,
     BaseModifier,
@@ -6,6 +7,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
 
 const SCRIPT_PATH = "abilities/slark/evo_slark_t1";
 
@@ -51,18 +53,8 @@ export class modifier_evo_slark_deep_predator extends BaseModifier {
         }
 
         const myTeam = parent.GetTeamNumber();
-        const enemyTeams: DotaTeam[] = [
-            DotaTeam.GOODGUYS,
-            DotaTeam.BADGUYS,
-            DotaTeam.CUSTOM_1,
-            DotaTeam.CUSTOM_2,
-            DotaTeam.CUSTOM_3,
-            DotaTeam.CUSTOM_4,
-            DotaTeam.CUSTOM_5,
-        ];
-
         let spotted = false;
-        for (const team of enemyTeams) {
+        for (const team of [...EVO_PLAYABLE_TEAMS, DotaTeam.CUSTOM_5]) {
             if (team === myTeam) continue;
             if (CanTeamSeeUnit(team, parent)) {
                 spotted = true;
@@ -328,7 +320,7 @@ export class evo_slark_t1_greedy_bite extends BaseAbility {
         const baseSteal = this.GetSpecialValueFor("regen_steal");
         const creepMult = this.GetSpecialValueFor("creep_mult");
         const duration = this.GetSpecialValueFor("duration");
-        const stealAmount = target.IsCreep() ? Math.round(baseSteal * creepMult * 10) : Math.round(baseSteal * 10);
+        const stealAmount = isEvoCreepUnit(target) ? Math.round(baseSteal * creepMult * 10) : Math.round(baseSteal * 10);
 
         caster.EmitSound("Hero_Slark.EssenceShift");
         caster.PerformAttack(target, true, true, true, false, false, false, false);

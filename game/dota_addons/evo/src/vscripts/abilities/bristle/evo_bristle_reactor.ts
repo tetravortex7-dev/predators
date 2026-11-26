@@ -5,6 +5,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
 import { activeReactorZones, applyReactorCatalystStacks, getAllAttributesSum } from "./evo_bristle_shared";
 
 const SCRIPT_PATH = "abilities/bristle/evo_bristle_reactor";
@@ -56,7 +57,7 @@ export class evo_bristle_react_q extends BaseAbility {
                 victim: enemy,
                 attacker: caster,
                 ability: this,
-                damage: enemy.IsCreep() ? dmgBase * 1.3 : dmgBase,
+                damage: isEvoCreepUnit(enemy) ? dmgBase * 1.3 : dmgBase,
                 damage_type: DamageTypes.MAGICAL,
             });
             applyReactorCatalystStacks(caster, enemy, this, 2);

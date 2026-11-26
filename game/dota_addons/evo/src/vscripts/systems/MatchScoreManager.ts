@@ -1,18 +1,11 @@
 import { EventBus } from "../core/EventBus";
 import {
     EVO_CONSTANTS,
+    EVO_PLAYABLE_TEAMS,
     calculateComebackScoreMultiplier,
     calculateEscalationMultiplier,
+    calculateTargetTeamScore,
 } from "../data/game_constants";
-
-const PLAYABLE_TEAMS: readonly DotaTeam[] = [
-    DotaTeam.GOODGUYS,
-    DotaTeam.BADGUYS,
-    DotaTeam.CUSTOM_1,
-    DotaTeam.CUSTOM_2,
-    DotaTeam.CUSTOM_3,
-    DotaTeam.CUSTOM_4,
-];
 
 interface TeamScoreSnapshot {
     team_id: number;
@@ -57,13 +50,17 @@ export class MatchScoreManager {
         this.eventBus.on("duel_finished", ({ winnerId, isTiebreaker }) => {
             if (isTiebreaker || winnerId === undefined || !PlayerResource.IsValidPlayerID(winnerId)) return;
             const team = PlayerResource.GetTeam(winnerId);
-            this.addScore(team, EVO_CONSTANTS.SCORE_DUEL_WIN, "duel_win", winnerId);
+            const awarded = this.addScore(team, EVO_CONSTANTS.SCORE_DUEL_WIN, "duel_win", winnerId);
+            const existing = CustomNetTables.GetTableValue("duel_state" as never, "last_result") as
+                | Record<string, unknown>
+                | undefined;
+            if (existing) {
+                existing.score_reward = awarded;
+                CustomNetTables.SetTableValue("duel_state" as never, "last_result", existing as never);
+            }
         });
 
-        this.eventBus.on("phase_changed", ({ newPhase }) => {
-            if (newPhase === "TIEBREAKER" && !this.matchEnded) {
-                this.resolveTimeLimitEnd();
-            }
+        this.eventBus.on("phase_changed", () => {
             this.syncScoresNetTable();
         });
 
@@ -87,9 +84,9 @@ export class MatchScoreManager {
         return this.playerScores.get(playerId) ?? 0;
     }
 
-    public addScore(team: DotaTeam, baseDelta: number, reason: string, playerId?: PlayerID): void {
-        if (this.matchEnded || baseDelta === 0) return;
-        if (!this.isPlayableTeam(team)) return;
+    public addScore(team: DotaTeam, baseDelta: number, reason: string, playerId?: PlayerID): number {
+        if (this.matchEnded || baseDelta === 0) return 0;
+        if (!this.isPlayableTeam(team)) return 0;
 
         let effectiveDelta = baseDelta;
         if (baseDelta > 0) {
@@ -118,9 +115,11 @@ export class MatchScoreManager {
 
         this.syncScoresNetTable();
 
-        if (newTeamScore >= EVO_CONSTANTS.TARGET_TEAM_SCORE) {
+        const targetScore = calculateTargetTeamScore();
+        if (newTeamScore >= targetScore) {
             this.declareWinner(team, "score_limit");
         }
+        return effectiveDelta;
     }
 
     private onGameStateChange(): void {
@@ -156,34 +155,7 @@ export class MatchScoreManager {
         }
     }
 
-    private resolveTimeLimitEnd(): void {
-        this.ensureActiveTeamsRegistered();
-        const activeTeams = this.getActiveTeams();
-        if (activeTeams.length === 0) return;
-
-        let maxScore = -1;
-        let leaders: DotaTeam[] = [];
-        for (const team of activeTeams) {
-            const score = this.getTeamScore(team);
-            if (score > maxScore) {
-                maxScore = score;
-                leaders = [team];
-            } else if (score === maxScore) {
-                leaders.push(team);
-            }
-        }
-
-        if (leaders.length === 1) {
-            this.declareWinner(leaders[0], "time_limit");
-            return;
-        }
-
-        this.eventBus.emit("tiebreaker_requested", {
-            tiedTeams: leaders,
-        });
-    }
-
-    private declareWinner(team: DotaTeam, reason: "score_limit" | "time_limit" | "tiebreaker"): void {
+    private declareWinner(team: DotaTeam, reason: "score_limit"): void {
         if (this.matchEnded) return;
         this.matchEnded = true;
 
@@ -210,7 +182,7 @@ export class MatchScoreManager {
 
     private getActiveTeams(): DotaTeam[] {
         const result: DotaTeam[] = [];
-        for (const team of PLAYABLE_TEAMS) {
+        for (const team of EVO_PLAYABLE_TEAMS) {
             if (PlayerResource.GetPlayerCountForTeam(team) > 0 || this.teamScores.has(team)) {
                 result.push(team);
             }
@@ -229,7 +201,7 @@ export class MatchScoreManager {
     }
 
     private isPlayableTeam(team: DotaTeam): boolean {
-        return PLAYABLE_TEAMS.includes(team);
+        return EVO_PLAYABLE_TEAMS.includes(team);
     }
 
     private syncScoresNetTable(): void {
@@ -268,7 +240,7 @@ export class MatchScoreManager {
             "match_state" as never,
             "scores",
             {
-                target_score: EVO_CONSTANTS.TARGET_TEAM_SCORE,
+                target_score: calculateTargetTeamScore(),
                 escalation_mult: escalation,
                 teams: teamsPayload,
                 player_scores: playerScoresPayload,

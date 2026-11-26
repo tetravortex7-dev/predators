@@ -6,6 +6,7 @@ import {
     registerAbility,
     registerModifier,
 } from "../../lib/dota_ts_adapter";
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
 import {
     fireDreadnoughtQuillFan,
     getAllAttributesSum,
@@ -306,7 +307,7 @@ export class evo_bristle_t1_acid_spit extends BaseAbility {
         const creepMult = this.GetSpecialValueFor("creep_mult");
         const duration = this.GetSpecialValueFor("duration");
         const maxStacks = this.GetSpecialValueFor("max_stacks");
-        const dmg = target.IsCreep() ? baseDmg * creepMult : baseDmg;
+        const dmg = isEvoCreepUnit(target) ? baseDmg * creepMult : baseDmg;
 
         target.EmitSound("Hero_Bristleback.ViscousGoo.Target");
         ApplyDamage({
@@ -396,7 +397,7 @@ export class evo_bristle_t1_quill_burst extends BaseAbility {
         for (const enemy of enemies) {
             if (!enemy || enemy.IsNull() || !IsValidEntity(enemy) || !enemy.IsAlive()) continue;
             hitCount += 1;
-            const dmg = enemy.IsCreep() ? dmgBase * creepMult : dmgBase;
+            const dmg = isEvoCreepUnit(enemy) ? dmgBase * creepMult : dmgBase;
             ApplyDamage({
                 victim: enemy,
                 attacker: caster,

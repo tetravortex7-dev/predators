@@ -3,139 +3,137 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 8,["16"] = 10,["17"] = 12,["18"] = 12,["19"] = 12,["20"] = 12,["21"] = 12,["22"] = 12,["23"] = 12,["24"] = 20,["25"] = 21,["27"] = 24,["28"] = 25,["29"] = 24,["30"] = 28,["31"] = 29,["32"] = 28,["33"] = 29,["34"] = 30,["35"] = 31,["38"] = 32,["39"] = 33,["42"] = 35,["43"] = 36,["44"] = 37,["45"] = 38,["46"] = 39,["47"] = 40,["48"] = 41,["49"] = 42,["50"] = 43,["51"] = 45,["52"] = 46,["53"] = 47,["54"] = 49,["55"] = 50,["56"] = 55,["57"] = 56,["58"] = 57,["59"] = 59,["60"] = 60,["61"] = 60,["62"] = 60,["63"] = 60,["64"] = 60,["65"] = 60,["66"] = 60,["67"] = 60,["68"] = 60,["69"] = 60,["70"] = 71,["71"] = 72,["73"] = 73,["74"] = 73,["76"] = 74,["77"] = 74,["79"] = 76,["80"] = 77,["81"] = 78,["82"] = 78,["83"] = 78,["84"] = 78,["85"] = 78,["86"] = 79,["87"] = 80,["88"] = 81,["89"] = 81,["90"] = 81,["91"] = 81,["92"] = 81,["93"] = 86,["96"] = 90,["97"] = 91,["98"] = 91,["99"] = 91,["100"] = 91,["101"] = 91,["102"] = 91,["103"] = 91,["107"] = 100,["108"] = 101,["109"] = 102,["111"] = 104,["112"] = 109,["113"] = 110,["114"] = 112,["115"] = 112,["116"] = 112,["117"] = 112,["118"] = 112,["119"] = 112,["120"] = 112,["121"] = 112,["122"] = 112,["123"] = 112,["124"] = 112,["125"] = 123,["127"] = 124,["128"] = 124,["130"] = 125,["131"] = 125,["132"] = 125,["133"] = 125,["134"] = 125,["135"] = 125,["136"] = 125,["141"] = 30,["142"] = 29,["143"] = 28,["144"] = 29,["146"] = 29,["147"] = 137,["148"] = 138,["149"] = 137,["150"] = 138,["151"] = 139,["152"] = 140,["153"] = 139,["154"] = 142,["155"] = 143,["156"] = 142,["157"] = 145,["158"] = 146,["159"] = 145,["160"] = 148,["161"] = 149,["162"] = 148,["163"] = 151,["164"] = 152,["165"] = 151,["166"] = 154,["167"] = 155,["168"] = 154,["169"] = 138,["170"] = 137,["171"] = 138,["173"] = 138,["174"] = 159,["175"] = 160,["176"] = 159,["177"] = 160,["178"] = 161,["179"] = 162,["182"] = 163,["183"] = 164,["186"] = 166,["187"] = 167,["188"] = 168,["189"] = 169,["190"] = 170,["191"] = 172,["192"] = 173,["193"] = 175,["194"] = 180,["195"] = 182,["196"] = 183,["197"] = 183,["198"] = 183,["199"] = 183,["200"] = 183,["201"] = 183,["202"] = 183,["203"] = 183,["204"] = 183,["205"] = 183,["206"] = 183,["207"] = 194,["209"] = 195,["210"] = 195,["212"] = 196,["213"] = 196,["214"] = 196,["215"] = 196,["216"] = 196,["217"] = 196,["218"] = 196,["219"] = 203,["223"] = 161,["224"] = 160,["225"] = 159,["226"] = 160,["228"] = 160,["229"] = 208,["230"] = 209,["231"] = 208,["232"] = 209,["234"] = 209,["235"] = 210,["236"] = 208,["237"] = 212,["238"] = 213,["239"] = 212,["240"] = 215,["241"] = 216,["242"] = 215,["243"] = 218,["244"] = 219,["245"] = 218,["246"] = 221,["247"] = 222,["248"] = 221,["249"] = 224,["250"] = 225,["251"] = 224,["252"] = 227,["253"] = 228,["254"] = 227,["255"] = 230,["256"] = 231,["257"] = 231,["258"] = 231,["259"] = 231,["260"] = 231,["261"] = 230,["262"] = 237,["263"] = 238,["264"] = 239,["265"] = 237,["266"] = 241,["267"] = 242,["268"] = 243,["269"] = 241,["270"] = 245,["271"] = 246,["274"] = 247,["275"] = 248,["276"] = 249,["279"] = 250,["280"] = 251,["283"] = 252,["286"] = 253,["289"] = 255,["290"] = 256,["291"] = 257,["292"] = 258,["293"] = 258,["294"] = 258,["295"] = 258,["296"] = 258,["297"] = 258,["298"] = 258,["299"] = 258,["300"] = 266,["301"] = 267,["304"] = 271,["305"] = 272,["306"] = 273,["307"] = 274,["309"] = 245,["310"] = 209,["311"] = 208,["312"] = 209,["314"] = 209,["315"] = 279,["316"] = 280,["317"] = 279,["318"] = 280,["319"] = 281,["320"] = 282,["321"] = 281,["322"] = 284,["323"] = 285,["324"] = 284,["325"] = 287,["326"] = 288,["327"] = 287,["328"] = 290,["329"] = 291,["330"] = 290,["331"] = 293,["332"] = 294,["333"] = 293,["334"] = 296,["335"] = 297,["336"] = 296,["337"] = 280,["338"] = 279,["339"] = 280,["341"] = 280,["342"] = 301,["343"] = 302,["344"] = 301,["345"] = 302,["346"] = 303,["347"] = 304,["348"] = 303,["349"] = 302,["350"] = 301,["351"] = 302,["353"] = 302,["354"] = 308,["355"] = 309,["356"] = 308,["357"] = 309,["359"] = 309,["360"] = 310,["361"] = 308,["362"] = 312,["363"] = 313,["364"] = 312,["365"] = 315,["366"] = 316,["367"] = 315,["368"] = 318,["369"] = 319,["370"] = 318,["371"] = 321,["372"] = 322,["373"] = 321,["374"] = 324,["375"] = 325,["376"] = 325,["377"] = 325,["378"] = 325,["379"] = 325,["380"] = 324,["381"] = 331,["382"] = 332,["383"] = 333,["384"] = 334,["385"] = 334,["387"] = 335,["388"] = 331,["389"] = 337,["390"] = 338,["391"] = 339,["392"] = 340,["393"] = 340,["395"] = 341,["396"] = 337,["397"] = 343,["398"] = 344,["401"] = 345,["402"] = 346,["403"] = 347,["406"] = 348,["407"] = 349,["410"] = 350,["413"] = 351,["416"] = 353,["417"] = 354,["418"] = 355,["419"] = 356,["420"] = 357,["421"] = 358,["422"] = 359,["423"] = 359,["424"] = 359,["425"] = 359,["426"] = 359,["427"] = 359,["428"] = 359,["429"] = 359,["431"] = 343,["432"] = 309,["433"] = 308,["434"] = 309,["436"] = 309,["437"] = 371,["438"] = 372,["439"] = 371,["440"] = 372,["441"] = 373,["442"] = 374,["445"] = 375,["446"] = 376,["449"] = 378,["450"] = 379,["451"] = 381,["452"] = 382,["453"] = 382,["454"] = 382,["455"] = 382,["456"] = 383,["457"] = 384,["458"] = 373,["459"] = 372,["460"] = 371,["461"] = 372,["463"] = 372,["464"] = 388,["465"] = 389,["466"] = 388,["467"] = 389,["469"] = 389,["470"] = 390,["471"] = 388,["472"] = 392,["473"] = 393,["474"] = 392,["475"] = 395,["476"] = 396,["477"] = 395,["478"] = 398,["479"] = 399,["480"] = 398,["481"] = 401,["482"] = 402,["483"] = 401,["484"] = 404,["485"] = 405,["486"] = 406,["489"] = 407,["490"] = 408,["491"] = 409,["492"] = 410,["493"] = 411,["495"] = 413,["496"] = 404,["497"] = 415,["498"] = 416,["501"] = 417,["502"] = 418,["503"] = 419,["506"] = 421,["507"] = 422,["508"] = 423,["509"] = 424,["510"] = 426,["511"] = 431,["512"] = 433,["513"] = 433,["514"] = 433,["515"] = 433,["516"] = 433,["517"] = 433,["518"] = 433,["519"] = 433,["520"] = 433,["521"] = 433,["522"] = 433,["523"] = 444,["525"] = 445,["526"] = 445,["528"] = 446,["529"] = 446,["530"] = 446,["531"] = 446,["532"] = 446,["533"] = 446,["534"] = 446,["535"] = 453,["539"] = 415,["540"] = 456,["541"] = 457,["542"] = 457,["543"] = 457,["544"] = 457,["545"] = 456,["546"] = 462,["547"] = 463,["548"] = 462,["549"] = 465,["550"] = 466,["551"] = 465,["552"] = 389,["553"] = 388,["554"] = 389,["556"] = 389});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 7,["15"] = 9,["16"] = 9,["17"] = 10,["18"] = 11,["19"] = 12,["20"] = 13,["21"] = 14,["22"] = 15,["23"] = 16,["24"] = 19,["25"] = 21,["26"] = 22,["27"] = 23,["28"] = 25,["29"] = 26,["30"] = 25,["31"] = 26,["32"] = 27,["33"] = 28,["34"] = 28,["35"] = 28,["36"] = 28,["37"] = 27,["38"] = 30,["39"] = 31,["40"] = 32,["41"] = 33,["43"] = 35,["44"] = 35,["45"] = 35,["46"] = 35,["47"] = 35,["48"] = 35,["49"] = 35,["50"] = 35,["51"] = 35,["52"] = 35,["53"] = 30,["54"] = 37,["55"] = 38,["56"] = 39,["57"] = 40,["58"] = 40,["60"] = 41,["61"] = 42,["62"] = 37,["63"] = 44,["64"] = 45,["67"] = 46,["68"] = 47,["69"] = 48,["70"] = 49,["71"] = 50,["72"] = 51,["73"] = 53,["74"] = 54,["75"] = 55,["76"] = 56,["77"] = 56,["78"] = 56,["79"] = 56,["80"] = 58,["81"] = 59,["82"] = 60,["83"] = 61,["84"] = 62,["85"] = 64,["86"] = 65,["87"] = 70,["88"] = 70,["89"] = 70,["90"] = 70,["91"] = 70,["92"] = 71,["93"] = 72,["94"] = 74,["95"] = 75,["96"] = 76,["97"] = 77,["98"] = 78,["100"] = 80,["101"] = 81,["102"] = 81,["103"] = 81,["104"] = 81,["105"] = 81,["106"] = 81,["107"] = 81,["108"] = 88,["109"] = 88,["110"] = 88,["111"] = 88,["112"] = 88,["113"] = 88,["114"] = 88,["115"] = 88,["116"] = 88,["117"] = 88,["118"] = 88,["119"] = 88,["120"] = 88,["121"] = 88,["122"] = 88,["123"] = 98,["124"] = 99,["125"] = 100,["127"] = 102,["128"] = 103,["131"] = 107,["132"] = 108,["133"] = 109,["134"] = 110,["135"] = 111,["136"] = 112,["139"] = 44,["140"] = 26,["141"] = 25,["142"] = 26,["144"] = 26,["145"] = 118,["146"] = 119,["147"] = 118,["148"] = 119,["149"] = 120,["150"] = 121,["151"] = 120,["152"] = 123,["153"] = 124,["154"] = 123,["155"] = 126,["156"] = 127,["157"] = 126,["158"] = 129,["159"] = 130,["160"] = 129,["161"] = 132,["162"] = 133,["163"] = 132,["164"] = 135,["165"] = 136,["166"] = 135,["167"] = 119,["168"] = 118,["169"] = 119,["171"] = 119,["172"] = 140,["173"] = 141,["174"] = 140,["175"] = 141,["176"] = 142,["177"] = 143,["178"] = 142,["179"] = 145,["180"] = 146,["181"] = 145,["182"] = 148,["183"] = 149,["184"] = 148,["185"] = 151,["186"] = 152,["187"] = 151,["188"] = 154,["189"] = 155,["192"] = 156,["193"] = 154,["194"] = 158,["195"] = 159,["198"] = 160,["199"] = 161,["200"] = 162,["201"] = 163,["204"] = 164,["205"] = 165,["206"] = 165,["207"] = 165,["208"] = 165,["209"] = 165,["210"] = 165,["211"] = 165,["212"] = 158,["213"] = 173,["214"] = 174,["215"] = 173,["216"] = 176,["217"] = 177,["218"] = 176,["219"] = 141,["220"] = 140,["221"] = 141,["223"] = 141,["224"] = 181,["225"] = 182,["226"] = 181,["227"] = 182,["228"] = 183,["229"] = 184,["230"] = 184,["231"] = 184,["232"] = 184,["233"] = 183,["234"] = 186,["235"] = 187,["236"] = 186,["237"] = 189,["238"] = 190,["241"] = 191,["242"] = 192,["243"] = 193,["244"] = 194,["246"] = 196,["247"] = 197,["248"] = 198,["249"] = 199,["250"] = 199,["251"] = 199,["252"] = 199,["253"] = 199,["254"] = 199,["255"] = 199,["256"] = 200,["257"] = 200,["258"] = 200,["259"] = 200,["260"] = 200,["261"] = 200,["262"] = 201,["263"] = 201,["264"] = 201,["265"] = 201,["266"] = 201,["267"] = 201,["268"] = 201,["269"] = 201,["270"] = 201,["273"] = 204,["275"] = 189,["276"] = 182,["277"] = 181,["278"] = 182,["280"] = 182,["281"] = 209,["282"] = 210,["283"] = 209,["284"] = 210,["286"] = 210,["287"] = 211,["288"] = 209,["289"] = 213,["290"] = 214,["291"] = 213,["292"] = 216,["293"] = 217,["294"] = 216,["295"] = 219,["296"] = 220,["297"] = 219,["298"] = 222,["299"] = 223,["300"] = 222,["301"] = 225,["302"] = 226,["303"] = 227,["306"] = 228,["307"] = 225,["308"] = 230,["309"] = 231,["312"] = 232,["313"] = 233,["314"] = 234,["317"] = 236,["318"] = 237,["319"] = 237,["320"] = 237,["321"] = 237,["322"] = 238,["323"] = 240,["324"] = 241,["325"] = 242,["326"] = 243,["327"] = 244,["328"] = 245,["329"] = 246,["332"] = 249,["333"] = 249,["334"] = 249,["335"] = 249,["336"] = 249,["338"] = 230,["339"] = 252,["340"] = 253,["341"] = 254,["342"] = 255,["343"] = 255,["344"] = 255,["345"] = 255,["346"] = 255,["347"] = 252,["348"] = 261,["349"] = 262,["350"] = 262,["351"] = 262,["352"] = 262,["353"] = 261,["354"] = 267,["355"] = 268,["356"] = 269,["357"] = 269,["359"] = 270,["360"] = 271,["361"] = 271,["363"] = 272,["364"] = 267,["365"] = 274,["366"] = 275,["367"] = 276,["368"] = 276,["370"] = 277,["371"] = 274,["372"] = 210,["373"] = 209,["374"] = 210,["376"] = 210});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
 local BaseModifier = ____dota_ts_adapter.BaseModifier
 local dotaModifierFunction = ____dota_ts_adapter.dotaModifierFunction
+local dotaModifierState = ____dota_ts_adapter.dotaModifierState
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
-local ____evo_nyx_t1 = require("abilities.nyx.evo_nyx_t1")
-local addNyxChitinStacks = ____evo_nyx_t1.addNyxChitinStacks
+local ____unit_helpers = require("lib.unit_helpers")
+local isEvoCreepUnit = ____unit_helpers.isEvoCreepUnit
+local ____evo_nyx_shared = require("abilities.nyx.evo_nyx_shared")
+local findEnemiesInRadius = ____evo_nyx_shared.findEnemiesInRadius
+local getNyxBranchMaxLevel = ____evo_nyx_shared.getNyxBranchMaxLevel
+local getNyxStr = ____evo_nyx_shared.getNyxStr
+local getNyxTier = ____evo_nyx_shared.getNyxTier
+local isNyxBurrowed = ____evo_nyx_shared.isNyxBurrowed
+local knockbackUnitFrom = ____evo_nyx_shared.knockbackUnitFrom
 local SCRIPT_PATH = "abilities/nyx/evo_nyx_scarab"
-local SCARAB_MODS = {
-    "modifier_evo_nyx_scarab_q_armor",
-    "modifier_evo_nyx_scarab_w_buff",
-    "modifier_evo_nyx_scarab_w_slow",
-    "modifier_evo_nyx_scarab_e_passive",
-    "modifier_evo_nyx_scarab_r_citadel"
-}
-for ____, modName in ipairs(SCARAB_MODS) do
-    LinkLuaModifier(modName, SCRIPT_PATH, 0)
-end
-local function getStr(self, unit)
-    return unit:IsRealHero() and unit:GetStrength() or 0
-end
+LinkLuaModifier("modifier_evo_nyx_scarab_q_slow", SCRIPT_PATH, 0)
+LinkLuaModifier("modifier_evo_nyx_scarab_q_dot", SCRIPT_PATH, 0)
+LinkLuaModifier("modifier_evo_nyx_scarab_w", SCRIPT_PATH, 0)
 ____exports.evo_nyx_scarab_q = __TS__Class()
 local evo_nyx_scarab_q = ____exports.evo_nyx_scarab_q
 evo_nyx_scarab_q.name = "evo_nyx_scarab_q"
 __TS__ClassExtends(evo_nyx_scarab_q, BaseAbility)
+function evo_nyx_scarab_q.prototype.GetMaxLevel(self)
+    return getNyxBranchMaxLevel(
+        nil,
+        self:GetCaster()
+    )
+end
+function evo_nyx_scarab_q.prototype.GetCooldown(self, level)
+    local caster = self:GetCaster()
+    if caster and not caster:IsNull() and caster:HasModifier("modifier_evo_nyx_scarab_r_aura") then
+        return 4.5
+    end
+    return ({
+        11,
+        10,
+        9,
+        8,
+        7
+    })[math.max(
+        0,
+        math.min(4, level)
+    ) + 1] or 11
+end
+function evo_nyx_scarab_q.prototype.GetAOERadius(self)
+    local caster = self:GetCaster()
+    local base = self:GetSpecialValueFor("radius")
+    if not caster or caster:IsNull() or not isNyxBurrowed(nil, caster) then
+        return base
+    end
+    local w = caster:FindAbilityByName("evo_nyx_scarab_w")
+    return base + (w and not w:IsNull() and w:GetSpecialValueFor("q_radius_bonus") or 85)
+end
 function evo_nyx_scarab_q.prototype.OnSpellStart(self)
     if not IsServer() then
         return
     end
     local caster = self:GetCaster()
-    if not caster or caster:IsNull() or not IsValidEntity(caster) then
-        return
-    end
-    local origin = caster:GetAbsOrigin()
-    local cursor = self:GetCursorPosition()
-    local level = self:GetLevel()
-    local range = self:GetSpecialValueFor("range")
-    local width = self:GetSpecialValueFor("width")
+    local tier = getNyxTier(nil, caster)
+    local burrowed = isNyxBurrowed(nil, caster)
+    local wAb = caster:FindAbilityByName("evo_nyx_scarab_w")
+    local forwardBonus = burrowed and (wAb and not wAb:IsNull() and wAb:GetSpecialValueFor("q_range_bonus") or 225) or 0
+    local radiusBonus = burrowed and (wAb and not wAb:IsNull() and wAb:GetSpecialValueFor("q_radius_bonus") or 85) or 0
+    local dist = self:GetSpecialValueFor("forward_distance") + forwardBonus
+    local radius = self:GetSpecialValueFor("radius") + radiusBonus
+    local forward = caster:GetForwardVector():Normalized()
+    local center = GetGroundPosition(
+        caster:GetAbsOrigin() + forward * dist,
+        caster
+    )
     local baseDmg = self:GetSpecialValueFor("base_damage")
     local strPct = self:GetSpecialValueFor("str_pct") / 100
-    local stunDur = self:GetSpecialValueFor("stun_duration")
+    local rawDmg = baseDmg + getNyxStr(nil, caster) * strPct
     local creepMult = self:GetSpecialValueFor("creep_mult")
-    local delta = Vector(cursor.x - origin.x, cursor.y - origin.y, 0)
-    local dir = delta:Length2D() > 1 and delta:Normalized() or caster:GetForwardVector()
-    local endPos = Vector(origin.x + dir.x * range, origin.y + dir.y * range, origin.z)
+    local stunDur = self:GetSpecialValueFor("stun_duration")
     caster:EmitSound("Hero_NyxAssassin.Impale")
     local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_nyx_assassin/nyx_assassin_impale.vpcf", 8, nil)
-    ParticleManager:SetParticleControl(pfx, 0, origin)
-    ParticleManager:SetParticleControl(pfx, 1, endPos)
-    ParticleManager:ReleaseParticleIndex(pfx)
-    local totalDmg = baseDmg + getStr(nil, caster) * strPct
-    local enemies = FindUnitsInLine(
-        caster:GetTeamNumber(),
-        origin,
-        endPos,
-        nil,
-        width,
-        2,
-        1 + 18,
-        0
+    ParticleManager:SetParticleControl(
+        pfx,
+        0,
+        caster:GetAbsOrigin()
     )
-    local hitHero = false
+    ParticleManager:SetParticleControl(pfx, 1, center)
+    ParticleManager:ReleaseParticleIndex(pfx)
+    local enemies = findEnemiesInRadius(nil, caster, center, radius)
+    local heroHits = 0
     for ____, enemy in ipairs(enemies) do
-        do
-            if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue8
-            end
-            if enemy:IsHero() then
-                hitHero = true
-            end
-            if level >= 2 then
-                enemy:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_q_armor", {duration = 4})
-                local toCaster = Vector(
-                    origin.x - enemy:GetAbsOrigin().x,
-                    origin.y - enemy:GetAbsOrigin().y,
-                    0
-                )
-                if toCaster:Length2D() > 140 then
-                    local pullDir = toCaster:Normalized()
-                    local pulled = Vector(
-                        enemy:GetAbsOrigin().x + pullDir.x * 130,
-                        enemy:GetAbsOrigin().y + pullDir.y * 130,
-                        enemy:GetAbsOrigin().z
-                    )
-                    FindClearSpaceForUnit(enemy, pulled, true)
-                end
-            end
-            enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = stunDur})
-            ApplyDamage({
-                victim = enemy,
-                attacker = caster,
-                ability = self,
-                damage = enemy:IsCreep() and totalDmg * creepMult or totalDmg,
-                damage_type = 1
-            })
+        if enemy:IsRealHero() then
+            heroHits = heroHits + 1
         end
-        ::__continue8::
-    end
-    if level >= 3 then
-        if hitHero then
-            addNyxChitinStacks(nil, caster, 2)
-        end
-        local shockPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_sandking/sandking_epicenter_ring.vpcf", 8, nil)
-        ParticleManager:SetParticleControl(shockPfx, 0, endPos)
-        ParticleManager:ReleaseParticleIndex(shockPfx)
-        local afterEnemies = FindUnitsInRadius(
-            caster:GetTeamNumber(),
-            endPos,
-            nil,
-            260,
-            2,
-            1 + 18,
-            0,
-            0,
-            false
+        local dmg = isEvoCreepUnit(nil, enemy) and rawDmg * creepMult or rawDmg
+        ApplyDamage({
+            victim = enemy,
+            attacker = caster,
+            ability = self,
+            damage = dmg,
+            damage_type = 2
+        })
+        enemy:AddNewModifier(
+            caster,
+            self,
+            "modifier_knockback",
+            {
+                center_x = enemy:GetAbsOrigin().x,
+                center_y = enemy:GetAbsOrigin().y,
+                center_z = enemy:GetAbsOrigin().z,
+                duration = 0.5,
+                knockback_duration = 0.5,
+                knockback_distance = 0,
+                knockback_height = 180,
+                should_stun = 1
+            }
         )
-        for ____, enemy in ipairs(afterEnemies) do
-            do
-                if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                    goto __continue16
-                end
-                ApplyDamage({
-                    victim = enemy,
-                    attacker = caster,
-                    ability = self,
-                    damage = totalDmg * 0.5,
-                    damage_type = 1
-                })
-            end
-            ::__continue16::
+        enemy:AddNewModifier(caster, self, "modifier_stunned", {duration = stunDur})
+        if tier >= 3 then
+            enemy:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_q_slow", {duration = 2.5})
+        end
+        if tier >= 4 then
+            enemy:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_q_dot", {duration = 3})
+        end
+    end
+    if tier >= 3 and heroHits > 0 then
+        local rem = self:GetCooldownTimeRemaining()
+        if rem > 0 then
+            self:EndCooldown()
+            local nextCd = math.max(0.25, rem - heroHits * 1)
+            self:StartCooldown(nextCd)
         end
     end
 end
@@ -144,81 +142,135 @@ evo_nyx_scarab_q = __TS__DecorateLegacy(
     evo_nyx_scarab_q
 )
 ____exports.evo_nyx_scarab_q = evo_nyx_scarab_q
-____exports.modifier_evo_nyx_scarab_q_armor = __TS__Class()
-local modifier_evo_nyx_scarab_q_armor = ____exports.modifier_evo_nyx_scarab_q_armor
-modifier_evo_nyx_scarab_q_armor.name = "modifier_evo_nyx_scarab_q_armor"
-__TS__ClassExtends(modifier_evo_nyx_scarab_q_armor, BaseModifier)
-function modifier_evo_nyx_scarab_q_armor.prototype.IsHidden(self)
+____exports.modifier_evo_nyx_scarab_q_slow = __TS__Class()
+local modifier_evo_nyx_scarab_q_slow = ____exports.modifier_evo_nyx_scarab_q_slow
+modifier_evo_nyx_scarab_q_slow.name = "modifier_evo_nyx_scarab_q_slow"
+__TS__ClassExtends(modifier_evo_nyx_scarab_q_slow, BaseModifier)
+function modifier_evo_nyx_scarab_q_slow.prototype.IsHidden(self)
     return false
 end
-function modifier_evo_nyx_scarab_q_armor.prototype.IsDebuff(self)
+function modifier_evo_nyx_scarab_q_slow.prototype.IsDebuff(self)
     return true
 end
-function modifier_evo_nyx_scarab_q_armor.prototype.IsPurgable(self)
+function modifier_evo_nyx_scarab_q_slow.prototype.IsPurgable(self)
     return true
 end
-function modifier_evo_nyx_scarab_q_armor.prototype.GetTexture(self)
+function modifier_evo_nyx_scarab_q_slow.prototype.GetTexture(self)
     return "nyx_assassin_impale"
 end
-function modifier_evo_nyx_scarab_q_armor.prototype.DeclareFunctions(self)
-    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS")}
+function modifier_evo_nyx_scarab_q_slow.prototype.DeclareFunctions(self)
+    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")}
 end
-function modifier_evo_nyx_scarab_q_armor.prototype.GetModifierPhysicalArmorBonus(self)
-    return -4
+function modifier_evo_nyx_scarab_q_slow.prototype.GetModifierMoveSpeedBonus_Percentage(self)
+    return -25
 end
-modifier_evo_nyx_scarab_q_armor = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_nyx_scarab_q_armor")},
-    modifier_evo_nyx_scarab_q_armor
+modifier_evo_nyx_scarab_q_slow = __TS__DecorateLegacy(
+    {registerModifier(nil, "modifier_evo_nyx_scarab_q_slow")},
+    modifier_evo_nyx_scarab_q_slow
 )
-____exports.modifier_evo_nyx_scarab_q_armor = modifier_evo_nyx_scarab_q_armor
+____exports.modifier_evo_nyx_scarab_q_slow = modifier_evo_nyx_scarab_q_slow
+____exports.modifier_evo_nyx_scarab_q_dot = __TS__Class()
+local modifier_evo_nyx_scarab_q_dot = ____exports.modifier_evo_nyx_scarab_q_dot
+modifier_evo_nyx_scarab_q_dot.name = "modifier_evo_nyx_scarab_q_dot"
+__TS__ClassExtends(modifier_evo_nyx_scarab_q_dot, BaseModifier)
+function modifier_evo_nyx_scarab_q_dot.prototype.IsHidden(self)
+    return false
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.IsDebuff(self)
+    return true
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.IsPurgable(self)
+    return true
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.GetTexture(self)
+    return "nyx_assassin_impale"
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.OnCreated(self)
+    if not IsServer() then
+        return
+    end
+    self:StartIntervalThink(1)
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.OnIntervalThink(self)
+    if not IsServer() then
+        return
+    end
+    local parent = self:GetParent()
+    local caster = self:GetCaster()
+    local ability = self:GetAbility()
+    if not parent or parent:IsNull() or not parent:IsAlive() or not caster or caster:IsNull() then
+        return
+    end
+    local dmg = 35 + getNyxStr(nil, caster) * 0.2
+    ApplyDamage({
+        victim = parent,
+        attacker = caster,
+        ability = ability,
+        damage = dmg,
+        damage_type = 2
+    })
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.DeclareFunctions(self)
+    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")}
+end
+function modifier_evo_nyx_scarab_q_dot.prototype.GetModifierMoveSpeedBonus_Percentage(self)
+    return -20
+end
+modifier_evo_nyx_scarab_q_dot = __TS__DecorateLegacy(
+    {registerModifier(nil, "modifier_evo_nyx_scarab_q_dot")},
+    modifier_evo_nyx_scarab_q_dot
+)
+____exports.modifier_evo_nyx_scarab_q_dot = modifier_evo_nyx_scarab_q_dot
 ____exports.evo_nyx_scarab_w = __TS__Class()
 local evo_nyx_scarab_w = ____exports.evo_nyx_scarab_w
 evo_nyx_scarab_w.name = "evo_nyx_scarab_w"
 __TS__ClassExtends(evo_nyx_scarab_w, BaseAbility)
-function evo_nyx_scarab_w.prototype.OnSpellStart(self)
+function evo_nyx_scarab_w.prototype.GetMaxLevel(self)
+    return getNyxBranchMaxLevel(
+        nil,
+        self:GetCaster()
+    )
+end
+function evo_nyx_scarab_w.prototype.GetCastPoint(self)
+    return self:GetToggleState() and 0 or 0.8
+end
+function evo_nyx_scarab_w.prototype.OnToggle(self)
     if not IsServer() then
         return
     end
     local caster = self:GetCaster()
-    if not caster or caster:IsNull() or not IsValidEntity(caster) then
-        return
-    end
-    local radius = self:GetSpecialValueFor("radius")
-    local baseDmg = self:GetSpecialValueFor("base_damage")
-    local strPct = self:GetSpecialValueFor("str_pct") / 100
-    local duration = self:GetSpecialValueFor("duration")
-    local creepMult = self:GetSpecialValueFor("creep_mult")
-    caster:EmitSound("Hero_NyxAssassin.SpikedCarapace")
-    caster:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_w_buff", {duration = duration})
-    local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf", 1, caster)
-    ParticleManager:ReleaseParticleIndex(pfx)
-    local totalDmg = baseDmg + getStr(nil, caster) * strPct
-    local enemies = FindUnitsInRadius(
-        caster:GetTeamNumber(),
-        caster:GetAbsOrigin(),
-        nil,
-        radius,
-        2,
-        1 + 18,
-        0,
-        0,
-        false
-    )
-    for ____, enemy in ipairs(enemies) do
-        do
-            if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue28
+    if self:GetToggleState() then
+        caster:EmitSound("Hero_NyxAssassin.Burrow.In")
+        caster:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_w", {})
+    else
+        caster:RemoveModifierByName("modifier_evo_nyx_scarab_w")
+        caster:EmitSound("Hero_NyxAssassin.Burrow.Out")
+        if getNyxTier(nil, caster) >= 3 then
+            caster:Purge(
+                false,
+                true,
+                false,
+                false,
+                false
+            )
+            for ____, enemy in ipairs(findEnemiesInRadius(
+                nil,
+                caster,
+                caster:GetAbsOrigin(),
+                225
+            )) do
+                knockbackUnitFrom(
+                    nil,
+                    caster,
+                    enemy,
+                    caster:GetAbsOrigin(),
+                    150,
+                    0.25,
+                    45
+                )
             end
-            ApplyDamage({
-                victim = enemy,
-                attacker = caster,
-                ability = self,
-                damage = enemy:IsCreep() and totalDmg * creepMult or totalDmg,
-                damage_type = 2
-            })
-            enemy:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_w_slow", {duration = 2.5})
         end
-        ::__continue28::
+        self:UseResources(false, false, false, true)
     end
 end
 evo_nyx_scarab_w = __TS__DecorateLegacy(
@@ -226,332 +278,100 @@ evo_nyx_scarab_w = __TS__DecorateLegacy(
     evo_nyx_scarab_w
 )
 ____exports.evo_nyx_scarab_w = evo_nyx_scarab_w
-____exports.modifier_evo_nyx_scarab_w_buff = __TS__Class()
-local modifier_evo_nyx_scarab_w_buff = ____exports.modifier_evo_nyx_scarab_w_buff
-modifier_evo_nyx_scarab_w_buff.name = "modifier_evo_nyx_scarab_w_buff"
-__TS__ClassExtends(modifier_evo_nyx_scarab_w_buff, BaseModifier)
-function modifier_evo_nyx_scarab_w_buff.prototype.____constructor(self, ...)
+____exports.modifier_evo_nyx_scarab_w = __TS__Class()
+local modifier_evo_nyx_scarab_w = ____exports.modifier_evo_nyx_scarab_w
+modifier_evo_nyx_scarab_w.name = "modifier_evo_nyx_scarab_w"
+__TS__ClassExtends(modifier_evo_nyx_scarab_w, BaseModifier)
+function modifier_evo_nyx_scarab_w.prototype.____constructor(self, ...)
     BaseModifier.prototype.____constructor(self, ...)
-    self.stunnedAttacker = false
+    self.qCdAccum = 0
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.IsHidden(self)
+function modifier_evo_nyx_scarab_w.prototype.IsHidden(self)
     return false
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.IsDebuff(self)
+function modifier_evo_nyx_scarab_w.prototype.IsDebuff(self)
     return false
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.IsPurgable(self)
-    return true
+function modifier_evo_nyx_scarab_w.prototype.IsPurgable(self)
+    return false
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.GetTexture(self)
-    return "nyx_assassin_spiked_carapace"
+function modifier_evo_nyx_scarab_w.prototype.GetTexture(self)
+    return "nyx_assassin_burrow"
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.OnCreated(self)
-    self.stunnedAttacker = false
+function modifier_evo_nyx_scarab_w.prototype.OnCreated(self)
+    self.qCdAccum = 0
+    if not IsServer() then
+        return
+    end
+    self:StartIntervalThink(0.2)
 end
-function modifier_evo_nyx_scarab_w_buff.prototype.OnRefresh(self)
-    self.stunnedAttacker = false
-end
-function modifier_evo_nyx_scarab_w_buff.prototype.DeclareFunctions(self)
-    return {
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
-        dotaModifierFunction(nil, "MODIFIER_EVENT_ON_TAKEDAMAGE")
-    }
-end
-function modifier_evo_nyx_scarab_w_buff.prototype.GetModifierPhysicalArmorBonus(self)
-    local ab = self:GetAbility()
-    return ab and ab:GetSpecialValueFor("bonus_armor") or 6
-end
-function modifier_evo_nyx_scarab_w_buff.prototype.GetModifierStatusResistanceStacking(self)
-    local ab = self:GetAbility()
-    return ab and ab:GetLevel() >= 3 and 25 or 0
-end
-function modifier_evo_nyx_scarab_w_buff.prototype.OnTakeDamage(self, event)
+function modifier_evo_nyx_scarab_w.prototype.OnIntervalThink(self)
     if not IsServer() then
         return
     end
     local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if not parent or parent:IsNull() or not ab or event.unit ~= parent or event.damage <= 0 then
+    local ability = self:GetAbility()
+    if not parent or parent:IsNull() or not parent:IsAlive() or not ability or ability:IsNull() then
         return
     end
-    local attacker = event.attacker
-    if not attacker or attacker:IsNull() or not IsValidEntity(attacker) or attacker == parent then
-        return
-    end
-    if not attacker:IsHero() and not attacker:IsConsideredHero() then
-        return
-    end
-    if bit.band(event.damage_flags, 16) ~= 0 then
-        return
-    end
-    local reflectPct = ab:GetSpecialValueFor("reflect_pct") / 100
-    local reflectDmg = event.original_damage * reflectPct
-    if reflectDmg > 0 then
-        ApplyDamage({
-            victim = attacker,
-            attacker = parent,
-            ability = ab,
-            damage = reflectDmg,
-            damage_type = 4,
-            damage_flags = 16
-        })
-        if ab:GetLevel() >= 3 then
-            parent:Heal(reflectDmg * 0.3, ab)
-        end
-    end
-    if ab:GetLevel() >= 2 and not self.stunnedAttacker and attacker:IsAlive() then
-        self.stunnedAttacker = true
-        attacker:EmitSound("Hero_NyxAssassin.SpikedCarapace.Stun")
-        attacker:AddNewModifier(parent, ab, "modifier_stunned", {duration = 1.2})
-    end
-end
-modifier_evo_nyx_scarab_w_buff = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_nyx_scarab_w_buff")},
-    modifier_evo_nyx_scarab_w_buff
-)
-____exports.modifier_evo_nyx_scarab_w_buff = modifier_evo_nyx_scarab_w_buff
-____exports.modifier_evo_nyx_scarab_w_slow = __TS__Class()
-local modifier_evo_nyx_scarab_w_slow = ____exports.modifier_evo_nyx_scarab_w_slow
-modifier_evo_nyx_scarab_w_slow.name = "modifier_evo_nyx_scarab_w_slow"
-__TS__ClassExtends(modifier_evo_nyx_scarab_w_slow, BaseModifier)
-function modifier_evo_nyx_scarab_w_slow.prototype.IsHidden(self)
-    return false
-end
-function modifier_evo_nyx_scarab_w_slow.prototype.IsDebuff(self)
-    return true
-end
-function modifier_evo_nyx_scarab_w_slow.prototype.IsPurgable(self)
-    return true
-end
-function modifier_evo_nyx_scarab_w_slow.prototype.GetTexture(self)
-    return "nyx_assassin_spiked_carapace"
-end
-function modifier_evo_nyx_scarab_w_slow.prototype.DeclareFunctions(self)
-    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")}
-end
-function modifier_evo_nyx_scarab_w_slow.prototype.GetModifierMoveSpeedBonus_Percentage(self)
-    return -25
-end
-modifier_evo_nyx_scarab_w_slow = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_nyx_scarab_w_slow")},
-    modifier_evo_nyx_scarab_w_slow
-)
-____exports.modifier_evo_nyx_scarab_w_slow = modifier_evo_nyx_scarab_w_slow
-____exports.evo_nyx_scarab_e = __TS__Class()
-local evo_nyx_scarab_e = ____exports.evo_nyx_scarab_e
-evo_nyx_scarab_e.name = "evo_nyx_scarab_e"
-__TS__ClassExtends(evo_nyx_scarab_e, BaseAbility)
-function evo_nyx_scarab_e.prototype.GetIntrinsicModifierName(self)
-    return "modifier_evo_nyx_scarab_e_passive"
-end
-evo_nyx_scarab_e = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_nyx_scarab_e")},
-    evo_nyx_scarab_e
-)
-____exports.evo_nyx_scarab_e = evo_nyx_scarab_e
-____exports.modifier_evo_nyx_scarab_e_passive = __TS__Class()
-local modifier_evo_nyx_scarab_e_passive = ____exports.modifier_evo_nyx_scarab_e_passive
-modifier_evo_nyx_scarab_e_passive.name = "modifier_evo_nyx_scarab_e_passive"
-__TS__ClassExtends(modifier_evo_nyx_scarab_e_passive, BaseModifier)
-function modifier_evo_nyx_scarab_e_passive.prototype.____constructor(self, ...)
-    BaseModifier.prototype.____constructor(self, ...)
-    self.lastThornsTime = -999
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.IsHidden(self)
-    return true
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.IsPurgable(self)
-    return false
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.RemoveOnDeath(self)
-    return false
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.OnCreated(self)
-    self.lastThornsTime = -999
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.DeclareFunctions(self)
-    return {
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"),
-        dotaModifierFunction(nil, "MODIFIER_EVENT_ON_TAKEDAMAGE")
-    }
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.GetModifierBonusStats_Strength(self)
-    local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if not parent or parent:IsNull() or not ab or parent:PassivesDisabled() then
-        return 0
-    end
-    return ab:GetSpecialValueFor("bonus_str")
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.GetModifierConstantHealthRegen(self)
-    local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if not parent or parent:IsNull() or not ab or parent:PassivesDisabled() then
-        return 0
-    end
-    return ab:GetSpecialValueFor("hp_regen")
-end
-function modifier_evo_nyx_scarab_e_passive.prototype.OnTakeDamage(self, event)
-    if not IsServer() then
-        return
-    end
-    local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if not parent or parent:IsNull() or not ab or event.unit ~= parent or parent:PassivesDisabled() then
-        return
-    end
-    local attacker = event.attacker
-    if not attacker or attacker:IsNull() or not IsValidEntity(attacker) or attacker == parent then
-        return
-    end
-    if attacker:GetTeamNumber() == parent:GetTeamNumber() then
-        return
-    end
-    if bit.band(event.damage_flags, 16) ~= 0 then
-        return
-    end
-    local now = GameRules:GetDOTATime(false, false)
-    local dist = (parent:GetAbsOrigin() - attacker:GetAbsOrigin()):Length2D()
-    if dist <= 325 and now - (self.lastThornsTime or -999) >= 0.7 then
-        self.lastThornsTime = now
-        local thornsBase = ab:GetSpecialValueFor("thorns_base")
-        local thornsPct = ab:GetSpecialValueFor("thorns_str_pct") / 100
-        ApplyDamage({
-            victim = attacker,
-            attacker = parent,
-            ability = ab,
-            damage = thornsBase + getStr(nil, parent) * thornsPct,
-            damage_type = 4,
-            damage_flags = 16
-        })
-    end
-end
-modifier_evo_nyx_scarab_e_passive = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_nyx_scarab_e_passive")},
-    modifier_evo_nyx_scarab_e_passive
-)
-____exports.modifier_evo_nyx_scarab_e_passive = modifier_evo_nyx_scarab_e_passive
-____exports.evo_nyx_scarab_r = __TS__Class()
-local evo_nyx_scarab_r = ____exports.evo_nyx_scarab_r
-evo_nyx_scarab_r.name = "evo_nyx_scarab_r"
-__TS__ClassExtends(evo_nyx_scarab_r, BaseAbility)
-function evo_nyx_scarab_r.prototype.OnSpellStart(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    if not caster or caster:IsNull() or not IsValidEntity(caster) then
-        return
-    end
-    local dur = self:GetSpecialValueFor("duration")
-    local healPct = self:GetSpecialValueFor("heal_pct") / 100
-    caster:EmitSound("Hero_SandKing.Epicenter")
-    caster:Heal(
-        caster:GetMaxHealth() * healPct,
-        self
+    local regenPct = ability:GetSpecialValueFor("regen_pct") / 100
+    parent:Heal(
+        parent:GetMaxHealth() * regenPct * 0.2,
+        ability
     )
-    addNyxChitinStacks(nil, caster, 5)
-    caster:AddNewModifier(caster, self, "modifier_evo_nyx_scarab_r_citadel", {duration = dur})
-end
-evo_nyx_scarab_r = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_nyx_scarab_r")},
-    evo_nyx_scarab_r
-)
-____exports.evo_nyx_scarab_r = evo_nyx_scarab_r
-____exports.modifier_evo_nyx_scarab_r_citadel = __TS__Class()
-local modifier_evo_nyx_scarab_r_citadel = ____exports.modifier_evo_nyx_scarab_r_citadel
-modifier_evo_nyx_scarab_r_citadel.name = "modifier_evo_nyx_scarab_r_citadel"
-__TS__ClassExtends(modifier_evo_nyx_scarab_r_citadel, BaseModifier)
-function modifier_evo_nyx_scarab_r_citadel.prototype.____constructor(self, ...)
-    BaseModifier.prototype.____constructor(self, ...)
-    self.bonusStr = 0
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.IsHidden(self)
-    return false
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.IsDebuff(self)
-    return false
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.IsPurgable(self)
-    return false
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.GetTexture(self)
-    return "sandking_epicenter"
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.OnCreated(self)
-    self.bonusStr = 0
-    if not IsServer() then
-        return
-    end
-    local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if parent and not parent:IsNull() and ab then
-        local pct = ab:GetSpecialValueFor("str_bonus_pct") / 100
-        self.bonusStr = math.floor(getStr(nil, parent) * pct + 0.5)
-    end
-    self:StartIntervalThink(1.5)
-end
-function modifier_evo_nyx_scarab_r_citadel.prototype.OnIntervalThink(self)
-    if not IsServer() then
-        return
-    end
-    local parent = self:GetParent()
-    local ab = self:GetAbility()
-    if not parent or parent:IsNull() or not IsValidEntity(parent) or not parent:IsAlive() or not ab then
-        return
-    end
-    local radius = ab:GetSpecialValueFor("pulse_radius")
-    local baseDmg = ab:GetSpecialValueFor("pulse_damage")
-    local strPct = ab:GetSpecialValueFor("pulse_str_pct") / 100
-    local totalDmg = baseDmg + getStr(nil, parent) * strPct
-    local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_sandking/sandking_epicenter_ring.vpcf", 1, parent)
-    ParticleManager:ReleaseParticleIndex(pfx)
-    local enemies = FindUnitsInRadius(
-        parent:GetTeamNumber(),
-        parent:GetAbsOrigin(),
-        nil,
-        radius,
-        2,
-        1 + 18,
-        0,
-        0,
-        false
-    )
-    for ____, enemy in ipairs(enemies) do
-        do
-            if not enemy or enemy:IsNull() or not IsValidEntity(enemy) or not enemy:IsAlive() then
-                goto __continue85
+    parent:GiveMana(parent:GetMaxMana() * regenPct * 0.2)
+    if getNyxTier(nil, parent) >= 4 then
+        local qAb = parent:FindAbilityByName("evo_nyx_scarab_q")
+        if qAb and not qAb:IsNull() then
+            local rem = qAb:GetCooldownTimeRemaining()
+            if rem > 0.06 then
+                qAb:EndCooldown()
+                qAb:StartCooldown(math.max(0.01, rem - 0.05))
             end
-            ApplyDamage({
-                victim = enemy,
-                attacker = parent,
-                ability = ab,
-                damage = totalDmg,
-                damage_type = 4
-            })
-            enemy:AddNewModifier(parent, ab, "modifier_evo_nyx_scarab_w_slow", {duration = 1.5})
         end
-        ::__continue85::
+        GridNav:DestroyTreesAroundPoint(
+            parent:GetAbsOrigin(),
+            100,
+            false
+        )
     end
 end
-function modifier_evo_nyx_scarab_r_citadel.prototype.DeclareFunctions(self)
+function modifier_evo_nyx_scarab_w.prototype.CheckState(self)
+    local parent = self:GetParent()
+    local t4 = parent and not parent:IsNull() and getNyxTier(nil, parent) >= 4
     return {
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")
+        [dotaModifierState(nil, "MODIFIER_STATE_ROOTED")] = not t4,
+        [dotaModifierState(nil, "MODIFIER_STATE_DISARMED")] = true,
+        [dotaModifierState(nil, "MODIFIER_STATE_NO_UNIT_COLLISION")] = t4
     }
 end
-function modifier_evo_nyx_scarab_r_citadel.prototype.GetModifierBonusStats_Strength(self)
-    return self.bonusStr or 0
+function modifier_evo_nyx_scarab_w.prototype.DeclareFunctions(self)
+    return {
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE")
+    }
 end
-function modifier_evo_nyx_scarab_r_citadel.prototype.GetModifierMoveSpeedBonus_Percentage(self)
-    return 20
+function modifier_evo_nyx_scarab_w.prototype.GetModifierStatusResistanceStacking(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() then
+        return 0
+    end
+    local tier = getNyxTier(nil, parent)
+    if tier < 3 then
+        return 0
+    end
+    return tier >= 4 and 35 or 25
 end
-modifier_evo_nyx_scarab_r_citadel = __TS__DecorateLegacy(
-    {registerModifier(nil, "modifier_evo_nyx_scarab_r_citadel")},
-    modifier_evo_nyx_scarab_r_citadel
+function modifier_evo_nyx_scarab_w.prototype.GetModifierMoveSpeed_Absolute(self)
+    local parent = self:GetParent()
+    if not parent or parent:IsNull() or getNyxTier(nil, parent) < 4 then
+        return 0
+    end
+    return 175
+end
+modifier_evo_nyx_scarab_w = __TS__DecorateLegacy(
+    {registerModifier(nil, "modifier_evo_nyx_scarab_w")},
+    modifier_evo_nyx_scarab_w
 )
-____exports.modifier_evo_nyx_scarab_r_citadel = modifier_evo_nyx_scarab_r_citadel
+____exports.modifier_evo_nyx_scarab_w = modifier_evo_nyx_scarab_w
 return ____exports

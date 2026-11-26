@@ -17,7 +17,7 @@
 		"IsTempestDoubleClonable"		"0"
 		"ShouldBeSuggested"				"1"
 		"ShouldBeInitiallySuggested"	"1"
-		"ItemPurchasable"				"1"
+		"ItemPurchasable"				"0"
 		"ItemSellable"					"0"
 		"ItemCost"						"10000"
 		"AbilityTextureName"			"item_cocktail_spellshop_sell"

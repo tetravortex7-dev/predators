@@ -6,6 +6,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOC_DIR = os.path.join(ROOT, "data", "localization")
 RU_OUT = os.path.join(ROOT, "resource", "addon_russian.txt")
 EN_OUT = os.path.join(ROOT, "resource", "addon_english.txt")
+PANORAMA_RU_OUT = os.path.join(ROOT, "panorama", "localization", "addon_russian.txt")
+PANORAMA_EN_OUT = os.path.join(ROOT, "panorama", "localization", "addon_english.txt")
 
 
 def escape_kv(value: str) -> str:
@@ -13,6 +15,7 @@ def escape_kv(value: str) -> str:
 
 
 def write_lang_file(path: str, language: str, tokens: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     lines = [
         '"lang"',
         "{",
@@ -24,6 +27,18 @@ def write_lang_file(path: str, language: str, tokens: dict) -> None:
         escaped = escape_kv(str(val))
         lines.append(f'\t\t"{key}"\t\t"{escaped}"')
     lines.append("\t}")
+    lines.append("}")
+    lines.append("")
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(lines))
+
+
+def write_panorama_loc_file(path: str, tokens: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    lines = ['"addon"', "{"]
+    for key, val in tokens.items():
+        escaped = escape_kv(str(val))
+        lines.append(f'\t"{key}"\t\t"{escaped}"')
     lines.append("}")
     lines.append("")
     with open(path, "w", encoding="utf-8", newline="\n") as f:
@@ -54,6 +69,8 @@ def main() -> None:
 
     write_lang_file(RU_OUT, "Russian", ru_tokens)
     write_lang_file(EN_OUT, "English", en_tokens)
+    write_panorama_loc_file(PANORAMA_RU_OUT, ru_tokens)
+    write_panorama_loc_file(PANORAMA_EN_OUT, en_tokens)
     print(f"[Evo] Generated localization from {len(files)} file(s): {len(ru_tokens)} RU, {len(en_tokens)} EN tokens.")
 
 

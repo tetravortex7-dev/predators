@@ -1,0 +1,14 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss" />
+        <include src="file://{resources}/styles/custom_game/evo_fountain_teleport.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/evo_fountain_teleport.js" />
+    </scripts>
+    <Panel class="EvoFountainTeleportRoot" hittest="false">
+        <Button id="EvoFountainTeleportBtn" class="EvoFountainTeleportBtn">
+            <Label class="EvoFountainTeleportLabel" text="#evo_fountain_teleport_btn" />
+        </Button>
+    </Panel>
+</root>

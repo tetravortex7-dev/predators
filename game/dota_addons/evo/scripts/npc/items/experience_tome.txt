@@ -11,6 +11,7 @@
         "AbilityCooldown"               "0.5"
         "AbilityManaCost"               "0"
 		"ItemCost"                      "5000"
+        "ItemPurchasable"               "0"
         "ItemQuality"                   "artifact"
         "ItemBaseLevel"                 "1"
         "ItemAliases"                   "xp; level; experience; lvl;"

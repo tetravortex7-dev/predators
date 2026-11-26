@@ -1,20 +1,14 @@
 local ____lualib = require("lualib_bundle")
+local __TS__ArrayFilter = ____lualib.__TS__ArrayFilter
 local Map = ____lualib.Map
 local __TS__Iterator = ____lualib.__TS__Iterator
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 1,["8"] = 1,["9"] = 1,["10"] = 45,["11"] = 45,["12"] = 45,["13"] = 45,["14"] = 45,["15"] = 45,["16"] = 45,["17"] = 45,["18"] = 54,["19"] = 55,["20"] = 56,["21"] = 58,["22"] = 59,["23"] = 60,["25"] = 58,["26"] = 64,["27"] = 69,["28"] = 70,["29"] = 73,["30"] = 76,["31"] = 80,["32"] = 81,["34"] = 83,["35"] = 87,["36"] = 92,["37"] = 64,["38"] = 95,["39"] = 96,["41"] = 97,["42"] = 97,["44"] = 98,["45"] = 99,["46"] = 99,["48"] = 100,["49"] = 100,["51"] = 101,["52"] = 102,["53"] = 102,["55"] = 103,["58"] = 97,["61"] = 105,["62"] = 95,["63"] = 108,["64"] = 109,["65"] = 110,["66"] = 110,["68"] = 112,["69"] = 113,["70"] = 114,["71"] = 115,["72"] = 116,["73"] = 117,["75"] = 120,["77"] = 121,["78"] = 121,["79"] = 122,["80"] = 123,["81"] = 124,["83"] = 121,["86"] = 127,["87"] = 108,["88"] = 130,["89"] = 131,["90"] = 132,["91"] = 133,["92"] = 134,["95"] = 137,["96"] = 137,["98"] = 139,["99"] = 140,["100"] = 141,["101"] = 142,["102"] = 143,["103"] = 144,["104"] = 145,["107"] = 148,["108"] = 149,["110"] = 152,["112"] = 153,["113"] = 153,["114"] = 154,["115"] = 155,["116"] = 156,["118"] = 153,["121"] = 159,["122"] = 130,["123"] = 162,["124"] = 163,["125"] = 164,["126"] = 165,["127"] = 166,["130"] = 170,["131"] = 170,["133"] = 172,["135"] = 173,["136"] = 173,["137"] = 174,["138"] = 175,["139"] = 176,["140"] = 177,["141"] = 173,["144"] = 180,["145"] = 181,["146"] = 182,["147"] = 183,["148"] = 184,["149"] = 185,["150"] = 186,["152"] = 188,["153"] = 189,["155"] = 192,["156"] = 193,["157"] = 193,["158"] = 193,["159"] = 194,["160"] = 195,["161"] = 196,["162"] = 197,["165"] = 200,["166"] = 162,["167"] = 203,["168"] = 204,["170"] = 205,["171"] = 205,["173"] = 206,["174"] = 207,["175"] = 208,["176"] = 209,["177"] = 210,["182"] = 213,["183"] = 203,["184"] = 216,["185"] = 217,["186"] = 218,["188"] = 219,["189"] = 219,["191"] = 220,["192"] = 221,["193"] = 222,["198"] = 225,["199"] = 216});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 45,["13"] = 46,["14"] = 47,["15"] = 49,["16"] = 50,["17"] = 51,["19"] = 49,["20"] = 55,["21"] = 60,["22"] = 61,["23"] = 64,["24"] = 67,["25"] = 71,["26"] = 72,["28"] = 74,["29"] = 78,["30"] = 83,["31"] = 55,["32"] = 86,["33"] = 87,["35"] = 88,["36"] = 88,["38"] = 89,["39"] = 90,["40"] = 90,["42"] = 91,["43"] = 91,["45"] = 92,["46"] = 93,["47"] = 93,["49"] = 94,["52"] = 88,["55"] = 96,["56"] = 86,["57"] = 99,["58"] = 100,["59"] = 101,["60"] = 101,["62"] = 103,["63"] = 104,["64"] = 105,["65"] = 106,["66"] = 107,["67"] = 108,["69"] = 111,["71"] = 112,["72"] = 112,["73"] = 113,["74"] = 114,["75"] = 115,["77"] = 112,["80"] = 118,["81"] = 99,["82"] = 121,["83"] = 122,["84"] = 123,["85"] = 124,["86"] = 125,["89"] = 128,["90"] = 128,["92"] = 130,["93"] = 131,["94"] = 132,["95"] = 133,["96"] = 134,["97"] = 135,["98"] = 136,["101"] = 139,["102"] = 140,["104"] = 143,["106"] = 144,["107"] = 144,["108"] = 145,["109"] = 146,["110"] = 147,["112"] = 144,["115"] = 150,["116"] = 121,["117"] = 153,["118"] = 154,["119"] = 155,["120"] = 156,["123"] = 159,["124"] = 153,["125"] = 162,["126"] = 166,["127"] = 166,["129"] = 168,["130"] = 169,["131"] = 170,["132"] = 171,["133"] = 172,["134"] = 173,["135"] = 174,["138"] = 177,["139"] = 178,["141"] = 181,["143"] = 182,["144"] = 182,["145"] = 183,["146"] = 184,["147"] = 185,["149"] = 182,["152"] = 188,["153"] = 162,["154"] = 191,["155"] = 192,["156"] = 193,["157"] = 194,["158"] = 195,["161"] = 199,["162"] = 199,["164"] = 201,["165"] = 202,["166"] = 202,["168"] = 204,["169"] = 204,["170"] = 204,["171"] = 204,["172"] = 205,["173"] = 206,["174"] = 206,["176"] = 208,["177"] = 209,["178"] = 210,["179"] = 210,["181"] = 212,["182"] = 191,["183"] = 215,["184"] = 216,["185"] = 217,["187"] = 218,["188"] = 218,["190"] = 219,["191"] = 220,["192"] = 221,["193"] = 222,["194"] = 223,["195"] = 224,["200"] = 227,["201"] = 228,["202"] = 215,["203"] = 231,["204"] = 232,["205"] = 233,["207"] = 234,["208"] = 234,["210"] = 235,["211"] = 236,["212"] = 237,["217"] = 240,["218"] = 231});
 local ____exports = {}
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
 local EVO_MAP_ENTITIES = ____game_constants.EVO_MAP_ENTITIES
-____exports.PLAYABLE_TEAMS = {
-    2,
-    3,
-    6,
-    7,
-    8,
-    9
-}
+local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
 ____exports.DUEL_BET_WINDOW_SECONDS = 8
 ____exports.BOSS_DUEL_BET_TEAM = 1
 ____exports.BOSS_DUEL_BET_BOSS = -2
@@ -87,7 +81,7 @@ function ____exports.pickWeightedChampion(self, team, applicants)
 end
 function ____exports.pickWeightedBossDuelTeam(self, applicants)
     local activeTeams = {}
-    for ____, team in ipairs(____exports.PLAYABLE_TEAMS) do
+    for ____, team in ipairs(EVO_PLAYABLE_TEAMS) do
         if #____exports.getTeamPlayerIds(nil, team) > 0 then
             activeTeams[#activeTeams + 1] = team
         end
@@ -120,9 +114,46 @@ function ____exports.pickWeightedBossDuelTeam(self, applicants)
     end
     return activeTeams[#activeTeams]
 end
+function ____exports.hasMultiPlayerTeams(self)
+    for ____, team in ipairs(EVO_PLAYABLE_TEAMS) do
+        if #____exports.getTeamPlayerIds(nil, team) >= 2 then
+            return true
+        end
+    end
+    return false
+end
+local function pickWeightedTeam(self, teams, applicants)
+    if #teams == 0 then
+        return nil
+    end
+    local totalWeight = 0
+    local weights = {}
+    for ____, team in ipairs(teams) do
+        local teamWeight = 1
+        for ____, pid in ipairs(____exports.getTeamPlayerIds(nil, team)) do
+            if applicants:has(pid) then
+                teamWeight = teamWeight + EVO_CONSTANTS.DUEL_APPLY_WEIGHT_MULTIPLIER
+            end
+        end
+        weights[#weights + 1] = teamWeight
+        totalWeight = totalWeight + teamWeight
+    end
+    local roll = RandomFloat(0, totalWeight)
+    do
+        local i = 0
+        while i < #teams do
+            roll = roll - weights[i + 1]
+            if roll <= 0 then
+                return teams[i + 1]
+            end
+            i = i + 1
+        end
+    end
+    return teams[#teams]
+end
 function ____exports.generateDuelPairs(self, applicants)
     local activeTeams = {}
-    for ____, team in ipairs(____exports.PLAYABLE_TEAMS) do
+    for ____, team in ipairs(EVO_PLAYABLE_TEAMS) do
         if #____exports.getTeamPlayerIds(nil, team) > 0 then
             activeTeams[#activeTeams + 1] = team
         end
@@ -130,70 +161,58 @@ function ____exports.generateDuelPairs(self, applicants)
     if #activeTeams < 2 then
         return {}
     end
-    local shuffled = {unpack(activeTeams)}
-    do
-        local i = #shuffled - 1
-        while i > 0 do
-            local j = RandomInt(0, i)
-            local tmp = shuffled[i + 1]
-            shuffled[i + 1] = shuffled[j + 1]
-            shuffled[j + 1] = tmp
-            i = i - 1
-        end
+    local teamA = pickWeightedTeam(nil, activeTeams, applicants)
+    if teamA == nil then
+        return {}
     end
-    local teamPairs = {}
-    if #shuffled == 2 then
-        teamPairs[#teamPairs + 1] = {shuffled[1], shuffled[2]}
-    elseif #shuffled == 3 then
-        teamPairs[#teamPairs + 1] = {shuffled[1], shuffled[2]}
-        teamPairs[#teamPairs + 1] = {shuffled[2], shuffled[3]}
-        teamPairs[#teamPairs + 1] = {shuffled[3], shuffled[1]}
-    else
-        teamPairs[#teamPairs + 1] = {shuffled[1], shuffled[2]}
-        teamPairs[#teamPairs + 1] = {shuffled[3], shuffled[4]}
+    local remainingTeams = __TS__ArrayFilter(
+        activeTeams,
+        function(____, team) return team ~= teamA end
+    )
+    local teamB = pickWeightedTeam(nil, remainingTeams, applicants)
+    if teamB == nil then
+        return {}
     end
-    local result = {}
-    for ____, ____value in ipairs(teamPairs) do
-        local teamA = ____value[1]
-        local teamB = ____value[2]
-        local playerA = ____exports.pickWeightedChampion(nil, teamA, applicants)
-        local playerB = ____exports.pickWeightedChampion(nil, teamB, applicants)
-        if playerA ~= nil and playerB ~= nil then
-            result[#result + 1] = {playerA = playerA, playerB = playerB, teamA = teamA, teamB = teamB}
-        end
+    local playerA = ____exports.pickWeightedChampion(nil, teamA, applicants)
+    local playerB = ____exports.pickWeightedChampion(nil, teamB, applicants)
+    if playerA == nil or playerB == nil then
+        return {}
     end
-    return result
+    return {{playerA = playerA, playerB = playerB, teamA = teamA, teamB = teamB}}
 end
 function ____exports.settleBets(self, activeBets, winnerId)
+    local totalPayout = 0
     for ____, bet in __TS__Iterator(activeBets:values()) do
         do
             if not PlayerResource:IsValidPlayerID(bet.bettorId) then
-                goto __continue42
+                goto __continue52
             end
             if winnerId == nil then
                 PlayerResource:ModifyGold(bet.bettorId, bet.goldAmount, false, 0)
             elseif bet.backedTarget == winnerId then
                 local payout = math.floor(bet.goldAmount * EVO_CONSTANTS.DUEL_BET_PAYOUT_MULTIPLIER)
                 PlayerResource:ModifyGold(bet.bettorId, payout, false, 0)
+                totalPayout = totalPayout + payout
             end
         end
-        ::__continue42::
+        ::__continue52::
     end
     activeBets:clear()
+    return totalPayout
 end
 function ____exports.settleBossDuelBets(self, activeBets, teamWon)
     local winningSide = teamWon and ____exports.BOSS_DUEL_BET_TEAM or ____exports.BOSS_DUEL_BET_BOSS
     for ____, bet in __TS__Iterator(activeBets:values()) do
         do
             if not PlayerResource:IsValidPlayerID(bet.bettorId) then
-                goto __continue48
+                goto __continue58
             end
             if bet.backedTarget == winningSide then
                 local payout = math.floor(bet.goldAmount * EVO_CONSTANTS.DUEL_BET_PAYOUT_MULTIPLIER)
                 PlayerResource:ModifyGold(bet.bettorId, payout, false, 0)
             end
         end
-        ::__continue48::
+        ::__continue58::
     end
     activeBets:clear()
 end

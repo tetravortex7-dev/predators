@@ -4,22 +4,15 @@ import {
     EVO_CONSTANTS,
     EVO_TIERS,
     calculateEscalationMultiplier,
+    calculateTargetTeamScore,
 } from "../data/game_constants";
-
-interface PlayerActivityState {
-    lastPosition?: Vector;
-    lastMoveTime: number;
-    lastFeedTime: number;
-    afkWarned: boolean;
-    starvationWarned: boolean;
-}
+import { markFountainCombatLock } from "../lib/fountain_combat_guard";
 
 export class PhaseManager {
     private currentPhase: EvoMatchPhase = "INCUBATOR";
     private started = false;
     private announcedBosses: string[] = [];
     private unlockedTimedTiers: Set<number> = new Set([0]);
-    private playerActivity: Map<PlayerID, PlayerActivityState> = new Map();
     private lastSyncedEscalation = 1.0;
 
     constructor(private readonly eventBus: EventBus) {}
@@ -27,12 +20,6 @@ export class PhaseManager {
     public init(): void {
         ListenToGameEvent("game_rules_state_change", () => this.onGameStateChange(), undefined);
         ListenToGameEvent("npc_spawned", (event) => this.onNpcSpawned(event), undefined);
-
-        this.eventBus.on("biomass_collected", ({ playerId }) => {
-            const activity = this.getOrCreateActivity(playerId, GameRules.GetDOTATime(false, false));
-            activity.lastFeedTime = GameRules.GetDOTATime(false, false);
-            activity.starvationWarned = false;
-        });
 
         this.syncMatchState(0);
     }
@@ -82,17 +69,12 @@ export class PhaseManager {
         if (this.currentPhase === "INCUBATOR") {
             if (elapsed >= EVO_CONSTANTS.PHASE1_END_TIME) {
                 this.transitionToSurface(elapsed);
-            } else {
-                this.tickPlayerActivity(elapsed);
             }
         } else if (this.currentPhase === "SURFACE") {
             const escalation = calculateEscalationMultiplier(elapsed);
             if (Math.abs(escalation - this.lastSyncedEscalation) >= 0.05) {
                 this.lastSyncedEscalation = escalation;
                 this.syncMatchState(elapsed);
-            }
-            if (elapsed >= EVO_CONSTANTS.MATCH_TIME_LIMIT) {
-                this.transitionToPhase("TIEBREAKER", elapsed);
             }
         }
 
@@ -147,45 +129,6 @@ export class PhaseManager {
         }
     }
 
-    private tickPlayerActivity(elapsed: number): void {
-        for (let i = 0; i < DOTA_MAX_TEAM_PLAYERS; i++) {
-            const playerId = i as PlayerID;
-            if (!PlayerResource.IsValidPlayerID(playerId)) continue;
-
-            const hero = PlayerResource.GetSelectedHeroEntity(playerId);
-            if (!hero || hero.IsNull() || !IsValidEntity(hero) || !hero.IsAlive()) continue;
-
-            const activity = this.getOrCreateActivity(playerId, elapsed);
-            const pos = hero.GetAbsOrigin();
-            if (activity.lastPosition) {
-                const dx = pos.x - activity.lastPosition.x;
-                const dy = pos.y - activity.lastPosition.y;
-                if (dx * dx + dy * dy > 25) {
-                    activity.lastMoveTime = elapsed;
-                    activity.afkWarned = false;
-                }
-            }
-            activity.lastPosition = pos;
-
-            if (!activity.afkWarned && elapsed - activity.lastMoveTime >= EVO_CONSTANTS.AFK_TIMEOUT_SECONDS) {
-                activity.afkWarned = true;
-                if (IsInToolsMode()) {
-                    GameRules.SendCustomMessage(`[Evo] Player ${playerId} AFK detected in Incubator.`, 0, 0);
-                }
-            }
-
-            if (
-                !activity.starvationWarned &&
-                elapsed - activity.lastFeedTime >= EVO_CONSTANTS.STARVATION_TIMEOUT_SECONDS
-            ) {
-                activity.starvationWarned = true;
-                if (IsInToolsMode()) {
-                    GameRules.SendCustomMessage(`[Evo] Player ${playerId} starvation detected.`, 0, 0);
-                }
-            }
-        }
-    }
-
     private onNpcSpawned(event: GameEventProvidedProperties & NpcSpawnedEvent): void {
         if (this.currentPhase !== "INCUBATOR") return;
         const unit = EntIndexToHScript(event.entindex);
@@ -231,16 +174,24 @@ export class PhaseManager {
             return true;
         }
 
-        if (this.currentPhase !== "INCUBATOR") return true;
+        if (this.currentPhase === "INCUBATOR") {
+            if (
+                attacker !== victim &&
+                (attacker.HasModifier("modifier_evo_peace_time") ||
+                    victim.HasModifier("modifier_evo_peace_time")) &&
+                PlayerResource.IsValidPlayerID(attacker.GetPlayerOwnerID()) &&
+                PlayerResource.IsValidPlayerID(victim.GetPlayerOwnerID())
+            ) {
+                event.damage = 0;
+                return false;
+            }
+            return true;
+        }
 
-        if (
-            attacker !== victim &&
-            (attacker.HasModifier("modifier_evo_peace_time") || victim.HasModifier("modifier_evo_peace_time")) &&
-            PlayerResource.IsValidPlayerID(attacker.GetPlayerOwnerID()) &&
-            PlayerResource.IsValidPlayerID(victim.GetPlayerOwnerID())
-        ) {
-            event.damage = 0;
-            return false;
+        const duelMgr = GameRules.EvoAddon?.duelManager;
+        const onArena = duelMgr !== undefined && (duelMgr.isActiveDuelist(attacker) || duelMgr.isActiveDuelist(victim));
+        if (!onArena && event.damage > 0) {
+            markFountainCombatLock(attacker, victim, EVO_CONSTANTS.FOUNTAIN_COMBAT_LOCK_SECONDS);
         }
 
         return true;
@@ -256,20 +207,6 @@ export class PhaseManager {
         }
     }
 
-    private getOrCreateActivity(playerId: PlayerID, elapsed: number): PlayerActivityState {
-        let activity = this.playerActivity.get(playerId);
-        if (!activity) {
-            activity = {
-                lastMoveTime: elapsed,
-                lastFeedTime: elapsed,
-                afkWarned: false,
-                starvationWarned: false,
-            };
-            this.playerActivity.set(playerId, activity);
-        }
-        return activity;
-    }
-
     private syncMatchState(elapsed: number): void {
         const existing = (CustomNetTables.GetTableValue("match_state" as never, "state") ?? {}) as Record<
             string,
@@ -277,7 +214,8 @@ export class PhaseManager {
         >;
         existing.phase = this.currentPhase;
         existing.elapsed_time = Math.floor(elapsed);
-        existing.target_score = EVO_CONSTANTS.TARGET_TEAM_SCORE;
+        existing.phase_end_time = this.currentPhase === "INCUBATOR" ? EVO_CONSTANTS.PHASE1_END_TIME : 0;
+        existing.target_score = calculateTargetTeamScore();
         existing.escalation_mult = calculateEscalationMultiplier(elapsed);
         existing.announced_bosses = this.announcedBosses;
         CustomNetTables.SetTableValue("match_state" as never, "state", existing as never);

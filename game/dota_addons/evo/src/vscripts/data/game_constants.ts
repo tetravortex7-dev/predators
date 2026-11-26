@@ -24,7 +24,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 2,
         label: "T2",
-        requiredHeroLevel: 7,
+        requiredHeroLevel: 6,
         requiredEvoPoints: 15,
         statMultiplier: 1.25,
         spellShopSlots: 3,
@@ -34,7 +34,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 3,
         label: "T3",
-        requiredHeroLevel: 14,
+        requiredHeroLevel: 13,
         requiredEvoPoints: 35,
         statMultiplier: 1.45,
         spellShopSlots: 3,
@@ -44,7 +44,7 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     {
         tierIndex: 4,
         label: "T4",
-        requiredHeroLevel: 20,
+        requiredHeroLevel: 19,
         requiredEvoPoints: 60,
         statMultiplier: 1.7,
         spellShopSlots: 4,
@@ -53,30 +53,46 @@ export const EVO_TIERS: readonly EvolutionTierConfig[] = [
     },
 ];
 
-export const EVO_CONSTANTS = {
-    MAX_PLAYERS: 12,
-    DEFAULT_TEAM_COUNT: 4,
-    DEFAULT_PLAYERS_PER_TEAM: 3,
-    BASE_HERO_NAME: "npc_dota_hero_wisp",
+export const EVO_PLAYABLE_TEAMS: readonly DotaTeam[] = [
+    DotaTeam.GOODGUYS,
+    DotaTeam.BADGUYS,
+    DotaTeam.CUSTOM_1,
+    DotaTeam.CUSTOM_2,
+    DotaTeam.CUSTOM_3,
+    DotaTeam.CUSTOM_4,
+    DotaTeam.CUSTOM_6,
+    DotaTeam.CUSTOM_7,
+];
 
-    PHASE1_T15_TIME: 60,
-    PHASE1_END_TIME: 300,
+export const EVO_CONSTANTS = {
+    MAX_PLAYERS: 8,
+    DEFAULT_TEAM_COUNT: 8,
+    DEFAULT_PLAYERS_PER_TEAM: 1,
+    BASE_HERO_NAME: "npc_dota_hero_wisp",
+    PRE_GAME_TIME_DEV: 5,
+    PRE_GAME_TIME_PROD: 30,
+    CUSTOM_GAME_SETUP_DELAY_DEV: 20,
+    CUSTOM_GAME_SETUP_DELAY_PROD: 10,
+
+    PHASE1_T15_TIME: 45,
+    PHASE1_END_TIME: 75,
     ESCALATION_START_TIME: 900,
-    MATCH_TIME_LIMIT: 1500,
+    ESCALATION_FULL_TIME: 1500,
     DAY_DURATION: 120,
     NIGHT_DURATION: 60,
-
-    AFK_TIMEOUT_SECONDS: 180,
-    STARVATION_TIMEOUT_SECONDS: 300,
 
     EVO_THRESHOLDS: [0, 10, 15, 25, 40, 50] as readonly number[],
     MUTATION_SLOT_THRESHOLDS: [10, 25, 40] as readonly number[],
     ENABLE_ABILITY_DRAFT: false,
-    ENABLE_MUTATION_DRAFT: false,
+    ENABLE_MUTATION_DRAFT: true,
     ABILITY_DRAFT_LEVELS: [3, 7, 13] as readonly number[],
     MUTATION_DRAFT_LEVELS: [5, 10, 15] as readonly number[],
+    MUTATION_DRAFT_TIERS: [2, 3, 4] as readonly number[],
+    MUTATION_DRAFT_CHOICES: 3,
+    MUTATION_REROLLS_PER_MATCH: 2,
     ABILITY_DRAFT_CHOICES: 3,
     BODY_DRAFT_T1_CHOICES: 3,
+    DEV_XP_MULTIPLIER: 2.0,
     BIOMASS_SPAWN_INTERVAL_SECONDS: 12,
     BIOMASS_MAX_ACTIVE_COUNT: 24,
     BIOMASS_EVO_POINTS_REWARD: 2,
@@ -86,6 +102,7 @@ export const EVO_CONSTANTS = {
     NEUTRAL_CAMP_MAX_UNITS_DEV: 3,
 
     BOUNTY_RUNE_INTERVAL_SECONDS: 120,
+    POWER_RUNE_FIRST_SPAWN_SECONDS: 90,
     POWER_RUNE_INTERVAL_SECONDS: 120,
 
     SPELL_SHOP_DEFAULT_SLOTS: 3,
@@ -112,6 +129,10 @@ export const EVO_CONSTANTS = {
     BASE_HP_REGEN: 30,
     BASE_MP_REGEN: 20,
     BASE_TP_COOLDOWN: 60,
+    FOUNTAIN_TELEPORT_COOLDOWN: 3,
+    FOUNTAIN_COMBAT_LOCK_SECONDS: 3,
+    GOLD_PER_TICK: 1,
+    GOLD_TICK_TIME: 2 / 3,
 
     BOSS_COUNT_PER_MATCH: 1,
     BOSS_MAX_LEVEL: 150,
@@ -120,7 +141,9 @@ export const EVO_CONSTANTS = {
 
     DUEL_INTERVAL_SECONDS: 180,
     DUEL_MAX_ROUNDS: 10,
-    DUEL_DURATION_SECONDS: 30,
+    DUEL_DURATION_SECONDS: 60,
+    DUEL_COUNTDOWN_SECONDS: 5,
+    DUEL_RESULT_BANNER_SECONDS: 6,
     BOSS_DUEL_DURATION_SECONDS: 45,
     BOSS_DUEL_EVERY_N_ROUNDS: 2,
     BOSS_DUEL_LOOT_WINDOW_SECONDS: 5,
@@ -129,18 +152,26 @@ export const EVO_CONSTANTS = {
     DUEL_APPLY_WEIGHT_MULTIPLIER: 3.0,
     DUEL_BET_PAYOUT_MULTIPLIER: 1.5,
 
-    TARGET_TEAM_SCORE: 1000,
+    TARGET_TEAM_SCORE: 1200,
     SCORE_FARM_CREEP: 1,
     SCORE_GOLIATH_CREEP: 3,
     SCORE_HERO_KILL: 25,
     SCORE_HERO_DEATH: -5,
-    SCORE_DUEL_WIN: 15,
+    SCORE_DUEL_WIN: 35,
+    DUEL_WIN_BASE_GOLD: 150,
+    DUEL_WIN_BASE_XP: 150,
     SCORE_OBJECTIVE: 5,
     SCORE_BOSS_MIN: 50,
     SCORE_BOSS_MAX: 125,
     COMEBACK_SCORE_MULT_MIN: 1.0,
     COMEBACK_SCORE_MULT_MAX: 3.0,
 } as const;
+
+export function calculateTargetTeamScore(playersPerTeam: number = EVO_CONSTANTS.DEFAULT_PLAYERS_PER_TEAM): number {
+    if (playersPerTeam <= 1) return 1200;
+    if (playersPerTeam === 2) return 1800;
+    return 2500;
+}
 
 export function getTierConfig(tierIndex: number): EvolutionTierConfig {
     for (const tier of EVO_TIERS) {
@@ -162,40 +193,40 @@ export function getNextTierConfig(currentTierIndex: number): EvolutionTierConfig
 
 export const EVO_XP_PER_LEVEL_TABLE: Record<number, number> = {
     1: 0,
-    2: 240,
-    3: 640,
-    4: 1160,
-    5: 1760,
-    6: 2440,
-    7: 3200,
-    8: 4000,
-    9: 4900,
-    10: 5900,
-    11: 7000,
-    12: 8200,
-    13: 9500,
-    14: 10900,
-    15: 12400,
-    16: 14000,
-    17: 15700,
-    18: 17500,
-    19: 19400,
-    20: 21400,
-    21: 23600,
-    22: 26000,
-    23: 28600,
-    24: 31400,
-    25: 34400,
-    26: 38400,
-    27: 43400,
-    28: 49400,
-    29: 56400,
-    30: 63900,
-    31: 71900,
-    32: 80400,
-    33: 89400,
-    34: 98900,
-    35: 108900,
+    2: 180,
+    3: 480,
+    4: 870,
+    5: 1320,
+    6: 1830,
+    7: 2400,
+    8: 3000,
+    9: 3675,
+    10: 4675,
+    11: 5775,
+    12: 6975,
+    13: 8275,
+    14: 9675,
+    15: 11175,
+    16: 12775,
+    17: 14475,
+    18: 16275,
+    19: 18175,
+    20: 20175,
+    21: 22375,
+    22: 24775,
+    23: 27375,
+    24: 30175,
+    25: 33175,
+    26: 37175,
+    27: 42175,
+    28: 48175,
+    29: 55175,
+    30: 62675,
+    31: 70675,
+    32: 79175,
+    33: 88175,
+    34: 97675,
+    35: 107675,
 };
 
 export const EVO_MAP_ENTITIES = {
@@ -217,7 +248,7 @@ export function calculateEscalationMultiplier(elapsedTimeSeconds: number): numbe
     if (elapsedTimeSeconds <= EVO_CONSTANTS.ESCALATION_START_TIME) {
         return 1.0;
     }
-    const escalationWindow = EVO_CONSTANTS.MATCH_TIME_LIMIT - EVO_CONSTANTS.ESCALATION_START_TIME;
+    const escalationWindow = EVO_CONSTANTS.ESCALATION_FULL_TIME - EVO_CONSTANTS.ESCALATION_START_TIME;
     const progress = Math.min(1.0, (elapsedTimeSeconds - EVO_CONSTANTS.ESCALATION_START_TIME) / escalationWindow);
     return 1.0 + progress;
 }

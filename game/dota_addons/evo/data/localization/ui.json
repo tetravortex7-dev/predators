@@ -51,6 +51,34 @@
     "ru": "ОЧКИ",
     "en": "SCORE"
   },
+  "evo_hud_duel_short": {
+    "ru": "ДУЭЛЬ",
+    "en": "DUEL"
+  },
+  "evo_hud_duel_live": {
+    "ru": "БОЙ",
+    "en": "LIVE"
+  },
+  "evo_hud_duel_record_short": {
+    "ru": "В/П",
+    "en": "W/L"
+  },
+  "evo_hud_duel_record_tooltip_title": {
+    "ru": "Счёт дуэлей",
+    "en": "Duel Record"
+  },
+  "evo_hud_duel_record_tooltip_body": {
+    "ru": "Количество выигранных и проигранных вами дуэлей 1×1.",
+    "en": "Number of 1v1 duels you have won and lost."
+  },
+  "evo_hud_esc_tooltip_title": {
+    "ru": "Ускорение очков (x{mult})",
+    "en": "Score Escalation (x{mult})"
+  },
+  "evo_hud_esc_tooltip_body": {
+    "ru": "После 15:00 все получаемые очки команды постепенно увеличиваются от x1.0 до x2.0 к 25:00.",
+    "en": "After 15:00, all team score gains gradually scale from x1.0 up to x2.0 by 25:00."
+  },
   "evo_hud_my_score": {
     "ru": "Мои очки",
     "en": "My Score"
@@ -64,28 +92,88 @@
     "en": "Match Over"
   },
   "evo_team_2": {
-    "ru": "Силы Света",
-    "en": "Radiant"
+    "ru": "Альфа-Амёба",
+    "en": "Alpha Amoeba"
   },
   "evo_team_3": {
-    "ru": "Силы Тьмы",
-    "en": "Dire"
+    "ru": "Бешеный Ген",
+    "en": "Feral Gene"
   },
   "evo_team_6": {
-    "ru": "Команда 1",
-    "en": "Team 1"
+    "ru": "Нео-Хитин",
+    "en": "Neo-Chitin"
   },
   "evo_team_7": {
-    "ru": "Команда 2",
-    "en": "Team 2"
+    "ru": "Штамм Омега",
+    "en": "Omega Strain"
   },
   "evo_team_8": {
-    "ru": "Команда 3",
-    "en": "Team 3"
+    "ru": "Прото-Спора",
+    "en": "Proto-Spore"
   },
   "evo_team_9": {
-    "ru": "Команда 4",
-    "en": "Team 4"
+    "ru": "Живая Плазмида",
+    "en": "Living Plasmid"
+  },
+  "evo_team_11": {
+    "ru": "Боевой Планктон",
+    "en": "Combat Plankton"
+  },
+  "evo_team_12": {
+    "ru": "Кислотный Симбионт",
+    "en": "Acid Symbiont"
+  },
+  "DOTA_GoodGuys": {
+    "ru": "Альфа-Амёба",
+    "en": "Alpha Amoeba"
+  },
+  "DOTA_BadGuys": {
+    "ru": "Бешеный Ген",
+    "en": "Feral Gene"
+  },
+  "DOTA_Custom1": {
+    "ru": "Нео-Хитин",
+    "en": "Neo-Chitin"
+  },
+  "DOTA_Custom2": {
+    "ru": "Штамм Омега",
+    "en": "Omega Strain"
+  },
+  "DOTA_Custom3": {
+    "ru": "Прото-Спора",
+    "en": "Proto-Spore"
+  },
+  "DOTA_Custom4": {
+    "ru": "Живая Плазмида",
+    "en": "Living Plasmid"
+  },
+  "DOTA_Custom5": {
+    "ru": "Древний Реликтоид",
+    "en": "Primal Relict"
+  },
+  "DOTA_Custom6": {
+    "ru": "Боевой Планктон",
+    "en": "Combat Plankton"
+  },
+  "DOTA_Custom7": {
+    "ru": "Кислотный Симбионт",
+    "en": "Acid Symbiont"
+  },
+  "DOTA_Custom8": {
+    "ru": "Апекс-Мутант",
+    "en": "Apex Mutant"
+  },
+  "evo_fountain_teleport_btn": {
+    "ru": "Teleport",
+    "en": "Teleport"
+  },
+  "evo_fountain_teleport_tooltip_title": {
+    "ru": "Телепорт с базы",
+    "en": "Fountain Teleport"
+  },
+  "evo_fountain_teleport_tooltip_body": {
+    "ru": "Переносит героя с фонтана в случайную безопасную точку карты, чтобы избежать преследования с базы.",
+    "en": "Teleports your hero from the fountain to a random safe location on the map to avoid base camping."
   },
   "evo_draft_body_title": {
     "ru": "Выбор эволюции",
@@ -98,6 +186,10 @@
   "evo_draft_mutation_title": {
     "ru": "Выбор мутации",
     "en": "Choose Mutation"
+  },
+  "evo_draft_reroll_btn": {
+    "ru": "Перероллить ({count})",
+    "en": "Reroll ({count})"
   },
   "evo_attr_STR": {
     "ru": "СИЛА",
@@ -138,6 +230,38 @@
   "evo_duel_boss_label": {
     "ru": "Босс",
     "en": "Boss"
+  },
+  "evo_duel_result_win_title": {
+    "ru": "Дуэль завершена",
+    "en": "Duel Finished"
+  },
+  "evo_duel_result_draw_title": {
+    "ru": "Дуэль: Ничья",
+    "en": "Duel: Draw"
+  },
+  "evo_duel_result_winner": {
+    "ru": "Победитель: {player}",
+    "en": "Winner: {player}"
+  },
+  "evo_duel_result_winner_hp": {
+    "ru": "Победитель (по % HP): {player}",
+    "en": "Winner (HP%): {player}"
+  },
+  "evo_duel_result_draw_desc": {
+    "ru": "Равный % здоровья по итогам минуты",
+    "en": "Equal HP% when timer expired"
+  },
+  "evo_duel_result_reward": {
+    "ru": "Награда: +{score} очк. | +{gold} з.",
+    "en": "Reward: +{score} pts | +{gold}g"
+  },
+  "evo_duel_result_reward_with_bets": {
+    "ru": "Награда: +{score} очк. | +{gold} з. | Ставки: +{bets} з.",
+    "en": "Reward: +{score} pts | +{gold}g | Bets: +{bets}g"
+  },
+  "evo_duel_result_reward_draw": {
+    "ru": "Награда: 0 очк. (ставки возвращены)",
+    "en": "Reward: 0 pts (bets refunded)"
   },
   "evo_talent_tree_title": {
     "ru": "ДЕРЕВО ТАЛАНТОВ",

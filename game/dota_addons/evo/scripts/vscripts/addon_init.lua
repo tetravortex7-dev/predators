@@ -13,7 +13,6 @@ LinkLuaModifier("modifier_generic_arc_lua", "lib/modifiers", LUA_MODIFIER_MOTION
 LinkLuaModifier("modifier_generic_leashed_lua", "lib/modifiers", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_summon_extra_health_lua", "lib/modifiers", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_primary_attribute_lua", "lib/modifiers", LUA_MODIFIER_MOTION_BOTH)
-LinkLuaModifier("modifier_item_third_eye_lua", "items/third_eye", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_evo_peace_time", "modifiers/modifier_evo_peace_time", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_evo_mutation_runtime", "modifiers/modifier_evo_mutation_runtime", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_evo_boss_courage", "modifiers/modifier_evo_boss_courage", LUA_MODIFIER_MOTION_NONE)

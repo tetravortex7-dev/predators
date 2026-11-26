@@ -100,6 +100,11 @@ export function applyBodyToHero(
     hero.SetBaseDamageMax(Math.floor(body.baseAttackDamageMax * mult));
     hero.SetPhysicalArmorBaseValue(body.baseArmor);
 
+    const tierMod = hero.AddNewModifier(hero, undefined, "modifier_evo_hero_tier", {});
+    if (tierMod !== undefined) {
+        tierMod.SetStackCount(body.tierIndex);
+    }
+
     if (body.keepDefaultHeroAbilities !== true) {
         if (body.kitAbilities && body.kitAbilities.length > 0) {
             for (const oldName of state.kitAbilityNames) {
@@ -135,9 +140,14 @@ export function applyBodyToHero(
                         }
                     }
                     ab.SetHidden(false);
+                    const maxLvl = ab.GetMaxLevel();
                     const desiredLevel = isInnate
-                        ? 1
-                        : Math.min(ab.GetMaxLevel(), Math.max(1, targetKitLevel));
+                        ? (maxLvl === 2
+                            ? Math.min(2, Math.max(1, body.tierIndex - 2))
+                            : maxLvl === 3
+                              ? Math.min(3, Math.max(1, body.tierIndex - 1))
+                              : 1)
+                        : 0;
                     if (ab.GetLevel() !== desiredLevel) {
                         ab.SetLevel(desiredLevel);
                     }

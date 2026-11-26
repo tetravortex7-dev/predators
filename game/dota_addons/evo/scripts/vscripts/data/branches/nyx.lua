@@ -1,6 +1,6 @@
 local ____lualib = require("lualib_bundle")
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["5"] = 3,["6"] = 4,["7"] = 4,["8"] = 4,["9"] = 4,["10"] = 4,["11"] = 4,["12"] = 4,["13"] = 4,["14"] = 4,["15"] = 4,["16"] = 4,["17"] = 15,["18"] = 15,["19"] = 15,["20"] = 15,["21"] = 15,["22"] = 15,["23"] = 4,["24"] = 4,["25"] = 4,["26"] = 4,["27"] = 4,["28"] = 4,["29"] = 4,["30"] = 4,["31"] = 4,["32"] = 4,["33"] = 4,["34"] = 4,["35"] = 4,["36"] = 4,["37"] = 4,["38"] = 4,["39"] = 4,["40"] = 3,["41"] = 39,["42"] = 39,["43"] = 39,["44"] = 39,["45"] = 39,["46"] = 39,["47"] = 39,["48"] = 39,["49"] = 39,["50"] = 39,["51"] = 39,["52"] = 50,["53"] = 50,["54"] = 50,["55"] = 50,["56"] = 50,["57"] = 50,["58"] = 50,["59"] = 39,["60"] = 39,["61"] = 39,["62"] = 39,["63"] = 39,["64"] = 39,["65"] = 39,["66"] = 39,["67"] = 39,["68"] = 39,["69"] = 39,["70"] = 39,["71"] = 39,["72"] = 39,["73"] = 39,["74"] = 39,["75"] = 39,["76"] = 3,["77"] = 77,["78"] = 77,["79"] = 77,["80"] = 77,["81"] = 77,["82"] = 77,["83"] = 77,["84"] = 77,["85"] = 77,["86"] = 77,["87"] = 77,["88"] = 88,["89"] = 88,["90"] = 88,["91"] = 88,["92"] = 88,["93"] = 88,["94"] = 88,["95"] = 77,["96"] = 77,["97"] = 77,["98"] = 77,["99"] = 77,["100"] = 77,["101"] = 77,["102"] = 77,["103"] = 77,["104"] = 77,["105"] = 77,["106"] = 77,["107"] = 77,["108"] = 77,["109"] = 77,["110"] = 77,["111"] = 77,["112"] = 3,["113"] = 117,["114"] = 117,["115"] = 117,["116"] = 117,["117"] = 117,["118"] = 117,["119"] = 117,["120"] = 117,["121"] = 117,["122"] = 117,["123"] = 127,["124"] = 127,["125"] = 127,["126"] = 127,["127"] = 127,["128"] = 127,["129"] = 127,["130"] = 117,["131"] = 117,["132"] = 117,["133"] = 117,["134"] = 117,["135"] = 117,["136"] = 117,["137"] = 117,["138"] = 117,["139"] = 117,["140"] = 117,["141"] = 117,["142"] = 117,["143"] = 117,["144"] = 117,["145"] = 157,["146"] = 157,["147"] = 157,["148"] = 157,["149"] = 157,["150"] = 157,["151"] = 117,["152"] = 117,["153"] = 3,["154"] = 160,["155"] = 160,["156"] = 160,["157"] = 160,["158"] = 160,["159"] = 160,["160"] = 160,["161"] = 160,["162"] = 160,["163"] = 160,["164"] = 160,["165"] = 171,["166"] = 171,["167"] = 171,["168"] = 171,["169"] = 171,["170"] = 171,["171"] = 171,["172"] = 160,["173"] = 160,["174"] = 160,["175"] = 160,["176"] = 160,["177"] = 160,["178"] = 160,["179"] = 160,["180"] = 160,["181"] = 160,["182"] = 160,["183"] = 160,["184"] = 160,["185"] = 160,["186"] = 160,["187"] = 160,["188"] = 160,["189"] = 3,["190"] = 198,["191"] = 198,["192"] = 198,["193"] = 198,["194"] = 198,["195"] = 198,["196"] = 198,["197"] = 198,["198"] = 198,["199"] = 198,["200"] = 198,["201"] = 209,["202"] = 209,["203"] = 209,["204"] = 209,["205"] = 209,["206"] = 209,["207"] = 209,["208"] = 198,["209"] = 198,["210"] = 198,["211"] = 198,["212"] = 198,["213"] = 198,["214"] = 198,["215"] = 198,["216"] = 198,["217"] = 198,["218"] = 198,["219"] = 198,["220"] = 198,["221"] = 198,["222"] = 198,["223"] = 198,["224"] = 198,["225"] = 3,["226"] = 238,["227"] = 238,["228"] = 238,["229"] = 238,["230"] = 238,["231"] = 238,["232"] = 238,["233"] = 238,["234"] = 238,["235"] = 238,["236"] = 248,["237"] = 248,["238"] = 248,["239"] = 248,["240"] = 248,["241"] = 248,["242"] = 248,["243"] = 238,["244"] = 238,["245"] = 238,["246"] = 238,["247"] = 238,["248"] = 238,["249"] = 238,["250"] = 238,["251"] = 238,["252"] = 238,["253"] = 238,["254"] = 238,["255"] = 238,["256"] = 238,["257"] = 238,["258"] = 278,["259"] = 278,["260"] = 278,["261"] = 278,["262"] = 278,["263"] = 278,["264"] = 238,["265"] = 238,["266"] = 3,["267"] = 281,["268"] = 281,["269"] = 281,["270"] = 281,["271"] = 281,["272"] = 281,["273"] = 281,["274"] = 281,["275"] = 281,["276"] = 281,["277"] = 281,["278"] = 292,["279"] = 292,["280"] = 292,["281"] = 292,["282"] = 292,["283"] = 292,["284"] = 292,["285"] = 281,["286"] = 281,["287"] = 281,["288"] = 281,["289"] = 281,["290"] = 281,["291"] = 281,["292"] = 281,["293"] = 281,["294"] = 281,["295"] = 281,["296"] = 281,["297"] = 281,["298"] = 281,["299"] = 281,["300"] = 281,["301"] = 281,["302"] = 3,["303"] = 322,["304"] = 322,["305"] = 322,["306"] = 322,["307"] = 322,["308"] = 322,["309"] = 322,["310"] = 322,["311"] = 322,["312"] = 322,["313"] = 322,["314"] = 333,["315"] = 333,["316"] = 333,["317"] = 333,["318"] = 333,["319"] = 333,["320"] = 333,["321"] = 322,["322"] = 322,["323"] = 322,["324"] = 322,["325"] = 322,["326"] = 322,["327"] = 322,["328"] = 322,["329"] = 322,["330"] = 322,["331"] = 322,["332"] = 322,["333"] = 322,["334"] = 322,["335"] = 322,["336"] = 322,["337"] = 322,["338"] = 3,["339"] = 365,["340"] = 365,["341"] = 365,["342"] = 365,["343"] = 365,["344"] = 365,["345"] = 365,["346"] = 365,["347"] = 365,["348"] = 365,["349"] = 375,["350"] = 375,["351"] = 375,["352"] = 375,["353"] = 375,["354"] = 375,["355"] = 375,["356"] = 365,["357"] = 365,["358"] = 365,["359"] = 365,["360"] = 365,["361"] = 365,["362"] = 365,["363"] = 365,["364"] = 365,["365"] = 365,["366"] = 365,["367"] = 365,["368"] = 365,["369"] = 365,["370"] = 365,["371"] = 411,["372"] = 411,["373"] = 411,["374"] = 411,["375"] = 411,["376"] = 411,["377"] = 365,["378"] = 365,["379"] = 3,["380"] = 3});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["5"] = 3,["6"] = 4,["7"] = 4,["8"] = 4,["9"] = 4,["10"] = 4,["11"] = 4,["12"] = 4,["13"] = 4,["14"] = 4,["15"] = 4,["16"] = 4,["17"] = 15,["18"] = 15,["19"] = 15,["20"] = 15,["21"] = 15,["22"] = 15,["23"] = 4,["24"] = 4,["25"] = 4,["26"] = 4,["27"] = 4,["28"] = 4,["29"] = 4,["30"] = 4,["31"] = 4,["32"] = 4,["33"] = 4,["34"] = 4,["35"] = 4,["36"] = 4,["37"] = 4,["38"] = 4,["39"] = 4,["40"] = 3,["41"] = 39,["42"] = 39,["43"] = 39,["44"] = 39,["45"] = 39,["46"] = 39,["47"] = 39,["48"] = 39,["49"] = 39,["50"] = 39,["51"] = 39,["52"] = 50,["53"] = 50,["54"] = 50,["55"] = 50,["56"] = 50,["57"] = 50,["58"] = 50,["59"] = 39,["60"] = 39,["61"] = 39,["62"] = 39,["63"] = 39,["64"] = 39,["65"] = 39,["66"] = 39,["67"] = 39,["68"] = 39,["69"] = 39,["70"] = 39,["71"] = 39,["72"] = 39,["73"] = 39,["74"] = 39,["75"] = 39,["76"] = 3,["77"] = 77,["78"] = 77,["79"] = 77,["80"] = 77,["81"] = 77,["82"] = 77,["83"] = 77,["84"] = 77,["85"] = 77,["86"] = 77,["87"] = 77,["88"] = 88,["89"] = 88,["90"] = 88,["91"] = 88,["92"] = 88,["93"] = 88,["94"] = 88,["95"] = 77,["96"] = 77,["97"] = 77,["98"] = 77,["99"] = 77,["100"] = 77,["101"] = 77,["102"] = 77,["103"] = 77,["104"] = 77,["105"] = 77,["106"] = 77,["107"] = 77,["108"] = 77,["109"] = 77,["110"] = 77,["111"] = 77,["112"] = 3,["113"] = 117,["114"] = 117,["115"] = 117,["116"] = 117,["117"] = 117,["118"] = 117,["119"] = 117,["120"] = 117,["121"] = 117,["122"] = 117,["123"] = 127,["124"] = 127,["125"] = 127,["126"] = 127,["127"] = 127,["128"] = 127,["129"] = 127,["130"] = 117,["131"] = 117,["132"] = 117,["133"] = 117,["134"] = 117,["135"] = 117,["136"] = 117,["137"] = 117,["138"] = 117,["139"] = 117,["140"] = 117,["141"] = 117,["142"] = 117,["143"] = 117,["144"] = 117,["145"] = 157,["146"] = 157,["147"] = 157,["148"] = 157,["149"] = 157,["150"] = 157,["151"] = 117,["152"] = 117,["153"] = 3,["154"] = 160,["155"] = 160,["156"] = 160,["157"] = 160,["158"] = 160,["159"] = 160,["160"] = 160,["161"] = 160,["162"] = 160,["163"] = 160,["164"] = 160,["165"] = 171,["166"] = 171,["167"] = 171,["168"] = 171,["169"] = 171,["170"] = 171,["171"] = 171,["172"] = 160,["173"] = 160,["174"] = 160,["175"] = 160,["176"] = 160,["177"] = 160,["178"] = 160,["179"] = 160,["180"] = 160,["181"] = 160,["182"] = 160,["183"] = 160,["184"] = 160,["185"] = 160,["186"] = 160,["187"] = 160,["188"] = 160,["189"] = 3,["190"] = 198,["191"] = 198,["192"] = 198,["193"] = 198,["194"] = 198,["195"] = 198,["196"] = 198,["197"] = 198,["198"] = 198,["199"] = 198,["200"] = 198,["201"] = 209,["202"] = 209,["203"] = 209,["204"] = 209,["205"] = 209,["206"] = 209,["207"] = 209,["208"] = 198,["209"] = 198,["210"] = 198,["211"] = 198,["212"] = 198,["213"] = 198,["214"] = 198,["215"] = 198,["216"] = 198,["217"] = 198,["218"] = 198,["219"] = 198,["220"] = 198,["221"] = 198,["222"] = 198,["223"] = 198,["224"] = 198,["225"] = 3,["226"] = 238,["227"] = 238,["228"] = 238,["229"] = 238,["230"] = 238,["231"] = 238,["232"] = 238,["233"] = 238,["234"] = 238,["235"] = 238,["236"] = 248,["237"] = 248,["238"] = 248,["239"] = 248,["240"] = 248,["241"] = 248,["242"] = 248,["243"] = 238,["244"] = 238,["245"] = 238,["246"] = 238,["247"] = 238,["248"] = 238,["249"] = 238,["250"] = 238,["251"] = 238,["252"] = 238,["253"] = 238,["254"] = 238,["255"] = 238,["256"] = 238,["257"] = 238,["258"] = 278,["259"] = 278,["260"] = 278,["261"] = 278,["262"] = 278,["263"] = 278,["264"] = 238,["265"] = 238,["266"] = 3,["267"] = 281,["268"] = 281,["269"] = 281,["270"] = 281,["271"] = 281,["272"] = 281,["273"] = 281,["274"] = 281,["275"] = 281,["276"] = 281,["277"] = 281,["278"] = 292,["279"] = 292,["280"] = 292,["281"] = 292,["282"] = 292,["283"] = 292,["284"] = 292,["285"] = 281,["286"] = 281,["287"] = 281,["288"] = 281,["289"] = 281,["290"] = 281,["291"] = 281,["292"] = 281,["293"] = 281,["294"] = 281,["295"] = 281,["296"] = 281,["297"] = 281,["298"] = 281,["299"] = 281,["300"] = 281,["301"] = 281,["302"] = 3,["303"] = 319,["304"] = 319,["305"] = 319,["306"] = 319,["307"] = 319,["308"] = 319,["309"] = 319,["310"] = 319,["311"] = 319,["312"] = 319,["313"] = 319,["314"] = 330,["315"] = 330,["316"] = 330,["317"] = 330,["318"] = 330,["319"] = 330,["320"] = 330,["321"] = 319,["322"] = 319,["323"] = 319,["324"] = 319,["325"] = 319,["326"] = 319,["327"] = 319,["328"] = 319,["329"] = 319,["330"] = 319,["331"] = 319,["332"] = 319,["333"] = 319,["334"] = 319,["335"] = 319,["336"] = 319,["337"] = 319,["338"] = 3,["339"] = 359,["340"] = 359,["341"] = 359,["342"] = 359,["343"] = 359,["344"] = 359,["345"] = 359,["346"] = 359,["347"] = 359,["348"] = 359,["349"] = 369,["350"] = 369,["351"] = 369,["352"] = 369,["353"] = 369,["354"] = 369,["355"] = 369,["356"] = 359,["357"] = 359,["358"] = 359,["359"] = 359,["360"] = 359,["361"] = 359,["362"] = 359,["363"] = 359,["364"] = 359,["365"] = 359,["366"] = 359,["367"] = 359,["368"] = 359,["369"] = 359,["370"] = 359,["371"] = 405,["372"] = 405,["373"] = 405,["374"] = 405,["375"] = 405,["376"] = 405,["377"] = 359,["378"] = 359,["379"] = 3,["380"] = 408,["381"] = 408,["382"] = 408,["383"] = 408,["384"] = 408,["385"] = 408,["386"] = 408,["387"] = 408,["388"] = 408,["389"] = 408,["390"] = 408,["391"] = 419,["392"] = 419,["393"] = 419,["394"] = 419,["395"] = 419,["396"] = 419,["397"] = 419,["398"] = 408,["399"] = 408,["400"] = 408,["401"] = 408,["402"] = 408,["403"] = 408,["404"] = 408,["405"] = 408,["406"] = 408,["407"] = 408,["408"] = 408,["409"] = 408,["410"] = 408,["411"] = 408,["412"] = 408,["413"] = 408,["414"] = 408,["415"] = 3,["416"] = 3});
 local ____exports = {}
 ____exports.EVO_BRANCH_NYX_BODIES = {
     {
@@ -13,7 +13,7 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         modelScale = 0.65,
         heroClass = "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities = false,
-        nextBodyIds = {"evo_body_t2_nyx_scarab", "evo_body_t2_nyx_mantis", "evo_body_t2_nyx_archon"},
+        nextBodyIds = {"evo_body_t2_nyx_scarab", "evo_body_t2_nyx_mantis", "evo_body_t2_nyx_archon", "evo_body_t2_nyx_cicada"},
         appearance = {
             scale = 0.65,
             hideBaseWearables = true,
@@ -34,8 +34,8 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackRange = 150,
         baseArmor = 2,
         innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
-        kitAbilities = {"evo_nyx_t1_burrow_spike", "evo_nyx_t1_chitin_burst", "evo_nyx_living_chitin"},
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"nyx_assassin_impale", "evo_nyx_t1_chitin_burst", "evo_nyx_living_chitin"},
         kitAbilityLevel = 1
     },
     {
@@ -52,10 +52,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.8,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/burnichus_sicarius_back/burnichus_sicarius_back.vmdl"}},
-            displayName = "Каменный Жук",
-            color = {165, 130, 85},
-            labelColor = {200, 165, 110}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_back_bishobola/nyx_back_bishobola.vmdl"}},
+            displayName = "Панцирный Жук",
+            color = {95, 115, 145},
+            labelColor = {150, 175, 210}
         },
         primaryAttribute = "STR",
         baseStr = 30,
@@ -70,7 +70,7 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
+        signatureAbility = "nyx_assassin_impale",
         kitAbilities = {"evo_nyx_scarab_q", "evo_nyx_scarab_w", "evo_nyx_scarab_e", "evo_nyx_living_chitin"},
         kitAbilityLevel = 1
     },
@@ -88,10 +88,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.95,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/burnichus_sicarius_back/burnichus_sicarius_back.vmdl"}, {model = "models/items/nerubian_assassin/burnichus_sicarius_head/burnichus_sicarius_head.vmdl"}, {model = "models/items/nerubian_assassin/burnichus_sicarius_weapon/burnichus_sicarius_weapon.vmdl"}},
-            displayName = "Железный Скарабей",
-            color = {195, 145, 70},
-            labelColor = {225, 175, 95}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_back_bishobola/nyx_back_bishobola.vmdl"}, {model = "models/items/nerubian_assassin/nyx_helmet_carapace/nyx_helmet_carapace.vmdl"}, {model = "models/items/nerubian_assassin/nyx_bishobola_weapon/nyx_bishobola_weapon.vmdl"}},
+            displayName = "Глубинный Страж",
+            color = {65, 85, 130},
+            labelColor = {125, 160, 225}
         },
         primaryAttribute = "STR",
         baseStr = 38,
@@ -105,10 +105,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
-        kitAbilities = {"evo_nyx_scarab_q", "evo_nyx_scarab_w", "evo_nyx_scarab_e", "evo_nyx_living_chitin"},
-        kitAbilityLevel = 2
+        innateAbility = "evo_nyx_scarab_chitin",
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"evo_nyx_scarab_q", "evo_nyx_scarab_w", "evo_nyx_scarab_e", "evo_nyx_scarab_chitin"},
+        kitAbilityLevel = 1
     },
     {
         id = "evo_body_t4_nyx_scarab",
@@ -117,16 +117,16 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         tags = {"insect", "hive", "nyx"},
         spellPoolTags = {"control", "burst"},
         model = "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale = 1.15,
+        modelScale = 1.1,
         heroClass = "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities = false,
         appearance = {
-            scale = 1.15,
+            scale = 1.1,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6_gold/nyx_assassin_immortal_ambient_ti6_gold.vpcf"}}, {model = "models/items/nerubian_assassin/nyx_ti10_cavern_crawl_back/nyx_ti10_cavern_crawl_back.vmdl"}, {model = "models/items/nerubian_assassin/nyx_ti10_cavern_crawl_head/nyx_ti10_cavern_crawl_head.vmdl"}, {model = "models/items/nerubian_assassin/nyx_ti10_cavern_crawl_misc/nyx_ti10_cavern_crawl_misc.vmdl"}},
+            wearables = {{model = "models/items/nerubian_assassin/nyx_back_carapace/nyx_back_carapace.vmdl"}, {model = "models/items/nerubian_assassin/nyx_helmet_carapace/nyx_helmet_carapace.vmdl"}, {model = "models/items/nerubian_assassin/nyx_weapon_carapace/nyx_weapon_carapace.vmdl"}, {model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_immortal_ambient_ti6.vpcf"}}},
             displayName = "Обсидиановый Скарабей",
-            color = {235, 180, 65},
-            labelColor = {255, 205, 90}
+            color = {45, 55, 95},
+            labelColor = {120, 195, 255}
         },
         primaryAttribute = "STR",
         baseStr = 38,
@@ -140,16 +140,16 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
+        innateAbility = "evo_nyx_scarab_chitin",
+        signatureAbility = "nyx_assassin_impale",
         kitAbilities = {
             "evo_nyx_scarab_q",
             "evo_nyx_scarab_w",
             "evo_nyx_scarab_e",
             "evo_nyx_scarab_r",
-            "evo_nyx_living_chitin"
+            "evo_nyx_scarab_chitin"
         },
-        kitAbilityLevel = 3
+        kitAbilityLevel = 1
     },
     {
         id = "evo_body_t2_nyx_mantis",
@@ -165,10 +165,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.8,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/bts_nyx_silent_world_weapon/bts_nyx_silent_world_weapon.vmdl"}},
-            displayName = "Теневой Клинок",
-            color = {200, 55, 70},
-            labelColor = {235, 85, 100}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_bishobola_weapon/nyx_bishobola_weapon.vmdl"}},
+            displayName = "Клинок Травы",
+            color = {195, 50, 65},
+            labelColor = {235, 95, 110}
         },
         primaryAttribute = "AGI",
         baseStr = 26,
@@ -183,7 +183,7 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
+        signatureAbility = "nyx_assassin_impale",
         kitAbilities = {"evo_nyx_mantis_q", "evo_nyx_mantis_w", "evo_nyx_mantis_e", "evo_nyx_living_chitin"},
         kitAbilityLevel = 1
     },
@@ -201,10 +201,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.95,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/bts_nyx_silent_world_weapon/bts_nyx_silent_world_weapon.vmdl"}, {model = "models/items/nerubian_assassin/bts_nyx_silent_world_back/bts_nyx_silent_world_back.vmdl"}, {model = "models/items/nerubian_assassin/bts_nyx_silent_world_head/bts_nyx_silent_world_head.vmdl"}},
-            displayName = "Ночной Богомол",
-            color = {180, 30, 50},
-            labelColor = {235, 65, 85}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_bishobola_weapon/nyx_bishobola_weapon.vmdl"}, {model = "models/items/nerubian_assassin/spines_of_the_predator/spines_of_the_predator.vmdl"}, {model = "models/items/nerubian_assassin/mind_piercer_of_the_predator/mind_piercer_of_the_predator.vmdl"}},
+            displayName = "Алый Дуэлянт",
+            color = {160, 25, 45},
+            labelColor = {235, 75, 95}
         },
         primaryAttribute = "AGI",
         baseStr = 34,
@@ -218,10 +218,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
-        kitAbilities = {"evo_nyx_mantis_q", "evo_nyx_mantis_w", "evo_nyx_mantis_e", "evo_nyx_living_chitin"},
-        kitAbilityLevel = 2
+        innateAbility = "evo_nyx_mantis_chitin",
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"evo_nyx_mantis_q", "evo_nyx_mantis_w", "evo_nyx_mantis_e", "evo_nyx_mantis_chitin"},
+        kitAbilityLevel = 1
     },
     {
         id = "evo_body_t4_nyx_mantis",
@@ -237,9 +237,9 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
             scale = 1.1,
             hideBaseWearables = true,
             wearables = {{model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_immortal_witness_ambient_ti6.vpcf"}}, {model = "models/items/nerubian_assassin/nyx_ti9_immortal_back/nyx_ti9_immortal_back.vmdl"}, {model = "models/items/nerubian_assassin/bts_nyx_silent_world_head/bts_nyx_silent_world_head.vmdl"}, {model = "models/items/nerubian_assassin/bts_nyx_silent_world_misc/bts_nyx_silent_world_misc.vmdl"}},
-            displayName = "Багровый Богомол",
-            color = {235, 35, 60},
-            labelColor = {255, 75, 95}
+            displayName = "Бритвенный Богомол",
+            color = {115, 15, 35},
+            labelColor = {255, 80, 105}
         },
         primaryAttribute = "AGI",
         baseStr = 34,
@@ -253,16 +253,16 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
+        innateAbility = "evo_nyx_mantis_chitin",
+        signatureAbility = "nyx_assassin_impale",
         kitAbilities = {
             "evo_nyx_mantis_q",
             "evo_nyx_mantis_w",
             "evo_nyx_mantis_e",
             "evo_nyx_mantis_r",
-            "evo_nyx_living_chitin"
+            "evo_nyx_mantis_chitin"
         },
-        kitAbilityLevel = 3
+        kitAbilityLevel = 1
     },
     {
         id = "evo_body_t2_nyx_archon",
@@ -278,10 +278,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.8,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_immortal_ambient_ti6.vpcf"}}},
-            displayName = "Пси-Проводник",
-            color = {145, 90, 235},
-            labelColor = {180, 130, 255}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl"}},
+            displayName = "Шепчущий Кокон",
+            color = {75, 215, 210},
+            labelColor = {125, 240, 235}
         },
         primaryAttribute = "INT",
         baseStr = 26,
@@ -296,8 +296,8 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackRange = 150,
         baseArmor = 3,
         innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
-        kitAbilities = {"evo_nyx_archon_q", "evo_nyx_archon_w", "evo_nyx_archon_e", "evo_nyx_living_chitin"},
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"lion_impale", "evo_nyx_archon_w", "evo_nyx_archon_e", "evo_nyx_living_chitin"},
         kitAbilityLevel = 1
     },
     {
@@ -314,10 +314,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         appearance = {
             scale = 0.95,
             hideBaseWearables = true,
-            wearables = {{model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_immortal_ambient_ti6.vpcf"}}, {model = "models/items/nerubian_assassin/nyx_ti9_immortal_back/nyx_ti9_immortal_back.vmdl"}, {model = "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl"}},
-            displayName = "Мастер Разума",
-            color = {120, 70, 235},
-            labelColor = {165, 115, 255}
+            wearables = {{model = "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl"}, {model = "models/items/nerubian_assassin/cicatrixregalia_weapon/cicatrixregalia_weapon.vmdl"}, {model = "models/items/nerubian_assassin/nyx_ti9_immortal_back/nyx_ti9_immortal_back.vmdl"}},
+            displayName = "Ткач Разума",
+            color = {45, 155, 235},
+            labelColor = {115, 195, 255}
         },
         primaryAttribute = "INT",
         baseStr = 34,
@@ -331,10 +331,10 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
-        kitAbilities = {"evo_nyx_archon_q", "evo_nyx_archon_w", "evo_nyx_archon_e", "evo_nyx_living_chitin"},
-        kitAbilityLevel = 2
+        innateAbility = "evo_nyx_archon_chitin",
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"lion_impale", "evo_nyx_archon_w", "evo_nyx_archon_e", "evo_nyx_archon_chitin"},
+        kitAbilityLevel = 1
     },
     {
         id = "evo_body_t4_nyx_archon",
@@ -350,9 +350,9 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
             scale = 1.1,
             hideBaseWearables = true,
             wearables = {{model = "models/items/nerubian_assassin/ti6_immortal/mesh/ti6_immortal_nyx_weapon_model.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_immortal_ambient_ti6.vpcf"}}, {model = "models/items/nerubian_assassin/cursed_zealot_back/cursed_zealot_back.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_zealot/nyx_zealot_carapace_ambient.vpcf"}}, {model = "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl"}, {model = "models/items/nerubian_assassin/nyx_dagon.vmdl", particles = {"particles/econ/items/nyx_assassin/nyx_assassin_dagon_ambient/nyx_assassin_dagon_ambient.vpcf"}}},
-            displayName = "Пси-Архонт",
-            color = {175, 105, 255},
-            labelColor = {215, 155, 255}
+            displayName = "Архонт Роя",
+            color = {90, 85, 250},
+            labelColor = {165, 160, 255}
         },
         primaryAttribute = "INT",
         baseStr = 34,
@@ -366,16 +366,52 @@ ____exports.EVO_BRANCH_NYX_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_nyx_living_chitin",
-        signatureAbility = "evo_nyx_t1_burrow_spike",
+        innateAbility = "evo_nyx_archon_chitin",
+        signatureAbility = "nyx_assassin_impale",
         kitAbilities = {
-            "evo_nyx_archon_q",
+            "lion_impale",
             "evo_nyx_archon_w",
             "evo_nyx_archon_e",
             "evo_nyx_archon_r",
-            "evo_nyx_living_chitin"
+            "evo_nyx_archon_chitin"
         },
-        kitAbilityLevel = 3
+        kitAbilityLevel = 1
+    },
+    {
+        id = "evo_body_t2_nyx_cicada",
+        tierIndex = 2,
+        diet = "CARNIVORE",
+        tags = {"insect", "hive", "nyx"},
+        spellPoolTags = {"control", "burst"},
+        model = "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
+        modelScale = 0.8,
+        heroClass = "npc_dota_hero_nyx_assassin",
+        keepDefaultHeroAbilities = false,
+        nextBodyIds = {"evo_body_t3_nyx_cicada"},
+        appearance = {
+            scale = 0.8,
+            hideBaseWearables = true,
+            wearables = {{model = "models/items/nerubian_assassin/nyx_dusky_back/nyx_dusky_back.vmdl"}},
+            displayName = "Звенящая Нимфа",
+            color = {215, 215, 50},
+            labelColor = {240, 240, 100}
+        },
+        primaryAttribute = "ALL",
+        baseStr = 28,
+        baseAgi = 28,
+        baseInt = 23,
+        strGain = 3.2,
+        agiGain = 3.2,
+        intGain = 2.5,
+        baseMoveSpeed = 315,
+        baseAttackDamageMin = 36,
+        baseAttackDamageMax = 44,
+        baseAttackRange = 150,
+        baseArmor = 3,
+        innateAbility = "evo_nyx_cicada_chitin",
+        signatureAbility = "nyx_assassin_impale",
+        kitAbilities = {"evo_nyx_cicada_q", "evo_nyx_cicada_w", "evo_nyx_cicada_e", "evo_nyx_cicada_chitin"},
+        kitAbilityLevel = 1
     }
 }
 return ____exports

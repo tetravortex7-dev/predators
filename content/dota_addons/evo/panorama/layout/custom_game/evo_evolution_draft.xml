@@ -19,6 +19,11 @@
                 </Button>
             </Panel>
             <Panel id="EvoDraftCards" class="EvoDraftCards" />
+            <Panel id="EvoDraftRerollRow" class="EvoDraftRerollRow">
+                <Button id="EvoDraftRerollBtn" class="EvoDraftRerollBtn">
+                    <Label id="EvoDraftRerollLabel" class="EvoDraftRerollLabel" text="#evo_draft_reroll_btn" />
+                </Button>
+            </Panel>
         </Panel>
     </Panel>
 </root>

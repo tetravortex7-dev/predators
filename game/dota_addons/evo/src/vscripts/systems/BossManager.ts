@@ -95,7 +95,6 @@ export class BossManager {
         runtime.retreating = false;
         runtime.retreatPosition = undefined;
 
-        unit.RemoveModifierByName("modifier_evo_world_pause");
         unit.Purge(false, true, false, true, true);
         unit.SetHealth(unit.GetMaxHealth());
         unit.SetMana(unit.GetMaxMana());
@@ -374,6 +373,19 @@ export class BossManager {
                 if (killerBoss && victim && !victim.IsNull() && IsValidEntity(victim) && victim.IsBaseNPC()) {
                     if (victim.IsRealHero()) {
                         grantBossProgress(killerBoss, BOSS_HERO_KILL_XP, BOSS_HERO_KILL_GOLD);
+                        const victimPid = victim.GetPlayerOwnerID();
+                        if (PlayerResource.IsValidPlayerID(victimPid)) {
+                            CustomGameEventManager.Send_ServerToAllClients(
+                                "evo_boss_killed_hero" as never,
+                                {
+                                    boss_id: killerBossId,
+                                    boss_unit: killerBoss.definition.unitName,
+                                    victim_player_id: victimPid,
+                                    victim_hero: victim.GetUnitName(),
+                                    gold: BOSS_HERO_KILL_GOLD,
+                                } as never
+                            );
+                        }
                     } else {
                         const creepXp = Math.max(15, Math.floor(victim.GetDeathXP() * BOSS_CREEP_XP_MULTIPLIER));
                         const creepGold = Math.max(15, victim.GetGoldBounty());

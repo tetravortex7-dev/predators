@@ -542,8 +542,6 @@ function DOTABaseAbility:IsRearmable()
 end
 function DOTABaseAbility:IsMulticastable()
 	local exceptions = {
-		"item_power_treads_lua",
-		"item_might_treads_lua",
 		"brewmaster_primal_split",
 		"shredder_chakram",
 		"dazzle_bad_juju",

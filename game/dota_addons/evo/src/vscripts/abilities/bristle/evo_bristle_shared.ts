@@ -1,3 +1,5 @@
+import { isEvoCreepUnit } from "../../lib/unit_helpers";
+
 const pushCooldownByEnt: Map<EntityIndex, number> = new Map();
 export const activeReactorZones: Set<CDOTA_BaseNPC> = new Set();
 
@@ -77,7 +79,7 @@ export function fireDreadnoughtQuillFan(caster: CDOTA_BaseNPC, ability: CDOTABas
         const ex = enemy.FindModifierByName("modifier_evo_bristle_dread_w_quill");
         const curStacks = ex ? ex.GetStackCount() : 0;
         let dmg = rawBase + curStacks * perStackBonus;
-        if (enemy.IsCreep()) {
+        if (isEvoCreepUnit(enemy)) {
             dmg *= 1.3;
         }
         ApplyDamage({

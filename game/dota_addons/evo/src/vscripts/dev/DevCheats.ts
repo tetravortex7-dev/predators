@@ -68,7 +68,9 @@ export class DevCheats {
             case "-evo_morph":
             case "-evo_duel":
             case "-evo_boss":
-            case "-evo_score": {
+            case "-evo_score":
+            case "-evo_tp":
+            case "-evo_mut": {
                 this.eventBus.emit("dev_command", { playerId, command, args });
                 this.say(`[Dev] Dispatched ${command} ${args.join(" ")}`);
                 break;

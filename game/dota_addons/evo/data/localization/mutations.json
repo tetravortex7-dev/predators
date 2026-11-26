@@ -1,0 +1,162 @@
+{
+  "evo_mut_stat_atk_5": {
+    "ru": "+5 Атака",
+    "en": "+5 Attack Damage"
+  },
+  "evo_mut_stat_atk_5_desc": {
+    "ru": "+5 к урону от атак.",
+    "en": "+5 attack damage."
+  },
+  "evo_mut_stat_ms_5": {
+    "ru": "+5 Скорость бега",
+    "en": "+5 Move Speed"
+  },
+  "evo_mut_stat_ms_5_desc": {
+    "ru": "+5 к скорости передвижения.",
+    "en": "+5 movement speed."
+  },
+  "evo_mut_stat_mana_regen": {
+    "ru": "+1 Мана-реген",
+    "en": "+1 Mana Regen"
+  },
+  "evo_mut_stat_mana_regen_desc": {
+    "ru": "+1 к восстановлению маны в секунду.",
+    "en": "+1 mana regeneration per second."
+  },
+  "evo_mut_stat_hp_regen": {
+    "ru": "+2.5 ХП-реген",
+    "en": "+2.5 HP Regen"
+  },
+  "evo_mut_stat_hp_regen_desc": {
+    "ru": "+2.5 к восстановлению здоровья в секунду.",
+    "en": "+2.5 health regeneration per second."
+  },
+  "evo_mut_stat_str_1": {
+    "ru": "+1 Сила",
+    "en": "+1 Strength"
+  },
+  "evo_mut_stat_str_1_desc": {
+    "ru": "+1 к силе.",
+    "en": "+1 strength."
+  },
+  "evo_mut_stat_agi_1": {
+    "ru": "+1 Ловкость",
+    "en": "+1 Agility"
+  },
+  "evo_mut_stat_agi_1_desc": {
+    "ru": "+1 к ловкости.",
+    "en": "+1 agility."
+  },
+  "evo_mut_stat_int_1": {
+    "ru": "+1 Интеллект",
+    "en": "+1 Intelligence"
+  },
+  "evo_mut_stat_int_1_desc": {
+    "ru": "+1 к интеллекту.",
+    "en": "+1 intelligence."
+  },
+  "evo_mut_stat_armor_1": {
+    "ru": "+1 Броня",
+    "en": "+1 Armor"
+  },
+  "evo_mut_stat_armor_1_desc": {
+    "ru": "+1 к броне.",
+    "en": "+1 armor."
+  },
+  "evo_mut_stat_as_5": {
+    "ru": "+5 Скорость атаки",
+    "en": "+5 Attack Speed"
+  },
+  "evo_mut_stat_as_5_desc": {
+    "ru": "+5 к скорости атаки.",
+    "en": "+5 attack speed."
+  },
+  "evo_mut_stat_hp_40": {
+    "ru": "+40 Здоровье",
+    "en": "+40 Max Health"
+  },
+  "evo_mut_stat_hp_40_desc": {
+    "ru": "+40 к максимальному здоровью.",
+    "en": "+40 maximum health."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_atk_5": {
+    "ru": "Мутация: +5 к урону",
+    "en": "Mutation: +5 Attack Damage"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_atk_5_Description": {
+    "ru": "Увеличивает урон от атак на 5.",
+    "en": "Increases attack damage by 5."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_ms_5": {
+    "ru": "Мутация: +5 к скорости бега",
+    "en": "Mutation: +5 Move Speed"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_ms_5_Description": {
+    "ru": "Увеличивает скорость передвижения на 5.",
+    "en": "Increases movement speed by 5."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_mana_regen": {
+    "ru": "Мутация: +1 к регену маны",
+    "en": "Mutation: +1 Mana Regen"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_mana_regen_Description": {
+    "ru": "Увеличивает восстановление маны на 1 в секунду.",
+    "en": "Increases mana regeneration by 1 per second."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_hp_regen": {
+    "ru": "Мутация: +2.5 к регену ХП",
+    "en": "Mutation: +2.5 HP Regen"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_hp_regen_Description": {
+    "ru": "Увеличивает восстановление здоровья на 2.5 в секунду.",
+    "en": "Increases health regeneration by 2.5 per second."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_str_1": {
+    "ru": "Мутация: +1 к силе",
+    "en": "Mutation: +1 Strength"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_str_1_Description": {
+    "ru": "Увеличивает силу на 1.",
+    "en": "Increases strength by 1."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_agi_1": {
+    "ru": "Мутация: +1 к ловкости",
+    "en": "Mutation: +1 Agility"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_agi_1_Description": {
+    "ru": "Увеличивает ловкость на 1.",
+    "en": "Increases agility by 1."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_int_1": {
+    "ru": "Мутация: +1 к интеллекту",
+    "en": "Mutation: +1 Intelligence"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_int_1_Description": {
+    "ru": "Увеличивает интеллект на 1.",
+    "en": "Increases intelligence by 1."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_armor_1": {
+    "ru": "Мутация: +1 к броне",
+    "en": "Mutation: +1 Armor"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_armor_1_Description": {
+    "ru": "Увеличивает броню на 1.",
+    "en": "Increases armor by 1."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_as_5": {
+    "ru": "Мутация: +5 к скорости атаки",
+    "en": "Mutation: +5 Attack Speed"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_as_5_Description": {
+    "ru": "Увеличивает скорость атаки на 5.",
+    "en": "Increases attack speed by 5."
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_hp_40": {
+    "ru": "Мутация: +40 к здоровью",
+    "en": "Mutation: +40 Max Health"
+  },
+  "DOTA_Tooltip_modifier_evo_mut_stat_hp_40_Description": {
+    "ru": "Увеличивает максимальное здоровье на 40.",
+    "en": "Increases maximum health by 40."
+  }
+}

@@ -10,7 +10,7 @@ export const EVO_STARTER_BODIES: readonly BodyDefinition[] = [
         model: "models/heroes/wisp/wisp.vmdl",
         modelScale: 1.0,
         heroClass: "npc_dota_hero_wisp",
-        nextBodyIds: ["evo_body_t1_bristle", "evo_body_t15_morph_mini", "evo_body_t1_nyx", "evo_body_t1_slark"],
+        nextBodyIds: ["evo_body_t1_bristle", "evo_body_t15_morph_mini", "evo_body_t1_nyx", "evo_body_t1_slark", "evo_body_t1_spectre"],
         appearance: {
             scale: 1.0,
             hideBaseWearables: true,
