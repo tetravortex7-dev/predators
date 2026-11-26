@@ -25,9 +25,6 @@ export class PhaseManager {
     constructor(private readonly eventBus: EventBus) {}
 
     public init(): void {
-        const gameMode = GameRules.GetGameModeEntity();
-        gameMode.SetDamageFilter((event) => this.onDamageFilter(event), this);
-
         ListenToGameEvent("game_rules_state_change", () => this.onGameStateChange(), undefined);
         ListenToGameEvent("npc_spawned", (event) => this.onNpcSpawned(event), undefined);
 
@@ -200,7 +197,7 @@ export class PhaseManager {
         unit.AddNewModifier(unit, undefined, "modifier_evo_peace_time", { duration: remaining });
     }
 
-    private onDamageFilter(event: DamageFilterEvent): boolean {
+    public filterDamage(event: DamageFilterEvent): boolean {
         if (event.entindex_attacker_const === undefined || event.entindex_victim_const === undefined) {
             return true;
         }

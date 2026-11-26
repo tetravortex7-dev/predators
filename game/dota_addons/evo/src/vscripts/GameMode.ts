@@ -4,6 +4,7 @@ import { LevelingManager } from "./core/LevelingManager";
 import { EVO_CONSTANTS } from "./data/game_constants";
 import { DevCheats } from "./dev/DevCheats";
 import { BossManager } from "./systems/BossManager";
+import { DamageFilterManager } from "./systems/DamageFilterManager";
 import { DuelManager } from "./systems/DuelManager";
 import { EvolutionManager } from "./systems/EvolutionManager";
 import { MatchScoreManager } from "./systems/MatchScoreManager";
@@ -20,6 +21,7 @@ export class EvoGameMode {
     public readonly levelingManager: LevelingManager;
     public readonly evolutionManager: EvolutionManager;
     public readonly spellShopManager: SpellShopManager;
+    public readonly damageFilterManager: DamageFilterManager;
     public readonly phaseManager: PhaseManager;
     public readonly neutralCampsManager: NeutralCampsManager;
     public readonly runeManager: RuneManager;
@@ -40,6 +42,7 @@ export class EvoGameMode {
             this.spellShopManager,
             this.lazyPrecacheManager
         );
+        this.damageFilterManager = new DamageFilterManager();
         this.phaseManager = new PhaseManager(this.eventBus);
         this.neutralCampsManager = new NeutralCampsManager(this.eventBus);
         this.runeManager = new RuneManager();
@@ -173,7 +176,9 @@ export class EvoGameMode {
         this.levelingManager.init();
         this.spellShopManager.init();
         this.evolutionManager.init();
+        this.damageFilterManager.init();
         this.phaseManager.init();
+        this.damageFilterManager.registerGuard((event) => this.phaseManager.filterDamage(event));
         this.neutralCampsManager.init();
         this.runeManager.init();
         this.bossManager.init();
