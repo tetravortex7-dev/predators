@@ -8,12 +8,12 @@ export const EVO_BRANCH_NYX_BODIES_2: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_nyx_cicada"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_dusky_back/nyx_dusky_back.vmdl" },
@@ -48,11 +48,11 @@ export const EVO_BRANCH_NYX_BODIES_2: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_dusky_back/nyx_dusky_back.vmdl" },

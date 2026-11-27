@@ -43,12 +43,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 0.9,
+        modelScale: 0.85,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_slark_agi"],
         appearance: {
-            scale: 0.9,
+            scale: 0.85,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -88,12 +88,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.95,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_slark_agi"],
         appearance: {
-            scale: 1.05,
+            scale: 0.95,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -135,11 +135,11 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -185,12 +185,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 0.9,
+        modelScale: 0.85,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_slark_str"],
         appearance: {
-            scale: 0.9,
+            scale: 0.85,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/slark/crawblade/crawblade.vmdl" },
@@ -224,12 +224,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.95,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_slark_str"],
         appearance: {
-            scale: 1.05,
+            scale: 0.95,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/slark/crawblade/crawblade.vmdl" },
@@ -265,11 +265,11 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -312,12 +312,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 0.9,
+        modelScale: 0.85,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_slark_int"],
         appearance: {
-            scale: 0.9,
+            scale: 0.85,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/slark/slark_abyssal_weapon/slark_abyssal_weapon.vmdl" },
@@ -351,12 +351,12 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.95,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_slark_int"],
         appearance: {
-            scale: 1.05,
+            scale: 0.95,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/slark/slark_abyssal_weapon/slark_abyssal_weapon.vmdl" },
@@ -398,11 +398,11 @@ export const EVO_BRANCH_SLARK_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "slark"],
         spellPoolTags: ["mobility", "assassin"],
         model: "models/heroes/slark/slark.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_slark",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/slark/slark_abyssal_weapon/slark_abyssal_weapon.vmdl" },

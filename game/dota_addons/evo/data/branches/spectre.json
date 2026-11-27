@@ -5,8 +5,15 @@
   "diet": "CARNIVORE",
   "attr": "AGI",
   "keep_default_abilities": false,
-  "tags": ["spectre", "astral", "shadow"],
-  "spell_pool_tags": ["burst", "utility"],
+  "tags": [
+    "spectre",
+    "astral",
+    "shadow"
+  ],
+  "spell_pool_tags": [
+    "burst",
+    "utility"
+  ],
   "innate": "evo_spectre_dispersion",
   "signature": "spectre_spectral_dagger",
   "stages": [
@@ -29,9 +36,17 @@
         "evo_body_t2_spectre_bastion",
         "evo_body_t2_spectre_mirror"
       ],
-      "color": [115, 70, 175],
+      "color": [
+        115,
+        70,
+        175
+      ],
       "alpha": 195,
-      "label_color": [170, 130, 235],
+      "label_color": [
+        170,
+        130,
+        235
+      ],
       "wearables": []
     },
     {
@@ -42,7 +57,7 @@
       "name_en": "Blade Shadow",
       "desc_ru": "Фантом Разломов (AGI / мобильный фарм-ассасин): усиленный Призрачный кинжал [Q] (урон от AGI), Зеркальное лезвие [W], Астральный портал [E] и Материализация [D]. При получении урона ускоряется, а Рассеивание бьёт ещё и из ближайшего портала.",
       "desc_en": "Rift Phantom (AGI / portal assassin): Enhanced Spectral Dagger [Q] (AGI scaling), Mirror Blade [W], Astral Portal [E], and Reality [D]. Gains haste when hurt and echoes Dispersion around the nearest portal.",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "innate": "evo_spectre_phantom_dispersion",
       "abilities": [
@@ -52,9 +67,19 @@
         "evo_spectre_phantom_d",
         "evo_spectre_phantom_dispersion"
       ],
-      "next_body_ids": ["evo_body_t3_spectre_phantom"],
-      "color": [155, 65, 235],
-      "label_color": [185, 110, 255],
+      "next_body_ids": [
+        "evo_body_t3_spectre_phantom"
+      ],
+      "color": [
+        155,
+        65,
+        235
+      ],
+      "label_color": [
+        185,
+        110,
+        255
+      ],
       "wearables": [
         "Soul Diffuser"
       ]
@@ -67,19 +92,29 @@
       "name_en": "Void Hunter",
       "desc_ru": "Обез­дви­живание и срез брони от выпада [W], True Sight в порталах [E] и Теневые заряды от Рассеивания.",
       "desc_en": "Rooting armor-shred strike on [W], True Sight portals [E], and Shadow Charges from Dispersion.",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_spectre_phantom_dispersion_t3",
       "abilities": [
         "spectre_spectral_dagger",
-        "evo_spectre_phantom_w",
-        "evo_spectre_phantom_e",
+        "evo_spectre_phantom_w_t3",
+        "evo_spectre_phantom_e_t3",
         "evo_spectre_phantom_d",
         "evo_spectre_phantom_dispersion_t3"
       ],
-      "next_body_ids": ["evo_body_t4_spectre_phantom"],
-      "color": [115, 35, 210],
-      "label_color": [150, 90, 245],
+      "next_body_ids": [
+        "evo_body_t4_spectre_phantom"
+      ],
+      "color": [
+        115,
+        35,
+        210
+      ],
+      "label_color": [
+        150,
+        90,
+        245
+      ],
       "wearables": [
         "Soul Diffuser",
         "Crown of Enduring Solitude",
@@ -94,20 +129,28 @@
       "name_en": "Rift Phantom",
       "desc_ru": "Каждый 2-й удар с чистым кливом после рывка [W], ударная волна портала [E] и ультимейт Шторм Разломов [R].",
       "desc_en": "Every 2nd hit cleaves after burst/Reality [W], portal shockwave [E], and Rift Storm [R].",
-      "scale": 1.1,
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_spectre_phantom_dispersion_t4",
       "abilities": [
         "spectre_spectral_dagger",
-        "evo_spectre_phantom_w",
-        "evo_spectre_phantom_e",
-        "evo_spectre_phantom_d",
+        "evo_spectre_phantom_w_t4",
+        "evo_spectre_phantom_e_t3",
+        "evo_spectre_phantom_d_t4",
         "evo_spectre_phantom_r",
         "evo_spectre_phantom_dispersion_t4"
       ],
       "next_body_ids": [],
-      "color": [75, 20, 165],
-      "label_color": [135, 75, 235],
+      "color": [
+        75,
+        20,
+        165
+      ],
+      "label_color": [
+        135,
+        75,
+        235
+      ],
       "wearables": [
         "Crescent Huntress Weapon",
         "Crescent Huntress Head",
@@ -124,7 +167,7 @@
       "name_en": "Barrier Wisp",
       "desc_ru": "Астральный Бастион (STR / повелитель щитов): Астральный кокон [Q], подрыв всех щитов Разрядом барьера [W] и накопление щита вне боя [E]. Рассеивание остаётся неизменным.",
       "desc_en": "Astral Bastion (STR / shield protector): Astral Cocoon [Q], Barrier Discharge [W] detonating active shields, and Aegis Repose [E] out-of-combat barrier regeneration.",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "innate": "evo_spectre_dispersion",
       "abilities": [
@@ -133,9 +176,19 @@
         "evo_spectre_bastion_e",
         "evo_spectre_dispersion"
       ],
-      "next_body_ids": ["evo_body_t3_spectre_bastion"],
-      "color": [120, 200, 255],
-      "label_color": [135, 210, 255],
+      "next_body_ids": [
+        "evo_body_t3_spectre_bastion"
+      ],
+      "color": [
+        120,
+        200,
+        255
+      ],
+      "label_color": [
+        135,
+        210,
+        255
+      ],
       "wearables": [
         "Transversant Soul"
       ]
@@ -148,18 +201,28 @@
       "name_en": "Edge Warden",
       "desc_ru": "Сильное развеивание и лечение от кокона [Q], реген щита при пустом разряде [W] и восстановление щита в бою [E].",
       "desc_en": "Strong Dispel and heal on Cocoon [Q], combat shield surge when discharging empty [W], and in-combat barrier trickle [E].",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_spectre_dispersion",
       "abilities": [
-        "evo_spectre_bastion_q",
-        "evo_spectre_bastion_w",
-        "evo_spectre_bastion_e",
+        "evo_spectre_bastion_q_t3",
+        "evo_spectre_bastion_w_t3",
+        "evo_spectre_bastion_e_t3",
         "evo_spectre_dispersion"
       ],
-      "next_body_ids": ["evo_body_t4_spectre_bastion"],
-      "color": [75, 155, 245],
-      "label_color": [110, 185, 255],
+      "next_body_ids": [
+        "evo_body_t4_spectre_bastion"
+      ],
+      "color": [
+        75,
+        155,
+        245
+      ],
+      "label_color": [
+        110,
+        185,
+        255
+      ],
       "wearables": [
         "Transversant Soul",
         "Conservator's Headguard",
@@ -172,21 +235,29 @@
       "attr": "STR",
       "name_ru": "Астральный Бастион",
       "name_en": "Astral Bastion",
-      "desc_ru": "Кокон накладывается в контроле и дублируется на себя [Q], стяжка врагов [W], конвертация урона в щит [E] и Несокрушимый Купол [R].",
-      "desc_en": "Castable while stunned/silenced & self-mirroring Cocoon [Q], enemy pull [W], damage-to-shield leech [E], and Unbreakable Dome [R].",
-      "scale": 1.1,
+      "desc_ru": "Кокон накладывается в контроле и дублируется на себя [Q], стяжка врагов [W], конвертация физ. атак в щит [E] и Несокрушимый Купол [R].",
+      "desc_en": "Castable while stunned/silenced & self-mirroring Cocoon [Q], enemy pull [W], physical attack damage-to-shield leech [E], and Unbreakable Dome [R].",
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_spectre_dispersion",
       "abilities": [
-        "evo_spectre_bastion_q",
-        "evo_spectre_bastion_w",
-        "evo_spectre_bastion_e",
+        "evo_spectre_bastion_q_t4",
+        "evo_spectre_bastion_w_t4",
+        "evo_spectre_bastion_e_t4",
         "evo_spectre_bastion_r",
         "evo_spectre_dispersion"
       ],
       "next_body_ids": [],
-      "color": [240, 215, 110],
-      "label_color": [245, 220, 125],
+      "color": [
+        240,
+        215,
+        110
+      ],
+      "label_color": [
+        245,
+        220,
+        125
+      ],
       "wearables": [
         "Transversant Soul",
         "Conservator's Headguard",
@@ -201,9 +272,9 @@
       "attr": "INT",
       "name_ru": "Осколок Зазеркалья",
       "name_en": "Mirror Shard",
-      "desc_ru": "Зеркало Инверсии (INT / анти-физ дуэлянт): Рассеивание заменяется Астральной Инверсией (отражает весь физ. урон как магию), Луч инверсии [Q], Эфирные клинки [W], Зеркальная оболочка [E].",
-      "desc_en": "Mirror of Inversion (INT / anti-physical duelist): Replaces Dispersion with Astral Inversion (reflects physical damage as magic), Inversion Beam [Q], Ethereal Blades [W], Mirror Shell [E].",
-      "scale": 0.8,
+      "desc_ru": "Зеркало Инверсии (INT / анти-физ дуэлянт): Рассеивание заменяется Астральной Инверсией (отражает физ. урон как магию с ростом от уровня), Тропа инверсии [Q], Эфирные клинки [W], Зеркальная оболочка [E].",
+      "desc_en": "Mirror of Inversion (INT / anti-physical duelist): Replaces Dispersion with Astral Inversion (level-scaling phys-to-magic reflection), Inversion Trail [Q], Ethereal Blades [W], Mirror Shell [E].",
+      "scale": 0.78,
       "ability_level": 1,
       "innate": "evo_spectre_mirror_inversion",
       "abilities": [
@@ -212,9 +283,19 @@
         "evo_spectre_mirror_e",
         "evo_spectre_mirror_inversion"
       ],
-      "next_body_ids": ["evo_body_t3_spectre_mirror"],
-      "color": [65, 235, 205],
-      "label_color": [95, 240, 215],
+      "next_body_ids": [
+        "evo_body_t3_spectre_mirror"
+      ],
+      "color": [
+        65,
+        235,
+        205
+      ],
+      "label_color": [
+        95,
+        240,
+        215
+      ],
       "wearables": [
         "Crest of the Flowering Shade"
       ]
@@ -225,20 +306,30 @@
       "attr": "INT",
       "name_ru": "Исказитель Материи",
       "name_en": "Matter Distorter",
-      "desc_ru": "Безмолвие и срез MR от Луча [Q], True Strike, маг. клив и выжигание маны [W], 35% физ. блока под провокацией [E] и срез MR при Инверсии.",
-      "desc_en": "Silence & MR shred on Beam [Q], True Strike, arcane cleave & mana drain [W], 35% phys mitigation during taunt [E], and MR shred on Inversion.",
-      "scale": 0.95,
+      "desc_ru": "Усиление бонуса отражения на Тропе инверсии [Q], True Strike, маг. клив и кража маны [W], 35% физ. блока под оболочкой [E] и плоский урон Инверсии от уровня.",
+      "desc_en": "Stronger trail reflection bonus on Inversion Trail [Q], True Strike, arcane cleave & mana drain [W], 35% phys mitigation during Mirror Shell [E], and level-scaling flat reflect on Inversion.",
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_spectre_mirror_inversion_t3",
       "abilities": [
-        "evo_spectre_mirror_q",
-        "evo_spectre_mirror_w",
-        "evo_spectre_mirror_e",
+        "evo_spectre_mirror_q_t3",
+        "evo_spectre_mirror_w_t3",
+        "evo_spectre_mirror_e_t3",
         "evo_spectre_mirror_inversion_t3"
       ],
-      "next_body_ids": ["evo_body_t4_spectre_mirror"],
-      "color": [45, 160, 240],
-      "label_color": [90, 190, 255],
+      "next_body_ids": [
+        "evo_body_t4_spectre_mirror"
+      ],
+      "color": [
+        45,
+        160,
+        240
+      ],
+      "label_color": [
+        90,
+        190,
+        255
+      ],
       "wearables": [
         "Crest of the Flowering Shade",
         "Drape of the Flowering Shade",
@@ -251,21 +342,29 @@
       "attr": "INT",
       "name_ru": "Зеркало Инверсии",
       "name_en": "Mirror of Inversion",
-      "desc_ru": "Зеркальный разлом на Луче [Q], оглушение на каждом 4-м ударе [W], сброс [W] от отражения [E] и Сингулярность Зазеркалья [R].",
-      "desc_en": "Mirror rift DoT on Beam [Q], 4th-strike stun [W], [W] reset on taunt reflect [E], and Looking-Glass Singularity [R].",
-      "scale": 1.1,
+      "desc_ru": "Усиление Инверсии от интеллекта [Innate], урон по площади вдоль Тропы инверсии [Q], оглушение на каждом 4-м ударе [W], провокация на оболочке [E] и Сингулярность Зазеркалья [R].",
+      "desc_en": "INT scaling on Inversion [Innate], periodic damage along Inversion Trail [Q], 4th-strike stun [W], taunt on Mirror Shell [E], and Looking-Glass Singularity [R].",
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_spectre_mirror_inversion_t4",
       "abilities": [
-        "evo_spectre_mirror_q",
-        "evo_spectre_mirror_w",
-        "evo_spectre_mirror_e",
+        "evo_spectre_mirror_q_t4",
+        "evo_spectre_mirror_w_t4",
+        "evo_spectre_mirror_e_t4",
         "evo_spectre_mirror_r",
         "evo_spectre_mirror_inversion_t4"
       ],
       "next_body_ids": [],
-      "color": [215, 75, 185],
-      "label_color": [235, 115, 215],
+      "color": [
+        215,
+        75,
+        185
+      ],
+      "label_color": [
+        235,
+        115,
+        215
+      ],
       "wearables": [
         "Crest of the Flowering Shade",
         "Drape of the Flowering Shade",

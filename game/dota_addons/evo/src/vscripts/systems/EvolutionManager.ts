@@ -5,6 +5,7 @@ import {
     getBodiesForTier,
     getBodyDefinition,
 } from "../data/bodies_catalog";
+import { getInitialStartBody } from "../data/start_body_override";
 import { BodyDefinition } from "../data/data_schemas";
 import {
     EVO_CONSTANTS,
@@ -75,7 +76,7 @@ export class EvolutionManager {
 
     public getPlayerBody(playerId: PlayerID): BodyDefinition | undefined {
         const state = this.playerStates.get(playerId);
-        if (!state) return getBodyDefinition(EVO_DEFAULT_START_BODY_ID);
+        if (!state) return getInitialStartBody();
         return getBodyDefinition(state.bodyId);
     }
 
@@ -215,7 +216,7 @@ export class EvolutionManager {
             const hero = unit as CDOTA_BaseNPC_Hero;
             stripDefaultHeroAbilities(hero);
             const state = this.getOrCreateState(playerId);
-            const starter = getBodyDefinition(EVO_DEFAULT_START_BODY_ID);
+            const starter = getInitialStartBody();
             if (starter) {
                 applyBodyToHero(hero, state, starter);
                 if (starter.appearance) {
@@ -433,12 +434,14 @@ export class EvolutionManager {
     private getOrCreateState(playerId: PlayerID): PlayerEvolutionState {
         let state = this.playerStates.get(playerId);
         if (!state) {
+            const startBody = getInitialStartBody();
+            const startTier = startBody ? startBody.tierIndex : 0;
             state = {
-                bodyId: EVO_DEFAULT_START_BODY_ID,
-                tierIndex: 0,
+                bodyId: startBody ? startBody.id : EVO_DEFAULT_START_BODY_ID,
+                tierIndex: startTier,
                 biomass: 0,
                 evoPoints: 0,
-                highestTierUnlocked: 0,
+                highestTierUnlocked: startTier,
                 mutations: [undefined, undefined, undefined],
                 unlockedAbilitySlots: [false, false, false],
                 unlockedMutationSlots: [false, false, false],

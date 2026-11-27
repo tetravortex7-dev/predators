@@ -13,9 +13,6 @@ LinkLuaModifier("modifier_evo_spectre_portal_slow", SCRIPT_PATH, LuaModifierMoti
 LinkLuaModifier("modifier_evo_spectre_bastion_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_bastion_break_ms", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_mirror_q_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_spectre_mirror_polarity", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_spectre_mirror_mr_shred", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_spectre_mirror_inv_shred", SCRIPT_PATH, LuaModifierMotionType.NONE);
 
 @registerModifier("modifier_evo_spectre_armor_shred")
 export class modifier_evo_spectre_armor_shred extends BaseModifier {
@@ -138,7 +135,7 @@ export class modifier_evo_spectre_bastion_slow extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "abaddon_aphotic_shield";
+        return "evo_spectre_bastion_q";
     }
     OnCreated(): void {
         this.slowPct = 25;
@@ -172,7 +169,7 @@ export class modifier_evo_spectre_bastion_break_ms extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "abaddon_frostmourne";
+        return "evo_spectre_bastion_e";
     }
     OnCreated(): void {
         this.msPct = 25;
@@ -192,7 +189,7 @@ export class modifier_evo_spectre_bastion_break_ms extends BaseModifier {
 
 @registerModifier("modifier_evo_spectre_mirror_q_slow")
 export class modifier_evo_spectre_mirror_q_slow extends BaseModifier {
-    private slowPct = 24;
+    private slowPct = 14;
     IsHidden(): boolean {
         return false;
     }
@@ -203,13 +200,14 @@ export class modifier_evo_spectre_mirror_q_slow extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "void_spirit_aether_remnant";
+        return "evo_spectre_mirror_q";
     }
     OnCreated(): void {
-        this.slowPct = 24;
+        this.slowPct = 14;
         const ab = this.GetAbility();
         if (ab && !ab.IsNull()) {
-            this.slowPct = ab.GetSpecialValueFor("slow_pct");
+            const val = ab.GetSpecialValueFor("bonus_movespeed");
+            if (val > 0) this.slowPct = val;
         }
     }
     OnRefresh(): void {
@@ -220,132 +218,5 @@ export class modifier_evo_spectre_mirror_q_slow extends BaseModifier {
     }
     GetModifierMoveSpeedBonus_Percentage(): number {
         return -this.slowPct;
-    }
-}
-
-@registerModifier("modifier_evo_spectre_mirror_polarity")
-export class modifier_evo_spectre_mirror_polarity extends BaseModifier {
-    private pct = 25;
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "void_spirit_aether_remnant";
-    }
-    OnCreated(): void {
-        this.pct = 25;
-        const ab = this.GetAbility();
-        if (ab && !ab.IsNull()) {
-            this.pct = ab.GetSpecialValueFor("polarity_pct");
-        }
-        if (IsServer()) {
-            this.SetStackCount(Math.round(this.pct));
-        }
-    }
-    OnRefresh(): void {
-        this.OnCreated();
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE")];
-    }
-    OnTakeDamage(event: ModifierInstanceEvent): void {
-        if (!IsServer()) return;
-        const markedAttacker = this.GetParent();
-        const spectre = this.GetCaster();
-        const ability = this.GetAbility();
-        if (!markedAttacker || markedAttacker.IsNull() || !spectre || spectre.IsNull() || !ability || ability.IsNull()) {
-            return;
-        }
-        if (event.attacker !== markedAttacker) return;
-        if (event.damage_type !== DamageTypes.PHYSICAL) return;
-        if (bit.band(event.damage_flags, DamageFlag.REFLECTION) !== 0) return;
-        const victim = event.unit;
-        if (!victim || victim.IsNull() || victim === markedAttacker || victim === spectre) return;
-        if (victim.GetTeamNumber() !== spectre.GetTeamNumber() || !victim.IsRealHero()) return;
-        const raw = event.original_damage > 0 ? event.original_damage : event.damage;
-        const reflected = (raw * Math.max(1, this.GetStackCount())) / 100;
-        if (reflected <= 0.5 || !markedAttacker.IsAlive()) return;
-        ApplyDamage({
-            victim: markedAttacker,
-            attacker: spectre,
-            ability,
-            damage: reflected,
-            damage_type: DamageTypes.MAGICAL,
-            damage_flags: (DamageFlag.REFLECTION + DamageFlag.NO_SPELL_AMPLIFICATION) as DamageFlag,
-        });
-    }
-}
-
-@registerModifier("modifier_evo_spectre_mirror_mr_shred")
-export class modifier_evo_spectre_mirror_mr_shred extends BaseModifier {
-    private shred = 15;
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "void_spirit_aether_remnant";
-    }
-    OnCreated(): void {
-        this.shred = 15;
-        const ab = this.GetAbility();
-        if (ab && !ab.IsNull()) {
-            const val = ab.GetSpecialValueFor("mr_shred");
-            if (val > 0) this.shred = val;
-        }
-    }
-    OnRefresh(): void {
-        this.OnCreated();
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS")];
-    }
-    GetModifierMagicalResistanceBonus(): number {
-        return -this.shred;
-    }
-}
-
-@registerModifier("modifier_evo_spectre_mirror_inv_shred")
-export class modifier_evo_spectre_mirror_inv_shred extends BaseModifier {
-    private shred = 12;
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "spectre_dispersion";
-    }
-    OnCreated(): void {
-        this.shred = 12;
-        const ab = this.GetAbility();
-        if (ab && !ab.IsNull()) {
-            const val = ab.GetSpecialValueFor("mr_shred");
-            if (val > 0) this.shred = val;
-        }
-    }
-    OnRefresh(): void {
-        this.OnCreated();
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS")];
-    }
-    GetModifierMagicalResistanceBonus(): number {
-        return -this.shred;
     }
 }

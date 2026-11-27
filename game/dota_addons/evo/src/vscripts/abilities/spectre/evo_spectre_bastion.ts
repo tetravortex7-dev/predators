@@ -8,10 +8,12 @@ import {
 import {
     addBastionPassiveShield,
     applySpectreCreepDamage,
+    findBastionQAbility,
     findSpectreEnemies,
     getSpectreBranchMaxLevel,
     getSpectreStr,
     getSpectreTier,
+    spawnBastionBlockFx,
     triggerBastionBreakMs,
 } from "./evo_spectre_shared";
 import "./evo_spectre_debuffs";
@@ -92,7 +94,7 @@ export class modifier_evo_spectre_bastion_q_shield extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "abaddon_aphotic_shield";
+        return "evo_spectre_bastion_q";
     }
     OnCreated(params: { capacity?: number }): void {
         this.maxCapacity = 160;
@@ -110,11 +112,10 @@ export class modifier_evo_spectre_bastion_q_shield extends BaseModifier {
         this.SetStackCount(this.maxCapacity);
         const parent = this.GetParent();
         const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
-            ParticleAttachment.POINT_FOLLOW,
+            "particles/evo_spectre/evo_bastion_cocoon.vpcf",
+            ParticleAttachment.ABSORIGIN_FOLLOW,
             parent
         );
-        ParticleManager.SetParticleControl(pfx, 1, Vector(75, 75, 75));
         this.AddParticle(pfx, false, false, -1, false, false);
     }
     OnRefresh(params: { capacity?: number }): void {
@@ -144,13 +145,13 @@ export class modifier_evo_spectre_bastion_q_shield extends BaseModifier {
         const origin = parent.GetAbsOrigin();
 
         parent.EmitSound("Hero_Abaddon.AphoticShield.Destroy");
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield_explosion.vpcf",
+        const expPfx = ParticleManager.CreateParticle(
+            "particles/evo_spectre/evo_bastion_explosion.vpcf",
             ParticleAttachment.WORLDORIGIN,
             undefined
         );
-        ParticleManager.SetParticleControl(pfx, 0, origin);
-        ParticleManager.ReleaseParticleIndex(pfx);
+        ParticleManager.SetParticleControl(expPfx, 0, origin);
+        ParticleManager.ReleaseParticleIndex(expPfx);
 
         for (const enemy of findSpectreEnemies(caster, origin, radius)) {
             if (!enemy || enemy.IsNull() || !enemy.IsAlive()) continue;
@@ -165,19 +166,26 @@ export class modifier_evo_spectre_bastion_q_shield extends BaseModifier {
         }
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK")];
+        return [dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT")];
     }
-    GetModifierTotal_ConstantBlock(event: ModifierAttackEvent): number {
+    GetModifierIncomingDamageConstant(event: ModifierAttackEvent): number {
+        if (IsClient()) {
+            if (event.report_max) {
+                return this.maxCapacity;
+            }
+            return this.GetStackCount();
+        }
         if (!IsServer()) return 0;
         const pool = this.GetStackCount();
         if (pool <= 0 || event.damage <= 0) return 0;
         const blocked = Math.min(pool, Math.ceil(event.damage));
         const rem = pool - blocked;
         this.SetStackCount(Math.max(0, rem));
+        spawnBastionBlockFx(this.GetParent(), event.attacker, blocked);
         if (rem <= 0) {
             this.Destroy();
         }
-        return blocked;
+        return -blocked;
     }
 }
 
@@ -216,13 +224,13 @@ export class evo_spectre_bastion_w extends BaseAbility {
         const totalHeroDmg = baseDmg + detonated;
         const origin = caster.GetAbsOrigin();
         caster.EmitSound("Hero_Abaddon.AphoticShield.Destroy");
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield_explosion.vpcf",
+        const expPfx = ParticleManager.CreateParticle(
+            "particles/evo_spectre/evo_bastion_explosion.vpcf",
             ParticleAttachment.WORLDORIGIN,
             undefined
         );
-        ParticleManager.SetParticleControl(pfx, 0, origin);
-        ParticleManager.ReleaseParticleIndex(pfx);
+        ParticleManager.SetParticleControl(expPfx, 0, origin);
+        ParticleManager.ReleaseParticleIndex(expPfx);
 
         let heroHitCount = 0;
         const pullDist = this.GetSpecialValueFor("pull_distance");
@@ -246,11 +254,12 @@ export class evo_spectre_bastion_w extends BaseAbility {
             const refund = (detonated * this.GetSpecialValueFor("refund_pct")) / 100;
             addBastionPassiveShield(caster, refund);
         } else if (tier >= 3) {
-            caster.AddNewModifier(caster, this, "modifier_evo_spectre_bastion_e_surge", { duration: 2.5 });
+            const surgeDur = this.GetSpecialValueFor("surge_duration") || 2.5;
+            caster.AddNewModifier(caster, this, "modifier_evo_spectre_bastion_e_surge", { duration: surgeDur });
         }
 
         if (tier >= 4 && heroHitCount > 0) {
-            const qAb = caster.FindAbilityByName("evo_spectre_bastion_q");
+            const qAb = findBastionQAbility(caster);
             const reduce = this.GetSpecialValueFor("q_cd_reduce");
             if (qAb && !qAb.IsNull() && reduce > 0) {
                 const rem = qAb.GetCooldownTimeRemaining();
@@ -263,3 +272,15 @@ export class evo_spectre_bastion_w extends BaseAbility {
         }
     }
 }
+
+@registerAbility("evo_spectre_bastion_q_t3")
+export class evo_spectre_bastion_q_t3 extends evo_spectre_bastion_q {}
+
+@registerAbility("evo_spectre_bastion_q_t4")
+export class evo_spectre_bastion_q_t4 extends evo_spectre_bastion_q {}
+
+@registerAbility("evo_spectre_bastion_w_t3")
+export class evo_spectre_bastion_w_t3 extends evo_spectre_bastion_w {}
+
+@registerAbility("evo_spectre_bastion_w_t4")
+export class evo_spectre_bastion_w_t4 extends evo_spectre_bastion_w {}

@@ -7,6 +7,7 @@ import {
 } from "../../lib/dota_ts_adapter";
 import {
     findNearestSpectrePortal,
+    findPhantomDAbility,
     findSpectreEnemies,
     getSpectreAgi,
     getSpectreBranchMaxLevel,
@@ -29,7 +30,7 @@ export class evo_spectre_phantom_e extends BaseAbility {
     OnUpgrade(): void {
         if (!IsServer()) return;
         const caster = this.GetCaster();
-        const dAb = caster.FindAbilityByName("evo_spectre_phantom_d");
+        const dAb = findPhantomDAbility(caster);
         if (!dAb || dAb.IsNull()) return;
         const lvl = this.GetLevel();
         const targetDLevel = lvl >= 4 ? 3 : lvl >= 2 ? 2 : 1;
@@ -156,9 +157,8 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
                         stormAb.GetSpecialValueFor("pulse_dmg") +
                         (getSpectreAgi(caster) * stormAb.GetSpecialValueFor("pulse_agi_pct")) / 100;
                     const slowDur = stormAb.GetSpecialValueFor("slow_duration");
-                    const eAb = caster.FindAbilityByName("evo_spectre_phantom_e");
-                    const shred = eAb && !eAb.IsNull() ? eAb.GetSpecialValueFor("armor_shred") : 4;
-                    const shredDur = eAb && !eAb.IsNull() ? eAb.GetSpecialValueFor("shred_duration") : 4;
+                    const shred = stormAb.GetSpecialValueFor("armor_shred") || 4;
+                    const shredDur = stormAb.GetSpecialValueFor("shred_duration") || 4;
 
                     const pfx = ParticleManager.CreateParticle(
                         "particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf",
@@ -200,14 +200,21 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
     }
 }
 
+const REALITY_COOLDOWNS: readonly number[] = [35.0, 30.0, 25.0];
+
 @registerAbility("evo_spectre_phantom_d")
 export class evo_spectre_phantom_d extends BaseAbility {
     GetCooldown(level: number): number {
         const caster = this.GetCaster();
-        if (caster && !caster.IsNull() && caster.HasModifier("modifier_evo_spectre_phantom_r_free_d")) {
-            return 0;
+        if (caster && !caster.IsNull()) {
+            if (
+                caster.HasModifier("modifier_evo_spectre_phantom_r_free_d") ||
+                caster.HasModifier("modifier_item_aghanims_shard")
+            ) {
+                return 0;
+            }
         }
-        return super.GetCooldown(level);
+        return REALITY_COOLDOWNS[Math.max(0, Math.min(2, level))] ?? 35.0;
     }
     CastFilterResultLocation(location: Vector): UnitFilterResult {
         if (!IsServer()) return UnitFilterResult.SUCCESS;
@@ -221,13 +228,24 @@ export class evo_spectre_phantom_d extends BaseAbility {
     GetCustomCastErrorLocation(_location: Vector): string {
         return "#evo_spectre_no_portal_error";
     }
+    private restoreSingleCharge(): void {
+        const maxCharges = this.GetMaxAbilityCharges(this.GetLevel());
+        if (maxCharges > 0) {
+            this.SetCurrentAbilityCharges(Math.min(maxCharges, this.GetCurrentAbilityCharges() + 1));
+        } else {
+            this.EndCooldown();
+        }
+    }
     OnSpellStart(): void {
         if (!IsServer()) return;
         const caster = this.GetCaster();
         const portal = findNearestSpectrePortal(caster, this.GetCursorPosition());
         if (!portal) {
-            this.EndCooldown();
+            this.restoreSingleCharge();
             return;
+        }
+        if (caster.HasModifier("modifier_evo_spectre_phantom_r_free_d") && this.GetMaxAbilityCharges(this.GetLevel()) > 0) {
+            this.restoreSingleCharge();
         }
 
         const origin = caster.GetAbsOrigin();
@@ -251,6 +269,11 @@ export class evo_spectre_phantom_d extends BaseAbility {
         caster.Stop();
         FindClearSpaceForUnit(caster, dest, true);
         caster.SetForwardVector(forward);
+
+        const dagger = caster.FindAbilityByName("spectre_spectral_dagger");
+        if (dagger && !dagger.IsNull() && dagger.GetCooldownTimeRemaining() > 0) {
+            dagger.EndCooldown();
+        }
 
         const arrivedPos = caster.GetAbsOrigin();
         const endPfx = ParticleManager.CreateParticle(
@@ -311,6 +334,12 @@ export class evo_spectre_phantom_d extends BaseAbility {
     }
 }
 
+@registerAbility("evo_spectre_phantom_e_t3")
+export class evo_spectre_phantom_e_t3 extends evo_spectre_phantom_e {}
+
+@registerAbility("evo_spectre_phantom_d_t4")
+export class evo_spectre_phantom_d_t4 extends evo_spectre_phantom_d {}
+
 @registerAbility("evo_spectre_phantom_r")
 export class evo_spectre_phantom_r extends BaseAbility {
     OnSpellStart(): void {
@@ -320,9 +349,12 @@ export class evo_spectre_phantom_r extends BaseAbility {
         const freeDur = this.GetSpecialValueFor("free_d_duration");
 
         caster.EmitSound("Hero_Spectre.HauntCast");
-        const dAb = caster.FindAbilityByName("evo_spectre_phantom_d");
+        const dAb = findPhantomDAbility(caster);
         if (dAb && !dAb.IsNull()) {
             dAb.EndCooldown();
+            if (dAb.GetMaxAbilityCharges(dAb.GetLevel()) > 0) {
+                dAb.RefreshCharges();
+            }
         }
         caster.AddNewModifier(caster, this, "modifier_evo_spectre_phantom_r_storm", { duration: dur });
         caster.AddNewModifier(caster, this, "modifier_evo_spectre_phantom_r_free_d", { duration: freeDur });

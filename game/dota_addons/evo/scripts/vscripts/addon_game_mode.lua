@@ -3,7 +3,7 @@ local Set = ____lualib.Set
 local __TS__New = ____lualib.__TS__New
 local __TS__ObjectAssign = ____lualib.__TS__ObjectAssign
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 3,["14"] = 4,["15"] = 4,["16"] = 13,["17"] = 13,["18"] = 13,["19"] = 13,["20"] = 13,["21"] = 13,["22"] = 13,["23"] = 13,["24"] = 22,["25"] = 23,["26"] = 24,["27"] = 25,["29"] = 22,["30"] = 29,["31"] = 34,["34"] = 35,["35"] = 36,["36"] = 29,["37"] = 39,["38"] = 45,["41"] = 46,["42"] = 47,["45"] = 48,["47"] = 49,["48"] = 50,["49"] = 50,["51"] = 51,["53"] = 52,["54"] = 52,["56"] = 53,["57"] = 54,["64"] = 39,["65"] = 59,["66"] = 60,["67"] = 61,["68"] = 63,["69"] = 64,["70"] = 65,["71"] = 67,["72"] = 68,["73"] = 69,["74"] = 70,["75"] = 72,["76"] = 75,["77"] = 76,["79"] = 79,["80"] = 79,["81"] = 79,["82"] = 79,["83"] = 79,["84"] = 79,["85"] = 79,["86"] = 79,["87"] = 79,["88"] = 79,["89"] = 79,["90"] = 79,["91"] = 79,["92"] = 79,["93"] = 79,["94"] = 79,["95"] = 79,["96"] = 79,["97"] = 79,["98"] = 79,["99"] = 79,["100"] = 79,["101"] = 79,["102"] = 79,["103"] = 79,["104"] = 79,["105"] = 79,["106"] = 106,["107"] = 107,["108"] = 108,["109"] = 109,["112"] = 112,["113"] = 113,["114"] = 114,["115"] = 115,["116"] = 116,["117"] = 117,["118"] = 118,["119"] = 119,["120"] = 121,["121"] = 122,["123"] = 125,["124"] = 126,["125"] = 127,["126"] = 127,["127"] = 127,["128"] = 127,["129"] = 127,["130"] = 127,["131"] = 127,["133"] = 130,["134"] = 131,["135"] = 132,["137"] = 134,["138"] = 135,["139"] = 135,["140"] = 135,["141"] = 135,["142"] = 135,["143"] = 135,["144"] = 135,["146"] = 59,["147"] = 139,["148"] = 140,["149"] = 141,["150"] = 139,["151"] = 144,["152"] = 144,["153"] = 144,["154"] = 144});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 3,["14"] = 4,["15"] = 4,["16"] = 5,["17"] = 5,["18"] = 14,["19"] = 14,["20"] = 14,["21"] = 14,["22"] = 14,["23"] = 14,["24"] = 14,["25"] = 14,["26"] = 23,["27"] = 24,["28"] = 25,["29"] = 26,["31"] = 23,["32"] = 30,["33"] = 35,["36"] = 36,["37"] = 37,["38"] = 30,["39"] = 40,["40"] = 46,["43"] = 47,["44"] = 48,["47"] = 49,["49"] = 50,["50"] = 51,["51"] = 51,["53"] = 52,["55"] = 53,["56"] = 53,["58"] = 54,["59"] = 55,["66"] = 40,["67"] = 60,["68"] = 61,["69"] = 62,["70"] = 64,["71"] = 65,["72"] = 66,["73"] = 68,["74"] = 69,["75"] = 70,["76"] = 71,["77"] = 73,["78"] = 76,["79"] = 77,["81"] = 80,["82"] = 80,["83"] = 80,["84"] = 80,["85"] = 80,["86"] = 80,["87"] = 80,["88"] = 80,["89"] = 80,["90"] = 80,["91"] = 80,["92"] = 80,["93"] = 80,["94"] = 80,["95"] = 80,["96"] = 80,["97"] = 80,["98"] = 80,["99"] = 80,["100"] = 80,["101"] = 80,["102"] = 80,["103"] = 80,["104"] = 80,["105"] = 80,["106"] = 80,["107"] = 80,["108"] = 80,["109"] = 80,["110"] = 80,["111"] = 80,["112"] = 80,["113"] = 80,["114"] = 80,["115"] = 114,["116"] = 115,["117"] = 116,["118"] = 117,["121"] = 120,["122"] = 121,["123"] = 122,["124"] = 123,["125"] = 124,["126"] = 125,["127"] = 126,["128"] = 127,["129"] = 128,["130"] = 129,["131"] = 131,["132"] = 132,["134"] = 135,["135"] = 136,["136"] = 137,["137"] = 137,["138"] = 137,["139"] = 137,["140"] = 137,["141"] = 137,["142"] = 137,["144"] = 140,["145"] = 141,["146"] = 142,["147"] = 143,["148"] = 144,["150"] = 146,["151"] = 147,["152"] = 147,["153"] = 147,["154"] = 147,["155"] = 147,["156"] = 147,["157"] = 147,["159"] = 60,["160"] = 151,["161"] = 152,["162"] = 153,["163"] = 151,["164"] = 156,["165"] = 156,["166"] = 156,["167"] = 156});
 local ____exports = {}
 local ____GameMode = require("GameMode")
 local EvoGameMode = ____GameMode.EvoGameMode
@@ -13,6 +13,8 @@ local ____bosses_catalog = require("data.bosses_catalog")
 local EVO_BOSSES_CATALOG = ____bosses_catalog.EVO_BOSSES_CATALOG
 local ____neutral_creeps_catalog = require("data.neutral_creeps_catalog")
 local EVO_NEUTRAL_CREEP_MODELS = ____neutral_creeps_catalog.EVO_NEUTRAL_CREEP_MODELS
+local ____start_body_override = require("data.start_body_override")
+local getInitialStartBody = ____start_body_override.getInitialStartBody
 local CHA_ITEM_LIBS = {
     "lib/timers",
     "lib/players",
@@ -96,12 +98,19 @@ local function Precache(context)
         "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
         "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
         "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_shadow_path.vpcf",
         "particles/units/heroes/hero_spectre/spectre_shadow_path_owner.vpcf",
         "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf",
         "particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf",
         "particles/units/heroes/hero_void_spirit/void_spirit_entryportal.vpcf",
         "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
-        "particles/evo_spectre/evo_spectre_cleave.vpcf"
+        "particles/evo_spectre/evo_spectre_cleave.vpcf",
+        "particles/evo_spectre/evo_bastion_cocoon.vpcf",
+        "particles/evo_spectre/evo_bastion_explosion.vpcf",
+        "particles/units/heroes/hero_mars/mars_shield_of_mars.vpcf",
+        "particles/units/heroes/hero_mars/mars_shield_of_mars_small.vpcf",
+        "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_aura.vpcf",
+        "particles/units/heroes/hero_arc_warden/arc_warden_magnetic.vpcf"
     }
     for ____, vpcf in ipairs(extraParticles) do
         if not seenParticles:has(vpcf) then
@@ -117,6 +126,8 @@ local function Precache(context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context)
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_mars.vsndevts", context)
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context)
     for ____, modelPath in ipairs(EVO_NEUTRAL_CREEP_MODELS) do
         precacheUniqueModel(nil, modelPath, seenModels, context)
     end
@@ -130,8 +141,10 @@ local function Precache(context)
             context
         )
     end
+    local startBody = getInitialStartBody(nil)
     for ____, body in ipairs(EVO_BODIES_CATALOG) do
-        if body.tierIndex == 0 and body.heroClass and #body.heroClass > 0 then
+        local isDevStartHero = startBody ~= nil and body.id == startBody.id
+        if (body.tierIndex == 0 or isDevStartHero) and body.heroClass and #body.heroClass > 0 then
             PrecacheUnitByNameSync(body.heroClass, context)
         end
         precacheUniqueModel(nil, body.model, seenModels, context)

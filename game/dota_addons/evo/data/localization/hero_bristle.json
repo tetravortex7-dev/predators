@@ -180,8 +180,8 @@
     "en": "Impenetrable Shell"
   },
   "DOTA_Tooltip_ability_evo_bristle_dread_e_Description": {
-    "ru": "<h1>Пассивно: Бронированный панцирь</h1>Увеличивает броню на <font color='#e03e2e'>+%bonus_armor%</font> и отражает <font color='#e03e2e'>%reflect_pct%%%</font> входящего <font color='#e03e2e'>физического урона</font> обратно атакующим в радиусе 450.",
-    "en": "<h1>Passive: Armored Carapace</h1>Grants <font color='#e03e2e'>+%bonus_armor%</font> armor and reflects <font color='#e03e2e'>%reflect_pct%%%</font> of incoming <font color='#e03e2e'>physical damage</font> back to attackers within 450 radius."
+    "ru": "<font color='#91a0b4'><b>Пассивно: Бронированный панцирь</b></font><br>Увеличивает броню на <font color='#e03e2e'>+%bonus_armor%</font> и отражает <font color='#e03e2e'>%reflect_pct%%%</font> входящего <font color='#e03e2e'>физического урона</font> обратно атакующим в радиусе 450.",
+    "en": "<font color='#91a0b4'><b>Passive: Armored Carapace</b></font><br>Grants <font color='#e03e2e'>+%bonus_armor%</font> armor and reflects <font color='#e03e2e'>%reflect_pct%%%</font> of incoming <font color='#e03e2e'>physical damage</font> back to attackers within 450 radius."
   },
   "DOTA_Tooltip_ability_evo_bristle_dread_e_Note0": {
     "ru": "Отражённый урон имеет физический тип и не вызывает повторного отражения. Способность отключается истощением.",
@@ -284,8 +284,8 @@
     "en": "Bloodlust Cleave"
   },
   "DOTA_Tooltip_ability_evo_bristle_crush_e_Description": {
-    "ru": "<h1>Пассивно: Беспощадный замах</h1>Атаки прорубают врагов в радиусе 275 вокруг цели на <font color='#e03e2e'>%cleave_pct%%%</font> <font color='#e03e2e'>физического урона</font> и дают <font color='#9acd32'>%lifesteal_pct%%%</font> вампиризма от любого нанесённого <font color='#e03e2e'>физического урона</font> <font color='#9acd32'>(50%% по крипам)</font>.",
-    "en": "<h1>Passive: Relentless Cleave</h1>Attacks cleave enemies within 275 radius of the target for <font color='#e03e2e'>%cleave_pct%%%</font> <font color='#e03e2e'>physical damage</font> and grant <font color='#9acd32'>%lifesteal_pct%%%</font> lifesteal from all <font color='#e03e2e'>physical damage</font> dealt <font color='#9acd32'>(50%% vs creeps)</font>."
+    "ru": "<font color='#91a0b4'><b>Пассивно: Беспощадный замах</b></font><br>Атаки прорубают врагов в радиусе 275 вокруг цели на <font color='#e03e2e'>%cleave_pct%%%</font> <font color='#e03e2e'>физического урона</font> и дают <font color='#9acd32'>%lifesteal_pct%%%</font> вампиризма от любого нанесённого <font color='#e03e2e'>физического урона</font> <font color='#9acd32'>(50%% по крипам)</font>.",
+    "en": "<font color='#91a0b4'><b>Passive: Relentless Cleave</b></font><br>Attacks cleave enemies within 275 radius of the target for <font color='#e03e2e'>%cleave_pct%%%</font> <font color='#e03e2e'>physical damage</font> and grant <font color='#9acd32'>%lifesteal_pct%%%</font> lifesteal from all <font color='#e03e2e'>physical damage</font> dealt <font color='#9acd32'>(50%% vs creeps)</font>."
   },
   "DOTA_Tooltip_ability_evo_bristle_crush_e_Note0": {
     "ru": "Прорубание не срабатывает при атаке по постройкам. Способность отключается истощением.",
@@ -380,8 +380,8 @@
     "en": "Mutagenic Synthesis"
   },
   "DOTA_Tooltip_ability_evo_bristle_react_e_Description": {
-    "ru": "<h1>Пассивно: Мутагенный залп</h1>Увеличивает дальность атаки на <font color='#9acd32'>+%bonus_range%</font>. Каждая атака дополнительно наносит %on_hit_damage% + 10%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> и накладывает 1 заряд <b>Кислотного катализатора</b>.",
-    "en": "<h1>Passive: Mutagenic Rounds</h1>Increases attack range by <font color='#9acd32'>+%bonus_range%</font>. Attacks deal %on_hit_damage% + 10%% of <font color='#d8ae53'>all attributes combined</font> as bonus <font color='#87ceeb'>magical damage</font> and apply 1 stack of <b>Acid Catalyst</b>."
+    "ru": "<font color='#91a0b4'><b>Пассивно: Мутагенный залп</b></font><br>Увеличивает дальность атаки на <font color='#9acd32'>+%bonus_range%</font>. Каждая атака дополнительно наносит %on_hit_damage% + 10%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> и накладывает 1 заряд <b>Кислотного катализатора</b>.",
+    "en": "<font color='#91a0b4'><b>Passive: Mutagenic Rounds</b></font><br>Increases attack range by <font color='#9acd32'>+%bonus_range%</font>. Attacks deal %on_hit_damage% + 10%% of <font color='#d8ae53'>all attributes combined</font> as bonus <font color='#87ceeb'>magical damage</font> and apply 1 stack of <b>Acid Catalyst</b>."
   },
   "DOTA_Tooltip_ability_evo_bristle_react_e_Note0": {
     "ru": "Бонусный магический урон и <b>Кислотный катализатор</b> не срабатывают по постройкам. Отключается истощением.",

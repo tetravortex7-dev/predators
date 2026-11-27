@@ -5,8 +5,16 @@
   "diet": "HYBRID",
   "attr": "AGI",
   "keep_default_abilities": false,
-  "tags": ["aquatic", "agile", "morph"],
-  "spell_pool_tags": ["aquatic", "mobility", "burst"],
+  "tags": [
+    "aquatic",
+    "agile",
+    "morph"
+  ],
+  "spell_pool_tags": [
+    "aquatic",
+    "mobility",
+    "burst"
+  ],
   "innate": "evo_morph_adaptive_essence",
   "signature": "evo_morph_t1_water_splash",
   "stages": [
@@ -29,7 +37,11 @@
         "evo_body_t2_morph_blood",
         "evo_body_t2_morph_void"
       ],
-      "label_color": [160, 225, 255],
+      "label_color": [
+        160,
+        225,
+        255
+      ],
       "wearables": []
     },
     {
@@ -40,7 +52,7 @@
       "name_en": "Spring Spirit",
       "desc_ru": "Ветка Воды T2 (Маг-контроллер / STR+AGI): Рывок Прилива [Q], Водяное Копьё [W], Разрежение [E].",
       "desc_en": "Water Branch T2 (Controller / STR+AGI): Tidal Surge [Q], Water Spear [W], Rarefaction [E].",
-      "scale": 0.85,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "evo_morph_water_q",
@@ -48,9 +60,19 @@
         "evo_morph_water_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t3_morph_water"],
-      "color": [70, 235, 255],
-      "label_color": [90, 235, 255],
+      "next_body_ids": [
+        "evo_body_t3_morph_water"
+      ],
+      "color": [
+        70,
+        235,
+        255
+      ],
+      "label_color": [
+        90,
+        235,
+        255
+      ],
       "wearables": [
         "Blade of Tears",
         "Crown of Tears"
@@ -64,7 +86,7 @@
       "name_en": "Reef Warden",
       "desc_ru": "Ветка Воды T3: след Промокания на [Q], сплеш и оцепенение на [W], развеивание на [E], двойная пассивка (STR+AGI).",
       "desc_en": "Water Branch T3: Wet trail on [Q], cone splash and root on [W], basic dispel on [E], dual STR+AGI innate.",
-      "scale": 1.05,
+      "scale": 0.92,
       "ability_level": 2,
       "abilities": [
         "evo_morph_water_q",
@@ -72,9 +94,19 @@
         "evo_morph_water_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t4_morph_water"],
-      "color": [30, 175, 165],
-      "label_color": [60, 210, 200],
+      "next_body_ids": [
+        "evo_body_t4_morph_water"
+      ],
+      "color": [
+        30,
+        175,
+        165
+      ],
+      "label_color": [
+        60,
+        210,
+        200
+      ],
       "wearables": [
         "Blade of Tears",
         "Crown of Tears",
@@ -89,7 +121,7 @@
       "name_en": "Abyssal Sovereign",
       "desc_ru": "Ветка Воды T4: водоворот на [Q], срез маг. резиста и сброс КД на [W], +25% сопр. эффектам на [E], ульта Зов Океана [R].",
       "desc_en": "Water Branch T4: Vortex on [Q], magic res shred & CD cut on [W], +25% status res on [E], Call of the Ocean [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_morph_water_q",
@@ -99,8 +131,16 @@
         "evo_morph_adaptive_essence"
       ],
       "next_body_ids": [],
-      "color": [35, 75, 220],
-      "label_color": [90, 140, 255],
+      "color": [
+        35,
+        75,
+        220
+      ],
+      "label_color": [
+        90,
+        140,
+        255
+      ],
       "wearables": [
         "Blade of Tears",
         "Crown of Tears",
@@ -117,7 +157,7 @@
       "name_en": "Ichor Clot",
       "desc_ru": "Ветка Крови T2 (Брузер-вампир / STR): Кровавый скачок [Q], Вытягивание жизни [W], Жажда плоти [E].",
       "desc_en": "Blood Branch T2 (Vampire Bruiser / STR): Blood Leap [Q], Life Siphon [W], Flesh Hunger [E].",
-      "scale": 0.85,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "evo_morph_blood_q",
@@ -125,9 +165,19 @@
         "evo_morph_blood_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t3_morph_blood"],
-      "color": [220, 65, 65],
-      "label_color": [240, 95, 95],
+      "next_body_ids": [
+        "evo_body_t3_morph_blood"
+      ],
+      "color": [
+        220,
+        65,
+        65
+      ],
+      "label_color": [
+        240,
+        95,
+        95
+      ],
       "wearables": [
         "Bracers of Polymorphia"
       ]
@@ -140,7 +190,7 @@
       "name_en": "Crimson Reaper",
       "desc_ru": "Ветка Крови T3: замедление движущейся цели на [Q], конус на [W], активное Вскипание на [E], x2 пассивка от недостающего HP.",
       "desc_en": "Blood Branch T3: Moving bleed slow on [Q], cone AoE on [W], Boiling active on [E], up to 2x STR innate at low HP.",
-      "scale": 1.05,
+      "scale": 0.92,
       "ability_level": 2,
       "abilities": [
         "evo_morph_blood_q",
@@ -148,9 +198,19 @@
         "evo_morph_blood_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t4_morph_blood"],
-      "color": [185, 20, 30],
-      "label_color": [225, 55, 65],
+      "next_body_ids": [
+        "evo_body_t4_morph_blood"
+      ],
+      "color": [
+        185,
+        20,
+        30
+      ],
+      "label_color": [
+        225,
+        55,
+        65
+      ],
       "wearables": [
         "Bracers of Polymorphia",
         "Pauldrons of Polymorphia",
@@ -165,7 +225,7 @@
       "name_en": "Scarlet Ripper",
       "desc_ru": "Ветка Крови T4: скачок к союзникам на [Q], Кровавый щит от оверхила на [W], сброс [Q] при убийстве на [E], Ритуал Свежевателей [R].",
       "desc_en": "Blood Branch T4: Ally blink on [Q], overheal Blood Shield on [W], Q reset on bleeding kill [E], Flayer Ritual [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_morph_blood_q",
@@ -175,8 +235,16 @@
         "evo_morph_adaptive_essence"
       ],
       "next_body_ids": [],
-      "color": [140, 10, 25],
-      "label_color": [210, 35, 55],
+      "color": [
+        140,
+        10,
+        25
+      ],
+      "label_color": [
+        210,
+        35,
+        55
+      ],
       "wearables": [
         "Bracers of Polymorphia",
         "Pauldrons of Polymorphia",
@@ -193,7 +261,7 @@
       "name_en": "Shadow Shard",
       "desc_ru": "Ветка Пустоты T2 (Ассасин / INT): Шаг сквозь Тень [Q], Печать Пустоты [W], Касание Бездны [E].",
       "desc_en": "Void Branch T2 (Assassin / INT): Shadow Step [Q], Void Seal [W], Abyssal Touch [E].",
-      "scale": 0.85,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "evo_morph_void_q",
@@ -201,9 +269,19 @@
         "evo_morph_void_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t3_morph_void"],
-      "color": [130, 60, 210],
-      "label_color": [175, 110, 245],
+      "next_body_ids": [
+        "evo_body_t3_morph_void"
+      ],
+      "color": [
+        130,
+        60,
+        210
+      ],
+      "label_color": [
+        175,
+        110,
+        245
+      ],
       "wearables": [
         "Bracers of the Lost Star"
       ]
@@ -216,7 +294,7 @@
       "name_en": "Rift Weaver",
       "desc_ru": "Ветка Пустоты T3: замедление и мини-стан на [Q], безмолвие на [W], 2 стака Эрозии по замедленным на [E], +12% длит. дебаффов.",
       "desc_en": "Void Branch T3: Slow & ministun on [Q], silence on [W], 2 Erosion stacks vs slowed/rooted [E], +12% debuff amp innate.",
-      "scale": 1.05,
+      "scale": 0.92,
       "ability_level": 2,
       "abilities": [
         "evo_morph_void_q",
@@ -224,9 +302,19 @@
         "evo_morph_void_e",
         "evo_morph_adaptive_essence"
       ],
-      "next_body_ids": ["evo_body_t4_morph_void"],
-      "color": [90, 25, 195],
-      "label_color": [155, 85, 245],
+      "next_body_ids": [
+        "evo_body_t4_morph_void"
+      ],
+      "color": [
+        90,
+        25,
+        195
+      ],
+      "label_color": [
+        155,
+        85,
+        245
+      ],
       "wearables": [
         "Bracers of the Lost Star",
         "Spines of the Lost Star",
@@ -241,7 +329,7 @@
       "name_en": "Void Sovereign",
       "desc_ru": "Ветка Пустоты T4: 0.4с стан на [Q], сжигание маны и +12% маг. урона на [W], Истощение (-40% хила) на [E], Зеркало Бездны [R].",
       "desc_en": "Void Branch T4: 0.4s stun on [Q], mana burn & +12% spell amp on [W], Exhaustion (-40% heal) on [E], Void Mirror [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_morph_void_q",
@@ -251,8 +339,16 @@
         "evo_morph_adaptive_essence"
       ],
       "next_body_ids": [],
-      "color": [55, 15, 150],
-      "label_color": [135, 70, 245],
+      "color": [
+        55,
+        15,
+        150
+      ],
+      "label_color": [
+        135,
+        70,
+        245
+      ],
       "wearables": [
         "Bracers of the Lost Star",
         "Spines of the Lost Star",

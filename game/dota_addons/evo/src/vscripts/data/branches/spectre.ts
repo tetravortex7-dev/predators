@@ -45,12 +45,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_spectre_phantom"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -86,12 +86,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_spectre_phantom"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -119,7 +119,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_phantom_dispersion_t3",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["spectre_spectral_dagger", "evo_spectre_phantom_w", "evo_spectre_phantom_e", "evo_spectre_phantom_d", "evo_spectre_phantom_dispersion_t3"],
+        kitAbilities: ["spectre_spectral_dagger", "evo_spectre_phantom_w_t3", "evo_spectre_phantom_e_t3", "evo_spectre_phantom_d", "evo_spectre_phantom_dispersion_t3"],
         kitAbilityLevel: 1,
     },
     {
@@ -129,11 +129,11 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/spectre/spectre_crescent_huntress_weapon/spectre_crescent_huntress_weapon.vmdl" },
@@ -166,7 +166,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_phantom_dispersion_t4",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["spectre_spectral_dagger", "evo_spectre_phantom_w", "evo_spectre_phantom_e", "evo_spectre_phantom_d", "evo_spectre_phantom_r", "evo_spectre_phantom_dispersion_t4"],
+        kitAbilities: ["spectre_spectral_dagger", "evo_spectre_phantom_w_t4", "evo_spectre_phantom_e_t3", "evo_spectre_phantom_d_t4", "evo_spectre_phantom_r", "evo_spectre_phantom_dispersion_t4"],
         kitAbilityLevel: 1,
     },
     {
@@ -176,12 +176,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_spectre_bastion"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/spectre/immortal_shoulders/immortal_shoulders.vmdl" },
@@ -214,12 +214,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_spectre_bastion"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/spectre/immortal_shoulders/immortal_shoulders.vmdl" },
@@ -244,7 +244,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_dispersion",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["evo_spectre_bastion_q", "evo_spectre_bastion_w", "evo_spectre_bastion_e", "evo_spectre_dispersion"],
+        kitAbilities: ["evo_spectre_bastion_q_t3", "evo_spectre_bastion_w_t3", "evo_spectre_bastion_e_t3", "evo_spectre_dispersion"],
         kitAbilityLevel: 1,
     },
     {
@@ -254,11 +254,11 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/spectre/immortal_shoulders/immortal_shoulders.vmdl" },
@@ -285,7 +285,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_dispersion",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["evo_spectre_bastion_q", "evo_spectre_bastion_w", "evo_spectre_bastion_e", "evo_spectre_bastion_r", "evo_spectre_dispersion"],
+        kitAbilities: ["evo_spectre_bastion_q_t4", "evo_spectre_bastion_w_t4", "evo_spectre_bastion_e_t4", "evo_spectre_bastion_r", "evo_spectre_dispersion"],
         kitAbilityLevel: 1,
     },
     {
@@ -295,12 +295,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_spectre_mirror"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -336,12 +336,12 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_spectre_mirror"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -372,7 +372,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_mirror_inversion_t3",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_inversion_t3"],
+        kitAbilities: ["evo_spectre_mirror_q_t3", "evo_spectre_mirror_w_t3", "evo_spectre_mirror_e_t3", "evo_spectre_mirror_inversion_t3"],
         kitAbilityLevel: 1,
     },
     {
@@ -382,11 +382,11 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         tags: ["spectre", "astral", "shadow"],
         spellPoolTags: ["burst", "utility"],
         model: "models/heroes/spectre/spectre.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_spectre",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -419,7 +419,7 @@ export const EVO_BRANCH_SPECTRE_BODIES: readonly BodyDefinition[] = [
         baseArmor: 5,
         innateAbility: "evo_spectre_mirror_inversion_t4",
         signatureAbility: "spectre_spectral_dagger",
-        kitAbilities: ["evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_r", "evo_spectre_mirror_inversion_t4"],
+        kitAbilities: ["evo_spectre_mirror_q_t4", "evo_spectre_mirror_w_t4", "evo_spectre_mirror_e_t4", "evo_spectre_mirror_r", "evo_spectre_mirror_inversion_t4"],
         kitAbilityLevel: 1,
     },
 ];

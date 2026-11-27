@@ -1,7 +1,9 @@
 local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
+local Set = ____lualib.Set
+local __TS__New = ____lualib.__TS__New
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["6"] = 1,["7"] = 1,["8"] = 1,["10"] = 1,["11"] = 4,["12"] = 4,["13"] = 4,["15"] = 4,["16"] = 7,["17"] = 7,["18"] = 7,["20"] = 7,["21"] = 10,["22"] = 12,["23"] = 13,["24"] = 12,["25"] = 16,["26"] = 17,["27"] = 16,["28"] = 20,["29"] = 21,["30"] = 22,["31"] = 21,["32"] = 20,["33"] = 26,["34"] = 27,["35"] = 28,["36"] = 27,["37"] = 26,["38"] = 32,["39"] = 33,["40"] = 34,["41"] = 33,["42"] = 32});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["12"] = 1,["13"] = 4,["14"] = 4,["15"] = 4,["17"] = 4,["18"] = 7,["19"] = 7,["20"] = 7,["22"] = 7,["23"] = 10,["24"] = 14,["25"] = 15,["26"] = 16,["27"] = 20,["28"] = 21,["29"] = 22,["30"] = 23,["31"] = 24,["32"] = 25,["33"] = 26,["34"] = 27,["35"] = 29,["36"] = 34,["39"] = 37,["41"] = 39,["42"] = 14,["43"] = 42,["44"] = 43,["45"] = 42,["46"] = 46,["47"] = 47,["48"] = 46,["49"] = 50,["50"] = 51,["51"] = 52,["52"] = 51,["53"] = 50,["54"] = 56,["55"] = 57,["56"] = 58,["57"] = 57,["58"] = 56,["59"] = 62,["60"] = 63,["61"] = 64,["62"] = 63,["63"] = 62});
 local ____exports = {}
 ____exports.BaseAbility = __TS__Class()
 local BaseAbility = ____exports.BaseAbility
@@ -19,6 +21,25 @@ BaseItem.name = "BaseItem"
 function BaseItem.prototype.____constructor(self)
 end
 local LUA_G = _G
+local function flattenPrototype(self, proto)
+    local dst = proto
+    local g = _G
+    local visited = __TS__New(Set)
+    local mt = g.getmetatable(proto)
+    while mt ~= nil and not visited:has(mt) do
+        visited:add(mt)
+        local indexVal = g.rawget(mt, "__index")
+        local base = type(indexVal) == "table" and indexVal ~= nil and indexVal or mt
+        for key, value in pairs(base) do
+            local k = key
+            if k ~= "____constructor" and k ~= "__index" and k ~= "constructor" and g.rawget(dst, k) == nil then
+                dst[k] = value
+            end
+        end
+        mt = g.getmetatable(base)
+    end
+    return dst
+end
 function ____exports.dotaModifierFunction(self, name)
     return LUA_G[name]
 end
@@ -27,17 +48,17 @@ function ____exports.dotaModifierState(self, name)
 end
 function ____exports.registerAbility(self, name)
     return function(____, ability)
-        _G[name] = ability.prototype
+        _G[name] = flattenPrototype(nil, ability.prototype)
     end
 end
 function ____exports.registerModifier(self, name)
     return function(____, modifier)
-        _G[name] = modifier.prototype
+        _G[name] = flattenPrototype(nil, modifier.prototype)
     end
 end
 function ____exports.registerItem(self, name)
     return function(____, item)
-        _G[name] = item.prototype
+        _G[name] = flattenPrototype(nil, item.prototype)
     end
 end
 return ____exports

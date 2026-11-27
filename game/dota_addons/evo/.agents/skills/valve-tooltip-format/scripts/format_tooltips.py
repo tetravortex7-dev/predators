@@ -149,16 +149,22 @@ def format_plain_segment(seg: str) -> str:
     return "".join(rebuilt)
 
 
-def format_description(text: str) -> str:
+def format_description(text: str, is_item: bool = False) -> str:
     if not text or not text.strip():
         return text
     out = text.replace("\r\n", "\n").strip()
-    out = re.sub(r"\n{2,}", "<br><br>", out)
+    if not is_item:
+        out = re.sub(r"<h1>(.*?)</h1>", r"<font color='#91a0b4'><b>\1</b></font><br>", out, flags=re.IGNORECASE)
+    out = re.sub(r"\n{2,}", "\n\n" if is_item else "<br><br>", out)
     out = out.replace("\n", "<br><br>")
 
     def wrap_section(m: re.Match[str]) -> str:
+        title = m.group(1).strip()
+        if is_item:
+            prefix = "\n\n" if m.start() > 0 else ""
+            return f"{prefix}<h1>{title}</h1>"
         prefix = "<br><br>" if m.start() > 0 else ""
-        return f"{prefix}<h1>{m.group(1).strip()}</h1>"
+        return f"{prefix}<font color='#91a0b4'><b>{title}</b></font><br>"
 
     out = SECTION_LINE_RE.sub(wrap_section, out)
     out = DISPEL_RE.sub(
@@ -210,7 +216,7 @@ def apply_file(path: str, key_prefixes: list[str] | None, dry_run: bool) -> int:
                 continue
             new_val = val
             if is_desc or is_note:
-                new_val = format_description(val)
+                new_val = format_description(val, is_item=key.lower().startswith("dota_tooltip_ability_item_"))
             elif is_stat and any(ch in val for ch in (":", " ")):
                 ab_prefix = key[len("DOTA_Tooltip_ability_") :]
                 if f"DOTA_Tooltip_ability_{ab_prefix}_Description" not in data:
@@ -258,6 +264,9 @@ def check_files(files: list[str], ab_vals: dict[str, set[str]]) -> list[str]:
                     continue
                 if (is_ability_key or is_mod_key) and TIER_SPOILER_RE.search(txt):
                     errors.append(f"{fname} {key}[{lang}]: tier/hotkey spoiler found")
+                if (is_ability_key or is_mod_key) and fname != "items.json" and "ability_item_" not in key.lower():
+                    if re.search(r"<h[1-6]\b", txt, re.IGNORECASE):
+                        errors.append(f"{fname} {key}[{lang}]: avoid <h1> on abilities (triggers item Label.Header banner); use <font color='#91a0b4'><b>...</b></font><br>")
                 for tag in ("h1", "b", "font", "span"):
                     opens = len(re.findall(rf"<{tag}(?:\s[^>]*)?>", txt))
                     closes = len(re.findall(rf"</{tag}>", txt))

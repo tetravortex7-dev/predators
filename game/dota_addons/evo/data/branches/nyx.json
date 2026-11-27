@@ -5,8 +5,15 @@
   "diet": "CARNIVORE",
   "attr": "AGI",
   "keep_default_abilities": false,
-  "tags": ["insect", "hive", "nyx"],
-  "spell_pool_tags": ["control", "burst"],
+  "tags": [
+    "insect",
+    "hive",
+    "nyx"
+  ],
+  "spell_pool_tags": [
+    "control",
+    "burst"
+  ],
   "innate": "evo_nyx_living_chitin",
   "signature": "nyx_assassin_impale",
   "stages": [
@@ -30,7 +37,11 @@
         "evo_body_t2_nyx_archon",
         "evo_body_t2_nyx_cicada"
       ],
-      "label_color": [175, 130, 220],
+      "label_color": [
+        175,
+        130,
+        220
+      ],
       "wearables": []
     },
     {
@@ -41,7 +52,7 @@
       "name_en": "Armored Beetle",
       "desc_ru": "Обсидиановый Скарабей T2 (STR / танк-бункер): Сейсмический выброс [Q], Закапывание без инвиза [W], Уворот+Царапина [E].",
       "desc_en": "Obsidian Scarab T2 (STR / Bunker Tank): Seismic Eruption [Q], Visible Burrow [W], Glancing Carapace Evade+Graze [E].",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "evo_nyx_scarab_q",
@@ -49,9 +60,19 @@
         "evo_nyx_scarab_e",
         "evo_nyx_living_chitin"
       ],
-      "next_body_ids": ["evo_body_t3_nyx_scarab"],
-      "color": [95, 115, 145],
-      "label_color": [150, 175, 210],
+      "next_body_ids": [
+        "evo_body_t3_nyx_scarab"
+      ],
+      "color": [
+        95,
+        115,
+        145
+      ],
+      "label_color": [
+        150,
+        175,
+        210
+      ],
       "wearables": [
         "Shell of the Hidden Hive"
       ]
@@ -64,7 +85,7 @@
       "name_en": "Abyssal Sentinel",
       "desc_ru": "Скарабей T3: замедление и -1с КД [Q], +25/35% Status Res и толчок при выходе [W], хил от Уворота и стаки Закалки от Царапины [E].",
       "desc_en": "Scarab T3: Slow & -1s CD on [Q], +25/35% Status Res & exit knockback [W], Evade heal & Graze Temper stacks [E].",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_nyx_scarab_chitin",
       "abilities": [
@@ -73,9 +94,19 @@
         "evo_nyx_scarab_e",
         "evo_nyx_scarab_chitin"
       ],
-      "next_body_ids": ["evo_body_t4_nyx_scarab"],
-      "color": [65, 85, 130],
-      "label_color": [125, 160, 225],
+      "next_body_ids": [
+        "evo_body_t4_nyx_scarab"
+      ],
+      "color": [
+        65,
+        85,
+        130
+      ],
+      "label_color": [
+        125,
+        160,
+        225
+      ],
       "wearables": [
         "Shell of the Hidden Hive",
         "Sacred Orb Helm",
@@ -90,7 +121,7 @@
       "name_en": "Obsidian Scarab",
       "desc_ru": "Скарабей T4: DoT-обломки [Q], ползание под землёй 175 MS [W], ответный шип при Увороте [E], Эпицентр Улья [R] (Царапина 40%).",
       "desc_en": "Scarab T4: Chitin debris DoT [Q], 175 MS burrow crawl [W], Evade counter-spike [E], Hive Epicenter [R] (40% Graze).",
-      "scale": 1.1,
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_nyx_scarab_chitin_t4",
       "abilities": [
@@ -101,8 +132,16 @@
         "evo_nyx_scarab_chitin_t4"
       ],
       "next_body_ids": [],
-      "color": [45, 55, 95],
-      "label_color": [120, 195, 255],
+      "color": [
+        45,
+        55,
+        95
+      ],
+      "label_color": [
+        120,
+        195,
+        255
+      ],
       "wearables": [
         "Sacred Orb Carapace",
         "Sacred Orb Helm",
@@ -118,7 +157,7 @@
       "name_en": "Grassblade Mantis",
       "desc_ru": "Бритвенный Богомол T2 (AGI / контактный дуэлянт): 3-ударный станлок [Q], 50% парирование [W], стаки Зазубренной раны [E].",
       "desc_en": "Razor Mantis T2 (AGI / Duelist): 3-hit stunlock flurry [Q], 50% Blade Parry [W], Serrated Wound stacks [E].",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "evo_nyx_mantis_q",
@@ -126,9 +165,19 @@
         "evo_nyx_mantis_e",
         "evo_nyx_living_chitin"
       ],
-      "next_body_ids": ["evo_body_t3_nyx_mantis"],
-      "color": [195, 50, 65],
-      "label_color": [235, 95, 110],
+      "next_body_ids": [
+        "evo_body_t3_nyx_mantis"
+      ],
+      "color": [
+        195,
+        50,
+        65
+      ],
+      "label_color": [
+        235,
+        95,
+        110
+      ],
       "wearables": [
         "Claws of the Hidden Hive"
       ]
@@ -141,7 +190,7 @@
       "name_en": "Scarlet Duelist",
       "desc_ru": "Богомол T3: +20/25% MS и +15/25 урона на [Q], Basic Dispel и импульс на [W], срез брони и -0.35с КД [Q] с руки [E].",
       "desc_en": "Mantis T3: +20/25% MS & bonus dmg on [Q], Basic Dispel & slow pulse [W], armor shred & -0.35s [Q] CD on attacks [E].",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_nyx_mantis_chitin",
       "abilities": [
@@ -150,9 +199,19 @@
         "evo_nyx_mantis_e",
         "evo_nyx_mantis_chitin"
       ],
-      "next_body_ids": ["evo_body_t4_nyx_mantis"],
-      "color": [160, 25, 45],
-      "label_color": [235, 75, 95],
+      "next_body_ids": [
+        "evo_body_t4_nyx_mantis"
+      ],
+      "color": [
+        160,
+        25,
+        45
+      ],
+      "label_color": [
+        235,
+        75,
+        95
+      ],
       "wearables": [
         "Claws of the Hidden Hive",
         "Spines of the Predator",
@@ -167,7 +226,7 @@
       "name_en": "Razor Mantis",
       "desc_ru": "Богомол T4: 4 удара при 5+ ранах [Q], щит и сброс [Q] на 3-м блоке [W], чистый урон и вампиризм [E], Симфония Клинков [R].",
       "desc_en": "Mantis T4: 4-hit flurry at 5+ wounds [Q], shield & [Q] reset on 3rd parry [W], pure dmg & lifesteal [E], Symphony of Blades [R].",
-      "scale": 1.1,
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_nyx_mantis_chitin_t4",
       "abilities": [
@@ -178,8 +237,16 @@
         "evo_nyx_mantis_chitin_t4"
       ],
       "next_body_ids": [],
-      "color": [115, 15, 35],
-      "label_color": [255, 80, 105],
+      "color": [
+        115,
+        15,
+        35
+      ],
+      "label_color": [
+        255,
+        80,
+        105
+      ],
       "wearables": [
         "Latticean Shards of the Crimson Witness",
         "Crimson Latticean Hierarchy",
@@ -195,7 +262,7 @@
       "name_en": "Whispering Chrysalis",
       "desc_ru": "Пси-Архонт T2 (INT / зонер): Пси-разлом [Q], Ментальный ожог [W], стаки Концентрации [E].",
       "desc_en": "Psy-Archon T2 (INT / Zoner): Psy Rift [Q], Mind Burn [W], Mind Siphon Concentration stacks [E].",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "abilities": [
         "lion_impale",
@@ -203,9 +270,19 @@
         "evo_nyx_archon_e",
         "evo_nyx_living_chitin"
       ],
-      "next_body_ids": ["evo_body_t3_nyx_archon"],
-      "color": [75, 215, 210],
-      "label_color": [125, 240, 235],
+      "next_body_ids": [
+        "evo_body_t3_nyx_archon"
+      ],
+      "color": [
+        75,
+        215,
+        210
+      ],
+      "label_color": [
+        125,
+        240,
+        235
+      ],
       "wearables": [
         "Mesmer-Eye - Head"
       ]
@@ -218,7 +295,7 @@
       "name_en": "Mind Weaver",
       "desc_ru": "Пси-Архонт T3: Пси-резонанс и урон от нехв. маны [Q], сайленс и замедление каста [W], волна на макс. Концентрации [E].",
       "desc_en": "Psy-Archon T3: Psi-Resonance & missing mana dmg [Q], silence & cast slow [W], max Concentration AoE pulse [E].",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_nyx_archon_chitin",
       "abilities": [
@@ -227,9 +304,19 @@
         "evo_nyx_archon_e",
         "evo_nyx_archon_chitin"
       ],
-      "next_body_ids": ["evo_body_t4_nyx_archon"],
-      "color": [45, 155, 235],
-      "label_color": [115, 195, 255],
+      "next_body_ids": [
+        "evo_body_t4_nyx_archon"
+      ],
+      "color": [
+        45,
+        155,
+        235
+      ],
+      "label_color": [
+        115,
+        195,
+        255
+      ],
       "wearables": [
         "Mesmer-Eye - Head",
         "Claws of Cicatrix Regalia",
@@ -244,7 +331,7 @@
       "name_en": "Hive Archon",
       "desc_ru": "Пси-Архонт T4: немое пси-поле [Q], отскок [W], +18% чистого урона <40% маны [E], Псионический обелиск [R].",
       "desc_en": "Psy-Archon T4: Silencing psi-field [Q], bounce [W], +18% pure dmg <40% mana [E], Psionic Obelisk [R].",
-      "scale": 1.1,
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_nyx_archon_chitin_t4",
       "abilities": [
@@ -255,8 +342,16 @@
         "evo_nyx_archon_chitin_t4"
       ],
       "next_body_ids": [],
-      "color": [90, 85, 250],
-      "label_color": [165, 160, 255],
+      "color": [
+        90,
+        85,
+        250
+      ],
+      "label_color": [
+        165,
+        160,
+        255
+      ],
       "wearables": [
         "Latticean Shards",
         "Cursed Zealot Carapace",
@@ -272,7 +367,7 @@
       "name_en": "Ringing Nymph",
       "desc_ru": "Звуковая Цикада T2 (Universal / кайтер): Ультразвук [Q], Резонансное жало [W], Щит-вибрация [E].",
       "desc_en": "Sonic Cicada T2 (Universal / Skirmisher): Ultrasonic Pulse [Q], Resonant Sting [W], Carapace Vibration [E].",
-      "scale": 0.8,
+      "scale": 0.78,
       "ability_level": 1,
       "innate": "evo_nyx_cicada_chitin",
       "abilities": [
@@ -281,9 +376,19 @@
         "evo_nyx_cicada_e",
         "evo_nyx_cicada_chitin"
       ],
-      "next_body_ids": ["evo_body_t3_nyx_cicada"],
-      "color": [215, 215, 50],
-      "label_color": [240, 240, 100],
+      "next_body_ids": [
+        "evo_body_t3_nyx_cicada"
+      ],
+      "color": [
+        215,
+        215,
+        50
+      ],
+      "label_color": [
+        240,
+        240,
+        100
+      ],
       "wearables": [
         "Carapace of the Chosen Larva"
       ]
@@ -296,7 +401,7 @@
       "name_en": "Storm Hornet",
       "desc_ru": "Цикада T3: эхо-волна на [Q], Disarm и мана при взрыве жала [W], Basic Dispel +25/35 AS и +25% Status Res [E].",
       "desc_en": "Cicada T3: Echo wave on [Q], Disarm & mana restore on sting shatter [W], Basic Dispel +25/35 AS & +25% Status Res [E].",
-      "scale": 0.95,
+      "scale": 0.92,
       "ability_level": 1,
       "innate": "evo_nyx_cicada_chitin_t3",
       "abilities": [
@@ -305,9 +410,19 @@
         "evo_nyx_cicada_e",
         "evo_nyx_cicada_chitin_t3"
       ],
-      "next_body_ids": ["evo_body_t4_nyx_cicada"],
-      "color": [155, 235, 65],
-      "label_color": [185, 250, 105],
+      "next_body_ids": [
+        "evo_body_t4_nyx_cicada"
+      ],
+      "color": [
+        155,
+        235,
+        65
+      ],
+      "label_color": [
+        185,
+        250,
+        105
+      ],
       "wearables": [
         "Carapace of the Chosen Larva",
         "Helmet of the Chosen Larva",
@@ -322,7 +437,7 @@
       "name_en": "Resonance Sovereign",
       "desc_ru": "Цикада T4: откат [Q/W/E] на [Q], отскок импульса и 2 тика под Сбоем на [W], взрыв-толчок и сброс [W] на [E], Камертон [R].",
       "desc_en": "Cicada T4: [Q/W/E] CDR on [Q], bounce & 2-proc shatter on [W], knockback & [W] reset on [E], Tuning Fork Symphony [R].",
-      "scale": 1.1,
+      "scale": 1.05,
       "ability_level": 1,
       "innate": "evo_nyx_cicada_chitin_t4",
       "abilities": [
@@ -333,8 +448,16 @@
         "evo_nyx_cicada_chitin_t4"
       ],
       "next_body_ids": [],
-      "color": [95, 250, 120],
-      "label_color": [145, 255, 165],
+      "color": [
+        95,
+        250,
+        120
+      ],
+      "label_color": [
+        145,
+        255,
+        165
+      ],
       "wearables": [
         "Carapace of the Chosen Larva",
         "Helmet of the Chosen Larva",

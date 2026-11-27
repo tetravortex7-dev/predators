@@ -24,8 +24,8 @@
     "en": "Rift Dispersion"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_Description": {
-    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек. Способность <b>Призрачный кинжал</b> дополнительно наносит <font color='#87ceeb'>магический урон</font> от <font color='#9acd32'>ловкости</font>.",
-    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s. <b>Spectral Dagger</b> deals bonus <font color='#87ceeb'>magical damage</font> scaling with <font color='#9acd32'>Agility</font>."
+    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и вокруг ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Увеличивает урон способности <b>Призрачный кинжал</b> на <font color='#9acd32'>+55/65/75/85% от ловкости</font>.",
+    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Increases <b>Spectral Dagger</b> damage by <font color='#9acd32'>+55/65/75/85% of Agility</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_Note0": {
     "ru": "Эффект отражения вокруг Спектры ослабевает с расстоянием от %min_radius% до %max_radius%. Отражённый урон не наносится самой Спектре и отключается истощением.",
@@ -48,8 +48,8 @@
     "en": "Rift Dispersion"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_t3_Description": {
-    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Каждые %charge_threshold% ед. поглощённого урона дают <b>Теневой заряд</b> <font color='#7d7d7d'>(макс. %max_charges%)</font>: следующая атака расходует заряд, наносит %charge_dmg% + %charge_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и сокращает перезарядку <b>Материализации</b> на %reality_cd_reduce% сек. Способность <b>Призрачный кинжал</b> дополнительно наносит <font color='#87ceeb'>магический урон</font> от <font color='#9acd32'>ловкости</font>.",
-    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Every %charge_threshold% absorbed damage grants a <b>Shadow Charge</b> <font color='#7d7d7d'>(max %max_charges%)</font>: your next attack consumes a charge to deal %charge_dmg% + %charge_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and reduce <b>Reality</b> cooldown by %reality_cd_reduce%s. <b>Spectral Dagger</b> deals bonus <font color='#87ceeb'>magical damage</font> scaling with <font color='#9acd32'>Agility</font>."
+    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и вокруг ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Каждые %charge_threshold% ед. поглощённого урона дают <b>Теневой заряд</b> <font color='#7d7d7d'>(макс. %max_charges%)</font>: следующая атака расходует заряд, наносит %charge_dmg% + %charge_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и сокращает перезарядку <b>Материализации</b> на %reality_cd_reduce% сек. Урон способности <b>Призрачный кинжал</b> увеличен на <font color='#9acd32'>+55/65/75/85/95% от ловкости</font>.",
+    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Every %charge_threshold% absorbed damage grants a <b>Shadow Charge</b> <font color='#7d7d7d'>(max %max_charges%)</font>: your next attack consumes a charge to deal %charge_dmg% + %charge_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and reduce <b>Reality</b> cooldown by %reality_cd_reduce%s. Increases <b>Spectral Dagger</b> damage by <font color='#9acd32'>+55/65/75/85/95% of Agility</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_t3_Note0": {
     "ru": "Эффект отражения вокруг Спектры ослабевает с расстоянием от %min_radius% до %max_radius%. Отражённый урон не наносится самой Спектре и отключается истощением.",
@@ -84,8 +84,8 @@
     "en": "Rift Dispersion"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_t4_Description": {
-    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Каждые %charge_threshold% ед. поглощённого урона дают <b>Теневой заряд</b> <font color='#7d7d7d'>(макс. %max_charges%)</font>: следующая атака расходует заряд, наносит %charge_dmg% + %charge_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и сокращает перезарядку <b>Материализации</b> на %reality_cd_reduce% сек. Способность <b>Призрачный кинжал</b> дополнительно наносит <font color='#87ceeb'>магический урон</font> от <font color='#9acd32'>ловкости</font>.",
-    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Every %charge_threshold% absorbed damage grants a <b>Shadow Charge</b> <font color='#7d7d7d'>(max %max_charges%)</font>: your next attack consumes a charge to deal %charge_dmg% + %charge_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and reduce <b>Reality</b> cooldown by %reality_cd_reduce%s. <b>Spectral Dagger</b> deals bonus <font color='#87ceeb'>magical damage</font> scaling with <font color='#9acd32'>Agility</font>."
+    "ru": "Поглощает <font color='#d8ae53'>%absorb_pct%%%</font> входящего урона <font color='#7d7d7d'>(растёт с уровнем героя)</font> и отражает его тем же типом по врагам вокруг себя и вокруг ближайшего <b>Астрального портала</b> в радиусе %portal_echo_radius%.<br><br>Получение урона от вражеских героев даёт <font color='#9acd32'>+%ms_pct%%%</font> к скорости передвижения и <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Каждые %charge_threshold% ед. поглощённого урона дают <b>Теневой заряд</b> <font color='#7d7d7d'>(макс. %max_charges%)</font>: следующая атака расходует заряд, наносит %charge_dmg% + %charge_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и сокращает перезарядку <b>Материализации</b> на %reality_cd_reduce% сек. Урон способности <b>Призрачный кинжал</b> увеличен на <font color='#9acd32'>+55/65/75/85/95% от ловкости</font>.",
+    "en": "Absorbs <font color='#d8ae53'>%absorb_pct%%%</font> of incoming damage <font color='#7d7d7d'>(scales with hero level)</font> and reflects the same damage type around Spectre and her nearest <b>Astral Portal</b> within %portal_echo_radius% radius.<br><br>Taking damage from enemy heroes grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Every %charge_threshold% absorbed damage grants a <b>Shadow Charge</b> <font color='#7d7d7d'>(max %max_charges%)</font>: your next attack consumes a charge to deal %charge_dmg% + %charge_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and reduce <b>Reality</b> cooldown by %reality_cd_reduce%s. Increases <b>Spectral Dagger</b> damage by <font color='#9acd32'>+55/65/75/85/95% of Agility</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_dispersion_t4_Note0": {
     "ru": "Эффект отражения вокруг Спектры ослабевает с расстоянием от %min_radius% до %max_radius%. Отражённый урон не наносится самой Спектре и отключается истощением.",
@@ -164,8 +164,8 @@
     "en": "Mirror Blade"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_w_Description": {
-    "ru": "<h1>Пассивно: Искажённый клинок</h1>Увеличивает скорость атаки на <font color='#9acd32'>+%bonus_as%</font>. Каждая <b>3-я атака</b> <font color='#7d7d7d'>(или удар по цели под замедлением от <b>Призрачного кинжала</b>)</font> наносит %pure_base% + %pure_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#d8ae53'>чистого урона</font> и прорубает врагов на %cleave_pct%%% в радиусе %cleave_radius%.<br><br><h1>Активно: Призрачный выпад</h1>Даёт <font color='#9acd32'>+%evasion_pct%%%</font> уклонения и <b>True Strike</b> на %active_duration% сек. Следующая атака получает +%bonus_range% к дальности, гарантированно наносит <font color='#d8ae53'>чистый прорубающий урон</font> и похищает %ms_steal_pct%%% скорости передвижения на %ms_steal_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
-    "en": "<h1>Passive: Distorted Edge</h1>Grants <font color='#9acd32'>+%bonus_as%</font> attack speed. Every <b>3rd attack</b> <font color='#7d7d7d'>(or any hit vs targets slowed by <b>Spectral Dagger</b>)</font> deals %pure_base% + %pure_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#d8ae53'>pure damage</font> and cleaves for %cleave_pct%%% within %cleave_radius% radius.<br><br><h1>Active: Phantom Lunge</h1>Grants <font color='#9acd32'>+%evasion_pct%%%</font> evasion and <b>True Strike</b> for %active_duration%s. Your next attack gains +%bonus_range% attack range, triggers guaranteed <font color='#d8ae53'>pure cleave</font>, and steals %ms_steal_pct%%% movement speed for %ms_steal_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+    "ru": "<font color='#91a0b4'><b>Пассивно: Искажённый клинок</b></font><br>Увеличивает скорость атаки на <font color='#9acd32'>+%bonus_as%</font>. Каждая <b>3-я атака</b> <font color='#7d7d7d'>(или удар по цели под замедлением от <b>Призрачного кинжала</b>)</font> наносит %pure_base% + %pure_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#d8ae53'>чистого урона</font> и прорубает врагов на %cleave_pct%%% в радиусе %cleave_radius%.<br><br><font color='#91a0b4'><b>Активно: Призрачный выпад</b></font><br>Даёт <font color='#9acd32'>+%evasion_pct%%%</font> уклонения и <b>True Strike</b> на %active_duration% сек. Следующая атака получает +%bonus_range% к дальности, гарантированно наносит <font color='#d8ae53'>чистый прорубающий урон</font> и похищает %ms_steal_pct%%% скорости передвижения на %ms_steal_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive: Distorted Edge</b></font><br>Grants <font color='#9acd32'>+%bonus_as%</font> attack speed. Every <b>3rd attack</b> <font color='#7d7d7d'>(or any hit vs targets slowed by <b>Spectral Dagger</b>)</font> deals %pure_base% + %pure_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#d8ae53'>pure damage</font> and cleaves for %cleave_pct%%% within %cleave_radius% radius.<br><br><font color='#91a0b4'><b>Active: Phantom Lunge</b></font><br>Grants <font color='#9acd32'>+%evasion_pct%%%</font> evasion and <b>True Strike</b> for %active_duration%s. Your next attack gains +%bonus_range% attack range, triggers guaranteed <font color='#d8ae53'>pure cleave</font>, and steals %ms_steal_pct%%% movement speed for %ms_steal_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_w_Note0": {
     "ru": "Чистый прорубающий урон не срабатывает по постройкам.",
@@ -191,6 +191,86 @@
     "ru": "%КРАЖИ СКОРОСТИ:",
     "en": "%MOVE SPEED STEAL:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3": {
+    "ru": "Зеркальное лезвие",
+    "en": "Mirror Blade"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_Description": {
+    "ru": "<font color='#91a0b4'><b>Пассивно: Искажённый клинок</b></font><br>Увеличивает скорость атаки на <font color='#9acd32'>+%bonus_as%</font>. Каждая <b>3-я атака</b> <font color='#7d7d7d'>(или удар по цели под замедлением от <b>Призрачного кинжала</b>)</font> наносит %pure_base% + %pure_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#d8ae53'>чистого урона</font> и прорубает врагов на %cleave_pct%%% в радиусе %cleave_radius%.<br><br><font color='#91a0b4'><b>Активно: Призрачный выпад</b></font><br>Даёт <font color='#9acd32'>+%evasion_pct%%%</font> уклонения и <b>True Strike</b> на %active_duration% сек. Следующая атака получает +%bonus_range% к дальности, гарантированно наносит <font color='#d8ae53'>чистый прорубающий урон</font>, похищает %ms_steal_pct%%% скорости передвижения на %ms_steal_duration% сек., <font color='#7998b5'>обездвиживает</font> цель на <font color='#7998b5'>%root_duration% сек.</font> и снижает её броню на %armor_shred% на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive: Distorted Edge</b></font><br>Grants <font color='#9acd32'>+%bonus_as%</font> attack speed. Every <b>3rd attack</b> <font color='#7d7d7d'>(or any hit vs targets slowed by <b>Spectral Dagger</b>)</font> deals %pure_base% + %pure_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#d8ae53'>pure damage</font> and cleaves for %cleave_pct%%% within %cleave_radius% radius.<br><br><font color='#91a0b4'><b>Active: Phantom Lunge</b></font><br>Grants <font color='#9acd32'>+%evasion_pct%%%</font> evasion and <b>True Strike</b> for %active_duration%s. Your next attack gains +%bonus_range% attack range, triggers guaranteed <font color='#d8ae53'>pure cleave</font>, steals %ms_steal_pct%%% movement speed for %ms_steal_duration%s, <font color='#7998b5'>roots</font> the target for <font color='#7998b5'>%root_duration%s</font>, and reduces its armor by %armor_shred% for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_Note0": {
+    "ru": "Чистый прорубающий урон, обездвиживание и раскол брони не срабатывают по постройкам.",
+    "en": "Pure cleave, root, and armor shred do not trigger against buildings."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_bonus_as": {
+    "ru": "ДОП. СКОРОСТЬ АТАКИ:",
+    "en": "BONUS ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_pure_base": {
+    "ru": "БАЗОВЫЙ ЧИСТЫЙ УРОН:",
+    "en": "BASE PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_pure_agi_pct": {
+    "ru": "%УРОНА ОТ ЛОВКОСТИ:",
+    "en": "%AGILITY PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_evasion_pct": {
+    "ru": "%УКЛОНЕНИЯ (АКТИВНО):",
+    "en": "%ACTIVE EVASION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_ms_steal_pct": {
+    "ru": "%КРАЖИ СКОРОСТИ:",
+    "en": "%MOVE SPEED STEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_root_duration": {
+    "ru": "ОБЕЗДВИЖИВАНИЕ:",
+    "en": "ROOT DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t3_armor_shred": {
+    "ru": "СНИЖЕНИЕ БРОНИ:",
+    "en": "ARMOR REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4": {
+    "ru": "Зеркальное лезвие",
+    "en": "Mirror Blade"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_Description": {
+    "ru": "<font color='#91a0b4'><b>Пассивно: Искажённый клинок</b></font><br>Увеличивает скорость атаки на <font color='#9acd32'>+%bonus_as%</font>. Каждая <b>3-я атака</b> <font color='#7d7d7d'>(или каждая 2-я, пока действуют эффекты <b>Призрачного выпада</b> или ускорения <b>Материализации</b>, а также любой удар по цели под замедлением от <b>Призрачного кинжала</b>)</font> наносит %pure_base% + %pure_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#d8ae53'>чистого урона</font> и прорубает врагов на %cleave_pct%%% в радиусе %cleave_radius%.<br><br><font color='#91a0b4'><b>Активно: Призрачный выпад</b></font><br>Даёт <font color='#9acd32'>+%evasion_pct%%%</font> уклонения и <b>True Strike</b> на %active_duration% сек. Следующая атака получает +%bonus_range% к дальности, гарантированно наносит <font color='#d8ae53'>чистый прорубающий урон</font>, похищает %ms_steal_pct%%% скорости передвижения на %ms_steal_duration% сек., <font color='#7998b5'>обездвиживает</font> цель на <font color='#7998b5'>%root_duration% сек.</font> и снижает её броню на %armor_shred% на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive: Distorted Edge</b></font><br>Grants <font color='#9acd32'>+%bonus_as%</font> attack speed. Every <b>3rd attack</b> <font color='#7d7d7d'>(or every 2nd attack while <b>Phantom Lunge</b> or <b>Reality</b> haste is active, and any hit vs targets slowed by <b>Spectral Dagger</b>)</font> deals %pure_base% + %pure_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#d8ae53'>pure damage</font> and cleaves for %cleave_pct%%% within %cleave_radius% radius.<br><br><font color='#91a0b4'><b>Active: Phantom Lunge</b></font><br>Grants <font color='#9acd32'>+%evasion_pct%%%</font> evasion and <b>True Strike</b> for %active_duration%s. Your next attack gains +%bonus_range% attack range, triggers guaranteed <font color='#d8ae53'>pure cleave</font>, steals %ms_steal_pct%%% movement speed for %ms_steal_duration%s, <font color='#7998b5'>roots</font> the target for <font color='#7998b5'>%root_duration%s</font>, and reduces its armor by %armor_shred% for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_Note0": {
+    "ru": "Чистый прорубающий урон, обездвиживание и раскол брони не срабатывают по постройкам.",
+    "en": "Pure cleave, root, and armor shred do not trigger against buildings."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_bonus_as": {
+    "ru": "ДОП. СКОРОСТЬ АТАКИ:",
+    "en": "BONUS ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_pure_base": {
+    "ru": "БАЗОВЫЙ ЧИСТЫЙ УРОН:",
+    "en": "BASE PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_pure_agi_pct": {
+    "ru": "%УРОНА ОТ ЛОВКОСТИ:",
+    "en": "%AGILITY PURE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_evasion_pct": {
+    "ru": "%УКЛОНЕНИЯ (АКТИВНО):",
+    "en": "%ACTIVE EVASION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_ms_steal_pct": {
+    "ru": "%КРАЖИ СКОРОСТИ:",
+    "en": "%MOVE SPEED STEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_root_duration": {
+    "ru": "ОБЕЗДВИЖИВАНИЕ:",
+    "en": "ROOT DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_w_t4_armor_shred": {
+    "ru": "СНИЖЕНИЕ БРОНИ:",
+    "en": "ARMOR REDUCTION:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_phantom_e": {
     "ru": "Астральный портал",
     "en": "Astral Portal"
@@ -211,13 +291,45 @@
     "ru": "ОБЗОР ПОРТАЛА:",
     "en": "PORTAL VISION:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3": {
+    "ru": "Астральный портал",
+    "en": "Astral Portal"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_Description": {
+    "ru": "Открывает в указанной точке постоянный <b>Астральный портал</b>, раскрывающий область радиусом %vision_radius% и служащий точкой перехода для способности <b>Материализация</b>.<br><br>Порталы раскрывают невидимость <font color='#7d7d7d'>(<b>True Sight</b>)</font> и замедляют врагов на <font color='#7998b5'>%slow_pct%%%</font> в радиусе %truesight_radius%. Одновременно может существовать до %max_portals% порталов; при установке нового самый старый исчезает.",
+    "en": "Opens a persistent <b>Astral Portal</b> at the target location, granting %vision_radius% vision and serving as a destination for <b>Reality</b>.<br><br>Portals grant <b>True Sight</b> and slow enemies by <font color='#7998b5'>%slow_pct%%%</font> within %truesight_radius% radius. Up to %max_portals% portals may exist at once; placing another destroys the oldest one."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_Note0": {
+    "ru": "Порталы неуязвимы, их нельзя выбрать целью, и они не мешают передвижению.",
+    "en": "Portals are invulnerable, untargetable, and do not obstruct movement."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_max_portals": {
+    "ru": "МАКС. ПОРТАЛОВ:",
+    "en": "MAX PORTALS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_vision_radius": {
+    "ru": "ОБЗОР ПОРТАЛА:",
+    "en": "PORTAL VISION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_truesight_radius": {
+    "ru": "РАДИУС АУРЫ/TRUE SIGHT:",
+    "en": "AURA / TRUE SIGHT RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_e_t3_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ ПОРТАЛА:",
+    "en": "%PORTAL SLOW:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_phantom_d": {
     "ru": "Материализация",
     "en": "Reality"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_d_Description": {
-    "ru": "Мгновенно переносит Спектру к <b>Астральному порталу</b>, ближайшему к указанной точке, сбрасывая летящие снаряды.<br><br>После переноса скорость передвижения увеличивается на <font color='#9acd32'>+%ms_pct%%%</font>, а герой получает <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
-    "en": "Instantly teleports Spectre to the <b>Astral Portal</b> closest to the target point, disjointing incoming projectiles.<br><br>Upon arrival, grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+    "ru": "Мгновенно переносит Спектру к <b>Астральному порталу</b>, ближайшему к указанной точке, сбрасывая летящие снаряды и мгновенно перезаряжая способность <b>Призрачный кинжал</b>.<br><br>После переноса скорость передвижения увеличивается на <font color='#9acd32'>+%ms_pct%%%</font>, а герой получает <b>прохождение сквозь существ</b> на %ms_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Instantly teleports Spectre to the <b>Astral Portal</b> closest to the target point, disjointing incoming projectiles and immediately resetting the cooldown of <b>Spectral Dagger</b>.<br><br>Upon arrival, grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_Shard_Description": {
+    "ru": "Дарует способности <b>%shard_charges% заряда</b> применения.",
+    "en": "Grants <b>%shard_charges% charges</b>."
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_d_Note0": {
     "ru": "Способность нельзя применить, если на карте нет активных порталов.",
@@ -231,17 +343,53 @@
     "ru": "ДЛИТЕЛЬНОСТЬ УСКОРЕНИЯ:",
     "en": "HASTE DURATION:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4": {
+    "ru": "Материализация",
+    "en": "Reality"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_Description": {
+    "ru": "Мгновенно переносит Спектру к <b>Астральному порталу</b>, ближайшему к указанной точке, сбрасывая летящие снаряды и мгновенно перезаряжая способность <b>Призрачный кинжал</b>.<br><br>После переноса скорость передвижения увеличивается на <font color='#9acd32'>+%ms_pct%%%</font>, герой получает <b>прохождение сквозь существ</b> на %ms_duration% сек. и выпускает ударную волну в радиусе %shock_radius%, нанося %shock_dmg% + %shock_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и снижая броню врагов на %armor_shred% на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Instantly teleports Spectre to the <b>Astral Portal</b> closest to the target point, disjointing incoming projectiles and immediately resetting the cooldown of <b>Spectral Dagger</b>.<br><br>Upon arrival, grants <font color='#9acd32'>+%ms_pct%%%</font> movement speed and <b>phased movement</b> for %ms_duration%s, and unleashes a shockwave in a %shock_radius% radius dealing %shock_dmg% + %shock_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and reducing armor by %armor_shred% for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_Shard_Description": {
+    "ru": "Дарует способности <b>%shard_charges% заряда</b> применения.",
+    "en": "Grants <b>%shard_charges% charges</b>."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_Note0": {
+    "ru": "Способность нельзя применить, если на карте нет активных порталов. Ударная волна и раскол брони не действуют на постройки.",
+    "en": "Cannot be cast when no active portals exist on the map. The shockwave and armor shred do not affect buildings."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_ms_pct": {
+    "ru": "%БОНУСА К СКОРОСТИ:",
+    "en": "%BONUS MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_ms_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ УСКОРЕНИЯ:",
+    "en": "HASTE DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_shock_dmg": {
+    "ru": "УРОН ВОЛНЫ:",
+    "en": "SHOCKWAVE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_shock_agi_pct": {
+    "ru": "%ВОЛНЫ ОТ ЛОВКОСТИ:",
+    "en": "%SHOCKWAVE AGILITY DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_d_t4_armor_shred": {
+    "ru": "СНИЖЕНИЕ БРОНИ:",
+    "en": "ARMOR REDUCTION:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_phantom_r": {
     "ru": "Шторм Разломов",
     "en": "Rift Storm"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_r_Description": {
-    "ru": "Перегружает сеть <b>Астральных порталов</b> на %duration% сек., мгновенно сбрасывая перезарядку способности <b>Материализация</b> и убирая её перезарядку на %free_d_duration% сек.<br><br>Каждые %pulse_interval% сек. все порталы выпускают импульс в радиусе %pulse_radius%, нанося %pulse_dmg% + %pulse_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">не развеивается</span>",
-    "en": "Overloads the <b>Astral Portal</b> network for %duration%s, resetting the cooldown of <b>Reality</b> and removing its cooldown for %free_d_duration%s.<br><br>Every %pulse_interval%s, all portals emit a shockwave within %pulse_radius% radius, dealing %pulse_dmg% + %pulse_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Not Dispellable</span>"
+    "ru": "Перегружает сеть <b>Астральных порталов</b> на %duration% сек., мгновенно сбрасывая перезарядку <font color='#7d7d7d'>(и заряды)</font> способности <b>Материализация</b> и убирая её перезарядку на %free_d_duration% сек.<br><br>Каждые %pulse_interval% сек. все порталы выпускают импульс в радиусе %pulse_radius%, нанося %pulse_dmg% + %pulse_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font>, замедляя врагов на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек. и снижая их броню на %armor_shred% на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">не развеивается</span>",
+    "en": "Overloads the <b>Astral Portal</b> network for %duration%s, resetting the cooldown <font color='#7d7d7d'>(and charges)</font> of <b>Reality</b> and removing its cooldown for %free_d_duration%s.<br><br>Every %pulse_interval%s, all portals emit a shockwave within %pulse_radius% radius, dealing %pulse_dmg% + %pulse_agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font>, slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s, and reducing their armor by %armor_shred% for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Not Dispellable</span>"
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_r_Note0": {
-    "ru": "Импульсы порталов также снижают броню задетых врагов. Замедление и раскол брони можно снять обычным развеиванием.",
-    "en": "Portal pulses also shred armor of affected enemies. The slow and armor shred can be removed by a Basic Dispel."
+    "ru": "Замедление и раскол брони от импульсов можно снять обычным развеиванием, однако сама перегрузка и бесплатная Материализация не развеиваются.",
+    "en": "Portal slow and armor shred can be removed by a Basic Dispel, while the overload and free Reality cannot be dispelled."
   },
   "DOTA_Tooltip_ability_evo_spectre_phantom_r_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ ШТОРМА:",
@@ -262,6 +410,10 @@
   "DOTA_Tooltip_ability_evo_spectre_phantom_r_pulse_radius": {
     "ru": "РАДИУС ИМПУЛЬСА:",
     "en": "PULSE RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_phantom_r_armor_shred": {
+    "ru": "СНИЖЕНИЕ БРОНИ:",
+    "en": "ARMOR REDUCTION:"
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_q": {
     "ru": "Астральный кокон",
@@ -291,6 +443,74 @@
     "ru": "%ЗАМЕДЛЕНИЯ:",
     "en": "%MOVE SLOW:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3": {
+    "ru": "Астральный кокон",
+    "en": "Astral Cocoon"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_Description": {
+    "ru": "Применяет к Спектре или союзному герою <b>сильное развеивание</b> и окутывает защитным барьером прочностью %base_shield% + %str_pct%%% от <font color='#e03e2e'>силы</font> на %duration% сек.<br><br>При разрушении или по окончании действия кокон <b>лечит</b> цель на <font color='#9acd32'>%heal_pct%%%</font> от полной прочности щита и взрывается в радиусе %blast_radius%, нанося врагам полный запас барьера в виде <font color='#87ceeb'>магического урона</font> и замедляя их на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Applies a <b>Strong Dispel</b> to Spectre or an allied hero and surrounds them with a barrier absorbing %base_shield% + %str_pct%%% of <font color='#e03e2e'>Strength</font> for %duration%s.<br><br>Upon breaking or expiring, the cocoon <b>heals</b> the target for <font color='#9acd32'>%heal_pct%%%</font> of its full capacity and detonates in a %blast_radius% radius, dealing the full barrier capacity as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_Note0": {
+    "ru": "Урон от взрыва и лечение зависят от полной начальной прочности барьера, а не от его остатка.",
+    "en": "Explosion damage and healing are based on the cocoon's full initial capacity, not its remaining value."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_base_shield": {
+    "ru": "БАЗОВЫЙ ЩИТ:",
+    "en": "BASE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_str_pct": {
+    "ru": "%ЩИТА ОТ СИЛЫ:",
+    "en": "%STRENGTH SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_blast_radius": {
+    "ru": "РАДИУС ВЗРЫВА:",
+    "en": "BLAST RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t3_heal_pct": {
+    "ru": "%ЛЕЧЕНИЯ ОТ ЩИТА:",
+    "en": "%SHIELD HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4": {
+    "ru": "Астральный кокон",
+    "en": "Astral Cocoon"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_Description": {
+    "ru": "Можно применять даже в <b>оглушении и безмолвии</b>. Накладывает <b>сильное развеивание</b> и окутывает Спектру или союзного героя барьером прочностью %base_shield% + %str_pct%%% от <font color='#e03e2e'>силы</font> на %duration% сек. При применении на союзника дополнительно накладывает копию кокона на Спектру прочностью <font color='#9acd32'>%self_copy_pct%%%</font> от основного.<br><br>При разрушении или по окончании действия кокон <b>лечит</b> цель на <font color='#9acd32'>%heal_pct%%%</font> от полной прочности щита и взрывается в радиусе %blast_radius%, нанося врагам полный запас барьера в виде <font color='#87ceeb'>магического урона</font> и замедляя их на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Can be cast even while <b>stunned or silenced</b>. Applies a <b>Strong Dispel</b> and surrounds Spectre or an allied hero with a barrier absorbing %base_shield% + %str_pct%%% of <font color='#e03e2e'>Strength</font> for %duration%s. When cast on an ally, also wraps Spectre in a secondary cocoon worth <font color='#9acd32'>%self_copy_pct%%%</font> of the shield.<br><br>Upon breaking or expiring, the cocoon <b>heals</b> its bearer for <font color='#9acd32'>%heal_pct%%%</font> of its full capacity and detonates in a %blast_radius% radius, dealing the full barrier capacity as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_Note0": {
+    "ru": "Урон от взрыва и лечение зависят от полной начальной прочности барьера; копия на Спектре также лечит и взрывается.",
+    "en": "Explosion damage and healing are based on initial capacity; Spectre's secondary cocoon also heals and detonates."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_base_shield": {
+    "ru": "БАЗОВЫЙ ЩИТ:",
+    "en": "BASE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_str_pct": {
+    "ru": "%ЩИТА ОТ СИЛЫ:",
+    "en": "%STRENGTH SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_blast_radius": {
+    "ru": "РАДИУС ВЗРЫВА:",
+    "en": "BLAST RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_heal_pct": {
+    "ru": "%ЛЕЧЕНИЯ ОТ ЩИТА:",
+    "en": "%SHIELD HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_q_t4_self_copy_pct": {
+    "ru": "%КОПИИ ЩИТА СЕБЕ:",
+    "en": "%SELF SHIELD COPY:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_bastion_w": {
     "ru": "Разряд барьера",
     "en": "Barrier Discharge"
@@ -319,13 +539,89 @@
     "ru": "%ВОЗВРАТА ЩИТА:",
     "en": "%SHIELD REFUND:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3": {
+    "ru": "Разряд барьера",
+    "en": "Barrier Discharge"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_Description": {
+    "ru": "Подрывает все активные щиты на Спектре <font color='#7d7d7d'>(<b>Астральный кокон</b> и пассивный барьер от <b>Покоя Эгиды</b>)</font>, нанося врагам в радиусе %radius% %base_damage% + %str_pct%%% от <font color='#e03e2e'>силы</font> + <font color='#e03e2e'>100%%</font> от объёма взорванных щитов <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и оглушая их на <font color='#7998b5'>%stun_duration%</font> сек.<br><br>Возвращает <font color='#9acd32'>%refund_pct%%%</font> от взорванного запаса обратно в пассивный щит. Если активных щитов при применении не было, на <font color='#9acd32'>%surge_duration%</font> сек. включает ускоренное накопление <b>Покоя Эгиды</b> даже в бою.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">сильное</span>",
+    "en": "Detonates all active shields on Spectre <font color='#7d7d7d'>(<b>Astral Cocoon</b> and passive barrier from <b>Aegis Repose</b>)</font> in a %radius% radius, dealing %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> + <font color='#e03e2e'>100%%</font> of the detonated shield capacity as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and stunning enemies for <font color='#7998b5'>%stun_duration%</font>s.<br><br>Refunds <font color='#9acd32'>%refund_pct%%%</font> of the detonated capacity into your passive barrier. If cast with no active shields, triggers <b>Aegis Repose</b> regeneration for <font color='#9acd32'>%surge_duration%</font>s even in combat.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_Note0": {
+    "ru": "Взорванный Астральный кокон не вызывает свой обычный взрыв, передавая оставшуюся прочность в урон разряда.",
+    "en": "Detonating Astral Cocoon suppresses its normal explosion, channeling its remaining capacity into this discharge."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_str_pct": {
+    "ru": "%УРОНА ОТ СИЛЫ:",
+    "en": "%STRENGTH DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_stun_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+    "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_refund_pct": {
+    "ru": "%ВОЗВРАТА ЩИТА:",
+    "en": "%SHIELD REFUND:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t3_surge_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ПРИЛИВА:",
+    "en": "SURGE DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4": {
+    "ru": "Разряд барьера",
+    "en": "Barrier Discharge"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_Description": {
+    "ru": "Подрывает все активные щиты на Спектре <font color='#7d7d7d'>(<b>Астральный кокон</b> и пассивный барьер от <b>Покоя Эгиды</b>)</font>, нанося врагам в радиусе %radius% %base_damage% + %str_pct%%% от <font color='#e03e2e'>силы</font> + <font color='#e03e2e'>100%%</font> от объёма взорванных щитов <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font>, <b>притягивая</b> их к себе на %pull_distance% и оглушая на <font color='#7998b5'>%stun_duration%</font> сек.<br><br>Возвращает <font color='#9acd32'>%refund_pct%%%</font> от взорванного запаса обратно в пассивный щит <font color='#7d7d7d'>(или запускает реген <b>Покоя Эгиды</b> на <font color='#9acd32'>%surge_duration%</font> сек. при пустом применении)</font>, а попадание хотя бы по одному вражескому герою сокращает перезарядку <b>Астрального кокона</b> на <font color='#9acd32'>%q_cd_reduce%</font> сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">сильное</span>",
+    "en": "Detonates all active shields on Spectre <font color='#7d7d7d'>(<b>Astral Cocoon</b> and passive barrier from <b>Aegis Repose</b>)</font> in a %radius% radius, dealing %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> + <font color='#e03e2e'>100%%</font> of the detonated shield capacity as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font>, <b>pulling</b> enemies %pull_distance% units inward and stunning them for <font color='#7998b5'>%stun_duration%</font>s.<br><br>Refunds <font color='#9acd32'>%refund_pct%%%</font> of the detonated capacity into your passive barrier <font color='#7d7d7d'>(or triggers <b>Aegis Repose</b> regeneration for <font color='#9acd32'>%surge_duration%</font>s if cast empty)</font>. Hitting an enemy hero reduces <b>Astral Cocoon</b> cooldown by <font color='#9acd32'>%q_cd_reduce%</font>s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_Note0": {
+    "ru": "Взорванный Астральный кокон не вызывает свой обычный взрыв, передавая оставшуюся прочность в урон разряда и сохраняя лечение от кокона.",
+    "en": "Detonating Astral Cocoon suppresses its normal explosion, channeling its remaining capacity into this discharge while preserving the heal."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_base_damage": {
+    "ru": "БАЗОВЫЙ УРОН:",
+    "en": "BASE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_str_pct": {
+    "ru": "%УРОНА ОТ СИЛЫ:",
+    "en": "%STRENGTH DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_pull_distance": {
+    "ru": "ДАЛЬНОСТЬ ПРИТЯЖЕНИЯ:",
+    "en": "PULL DISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_stun_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
+    "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_q_cd_reduce": {
+    "ru": "СНИЖЕНИЕ ПЕРЕЗАРЯДКИ Q:",
+    "en": "COCOON COOLDOWN REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_refund_pct": {
+    "ru": "%ВОЗВРАТА ЩИТА:",
+    "en": "%SHIELD REFUND:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_w_t4_surge_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ПРИЛИВА:",
+    "en": "SURGE DURATION:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_bastion_e": {
     "ru": "Покой Эгиды",
     "en": "Aegis Repose"
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_e_Description": {
-    "ru": "Если Спектра %idle_delay% сек. не наносит и не получает урон от вражеских героев, она накапливает пассивный барьер по %regen_per_sec% + %regen_str_pct%%% от <font color='#e03e2e'>силы</font> в сек. вплоть до %max_shield% + %max_str_pct%%% от <font color='#e03e2e'>силы</font>.<br><br>Пока на Спектре активен любой щит, она получает <font color='#d8ae53'>+%status_res%%%</font> к сопротивлению эффектам и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки.",
-    "en": "After %idle_delay%s without dealing or taking damage from enemy heroes, Spectre passively builds a barrier at %regen_per_sec% + %regen_str_pct%%% of <font color='#e03e2e'>Strength</font> per second up to %max_shield% + %max_str_pct%%% of <font color='#e03e2e'>Strength</font>.<br><br>While protected by any shield, Spectre gains <font color='#d8ae53'>+%status_res%%%</font> status resistance and <font color='#9acd32'>+%bonus_as%</font> attack speed."
+    "ru": "Если Спектра не получает урон в течение %idle_delay% сек., она накапливает пассивный барьер по %regen_per_sec% + %regen_str_pct%%% от <font color='#e03e2e'>силы</font> в сек. вплоть до %max_shield% + %max_str_pct%%% от <font color='#e03e2e'>силы</font>.<br><br>Пока на Спектре активен любой щит, она получает <font color='#d8ae53'>+%status_res%%%</font> к сопротивлению эффектам и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки.",
+    "en": "After %idle_delay%s without taking damage, Spectre passively builds a barrier at %regen_per_sec% + %regen_str_pct%%% of <font color='#e03e2e'>Strength</font> per second up to %max_shield% + %max_str_pct%%% of <font color='#e03e2e'>Strength</font>.<br><br>While protected by any shield, Spectre gains <font color='#d8ae53'>+%status_res%%%</font> status resistance and <font color='#9acd32'>+%bonus_as%</font> attack speed."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_Shard_Description": {
+    "ru": "Увеличивает максимальный запас щита от <b>Покоя Эгиды</b> в <font color='#d8ae53'><b>×%shard_shield_mult%</b></font> раза.",
+    "en": "Increases the maximum barrier capacity of <b>Aegis Repose</b> by <font color='#d8ae53'><b>×%shard_shield_mult%</b></font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_e_Note0": {
     "ru": "Пассивный барьер поглощает все типы урона. Накопление барьера и пассивные бонусы отключаются истощением.",
@@ -355,13 +651,105 @@
     "ru": "СКОРОСТЬ АТАКИ:",
     "en": "ATTACK SPEED:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3": {
+    "ru": "Покой Эгиды",
+    "en": "Aegis Repose"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_Description": {
+    "ru": "Если Спектра не получает урон в течение %idle_delay% сек., она накапливает пассивный барьер по %regen_per_sec% + %regen_str_pct%%% от <font color='#e03e2e'>силы</font> в сек. вплоть до %max_shield% + %max_str_pct%%% от <font color='#e03e2e'>силы</font>.<br><br>Пока на Спектре активен любой щит, она получает <font color='#d8ae53'>+%status_res%%%</font> к сопротивлению эффектам и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки. При полном разрушении любого щита Спектра получает <font color='#9acd32'>+%break_ms_pct%%%</font> к скорости передвижения на %break_ms_duration% сек.",
+    "en": "After %idle_delay%s without taking damage, Spectre passively builds a barrier at %regen_per_sec% + %regen_str_pct%%% of <font color='#e03e2e'>Strength</font> per second up to %max_shield% + %max_str_pct%%% of <font color='#e03e2e'>Strength</font>.<br><br>While protected by any shield, Spectre gains <font color='#d8ae53'>+%status_res%%%</font> status resistance and <font color='#9acd32'>+%bonus_as%</font> attack speed. Whenever any active barrier breaks, Spectre gains <font color='#9acd32'>+%break_ms_pct%%%</font> movement speed for %break_ms_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_Shard_Description": {
+    "ru": "Увеличивает максимальный запас щита от <b>Покоя Эгиды</b> в <font color='#d8ae53'><b>×%shard_shield_mult%</b></font> раза.",
+    "en": "Increases the maximum barrier capacity of <b>Aegis Repose</b> by <font color='#d8ae53'><b>×%shard_shield_mult%</b></font>."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_Note0": {
+    "ru": "Пассивный барьер поглощает все типы урона. Накопление барьера и пассивные бонусы отключаются истощением.",
+    "en": "The passive barrier blocks all damage types. Barrier generation and passive bonuses are disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_regen_per_sec": {
+    "ru": "ЩИТ В СЕКУНДУ:",
+    "en": "SHIELD PER SECOND:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_regen_str_pct": {
+    "ru": "%РЕГЕНЕРАЦИИ ОТ СИЛЫ:",
+    "en": "%STRENGTH SHIELD REGEN:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_max_shield": {
+    "ru": "МАКС. ПАССИВНЫЙ ЩИТ:",
+    "en": "MAX PASSIVE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_max_str_pct": {
+    "ru": "%МАКС. ЩИТА ОТ СИЛЫ:",
+    "en": "%STRENGTH MAX SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_status_res": {
+    "ru": "%СОПРОТИВЛЕНИЯ ЭФФЕКТАМ:",
+    "en": "%STATUS RESISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_bonus_as": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t3_break_ms_pct": {
+    "ru": "%СКОРОСТИ ПРИ РАЗРУШЕНИИ:",
+    "en": "%SHATTER MOVE SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4": {
+    "ru": "Покой Эгиды",
+    "en": "Aegis Repose"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_Description": {
+    "ru": "Если Спектра не получает урон в течение %idle_delay% сек., она накапливает пассивный барьер по %regen_per_sec% + %regen_str_pct%%% от <font color='#e03e2e'>силы</font> в сек. вплоть до %max_shield% + %max_str_pct%%% от <font color='#e03e2e'>силы</font>. Кроме того, <font color='#e03e2e'>%leech_shield_pct%%%</font> от нанесённого <font color='#e03e2e'>физического урона от атак</font> напрямую восполняет барьер даже в бою.<br><br>Пока на Спектре активен любой щит, она получает <font color='#d8ae53'>+%status_res%%%</font> к сопротивлению эффектам и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки. При полном разрушении любого щита Спектра получает <font color='#9acd32'>+%break_ms_pct%%%</font> к скорости передвижения на %break_ms_duration% сек.",
+    "en": "After %idle_delay%s without taking damage, Spectre passively builds a barrier at %regen_per_sec% + %regen_str_pct%%% of <font color='#e03e2e'>Strength</font> per second up to %max_shield% + %max_str_pct%%% of <font color='#e03e2e'>Strength</font>. Additionally, <font color='#e03e2e'>%leech_shield_pct%%%</font> of <font color='#e03e2e'>physical attack damage</font> dealt restores barrier capacity directly even in combat.<br><br>While protected by any shield, Spectre gains <font color='#d8ae53'>+%status_res%%%</font> status resistance and <font color='#9acd32'>+%bonus_as%</font> attack speed. Whenever any active barrier breaks, Spectre gains <font color='#9acd32'>+%break_ms_pct%%%</font> movement speed for %break_ms_duration%s."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_Shard_Description": {
+    "ru": "Увеличивает максимальный запас щита от <b>Покоя Эгиды</b> в <font color='#d8ae53'><b>×%shard_shield_mult%</b></font> раза.",
+    "en": "Increases the maximum barrier capacity of <b>Aegis Repose</b> by <font color='#d8ae53'><b>×%shard_shield_mult%</b></font>."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_Note0": {
+    "ru": "Конвертация в щит срабатывает только от физического урона с руки и не работает от заклинаний или отражённого урона. Истощение отключает пассивные бонусы.",
+    "en": "Barrier conversion triggers only on physical attack damage, not from spells or reflected damage. Break disables passive bonuses."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_regen_per_sec": {
+    "ru": "ЩИТ В СЕКУНДУ:",
+    "en": "SHIELD PER SECOND:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_regen_str_pct": {
+    "ru": "%РЕГЕНЕРАЦИИ ОТ СИЛЫ:",
+    "en": "%STRENGTH SHIELD REGEN:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_max_shield": {
+    "ru": "МАКС. ПАССИВНЫЙ ЩИТ:",
+    "en": "MAX PASSIVE SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_max_str_pct": {
+    "ru": "%МАКС. ЩИТА ОТ СИЛЫ:",
+    "en": "%STRENGTH MAX SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_leech_shield_pct": {
+    "ru": "%ВАМПИРИЗМА В ЩИТ:",
+    "en": "%ATTACK SHIELD LEECH:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_status_res": {
+    "ru": "%СОПРОТИВЛЕНИЯ ЭФФЕКТАМ:",
+    "en": "%STATUS RESISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_bonus_as": {
+    "ru": "СКОРОСТЬ АТАКИ:",
+    "en": "ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_e_t4_break_ms_pct": {
+    "ru": "%СКОРОСТИ ПРИ РАЗРУШЕНИИ:",
+    "en": "%SHATTER MOVE SPEED:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_bastion_r": {
     "ru": "Несокрушимый Купол",
     "en": "Unbreakable Dome"
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_r_Description": {
-    "ru": "Создаёт вокруг Спектры мобильный силовой купол радиусом %radius% на %duration% сек., даруя союзным героям внутри барьер прочностью %ally_shield% + %shield_str_pct%%% от <font color='#e03e2e'>силы</font> и <b>полностью блокируя</b> урон от врагов за пределами купола.<br><br>Каждые %pulse_interval% сек. купол наносит врагам внутри %pulse_dmg% + %pulse_str_pct%%% от <font color='#e03e2e'>силы</font> <font color='#87ceeb'>магического урона</font>, замедляет их на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек. и добавляет Спектре <font color='#e03e2e'>+%shield_per_enemy%</font> пассивного щита за каждого задетого врага.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">не развеивается</span>",
-    "en": "Deploys a mobile force dome in a %radius% radius around Spectre for %duration%s, granting allied heroes inside a %ally_shield% + %shield_str_pct%%% of <font color='#e03e2e'>Strength</font> barrier and <b>completely blocking</b> damage from enemies outside the dome.<br><br>Every %pulse_interval%s, the dome deals %pulse_dmg% + %pulse_str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#87ceeb'>magical damage</font> to enemies inside, slows them by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s, and adds <font color='#e03e2e'>+%shield_per_enemy%</font> passive shield to Spectre per enemy hit.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Not Dispellable</span>"
+    "ru": "Создаёт вокруг Спектры мобильный силовой купол радиусом %radius% на %duration% сек., даруя союзным героям внутри барьер прочностью %ally_shield% + %shield_str_pct%%% от <font color='#e03e2e'>силы</font> и <b>полностью блокируя</b> урон от врагов за пределами купола.<br><br>Каждые %pulse_interval% сек. купол наносит врагам внутри %pulse_dmg% + %pulse_str_pct%%% от <font color='#e03e2e'>силы</font> <font color='#87ceeb'>магического урона</font>, замедляет их на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек. и добавляет Спектре <font color='#e03e2e'>+%shield_per_enemy%</font> пассивного щита за каждого задетого героя <font color='#7d7d7d'>(с крипов <font color='#9acd32'>%creep_shield_pct%%%</font>)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">не развеивается</span>",
+    "en": "Deploys a mobile force dome in a %radius% radius around Spectre for %duration%s, granting allied heroes inside a %ally_shield% + %shield_str_pct%%% of <font color='#e03e2e'>Strength</font> barrier and <b>completely blocking</b> damage from enemies outside the dome.<br><br>Every %pulse_interval%s, the dome deals %pulse_dmg% + %pulse_str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#87ceeb'>magical damage</font> to enemies inside, slows them by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s, and adds <font color='#e03e2e'>+%shield_per_enemy%</font> passive shield to Spectre per enemy hero hit <font color='#7d7d7d'>(<font color='#9acd32'>%creep_shield_pct%%%</font> from creeps)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Not Dispellable</span>"
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_r_Note0": {
     "ru": "Замедление от импульсов можно снять обычным развеиванием, однако сам купол и его барьер развеять нельзя.",
@@ -384,16 +772,20 @@
     "en": "PULSE DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_spectre_bastion_r_shield_per_enemy": {
-    "ru": "ЩИТ ЗА ВРАГА:",
-    "en": "SHIELD PER ENEMY:"
+    "ru": "ЩИТ ЗА ГЕРОЯ:",
+    "en": "SHIELD PER HERO:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_bastion_r_creep_shield_pct": {
+    "ru": "%ЩИТА С КРИПОВ:",
+    "en": "%CREEP SHIELD GAIN:"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion": {
     "ru": "Астральная Инверсия",
     "en": "Astral Inversion"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_Description": {
-    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> от урона плюс %flat_dmg%.",
-    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> of the damage plus %flat_dmg%."
+    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> <font color='#7d7d7d'>(растёт с уровнем героя)</font>.",
+    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> <font color='#7d7d7d'>(scales with hero level)</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_Note0": {
     "ru": "Не срабатывает от отражённого урона, не усиливается заклинаниями и отключается истощением.",
@@ -403,17 +795,13 @@
     "ru": "%ОТРАЖЕНИЯ ФИЗ. УРОНА:",
     "en": "%PHYS REFLECT AS MAGIC:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_flat_dmg": {
-    "ru": "БАЗОВЫЙ ОТВЕТНЫЙ УРОН:",
-    "en": "FLAT REFLECT DAMAGE:"
-  },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t3": {
     "ru": "Астральная Инверсия",
     "en": "Astral Inversion"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t3_Description": {
-    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> от урона плюс %flat_dmg% и снижает его сопротивление магии на <font color='#87ceeb'>%mr_shred%%%</font> на %mr_shred_dur% сек.",
-    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> of the damage plus %flat_dmg%, reducing their magic resistance by <font color='#87ceeb'>%mr_shred%%%</font> for %mr_shred_dur%s."
+    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> от урона плюс %flat_dmg% <font color='#7d7d7d'>(оба значения растут с уровнем героя)</font>.",
+    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> of the damage plus %flat_dmg% <font color='#7d7d7d'>(both scale with hero level)</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t3_Note0": {
     "ru": "Не срабатывает от отражённого урона, не усиливается заклинаниями и отключается истощением.",
@@ -427,17 +815,13 @@
     "ru": "БАЗОВЫЙ ОТВЕТНЫЙ УРОН:",
     "en": "FLAT REFLECT DAMAGE:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t3_mr_shred": {
-    "ru": "%СНИЖЕНИЯ СОПР. МАГИИ:",
-    "en": "%MAGIC RES REDUCTION:"
-  },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t4": {
     "ru": "Астральная Инверсия",
     "en": "Astral Inversion"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t4_Description": {
-    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> от урона + %flat_dmg% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font>, снижает его сопротивление магии на <font color='#87ceeb'>%mr_shred%%%</font> на %mr_shred_dur% сек. и восстанавливает Спектре <font color='#87ceeb'>%mana_restore% маны</font>.",
-    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> of the damage + %flat_dmg% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font>, reduces their magic resistance by <font color='#87ceeb'>%mr_shred%%%</font> for %mr_shred_dur%s, and restores <font color='#87ceeb'>%mana_restore% mana</font> to Spectre."
+    "ru": "Любой входящий <font color='#e03e2e'>физический урон</font> <font color='#7d7d7d'>(до снижения защитой)</font> отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font> в размере <font color='#d8ae53'>%reflect_pct%%%</font> от урона + %flat_dmg% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#7d7d7d'>(все значения растут с уровнем героя)</font>.",
+    "en": "All incoming <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(pre-mitigation)</font> is reflected back to the attacker as <font color='#87ceeb'>magical damage</font> equal to <font color='#d8ae53'>%reflect_pct%%%</font> of the damage + %flat_dmg% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> <font color='#7d7d7d'>(all scale with hero level)</font>."
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t4_Note0": {
     "ru": "Не срабатывает от отражённого урона, не усиливается заклинаниями и отключается истощением.",
@@ -455,27 +839,19 @@
     "ru": "%ОТВЕТА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INTELLIGENCE REFLECT:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t4_mr_shred": {
-    "ru": "%СНИЖЕНИЯ СОПР. МАГИИ:",
-    "en": "%MAGIC RES REDUCTION:"
-  },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_inversion_t4_mana_restore": {
-    "ru": "ВОССТАНОВЛЕНИЕ МАНЫ:",
-    "en": "MANA RESTORED:"
-  },
   "DOTA_Tooltip_ability_evo_spectre_mirror_q": {
-    "ru": "Луч инверсии",
-    "en": "Inversion Beam"
+    "ru": "Тропа инверсии",
+    "en": "Inversion Trail"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_q_Description": {
-    "ru": "Выпускает пробивающий луч на дальность %range%, нанося %base_damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и замедляя врагов на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Накладывает на поражённых врагов <b>Обратную полярность</b> на %polarity_dur% сек.: <font color='#d8ae53'>%polarity_pct%%%</font> от их <font color='#e03e2e'>физического урона</font> по союзным героям отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
-    "en": "Fires a piercing beam up to %range% range, dealing %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Applies <b>Reverse Polarity</b> for %polarity_dur%s: <font color='#d8ae53'>%polarity_pct%%%</font> of the target's <font color='#e03e2e'>physical damage</font> dealt to allied heroes reflects back as <font color='#87ceeb'>magical damage</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+    "ru": "Бросает кинжал в точку или врага, нанося %damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и оставляя <b>Тропу инверсии</b> на %dagger_path_duration% сек.<br><br>Поражённые враги также оставляют след в течение %hero_path_duration% сек. Тропа замедляет врагов на <font color='#7998b5'>%bonus_movespeed%%%</font>, даёт Спектре <font color='#9acd32'>+%bonus_movespeed%%%</font> скорости, <b>свободное передвижение</b> через любые препятствия и усиливает отражение <b>Астральной Инверсии</b> на <font color='#d8ae53'>+%trail_reflect_pct%%%</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Flings a spectral dagger toward a point or enemy unit, dealing %damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and drawing an <b>Inversion Trail</b> for %dagger_path_duration%s.<br><br>Units struck also trail a shadow path for %hero_path_duration%s. Enemies on the trail are slowed by <font color='#7998b5'>%bonus_movespeed%%%</font>, while Spectre gains <font color='#9acd32'>+%bonus_movespeed%%%</font> movement speed, <b>unobstructed movement</b> over terrain, and <font color='#d8ae53'>+%trail_reflect_pct%%%</font> bonus reflection on <b>Astral Inversion</b>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_q_Note0": {
-    "ru": "Отражённый урон от Обратной полярности не усиливается заклинаниями и не срабатывает на урон по самой Спектре.",
-    "en": "Reverse Polarity reflection ignores spell amplification and does not trigger on damage dealt to Spectre herself."
+    "ru": "Свободное передвижение сохраняется ещё %dagger_grace_period% сек. после схода со следа. Способность нельзя заблокировать или отразить.",
+    "en": "Unobstructed movement lingers for %dagger_grace_period%s after leaving the path. Does not trigger spell block or spell reflect."
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_q_base_damage": {
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_damage": {
     "ru": "БАЗОВЫЙ МАГ. УРОН:",
     "en": "BASE MAGIC DAMAGE:"
   },
@@ -483,13 +859,77 @@
     "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INTELLIGENCE DAMAGE:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_q_slow_pct": {
-    "ru": "%ЗАМЕДЛЕНИЯ:",
-    "en": "%MOVE SLOW:"
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_bonus_movespeed": {
+    "ru": "%ИЗМЕНЕНИЯ СКОРОСТИ:",
+    "en": "%MOVE SPEED CHANGE:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_q_polarity_pct": {
-    "ru": "%ОТРАЖЕНИЯ ПОЛЯРНОСТИ:",
-    "en": "%POLARITY REFLECT:"
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_trail_reflect_pct": {
+    "ru": "%БОНУСА ИНВЕРСИИ:",
+    "en": "%BONUS INVERSION REFLECT:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3": {
+    "ru": "Тропа инверсии",
+    "en": "Inversion Trail"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_Description": {
+    "ru": "Бросает кинжал в точку или врага, нанося %damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и оставляя <b>Тропу инверсии</b> на %dagger_path_duration% сек.<br><br>Поражённые враги также оставляют след в течение %hero_path_duration% сек. Тропа замедляет врагов на <font color='#7998b5'>%bonus_movespeed%%%</font>, даёт Спектре <font color='#9acd32'>+%bonus_movespeed%%%</font> скорости, <b>свободное передвижение</b> через любые препятствия и усиливает отражение <b>Астральной Инверсии</b> на <font color='#d8ae53'>+%trail_reflect_pct%%%</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Flings a spectral dagger toward a point or enemy unit, dealing %damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and drawing an <b>Inversion Trail</b> for %dagger_path_duration%s.<br><br>Units struck also trail a shadow path for %hero_path_duration%s. Enemies on the trail are slowed by <font color='#7998b5'>%bonus_movespeed%%%</font>, while Spectre gains <font color='#9acd32'>+%bonus_movespeed%%%</font> movement speed, <b>unobstructed movement</b> over terrain, and <font color='#d8ae53'>+%trail_reflect_pct%%%</font> bonus reflection on <b>Astral Inversion</b>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_Note0": {
+    "ru": "Свободное передвижение сохраняется ещё %dagger_grace_period% сек. после схода со следа. Способность нельзя заблокировать или отразить.",
+    "en": "Unobstructed movement lingers for %dagger_grace_period%s after leaving the path. Does not trigger spell block or spell reflect."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_damage": {
+    "ru": "БАЗОВЫЙ МАГ. УРОН:",
+    "en": "BASE MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_int_pct": {
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
+    "en": "%INTELLIGENCE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_bonus_movespeed": {
+    "ru": "%ИЗМЕНЕНИЯ СКОРОСТИ:",
+    "en": "%MOVE SPEED CHANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t3_trail_reflect_pct": {
+    "ru": "%БОНУСА ИНВЕРСИИ:",
+    "en": "%BONUS INVERSION REFLECT:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4": {
+    "ru": "Тропа инверсии",
+    "en": "Inversion Trail"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_Description": {
+    "ru": "Бросает кинжал в точку или врага, нанося %damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и оставляя <b>Тропу инверсии</b> на %dagger_path_duration% сек.<br><br>Поражённые враги также оставляют след в течение %hero_path_duration% сек. Тропа замедляет врагов на <font color='#7998b5'>%bonus_movespeed%%%</font> и наносит им <font color='#87ceeb'>%rift_dps% + %rift_int_pct%%% ИНТ</font> маг. урона в секунду, а Спектре даёт <font color='#9acd32'>+%bonus_movespeed%%%</font> скорости, <b>свободное передвижение</b> через любые препятствия и <font color='#d8ae53'>+%trail_reflect_pct%%%</font> к отражению <b>Астральной Инверсии</b>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Flings a spectral dagger toward a point or enemy unit, dealing %damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and drawing an <b>Inversion Trail</b> for %dagger_path_duration%s.<br><br>Units struck also trail a shadow path for %hero_path_duration%s. Enemies on the trail are slowed by <font color='#7998b5'>%bonus_movespeed%%%</font> and take <font color='#87ceeb'>%rift_dps% + %rift_int_pct%%% INT</font> magical damage per second, while Spectre gains <font color='#9acd32'>+%bonus_movespeed%%%</font> movement speed, <b>unobstructed movement</b> over terrain, and <font color='#d8ae53'>+%trail_reflect_pct%%%</font> bonus reflection on <b>Astral Inversion</b>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_Note0": {
+    "ru": "Свободное передвижение сохраняется ещё %dagger_grace_period% сек. после схода со следа. Способность нельзя заблокировать или отразить.",
+    "en": "Unobstructed movement lingers for %dagger_grace_period%s after leaving the path. Does not trigger spell block or spell reflect."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_damage": {
+    "ru": "БАЗОВЫЙ МАГ. УРОН:",
+    "en": "BASE MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_int_pct": {
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
+    "en": "%INTELLIGENCE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_bonus_movespeed": {
+    "ru": "%ИЗМЕНЕНИЯ СКОРОСТИ:",
+    "en": "%MOVE SPEED CHANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_trail_reflect_pct": {
+    "ru": "%БОНУСА ИНВЕРСИИ:",
+    "en": "%BONUS INVERSION REFLECT:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_rift_dps": {
+    "ru": "УРОН ТРОПЫ В СЕК.:",
+    "en": "TRAIL DAMAGE PER SEC:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_q_t4_rift_int_pct": {
+    "ru": "%ТРОПЫ ОТ ИНТ:",
+    "en": "%TRAIL INT SCALING:"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_w": {
     "ru": "Эфирные клинки",
@@ -519,13 +959,93 @@
     "ru": "%БОНУСА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INTELLIGENCE BONUS:"
   },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3": {
+    "ru": "Эфирные клинки",
+    "en": "Ethereal Blades"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_Description": {
+    "ru": "Наделяет следующие %charges% атаки <font color='#7d7d7d'>(до %duration% сек.)</font> астральной энергией, увеличивая скорость атаки на <font color='#9acd32'>+%bonus_as%</font> и дальность атаки на +%bonus_range%.<br><br>Усиленные атаки получают <b>True Strike</b>, полностью превращают <font color='#e03e2e'>физический урон</font> в <font color='#87ceeb'>магический</font>, дополнительно наносят %bonus_dmg% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font>, <b>прорубают</b> врагов в радиусе %cleave_radius% на <font color='#87ceeb'>%cleave_pct%%%</font> <font color='#87ceeb'>магическим уроном</font> и крадут <font color='#87ceeb'>%mana_steal% маны</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Empowers your next %charges% attacks <font color='#7d7d7d'>(for up to %duration%s)</font>, granting <font color='#9acd32'>+%bonus_as%</font> attack speed and +%bonus_range% attack range.<br><br>Empowered attacks gain <b>True Strike</b>, convert all <font color='#e03e2e'>physical</font> attack damage into <font color='#87ceeb'>magical damage</font>, deal %bonus_dmg% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> bonus <font color='#87ceeb'>magical damage</font>, <b>cleave</b> nearby enemies within %cleave_radius% radius for <font color='#87ceeb'>%cleave_pct%%%</font> magical damage, and steal <font color='#87ceeb'>%mana_steal% mana</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_Note0": {
+    "ru": "Не срабатывает при атаке построек.",
+    "en": "Does not trigger when attacking buildings."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_charges": {
+    "ru": "УСИЛЕННЫХ АТАК:",
+    "en": "EMPOWERED ATTACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_bonus_as": {
+    "ru": "БОНУС К СКОРОСТИ АТАКИ:",
+    "en": "BONUS ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_bonus_dmg": {
+    "ru": "ДОП. МАГ. УРОН:",
+    "en": "BONUS MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_int_pct": {
+    "ru": "%БОНУСА ОТ ИНТЕЛЛЕКТА:",
+    "en": "%INTELLIGENCE BONUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_cleave_pct": {
+    "ru": "%МАГ. ПРОРУБАНИЯ:",
+    "en": "%ARCANE CLEAVE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t3_mana_steal": {
+    "ru": "КРАЖА МАНЫ:",
+    "en": "MANA STEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4": {
+    "ru": "Эфирные клинки",
+    "en": "Ethereal Blades"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_Description": {
+    "ru": "Наделяет следующие %charges% атаки <font color='#7d7d7d'>(до %duration% сек.)</font> астральной энергией, увеличивая скорость атаки на <font color='#9acd32'>+%bonus_as%</font> и дальность атаки на +%bonus_range%.<br><br>Усиленные атаки получают <b>True Strike</b>, полностью превращают <font color='#e03e2e'>физический урон</font> в <font color='#87ceeb'>магический</font>, дополнительно наносят %bonus_dmg% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font>, <b>прорубают</b> врагов в радиусе %cleave_radius% на <font color='#87ceeb'>%cleave_pct%%%</font> <font color='#87ceeb'>магическим уроном</font> и крадут <font color='#87ceeb'>%mana_steal% маны</font>.<br><br>Каждая <b>4-я</b> усиленная атака <font color='#7998b5'>оглушает</font> цель на %stun_duration% сек. и сокращает перезарядку <b>Тропы инверсии</b> на <font color='#9acd32'>%q_cd_reduce%</font> сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Empowers your next %charges% attacks <font color='#7d7d7d'>(for up to %duration%s)</font>, granting <font color='#9acd32'>+%bonus_as%</font> attack speed and +%bonus_range% attack range.<br><br>Empowered attacks gain <b>True Strike</b>, convert all <font color='#e03e2e'>physical</font> attack damage into <font color='#87ceeb'>magical damage</font>, deal %bonus_dmg% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> bonus <font color='#87ceeb'>magical damage</font>, <b>cleave</b> nearby enemies within %cleave_radius% radius for <font color='#87ceeb'>%cleave_pct%%%</font> magical damage, and steal <font color='#87ceeb'>%mana_steal% mana</font>.<br><br>Every <b>4th</b> empowered strike <font color='#7998b5'>stuns</font> the target for %stun_duration%s and reduces <b>Inversion Trail</b> cooldown by <font color='#9acd32'>%q_cd_reduce%</font>s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_Note0": {
+    "ru": "Не срабатывает при атаке построек.",
+    "en": "Does not trigger when attacking buildings."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_charges": {
+    "ru": "УСИЛЕННЫХ АТАК:",
+    "en": "EMPOWERED ATTACKS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_bonus_as": {
+    "ru": "БОНУС К СКОРОСТИ АТАКИ:",
+    "en": "BONUS ATTACK SPEED:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_bonus_dmg": {
+    "ru": "ДОП. МАГ. УРОН:",
+    "en": "BONUS MAGIC DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_int_pct": {
+    "ru": "%БОНУСА ОТ ИНТЕЛЛЕКТА:",
+    "en": "%INTELLIGENCE BONUS:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_cleave_pct": {
+    "ru": "%МАГ. ПРОРУБАНИЯ:",
+    "en": "%ARCANE CLEAVE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_mana_steal": {
+    "ru": "КРАЖА МАНЫ:",
+    "en": "MANA STEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_stun_duration": {
+    "ru": "ОГЛУШЕНИЕ (4-Й УДАР):",
+    "en": "4TH STRIKE STUN:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_w_t4_q_cd_reduce": {
+    "ru": "СНИЖЕНИЕ ПЕРЕЗАРЯДКИ Q:",
+    "en": "DAGGER COOLDOWN REDUCTION:"
+  },
   "DOTA_Tooltip_ability_evo_spectre_mirror_e": {
     "ru": "Зеркальная оболочка",
     "en": "Mirror Shell"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_e_Description": {
-    "ru": "<h1>Пассивно</h1>Увеличивает сопротивление магии на <font color='#87ceeb'>+%passive_mr%%%</font> и урон от заклинаний на <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><h1>Активно</h1>Применяет на Спектру <b>обычное развеивание</b>, окружает её барьером от <font color='#87ceeb'>магического урона</font> прочностью %magic_shield% + %shield_int_pct%%% от <font color='#87ceeb'>интеллекта</font> на %duration% сек. и провоцирует врагов в радиусе %taunt_radius% атаковать её в течение <font color='#7998b5'>%taunt_dur%</font> сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
-    "en": "<h1>Passive</h1>Increases magic resistance by <font color='#87ceeb'>+%passive_mr%%%</font> and spell amplification by <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><h1>Active</h1>Applies a <b>Basic Dispel</b> to Spectre, grants a %magic_shield% + %shield_int_pct%%% of <font color='#87ceeb'>Intelligence</font> <font color='#87ceeb'>magical damage</font> barrier for %duration%s, and forces enemies within %taunt_radius% radius to attack her for <font color='#7998b5'>%taunt_dur%</font>s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+    "ru": "<font color='#91a0b4'><b>Пассивно</b></font><br>Увеличивает сопротивление магии на <font color='#87ceeb'>+%passive_mr%%%</font> и урон от заклинаний на <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Активно</b></font><br>Применяет на Спектру <b>обычное развеивание</b> и окружает её барьером от <font color='#87ceeb'>магического урона</font> прочностью %magic_shield% + %shield_int_pct%%% от <font color='#87ceeb'>интеллекта</font> на %duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive</b></font><br>Increases magic resistance by <font color='#87ceeb'>+%passive_mr%%%</font> and spell amplification by <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Active</b></font><br>Applies a <b>Basic Dispel</b> to Spectre and surrounds her with a %magic_shield% + %shield_int_pct%%% of <font color='#87ceeb'>Intelligence</font> <font color='#87ceeb'>magical damage</font> barrier for %duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_spectre_mirror_e_Note0": {
     "ru": "Пассивные бонусы отключаются истощением. Барьер поглощает только магический урон.",
@@ -543,7 +1063,63 @@
     "ru": "МАГИЧЕСКИЙ ЩИТ:",
     "en": "MAGIC SHIELD:"
   },
-  "DOTA_Tooltip_ability_evo_spectre_mirror_e_taunt_dur": {
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3": {
+    "ru": "Зеркальная оболочка",
+    "en": "Mirror Shell"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_Description": {
+    "ru": "<font color='#91a0b4'><b>Пассивно</b></font><br>Увеличивает сопротивление магии на <font color='#87ceeb'>+%passive_mr%%%</font> и урон от заклинаний на <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Активно</b></font><br>Применяет на Спектру <b>обычное развеивание</b>, окружает её барьером от <font color='#87ceeb'>магического урона</font> прочностью %magic_shield% + %shield_int_pct%%% от <font color='#87ceeb'>интеллекта</font> и снижает входящий <font color='#e03e2e'>физический урон</font> на <font color='#e03e2e'>%phys_reduce_pct%%%</font> на %duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive</b></font><br>Increases magic resistance by <font color='#87ceeb'>+%passive_mr%%%</font> and spell amplification by <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Active</b></font><br>Applies a <b>Basic Dispel</b> to Spectre, grants a %magic_shield% + %shield_int_pct%%% of <font color='#87ceeb'>Intelligence</font> <font color='#87ceeb'>magical damage</font> barrier and reduces incoming <font color='#e03e2e'>physical damage</font> by <font color='#e03e2e'>%phys_reduce_pct%%%</font> for %duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_Note0": {
+    "ru": "Пассивные бонусы отключаются истощением. Барьер поглощает только магический урон.",
+    "en": "Passive bonuses are disabled by Break. The barrier absorbs magical damage only."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_passive_mr": {
+    "ru": "%СОПР. МАГИИ:",
+    "en": "%MAGIC RESISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_passive_amp": {
+    "ru": "%УСИЛЕНИЯ ЗАКЛИНАНИЙ:",
+    "en": "%SPELL AMPLIFICATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_magic_shield": {
+    "ru": "МАГИЧЕСКИЙ ЩИТ:",
+    "en": "MAGIC SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t3_phys_reduce_pct": {
+    "ru": "%БЛОКА ФИЗ. УРОНА:",
+    "en": "%PHYS DAMAGE REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4": {
+    "ru": "Зеркальная оболочка",
+    "en": "Mirror Shell"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_Description": {
+    "ru": "<font color='#91a0b4'><b>Пассивно</b></font><br>Увеличивает сопротивление магии на <font color='#87ceeb'>+%passive_mr%%%</font> и урон от заклинаний на <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Активно</b></font><br>Применяет на Спектру <b>обычное развеивание</b>, окружает её барьером от <font color='#87ceeb'>магического урона</font> прочностью %magic_shield% + %shield_int_pct%%% от <font color='#87ceeb'>интеллекта</font> и снижает входящий <font color='#e03e2e'>физический урон</font> на <font color='#e03e2e'>%phys_reduce_pct%%%</font> на %duration% сек., а также провоцирует врагов в радиусе %taunt_radius% атаковать её в течение <font color='#7998b5'>%taunt_dur%</font> сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive</b></font><br>Increases magic resistance by <font color='#87ceeb'>+%passive_mr%%%</font> and spell amplification by <font color='#87ceeb'>+%passive_amp%%%</font>.<br><br><font color='#91a0b4'><b>Active</b></font><br>Applies a <b>Basic Dispel</b> to Spectre, grants a %magic_shield% + %shield_int_pct%%% of <font color='#87ceeb'>Intelligence</font> <font color='#87ceeb'>magical damage</font> barrier and reduces incoming <font color='#e03e2e'>physical damage</font> by <font color='#e03e2e'>%phys_reduce_pct%%%</font> for %duration%s, while forcing enemies within %taunt_radius% radius to attack her for <font color='#7998b5'>%taunt_dur%</font>s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_Note0": {
+    "ru": "Пассивные бонусы отключаются истощением. Барьер поглощает только магический урон.",
+    "en": "Passive bonuses are disabled by Break. The barrier absorbs magical damage only."
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_passive_mr": {
+    "ru": "%СОПР. МАГИИ:",
+    "en": "%MAGIC RESISTANCE:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_passive_amp": {
+    "ru": "%УСИЛЕНИЯ ЗАКЛИНАНИЙ:",
+    "en": "%SPELL AMPLIFICATION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_magic_shield": {
+    "ru": "МАГИЧЕСКИЙ ЩИТ:",
+    "en": "MAGIC SHIELD:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_phys_reduce_pct": {
+    "ru": "%БЛОКА ФИЗ. УРОНА:",
+    "en": "%PHYS DAMAGE REDUCTION:"
+  },
+  "DOTA_Tooltip_ability_evo_spectre_mirror_e_t4_taunt_dur": {
     "ru": "ДЛИТЕЛЬНОСТЬ ПРОВОКАЦИИ:",
     "en": "TAUNT DURATION:"
   },
@@ -720,44 +1296,20 @@
     "en": "Reflects incoming <font color='#e03e2e'>physical damage</font> back to the attacker as <font color='#87ceeb'>magical damage</font>. Disabled by Break."
   },
   "DOTA_Tooltip_modifier_evo_spectre_mirror_q_slow": {
-    "ru": "Луч инверсии",
-    "en": "Inversion Chill"
+    "ru": "Тропа инверсии",
+    "en": "Inversion Trail"
   },
   "DOTA_Tooltip_modifier_evo_spectre_mirror_q_slow_Description": {
     "ru": "Скорость передвижения изменена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
     "en": "Movement speed modified by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_polarity": {
-    "ru": "Обратная полярность",
-    "en": "Reverse Polarity"
-  },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_polarity_Description": {
-    "ru": "Часть <font color='#e03e2e'>физического урона</font>, наносимого союзникам Спектры, отражается обратно в атакующего в виде <font color='#87ceeb'>магического урона</font>.",
-    "en": "A portion of <font color='#e03e2e'>physical damage</font> dealt to Spectre's allies reflects back as <font color='#87ceeb'>magical damage</font>."
-  },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_mr_shred": {
-    "ru": "Искажение защиты",
-    "en": "Matter Fracture"
-  },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_mr_shred_Description": {
-    "ru": "Сопротивление магии изменено на <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>.",
-    "en": "Magic resistance modified by <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>."
-  },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_inv_shred": {
-    "ru": "Резонанс инверсии",
-    "en": "Inversion Burn"
-  },
-  "DOTA_Tooltip_modifier_evo_spectre_mirror_inv_shred_Description": {
-    "ru": "Сопротивление магии изменено на <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font> после отражения <font color='#e03e2e'>физического урона</font>.",
-    "en": "Magic resistance modified by <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font> from physical reflection."
-  },
   "DOTA_Tooltip_modifier_evo_spectre_mirror_q_phase": {
-    "ru": "Зеркальный разлом",
-    "en": "Mirror Rift"
+    "ru": "Тропа инверсии",
+    "en": "Inversion Trail"
   },
   "DOTA_Tooltip_modifier_evo_spectre_mirror_q_phase_Description": {
-    "ru": "Скорость передвижения увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>; герой получает <b>прохождение сквозь существ</b>.",
-    "en": "Movement speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> with <b>phased movement</b>."
+    "ru": "Скорость передвижения увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>, включено <b>свободное передвижение</b> через препятствия, а отражение <b>Астральной Инверсии</b> усилено на величину стаков (%).",
+    "en": "Movement speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> with <b>unobstructed movement</b> and <b>Astral Inversion</b> reflection increased by the stack count (%)."
   },
   "DOTA_Tooltip_modifier_evo_spectre_mirror_w_buff": {
     "ru": "Эфирные клинки",

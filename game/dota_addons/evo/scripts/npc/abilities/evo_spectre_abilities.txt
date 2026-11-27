@@ -138,6 +138,33 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"11.0 10.5 10.0 9.5"
+		"AbilityManaCost"				"45 47 50 52"
+		"AbilityValues"
+		{
+			"bonus_as"					"20 25 30 35"
+			"pure_base"					"35 47 60 72"
+			"pure_agi_pct"				"30 38 45 53"
+			"cleave_radius"				"225"
+			"cleave_pct"				"50"
+			"evasion_pct"				"30 38 45 53"
+			"active_duration"			"3.5"
+			"bonus_range"				"175"
+			"ms_steal_pct"				"12 14 16 18"
+			"ms_steal_duration"			"3.0"
+		}
+	}
+
+	"evo_spectre_phantom_w_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_w"
+		"AbilityTextureName"			"evo_spectre_phantom_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"						"5"
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"11.0 10.5 10.0 9.5 9.0"
@@ -154,13 +181,63 @@
 			"bonus_range"				"175"
 			"ms_steal_pct"				"12 14 16 18 20"
 			"ms_steal_duration"			"3.0"
-			"root_duration"				"1.15"
-			"armor_shred"				"5"
+			"root_duration"				"1.0"
+			"armor_shred"				"4"
+			"shred_duration"			"4.0"
+		}
+	}
+
+	"evo_spectre_phantom_w_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_w"
+		"AbilityTextureName"			"evo_spectre_phantom_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"11.0 10.5 10.0 9.5 9.0"
+		"AbilityManaCost"				"45 47 50 52 55"
+		"AbilityValues"
+		{
+			"bonus_as"					"20 25 30 35 40"
+			"pure_base"					"35 47 60 72 85"
+			"pure_agi_pct"				"30 38 45 53 60"
+			"cleave_radius"				"225"
+			"cleave_pct"				"50"
+			"evasion_pct"				"30 38 45 53 60"
+			"active_duration"			"3.5"
+			"bonus_range"				"175"
+			"ms_steal_pct"				"12 14 16 18 20"
+			"ms_steal_duration"			"3.0"
+			"root_duration"				"1.3"
+			"armor_shred"				"6"
 			"shred_duration"			"4.0"
 		}
 	}
 
 	"evo_spectre_phantom_e"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_er"
+		"AbilityTextureName"			"evo_spectre_phantom_e"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastRange"				"1200 1400 1600 1800"
+		"AbilityCooldown"				"0.5"
+		"AbilityManaCost"				"40 38 35 32"
+		"AbilityCharges"				"3"
+		"AbilityChargeRestoreTime"		"24.0 22.0 20.0 18.0"
+		"AbilityValues"
+		{
+			"max_portals"				"3"
+			"vision_radius"				"450"
+		}
+	}
+
+	"evo_spectre_phantom_e_t3"
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_er"
@@ -179,11 +256,6 @@
 			"vision_radius"				"450"
 			"truesight_radius"			"275"
 			"slow_pct"					"15"
-			"shock_radius"				"350"
-			"shock_dmg"					"85"
-			"shock_agi_pct"				"45"
-			"armor_shred"				"4"
-			"shred_duration"			"4.0"
 		}
 	}
 
@@ -193,15 +265,65 @@
 		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_er"
 		"AbilityTextureName"			"evo_spectre_phantom_d"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"HasShardUpgrade"				"1"
 		"MaxLevel"						"3"
 		"AbilityCastPoint"				"0.1"
 		"AbilityCastRange"				"0"
-		"AbilityCooldown"				"35.0 30.0 25.0"
 		"AbilityManaCost"				"0"
 		"AbilityValues"
 		{
+			"AbilityCooldown"
+			{
+				"value"					"35.0 30.0 25.0"
+				"special_bonus_shard"	"=0.0"
+			}
+			"AbilityCharges"
+			{
+				"value"					"0"
+				"special_bonus_shard"	"=2"
+			}
+			"AbilityChargeRestoreTime"
+			{
+				"value"					"0"
+				"special_bonus_shard"	"35.0 30.0 25.0"
+			}
+			"shard_charges"				"2"
+			"ms_pct"					"25"
+			"ms_duration"				"2.0"
+		}
+	}
+
+	"evo_spectre_phantom_d_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_phantom_er"
+		"AbilityTextureName"			"evo_spectre_phantom_d"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"HasShardUpgrade"				"1"
+		"MaxLevel"						"3"
+		"AbilityCastPoint"				"0.1"
+		"AbilityCastRange"				"0"
+		"AbilityManaCost"				"0"
+		"AbilityValues"
+		{
+			"AbilityCooldown"
+			{
+				"value"					"35.0 30.0 25.0"
+				"special_bonus_shard"	"=0.0"
+			}
+			"AbilityCharges"
+			{
+				"value"					"0"
+				"special_bonus_shard"	"=2"
+			}
+			"AbilityChargeRestoreTime"
+			{
+				"value"					"0"
+				"special_bonus_shard"	"35.0 30.0 25.0"
+			}
+			"shard_charges"				"2"
 			"ms_pct"					"25"
 			"ms_duration"				"2.0"
 			"shock_radius"				"350"
@@ -235,6 +357,8 @@
 			"pulse_agi_pct"				"35 40 45"
 			"slow_pct"					"25"
 			"slow_duration"				"1.6"
+			"armor_shred"				"4"
+			"shred_duration"			"4.0"
 		}
 	}
 
@@ -242,7 +366,33 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
-		"AbilityTextureName"			"abaddon_aphotic_shield"
+		"AbilityTextureName"			"evo_spectre_bastion_q"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.18"
+		"AbilityCastRange"				"650 685 725 760"
+		"AbilityCooldown"				"10.0 9.5 9.0 8.5"
+		"AbilityManaCost"				"75 80 85 90"
+		"AbilityValues"
+		{
+			"duration"					"6.0"
+			"base_shield"				"80 105 130 155"
+			"str_pct"					"25 30 35 40"
+			"blast_radius"				"375"
+			"slow_pct"					"25"
+			"slow_duration"				"2.5"
+		}
+	}
+
+	"evo_spectre_bastion_q_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
+		"AbilityTextureName"			"evo_spectre_bastion_q"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
@@ -256,8 +406,35 @@
 		"AbilityValues"
 		{
 			"duration"					"6.0"
-			"base_shield"				"160 210 260 310 360"
-			"str_pct"					"55 62 70 78 85"
+			"base_shield"				"80 105 130 155 180"
+			"str_pct"					"25 30 35 40 45"
+			"blast_radius"				"375"
+			"slow_pct"					"25"
+			"slow_duration"				"2.5"
+			"heal_pct"					"35"
+		}
+	}
+
+	"evo_spectre_bastion_q_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
+		"AbilityTextureName"			"evo_spectre_bastion_q"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.18"
+		"AbilityCastRange"				"650 685 725 760 800"
+		"AbilityCooldown"				"10.0 9.5 9.0 8.5 8.0"
+		"AbilityManaCost"				"75 80 85 90 95"
+		"AbilityValues"
+		{
+			"duration"					"6.0"
+			"base_shield"				"80 105 130 155 180"
+			"str_pct"					"25 30 35 40 45"
 			"blast_radius"				"375"
 			"slow_pct"					"25"
 			"slow_duration"				"2.5"
@@ -270,7 +447,30 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
-		"AbilityTextureName"			"abaddon_borrowed_time"
+		"AbilityTextureName"			"evo_spectre_bastion_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"7.0 6.8 6.5 6.3"
+		"AbilityManaCost"				"50 52 55 58"
+		"AbilityValues"
+		{
+			"radius"					"400"
+			"base_damage"				"80 110 140 170"
+			"str_pct"					"45"
+			"creep_mult"				"1.35"
+			"stun_duration"				"0.8 0.9 1.0 1.1"
+			"refund_pct"				"50"
+		}
+	}
+
+	"evo_spectre_bastion_w_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
+		"AbilityTextureName"			"evo_spectre_bastion_w"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -286,6 +486,31 @@
 			"creep_mult"				"1.35"
 			"stun_duration"				"0.8 0.9 1.0 1.1 1.2"
 			"refund_pct"				"50"
+			"surge_duration"			"2.5"
+		}
+	}
+
+	"evo_spectre_bastion_w_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion"
+		"AbilityTextureName"			"evo_spectre_bastion_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"7.0 6.8 6.5 6.3 6.0"
+		"AbilityManaCost"				"50 52 55 58 60"
+		"AbilityValues"
+		{
+			"radius"					"400"
+			"base_damage"				"80 110 140 170 200"
+			"str_pct"					"45"
+			"creep_mult"				"1.35"
+			"stun_duration"				"0.8 0.9 1.0 1.1 1.2"
+			"refund_pct"				"50"
+			"surge_duration"			"2.5"
 			"pull_distance"				"150"
 			"q_cd_reduce"				"2.5"
 		}
@@ -295,16 +520,62 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_bastion_er"
-		"AbilityTextureName"			"abaddon_frostmourne"
+		"AbilityTextureName"			"evo_spectre_bastion_e"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasShardUpgrade"				"1"
+		"MaxLevel"						"4"
+		"AbilityValues"
+		{
+			"idle_delay"				"7.0"
+			"regen_per_sec"				"11 14 18 21"
+			"regen_str_pct"				"3.5"
+			"max_shield"				"100 130 160 190"
+			"max_str_pct"				"30"
+			"shard_shield_mult"			"1.75"
+			"status_res"				"15 18 22 26"
+			"bonus_as"					"14 17 20 23"
+		}
+	}
+
+	"evo_spectre_bastion_e_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion_er"
+		"AbilityTextureName"			"evo_spectre_bastion_e"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasShardUpgrade"				"1"
 		"MaxLevel"						"5"
 		"AbilityValues"
 		{
-			"idle_delay"				"3.0"
-			"regen_per_sec"				"45 58 70 82 95"
-			"regen_str_pct"				"15"
-			"max_shield"				"200 260 320 380 440"
-			"max_str_pct"				"60"
+			"idle_delay"				"7.0"
+			"regen_per_sec"				"11 14 18 21 24"
+			"regen_str_pct"				"3.5"
+			"max_shield"				"100 130 160 190 220"
+			"max_str_pct"				"30"
+			"shard_shield_mult"			"1.75"
+			"status_res"				"15 18 22 26 30"
+			"bonus_as"					"14 17 20 23 26"
+			"break_ms_pct"				"25"
+			"break_ms_duration"			"2.0"
+		}
+	}
+
+	"evo_spectre_bastion_e_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_bastion_er"
+		"AbilityTextureName"			"evo_spectre_bastion_e"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HasShardUpgrade"				"1"
+		"MaxLevel"						"5"
+		"AbilityValues"
+		{
+			"idle_delay"				"7.0"
+			"regen_per_sec"				"11 14 18 21 24"
+			"regen_str_pct"				"3.5"
+			"max_shield"				"100 130 160 190 220"
+			"max_str_pct"				"30"
+			"shard_shield_mult"			"1.75"
 			"status_res"				"15 18 22 26 30"
 			"bonus_as"					"14 17 20 23 26"
 			"break_ms_pct"				"25"
@@ -317,7 +588,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_bastion_er"
-		"AbilityTextureName"			"arc_warden_magnetic_field"
+		"AbilityTextureName"			"evo_spectre_bastion_r"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -338,6 +609,7 @@
 			"slow_pct"					"30"
 			"slow_duration"				"1.6"
 			"shield_per_enemy"			"150"
+			"creep_shield_pct"			"15"
 		}
 	}
 
@@ -345,19 +617,18 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
-		"AbilityTextureName"			"spectre_dispersion"
+		"AbilityTextureName"			"evo_spectre_mirror_inversion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
 		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
-			"reflect_pct"				"100"
-			"flat_dmg"					"25"
-			"int_pct"					"0"
-			"mr_shred"					"0"
-			"mr_shred_dur"				"3.0"
-			"mana_restore"				"0"
+			"reflect_pct"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.74"
+			}
 		}
 	}
 
@@ -365,19 +636,23 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
-		"AbilityTextureName"			"spectre_dispersion"
+		"AbilityTextureName"			"evo_spectre_mirror_inversion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
 		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
-			"reflect_pct"				"100"
-			"flat_dmg"					"25"
-			"int_pct"					"0"
-			"mr_shred"					"12"
-			"mr_shred_dur"				"3.0"
-			"mana_restore"				"0"
+			"reflect_pct"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.74"
+			}
+			"flat_dmg"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.6"
+			}
 		}
 	}
 
@@ -385,55 +660,126 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
-		"AbilityTextureName"			"spectre_dispersion"
+		"AbilityTextureName"			"evo_spectre_mirror_inversion"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
 		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
-			"reflect_pct"				"100"
-			"flat_dmg"					"25"
-			"int_pct"					"20"
-			"mr_shred"					"12"
-			"mr_shred_dur"				"3.0"
-			"mana_restore"				"12"
+			"reflect_pct"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.74"
+			}
+			"flat_dmg"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.6"
+			}
+			"int_pct"
+			{
+				"value"					"10.0"
+				"hero_levelup"			"+0.3"
+			}
 		}
 	}
 
 	"evo_spectre_mirror_q"
 	{
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
-		"AbilityTextureName"			"void_spirit_aether_remnant"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_q"
+		"AbilityTextureName"			"evo_spectre_mirror_q"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"MaxLevel"						"5"
-		"AbilityCastPoint"				"0.18"
-		"AbilityCastRange"				"750 800 850 900 950"
-		"AbilityCooldown"				"7.0 6.8 6.5 6.3 6.0"
-		"AbilityManaCost"				"65 70 75 80 85"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.25"
+		"AbilityCastRange"				"900 950 1000 1050"
+		"AbilityCooldown"				"9.0 8.5 8.0 7.5"
+		"AbilityManaCost"				"55 60 65 70"
 		"AbilityValues"
 		{
-			"range"						"750 800 850 900 950"
-			"width"						"160"
-			"speed"						"1350"
-			"base_damage"				"90 125 160 195 230"
-			"int_pct"					"60 70 80 90 100"
+			"damage"					"75 100 130 165"
+			"int_pct"					"55 65 75 85"
 			"creep_mult"				"1.4"
-			"slow_pct"					"24 27 30 33 36"
-			"slow_duration"				"2.5"
-			"polarity_pct"				"25 30 35 40 45"
-			"polarity_dur"				"4.0"
-			"silence_duration"			"1.25"
-			"mr_shred"					"15"
-			"rift_duration"				"3.0"
+			"dagger_radius"				"125"
+			"path_radius"				"175"
+			"speed"						"1050 1100 1150 1200"
+			"bonus_movespeed"			"14 17 20 24"
+			"dagger_path_duration"		"6.0"
+			"hero_path_duration"		"4.0"
+			"dagger_grace_period"		"1.0"
+			"trail_reflect_pct"			"10"
+		}
+	}
+
+	"evo_spectre_mirror_q_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_q"
+		"AbilityTextureName"			"evo_spectre_mirror_q"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.25"
+		"AbilityCastRange"				"900 950 1000 1050 1100"
+		"AbilityCooldown"				"9.0 8.5 8.0 7.5 7.0"
+		"AbilityManaCost"				"55 60 65 70 75"
+		"AbilityValues"
+		{
+			"damage"					"75 100 130 165 205"
+			"int_pct"					"55 65 75 85 95"
+			"creep_mult"				"1.4"
+			"dagger_radius"				"125"
+			"path_radius"				"175"
+			"speed"						"1050 1100 1150 1200 1250"
+			"bonus_movespeed"			"14 17 20 24 28"
+			"dagger_path_duration"		"6.0"
+			"hero_path_duration"		"4.0"
+			"dagger_grace_period"		"1.0"
+			"trail_reflect_pct"			"16"
+		}
+	}
+
+	"evo_spectre_mirror_q_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_q"
+		"AbilityTextureName"			"evo_spectre_mirror_q"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.25"
+		"AbilityCastRange"				"900 950 1000 1050 1100"
+		"AbilityCooldown"				"9.0 8.5 8.0 7.5 7.0"
+		"AbilityManaCost"				"55 60 65 70 75"
+		"AbilityValues"
+		{
+			"damage"					"75 100 130 165 205"
+			"int_pct"					"55 65 75 85 95"
+			"creep_mult"				"1.4"
+			"dagger_radius"				"125"
+			"path_radius"				"175"
+			"speed"						"1050 1100 1150 1200 1250"
+			"bonus_movespeed"			"14 17 20 24 28"
+			"dagger_path_duration"		"6.0"
+			"hero_path_duration"		"4.0"
+			"dagger_grace_period"		"1.0"
+			"trail_reflect_pct"			"22"
 			"rift_dps"					"45"
 			"rift_int_pct"				"25"
-			"rift_ms_pct"				"30"
 		}
 	}
 
@@ -441,7 +787,30 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
-		"AbilityTextureName"			"obsidian_destroyer_arcane_orb"
+		"AbilityTextureName"			"evo_spectre_mirror_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"10.0 9.5 9.0 8.5"
+		"AbilityManaCost"				"55 60 65 70"
+		"AbilityValues"
+		{
+			"duration"					"6.0"
+			"charges"					"3 3 3 4"
+			"bonus_as"					"50 62 75 87"
+			"bonus_range"				"125"
+			"bonus_dmg"					"40 58 75 92"
+			"int_pct"					"45 55 65 75"
+		}
+	}
+
+	"evo_spectre_mirror_w_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
+		"AbilityTextureName"			"evo_spectre_mirror_w"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
@@ -460,6 +829,32 @@
 			"cleave_radius"				"250"
 			"cleave_pct"				"60"
 			"mana_steal"				"15"
+		}
+	}
+
+	"evo_spectre_mirror_w_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror"
+		"AbilityTextureName"			"evo_spectre_mirror_w"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"10.0 9.5 9.0 8.5 8.0"
+		"AbilityManaCost"				"55 60 65 70 75"
+		"AbilityValues"
+		{
+			"duration"					"6.0"
+			"charges"					"4"
+			"bonus_as"					"50 62 75 87 100"
+			"bonus_range"				"125"
+			"bonus_dmg"					"40 58 75 92 110"
+			"int_pct"					"45 55 65 75 85"
+			"cleave_radius"				"250"
+			"cleave_pct"				"60"
+			"mana_steal"				"15"
 			"stun_duration"				"0.6"
 			"q_cd_reduce"				"1.5"
 		}
@@ -469,7 +864,27 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_er"
-		"AbilityTextureName"			"antimage_counterspell"
+		"AbilityTextureName"			"evo_spectre_mirror_e"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"4"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"15.0 14.2 13.5 12.8"
+		"AbilityManaCost"				"60"
+		"AbilityValues"
+		{
+			"passive_mr"				"14 17 20 23"
+			"passive_amp"				"6 8 10 12"
+			"duration"					"3.0"
+			"magic_shield"				"150 195 240 285"
+			"shield_int_pct"			"50"
+		}
+	}
+
+	"evo_spectre_mirror_e_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_er"
+		"AbilityTextureName"			"evo_spectre_mirror_e"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"MaxLevel"						"5"
 		"AbilityCastPoint"				"0.0"
@@ -482,10 +897,30 @@
 			"duration"					"3.0"
 			"magic_shield"				"150 195 240 285 330"
 			"shield_int_pct"			"50"
+			"phys_reduce_pct"			"35"
+		}
+	}
+
+	"evo_spectre_mirror_e_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_er"
+		"AbilityTextureName"			"evo_spectre_mirror_e"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"5"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"15.0 14.2 13.5 12.8 12.0"
+		"AbilityManaCost"				"60"
+		"AbilityValues"
+		{
+			"passive_mr"				"14 17 20 23 26"
+			"passive_amp"				"6 8 10 12 14"
+			"duration"					"3.0"
+			"magic_shield"				"150 195 240 285 330"
+			"shield_int_pct"			"50"
+			"phys_reduce_pct"			"35"
 			"taunt_radius"				"325"
 			"taunt_dur"					"1.2 1.4 1.5 1.7 1.8"
-			"phys_reduce_pct"			"35"
-			"w_reset_icd"				"8.0"
 		}
 	}
 
@@ -493,7 +928,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/spectre/evo_spectre_mirror_er"
-		"AbilityTextureName"			"void_spirit_astral_step"
+		"AbilityTextureName"			"evo_spectre_mirror_r"
 		"AbilityType"					"ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"

@@ -7,6 +7,8 @@ import {
     registerModifier,
 } from "../../lib/dota_ts_adapter";
 import {
+    findMirrorInversionAbility,
+    findMirrorWAbility,
     findSpectreEnemies,
     getSpectreBranchMaxLevel,
     getSpectreInt,
@@ -52,9 +54,11 @@ export class evo_spectre_mirror_e extends BaseAbility {
             mod.SetStackCount(shield);
         }
 
-        for (const enemy of findSpectreEnemies(caster, caster.GetAbsOrigin(), radius)) {
-            if (!enemy || enemy.IsNull() || !enemy.IsAlive()) continue;
-            enemy.AddNewModifier(caster, this, "modifier_evo_spectre_mirror_e_taunt", { duration: tauntDur });
+        if (getSpectreTier(caster) >= 4) {
+            for (const enemy of findSpectreEnemies(caster, caster.GetAbsOrigin(), radius)) {
+                if (!enemy || enemy.IsNull() || !enemy.IsAlive()) continue;
+                enemy.AddNewModifier(caster, this, "modifier_evo_spectre_mirror_e_taunt", { duration: tauntDur });
+            }
         }
     }
 }
@@ -102,7 +106,6 @@ export class modifier_evo_spectre_mirror_e_passive extends BaseModifier {
 @registerModifier("modifier_evo_spectre_mirror_e_active")
 export class modifier_evo_spectre_mirror_e_active extends BaseModifier {
     private physReduce = 35;
-    private lastResetTime = -999;
 
     IsHidden(): boolean {
         return false;
@@ -114,11 +117,10 @@ export class modifier_evo_spectre_mirror_e_active extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "antimage_counterspell";
+        return "evo_spectre_mirror_e";
     }
     OnCreated(params: { shield?: number }): void {
         this.physReduce = 35;
-        this.lastResetTime = -999;
         const ab = this.GetAbility();
         if (ab && !ab.IsNull()) {
             this.physReduce = ab.GetSpecialValueFor("phys_reduce_pct");
@@ -135,15 +137,12 @@ export class modifier_evo_spectre_mirror_e_active extends BaseModifier {
         this.AddParticle(pfx, false, false, -1, false, false);
     }
     OnRefresh(params: { shield?: number }): void {
-        const prevReset = this.lastResetTime;
         this.OnCreated(params);
-        this.lastResetTime = prevReset;
     }
     DeclareFunctions(): ModifierFunction[] {
         return [
             dotaModifierFunction("MODIFIER_PROPERTY_MAGICAL_CONSTANT_BLOCK"),
             dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"),
-            dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE"),
         ];
     }
     GetModifierMagical_ConstantBlock(event: ModifierAttackEvent): number {
@@ -159,26 +158,6 @@ export class modifier_evo_spectre_mirror_e_active extends BaseModifier {
         if (!parent || parent.IsNull() || getSpectreTier(parent) < 3) return 0;
         return -this.physReduce;
     }
-    OnTakeDamage(event: ModifierInstanceEvent): void {
-        if (!IsServer()) return;
-        const parent = this.GetParent();
-        const ab = this.GetAbility();
-        if (!parent || parent.IsNull() || !ab || ab.IsNull()) return;
-        if (event.unit !== parent || event.damage <= 0) return;
-        if (getSpectreTier(parent) < 4) return;
-        if (event.damage_type !== DamageTypes.PHYSICAL) return;
-        if (!event.attacker || event.attacker.IsNull() || event.attacker === parent) return;
-
-        const now = GameRules.GetGameTime();
-        const icd = ab.GetSpecialValueFor("w_reset_icd");
-        if (now - this.lastResetTime < icd) return;
-
-        const wAb = parent.FindAbilityByName("evo_spectre_mirror_w");
-        if (wAb && !wAb.IsNull() && !wAb.IsCooldownReady()) {
-            this.lastResetTime = now;
-            wAb.EndCooldown();
-        }
-    }
 }
 
 @registerModifier("modifier_evo_spectre_mirror_e_taunt")
@@ -193,7 +172,7 @@ export class modifier_evo_spectre_mirror_e_taunt extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "antimage_counterspell";
+        return "evo_spectre_mirror_e";
     }
     OnCreated(): void {
         if (!IsServer()) return;
@@ -229,7 +208,7 @@ export class evo_spectre_mirror_r extends BaseAbility {
         caster.EmitSound("Hero_Spectre.HauntCast");
         caster.AddNewModifier(caster, this, "modifier_evo_spectre_mirror_r_aura", { duration: dur });
 
-        const wAb = caster.FindAbilityByName("evo_spectre_mirror_w");
+        const wAb = findMirrorWAbility(caster);
         if (wAb && !wAb.IsNull() && wAb.GetLevel() > 0) {
             caster.AddNewModifier(caster, wAb, "modifier_evo_spectre_mirror_w_buff", {
                 duration: dur,
@@ -253,7 +232,7 @@ export class modifier_evo_spectre_mirror_r_aura extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "void_spirit_astral_step";
+        return "evo_spectre_mirror_r";
     }
     IsAura(): boolean {
         return true;
@@ -301,7 +280,7 @@ export class modifier_evo_spectre_mirror_r_ally extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "void_spirit_astral_step";
+        return "evo_spectre_mirror_r";
     }
     DeclareFunctions(): ModifierFunction[] {
         return [dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE")];
@@ -311,8 +290,14 @@ export class modifier_evo_spectre_mirror_r_ally extends BaseModifier {
         const ally = this.GetParent();
         const spectre = this.GetCaster();
         if (!ally || ally.IsNull() || !spectre || spectre.IsNull()) return;
-        const invAb = spectre.FindAbilityByName("evo_spectre_mirror_inversion");
+        const invAb = findMirrorInversionAbility(spectre);
         if (!invAb || invAb.IsNull()) return;
         triggerAstralInversionReflect(ally, spectre, invAb, event);
     }
 }
+
+@registerAbility("evo_spectre_mirror_e_t3")
+export class evo_spectre_mirror_e_t3 extends evo_spectre_mirror_e {}
+
+@registerAbility("evo_spectre_mirror_e_t4")
+export class evo_spectre_mirror_e_t4 extends evo_spectre_mirror_e {}

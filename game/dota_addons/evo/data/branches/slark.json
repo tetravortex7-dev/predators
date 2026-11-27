@@ -5,8 +5,15 @@
   "diet": "CARNIVORE",
   "attr": "AGI",
   "keep_default_abilities": false,
-  "tags": ["aquatic", "agile", "slark"],
-  "spell_pool_tags": ["mobility", "assassin"],
+  "tags": [
+    "aquatic",
+    "agile",
+    "slark"
+  ],
+  "spell_pool_tags": [
+    "mobility",
+    "assassin"
+  ],
   "innate": "evo_slark_deep_predator",
   "signature": "evo_slark_t1_short_leap",
   "stages": [
@@ -29,7 +36,11 @@
         "evo_body_t2_slark_str",
         "evo_body_t2_slark_int"
       ],
-      "label_color": [110, 215, 225],
+      "label_color": [
+        110,
+        215,
+        225
+      ],
       "wearables": []
     },
     {
@@ -40,7 +51,7 @@
       "name_en": "Reef Stalker",
       "desc_ru": "Ветка Ловкача T2 (Ночной ассасин / AGI): Прыжок Хищника [Q], Тёмный Договор [W], Кража Сути [E].",
       "desc_en": "Agility Branch T2 (Night Assassin / AGI): Predator Pounce [Q], Dark Pact [W], Essence Theft [E].",
-      "scale": 0.9,
+      "scale": 0.85,
       "ability_level": 1,
       "abilities": [
         "evo_slark_agi_q",
@@ -51,8 +62,16 @@
       "next_body_ids": [
         "evo_body_t3_slark_agi"
       ],
-      "color": [95, 225, 210],
-      "label_color": [95, 235, 220],
+      "color": [
+        95,
+        225,
+        210
+      ],
+      "label_color": [
+        95,
+        235,
+        220
+      ],
       "wearables": [
         "Hydrakan Latch",
         "Shadow in the Deep Bracers"
@@ -66,7 +85,7 @@
       "name_en": "Abyssal Blade",
       "desc_ru": "Ветка Ловкача T3: мгновенная атака и +2 стака [E] при привязке [Q], +20% MS и фаза на [W], прок каждой 4-й атаки на [E], +25 AS в пассивке.",
       "desc_en": "Agility Branch T3: Free hit + 2 Essence stacks on [Q] latch, +20% MS & phase on [W], 4th-hit burst on [E], +25 AS in innate.",
-      "scale": 1.05,
+      "scale": 0.95,
       "ability_level": 2,
       "abilities": [
         "evo_slark_agi_q",
@@ -77,8 +96,16 @@
       "next_body_ids": [
         "evo_body_t4_slark_agi"
       ],
-      "color": [55, 200, 195],
-      "label_color": [65, 225, 235],
+      "color": [
+        55,
+        200,
+        195
+      ],
+      "label_color": [
+        65,
+        225,
+        235
+      ],
       "wearables": [
         "Hydrakan Latch",
         "Shadow in the Deep Bracers",
@@ -94,7 +121,7 @@
       "name_en": "Nightreef Sovereign",
       "desc_ru": "Ветка Ловкача T4: сброс [Q] за убийство на привязке, уклонение и AS на [W], вампиризм и +10% MS на 10+ стаках [E], Танец Теней [R].",
       "desc_en": "Agility Branch T4: [Q] reset on leashed kill, evasion & AS on [W], lifesteal & +10% MS at 10+ [E] stacks, Shadow Dance [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_slark_agi_q",
@@ -104,8 +131,16 @@
         "evo_slark_deep_predator"
       ],
       "next_body_ids": [],
-      "color": [35, 165, 215],
-      "label_color": [85, 215, 255],
+      "color": [
+        35,
+        165,
+        215
+      ],
+      "label_color": [
+        85,
+        215,
+        255
+      ],
       "wearables": [
         "Golden Hydrakan Latch",
         "Shadow in the Deep Bracers",
@@ -122,7 +157,7 @@
       "name_en": "Shellsnapper",
       "desc_ru": "Ветка Силы T2 (Брузер-акула / STR): Акулий Бросок [Q], Разрывающий Укус [W], Панцирь Бездны [E].",
       "desc_en": "Strength Branch T2 (Shark Bruiser / STR): Shark Slam [Q], Rending Bite [W], Abyssal Carapace [E].",
-      "scale": 0.9,
+      "scale": 0.85,
       "ability_level": 1,
       "abilities": [
         "evo_slark_str_q",
@@ -133,8 +168,16 @@
       "next_body_ids": [
         "evo_body_t3_slark_str"
       ],
-      "color": [225, 115, 75],
-      "label_color": [240, 130, 90],
+      "color": [
+        225,
+        115,
+        75
+      ],
+      "label_color": [
+        240,
+        130,
+        90
+      ],
       "wearables": [
         "Crawblade",
         "Gauntlet of the Shivshell Crawler"
@@ -148,7 +191,7 @@
       "name_en": "Reefjaw",
       "desc_ru": "Ветка Силы T3: срез брони на [Q], % урона от макс. HP на [W], стаки Ярости глубин на [E], +6 брони в пассивке.",
       "desc_en": "Strength Branch T3: Armor shred on [Q], Max HP% bite on [W], Deep Fury stacks on [E], +6 Armor in innate.",
-      "scale": 1.05,
+      "scale": 0.95,
       "ability_level": 2,
       "abilities": [
         "evo_slark_str_q",
@@ -159,8 +202,16 @@
       "next_body_ids": [
         "evo_body_t4_slark_str"
       ],
-      "color": [195, 75, 55],
-      "label_color": [230, 95, 75],
+      "color": [
+        195,
+        75,
+        55
+      ],
+      "label_color": [
+        230,
+        95,
+        75
+      ],
       "wearables": [
         "Crawblade",
         "Gauntlet of the Shivshell Crawler",
@@ -176,7 +227,7 @@
       "name_en": "Shark Leviathan",
       "desc_ru": "Ветка Силы T4: щит 12% Max HP на [Q], казнь <40% HP на [W], x2 пассивка <45% HP на [E], Челюсти Пучины [R].",
       "desc_en": "Strength Branch T4: 12% Max HP shield on [Q], <40% HP execute on [W], 2x carapace <45% HP on [E], Jaws of the Deep [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_slark_str_q",
@@ -186,8 +237,16 @@
         "evo_slark_deep_predator"
       ],
       "next_body_ids": [],
-      "color": [155, 45, 45],
-      "label_color": [220, 70, 70],
+      "color": [
+        155,
+        45,
+        45
+      ],
+      "label_color": [
+        220,
+        70,
+        70
+      ],
       "wearables": [
         "The Barb of Skadi",
         "Gauntlet of the Shivshell Crawler",
@@ -204,7 +263,7 @@
       "name_en": "Lantern Catcher",
       "desc_ru": "Ветка Интеллекта T2 (Глубинный маг / INT): Глубинная Сеть [Q], Волна Мрака [W], Зов Фонаря [E].",
       "desc_en": "Intelligence Branch T2 (Abyssal Mage / INT): Abyssal Net [Q], Dark Tide [W], Lantern Call [E].",
-      "scale": 0.9,
+      "scale": 0.85,
       "ability_level": 1,
       "abilities": [
         "evo_slark_int_q",
@@ -215,8 +274,16 @@
       "next_body_ids": [
         "evo_body_t3_slark_int"
       ],
-      "color": [110, 145, 255],
-      "label_color": [135, 175, 255],
+      "color": [
+        110,
+        145,
+        255
+      ],
+      "label_color": [
+        135,
+        175,
+        255
+      ],
       "wearables": [
         "Angler in the Abyss - Weapon",
         "Angler in the Abyss - Arms"
@@ -230,7 +297,7 @@
       "name_en": "Trench Hexer",
       "desc_ru": "Ветка Интеллекта T3: срез магрезиста на [Q], реген маны и -2с КД [Q] на [W], хил и замедление на [E], +10% Spell Amp в пассивке.",
       "desc_en": "Intelligence Branch T3: Magic res shred on [Q], mana & -2s [Q] CD on [W], heal & slow on [E], +10% Spell Amp in innate.",
-      "scale": 1.05,
+      "scale": 0.95,
       "ability_level": 2,
       "abilities": [
         "evo_slark_int_q",
@@ -241,8 +308,16 @@
       "next_body_ids": [
         "evo_body_t4_slark_int"
       ],
-      "color": [125, 85, 245],
-      "label_color": [165, 125, 255],
+      "color": [
+        125,
+        85,
+        245
+      ],
+      "label_color": [
+        165,
+        125,
+        255
+      ],
       "wearables": [
         "Angler in the Abyss - Weapon",
         "Angler in the Abyss - Arms",
@@ -258,7 +333,7 @@
       "name_en": "Abyssal Oracle",
       "desc_ru": "Ветка Интеллекта T4: стяжка и сайленс на [Q], тёмный след на [W], авто-разряд на 3+ стаках [E], Покров Бездны [R].",
       "desc_en": "Intelligence Branch T4: Pull & silence on [Q], dark wake DoT on [W], auto-bolt at 3+ [E] stacks, Abyssal Shroud [R].",
-      "scale": 1.25,
+      "scale": 1.05,
       "ability_level": 3,
       "abilities": [
         "evo_slark_int_q",
@@ -268,8 +343,16 @@
         "evo_slark_deep_predator"
       ],
       "next_body_ids": [],
-      "color": [150, 60, 255],
-      "label_color": [185, 110, 255],
+      "color": [
+        150,
+        60,
+        255
+      ],
+      "label_color": [
+        185,
+        110,
+        255
+      ],
       "wearables": [
         "Angler in the Abyss - Weapon",
         "Angler in the Abyss - Arms",

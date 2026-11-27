@@ -13,6 +13,7 @@ import {
     getSpectreBranchMaxLevel,
     getSpectreStr,
     getSpectreTier,
+    spawnBastionBlockFx,
     triggerBastionBreakMs,
 } from "./evo_spectre_shared";
 import "./evo_spectre_debuffs";
@@ -34,6 +35,12 @@ export class evo_spectre_bastion_e extends BaseAbility {
     }
 }
 
+@registerAbility("evo_spectre_bastion_e_t3")
+export class evo_spectre_bastion_e_t3 extends evo_spectre_bastion_e {}
+
+@registerAbility("evo_spectre_bastion_e_t4")
+export class evo_spectre_bastion_e_t4 extends evo_spectre_bastion_e {}
+
 @registerModifier("modifier_evo_spectre_bastion_e_surge")
 export class modifier_evo_spectre_bastion_e_surge extends BaseModifier {
     IsHidden(): boolean {
@@ -46,13 +53,12 @@ export class modifier_evo_spectre_bastion_e_surge extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "abaddon_frostmourne";
+        return "evo_spectre_bastion_e";
     }
 }
 
 @registerModifier("modifier_evo_spectre_bastion_e_passive")
 export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
-    private lastCombatTime = -999;
     private lastHurtTime = -999;
     private fracAccum = 0;
 
@@ -69,10 +75,9 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "abaddon_frostmourne";
+        return "evo_spectre_bastion_e";
     }
     OnCreated(): void {
-        this.lastCombatTime = -999;
         this.lastHurtTime = -999;
         this.fracAccum = 0;
         if (!IsServer()) return;
@@ -87,20 +92,12 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         if (parent.PassivesDisabled() || ab.GetLevel() <= 0) return;
 
         const now = GameRules.GetGameTime();
-        const tier = getSpectreTier(parent);
         const idleDelay = ab.GetSpecialValueFor("idle_delay");
         const hasSurge = parent.HasModifier("modifier_evo_spectre_bastion_e_surge");
-
-        let rateMult = 0;
-        if (now - this.lastCombatTime >= idleDelay || hasSurge) {
-            rateMult = 1.0;
-        } else if (tier >= 3 && now - this.lastHurtTime >= 1.5) {
-            rateMult = 0.5;
-        }
-        if (rateMult <= 0) return;
+        if (now - this.lastHurtTime < idleDelay && !hasSurge) return;
 
         const perSec = ab.GetSpecialValueFor("regen_per_sec") + (getSpectreStr(parent) * ab.GetSpecialValueFor("regen_str_pct")) / 100;
-        this.fracAccum += perSec * 0.2 * rateMult;
+        this.fracAccum += perSec * 0.2;
         const gain = Math.floor(this.fracAccum);
         if (gain >= 1) {
             this.fracAccum -= gain;
@@ -111,7 +108,7 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         return [
             dotaModifierFunction("MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
             dotaModifierFunction("MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"),
-            dotaModifierFunction("MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK"),
+            dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT"),
             dotaModifierFunction("MODIFIER_EVENT_ON_TAKEDAMAGE"),
         ];
     }
@@ -129,7 +126,13 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         if (getBastionTotalShields(parent) <= 0) return 0;
         return ab.GetSpecialValueFor("bonus_as");
     }
-    GetModifierTotal_ConstantBlock(event: ModifierAttackEvent): number {
+    GetModifierIncomingDamageConstant(event: ModifierAttackEvent): number {
+        if (IsClient()) {
+            if (event.report_max) {
+                return getBastionMaxPassiveShield(this.GetParent());
+            }
+            return this.GetStackCount();
+        }
         if (!IsServer()) return 0;
         const parent = this.GetParent();
         const pool = this.GetStackCount();
@@ -137,10 +140,11 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         const blocked = Math.min(pool, Math.ceil(event.damage));
         const rem = pool - blocked;
         this.SetStackCount(Math.max(0, rem));
+        spawnBastionBlockFx(parent, event.attacker, blocked);
         if (rem === 0 && blocked > 0) {
             triggerBastionBreakMs(parent);
         }
-        return blocked;
+        return -blocked;
     }
     OnTakeDamage(event: ModifierInstanceEvent): void {
         if (!IsServer()) return;
@@ -149,19 +153,19 @@ export class modifier_evo_spectre_bastion_e_passive extends BaseModifier {
         if (!parent || parent.IsNull() || !ab || ab.IsNull() || ab.GetLevel() <= 0) return;
         const now = GameRules.GetGameTime();
 
-        if (event.unit === parent && event.damage > 0) {
+        if (event.unit === parent && event.damage > 0 && event.attacker !== parent) {
             this.lastHurtTime = now;
-            if (event.attacker && !event.attacker.IsNull() && event.attacker.IsRealHero() && event.attacker !== parent) {
-                this.lastCombatTime = now;
-            }
             return;
         }
 
         if (event.attacker === parent && event.unit && !event.unit.IsNull() && event.unit !== parent && event.damage > 0) {
-            if (event.unit.IsRealHero()) {
-                this.lastCombatTime = now;
-            }
-            if (getSpectreTier(parent) >= 4 && bit.band(event.damage_flags, DamageFlag.REFLECTION) === 0) {
+            if (
+                getSpectreTier(parent) >= 4 &&
+                event.damage_type === DamageTypes.PHYSICAL &&
+                event.damage_category === DamageCategory.ATTACK &&
+                !event.inflictor &&
+                bit.band(event.damage_flags, DamageFlag.REFLECTION) === 0
+            ) {
                 const cap = getBastionMaxPassiveShield(parent);
                 if (cap > 0) {
                     const gain = (event.damage * ab.GetSpecialValueFor("leech_shield_pct")) / 100;
@@ -229,7 +233,7 @@ export class modifier_evo_spectre_bastion_r_dome extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "arc_warden_magnetic_field";
+        return "evo_spectre_bastion_r";
     }
     OnCreated(): void {
         this.radius = 475;
@@ -239,13 +243,21 @@ export class modifier_evo_spectre_bastion_r_dome extends BaseModifier {
             this.radius = ab.GetSpecialValueFor("radius");
         }
         if (!IsServer()) return;
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
+        const parent = this.GetParent();
+        const domePfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_arc_warden/arc_warden_magnetic.vpcf",
             ParticleAttachment.ABSORIGIN_FOLLOW,
-            this.GetParent()
+            parent
         );
-        ParticleManager.SetParticleControl(pfx, 1, Vector(this.radius * 0.45, 75, 75));
-        this.AddParticle(pfx, false, false, -1, false, false);
+        ParticleManager.SetParticleControl(domePfx, 1, Vector(this.radius, 1, 1));
+        this.AddParticle(domePfx, false, false, -1, false, false);
+
+        const auraPfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_aura.vpcf",
+            ParticleAttachment.ABSORIGIN_FOLLOW,
+            parent
+        );
+        this.AddParticle(auraPfx, false, false, -1, false, false);
         this.StartIntervalThink(0.1);
     }
     OnIntervalThink(): void {
@@ -263,7 +275,18 @@ export class modifier_evo_spectre_bastion_r_dome extends BaseModifier {
             ab.GetSpecialValueFor("pulse_dmg") + (getSpectreStr(parent) * ab.GetSpecialValueFor("pulse_str_pct")) / 100;
         const slowDur = ab.GetSpecialValueFor("slow_duration");
         const perEnemyShield = ab.GetSpecialValueFor("shield_per_enemy");
-        const enemies = findSpectreEnemies(parent, parent.GetAbsOrigin(), this.radius);
+        const creepMult = Math.max(0, ab.GetSpecialValueFor("creep_shield_pct") || 15) / 100;
+        const origin = parent.GetAbsOrigin();
+        const pulsePfx = ParticleManager.CreateParticle(
+            "particles/evo_spectre/evo_bastion_explosion.vpcf",
+            ParticleAttachment.WORLDORIGIN,
+            undefined
+        );
+        ParticleManager.SetParticleControl(pulsePfx, 0, origin);
+        ParticleManager.ReleaseParticleIndex(pulsePfx);
+
+        const enemies = findSpectreEnemies(parent, origin, this.radius);
+        let shieldGain = 0;
 
         for (const enemy of enemies) {
             if (!enemy || enemy.IsNull() || !enemy.IsAlive()) continue;
@@ -275,9 +298,10 @@ export class modifier_evo_spectre_bastion_r_dome extends BaseModifier {
                 damage_type: DamageTypes.MAGICAL,
             });
             enemy.AddNewModifier(parent, ab, "modifier_evo_spectre_bastion_slow", { duration: slowDur });
+            shieldGain += enemy.IsConsideredHero() ? perEnemyShield : perEnemyShield * creepMult;
         }
-        if (enemies.length > 0) {
-            addBastionPassiveShield(parent, enemies.length * perEnemyShield);
+        if (shieldGain > 0) {
+            addBastionPassiveShield(parent, Math.round(shieldGain));
         }
     }
 }
@@ -285,6 +309,7 @@ export class modifier_evo_spectre_bastion_r_dome extends BaseModifier {
 @registerModifier("modifier_evo_spectre_bastion_r_shield")
 export class modifier_evo_spectre_bastion_r_shield extends BaseModifier {
     private radius = 475;
+    private maxCapacity = 400;
 
     IsHidden(): boolean {
         return false;
@@ -296,13 +321,17 @@ export class modifier_evo_spectre_bastion_r_shield extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "arc_warden_magnetic_field";
+        return "evo_spectre_bastion_r";
     }
     OnCreated(params: { capacity?: number }): void {
         this.radius = 475;
+        this.maxCapacity = 400;
         const ab = this.GetAbility();
         if (ab && !ab.IsNull()) {
             this.radius = ab.GetSpecialValueFor("radius");
+        }
+        if (params && params.capacity !== undefined) {
+            this.maxCapacity = params.capacity;
         }
         if (IsServer() && params && params.capacity !== undefined) {
             this.SetStackCount(params.capacity);
@@ -317,9 +346,15 @@ export class modifier_evo_spectre_bastion_r_shield extends BaseModifier {
         }
     }
     DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK")];
+        return [dotaModifierFunction("MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT")];
     }
-    GetModifierTotal_ConstantBlock(event: ModifierAttackEvent): number {
+    GetModifierIncomingDamageConstant(event: ModifierAttackEvent): number {
+        if (IsClient()) {
+            if (event.report_max) {
+                return Math.max(this.maxCapacity, this.GetStackCount());
+            }
+            return this.GetStackCount();
+        }
         if (!IsServer() || event.damage <= 0) return 0;
         const caster = this.GetCaster();
         const attacker = event.attacker;
@@ -332,7 +367,7 @@ export class modifier_evo_spectre_bastion_r_shield extends BaseModifier {
         ) {
             const distFromDome = ((attacker.GetAbsOrigin() - caster.GetAbsOrigin()) as Vector).Length2D();
             if (distFromDome > this.radius) {
-                return Math.ceil(event.damage);
+                return -Math.ceil(event.damage);
             }
         }
         const pool = this.GetStackCount();
@@ -340,9 +375,10 @@ export class modifier_evo_spectre_bastion_r_shield extends BaseModifier {
         const blocked = Math.min(pool, Math.ceil(event.damage));
         const rem = pool - blocked;
         this.SetStackCount(Math.max(0, rem));
+        spawnBastionBlockFx(this.GetParent(), attacker, blocked);
         if (rem <= 0) {
             this.Destroy();
         }
-        return blocked;
+        return -blocked;
     }
 }

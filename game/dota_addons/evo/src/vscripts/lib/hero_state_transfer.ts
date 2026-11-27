@@ -25,6 +25,7 @@ export interface HeroTransferSnapshot {
     readonly mpPct: number;
     readonly items: readonly SavedItemSnapshot[];
     readonly modifiers: readonly SavedModifierSnapshot[];
+    readonly hasShard: boolean;
 }
 
 const PRESERVED_BUFF_MODIFIERS: readonly string[] = [
@@ -94,6 +95,7 @@ export function captureHeroTransferState(
         mpPct: Math.max(0, Math.min(1, oldHero.GetManaPercent() / 100)),
         items,
         modifiers,
+        hasShard: oldHero.HasModifier("modifier_item_aghanims_shard"),
     };
 }
 
@@ -146,6 +148,9 @@ export function restoreHeroTransferState(
 
     for (const mod of snapshot.modifiers) {
         newHero.AddNewModifier(newHero, undefined, mod.name, { duration: mod.duration });
+    }
+    if (snapshot.hasShard) {
+        newHero.AddNewModifier(newHero, undefined, "modifier_item_aghanims_shard", {});
     }
 
     FindClearSpaceForUnit(newHero, snapshot.position, true);

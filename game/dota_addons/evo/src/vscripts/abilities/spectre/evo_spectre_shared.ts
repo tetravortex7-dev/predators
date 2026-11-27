@@ -29,14 +29,29 @@ export function getSpectreTier(unit: CDOTA_BaseNPC | undefined): number {
     }
     if (
         hasAbilitySafe(unit, "evo_spectre_phantom_dispersion_t3") ||
-        hasAbilitySafe(unit, "evo_spectre_mirror_inversion_t3")
+        hasAbilitySafe(unit, "evo_spectre_phantom_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_inversion_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_e_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_q_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_e_t3")
     ) {
         return 3;
     }
     if (
         hasAbilitySafe(unit, "evo_spectre_phantom_w") ||
+        hasAbilitySafe(unit, "evo_spectre_phantom_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_phantom_w_t4") ||
         hasAbilitySafe(unit, "evo_spectre_bastion_q") ||
-        hasAbilitySafe(unit, "evo_spectre_mirror_q")
+        hasAbilitySafe(unit, "evo_spectre_bastion_q_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_q_t4") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_inversion") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_inversion_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_inversion_t4") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_w") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_w_t4")
     ) {
         return 2;
     }
@@ -50,18 +65,86 @@ export function getSpectreBranchMaxLevel(unit: CDOTA_BaseNPC | undefined): numbe
     return 5;
 }
 
+export function findPhantomEAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_phantom_e_t3", "evo_spectre_phantom_e"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findPhantomDAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_phantom_d_t4", "evo_spectre_phantom_d"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findBastionQAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_bastion_q_t4", "evo_spectre_bastion_q_t3", "evo_spectre_bastion_q"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findBastionEAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_bastion_e_t4", "evo_spectre_bastion_e_t3", "evo_spectre_bastion_e"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findMirrorInversionAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of [
+        "evo_spectre_mirror_inversion_t4",
+        "evo_spectre_mirror_inversion_t3",
+        "evo_spectre_mirror_inversion",
+    ]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findMirrorQAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_mirror_q_t4", "evo_spectre_mirror_q_t3", "evo_spectre_mirror_q"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
+export function findMirrorWAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of ["evo_spectre_mirror_w_t4", "evo_spectre_mirror_w_t3", "evo_spectre_mirror_w"]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
 export function detectSpectreBranchAndTier(unit: CDOTA_BaseNPC): SpectreBranchInfo {
     if (!unit || unit.IsNull()) {
         return { branch: "T1", tier: 1 };
     }
     const tier = getSpectreTier(unit);
-    if (hasAbilitySafe(unit, "evo_spectre_phantom_w")) {
+    if (
+        hasAbilitySafe(unit, "evo_spectre_phantom_w") ||
+        hasAbilitySafe(unit, "evo_spectre_phantom_w_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_phantom_w_t4")
+    ) {
         return { branch: "PHANTOM", tier };
     }
-    if (hasAbilitySafe(unit, "evo_spectre_bastion_q")) {
+    if (
+        hasAbilitySafe(unit, "evo_spectre_bastion_q") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_q_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_bastion_q_t4")
+    ) {
         return { branch: "BASTION", tier };
     }
-    if (hasAbilitySafe(unit, "evo_spectre_mirror_q")) {
+    if (findMirrorInversionAbility(unit) !== undefined || findMirrorWAbility(unit) !== undefined) {
         return { branch: "MIRROR", tier };
     }
     return { branch: "T1", tier };
@@ -190,9 +273,13 @@ export function getBastionTotalShields(unit: CDOTA_BaseNPC): number {
 }
 
 export function getBastionMaxPassiveShield(unit: CDOTA_BaseNPC): number {
-    const eAb = unit.FindAbilityByName("evo_spectre_bastion_e");
+    const eAb = findBastionEAbility(unit);
     if (!eAb || eAb.IsNull() || eAb.GetLevel() <= 0) return 0;
-    return Math.floor(eAb.GetSpecialValueFor("max_shield") + (getSpectreStr(unit) * eAb.GetSpecialValueFor("max_str_pct")) / 100);
+    const baseMax = eAb.GetSpecialValueFor("max_shield") + (getSpectreStr(unit) * eAb.GetSpecialValueFor("max_str_pct")) / 100;
+    const mult = unit.HasModifier("modifier_item_aghanims_shard")
+        ? Math.max(1, eAb.GetSpecialValueFor("shard_shield_mult") || 1.75)
+        : 1;
+    return Math.floor(baseMax * mult);
 }
 
 export function addBastionPassiveShield(unit: CDOTA_BaseNPC, amount: number): void {
@@ -209,7 +296,7 @@ export function addBastionPassiveShield(unit: CDOTA_BaseNPC, amount: number): vo
 
 export function triggerBastionBreakMs(unit: CDOTA_BaseNPC): void {
     if (getSpectreTier(unit) < 3) return;
-    const eAb = unit.FindAbilityByName("evo_spectre_bastion_e");
+    const eAb = findBastionEAbility(unit);
     if (!eAb || eAb.IsNull() || eAb.GetLevel() <= 0) return;
     const dur = eAb.GetSpecialValueFor("break_ms_duration");
     unit.AddNewModifier(unit, eAb, "modifier_evo_spectre_bastion_break_ms", { duration: dur });
@@ -251,10 +338,16 @@ export function triggerAstralInversionReflect(
     const rawPhys = event.original_damage > 0 ? event.original_damage : event.damage;
     if (rawPhys <= 0) return false;
 
-    const reflectPct = inversionAb.GetSpecialValueFor("reflect_pct") / 100;
+    let reflectPct = inversionAb.GetSpecialValueFor("reflect_pct");
+    if (victim.HasModifier("modifier_evo_spectre_mirror_q_phase")) {
+        const qAb = findMirrorQAbility(spectre);
+        if (qAb && !qAb.IsNull() && qAb.GetLevel() > 0) {
+            reflectPct += qAb.GetSpecialValueFor("trail_reflect_pct");
+        }
+    }
     const flatDmg = inversionAb.GetSpecialValueFor("flat_dmg");
     const intPct = inversionAb.GetSpecialValueFor("int_pct");
-    const reflectDmg = rawPhys * reflectPct + flatDmg + (getSpectreInt(spectre) * intPct) / 100;
+    const reflectDmg = rawPhys * (reflectPct / 100) + flatDmg + (getSpectreInt(spectre) * intPct) / 100;
     if (reflectDmg <= 0.5) return false;
 
     ApplyDamage({
@@ -265,19 +358,36 @@ export function triggerAstralInversionReflect(
         damage_type: DamageTypes.MAGICAL,
         damage_flags: (DamageFlag.REFLECTION + DamageFlag.NO_SPELL_AMPLIFICATION) as DamageFlag,
     });
+    return true;
+}
 
-    const tier = getSpectreTier(spectre);
-    if (tier >= 3) {
-        const mrDur = inversionAb.GetSpecialValueFor("mr_shred_dur");
-        attacker.AddNewModifier(spectre, inversionAb, "modifier_evo_spectre_mirror_inv_shred", {
-            duration: mrDur,
-        });
-    }
-    if (tier >= 4 && spectre.IsAlive()) {
-        const manaRestore = inversionAb.GetSpecialValueFor("mana_restore");
-        if (manaRestore > 0) {
-            spectre.GiveMana(manaRestore);
+const bastionLastBlockFxTime: Record<number, number> = {};
+
+export function spawnBastionBlockFx(victim: CDOTA_BaseNPC, attacker: CDOTA_BaseNPC | undefined, blocked: number): void {
+    if (!victim || victim.IsNull() || !IsValidEntity(victim) || blocked <= 0) return;
+    const now = GameRules.GetGameTime();
+    const id = victim.entindex();
+    const prev = bastionLastBlockFxTime[id];
+    if (prev !== undefined && now - prev < 0.18) return;
+    bastionLastBlockFxTime[id] = now;
+
+    const victimPos = victim.GetAbsOrigin();
+    let dir = victim.GetForwardVector();
+    if (attacker && !attacker.IsNull() && IsValidEntity(attacker)) {
+        const diff = (attacker.GetAbsOrigin() - victimPos) as Vector;
+        const flat = Vector(diff.x, diff.y, 0);
+        if (flat.Length2D() > 1) {
+            dir = flat.Normalized();
         }
     }
-    return true;
+
+    const fxPath =
+        blocked >= 35
+            ? "particles/units/heroes/hero_mars/mars_shield_of_mars.vpcf"
+            : "particles/units/heroes/hero_mars/mars_shield_of_mars_small.vpcf";
+    const pfx = ParticleManager.CreateParticle(fxPath, ParticleAttachment.ABSORIGIN, victim);
+    ParticleManager.SetParticleControl(pfx, 0, victimPos);
+    ParticleManager.SetParticleControlForward(pfx, 0, dir);
+    ParticleManager.ReleaseParticleIndex(pfx);
+    victim.EmitSound("Hero_Mars.Shield.BlockSmall");
 }

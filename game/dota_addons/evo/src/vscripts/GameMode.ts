@@ -1,6 +1,7 @@
 import { EventBus } from "./core/EventBus";
 import { LazyPrecacheManager } from "./core/LazyPrecacheManager";
 import { LevelingManager } from "./core/LevelingManager";
+import { getInitialStartBody } from "./data/start_body_override";
 import { EVO_CONSTANTS, EVO_PLAYABLE_TEAMS } from "./data/game_constants";
 import { DevCheats } from "./dev/DevCheats";
 import { linkMutationModifiers } from "./modifiers/modifier_evo_mutation_runtime";
@@ -86,7 +87,12 @@ export class EvoGameMode {
                 ? EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_DEV
                 : EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_PROD
         );
-        gameMode.SetCustomGameForceHero(EVO_CONSTANTS.BASE_HERO_NAME);
+        const startBody = getInitialStartBody();
+        const startHeroClass =
+            startBody && startBody.heroClass && startBody.heroClass.length > 0
+                ? startBody.heroClass
+                : EVO_CONSTANTS.BASE_HERO_NAME;
+        gameMode.SetCustomGameForceHero(startHeroClass);
 
         GameRules.SetGoldPerTick(0);
         GameRules.SetGoldTickTime(EVO_CONSTANTS.GOLD_TICK_TIME);

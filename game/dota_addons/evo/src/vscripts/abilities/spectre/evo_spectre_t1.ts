@@ -11,6 +11,7 @@ import {
     applySpectreCreepDamage,
     detectSpectreBranchAndTier,
     findNearestSpectrePortal,
+    findPhantomDAbility,
     findSpectreEnemies,
     getSpectreAgi,
     getSpectreHighestAttr,
@@ -137,7 +138,7 @@ export class modifier_evo_spectre_dispersion_charge extends BaseModifier {
                 damage_type: DamageTypes.MAGICAL,
             });
         }
-        const dAb = parent.FindAbilityByName("evo_spectre_phantom_d");
+        const dAb = findPhantomDAbility(parent);
         if (dAb && !dAb.IsNull() && cdReduce > 0) {
             const rem = dAb.GetCooldownTimeRemaining();
             if (rem > 0) {

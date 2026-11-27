@@ -189,8 +189,10 @@ export class modifier_evo_spectre_phantom_w_passive extends BaseModifier {
             if (hastedMod !== undefined) hastedMod.SetStackCount(stealPct);
 
             if (tier >= 3) {
-                const rootDur = tier >= 4 ? 1.3 : 1.0;
-                const shred = tier >= 4 ? 6 : 4;
+                const kvRoot = ability.GetSpecialValueFor("root_duration");
+                const kvShred = ability.GetSpecialValueFor("armor_shred");
+                const rootDur = kvRoot > 0 ? kvRoot : tier >= 4 ? 1.3 : 1.0;
+                const shred = kvShred > 0 ? kvShred : tier >= 4 ? 6 : 4;
                 target.AddNewModifier(parent, ability, "modifier_evo_spectre_phantom_root", { duration: rootDur });
                 target.AddNewModifier(parent, ability, "modifier_evo_spectre_armor_shred", {
                     duration: ability.GetSpecialValueFor("shred_duration"),
@@ -200,6 +202,12 @@ export class modifier_evo_spectre_phantom_w_passive extends BaseModifier {
         }
     }
 }
+
+@registerAbility("evo_spectre_phantom_w_t3")
+export class evo_spectre_phantom_w_t3 extends evo_spectre_phantom_w {}
+
+@registerAbility("evo_spectre_phantom_w_t4")
+export class evo_spectre_phantom_w_t4 extends evo_spectre_phantom_w {}
 
 @registerModifier("modifier_evo_spectre_phantom_w_active")
 export class modifier_evo_spectre_phantom_w_active extends BaseModifier {

@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 15,["22"] = 16,["23"] = 18,["24"] = 20,["25"] = 22,["26"] = 23,["27"] = 24,["28"] = 25,["29"] = 27,["30"] = 28,["31"] = 27,["32"] = 28,["33"] = 29,["34"] = 30,["35"] = 30,["36"] = 30,["37"] = 30,["38"] = 29,["39"] = 32,["40"] = 33,["41"] = 32,["42"] = 28,["43"] = 27,["44"] = 28,["46"] = 28,["47"] = 37,["48"] = 38,["49"] = 37,["50"] = 38,["51"] = 39,["52"] = 40,["53"] = 39,["54"] = 42,["55"] = 43,["56"] = 42,["57"] = 45,["58"] = 46,["59"] = 45,["60"] = 48,["61"] = 49,["62"] = 48,["63"] = 38,["64"] = 37,["65"] = 38,["67"] = 38,["68"] = 53,["69"] = 54,["70"] = 53,["71"] = 54,["73"] = 54,["74"] = 55,["75"] = 56,["76"] = 57,["77"] = 53,["78"] = 59,["79"] = 60,["80"] = 59,["81"] = 62,["82"] = 63,["83"] = 62,["84"] = 65,["85"] = 66,["86"] = 65,["87"] = 68,["88"] = 69,["89"] = 68,["90"] = 71,["91"] = 72,["92"] = 71,["93"] = 74,["94"] = 75,["95"] = 76,["96"] = 77,["97"] = 78,["100"] = 79,["101"] = 80,["102"] = 74,["103"] = 82,["104"] = 83,["107"] = 84,["108"] = 85,["109"] = 86,["112"] = 87,["115"] = 89,["116"] = 90,["117"] = 91,["118"] = 92,["119"] = 94,["120"] = 95,["121"] = 96,["122"] = 97,["123"] = 98,["125"] = 100,["128"] = 102,["129"] = 103,["130"] = 104,["131"] = 105,["132"] = 106,["133"] = 107,["135"] = 82,["136"] = 110,["137"] = 111,["138"] = 111,["139"] = 111,["140"] = 111,["141"] = 111,["142"] = 111,["143"] = 110,["144"] = 118,["145"] = 119,["146"] = 120,["147"] = 121,["148"] = 121,["150"] = 122,["151"] = 122,["153"] = 123,["154"] = 118,["155"] = 125,["156"] = 126,["157"] = 127,["158"] = 128,["159"] = 128,["161"] = 129,["162"] = 129,["164"] = 130,["165"] = 125,["166"] = 132,["167"] = 133,["168"] = 133,["170"] = 134,["171"] = 135,["172"] = 136,["173"] = 136,["175"] = 137,["176"] = 137,["177"] = 137,["178"] = 137,["179"] = 138,["180"] = 139,["181"] = 140,["182"] = 141,["184"] = 143,["185"] = 132,["186"] = 145,["187"] = 146,["190"] = 147,["191"] = 148,["192"] = 149,["195"] = 150,["196"] = 152,["197"] = 153,["198"] = 154,["199"] = 155,["203"] = 160,["204"] = 161,["205"] = 162,["207"] = 164,["208"] = 165,["209"] = 166,["210"] = 167,["211"] = 168,["215"] = 145,["216"] = 54,["217"] = 53,["218"] = 54,["220"] = 54,["221"] = 175,["222"] = 176,["223"] = 175,["224"] = 176,["225"] = 177,["226"] = 178,["227"] = 177,["228"] = 180,["229"] = 181,["232"] = 182,["233"] = 183,["234"] = 184,["235"] = 185,["236"] = 190,["237"] = 191,["238"] = 193,["239"] = 193,["240"] = 193,["241"] = 193,["242"] = 193,["243"] = 193,["244"] = 193,["245"] = 193,["246"] = 193,["247"] = 193,["248"] = 193,["249"] = 204,["251"] = 205,["252"] = 205,["254"] = 206,["255"] = 210,["256"] = 211,["261"] = 180,["262"] = 176,["263"] = 175,["264"] = 176,["266"] = 176,["267"] = 217,["268"] = 218,["269"] = 217,["270"] = 218,["272"] = 218,["273"] = 219,["274"] = 220,["275"] = 217,["276"] = 222,["277"] = 223,["278"] = 222,["279"] = 225,["280"] = 226,["281"] = 225,["282"] = 228,["283"] = 229,["284"] = 228,["285"] = 231,["286"] = 232,["287"] = 231,["288"] = 234,["289"] = 235,["290"] = 236,["291"] = 237,["292"] = 238,["293"] = 239,["295"] = 241,["298"] = 242,["299"] = 242,["300"] = 242,["301"] = 242,["302"] = 242,["303"] = 247,["304"] = 247,["305"] = 247,["306"] = 247,["307"] = 247,["308"] = 248,["309"] = 248,["310"] = 248,["311"] = 248,["312"] = 248,["313"] = 248,["314"] = 248,["315"] = 248,["316"] = 249,["317"] = 234,["318"] = 251,["319"] = 252,["322"] = 253,["323"] = 254,["324"] = 255,["327"] = 257,["328"] = 258,["329"] = 259,["332"] = 260,["333"] = 262,["334"] = 264,["335"] = 265,["336"] = 266,["337"] = 266,["338"] = 266,["339"] = 266,["340"] = 266,["341"] = 266,["342"] = 268,["344"] = 269,["345"] = 269,["347"] = 270,["348"] = 270,["349"] = 270,["350"] = 270,["351"] = 270,["352"] = 270,["353"] = 270,["354"] = 277,["358"] = 279,["359"] = 280,["361"] = 251,["362"] = 218,["363"] = 217,["364"] = 218,["366"] = 218,["367"] = 285,["368"] = 286,["369"] = 285,["370"] = 286,["372"] = 286,["373"] = 287,["374"] = 285,["375"] = 289,["376"] = 290,["377"] = 289,["378"] = 292,["379"] = 293,["380"] = 292,["381"] = 295,["382"] = 296,["383"] = 295,["384"] = 298,["385"] = 299,["386"] = 298,["387"] = 301,["388"] = 302,["389"] = 303,["390"] = 304,["391"] = 305,["393"] = 307,["394"] = 308,["396"] = 301,["397"] = 311,["398"] = 312,["401"] = 313,["402"] = 314,["403"] = 315,["404"] = 316,["406"] = 311,["407"] = 319,["408"] = 320,["409"] = 319,["410"] = 322,["411"] = 323,["412"] = 323,["414"] = 324,["415"] = 325,["416"] = 327,["417"] = 333,["418"] = 334,["419"] = 335,["422"] = 338,["423"] = 339,["424"] = 339,["426"] = 340,["427"] = 340,["428"] = 340,["429"] = 340,["430"] = 341,["431"] = 342,["432"] = 343,["433"] = 344,["435"] = 346,["436"] = 322,["437"] = 286,["438"] = 285,["439"] = 286,["441"] = 286});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 15,["22"] = 16,["23"] = 17,["24"] = 19,["25"] = 21,["26"] = 23,["27"] = 24,["28"] = 25,["29"] = 26,["30"] = 28,["31"] = 29,["32"] = 28,["33"] = 29,["34"] = 30,["35"] = 31,["36"] = 31,["37"] = 31,["38"] = 31,["39"] = 30,["40"] = 33,["41"] = 34,["42"] = 33,["43"] = 29,["44"] = 28,["45"] = 29,["47"] = 29,["48"] = 38,["49"] = 39,["50"] = 38,["51"] = 39,["52"] = 39,["53"] = 38,["54"] = 39,["56"] = 39,["57"] = 41,["58"] = 42,["59"] = 41,["60"] = 42,["61"] = 42,["62"] = 41,["63"] = 42,["65"] = 42,["66"] = 44,["67"] = 45,["68"] = 44,["69"] = 45,["70"] = 46,["71"] = 47,["72"] = 46,["73"] = 49,["74"] = 50,["75"] = 49,["76"] = 52,["77"] = 53,["78"] = 52,["79"] = 55,["80"] = 56,["81"] = 55,["82"] = 45,["83"] = 44,["84"] = 45,["86"] = 45,["87"] = 60,["88"] = 61,["89"] = 60,["90"] = 61,["92"] = 61,["93"] = 62,["94"] = 63,["95"] = 60,["96"] = 65,["97"] = 66,["98"] = 65,["99"] = 68,["100"] = 69,["101"] = 68,["102"] = 71,["103"] = 72,["104"] = 71,["105"] = 74,["106"] = 75,["107"] = 74,["108"] = 77,["109"] = 78,["110"] = 77,["111"] = 80,["112"] = 81,["113"] = 82,["114"] = 83,["117"] = 84,["118"] = 85,["119"] = 80,["120"] = 87,["121"] = 88,["124"] = 89,["125"] = 90,["126"] = 91,["129"] = 92,["132"] = 94,["133"] = 95,["134"] = 96,["135"] = 97,["138"] = 99,["139"] = 100,["140"] = 101,["141"] = 102,["142"] = 103,["143"] = 104,["145"] = 87,["146"] = 107,["147"] = 108,["148"] = 108,["149"] = 108,["150"] = 108,["151"] = 108,["152"] = 108,["153"] = 107,["154"] = 115,["155"] = 116,["156"] = 117,["157"] = 118,["158"] = 118,["160"] = 119,["161"] = 119,["163"] = 120,["164"] = 115,["165"] = 122,["166"] = 123,["167"] = 124,["168"] = 125,["169"] = 125,["171"] = 126,["172"] = 126,["174"] = 127,["175"] = 122,["176"] = 129,["177"] = 130,["178"] = 131,["179"] = 132,["180"] = 132,["181"] = 132,["182"] = 132,["184"] = 134,["186"] = 136,["187"] = 136,["189"] = 137,["190"] = 138,["191"] = 139,["192"] = 139,["194"] = 140,["195"] = 140,["196"] = 140,["197"] = 140,["198"] = 141,["199"] = 142,["200"] = 143,["201"] = 144,["202"] = 145,["204"] = 147,["205"] = 129,["206"] = 149,["207"] = 150,["210"] = 151,["211"] = 152,["212"] = 153,["215"] = 154,["216"] = 156,["217"] = 157,["220"] = 161,["221"] = 163,["222"] = 169,["223"] = 170,["224"] = 171,["225"] = 172,["229"] = 149,["230"] = 61,["231"] = 60,["232"] = 61,["234"] = 61,["235"] = 179,["236"] = 180,["237"] = 179,["238"] = 180,["239"] = 181,["240"] = 182,["241"] = 181,["242"] = 184,["243"] = 185,["246"] = 186,["247"] = 187,["248"] = 188,["249"] = 189,["250"] = 194,["251"] = 195,["252"] = 197,["253"] = 197,["254"] = 197,["255"] = 197,["256"] = 197,["257"] = 197,["258"] = 197,["259"] = 197,["260"] = 197,["261"] = 197,["262"] = 197,["263"] = 208,["265"] = 209,["266"] = 209,["268"] = 210,["269"] = 214,["270"] = 215,["275"] = 184,["276"] = 180,["277"] = 179,["278"] = 180,["280"] = 180,["281"] = 221,["282"] = 222,["283"] = 221,["284"] = 222,["286"] = 222,["287"] = 223,["288"] = 224,["289"] = 221,["290"] = 226,["291"] = 227,["292"] = 226,["293"] = 229,["294"] = 230,["295"] = 229,["296"] = 232,["297"] = 233,["298"] = 232,["299"] = 235,["300"] = 236,["301"] = 235,["302"] = 238,["303"] = 239,["304"] = 240,["305"] = 241,["306"] = 242,["307"] = 243,["309"] = 245,["312"] = 246,["313"] = 247,["314"] = 252,["315"] = 252,["316"] = 252,["317"] = 252,["318"] = 252,["319"] = 253,["320"] = 253,["321"] = 253,["322"] = 253,["323"] = 253,["324"] = 253,["325"] = 253,["326"] = 253,["327"] = 255,["328"] = 260,["329"] = 260,["330"] = 260,["331"] = 260,["332"] = 260,["333"] = 260,["334"] = 260,["335"] = 260,["336"] = 261,["337"] = 238,["338"] = 263,["339"] = 264,["342"] = 265,["343"] = 266,["344"] = 267,["347"] = 269,["348"] = 270,["349"] = 271,["352"] = 272,["353"] = 274,["354"] = 276,["355"] = 277,["356"] = 278,["357"] = 278,["358"] = 278,["359"] = 278,["360"] = 279,["361"] = 280,["362"] = 285,["363"] = 286,["364"] = 288,["365"] = 289,["366"] = 291,["368"] = 292,["369"] = 292,["371"] = 293,["372"] = 293,["373"] = 293,["374"] = 293,["375"] = 293,["376"] = 293,["377"] = 293,["378"] = 300,["379"] = 301,["383"] = 303,["384"] = 304,["385"] = 304,["386"] = 304,["387"] = 304,["388"] = 304,["390"] = 263,["391"] = 222,["392"] = 221,["393"] = 222,["395"] = 222,["396"] = 309,["397"] = 310,["398"] = 309,["399"] = 310,["401"] = 310,["402"] = 311,["403"] = 312,["404"] = 309,["405"] = 314,["406"] = 315,["407"] = 314,["408"] = 317,["409"] = 318,["410"] = 317,["411"] = 320,["412"] = 321,["413"] = 320,["414"] = 323,["415"] = 324,["416"] = 323,["417"] = 326,["418"] = 327,["419"] = 328,["420"] = 329,["421"] = 330,["422"] = 331,["424"] = 333,["425"] = 334,["427"] = 336,["428"] = 337,["430"] = 326,["431"] = 340,["432"] = 341,["435"] = 342,["436"] = 343,["437"] = 344,["438"] = 345,["440"] = 340,["441"] = 348,["442"] = 349,["443"] = 348,["444"] = 351,["445"] = 352,["446"] = 353,["447"] = 354,["448"] = 354,["449"] = 354,["450"] = 354,["452"] = 356,["454"] = 358,["455"] = 358,["457"] = 359,["458"] = 360,["459"] = 362,["460"] = 368,["461"] = 369,["462"] = 370,["465"] = 373,["466"] = 374,["467"] = 374,["469"] = 375,["470"] = 375,["471"] = 375,["472"] = 375,["473"] = 376,["474"] = 377,["475"] = 378,["476"] = 378,["477"] = 378,["478"] = 378,["479"] = 378,["480"] = 378,["481"] = 379,["482"] = 380,["484"] = 382,["485"] = 351,["486"] = 310,["487"] = 309,["488"] = 310,["490"] = 310});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -19,6 +19,7 @@ local getBastionTotalShields = ____evo_spectre_shared.getBastionTotalShields
 local getSpectreBranchMaxLevel = ____evo_spectre_shared.getSpectreBranchMaxLevel
 local getSpectreStr = ____evo_spectre_shared.getSpectreStr
 local getSpectreTier = ____evo_spectre_shared.getSpectreTier
+local spawnBastionBlockFx = ____evo_spectre_shared.spawnBastionBlockFx
 local triggerBastionBreakMs = ____evo_spectre_shared.triggerBastionBreakMs
 require("abilities.spectre.evo_spectre_debuffs")
 local SCRIPT_PATH = "abilities/spectre/evo_spectre_bastion_er"
@@ -44,6 +45,24 @@ evo_spectre_bastion_e = __TS__DecorateLegacy(
     evo_spectre_bastion_e
 )
 ____exports.evo_spectre_bastion_e = evo_spectre_bastion_e
+____exports.evo_spectre_bastion_e_t3 = __TS__Class()
+local evo_spectre_bastion_e_t3 = ____exports.evo_spectre_bastion_e_t3
+evo_spectre_bastion_e_t3.name = "evo_spectre_bastion_e_t3"
+__TS__ClassExtends(evo_spectre_bastion_e_t3, ____exports.evo_spectre_bastion_e)
+evo_spectre_bastion_e_t3 = __TS__DecorateLegacy(
+    {registerAbility(nil, "evo_spectre_bastion_e_t3")},
+    evo_spectre_bastion_e_t3
+)
+____exports.evo_spectre_bastion_e_t3 = evo_spectre_bastion_e_t3
+____exports.evo_spectre_bastion_e_t4 = __TS__Class()
+local evo_spectre_bastion_e_t4 = ____exports.evo_spectre_bastion_e_t4
+evo_spectre_bastion_e_t4.name = "evo_spectre_bastion_e_t4"
+__TS__ClassExtends(evo_spectre_bastion_e_t4, ____exports.evo_spectre_bastion_e)
+evo_spectre_bastion_e_t4 = __TS__DecorateLegacy(
+    {registerAbility(nil, "evo_spectre_bastion_e_t4")},
+    evo_spectre_bastion_e_t4
+)
+____exports.evo_spectre_bastion_e_t4 = evo_spectre_bastion_e_t4
 ____exports.modifier_evo_spectre_bastion_e_surge = __TS__Class()
 local modifier_evo_spectre_bastion_e_surge = ____exports.modifier_evo_spectre_bastion_e_surge
 modifier_evo_spectre_bastion_e_surge.name = "modifier_evo_spectre_bastion_e_surge"
@@ -58,7 +77,7 @@ function modifier_evo_spectre_bastion_e_surge.prototype.IsPurgable(self)
     return true
 end
 function modifier_evo_spectre_bastion_e_surge.prototype.GetTexture(self)
-    return "abaddon_frostmourne"
+    return "evo_spectre_bastion_e"
 end
 modifier_evo_spectre_bastion_e_surge = __TS__DecorateLegacy(
     {registerModifier(nil, "modifier_evo_spectre_bastion_e_surge")},
@@ -71,7 +90,6 @@ modifier_evo_spectre_bastion_e_passive.name = "modifier_evo_spectre_bastion_e_pa
 __TS__ClassExtends(modifier_evo_spectre_bastion_e_passive, BaseModifier)
 function modifier_evo_spectre_bastion_e_passive.prototype.____constructor(self, ...)
     BaseModifier.prototype.____constructor(self, ...)
-    self.lastCombatTime = -999
     self.lastHurtTime = -999
     self.fracAccum = 0
 end
@@ -88,10 +106,9 @@ function modifier_evo_spectre_bastion_e_passive.prototype.RemoveOnDeath(self)
     return false
 end
 function modifier_evo_spectre_bastion_e_passive.prototype.GetTexture(self)
-    return "abaddon_frostmourne"
+    return "evo_spectre_bastion_e"
 end
 function modifier_evo_spectre_bastion_e_passive.prototype.OnCreated(self)
-    self.lastCombatTime = -999
     self.lastHurtTime = -999
     self.fracAccum = 0
     if not IsServer() then
@@ -113,20 +130,13 @@ function modifier_evo_spectre_bastion_e_passive.prototype.OnIntervalThink(self)
         return
     end
     local now = GameRules:GetGameTime()
-    local tier = getSpectreTier(nil, parent)
     local idleDelay = ab:GetSpecialValueFor("idle_delay")
     local hasSurge = parent:HasModifier("modifier_evo_spectre_bastion_e_surge")
-    local rateMult = 0
-    if now - self.lastCombatTime >= idleDelay or hasSurge then
-        rateMult = 1
-    elseif tier >= 3 and now - self.lastHurtTime >= 1.5 then
-        rateMult = 0.5
-    end
-    if rateMult <= 0 then
+    if now - self.lastHurtTime < idleDelay and not hasSurge then
         return
     end
     local perSec = ab:GetSpecialValueFor("regen_per_sec") + getSpectreStr(nil, parent) * ab:GetSpecialValueFor("regen_str_pct") / 100
-    self.fracAccum = self.fracAccum + perSec * 0.2 * rateMult
+    self.fracAccum = self.fracAccum + perSec * 0.2
     local gain = math.floor(self.fracAccum)
     if gain >= 1 then
         self.fracAccum = self.fracAccum - gain
@@ -137,7 +147,7 @@ function modifier_evo_spectre_bastion_e_passive.prototype.DeclareFunctions(self)
     return {
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING"),
         dotaModifierFunction(nil, "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"),
-        dotaModifierFunction(nil, "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK"),
+        dotaModifierFunction(nil, "MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT"),
         dotaModifierFunction(nil, "MODIFIER_EVENT_ON_TAKEDAMAGE")
     }
 end
@@ -163,7 +173,16 @@ function modifier_evo_spectre_bastion_e_passive.prototype.GetModifierAttackSpeed
     end
     return ab:GetSpecialValueFor("bonus_as")
 end
-function modifier_evo_spectre_bastion_e_passive.prototype.GetModifierTotal_ConstantBlock(self, event)
+function modifier_evo_spectre_bastion_e_passive.prototype.GetModifierIncomingDamageConstant(self, event)
+    if IsClient() then
+        if event.report_max then
+            return getBastionMaxPassiveShield(
+                nil,
+                self:GetParent()
+            )
+        end
+        return self:GetStackCount()
+    end
     if not IsServer() then
         return 0
     end
@@ -178,10 +197,11 @@ function modifier_evo_spectre_bastion_e_passive.prototype.GetModifierTotal_Const
     )
     local rem = pool - blocked
     self:SetStackCount(math.max(0, rem))
+    spawnBastionBlockFx(nil, parent, event.attacker, blocked)
     if rem == 0 and blocked > 0 then
         triggerBastionBreakMs(nil, parent)
     end
-    return blocked
+    return -blocked
 end
 function modifier_evo_spectre_bastion_e_passive.prototype.OnTakeDamage(self, event)
     if not IsServer() then
@@ -193,18 +213,12 @@ function modifier_evo_spectre_bastion_e_passive.prototype.OnTakeDamage(self, eve
         return
     end
     local now = GameRules:GetGameTime()
-    if event.unit == parent and event.damage > 0 then
+    if event.unit == parent and event.damage > 0 and event.attacker ~= parent then
         self.lastHurtTime = now
-        if event.attacker and not event.attacker:IsNull() and event.attacker:IsRealHero() and event.attacker ~= parent then
-            self.lastCombatTime = now
-        end
         return
     end
     if event.attacker == parent and event.unit and not event.unit:IsNull() and event.unit ~= parent and event.damage > 0 then
-        if event.unit:IsRealHero() then
-            self.lastCombatTime = now
-        end
-        if getSpectreTier(nil, parent) >= 4 and bit.band(event.damage_flags, 16) == 0 then
+        if getSpectreTier(nil, parent) >= 4 and event.damage_type == 1 and event.damage_category == 1 and not event.inflictor and bit.band(event.damage_flags, 16) == 0 then
             local cap = getBastionMaxPassiveShield(nil, parent)
             if cap > 0 then
                 local gain = event.damage * ab:GetSpecialValueFor("leech_shield_pct") / 100
@@ -249,14 +263,14 @@ function evo_spectre_bastion_r.prototype.OnSpellStart(self)
     for ____, ally in ipairs(allies) do
         do
             if not ally or ally:IsNull() or not ally:IsAlive() then
-                goto __continue46
+                goto __continue44
             end
             local mod = ally:AddNewModifier(caster, self, "modifier_evo_spectre_bastion_r_shield", {duration = dur, capacity = shieldAmt})
             if mod ~= nil then
                 mod:SetStackCount(shieldAmt)
             end
         end
-        ::__continue46::
+        ::__continue44::
     end
 end
 evo_spectre_bastion_r = __TS__DecorateLegacy(
@@ -283,7 +297,7 @@ function modifier_evo_spectre_bastion_r_dome.prototype.IsPurgable(self)
     return false
 end
 function modifier_evo_spectre_bastion_r_dome.prototype.GetTexture(self)
-    return "arc_warden_magnetic_field"
+    return "evo_spectre_bastion_r"
 end
 function modifier_evo_spectre_bastion_r_dome.prototype.OnCreated(self)
     self.radius = 475
@@ -295,18 +309,24 @@ function modifier_evo_spectre_bastion_r_dome.prototype.OnCreated(self)
     if not IsServer() then
         return
     end
-    local pfx = ParticleManager:CreateParticle(
-        "particles/units/heroes/hero_abaddon/abaddon_aphotic_shield.vpcf",
-        1,
-        self:GetParent()
-    )
+    local parent = self:GetParent()
+    local domePfx = ParticleManager:CreateParticle("particles/units/heroes/hero_arc_warden/arc_warden_magnetic.vpcf", 1, parent)
     ParticleManager:SetParticleControl(
-        pfx,
+        domePfx,
         1,
-        Vector(self.radius * 0.45, 75, 75)
+        Vector(self.radius, 1, 1)
     )
     self:AddParticle(
-        pfx,
+        domePfx,
+        false,
+        false,
+        -1,
+        false,
+        false
+    )
+    local auraPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_omniknight/omniknight_guardian_angel_aura.vpcf", 1, parent)
+    self:AddParticle(
+        auraPfx,
         false,
         false,
         -1,
@@ -333,16 +353,20 @@ function modifier_evo_spectre_bastion_r_dome.prototype.OnIntervalThink(self)
     local dmg = ab:GetSpecialValueFor("pulse_dmg") + getSpectreStr(nil, parent) * ab:GetSpecialValueFor("pulse_str_pct") / 100
     local slowDur = ab:GetSpecialValueFor("slow_duration")
     local perEnemyShield = ab:GetSpecialValueFor("shield_per_enemy")
-    local enemies = findSpectreEnemies(
-        nil,
-        parent,
-        parent:GetAbsOrigin(),
-        self.radius
-    )
+    local creepMult = math.max(
+        0,
+        ab:GetSpecialValueFor("creep_shield_pct") or 15
+    ) / 100
+    local origin = parent:GetAbsOrigin()
+    local pulsePfx = ParticleManager:CreateParticle("particles/evo_spectre/evo_bastion_explosion.vpcf", 8, nil)
+    ParticleManager:SetParticleControl(pulsePfx, 0, origin)
+    ParticleManager:ReleaseParticleIndex(pulsePfx)
+    local enemies = findSpectreEnemies(nil, parent, origin, self.radius)
+    local shieldGain = 0
     for ____, enemy in ipairs(enemies) do
         do
             if not enemy or enemy:IsNull() or not enemy:IsAlive() then
-                goto __continue61
+                goto __continue59
             end
             ApplyDamage({
                 victim = enemy,
@@ -352,11 +376,16 @@ function modifier_evo_spectre_bastion_r_dome.prototype.OnIntervalThink(self)
                 damage_type = 2
             })
             enemy:AddNewModifier(parent, ab, "modifier_evo_spectre_bastion_slow", {duration = slowDur})
+            shieldGain = shieldGain + (enemy:IsConsideredHero() and perEnemyShield or perEnemyShield * creepMult)
         end
-        ::__continue61::
+        ::__continue59::
     end
-    if #enemies > 0 then
-        addBastionPassiveShield(nil, parent, #enemies * perEnemyShield)
+    if shieldGain > 0 then
+        addBastionPassiveShield(
+            nil,
+            parent,
+            math.floor(shieldGain + 0.5)
+        )
     end
 end
 modifier_evo_spectre_bastion_r_dome = __TS__DecorateLegacy(
@@ -371,6 +400,7 @@ __TS__ClassExtends(modifier_evo_spectre_bastion_r_shield, BaseModifier)
 function modifier_evo_spectre_bastion_r_shield.prototype.____constructor(self, ...)
     BaseModifier.prototype.____constructor(self, ...)
     self.radius = 475
+    self.maxCapacity = 400
 end
 function modifier_evo_spectre_bastion_r_shield.prototype.IsHidden(self)
     return false
@@ -382,13 +412,17 @@ function modifier_evo_spectre_bastion_r_shield.prototype.IsPurgable(self)
     return false
 end
 function modifier_evo_spectre_bastion_r_shield.prototype.GetTexture(self)
-    return "arc_warden_magnetic_field"
+    return "evo_spectre_bastion_r"
 end
 function modifier_evo_spectre_bastion_r_shield.prototype.OnCreated(self, params)
     self.radius = 475
+    self.maxCapacity = 400
     local ab = self:GetAbility()
     if ab and not ab:IsNull() then
         self.radius = ab:GetSpecialValueFor("radius")
+    end
+    if params and params.capacity ~= nil then
+        self.maxCapacity = params.capacity
     end
     if IsServer() and params and params.capacity ~= nil then
         self:SetStackCount(params.capacity)
@@ -405,9 +439,18 @@ function modifier_evo_spectre_bastion_r_shield.prototype.OnDestroy(self)
     end
 end
 function modifier_evo_spectre_bastion_r_shield.prototype.DeclareFunctions(self)
-    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK")}
+    return {dotaModifierFunction(nil, "MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT")}
 end
-function modifier_evo_spectre_bastion_r_shield.prototype.GetModifierTotal_ConstantBlock(self, event)
+function modifier_evo_spectre_bastion_r_shield.prototype.GetModifierIncomingDamageConstant(self, event)
+    if IsClient() then
+        if event.report_max then
+            return math.max(
+                self.maxCapacity,
+                self:GetStackCount()
+            )
+        end
+        return self:GetStackCount()
+    end
     if not IsServer() or event.damage <= 0 then
         return 0
     end
@@ -416,7 +459,7 @@ function modifier_evo_spectre_bastion_r_shield.prototype.GetModifierTotal_Consta
     if caster and not caster:IsNull() and caster:HasModifier("modifier_evo_spectre_bastion_r_dome") and attacker and not attacker:IsNull() then
         local distFromDome = (attacker:GetAbsOrigin() - caster:GetAbsOrigin()):Length2D()
         if distFromDome > self.radius then
-            return math.ceil(event.damage)
+            return -math.ceil(event.damage)
         end
     end
     local pool = self:GetStackCount()
@@ -429,10 +472,16 @@ function modifier_evo_spectre_bastion_r_shield.prototype.GetModifierTotal_Consta
     )
     local rem = pool - blocked
     self:SetStackCount(math.max(0, rem))
+    spawnBastionBlockFx(
+        nil,
+        self:GetParent(),
+        attacker,
+        blocked
+    )
     if rem <= 0 then
         self:Destroy()
     end
-    return blocked
+    return -blocked
 end
 modifier_evo_spectre_bastion_r_shield = __TS__DecorateLegacy(
     {registerModifier(nil, "modifier_evo_spectre_bastion_r_shield")},

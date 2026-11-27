@@ -2,7 +2,7 @@ local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
 local __TS__New = ____lualib.__TS__New
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 1,["8"] = 1,["9"] = 2,["10"] = 2,["11"] = 3,["12"] = 3,["13"] = 4,["14"] = 4,["15"] = 4,["16"] = 5,["17"] = 5,["18"] = 6,["19"] = 6,["20"] = 7,["21"] = 7,["22"] = 8,["23"] = 8,["24"] = 9,["25"] = 9,["26"] = 10,["27"] = 10,["28"] = 11,["29"] = 11,["30"] = 12,["31"] = 12,["32"] = 13,["33"] = 13,["34"] = 14,["35"] = 14,["36"] = 15,["37"] = 15,["38"] = 16,["39"] = 16,["40"] = 17,["41"] = 17,["42"] = 18,["43"] = 18,["44"] = 19,["45"] = 19,["46"] = 20,["47"] = 20,["48"] = 22,["49"] = 22,["50"] = 22,["52"] = 43,["53"] = 44,["54"] = 45,["55"] = 46,["56"] = 47,["57"] = 52,["58"] = 53,["59"] = 54,["60"] = 55,["61"] = 56,["62"] = 57,["63"] = 58,["64"] = 59,["65"] = 60,["66"] = 61,["67"] = 61,["68"] = 61,["69"] = 61,["70"] = 61,["71"] = 64,["72"] = 65,["73"] = 66,["74"] = 68,["75"] = 69,["76"] = 70,["77"] = 72,["78"] = 42,["79"] = 75,["80"] = 76,["81"] = 78,["82"] = 79,["83"] = 80,["84"] = 81,["85"] = 84,["86"] = 89,["87"] = 91,["88"] = 92,["89"] = 93,["90"] = 94,["91"] = 95,["92"] = 96,["93"] = 97,["94"] = 98,["95"] = 99,["96"] = 100,["97"] = 101,["98"] = 102,["99"] = 103,["100"] = 104,["101"] = 105,["102"] = 106,["103"] = 107,["104"] = 108,["105"] = 109,["106"] = 111,["107"] = 112,["108"] = 113,["109"] = 75,["110"] = 116,["111"] = 117,["112"] = 118,["114"] = 120,["115"] = 120,["116"] = 121,["117"] = 122,["118"] = 120,["121"] = 116,["122"] = 126,["123"] = 127,["124"] = 132,["125"] = 133,["126"] = 138,["127"] = 143,["128"] = 148,["129"] = 153,["130"] = 159,["131"] = 160,["132"] = 161,["133"] = 162,["134"] = 163,["135"] = 164,["136"] = 165,["137"] = 166,["138"] = 167,["139"] = 168,["140"] = 169,["141"] = 170,["142"] = 171,["143"] = 172,["144"] = 173,["145"] = 174,["146"] = 175,["147"] = 176,["148"] = 126});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["7"] = 1,["8"] = 1,["9"] = 2,["10"] = 2,["11"] = 3,["12"] = 3,["13"] = 4,["14"] = 4,["15"] = 5,["16"] = 5,["17"] = 5,["18"] = 6,["19"] = 6,["20"] = 7,["21"] = 7,["22"] = 8,["23"] = 8,["24"] = 9,["25"] = 9,["26"] = 10,["27"] = 10,["28"] = 11,["29"] = 11,["30"] = 12,["31"] = 12,["32"] = 13,["33"] = 13,["34"] = 14,["35"] = 14,["36"] = 15,["37"] = 15,["38"] = 16,["39"] = 16,["40"] = 17,["41"] = 17,["42"] = 18,["43"] = 18,["44"] = 19,["45"] = 19,["46"] = 20,["47"] = 20,["48"] = 21,["49"] = 21,["50"] = 23,["51"] = 23,["52"] = 23,["54"] = 44,["55"] = 45,["56"] = 46,["57"] = 47,["58"] = 48,["59"] = 53,["60"] = 54,["61"] = 55,["62"] = 56,["63"] = 57,["64"] = 58,["65"] = 59,["66"] = 60,["67"] = 61,["68"] = 62,["69"] = 62,["70"] = 62,["71"] = 62,["72"] = 62,["73"] = 65,["74"] = 66,["75"] = 67,["76"] = 69,["77"] = 70,["78"] = 71,["79"] = 73,["80"] = 43,["81"] = 76,["82"] = 77,["83"] = 79,["84"] = 80,["85"] = 81,["86"] = 82,["87"] = 85,["88"] = 90,["89"] = 91,["90"] = 95,["91"] = 97,["92"] = 98,["93"] = 99,["94"] = 100,["95"] = 101,["96"] = 102,["97"] = 103,["98"] = 104,["99"] = 105,["100"] = 106,["101"] = 107,["102"] = 108,["103"] = 109,["104"] = 110,["105"] = 111,["106"] = 112,["107"] = 113,["108"] = 114,["109"] = 115,["110"] = 117,["111"] = 118,["112"] = 119,["113"] = 76,["114"] = 122,["115"] = 123,["116"] = 124,["118"] = 126,["119"] = 126,["120"] = 127,["121"] = 128,["122"] = 126,["125"] = 122,["126"] = 132,["127"] = 133,["128"] = 138,["129"] = 139,["130"] = 144,["131"] = 149,["132"] = 154,["133"] = 159,["134"] = 165,["135"] = 166,["136"] = 167,["137"] = 168,["138"] = 169,["139"] = 170,["140"] = 171,["141"] = 172,["142"] = 173,["143"] = 174,["144"] = 175,["145"] = 176,["146"] = 177,["147"] = 178,["148"] = 179,["149"] = 180,["150"] = 181,["151"] = 182,["152"] = 132});
 local ____exports = {}
 local ____EventBus = require("core.EventBus")
 local EventBus = ____EventBus.EventBus
@@ -10,6 +10,8 @@ local ____LazyPrecacheManager = require("core.LazyPrecacheManager")
 local LazyPrecacheManager = ____LazyPrecacheManager.LazyPrecacheManager
 local ____LevelingManager = require("core.LevelingManager")
 local LevelingManager = ____LevelingManager.LevelingManager
+local ____start_body_override = require("data.start_body_override")
+local getInitialStartBody = ____start_body_override.getInitialStartBody
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
 local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
@@ -83,7 +85,9 @@ function EvoGameMode.prototype.configureGameRules(self)
     GameRules:SetShowcaseTime(0)
     GameRules:SetPreGameTime(IsInToolsMode() and EVO_CONSTANTS.PRE_GAME_TIME_DEV or EVO_CONSTANTS.PRE_GAME_TIME_PROD)
     GameRules:SetCustomGameSetupAutoLaunchDelay(IsInToolsMode() and EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_DEV or EVO_CONSTANTS.CUSTOM_GAME_SETUP_DELAY_PROD)
-    gameMode:SetCustomGameForceHero(EVO_CONSTANTS.BASE_HERO_NAME)
+    local startBody = getInitialStartBody(nil)
+    local startHeroClass = startBody and startBody.heroClass and #startBody.heroClass > 0 and startBody.heroClass or EVO_CONSTANTS.BASE_HERO_NAME
+    gameMode:SetCustomGameForceHero(startHeroClass)
     GameRules:SetGoldPerTick(0)
     GameRules:SetGoldTickTime(EVO_CONSTANTS.GOLD_TICK_TIME)
     GameRules:SetStartingGold(EVO_CONSTANTS.STARTING_GOLD)

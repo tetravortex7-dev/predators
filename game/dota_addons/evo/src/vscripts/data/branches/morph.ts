@@ -43,12 +43,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 0.85,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_morph_water"],
         appearance: {
-            scale: 0.85,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -88,12 +88,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_morph_water"],
         appearance: {
-            scale: 1.05,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -134,11 +134,11 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -181,12 +181,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 0.85,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_morph_blood"],
         appearance: {
-            scale: 0.85,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/bracer_general/bracer_general.vmdl" },
@@ -219,12 +219,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_morph_blood"],
         appearance: {
-            scale: 1.05,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/bracer_general/bracer_general.vmdl" },
@@ -259,11 +259,11 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/bracer_general/bracer_general.vmdl" },
@@ -300,12 +300,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 0.85,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_morph_void"],
         appearance: {
-            scale: 0.85,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/skadi_rising_arms/skadi_rising_arms.vmdl" },
@@ -338,12 +338,12 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.05,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_morph_void"],
         appearance: {
-            scale: 1.05,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/skadi_rising_arms/skadi_rising_arms.vmdl" },
@@ -378,11 +378,11 @@ export const EVO_BRANCH_MORPH_BODIES: readonly BodyDefinition[] = [
         tags: ["aquatic", "agile", "morph"],
         spellPoolTags: ["aquatic", "mobility", "burst"],
         model: "models/heroes/morphling/morphling.vmdl",
-        modelScale: 1.25,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_morphling",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.25,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/morphling/skadi_rising_arms/skadi_rising_arms.vmdl" },

@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 16,["22"] = 18,["23"] = 20,["24"] = 21,["25"] = 22,["26"] = 24,["27"] = 25,["28"] = 24,["29"] = 25,["30"] = 26,["31"] = 27,["32"] = 27,["33"] = 27,["34"] = 27,["35"] = 26,["36"] = 29,["37"] = 30,["40"] = 31,["41"] = 32,["42"] = 33,["45"] = 34,["46"] = 35,["47"] = 36,["48"] = 37,["50"] = 29,["51"] = 40,["52"] = 41,["55"] = 42,["56"] = 43,["57"] = 43,["58"] = 43,["59"] = 43,["60"] = 44,["61"] = 46,["62"] = 47,["63"] = 48,["64"] = 48,["65"] = 48,["66"] = 48,["67"] = 48,["68"] = 48,["69"] = 48,["70"] = 48,["71"] = 48,["72"] = 57,["73"] = 40,["74"] = 25,["75"] = 24,["76"] = 25,["78"] = 25,["79"] = 61,["80"] = 62,["81"] = 61,["82"] = 62,["84"] = 62,["85"] = 63,["86"] = 64,["87"] = 65,["88"] = 66,["89"] = 61,["90"] = 68,["91"] = 69,["92"] = 68,["93"] = 71,["94"] = 72,["95"] = 71,["96"] = 74,["97"] = 75,["98"] = 74,["99"] = 77,["100"] = 78,["101"] = 77,["102"] = 80,["103"] = 81,["104"] = 80,["105"] = 83,["106"] = 84,["107"] = 83,["108"] = 86,["109"] = 87,["110"] = 86,["111"] = 89,["112"] = 90,["113"] = 91,["114"] = 92,["115"] = 93,["116"] = 94,["117"] = 95,["118"] = 96,["119"] = 97,["120"] = 97,["121"] = 97,["122"] = 97,["124"] = 99,["125"] = 100,["126"] = 101,["128"] = 103,["131"] = 104,["132"] = 105,["133"] = 105,["134"] = 105,["135"] = 105,["136"] = 107,["137"] = 112,["138"] = 113,["139"] = 114,["140"] = 114,["141"] = 114,["142"] = 114,["143"] = 114,["144"] = 114,["145"] = 114,["146"] = 114,["147"] = 116,["148"] = 121,["149"] = 121,["150"] = 121,["151"] = 121,["152"] = 121,["153"] = 122,["154"] = 122,["155"] = 122,["156"] = 122,["157"] = 122,["158"] = 122,["159"] = 122,["160"] = 122,["161"] = 124,["162"] = 125,["163"] = 125,["164"] = 125,["165"] = 125,["166"] = 125,["167"] = 125,["168"] = 125,["170"] = 127,["171"] = 89,["172"] = 129,["173"] = 130,["176"] = 131,["177"] = 132,["178"] = 133,["181"] = 134,["182"] = 136,["183"] = 136,["184"] = 136,["185"] = 136,["186"] = 136,["187"] = 136,["188"] = 136,["189"] = 138,["190"] = 139,["191"] = 140,["192"] = 141,["193"] = 141,["194"] = 141,["195"] = 141,["196"] = 141,["197"] = 141,["201"] = 146,["202"] = 147,["203"] = 148,["204"] = 149,["205"] = 150,["206"] = 151,["207"] = 152,["208"] = 153,["209"] = 154,["210"] = 155,["211"] = 158,["212"] = 159,["213"] = 160,["214"] = 161,["215"] = 163,["216"] = 168,["217"] = 169,["218"] = 169,["219"] = 169,["220"] = 169,["221"] = 169,["222"] = 170,["223"] = 172,["225"] = 173,["226"] = 173,["228"] = 174,["229"] = 174,["230"] = 174,["231"] = 174,["232"] = 174,["233"] = 174,["234"] = 174,["235"] = 181,["236"] = 182,["243"] = 190,["245"] = 129,["246"] = 193,["247"] = 194,["248"] = 194,["249"] = 194,["250"] = 194,["251"] = 194,["252"] = 194,["253"] = 193,["254"] = 62,["255"] = 61,["256"] = 62,["258"] = 62,["259"] = 203,["260"] = 204,["261"] = 203,["262"] = 204,["263"] = 205,["264"] = 206,["265"] = 207,["266"] = 208,["268"] = 204,["269"] = 205,["270"] = 212,["271"] = 213,["272"] = 213,["274"] = 214,["275"] = 215,["276"] = 216,["277"] = 217,["279"] = 219,["280"] = 212,["281"] = 221,["282"] = 222,["283"] = 221,["284"] = 224,["285"] = 225,["288"] = 226,["289"] = 227,["290"] = 227,["291"] = 227,["292"] = 227,["293"] = 227,["294"] = 228,["295"] = 229,["298"] = 233,["299"] = 234,["300"] = 234,["301"] = 234,["302"] = 234,["303"] = 235,["304"] = 236,["305"] = 237,["306"] = 239,["307"] = 244,["308"] = 245,["309"] = 246,["310"] = 247,["311"] = 248,["312"] = 250,["313"] = 251,["314"] = 252,["315"] = 253,["316"] = 255,["317"] = 256,["318"] = 261,["319"] = 262,["320"] = 263,["321"] = 265,["322"] = 270,["323"] = 271,["324"] = 273,["325"] = 274,["326"] = 276,["327"] = 277,["328"] = 279,["329"] = 280,["330"] = 281,["331"] = 284,["332"] = 285,["333"] = 287,["334"] = 292,["335"] = 293,["336"] = 293,["337"] = 293,["338"] = 293,["339"] = 293,["340"] = 294,["341"] = 296,["343"] = 297,["344"] = 297,["346"] = 298,["347"] = 298,["348"] = 298,["349"] = 298,["350"] = 298,["351"] = 298,["352"] = 298,["353"] = 305,["358"] = 224,["359"] = 204,["360"] = 203,["361"] = 204,["363"] = 204,["364"] = 314,["365"] = 315,["366"] = 314,["367"] = 315,["368"] = 316,["369"] = 317,["372"] = 318,["373"] = 319,["374"] = 320,["375"] = 322,["376"] = 323,["377"] = 324,["378"] = 325,["380"] = 327,["381"] = 328,["382"] = 316,["383"] = 315,["384"] = 314,["385"] = 315,["387"] = 315,["388"] = 332,["389"] = 333,["390"] = 332,["391"] = 333,["392"] = 334,["393"] = 335,["394"] = 334,["395"] = 337,["396"] = 338,["397"] = 337,["398"] = 340,["399"] = 341,["400"] = 340,["401"] = 343,["402"] = 344,["403"] = 343,["404"] = 333,["405"] = 332,["406"] = 333,["408"] = 333,["409"] = 348,["410"] = 349,["411"] = 348,["412"] = 349,["413"] = 350,["414"] = 351,["415"] = 350,["416"] = 353,["417"] = 354,["418"] = 353,["419"] = 356,["420"] = 357,["421"] = 356,["422"] = 359,["423"] = 360,["424"] = 359,["425"] = 349,["426"] = 348,["427"] = 349,["429"] = 349});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 15,["22"] = 17,["23"] = 19,["24"] = 21,["25"] = 22,["26"] = 23,["27"] = 25,["28"] = 26,["29"] = 25,["30"] = 26,["31"] = 27,["32"] = 28,["33"] = 28,["34"] = 28,["35"] = 28,["36"] = 27,["37"] = 30,["38"] = 31,["41"] = 32,["42"] = 33,["43"] = 34,["46"] = 35,["47"] = 36,["48"] = 37,["49"] = 38,["51"] = 30,["52"] = 41,["53"] = 42,["56"] = 43,["57"] = 44,["58"] = 44,["59"] = 44,["60"] = 44,["61"] = 45,["62"] = 47,["63"] = 48,["64"] = 49,["65"] = 49,["66"] = 49,["67"] = 49,["68"] = 49,["69"] = 49,["70"] = 49,["71"] = 49,["72"] = 49,["73"] = 58,["74"] = 41,["75"] = 26,["76"] = 25,["77"] = 26,["79"] = 26,["80"] = 62,["81"] = 63,["82"] = 62,["83"] = 63,["85"] = 63,["86"] = 64,["87"] = 65,["88"] = 66,["89"] = 67,["90"] = 62,["91"] = 69,["92"] = 70,["93"] = 69,["94"] = 72,["95"] = 73,["96"] = 72,["97"] = 75,["98"] = 76,["99"] = 75,["100"] = 78,["101"] = 79,["102"] = 78,["103"] = 81,["104"] = 82,["105"] = 81,["106"] = 84,["107"] = 85,["108"] = 84,["109"] = 87,["110"] = 88,["111"] = 87,["112"] = 90,["113"] = 91,["114"] = 92,["115"] = 93,["116"] = 94,["117"] = 95,["118"] = 96,["119"] = 97,["120"] = 98,["121"] = 98,["122"] = 98,["123"] = 98,["125"] = 100,["126"] = 101,["127"] = 102,["129"] = 104,["132"] = 105,["133"] = 106,["134"] = 106,["135"] = 106,["136"] = 106,["137"] = 108,["138"] = 113,["139"] = 114,["140"] = 115,["141"] = 115,["142"] = 115,["143"] = 115,["144"] = 115,["145"] = 115,["146"] = 115,["147"] = 115,["148"] = 117,["149"] = 122,["150"] = 122,["151"] = 122,["152"] = 122,["153"] = 122,["154"] = 123,["155"] = 123,["156"] = 123,["157"] = 123,["158"] = 123,["159"] = 123,["160"] = 123,["161"] = 123,["162"] = 125,["163"] = 126,["164"] = 126,["165"] = 126,["166"] = 126,["167"] = 126,["168"] = 126,["169"] = 126,["171"] = 128,["172"] = 90,["173"] = 130,["174"] = 131,["177"] = 132,["178"] = 133,["179"] = 134,["182"] = 135,["183"] = 137,["184"] = 137,["185"] = 137,["186"] = 137,["187"] = 137,["188"] = 137,["189"] = 137,["190"] = 139,["191"] = 140,["192"] = 141,["193"] = 142,["194"] = 142,["195"] = 142,["196"] = 142,["197"] = 142,["198"] = 142,["202"] = 147,["203"] = 148,["204"] = 149,["205"] = 150,["206"] = 151,["207"] = 152,["208"] = 153,["209"] = 154,["210"] = 155,["211"] = 156,["212"] = 159,["213"] = 160,["214"] = 161,["215"] = 163,["216"] = 168,["217"] = 169,["218"] = 169,["219"] = 169,["220"] = 169,["221"] = 169,["222"] = 170,["223"] = 172,["225"] = 173,["226"] = 173,["228"] = 174,["229"] = 174,["230"] = 174,["231"] = 174,["232"] = 174,["233"] = 174,["234"] = 174,["235"] = 181,["236"] = 182,["243"] = 190,["245"] = 130,["246"] = 193,["247"] = 194,["248"] = 194,["249"] = 194,["250"] = 194,["251"] = 194,["252"] = 194,["253"] = 193,["254"] = 63,["255"] = 62,["256"] = 63,["258"] = 63,["259"] = 203,["260"] = 205,["261"] = 206,["262"] = 205,["263"] = 206,["264"] = 207,["265"] = 208,["266"] = 209,["267"] = 211,["268"] = 214,["271"] = 217,["272"] = 217,["273"] = 217,["274"] = 217,["275"] = 207,["276"] = 219,["277"] = 220,["278"] = 220,["280"] = 221,["281"] = 222,["282"] = 223,["283"] = 224,["285"] = 226,["286"] = 219,["287"] = 228,["288"] = 229,["289"] = 228,["290"] = 231,["291"] = 232,["292"] = 233,["293"] = 234,["294"] = 234,["295"] = 234,["296"] = 234,["298"] = 236,["300"] = 231,["301"] = 239,["302"] = 240,["305"] = 241,["306"] = 242,["307"] = 242,["308"] = 242,["309"] = 242,["310"] = 242,["311"] = 243,["312"] = 244,["315"] = 247,["316"] = 248,["318"] = 251,["319"] = 252,["320"] = 252,["321"] = 252,["322"] = 252,["323"] = 253,["324"] = 254,["325"] = 255,["326"] = 257,["327"] = 262,["328"] = 263,["329"] = 264,["330"] = 265,["331"] = 266,["332"] = 268,["333"] = 269,["334"] = 270,["335"] = 271,["336"] = 273,["337"] = 274,["338"] = 275,["340"] = 278,["341"] = 279,["342"] = 284,["343"] = 285,["344"] = 286,["345"] = 288,["346"] = 293,["347"] = 294,["348"] = 296,["349"] = 297,["350"] = 299,["351"] = 300,["352"] = 302,["353"] = 303,["354"] = 304,["355"] = 307,["356"] = 308,["357"] = 310,["358"] = 315,["359"] = 316,["360"] = 316,["361"] = 316,["362"] = 316,["363"] = 316,["364"] = 317,["365"] = 319,["367"] = 320,["368"] = 320,["370"] = 321,["371"] = 321,["372"] = 321,["373"] = 321,["374"] = 321,["375"] = 321,["376"] = 321,["377"] = 328,["382"] = 239,["383"] = 206,["384"] = 205,["385"] = 206,["387"] = 206,["388"] = 337,["389"] = 338,["390"] = 337,["391"] = 338,["392"] = 338,["393"] = 337,["394"] = 338,["396"] = 338,["397"] = 340,["398"] = 341,["399"] = 340,["400"] = 341,["401"] = 341,["402"] = 340,["403"] = 341,["405"] = 341,["406"] = 343,["407"] = 344,["408"] = 343,["409"] = 344,["410"] = 345,["411"] = 346,["414"] = 347,["415"] = 348,["416"] = 349,["417"] = 351,["418"] = 352,["419"] = 353,["420"] = 354,["421"] = 355,["422"] = 356,["425"] = 359,["426"] = 360,["427"] = 345,["428"] = 344,["429"] = 343,["430"] = 344,["432"] = 344,["433"] = 364,["434"] = 365,["435"] = 364,["436"] = 365,["437"] = 366,["438"] = 367,["439"] = 366,["440"] = 369,["441"] = 370,["442"] = 369,["443"] = 372,["444"] = 373,["445"] = 372,["446"] = 375,["447"] = 376,["448"] = 375,["449"] = 365,["450"] = 364,["451"] = 365,["453"] = 365,["454"] = 380,["455"] = 381,["456"] = 380,["457"] = 381,["458"] = 382,["459"] = 383,["460"] = 382,["461"] = 385,["462"] = 386,["463"] = 385,["464"] = 388,["465"] = 389,["466"] = 388,["467"] = 391,["468"] = 392,["469"] = 391,["470"] = 381,["471"] = 380,["472"] = 381,["474"] = 381});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -13,6 +13,7 @@ local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local ____evo_spectre_shared = require("abilities.spectre.evo_spectre_shared")
 local findNearestSpectrePortal = ____evo_spectre_shared.findNearestSpectrePortal
+local findPhantomDAbility = ____evo_spectre_shared.findPhantomDAbility
 local findSpectreEnemies = ____evo_spectre_shared.findSpectreEnemies
 local getSpectreAgi = ____evo_spectre_shared.getSpectreAgi
 local getSpectreBranchMaxLevel = ____evo_spectre_shared.getSpectreBranchMaxLevel
@@ -38,7 +39,7 @@ function evo_spectre_phantom_e.prototype.OnUpgrade(self)
         return
     end
     local caster = self:GetCaster()
-    local dAb = caster:FindAbilityByName("evo_spectre_phantom_d")
+    local dAb = findPhantomDAbility(nil, caster)
     if not dAb or dAb:IsNull() then
         return
     end
@@ -209,9 +210,8 @@ function modifier_evo_spectre_portal_unit.prototype.OnIntervalThink(self)
                 local pulseRadius = stormAb:GetSpecialValueFor("pulse_radius")
                 local dmg = stormAb:GetSpecialValueFor("pulse_dmg") + getSpectreAgi(nil, caster) * stormAb:GetSpecialValueFor("pulse_agi_pct") / 100
                 local slowDur = stormAb:GetSpecialValueFor("slow_duration")
-                local eAb = caster:FindAbilityByName("evo_spectre_phantom_e")
-                local shred = eAb and not eAb:IsNull() and eAb:GetSpecialValueFor("armor_shred") or 4
-                local shredDur = eAb and not eAb:IsNull() and eAb:GetSpecialValueFor("shred_duration") or 4
+                local shred = stormAb:GetSpecialValueFor("armor_shred") or 4
+                local shredDur = stormAb:GetSpecialValueFor("shred_duration") or 4
                 local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf", 8, nil)
                 ParticleManager:SetParticleControl(pfx, 0, origin)
                 ParticleManager:SetParticleControl(
@@ -256,16 +256,22 @@ modifier_evo_spectre_portal_unit = __TS__DecorateLegacy(
     modifier_evo_spectre_portal_unit
 )
 ____exports.modifier_evo_spectre_portal_unit = modifier_evo_spectre_portal_unit
+local REALITY_COOLDOWNS = {35, 30, 25}
 ____exports.evo_spectre_phantom_d = __TS__Class()
 local evo_spectre_phantom_d = ____exports.evo_spectre_phantom_d
 evo_spectre_phantom_d.name = "evo_spectre_phantom_d"
 __TS__ClassExtends(evo_spectre_phantom_d, BaseAbility)
 function evo_spectre_phantom_d.prototype.GetCooldown(self, level)
     local caster = self:GetCaster()
-    if caster and not caster:IsNull() and caster:HasModifier("modifier_evo_spectre_phantom_r_free_d") then
-        return 0
+    if caster and not caster:IsNull() then
+        if caster:HasModifier("modifier_evo_spectre_phantom_r_free_d") or caster:HasModifier("modifier_item_aghanims_shard") then
+            return 0
+        end
     end
-    return BaseAbility.prototype.GetCooldown(self, level)
+    return REALITY_COOLDOWNS[math.max(
+        0,
+        math.min(2, level)
+    ) + 1] or 35
 end
 function evo_spectre_phantom_d.prototype.CastFilterResultLocation(self, location)
     if not IsServer() then
@@ -281,6 +287,17 @@ end
 function evo_spectre_phantom_d.prototype.GetCustomCastErrorLocation(self, _location)
     return "#evo_spectre_no_portal_error"
 end
+function evo_spectre_phantom_d.prototype.restoreSingleCharge(self)
+    local maxCharges = self:GetMaxAbilityCharges(self:GetLevel())
+    if maxCharges > 0 then
+        self:SetCurrentAbilityCharges(math.min(
+            maxCharges,
+            self:GetCurrentAbilityCharges() + 1
+        ))
+    else
+        self:EndCooldown()
+    end
+end
 function evo_spectre_phantom_d.prototype.OnSpellStart(self)
     if not IsServer() then
         return
@@ -292,8 +309,11 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
         self:GetCursorPosition()
     )
     if not portal then
-        self:EndCooldown()
+        self:restoreSingleCharge()
         return
+    end
+    if caster:HasModifier("modifier_evo_spectre_phantom_r_free_d") and self:GetMaxAbilityCharges(self:GetLevel()) > 0 then
+        self:restoreSingleCharge()
     end
     local origin = caster:GetAbsOrigin()
     local dest = GetGroundPosition(
@@ -313,6 +333,10 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
     caster:Stop()
     FindClearSpaceForUnit(caster, dest, true)
     caster:SetForwardVector(forward)
+    local dagger = caster:FindAbilityByName("spectre_spectral_dagger")
+    if dagger and not dagger:IsNull() and dagger:GetCooldownTimeRemaining() > 0 then
+        dagger:EndCooldown()
+    end
     local arrivedPos = caster:GetAbsOrigin()
     local endPfx = ParticleManager:CreateParticle("particles/items_fx/blink_dagger_end.vpcf", 0, caster)
     ParticleManager:SetParticleControl(endPfx, 0, arrivedPos)
@@ -341,7 +365,7 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
         for ____, enemy in ipairs(findSpectreEnemies(nil, caster, arrivedPos, radius)) do
             do
                 if not enemy or enemy:IsNull() or not enemy:IsAlive() then
-                    goto __continue46
+                    goto __continue52
                 end
                 ApplyDamage({
                     victim = enemy,
@@ -352,7 +376,7 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
                 })
                 enemy:AddNewModifier(caster, self, "modifier_evo_spectre_armor_shred", {duration = shredDur, shred = shred})
             end
-            ::__continue46::
+            ::__continue52::
         end
     end
 end
@@ -361,6 +385,24 @@ evo_spectre_phantom_d = __TS__DecorateLegacy(
     evo_spectre_phantom_d
 )
 ____exports.evo_spectre_phantom_d = evo_spectre_phantom_d
+____exports.evo_spectre_phantom_e_t3 = __TS__Class()
+local evo_spectre_phantom_e_t3 = ____exports.evo_spectre_phantom_e_t3
+evo_spectre_phantom_e_t3.name = "evo_spectre_phantom_e_t3"
+__TS__ClassExtends(evo_spectre_phantom_e_t3, ____exports.evo_spectre_phantom_e)
+evo_spectre_phantom_e_t3 = __TS__DecorateLegacy(
+    {registerAbility(nil, "evo_spectre_phantom_e_t3")},
+    evo_spectre_phantom_e_t3
+)
+____exports.evo_spectre_phantom_e_t3 = evo_spectre_phantom_e_t3
+____exports.evo_spectre_phantom_d_t4 = __TS__Class()
+local evo_spectre_phantom_d_t4 = ____exports.evo_spectre_phantom_d_t4
+evo_spectre_phantom_d_t4.name = "evo_spectre_phantom_d_t4"
+__TS__ClassExtends(evo_spectre_phantom_d_t4, ____exports.evo_spectre_phantom_d)
+evo_spectre_phantom_d_t4 = __TS__DecorateLegacy(
+    {registerAbility(nil, "evo_spectre_phantom_d_t4")},
+    evo_spectre_phantom_d_t4
+)
+____exports.evo_spectre_phantom_d_t4 = evo_spectre_phantom_d_t4
 ____exports.evo_spectre_phantom_r = __TS__Class()
 local evo_spectre_phantom_r = ____exports.evo_spectre_phantom_r
 evo_spectre_phantom_r.name = "evo_spectre_phantom_r"
@@ -373,9 +415,12 @@ function evo_spectre_phantom_r.prototype.OnSpellStart(self)
     local dur = self:GetSpecialValueFor("duration")
     local freeDur = self:GetSpecialValueFor("free_d_duration")
     caster:EmitSound("Hero_Spectre.HauntCast")
-    local dAb = caster:FindAbilityByName("evo_spectre_phantom_d")
+    local dAb = findPhantomDAbility(nil, caster)
     if dAb and not dAb:IsNull() then
         dAb:EndCooldown()
+        if dAb:GetMaxAbilityCharges(dAb:GetLevel()) > 0 then
+            dAb:RefreshCharges()
+        end
     end
     caster:AddNewModifier(caster, self, "modifier_evo_spectre_phantom_r_storm", {duration = dur})
     caster:AddNewModifier(caster, self, "modifier_evo_spectre_phantom_r_free_d", {duration = freeDur})

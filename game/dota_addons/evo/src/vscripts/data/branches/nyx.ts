@@ -43,12 +43,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_nyx_scarab"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_back_bishobola/nyx_back_bishobola.vmdl" },
@@ -81,12 +81,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_nyx_scarab"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_back_bishobola/nyx_back_bishobola.vmdl" },
@@ -121,11 +121,11 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_back_carapace/nyx_back_carapace.vmdl" },
@@ -164,12 +164,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_nyx_mantis"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_bishobola_weapon/nyx_bishobola_weapon.vmdl" },
@@ -202,12 +202,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_nyx_mantis"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_bishobola_weapon/nyx_bishobola_weapon.vmdl" },
@@ -242,11 +242,11 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -285,12 +285,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_nyx_archon"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl" },
@@ -323,12 +323,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_nyx_archon"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_monster/nyx_monster_head.vmdl" },
@@ -363,11 +363,11 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -412,12 +412,12 @@ export const EVO_BRANCH_NYX_BODIES: readonly BodyDefinition[] = [
         tags: ["insect", "hive", "nyx"],
         spellPoolTags: ["control", "burst"],
         model: "models/heroes/nerubian_assassin/nerubian_assassin.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_nyx_assassin",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_nyx_cicada"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/nerubian_assassin/nyx_dusky_back/nyx_dusky_back.vmdl" },

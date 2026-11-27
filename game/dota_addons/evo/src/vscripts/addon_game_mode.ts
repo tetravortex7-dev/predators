@@ -2,6 +2,7 @@ import { EvoGameMode } from "./GameMode";
 import { EVO_BODIES_CATALOG } from "./data/bodies_catalog";
 import { EVO_BOSSES_CATALOG } from "./data/bosses_catalog";
 import { EVO_NEUTRAL_CREEP_MODELS } from "./data/neutral_creeps_catalog";
+import { getInitialStartBody } from "./data/start_body_override";
 import { HeroAppearancePreset } from "./lib/HeroAppearance";
 
 declare global {
@@ -96,12 +97,19 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
         "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
         "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
         "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_shadow_path.vpcf",
         "particles/units/heroes/hero_spectre/spectre_shadow_path_owner.vpcf",
         "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf",
         "particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf",
         "particles/units/heroes/hero_void_spirit/void_spirit_entryportal.vpcf",
         "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
         "particles/evo_spectre/evo_spectre_cleave.vpcf",
+        "particles/evo_spectre/evo_bastion_cocoon.vpcf",
+        "particles/evo_spectre/evo_bastion_explosion.vpcf",
+        "particles/units/heroes/hero_mars/mars_shield_of_mars.vpcf",
+        "particles/units/heroes/hero_mars/mars_shield_of_mars_small.vpcf",
+        "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_aura.vpcf",
+        "particles/units/heroes/hero_arc_warden/arc_warden_magnetic.vpcf",
     ];
     for (const vpcf of extraParticles) {
         if (!seenParticles.has(vpcf)) {
@@ -117,6 +125,8 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts", context);
     PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_mars.vsndevts", context);
+    PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts", context);
 
     for (const modelPath of EVO_NEUTRAL_CREEP_MODELS) {
         precacheUniqueModel(modelPath, seenModels, context);
@@ -127,8 +137,10 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
         precacheUniquePreset(boss.appearance, seenModels, seenParticles, context);
     }
 
+    const startBody = getInitialStartBody();
     for (const body of EVO_BODIES_CATALOG) {
-        if (body.tierIndex === 0 && body.heroClass && body.heroClass.length > 0) {
+        const isDevStartHero = startBody !== undefined && body.id === startBody.id;
+        if ((body.tierIndex === 0 || isDevStartHero) && body.heroClass && body.heroClass.length > 0) {
             PrecacheUnitByNameSync(body.heroClass, context);
         }
         precacheUniqueModel(body.model, seenModels, context);

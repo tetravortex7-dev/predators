@@ -44,12 +44,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_veno_needle"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -85,12 +85,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_veno_needle"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -128,11 +128,11 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -174,12 +174,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_veno_hive"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/veno_ti8_immortal_head/veno_ti8_immortal_head.vmdl" },
@@ -212,12 +212,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_veno_hive"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/veno_ti8_immortal_head/veno_ti8_immortal_head.vmdl" },
@@ -252,11 +252,11 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/veno_ti8_immortal_head/veno_ti8_immortal_head.vmdl" },
@@ -292,12 +292,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_veno_symbiont"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/mechamancer/mechamancer_shoulders.vmdl" },
@@ -330,12 +330,12 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_veno_symbiont"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/mechamancer/mechamancer_shoulders.vmdl" },
@@ -373,11 +373,11 @@ export const EVO_BRANCH_VENOMANCER_BODIES: readonly BodyDefinition[] = [
         tags: ["venomancer", "spore", "toxic"],
         spellPoolTags: ["poison", "summon", "utility"],
         model: "models/heroes/venomancer/venomancer.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_venomancer",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/venomancer/mechamancer/mechamancer_shoulders.vmdl" },

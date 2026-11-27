@@ -44,8 +44,8 @@
     "en": "Adaptive Essence"
   },
   "DOTA_Tooltip_ability_evo_morph_adaptive_essence_Description": {
-    "ru": "<h1>Пассивно: Адаптация</h1>Динамически усиливает героя в зависимости от его <font color='#d8ae53'><b>наибольшего атрибута</b></font>:<br><br>• <font color='#e03e2e'><b>Сила:</b></font> <font color='#e03e2e'>+%str_armor%</font> к броне и <font color='#9acd32'>+%str_hp_regen%</font> к регенерации здоровья.<br>• <font color='#9acd32'><b>Ловкость:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> к скорости атаки и <font color='#9acd32'>+%agi_move_speed_pct%%%</font> к скорости передвижения.<br>• <font color='#87ceeb'><b>Интеллект:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> к урону заклинаний и <font color='#87ceeb'>+%int_mana_regen%</font> к регенерации маны.",
-    "en": "<h1>Passive: Adaptation</h1>Dynamically empowers the hero based on their <font color='#d8ae53'><b>highest attribute</b></font>:<br><br>• <font color='#e03e2e'><b>Strength:</b></font> <font color='#e03e2e'>+%str_armor%</font> armor and <font color='#9acd32'>+%str_hp_regen%</font> health regeneration.<br>• <font color='#9acd32'><b>Agility:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> attack speed and <font color='#9acd32'>+%agi_move_speed_pct%%%</font> movement speed.<br>• <font color='#87ceeb'><b>Intelligence:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> spell amplification and <font color='#87ceeb'>+%int_mana_regen%</font> mana regeneration."
+    "ru": "<font color='#91a0b4'><b>Пассивно: Адаптация</b></font><br>Динамически усиливает героя в зависимости от его <font color='#d8ae53'><b>наибольшего атрибута</b></font>:<br><br>• <font color='#e03e2e'><b>Сила:</b></font> <font color='#e03e2e'>+%str_armor%</font> к броне и <font color='#9acd32'>+%str_hp_regen%</font> к регенерации здоровья.<br>• <font color='#9acd32'><b>Ловкость:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> к скорости атаки и <font color='#9acd32'>+%agi_move_speed_pct%%%</font> к скорости передвижения.<br>• <font color='#87ceeb'><b>Интеллект:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> к урону заклинаний и <font color='#87ceeb'>+%int_mana_regen%</font> к регенерации маны.",
+    "en": "<font color='#91a0b4'><b>Passive: Adaptation</b></font><br>Dynamically empowers the hero based on their <font color='#d8ae53'><b>highest attribute</b></font>:<br><br>• <font color='#e03e2e'><b>Strength:</b></font> <font color='#e03e2e'>+%str_armor%</font> armor and <font color='#9acd32'>+%str_hp_regen%</font> health regeneration.<br>• <font color='#9acd32'><b>Agility:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> attack speed and <font color='#9acd32'>+%agi_move_speed_pct%%%</font> movement speed.<br>• <font color='#87ceeb'><b>Intelligence:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> spell amplification and <font color='#87ceeb'>+%int_mana_regen%</font> mana regeneration."
   },
   "DOTA_Tooltip_ability_evo_morph_adaptive_essence_Note0": {
     "ru": "Не действует на иллюзии и отключается истощением.",
@@ -272,8 +272,8 @@
     "en": "Flesh Hunger"
   },
   "DOTA_Tooltip_ability_evo_morph_blood_e_Description": {
-    "ru": "<h1>Пассивно: Жажда плоти</h1>Дарует <font color='#9acd32'>+%lifesteal_pct%%%</font> вампиризма против целей под <font color='#e03e2e'><b>Кровотечением</b></font> и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки.",
-    "en": "<h1>Passive: Flesh Hunger</h1>Grants <font color='#9acd32'>+%lifesteal_pct%%%</font> lifesteal against <font color='#e03e2e'><b>bleeding</b></font> targets and <font color='#9acd32'>+%bonus_as%</font> attack speed."
+    "ru": "<font color='#91a0b4'><b>Пассивно: Жажда плоти</b></font><br>Дарует <font color='#9acd32'>+%lifesteal_pct%%%</font> вампиризма против целей под <font color='#e03e2e'><b>Кровотечением</b></font> и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки.",
+    "en": "<font color='#91a0b4'><b>Passive: Flesh Hunger</b></font><br>Grants <font color='#9acd32'>+%lifesteal_pct%%%</font> lifesteal against <font color='#e03e2e'><b>bleeding</b></font> targets and <font color='#9acd32'>+%bonus_as%</font> attack speed."
   },
   "DOTA_Tooltip_ability_evo_morph_blood_e_Note0": {
     "ru": "Вампиризм срабатывает только при атаке врагов с эффектом <b>Кровотечения</b>.",
@@ -368,8 +368,8 @@
     "en": "Abyssal Touch"
   },
   "DOTA_Tooltip_ability_evo_morph_void_e_Description": {
-    "ru": "<h1>Пассивно: Эрозия</h1>Атаки накладывают на врага эффект <b>Эрозии</b> на %stack_duration% сек. <font color='#7d7d7d'>(до %max_stacks% зарядов)</font>.<br><br>Каждый заряд снижает сопротивление магии цели на <font color='#87ceeb'>%mr_shred_per_stack%%%</font> и добавляет <font color='#87ceeb'>+%on_hit_damage% магического урона</font> при атаке.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
-    "en": "<h1>Passive: Erosion</h1>Attacks apply <b>Erosion</b> to the target for %stack_duration%s <font color='#7d7d7d'>(max %max_stacks% stacks)</font>.<br><br>Each stack reduces the target's magic resistance by <font color='#87ceeb'>%mr_shred_per_stack%%%</font> and deals <font color='#87ceeb'>+%on_hit_damage% bonus magical damage</font> on hit.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+    "ru": "<font color='#91a0b4'><b>Пассивно: Эрозия</b></font><br>Атаки накладывают на врага эффект <b>Эрозии</b> на %stack_duration% сек. <font color='#7d7d7d'>(до %max_stacks% зарядов)</font>.<br><br>Каждый заряд снижает сопротивление магии цели на <font color='#87ceeb'>%mr_shred_per_stack%%%</font> и добавляет <font color='#87ceeb'>+%on_hit_damage% магического урона</font> при атаке.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#91a0b4'><b>Passive: Erosion</b></font><br>Attacks apply <b>Erosion</b> to the target for %stack_duration%s <font color='#7d7d7d'>(max %max_stacks% stacks)</font>.<br><br>Each stack reduces the target's magic resistance by <font color='#87ceeb'>%mr_shred_per_stack%%%</font> and deals <font color='#87ceeb'>+%on_hit_damage% bonus magical damage</font> on hit.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_morph_void_e_Note0": {
     "ru": "Не срабатывает по постройкам и не действует на цели с невосприимчивостью к эффектам.",

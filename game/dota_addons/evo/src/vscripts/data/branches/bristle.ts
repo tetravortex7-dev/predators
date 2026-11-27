@@ -43,12 +43,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_bristle_dread"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/bristleback/heavy_barbed_back/heavy_barbed_back.vmdl" },
@@ -81,12 +81,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_bristle_dread"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/bristleback/heavy_barbed_back/heavy_barbed_back.vmdl" },
@@ -121,11 +121,11 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -165,12 +165,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_bristle_crush"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -206,12 +206,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_bristle_crush"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -255,11 +255,11 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 {
@@ -308,12 +308,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.8,
+        modelScale: 0.78,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t3_bristle_react"],
         appearance: {
-            scale: 0.8,
+            scale: 0.78,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/bristleback/ti8_bristleback_armor/ti8_bristleback_armor.vmdl" },
@@ -346,12 +346,12 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 0.95,
+        modelScale: 0.92,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         nextBodyIds: ["evo_body_t4_bristle_react"],
         appearance: {
-            scale: 0.95,
+            scale: 0.92,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/bristleback/ti8_bristleback_armor/ti8_bristleback_armor.vmdl" },
@@ -386,11 +386,11 @@ export const EVO_BRANCH_BRISTLE_BODIES: readonly BodyDefinition[] = [
         tags: ["beast", "durable", "bristle"],
         spellPoolTags: ["durable", "aoe"],
         model: "models/heroes/bristleback/bristleback.vmdl",
-        modelScale: 1.1,
+        modelScale: 1.05,
         heroClass: "npc_dota_hero_bristleback",
         keepDefaultHeroAbilities: false,
         appearance: {
-            scale: 1.1,
+            scale: 1.05,
             hideBaseWearables: true,
             wearables: [
                 { model: "models/items/bristleback/ti8_bristleback_armor/ti8_bristleback_armor.vmdl" },

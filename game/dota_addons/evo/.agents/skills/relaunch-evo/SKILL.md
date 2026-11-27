@@ -18,6 +18,7 @@ Flags:
 - `--pregame`: stops waiting at `DOTA_GAMERULES_STATE_PRE_GAME` instead of `DOTA_GAMERULES_STATE_GAME_IN_PROGRESS`.
 
 Behavior:
-- By default, cleanly closes any running `dota2.exe`, launches `steam.exe -applaunch 570 -novid -tools -addon evo -console -vconport 29000` (no `-dev`, never hidden/minimized), waits for `"Finished requesting news data"`, launches `evo zxc`, and waits for `GAME_IN_PROGRESS`.
+- By default, cleanly closes any running `dota2.exe`, launches `steam.exe -applaunch 570 -novid -tools -addon evo -console -vconport 29000` (NEVER `-dev`, `addon_launch_tools`, `-invisible`, `-silent`, hide, or minimize flags/commands), waits for `"Finished requesting news data"`, sends `dota_launch_custom_game evo zxc` over VConsole, and waits for `GAME_IN_PROGRESS`.
+- Wait until `DOTA_GAMERULES_STATE_PRE_GAME` or `GAME_IN_PROGRESS` (after initial load and `[stall] "Stall Detected"` settle) BEFORE calling `dota_window("restore")` -> `dota_focus_window`, then verify `dota_diagnose` shows `game window` visible (`! (not visible)`).
+- NEVER call `dota_window`, `dota_focus_window`, or `dota_screenshot(method="window")` if `dota_status` returns `1331x922` (Qt Asset Browser/Hammer handle, fixed in `Dota2_Workshop_MCP` `win32.ts`/`capture.ts` to prefer `SDL_app`).
 - Clears VConsole (`clear`), truncates project logs via `clean-build-output`, and prints a 1-line summary (plus any `Script Runtime Error` lines).
-- When `dota2-workshop` MCP is available after cold-launch, optionally follow with `dota_window("restore")` -> `dota_focus_window` and `dota_diagnose`.
