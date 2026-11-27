@@ -2,6 +2,7 @@ import { EventBus, EvoMatchPhase } from "../core/EventBus";
 import { EVO_BOSSES_CATALOG } from "../data/bosses_catalog";
 import {
     EVO_CONSTANTS,
+    EVO_PLAYABLE_TEAMS,
     EVO_TIERS,
     calculateEscalationMultiplier,
     calculateTargetTeamScore,
@@ -14,6 +15,7 @@ export class PhaseManager {
     private announcedBosses: string[] = [];
     private unlockedTimedTiers: Set<number> = new Set([0]);
     private lastSyncedEscalation = 1.0;
+    private centerFowOrigin: Vector = Vector(0, 0, 128);
 
     constructor(private readonly eventBus: EventBus) {}
 
@@ -35,8 +37,10 @@ export class PhaseManager {
     private onGameStateChange(): void {
         if (GameRules.State_Get() === GameState.GAME_IN_PROGRESS && !this.started) {
             this.started = true;
+            this.centerFowOrigin = this.resolveCenterFowOrigin();
             this.announceMatchBosses();
             this.syncMatchState(0);
+            this.refreshCenterFowVision(0);
             GameRules.GetGameModeEntity().SetContextThink(
                 "EvoPhaseManagerThink",
                 () => this.onThink(),
@@ -51,6 +55,7 @@ export class PhaseManager {
         }
 
         const elapsed = GameRules.GetDOTATime(false, false);
+        this.refreshCenterFowVision(elapsed);
 
         for (const tier of EVO_TIERS) {
             if (
@@ -84,6 +89,45 @@ export class PhaseManager {
     private transitionToSurface(elapsed: number): void {
         this.clearPeaceTimeModifiers();
         this.transitionToPhase("SURFACE", elapsed);
+    }
+
+    private refreshCenterFowVision(elapsed: number): void {
+        if (elapsed >= EVO_CONSTANTS.CENTER_FOW_REVEAL_SECONDS) return;
+        for (const team of EVO_PLAYABLE_TEAMS) {
+            AddFOWViewer(
+                team,
+                this.centerFowOrigin,
+                EVO_CONSTANTS.CENTER_FOW_REVEAL_RADIUS,
+                1.5,
+                false
+            );
+        }
+    }
+
+    private resolveCenterFowOrigin(): Vector {
+        const fountains: Vector[] = [];
+        for (const ent of Entities.FindAllByClassname("ent_dota_fountain")) {
+            if (!ent || ent.IsNull() || !IsValidEntity(ent)) continue;
+            fountains.push(ent.GetAbsOrigin());
+        }
+        if (fountains.length === 0) return Vector(0, 0, 128);
+        if (fountains.length === 1) return fountains[0];
+        let bestA = fountains[0];
+        let bestB = fountains[1];
+        let maxDistSq = -1;
+        for (let i = 0; i < fountains.length; i++) {
+            for (let j = i + 1; j < fountains.length; j++) {
+                const dx = fountains[i].x - fountains[j].x;
+                const dy = fountains[i].y - fountains[j].y;
+                const dSq = dx * dx + dy * dy;
+                if (dSq > maxDistSq) {
+                    maxDistSq = dSq;
+                    bestA = fountains[i];
+                    bestB = fountains[j];
+                }
+            }
+        }
+        return Vector((bestA.x + bestB.x) / 2, (bestA.y + bestB.y) / 2, 128);
     }
 
     private transitionToPhase(newPhase: EvoMatchPhase, elapsed: number): void {

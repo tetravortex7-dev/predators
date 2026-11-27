@@ -4,72 +4,48 @@
     "en": "Deep Predator"
   },
   "DOTA_Tooltip_ability_evo_slark_deep_predator_Description": {
-    "ru": "Находясь вне обзора врагов более %activation_delay% сек., герой получает +%bonus_ms_pct%%% к скорости передвижения и восстанавливает %hp_regen_pct%%% от макс. здоровья в секунду. Эффект сохраняется %linger_duration% сек. после обнаружения.",
-    "en": "When unseen by enemies for over %activation_delay%s, grants +%bonus_ms_pct%%% Move Speed and %hp_regen_pct%%% Max HP regen/sec. Lingers %linger_duration%s after being spotted."
+    "ru": "Находясь вне поля зрения врагов более %activation_delay% сек., герой ускоряется на <font color='#9acd32'>+%bonus_ms_pct%%%</font> и восстанавливает <font color='#9acd32'>%hp_regen_pct%%%</font> от <font color='#e03e2e'>макс. здоровья</font> в секунду.<br><br>После обнаружения эффект сохраняется ещё %linger_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "When unseen by enemies for more than %activation_delay%s, gains <font color='#9acd32'>+%bonus_ms_pct%%%</font> movement speed and regenerates <font color='#9acd32'>%hp_regen_pct%%%</font> of <font color='#e03e2e'>max health</font> per second.<br><br>The bonus lingers for %linger_duration%s after Slark becomes visible.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
   },
-  "DOTA_Tooltip_modifier_evo_slark_deep_predator_active": {
-    "ru": "Хищник глубин",
-    "en": "Deep Predator"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_deep_predator_active_Description": {
-    "ru": "+14% скорости передвижения и 2.5% регенерации макс. HP/сек.",
-    "en": "+14% movement speed and 2.5% max HP regen/sec."
-  },
-  "DOTA_Tooltip_ability_evo_slark_t1_short_leap": {
-    "ru": "Короткий выпад",
-    "en": "Short Leap"
-  },
-  "DOTA_Tooltip_ability_evo_slark_t1_short_leap_Description": {
-    "ru": "Прыжок вперёд на %leap_distance% (преодолевает скалы), наносящий %damage% физического урона в радиусе %landing_radius% при приземлении и замедляющий врагов на 20%% на %slow_duration% сек.",
-    "en": "Leaps forward %leap_distance% units (crosses cliffs), dealing %damage% physical damage in %landing_radius% AoE on landing and slowing by 20%% for %slow_duration%s."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_leap_slow": {
-    "ru": "Короткий выпад",
-    "en": "Short Leap"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_leap_slow_Description": {
-    "ru": "Скорость передвижения снижена на 20%.",
-    "en": "Movement speed reduced by 20%."
-  },
-  "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite": {
-    "ru": "Жадный укус",
-    "en": "Greedy Bite"
-  },
-  "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_Description": {
-    "ru": "Усиленная атака, наносящая +%bonus_damage% дополнительного физического урона и похищающая %regen_steal% регенерации здоровья в секунду на %duration% сек. (%creep_mult%x против крипов).",
-    "en": "Empowered attack dealing +%bonus_damage% bonus physical damage and stealing %regen_steal% HP regen/sec for %duration%s (%creep_mult%x vs creeps)."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_buff": {
-    "ru": "Жадный укус",
-    "en": "Greedy Bite"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_buff_Description": {
-    "ru": "Украденная регенерация здоровья.",
-    "en": "Stolen HP regeneration."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_debuff": {
-    "ru": "Жадный укус",
-    "en": "Greedy Bite"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_debuff_Description": {
-    "ru": "Регенерация здоровья похищена.",
-    "en": "HP regeneration stolen."
+  "DOTA_Tooltip_ability_evo_slark_deep_predator_Note0": {
+    "ru": "Истощение отключает накопление и активацию эффекта.",
+    "en": "Disabled by Break."
   },
   "DOTA_Tooltip_ability_evo_slark_deep_predator_activation_delay": {
     "ru": "ЗАДЕРЖКА АКТИВАЦИИ:",
     "en": "ACTIVATION DELAY:"
   },
   "DOTA_Tooltip_ability_evo_slark_deep_predator_bonus_ms_pct": {
-    "ru": "%СКОРОСТЬ ПЕРЕДВИЖЕНИЯ:",
-    "en": "%MOVE SPEED:"
+    "ru": "%БОНУС К СКОРОСТИ:",
+    "en": "%BONUS MOVE SPEED:"
   },
   "DOTA_Tooltip_ability_evo_slark_deep_predator_hp_regen_pct": {
-    "ru": "%РЕГЕН МАКС. HP/СЕК:",
+    "ru": "%РЕГЕН МАКС. ЗДОРОВЬЯ/СЕК:",
     "en": "%MAX HP REGEN/SEC:"
   },
   "DOTA_Tooltip_ability_evo_slark_deep_predator_linger_duration": {
     "ru": "ЗАДЕРЖКА СПАДА:",
     "en": "LINGER DURATION:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_deep_predator_active": {
+    "ru": "Хищник глубин",
+    "en": "Deep Predator"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_deep_predator_active_Description": {
+    "ru": "Увеличивает скорость передвижения на <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> и восстанавливает <font color='#9acd32'>2.5%</font> от <font color='#e03e2e'>макс. здоровья</font> в секунду.",
+    "en": "Grants <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> movement speed and <font color='#9acd32'>2.5%</font> <font color='#e03e2e'>max health</font> regeneration per second."
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_short_leap": {
+    "ru": "Короткий выпад",
+    "en": "Short Leap"
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_short_leap_Description": {
+    "ru": "Совершает прыжок вперёд на расстояние %leap_distance%, обрушиваясь в радиусе %landing_radius% и нанося врагам %damage% <font color='#e03e2e'>физического урона</font>.<br><br>Поражённые противники <font color='#7998b5'>замедляются на 20%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Leaps forward %leap_distance% units, slamming a %landing_radius% radius on landing for %damage% <font color='#e03e2e'>physical damage</font>.<br><br>Enemies hit are <font color='#7998b5'>slowed by 20%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_short_leap_Note0": {
+    "ru": "Во время прыжка герой проходит сквозь существ и преодолевает возвышенности.",
+    "en": "Grants unobstructed movement across units and cliffs during the leap."
   },
   "DOTA_Tooltip_ability_evo_slark_t1_short_leap_leap_distance": {
     "ru": "ДАЛЬНОСТЬ ПРЫЖКА:",
@@ -87,49 +63,105 @@
     "ru": "ДЛИТЕЛЬНОСТЬ ЗАМЕДЛЕНИЯ:",
     "en": "SLOW DURATION:"
   },
+  "DOTA_Tooltip_modifier_evo_slark_t1_leap_slow": {
+    "ru": "Короткий выпад",
+    "en": "Short Leap"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_t1_leap_slow_Description": {
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>20%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>20%</font>."
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite": {
+    "ru": "Жадный укус",
+    "en": "Greedy Bite"
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_Description": {
+    "ru": "Наносит врагу мгновенную атаку с <font color='#e03e2e'>+%bonus_damage% физического урона</font> и похищает у него <font color='#9acd32'>%regen_steal%</font> восстановления здоровья в секунду на %duration% сек. <font color='#9acd32'>(%creep_mult%× по крипам)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Delivers an instant attack dealing <font color='#e03e2e'>+%bonus_damage% bonus physical damage</font> and stealing <font color='#9acd32'>%regen_steal%</font> HP regeneration per second for %duration%s <font color='#9acd32'>(%creep_mult%× vs creeps)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_Note0": {
+    "ru": "Проходит сквозь невосприимчивость к магии, но блокируется и отражается эффектами защиты от заклинаний.",
+    "en": "Pierces spell immunity, but is blocked and reflected by spell block and spell reflect."
+  },
   "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_bonus_damage": {
-    "ru": "ДОП. ФИЗ. УРОН:",
+    "ru": "ДОП. ФИЗИЧЕСКИЙ УРОН:",
     "en": "BONUS PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_regen_steal": {
-    "ru": "КРАЖА РЕГЕНА HP/СЕК:",
+    "ru": "КРАЖА РЕГЕНА ЗДОРОВЬЯ/СЕК:",
     "en": "HP REGEN STEAL/SEC:"
   },
   "DOTA_Tooltip_ability_evo_slark_t1_greedy_bite_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
     "en": "DURATION:"
   },
+  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_buff": {
+    "ru": "Жадный укус",
+    "en": "Greedy Bite"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_buff_Description": {
+    "ru": "<font color='#9acd32'>Восстановление здоровья</font> повышено за счёт похищенной у жертвы регенерации.",
+    "en": "<font color='#9acd32'>Health regeneration</font> increased by stolen victim regeneration."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_debuff": {
+    "ru": "Жадный укус",
+    "en": "Greedy Bite"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_t1_greedy_bite_debuff_Description": {
+    "ru": "Восстановление здоровья временно <font color='#7998b5'>похищено</font>.",
+    "en": "Health regeneration temporarily <font color='#7998b5'>stolen</font>."
+  },
   "DOTA_Tooltip_ability_evo_slark_agi_q": {
     "ru": "Прыжок Хищника",
     "en": "Predator Pounce"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_Description": {
-    "ru": "Прыгает вперёд на %leap_distance% (преодолевая возвышенности), привязывая первого вражеского героя на %leash_duration% сек. в радиусе %leash_radius% и нанося %base_damage% + %agi_pct%%% от Ловкости физического урона.",
-    "en": "Leaps forward %leap_distance% units (crosses cliffs), leashing the first enemy hero for %leash_duration%s within %leash_radius% radius and dealing %base_damage% + %agi_pct%%% AGI physical damage."
+    "ru": "Прыгает вперёд на %leap_distance%, хватая первого попавшегося вражеского героя. Цель получает %base_damage% + %agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#e03e2e'>физического урона</font> и оказывается <font color='#7998b5'>привязанной</font> на %leash_duration% сек. в радиусе %leash_radius%.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Leaps forward %leap_distance% units, latching onto the first enemy hero in path. Deals %base_damage% + %agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#e03e2e'>physical damage</font> and <font color='#7998b5'>leashes</font> the target within %leash_radius% radius for %leash_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_q_Note0": {
+    "ru": "Во время прыжка преодолевает возвышенности. Если на пути не встретился герой, урон наносится врагам в радиусе 225 при приземлении.",
+    "en": "Crosses cliffs during the leap. If no hero is hit, deals landing damage in a 225 radius."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_leap_distance": {
     "ru": "ДАЛЬНОСТЬ ПРЫЖКА:",
     "en": "LEAP DISTANCE:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_base_damage": {
-    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "ru": "БАЗОВЫЙ ФИЗИЧЕСКИЙ УРОН:",
     "en": "BASE PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_agi_pct": {
-    "ru": "%УРОН ОТ ЛОВКОСТИ:",
+    "ru": "%УРОНА ОТ ЛОВКОСТИ:",
     "en": "%AGI DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_q_leash_duration": {
-    "ru": "ДЛИТ. ПРИВЯЗКИ:",
+    "ru": "ДЛИТЕЛЬНОСТЬ ПРИВЯЗКИ:",
     "en": "LEASH DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_q_leash_radius": {
+    "ru": "РАДИУС ПРИВЯЗКИ:",
+    "en": "LEASH RADIUS:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_q_leash": {
+    "ru": "Привязка Хищника",
+    "en": "Predator Leash"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_q_leash_Description": {
+    "ru": "<font color='#7998b5'>Привязан</font> способностью <b>Прыжок Хищника</b> и не может покинуть область удержания.",
+    "en": "<font color='#7998b5'>Leashed</font> by <b>Predator Pounce</b> and unable to leave the tether radius."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w": {
     "ru": "Тёмный Договор",
     "en": "Dark Pact"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w_Description": {
-    "ru": "Через %delay% сек. выпускает серию импульсов в радиусе %radius%, применяя <b>сильное развеивание</b> на себя и нанося %base_damage% + %agi_pct%%% от Ловкости магического урона (35%% урона по себе, нелетально).",
-    "en": "After %delay%s, pulses in %radius% radius applying a <b>strong dispel</b> to Slark and dealing %base_damage% + %agi_pct%%% AGI magic damage (35%% non-lethal self-damage)."
+    "ru": "После задержки в %delay% сек. Сларк жертвует частью здоровья и выпускает волну тёмных импульсов в радиусе %radius%, применяя на себя <b>сильное развеивание</b>.<br><br>Импульсы наносят врагам %base_damage% + %agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#87ceeb'>магического урона</font> <font color='#7d7d7d'>(35%% от этого урона наносится самому герою)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">сильное (на себя)</span>",
+    "en": "After a %delay%s delay, Slark sacrifices some health to release dark pulses in a %radius% radius, applying a <b>strong dispel</b> to himself.<br><br>Pulses deal %base_damage% + %agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> <font color='#7d7d7d'>(Slark takes 35%% as self-damage)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel (Self)</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_w_Note0": {
+    "ru": "Урон по себе нелетален и оставляет минимум 1 ед. здоровья. Сильное развеивание срабатывает с каждым импульсом.",
+    "en": "Self-damage is non-lethal and cannot reduce Slark below 1 HP. The strong dispel triggers on each pulse."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w_delay": {
     "ru": "ЗАДЕРЖКА:",
@@ -144,16 +176,36 @@
     "en": "BASE MAGIC DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_w_agi_pct": {
-    "ru": "%УРОН ОТ ЛОВКОСТИ:",
+    "ru": "%УРОНА ОТ ЛОВКОСТИ:",
     "en": "%AGI DAMAGE:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_w_charge": {
+    "ru": "Подготовка Тёмного Договора",
+    "en": "Dark Pact Charging"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_w_charge_Description": {
+    "ru": "Скоро снимет все негативные эффекты <b>сильным развеиванием</b> и нанесёт <font color='#87ceeb'>магический урон</font> вокруг.",
+    "en": "About to apply a <b>strong dispel</b> to self and pulse <font color='#87ceeb'>magical damage</font> around Slark."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_w_buff": {
+    "ru": "Тёмный Договор",
+    "en": "Dark Pact"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_w_buff_Description": {
+    "ru": "Увеличивает скорость передвижения на <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> и даёт <b>прохождение сквозь существ</b>.",
+    "en": "Grants <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> movement speed and <b>phased movement</b>."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e": {
     "ru": "Кража Сути",
     "en": "Essence Theft"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e_Description": {
-    "ru": "Атаки по героям похищают +%agi_per_stack% Ловкости на %hero_duration% сек. и снижают все атрибуты жертвы на %enemy_stat_loss% (атаки по крипам дают +1 Ловкости на %creep_duration% сек.).",
-    "en": "Attacks vs heroes steal +%agi_per_stack% AGI for %hero_duration%s and reduce all victim stats by %enemy_stat_loss% (creeps grant +1 AGI for %creep_duration%s)."
+    "ru": "Каждая атака по вражескому герою похищает <font color='#9acd32'>+%agi_per_stack% ловкости</font> на %hero_duration% сек. и снижает <font color='#d8ae53'>все атрибуты</font> жертвы на <font color='#7998b5'>%enemy_stat_loss%</font>.<br><br>Атаки по крипам приносят <font color='#9acd32'>+1 ловкости</font> на %creep_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Each attack against an enemy hero steals <font color='#9acd32'>+%agi_per_stack% Agility</font> for %hero_duration%s and reduces <font color='#d8ae53'>all attributes</font> of the victim by <font color='#7998b5'>%enemy_stat_loss%</font>.<br><br>Attacks against creeps grant <font color='#9acd32'>+1 Agility</font> for %creep_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_e_Note0": {
+    "ru": "Отключается истощением. Не срабатывает при атаке по постройкам.",
+    "en": "Disabled by Break. Does not trigger when attacking buildings."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e_agi_per_stack": {
     "ru": "ЛОВКОСТЬ ЗА УДАР:",
@@ -164,16 +216,40 @@
     "en": "ENEMY STAT LOSS:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_e_hero_duration": {
-    "ru": "ДЛИТЕЛЬНОСТЬ:",
-    "en": "DURATION:"
+    "ru": "ДЛИТЕЛЬНОСТЬ (ГЕРОИ):",
+    "en": "HERO DURATION:"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_e_creep_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ (КРИПЫ):",
+    "en": "CREEP DURATION:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff": {
+    "ru": "Кража Сути",
+    "en": "Essence Theft"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff_Description": {
+    "ru": "Увеличивает <font color='#9acd32'>ловкость</font> на <font color='#9acd32'>%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font>.",
+    "en": "Grants <font color='#9acd32'>+%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font> Agility."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_essence_debuff": {
+    "ru": "Истощённая суть",
+    "en": "Drained Essence"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_agi_essence_debuff_Description": {
+    "ru": "<font color='#d8ae53'>Все атрибуты</font> снижены на <font color='#7998b5'>%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font>.",
+    "en": "<font color='#d8ae53'>All attributes</font> modified by <font color='#7998b5'>%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font>."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_r": {
     "ru": "Танец Теней",
     "en": "Shadow Dance"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_r_Description": {
-    "ru": "Окутывает героя облаком теней на %duration% сек., делая его невидимым и недоступным для целей врагов даже под True Sight. Дарует +%bonus_ms_pct%%% MS, %hp_regen_pct%%% регена макс. HP/сек и +%bonus_as% скорости атаки, а атаки накладывают по 2 заряда Кражи Сути.",
-    "en": "Shrouds Slark in shadows for %duration%s, becoming invisible and untargetable even under True Sight. Grants +%bonus_ms_pct%%% MS, %hp_regen_pct%%% Max HP/s regen, and +%bonus_as% Attack Speed, while attacks apply 2 Essence Theft stacks."
+    "ru": "Окутывает героя облаком теней на %duration% сек., делая его <b>невидимым</b> и недоступным для выбора целью даже под эффектами <b>True Sight</b>.<br><br>Дарует <font color='#9acd32'>+%bonus_ms_pct%%%</font> скорости передвижения, <font color='#9acd32'>%hp_regen_pct%%%</font> регенерации <font color='#e03e2e'>макс. здоровья</font> в секунду и <font color='#9acd32'>+%bonus_as%</font> скорости атаки, а каждая атака накладывает 2 заряда способности <b>Кража Сути</b>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Shrouds Slark in a cloud of shadows for %duration%s, making him <b>invisible</b> and untargetable even under <b>True Sight</b>.<br><br>Grants <font color='#9acd32'>+%bonus_ms_pct%%%</font> movement speed, <font color='#9acd32'>%hp_regen_pct%%%</font> <font color='#e03e2e'>max health</font> regen per second, and <font color='#9acd32'>+%bonus_as%</font> attack speed, while attacks apply 2 stacks of <b>Essence Theft</b>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_agi_r_Note0": {
+    "ru": "Сларка нельзя раскрыть эффектами True Sight, но он всё ещё получает урон от ненаправленных способностей по области.",
+    "en": "Cannot be revealed by True Sight, though Slark still takes damage from non-targeted AoE abilities."
   },
   "DOTA_Tooltip_ability_evo_slark_agi_r_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
@@ -184,68 +260,32 @@
     "en": "%MOVE SPEED:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_r_hp_regen_pct": {
-    "ru": "%РЕГЕН МАКС. HP/СЕК:",
+    "ru": "%РЕГЕН МАКС. ЗДОРОВЬЯ/СЕК:",
     "en": "%MAX HP REGEN/SEC:"
   },
   "DOTA_Tooltip_ability_evo_slark_agi_r_bonus_as": {
-    "ru": "СКОРОСТЬ АТАКИ:",
-    "en": "ATTACK SPEED:"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_q_leash": {
-    "ru": "Привязка Хищника",
-    "en": "Predator Leash"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_q_leash_Description": {
-    "ru": "Привязан Прыжком Хищника и не может покинуть область.",
-    "en": "Leashed by Predator Pounce and unable to leave the tether radius."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_w_charge": {
-    "ru": "Подготовка Тёмного Договора",
-    "en": "Dark Pact Charging"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_w_charge_Description": {
-    "ru": "Скоро снимет все негативные эффекты и нанесёт урон вокруг.",
-    "en": "About to strongly dispel debuffs and pulse magic damage around Slark."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_w_buff": {
-    "ru": "Тёмный Договор",
-    "en": "Dark Pact"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_w_buff_Description": {
-    "ru": "+20% скорости передвижения и прохождение сквозь юнитов.",
-    "en": "+20% movement speed and phased movement."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff": {
-    "ru": "Кража Сути",
-    "en": "Essence Theft"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_essence_buff_Description": {
-    "ru": "Похищенная Ловкость.",
-    "en": "Stolen Agility."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_essence_debuff": {
-    "ru": "Истощённая суть",
-    "en": "Drained Essence"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_agi_essence_debuff_Description": {
-    "ru": "Все атрибуты снижены Кражей Сути.",
-    "en": "All attributes reduced by Essence Theft."
+    "ru": "БОНУС СКОРОСТИ АТАКИ:",
+    "en": "BONUS ATTACK SPEED:"
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_r_shadow": {
     "ru": "Танец Теней",
     "en": "Shadow Dance"
   },
   "DOTA_Tooltip_modifier_evo_slark_agi_r_shadow_Description": {
-    "ru": "Невидим и неуязвим для выбора целью, +30% MS, 5% регена HP/сек, +50 AS и двойные заряды Кражи Сути.",
-    "en": "Invisible and untargetable, +30% MS, 5% Max HP/s regen, +50 AS, and double Essence Theft stacks."
+    "ru": "<b>Невидим</b> и недоступен для выбора целью: <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> скорости, <font color='#9acd32'>5%</font> регенерации <font color='#e03e2e'>макс. здоровья/сек</font>, <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font> скорости атаки и двойные заряды <b>Кражи Сути</b>.",
+    "en": "<b>Invisible</b> and untargetable: <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> move speed, <font color='#9acd32'>5%</font> <font color='#e03e2e'>max HP/s</font> regen, <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font> attack speed, and double <b>Essence Theft</b> stacks."
   },
   "DOTA_Tooltip_ability_evo_slark_str_q": {
     "ru": "Акулий Бросок",
     "en": "Shark Slam"
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_Description": {
-    "ru": "Прыгает в точку на расстояние до %leap_distance% и обрушивается в радиусе %radius%, нанося %base_damage% + %str_pct%%% от Силы физического урона и оглушая врагов на %stun_duration% сек.",
-    "en": "Leaps up to %leap_distance% units and slams %radius% AoE for %base_damage% + %str_pct%%% STR physical damage, stunning enemies for %stun_duration%s."
+    "ru": "Прыгает в выбранную точку на расстояние до %leap_distance% и обрушивается на землю в радиусе %radius%.<br><br>Враги в зоне удара получают %base_damage% + %str_pct%%% от <font color='#e03e2e'>силы</font> <font color='#e03e2e'>физического урона</font> и <font color='#7998b5'>оглушаются</font> на %stun_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">сильное</span>",
+    "en": "Leaps toward the target point up to %leap_distance% units and slams a %radius% radius on impact.<br><br>Enemies hit take %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#e03e2e'>physical damage</font> and are <font color='#7998b5'>stunned</font> for %stun_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Strong Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_str_q_Note0": {
+    "ru": "Во время прыжка герой проходит сквозь существ и преодолевает препятствия.",
+    "en": "Grants unobstructed movement across units and cliffs during the leap."
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_leap_distance": {
     "ru": "ДАЛЬНОСТЬ ПРЫЖКА:",
@@ -256,44 +296,76 @@
     "en": "SLAM RADIUS:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_base_damage": {
-    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "ru": "БАЗОВЫЙ ФИЗИЧЕСКИЙ УРОН:",
     "en": "BASE PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_str_pct": {
-    "ru": "%УРОН ОТ СИЛЫ:",
+    "ru": "%УРОНА ОТ СИЛЫ:",
     "en": "%STR DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_q_stun_duration": {
-    "ru": "ОГЛУШЕНИЕ:",
+    "ru": "ДЛИТЕЛЬНОСТЬ ОГЛУШЕНИЯ:",
     "en": "STUN DURATION:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_q_armor": {
+    "ru": "Пролом панциря",
+    "en": "Crushed Carapace"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_q_armor_Description": {
+    "ru": "Броня снижена на <font color='#7998b5'>4</font>.",
+    "en": "Armor reduced by <font color='#7998b5'>4</font>."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_q_shield": {
+    "ru": "Щит Акульего Броска",
+    "en": "Shark Slam Barrier"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_q_shield_Description": {
+    "ru": "Барьер, поглощающий входящий урон.",
+    "en": "Barrier absorbing incoming damage."
   },
   "DOTA_Tooltip_ability_evo_slark_str_w": {
     "ru": "Разрывающий Укус",
     "en": "Rending Bite"
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_Description": {
-    "ru": "Мощный укус на %base_damage% + %str_pct%%% от Силы физического урона, исцеляющий на %heal_pct%%% от нанесённого урона.",
-    "en": "Ferocious bite dealing %base_damage% + %str_pct%%% STR physical damage and healing for %heal_pct%%% of damage dealt."
+    "ru": "Наносит цели мгновенную атаку и мощный укус на %base_damage% + %str_pct%%% от <font color='#e03e2e'>силы</font> <font color='#e03e2e'>физического урона</font>.<br><br>Герой <font color='#9acd32'>исцеляется на %heal_pct%%%</font> от нанесённого урона.",
+    "en": "Delivers an instant attack and a ferocious bite dealing %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#e03e2e'>physical damage</font>.<br><br><font color='#9acd32'>Heals Slark for %heal_pct%%%</font> of the damage dealt."
+  },
+  "DOTA_Tooltip_ability_evo_slark_str_w_Note0": {
+    "ru": "Проходит сквозь невосприимчивость к магии, но блокируется и отражается эффектами защиты от заклинаний.",
+    "en": "Pierces spell immunity, but is blocked and reflected by spell block and spell reflect."
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_base_damage": {
-    "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
+    "ru": "БАЗОВЫЙ ФИЗИЧЕСКИЙ УРОН:",
     "en": "BASE PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_str_pct": {
-    "ru": "%УРОН ОТ СИЛЫ:",
+    "ru": "%УРОНА ОТ СИЛЫ:",
     "en": "%STR DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_w_heal_pct": {
-    "ru": "%ЛЕЧЕНИЕ ОТ УРОНА:",
+    "ru": "%ЛЕЧЕНИЯ ОТ УРОНА:",
     "en": "%DAMAGE HEAL:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_w_slow": {
+    "ru": "Разрывающий Укус",
+    "en": "Rending Bite"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_w_slow_Description": {
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>25%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>25%</font>."
   },
   "DOTA_Tooltip_ability_evo_slark_str_e": {
     "ru": "Панцирь Бездны",
     "en": "Abyssal Carapace"
   },
   "DOTA_Tooltip_ability_evo_slark_str_e_Description": {
-    "ru": "Даёт +%bonus_armor% брони и возвращает %return_damage% + 25%% от Силы физического урона атакующим в радиусе 350.",
-    "en": "Grants +%bonus_armor% Armor and reflects %return_damage% + 25%% STR physical damage to attackers within 350 range."
+    "ru": "Покрывает героя чешуйчатым панцирем, даруя <font color='#e03e2e'>+%bonus_armor% брони</font>.<br><br>При получении урона от врагов в радиусе 350 возвращает им %return_damage% + 25%% от <font color='#e03e2e'>силы</font> в виде <font color='#e03e2e'>физического урона</font> <font color='#7d7d7d'>(не чаще раза в 0.6 сек.)</font>.",
+    "en": "Grants <font color='#e03e2e'>+%bonus_armor% armor</font>.<br><br>When taking damage from enemies within 350 range, reflects %return_damage% + 25%% of <font color='#e03e2e'>Strength</font> as <font color='#e03e2e'>physical damage</font> <font color='#7d7d7d'>(0.6s cooldown)</font>."
+  },
+  "DOTA_Tooltip_ability_evo_slark_str_e_Note0": {
+    "ru": "Отключается истощением. Отражённый урон не вызывает повторного срабатывания эффектов отражения.",
+    "en": "Disabled by Break. Reflected damage does not trigger other reflection effects."
   },
   "DOTA_Tooltip_ability_evo_slark_str_e_bonus_armor": {
     "ru": "ДОП. БРОНЯ:",
@@ -303,33 +375,65 @@
     "ru": "ВОЗВРАТ УРОНА:",
     "en": "REFLECT DAMAGE:"
   },
+  "DOTA_Tooltip_modifier_evo_slark_str_e_fury": {
+    "ru": "Ярость глубин",
+    "en": "Deep Fury"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_e_fury_Description": {
+    "ru": "<font color='#e03e2e'>+4 к силе</font> и <font color='#9acd32'>+4% к вампиризму</font> за каждый заряд.",
+    "en": "<font color='#e03e2e'>+4 Strength</font> and <font color='#9acd32'>+4% lifesteal</font> per stack."
+  },
   "DOTA_Tooltip_ability_evo_slark_str_r": {
     "ru": "Челюсти Пучины",
     "en": "Jaws of the Deep"
   },
   "DOTA_Tooltip_ability_evo_slark_str_r_Description": {
-    "ru": "Впивается в врага на %duration% сек., обездвиживая и обезоруживая его, нанося %base_dps% + %str_pct%%% от Силы физ. урона в секунду и исцеляя героя на 60%% от урона. Во время укуса герой получает на 35%% меньше урона.",
-    "en": "Clamps onto an enemy for %duration%s, rooting and disarming them while dealing %base_dps% + %str_pct%%% STR physical DPS and healing for 60%% of damage dealt. Grants 35%% damage reduction during the bite."
+    "ru": "Впивается в выбранного врага на %duration% сек., <font color='#7998b5'>обездвиживая</font> и <font color='#7998b5'>обезоруживая</font> его.<br><br>Каждую секунду наносит %base_dps% + %str_pct%%% от <font color='#e03e2e'>силы</font> <font color='#e03e2e'>физического урона</font> и <font color='#9acd32'>исцеляет</font> Сларка на <font color='#9acd32'>60%%</font> от нанесённого урона. Во время укуса входящий по герою урон снижен на <font color='#e03e2e'>35%%</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Clamps onto the target enemy for %duration%s, <font color='#7998b5'>rooting</font> and <font color='#7998b5'>disarming</font> them.<br><br>Deals %base_dps% + %str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#e03e2e'>physical DPS</font> and <font color='#9acd32'>heals</font> Slark for <font color='#9acd32'>60%%</font> of the damage dealt. While active, Slark takes <font color='#e03e2e'>35%%</font> less incoming damage.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_str_r_Note0": {
+    "ru": "Проходит сквозь невосприимчивость к магии, но блокируется и отражается эффектами защиты от заклинаний.",
+    "en": "Pierces spell immunity, but is blocked and reflected by spell block and spell reflect."
+  },
+  "DOTA_Tooltip_ability_evo_slark_str_r_Note1": {
+    "ru": "Эффект удержания прерывается досрочно в случае смерти Сларка.",
+    "en": "Ends early if Slark dies."
   },
   "DOTA_Tooltip_ability_evo_slark_str_r_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
     "en": "DURATION:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_r_base_dps": {
-    "ru": "ФИЗ. УРОН В СЕК:",
+    "ru": "ФИЗИЧЕСКИЙ УРОН В СЕК:",
     "en": "PHYSICAL DPS:"
   },
   "DOTA_Tooltip_ability_evo_slark_str_r_str_pct": {
-    "ru": "%УРОН ОТ СИЛЫ/СЕК:",
+    "ru": "%УРОНА ОТ СИЛЫ/СЕК:",
     "en": "%STR DPS:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_r_clamp": {
+    "ru": "Челюсти Пучины",
+    "en": "Jaws of the Deep"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_r_clamp_Description": {
+    "ru": "<font color='#7998b5'>Обездвижен</font>, <font color='#7998b5'>обезоружен</font> и получает периодический <font color='#e03e2e'>физический урон</font>.",
+    "en": "<font color='#7998b5'>Rooted</font>, <font color='#7998b5'>disarmed</font>, and taking <font color='#e03e2e'>physical damage</font> over time."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_r_caster": {
+    "ru": "Хватка Левиафана",
+    "en": "Leviathan Grip"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_str_r_caster_Description": {
+    "ru": "Входящий урон снижен на <font color='#e03e2e'>35%</font>.",
+    "en": "Incoming damage reduced by <font color='#e03e2e'>35%</font>."
   },
   "DOTA_Tooltip_ability_evo_slark_int_q": {
     "ru": "Глубинная Сеть",
     "en": "Abyssal Net"
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_Description": {
-    "ru": "Бросает сеть в радиусе %radius%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и обездвиживая врагов на %root_duration% сек.",
-    "en": "Throws an arcane net in %radius% radius dealing %base_damage% + %int_pct%%% INT magic damage and rooting enemies for %root_duration%s."
+    "ru": "Бросает магическую сеть в радиусе %radius%, нанося врагам %base_damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> и <font color='#7998b5'>обездвиживая</font> их на %root_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Throws an arcane net across a %radius% radius, dealing %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> and <font color='#7998b5'>rooting</font> enemies for %root_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_radius": {
     "ru": "РАДИУС:",
@@ -340,20 +444,36 @@
     "en": "BASE MAGIC DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_int_pct": {
-    "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:",
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INT DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_int_q_root_duration": {
-    "ru": "ОЦЕПЕНЕНИЕ:",
+    "ru": "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:",
     "en": "ROOT DURATION:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_q_root": {
+    "ru": "Глубинная Сеть",
+    "en": "Abyssal Net"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_q_root_Description": {
+    "ru": "<font color='#7998b5'>Обездвижен</font> способностью <b>Глубинная Сеть</b>.",
+    "en": "<font color='#7998b5'>Rooted</font> by <b>Abyssal Net</b>."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_q_mr": {
+    "ru": "Порча Сети",
+    "en": "Abyssal Hex"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_q_mr_Description": {
+    "ru": "Сопротивление магии снижено на <font color='#87ceeb'>15%</font>.",
+    "en": "Magic resistance reduced by <font color='#87ceeb'>15%</font>."
   },
   "DOTA_Tooltip_ability_evo_slark_int_w": {
     "ru": "Волна Мрака",
     "en": "Dark Tide"
   },
   "DOTA_Tooltip_ability_evo_slark_int_w_Description": {
-    "ru": "Выпускает волну на %range%, нанося %base_damage% + %int_pct%%% от Интеллекта магического урона и замедляя врагов на 25%% на 3 сек.",
-    "en": "Sends a %range%-range wave dealing %base_damage% + %int_pct%%% INT magic damage and slowing by 25%% for 3s."
+    "ru": "Выпускает тёмную волну на расстояние %range%, нанося всем врагам на пути %base_damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> и <font color='#7998b5'>замедляя их на 25%%</font> на 3 сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Unleashes a dark wave over %range% range, dealing %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> and <font color='#7998b5'>slowing enemies by 25%%</font> for 3s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_slark_int_w_range": {
     "ru": "ДАЛЬНОСТЬ:",
@@ -364,16 +484,28 @@
     "en": "BASE MAGIC DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_slark_int_w_int_pct": {
-    "ru": "%УРОН ОТ ИНТЕЛЛЕКТА:",
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INT DAMAGE:"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_w_slow": {
+    "ru": "Волна Мрака",
+    "en": "Dark Tide"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_w_slow_Description": {
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>25%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>25%</font>."
   },
   "DOTA_Tooltip_ability_evo_slark_int_e": {
     "ru": "Зов Фонаря",
     "en": "Lantern Call"
   },
   "DOTA_Tooltip_ability_evo_slark_int_e_Description": {
-    "ru": "Каждое применение способности заряжает фонарь (до %max_stacks% зарядов на 8 сек.): +4%% к урону заклинаний за заряд. Следующая атака тратит заряд для взрыва (325 AoE) на %blast_damage% + 40%% от Интеллекта маг. урона.",
-    "en": "Each ability cast charges the lantern (max %max_stacks% stacks for 8s): +4%% Spell Amp per stack. Your next attack consumes 1 stack for a 325-AoE blast dealing %blast_damage% + 40%% INT magic damage."
+    "ru": "Каждое применение способности заряжает фонарь на 8 сек. <font color='#7d7d7d'>(до %max_stacks% зарядов)</font>, увеличивая <font color='#87ceeb'>урон от заклинаний на +4%%</font> за каждый заряд.<br><br>Следующая атака расходует 1 заряд и вызывает взрыв в радиусе 325, нанося врагам %blast_damage% + 40%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Each ability cast charges the lantern for 8s <font color='#7d7d7d'>(max %max_stacks% stacks)</font>, granting <font color='#87ceeb'>+4%% Spell Amplification</font> per stack.<br><br>Your next attack consumes 1 stack to detonate a 325-radius blast dealing %blast_damage% + 40%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_int_e_Note0": {
+    "ru": "Отключается истощением. Заряды не накапливаются от предметов и переключаемых способностей, а взрыв не срабатывает при атаке по постройкам.",
+    "en": "Disabled by Break. Items and toggle abilities do not grant stacks, and attacks against buildings do not trigger the blast."
   },
   "DOTA_Tooltip_ability_evo_slark_int_e_max_stacks": {
     "ru": "МАКС. ЗАРЯДОВ:",
@@ -383,13 +515,33 @@
     "ru": "УРОН ВЗРЫВА:",
     "en": "BLAST DAMAGE:"
   },
+  "DOTA_Tooltip_modifier_evo_slark_int_e_lantern": {
+    "ru": "Зов Фонаря",
+    "en": "Lantern Call"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_e_lantern_Description": {
+    "ru": "Увеличивает <font color='#87ceeb'>урон от заклинаний на +%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%</font>. Следующая атака потратит 1 заряд для <font color='#87ceeb'>магического взрыва</font> по области.",
+    "en": "Grants <font color='#87ceeb'>+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%% Spell Amplification</font>. Next attack consumes 1 stack for an AoE <font color='#87ceeb'>magical blast</font>."
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_e_slow": {
+    "ru": "Ослепление Фонаря",
+    "en": "Lantern Glare"
+  },
+  "DOTA_Tooltip_modifier_evo_slark_int_e_slow_Description": {
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>20%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>20%</font>."
+  },
   "DOTA_Tooltip_ability_evo_slark_int_r": {
     "ru": "Покров Бездны",
     "en": "Abyssal Shroud"
   },
   "DOTA_Tooltip_ability_evo_slark_int_r_Description": {
-    "ru": "Накрывает область радиусом %radius% покровом на %duration% сек. Союзники внутри получают невидимость и +25%% к урону заклинаний; враги получают %base_dps% + %int_pct%%% от Интеллекта маг. урона/сек, -30%% MS и -20%% магрезиста.",
-    "en": "Shrouds a %radius%-radius zone for %duration%s. Allies inside gain invisibility and +25%% Spell Amp; enemies suffer %base_dps% + %int_pct%%% INT magic DPS, -30%% MS, and -20%% Magic Resistance."
+    "ru": "Накрывает выбранную область радиусом %radius% покровом бездны на %duration% сек.<br><br>Союзные герои внутри получают <b>невидимость</b> и <font color='#87ceeb'>+25%% к урону от заклинаний</font>. Враги внутри получают %base_dps% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> в секунду, их скорость передвижения снижается на <font color='#7998b5'>30%%</font>, а <font color='#87ceeb'>сопротивление магии</font> — на <font color='#7998b5'>20%%</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Blankets a %radius%-radius area in an abyssal shroud for %duration%s.<br><br>Allied heroes inside gain <b>invisibility</b> and <font color='#87ceeb'>+25%% Spell Amplification</font>. Enemies inside take %base_dps% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical DPS</font>, while suffering <font color='#7998b5'>-30%% movement speed</font> and <font color='#87ceeb'>-20%% magic resistance</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_slark_int_r_Note0": {
+    "ru": "Невидимость союзников внутри покрова не раскрывается эффектами True Sight.",
+    "en": "Allied invisibility inside the shroud cannot be revealed by True Sight."
   },
   "DOTA_Tooltip_ability_evo_slark_int_r_radius": {
     "ru": "РАДИУС:",
@@ -404,111 +556,23 @@
     "en": "MAGIC DPS:"
   },
   "DOTA_Tooltip_ability_evo_slark_int_r_int_pct": {
-    "ru": "%УРОН ОТ ИНТЕЛЛЕКТА/СЕК:",
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА/СЕК:",
     "en": "%INT DPS:"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_q_armor": {
-    "ru": "Пролом панциря",
-    "en": "Crushed Carapace"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_q_armor_Description": {
-    "ru": "Броня снижена на 4.",
-    "en": "Armor reduced by 4."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_q_shield": {
-    "ru": "Щит Акульего Броска",
-    "en": "Shark Slam Barrier"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_q_shield_Description": {
-    "ru": "Поглощает входящий урон.",
-    "en": "Absorbing incoming damage."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_w_slow": {
-    "ru": "Разрывающий Укус",
-    "en": "Rending Bite"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_w_slow_Description": {
-    "ru": "Скорость передвижения снижена на 25%.",
-    "en": "Movement speed reduced by 25%."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_e_fury": {
-    "ru": "Ярость глубин",
-    "en": "Deep Fury"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_e_fury_Description": {
-    "ru": "+4 к Силе и +4% к вампиризму за каждый заряд.",
-    "en": "+4 Strength and +4% lifesteal per stack."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_r_clamp": {
-    "ru": "Челюсти Пучины",
-    "en": "Jaws of the Deep"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_r_clamp_Description": {
-    "ru": "Обездвижен, обезоружен и получает периодический физический урон.",
-    "en": "Rooted, disarmed, and taking physical damage over time."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_r_caster": {
-    "ru": "Хватка Левиафана",
-    "en": "Leviathan Grip"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_str_r_caster_Description": {
-    "ru": "Входящий урон снижен на 35%.",
-    "en": "Incoming damage reduced by 35%."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_q_root": {
-    "ru": "Глубинная Сеть",
-    "en": "Abyssal Net"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_q_root_Description": {
-    "ru": "Обездвижен Глубинной Сетью.",
-    "en": "Rooted by Abyssal Net."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_q_mr": {
-    "ru": "Порча Сети",
-    "en": "Abyssal Hex"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_q_mr_Description": {
-    "ru": "Сопротивление магии снижено на 15%.",
-    "en": "Magic resistance reduced by 15%."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_w_slow": {
-    "ru": "Волна Мрака",
-    "en": "Dark Tide"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_w_slow_Description": {
-    "ru": "Скорость передвижения снижена на 25%.",
-    "en": "Movement speed reduced by 25%."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_e_lantern": {
-    "ru": "Зов Фонаря",
-    "en": "Lantern Call"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_e_lantern_Description": {
-    "ru": "+4% к урону заклинаний за заряд; следующая атака потратит заряд на магический взрыв по области.",
-    "en": "+4% Spell Amp per stack; next attack consumes 1 stack for an AoE magic blast."
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_e_slow": {
-    "ru": "Ослепление Фонаря",
-    "en": "Lantern Glare"
-  },
-  "DOTA_Tooltip_modifier_evo_slark_int_e_slow_Description": {
-    "ru": "Скорость передвижения снижена на 20%.",
-    "en": "Movement speed reduced by 20%."
   },
   "DOTA_Tooltip_modifier_evo_slark_int_r_ally": {
     "ru": "Покров Бездны",
     "en": "Abyssal Shroud"
   },
   "DOTA_Tooltip_modifier_evo_slark_int_r_ally_Description": {
-    "ru": "Невидимость и +25% к урону заклинаний.",
-    "en": "Invisible with +25% Spell Amplification."
+    "ru": "<b>Невидимость</b> <font color='#7d7d7d'>(не раскрывается True Sight)</font> и <font color='#87ceeb'>+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%% к урону от заклинаний</font>.",
+    "en": "<b>Invisible</b> <font color='#7d7d7d'>(immune to True Sight)</font> with <font color='#87ceeb'>+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%% Spell Amplification</font>."
   },
   "DOTA_Tooltip_modifier_evo_slark_int_r_enemy": {
     "ru": "Покров Бездны",
     "en": "Abyssal Shroud"
   },
   "DOTA_Tooltip_modifier_evo_slark_int_r_enemy_Description": {
-    "ru": "-30% скорости передвижения, -20% сопротивления магии и периодический маг. урон.",
-    "en": "-30% movement speed, -20% magic resistance, and magic damage over time."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>30%</font>, сопротивление магии снижено на <font color='#87ceeb'>20%</font>, получает периодический <font color='#87ceeb'>магический урон</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>30%</font>, magic resistance reduced by <font color='#87ceeb'>20%</font>, and taking <font color='#87ceeb'>magical damage</font> over time."
   }
 }

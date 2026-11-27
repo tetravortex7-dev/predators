@@ -23,9 +23,11 @@ const FALLBACK_ROWS: readonly TalentRowData[] = [
 
 let isPinnedOpen = false;
 let isHoveringPopup = false;
+let isHoveringLevelTab = false;
 let latestData: PlayerTalentsData | undefined;
 let hookedStatBranch = false;
 let hookedPopupHover = false;
+const hookedLevelTabs = new Set<Panel>();
 let lastRenderedVisible = false;
 let lastRenderSignature = "";
 
@@ -35,6 +37,71 @@ function findHudRoot(): Panel | null {
         cur = cur.GetParent();
     }
     return cur;
+}
+
+function collectPanelsByType(root: Panel | null, panelType: string, out: Panel[] = []): Panel[] {
+    if (!root) return out;
+    if (root.paneltype === panelType) {
+        out.push(root);
+    }
+    const children = root.Children();
+    for (let i = 0; i < children.length; i++) {
+        collectPanelsByType(children[i], panelType, out);
+    }
+    return out;
+}
+
+function findLevelStatsFrames(root: Panel): Panel[] {
+    const frames: Panel[] = [];
+    const seen = new Set<Panel>();
+    const pushUnique = (panel: Panel | null | undefined): void => {
+        if (panel && !seen.has(panel)) {
+            seen.add(panel);
+            frames.push(panel);
+        }
+    };
+
+    pushUnique(root.FindChildTraverse("level_stats_frame"));
+
+    const centerBlock = root.FindChildTraverse("center_block");
+    if (centerBlock) {
+        for (const frame of collectPanelsByType(centerBlock, "DOTAHUDLevelStatsFrame")) {
+            pushUnique(frame);
+        }
+    }
+
+    const queryUnit = root.FindChildTraverse("QueryUnit");
+    if (queryUnit) {
+        for (const frame of collectPanelsByType(queryUnit, "DOTAHUDLevelStatsFrame")) {
+            pushUnique(frame);
+        }
+    }
+
+    if (frames.length === 0) {
+        for (const frame of collectPanelsByType(root, "DOTAHUDLevelStatsFrame")) {
+            pushUnique(frame);
+        }
+    }
+
+    return frames;
+}
+
+function getEffectiveHeroState(): {
+    heroLevel: number;
+    abilityPoints: number;
+    canControlSelectedHero: boolean;
+} {
+    const localId = Players.GetLocalPlayer();
+    const localHero = Players.GetPlayerHeroEntityIndex(localId);
+    const hasValidHero = localHero !== -1 && Entities.IsValidEntity(localHero);
+    const portrait = Players.GetLocalPlayerPortraitUnit();
+    const isOwnHeroSelected = hasValidHero && (portrait === -1 || portrait === localHero);
+
+    const heroLevel = hasValidHero ? Entities.GetLevel(localHero) : (latestData?.hero_level ?? 1);
+    const abilityPoints = hasValidHero ? Entities.GetAbilityPoints(localHero) : (latestData?.ability_points ?? 0);
+    const canControlSelectedHero = hasValidHero && isOwnHeroSelected && Entities.IsAlive(localHero);
+
+    return { heroLevel, abilityPoints, canControlSelectedHero };
 }
 
 function getNativeStatBranchState(): { nativeClickOpen: boolean; nativeHoverOpen: boolean } {
@@ -90,6 +157,36 @@ function hookPopupHover(): void {
     });
 }
 
+function closeNativeStatBranchClasses(): void {
+    const root = findHudRoot();
+    if (!root) return;
+    const dotaStatBranch = root.FindChildTraverse("DOTAStatBranch");
+    if (dotaStatBranch) {
+        dotaStatBranch.RemoveClass("ShowStatBranch");
+        dotaStatBranch.RemoveClass("ShowStatBranchAsTooltip");
+        const parent = dotaStatBranch.GetParent();
+        if (parent) {
+            parent.RemoveClass("ShowStatBranch");
+            parent.RemoveClass("ShowStatBranchAsTooltip");
+        }
+    }
+    const hudElements = root.FindChildTraverse("HUDElements");
+    if (hudElements) {
+        hudElements.RemoveClass("ShowStatBranch");
+        hudElements.RemoveClass("ShowStatBranchAsTooltip");
+    }
+}
+
+function togglePopupFromButton(): void {
+    const nextOpen = !lastRenderedVisible;
+    isPinnedOpen = nextOpen;
+    if (!nextOpen) {
+        isHoveringLevelTab = false;
+        isHoveringPopup = false;
+        $.Schedule(0.01, closeNativeStatBranchClasses);
+    }
+}
+
 function hookNativeStatBranch(): void {
     if (hookedStatBranch) return;
     const root = findHudRoot();
@@ -99,7 +196,7 @@ function hookNativeStatBranch(): void {
 
     hookedStatBranch = true;
     statBranch.SetPanelEvent("onactivate", () => {
-        isPinnedOpen = !isPinnedOpen;
+        togglePopupFromButton();
     });
 }
 
@@ -128,8 +225,7 @@ function renderTalentRows(force: boolean): void {
     if (!container) return;
 
     const rows = getEffectiveRows();
-    const heroLevel = latestData?.hero_level ?? 1;
-    const abilityPoints = latestData?.ability_points ?? 0;
+    const { heroLevel, abilityPoints } = getEffectiveHeroState();
 
     const sig = `${heroLevel}:${abilityPoints}:${rows
         .map((r) => `${r.left_learned}${r.right_learned}`)
@@ -193,9 +289,14 @@ function createBranchButton(
                 row: rowIdx,
                 side,
             } as never);
-            if ((latestData?.ability_points ?? 0) <= 1) {
+            const { abilityPoints } = getEffectiveHeroState();
+            if (abilityPoints <= 1 || !hasAvailableTalentPoint(rowIdx)) {
                 isPinnedOpen = false;
+                isHoveringLevelTab = false;
+                isHoveringPopup = false;
+                closeNativeStatBranchClasses();
             }
+            updateStatBranchUpgradeIndicator();
         });
     }
 }
@@ -211,14 +312,17 @@ function refreshFromNetTable(): void {
             renderTalentRows(false);
         }
     }
+    updateStatBranchUpgradeIndicator();
 }
 
-function hasAvailableTalentPoint(): boolean {
+function hasAvailableTalentPoint(ignoreRowIdx?: number): boolean {
     const rows = getEffectiveRows();
-    const heroLevel = latestData?.hero_level ?? 1;
-    const abilityPoints = latestData?.ability_points ?? 0;
-    if (abilityPoints <= 0) return false;
-    for (const row of rows) {
+    const { heroLevel, abilityPoints, canControlSelectedHero } = getEffectiveHeroState();
+    const effectivePoints = ignoreRowIdx !== undefined ? abilityPoints - 1 : abilityPoints;
+    if (!canControlSelectedHero || effectivePoints <= 0) return false;
+    for (let i = 0; i < rows.length; i++) {
+        if (i === ignoreRowIdx) continue;
+        const row = rows[i];
         const leftLearned = row.left_learned === 1;
         const rightLearned = row.right_learned === 1;
         const canLearnMore = heroLevel >= 30 || (!leftLearned && !rightLearned);
@@ -229,42 +333,85 @@ function hasAvailableTalentPoint(): boolean {
     return false;
 }
 
+function hookLevelTabPanel(panel: Panel | null | undefined): void {
+    if (!panel || hookedLevelTabs.has(panel)) return;
+    hookedLevelTabs.add(panel);
+    panel.SetPanelEvent("onactivate", () => {
+        if (hasAvailableTalentPoint()) {
+            togglePopupFromButton();
+        }
+    });
+    panel.SetPanelEvent("onmouseover", () => {
+        if (hasAvailableTalentPoint()) {
+            isHoveringLevelTab = true;
+        }
+    });
+    panel.SetPanelEvent("onmouseout", () => {
+        isHoveringLevelTab = false;
+    });
+}
+
+function setOverlayControlState(
+    panel: Panel | null | undefined,
+    shown: boolean,
+    clickable: boolean,
+    opacityWhenShown: string | null = "1"
+): void {
+    if (!panel) return;
+    panel.visible = shown;
+    panel.style.visibility = shown ? "visible" : "collapse";
+    panel.style.opacity = shown ? opacityWhenShown : "0";
+    panel.hittest = shown && clickable;
+    panel.hittestchildren = shown && clickable;
+}
+
 function updateStatBranchUpgradeIndicator(): void {
     const root = findHudRoot();
     if (!root) return;
-    const statBranch = root.FindChildTraverse("StatBranch");
-    if (!statBranch) return;
     const canUpgrade = hasAvailableTalentPoint();
-
-    statBranch.SetHasClass("could_level_up", canUpgrade);
-    statBranch.SetHasClass("show_level_up_tab", canUpgrade);
-    statBranch.SetHasClass("show_level_up_frame", canUpgrade);
-
-    const targets: (Panel | null | undefined)[] = [
-        statBranch.FindChildTraverse("LevelUpTab"),
-        statBranch.FindChildTraverse("LevelUpButton"),
-        statBranch.FindChildTraverse("LevelUpIcon"),
-        statBranch.FindChildTraverse("LevelUpLight"),
-        statBranch.FindChildTraverse("UpgradeOverlay"),
-        statBranch.FindChildTraverse("StatLevelUpTab"),
-    ];
-    const parent = statBranch.GetParent();
-    if (parent && !parent.FindChildTraverse("abilities")) {
-        parent.SetHasClass("could_level_up", canUpgrade);
-        parent.SetHasClass("show_level_up_tab", canUpgrade);
-        targets.push(
-            parent.FindChildTraverse("LevelUpTab"),
-            parent.FindChildTraverse("LevelUpButton"),
-            parent.FindChildTraverse("LevelUpIcon"),
-            parent.FindChildTraverse("LevelUpLight"),
-            parent.FindChildTraverse("StatLevelUpTab")
-        );
+    if (!canUpgrade) {
+        isHoveringLevelTab = false;
     }
 
-    for (const panel of targets) {
-        if (!panel) continue;
-        panel.style.opacity = canUpgrade ? null : "0";
-        panel.visible = canUpgrade;
+    const statBranch = root.FindChildTraverse("StatBranch");
+    if (statBranch) {
+        statBranch.SetHasClass("could_level_up", canUpgrade);
+        statBranch.SetHasClass("show_level_up_tab", canUpgrade);
+        statBranch.SetHasClass("show_level_up_frame", canUpgrade);
+        statBranch.SetHasClass("CanLevelStats", canUpgrade);
+        statBranch.SetHasClass("SkillUpgradable", canUpgrade);
+        setOverlayControlState(statBranch.FindChildTraverse("LevelUpTab"), canUpgrade, true);
+        setOverlayControlState(statBranch.FindChildTraverse("LevelUpButton"), canUpgrade, true);
+        setOverlayControlState(statBranch.FindChildTraverse("LevelUpIcon"), canUpgrade, false);
+        setOverlayControlState(statBranch.FindChildTraverse("LevelUpLight"), canUpgrade, false, null);
+        setOverlayControlState(statBranch.FindChildTraverse("UpgradeOverlay"), canUpgrade, false, null);
+        setOverlayControlState(statBranch.FindChildTraverse("StatLevelUpTab"), canUpgrade, true);
+    }
+
+    const frames = findLevelStatsFrames(root);
+    for (const frame of frames) {
+        const levelUpTab = frame.FindChildTraverse("LevelUpTab");
+        const levelUpButton = frame.FindChildTraverse("LevelUpButton");
+        hookLevelTabPanel(levelUpTab);
+        hookLevelTabPanel(levelUpButton);
+
+        frame.SetHasClass("CanLevelStats", canUpgrade);
+        frame.SetHasClass("SkillUpgradable", canUpgrade);
+        frame.SetHasClass("AbilityLearnMode", false);
+        frame.visible = canUpgrade;
+        frame.style.visibility = canUpgrade ? "visible" : "collapse";
+        frame.style.opacity = canUpgrade ? "1" : "0";
+        frame.hittest = false;
+        frame.hittestchildren = canUpgrade;
+
+        setOverlayControlState(levelUpTab, canUpgrade, true);
+        setOverlayControlState(levelUpButton, canUpgrade, true);
+        setOverlayControlState(frame.FindChildTraverse("LevelUpIcon"), canUpgrade, false);
+        setOverlayControlState(frame.FindChildTraverse("LevelUpBurstFX"), canUpgrade, false, null);
+        setOverlayControlState(frame.FindChildTraverse("LevelUpGlow"), canUpgrade, false, null);
+        setOverlayControlState(frame.FindChildTraverse("ButtonWell"), canUpgrade, false, null);
+        setOverlayControlState(frame.FindChildTraverse("LearnModeButton"), false, false);
+        setOverlayControlState(frame.FindChildTraverse("RecommendedUpgradeOverlay"), canUpgrade, false, null);
     }
 }
 
@@ -273,8 +420,8 @@ function periodicTick(): void {
     hookNativeStatBranch();
     updateStatBranchUpgradeIndicator();
     const { nativeClickOpen, nativeHoverOpen } = getNativeStatBranchState();
-    const shouldShow = isPinnedOpen || nativeClickOpen || nativeHoverOpen || isHoveringPopup;
-    const tooltipOnly = !isPinnedOpen && !nativeClickOpen && (nativeHoverOpen || isHoveringPopup);
+    const shouldShow = isPinnedOpen || nativeClickOpen || nativeHoverOpen || isHoveringPopup || isHoveringLevelTab;
+    const tooltipOnly = !isPinnedOpen && !nativeClickOpen && (nativeHoverOpen || isHoveringPopup || isHoveringLevelTab);
 
     const popup = $("#EvoTalentPopup");
     if (popup) {
@@ -294,9 +441,24 @@ function periodicTick(): void {
 CustomNetTables.SubscribeNetTableListener("player_talents" as never, (_table, key, value) => {
     if (key === String(Players.GetLocalPlayer()) && value) {
         latestData = value as PlayerTalentsData;
+        updateStatBranchUpgradeIndicator();
         if (lastRenderedVisible) {
             renderTalentRows(false);
         }
+    }
+});
+
+GameEvents.Subscribe("dota_player_gained_level" as never, () => {
+    updateStatBranchUpgradeIndicator();
+    if (lastRenderedVisible) {
+        renderTalentRows(false);
+    }
+});
+
+GameEvents.Subscribe("dota_player_learned_ability" as never, () => {
+    updateStatBranchUpgradeIndicator();
+    if (lastRenderedVisible) {
+        renderTalentRows(false);
     }
 });
 

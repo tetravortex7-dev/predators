@@ -74,7 +74,7 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         innateAbility = "evo_spectre_phantom_dispersion",
         signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
-            "evo_spectre_phantom_q",
+            "spectre_spectral_dagger",
             "evo_spectre_phantom_w",
             "evo_spectre_phantom_e",
             "evo_spectre_phantom_d",
@@ -113,14 +113,14 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_spectre_phantom_dispersion",
+        innateAbility = "evo_spectre_phantom_dispersion_t3",
         signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
-            "evo_spectre_phantom_q",
+            "spectre_spectral_dagger",
             "evo_spectre_phantom_w",
             "evo_spectre_phantom_e",
             "evo_spectre_phantom_d",
-            "evo_spectre_phantom_dispersion"
+            "evo_spectre_phantom_dispersion_t3"
         },
         kitAbilityLevel = 1
     },
@@ -160,15 +160,15 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_spectre_phantom_dispersion",
+        innateAbility = "evo_spectre_phantom_dispersion_t4",
         signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
-            "evo_spectre_phantom_q",
+            "spectre_spectral_dagger",
             "evo_spectre_phantom_w",
             "evo_spectre_phantom_e",
             "evo_spectre_phantom_d",
             "evo_spectre_phantom_r",
-            "evo_spectre_phantom_dispersion"
+            "evo_spectre_phantom_dispersion_t4"
         },
         kitAbilityLevel = 1
     },
@@ -358,9 +358,9 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_spectre_mirror_inversion",
+        innateAbility = "evo_spectre_mirror_inversion_t3",
         signatureAbility = "spectre_spectral_dagger",
-        kitAbilities = {"evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_inversion"},
+        kitAbilities = {"evo_spectre_mirror_q", "evo_spectre_mirror_w", "evo_spectre_mirror_e", "evo_spectre_mirror_inversion_t3"},
         kitAbilityLevel = 1
     },
     {
@@ -399,14 +399,14 @@ ____exports.EVO_BRANCH_SPECTRE_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 150,
         baseArmor = 5,
-        innateAbility = "evo_spectre_mirror_inversion",
+        innateAbility = "evo_spectre_mirror_inversion_t4",
         signatureAbility = "spectre_spectral_dagger",
         kitAbilities = {
             "evo_spectre_mirror_q",
             "evo_spectre_mirror_w",
             "evo_spectre_mirror_e",
             "evo_spectre_mirror_r",
-            "evo_spectre_mirror_inversion"
+            "evo_spectre_mirror_inversion_t4"
         },
         kitAbilityLevel = 1
     }

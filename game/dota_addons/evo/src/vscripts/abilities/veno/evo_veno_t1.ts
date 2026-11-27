@@ -30,11 +30,29 @@ export class evo_veno_glands extends BaseAbility {
 @registerAbility("evo_veno_needle_glands")
 export class evo_veno_needle_glands extends evo_veno_glands {}
 
+@registerAbility("evo_veno_needle_glands_t3")
+export class evo_veno_needle_glands_t3 extends evo_veno_glands {}
+
+@registerAbility("evo_veno_needle_glands_t4")
+export class evo_veno_needle_glands_t4 extends evo_veno_glands {}
+
 @registerAbility("evo_veno_hive_glands")
 export class evo_veno_hive_glands extends evo_veno_glands {}
 
+@registerAbility("evo_veno_hive_glands_t3")
+export class evo_veno_hive_glands_t3 extends evo_veno_glands {}
+
+@registerAbility("evo_veno_hive_glands_t4")
+export class evo_veno_hive_glands_t4 extends evo_veno_glands {}
+
 @registerAbility("evo_veno_symbiont_glands")
 export class evo_veno_symbiont_glands extends evo_veno_glands {}
+
+@registerAbility("evo_veno_symbiont_glands_t3")
+export class evo_veno_symbiont_glands_t3 extends evo_veno_glands {}
+
+@registerAbility("evo_veno_symbiont_glands_t4")
+export class evo_veno_symbiont_glands_t4 extends evo_veno_glands {}
 
 @registerModifier("modifier_evo_veno_glands")
 export class modifier_evo_veno_glands extends BaseModifier {
@@ -85,7 +103,7 @@ export class modifier_evo_veno_glands extends BaseModifier {
         const parent = this.GetParent();
         const ab = this.GetAbility();
         if (!parent || parent.IsNull() || !ab || ab.IsNull() || parent.PassivesDisabled()) return 0;
-        if (ab.GetAbilityName() !== "evo_veno_hive_glands") return 0;
+        if (!ab.GetAbilityName().startsWith("evo_veno_hive_glands")) return 0;
         const ampPer = ab.GetSpecialValueFor("amp_per_turret");
         return Math.min(5, this.GetStackCount()) * ampPer;
     }

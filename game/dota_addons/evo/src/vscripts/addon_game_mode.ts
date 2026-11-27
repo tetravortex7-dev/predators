@@ -94,7 +94,14 @@ function Precache(this: void, context: CScriptPrecacheContext): void {
         "particles/units/heroes/hero_wisp/wisp_guardian_explosion.vpcf",
         "particles/units/heroes/hero_wisp/wisp_overcharge.vpcf",
         "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
-        "particles/evo_spectre/evo_spectre_void_surge.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_spectral_dagger.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_shadow_path_owner.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf",
+        "particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf",
+        "particles/units/heroes/hero_void_spirit/void_spirit_entryportal.vpcf",
+        "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
+        "particles/evo_spectre/evo_spectre_cleave.vpcf",
     ];
     for (const vpcf of extraParticles) {
         if (!seenParticles.has(vpcf)) {

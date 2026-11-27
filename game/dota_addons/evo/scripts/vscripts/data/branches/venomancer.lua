@@ -106,9 +106,9 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 500,
         baseArmor = 5,
-        innateAbility = "evo_veno_needle_glands",
+        innateAbility = "evo_veno_needle_glands_t3",
         signatureAbility = "evo_veno_t1_q",
-        kitAbilities = {"evo_veno_needle_q", "evo_veno_needle_w", "evo_veno_needle_e", "evo_veno_needle_glands"},
+        kitAbilities = {"evo_veno_needle_q", "evo_veno_needle_w", "evo_veno_needle_e", "evo_veno_needle_glands_t3"},
         kitAbilityLevel = 1
     },
     {
@@ -141,14 +141,14 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 500,
         baseArmor = 5,
-        innateAbility = "evo_veno_needle_glands",
+        innateAbility = "evo_veno_needle_glands_t4",
         signatureAbility = "evo_veno_t1_q",
         kitAbilities = {
             "evo_veno_needle_q",
             "evo_veno_needle_w",
             "evo_veno_needle_e",
             "evo_veno_needle_r",
-            "evo_veno_needle_glands"
+            "evo_veno_needle_glands_t4"
         },
         kitAbilityLevel = 1
     },
@@ -219,9 +219,9 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 450,
         baseArmor = 5,
-        innateAbility = "evo_veno_hive_glands",
+        innateAbility = "evo_veno_hive_glands_t3",
         signatureAbility = "evo_veno_t1_q",
-        kitAbilities = {"evo_veno_hive_q", "evo_veno_hive_w", "evo_veno_hive_e", "evo_veno_hive_glands"},
+        kitAbilities = {"evo_veno_hive_q", "evo_veno_hive_w", "evo_veno_hive_e", "evo_veno_hive_glands_t3"},
         kitAbilityLevel = 1
     },
     {
@@ -254,14 +254,14 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 450,
         baseArmor = 5,
-        innateAbility = "evo_veno_hive_glands",
+        innateAbility = "evo_veno_hive_glands_t4",
         signatureAbility = "evo_veno_t1_q",
         kitAbilities = {
             "evo_veno_hive_q",
             "evo_veno_hive_w",
             "evo_veno_hive_e",
             "evo_veno_hive_r",
-            "evo_veno_hive_glands"
+            "evo_veno_hive_glands_t4"
         },
         kitAbilityLevel = 1
     },
@@ -332,9 +332,9 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 450,
         baseArmor = 5,
-        innateAbility = "evo_veno_symbiont_glands",
+        innateAbility = "evo_veno_symbiont_glands_t3",
         signatureAbility = "evo_veno_t1_q",
-        kitAbilities = {"evo_veno_symbiont_q", "evo_veno_symbiont_w", "evo_veno_symbiont_e", "evo_veno_symbiont_glands"},
+        kitAbilities = {"evo_veno_symbiont_q", "evo_veno_symbiont_w", "evo_veno_symbiont_e", "evo_veno_symbiont_glands_t3"},
         kitAbilityLevel = 1
     },
     {
@@ -367,14 +367,14 @@ ____exports.EVO_BRANCH_VENOMANCER_BODIES = {
         baseAttackDamageMax = 56,
         baseAttackRange = 450,
         baseArmor = 5,
-        innateAbility = "evo_veno_symbiont_glands",
+        innateAbility = "evo_veno_symbiont_glands_t4",
         signatureAbility = "evo_veno_t1_q",
         kitAbilities = {
             "evo_veno_symbiont_q",
             "evo_veno_symbiont_w",
             "evo_veno_symbiont_e",
             "evo_veno_symbiont_r",
-            "evo_veno_symbiont_glands"
+            "evo_veno_symbiont_glands_t4"
         },
         kitAbilityLevel = 1
     }

@@ -54,25 +54,26 @@
 
 	"spectre_spectral_dagger"
 	{
+		"AbilityTextureName"			"evo_spectre_t1_q"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"MaxLevel"						"3"
-		"AbilityCastRange"				"900"
-		"AbilityCastPoint"				"0.3"
-		"AbilityManaCost"				"60"
+		"MaxLevel"						"5"
+		"AbilityCastRange"				"900 950 1000 1050 1100"
+		"AbilityCastPoint"				"0.25"
+		"AbilityManaCost"				"55 60 65 70 75"
 		"AbilityValues"
 		{
 			"damage"
 			{
-				"value"					"70 85 100"
+				"value"					"75 100 130 165 205"
 				"special_bonus_unique_spectre_6"	"0"
 			}
 			"bonus_movespeed"
 			{
-				"value"					"14 16 18"
+				"value"					"14 17 20 24 28"
 				"special_bonus_unique_spectre_3"	"0"
 			}
 			"dagger_path_duration"		"6.0"
@@ -93,7 +94,7 @@
 				"value"					"200"
 				"affected_by_aoe_increase"	"1"
 			}
-			"speed"						"1000"
+			"speed"						"1050 1100 1150 1200 1250"
 			"dagger_grace_period"		"1.0"
 			"applies_desolate"
 			{
@@ -101,7 +102,7 @@
 			}
 			"AbilityCooldown"
 			{
-				"value"					"9.0 8.5 8.0"
+				"value"					"9.0 8.5 8.0 7.5 7.0"
 				"special_bonus_unique_spectre"	"0"
 			}
 		}

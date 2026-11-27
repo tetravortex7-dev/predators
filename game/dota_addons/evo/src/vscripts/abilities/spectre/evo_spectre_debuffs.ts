@@ -7,8 +7,6 @@ import {
 
 const SCRIPT_PATH = "abilities/spectre/evo_spectre_debuffs";
 
-LinkLuaModifier("modifier_evo_spectre_dagger_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
-LinkLuaModifier("modifier_evo_spectre_shadow_path", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_armor_shred", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_reality_ms", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_portal_slow", SCRIPT_PATH, LuaModifierMotionType.NONE);
@@ -18,78 +16,6 @@ LinkLuaModifier("modifier_evo_spectre_mirror_q_slow", SCRIPT_PATH, LuaModifierMo
 LinkLuaModifier("modifier_evo_spectre_mirror_polarity", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_mirror_mr_shred", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_mirror_inv_shred", SCRIPT_PATH, LuaModifierMotionType.NONE);
-
-@registerModifier("modifier_evo_spectre_dagger_slow")
-export class modifier_evo_spectre_dagger_slow extends BaseModifier {
-    private slowPct = 20;
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return true;
-    }
-    IsPurgable(): boolean {
-        return true;
-    }
-    GetTexture(): string {
-        return "spectre_spectral_dagger";
-    }
-    OnCreated(): void {
-        this.slowPct = 20;
-        const ab = this.GetAbility();
-        if (ab && !ab.IsNull()) {
-            this.slowPct = ab.GetSpecialValueFor("slow_pct");
-        }
-    }
-    OnRefresh(): void {
-        this.OnCreated();
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
-    }
-    GetModifierMoveSpeedBonus_Percentage(): number {
-        return -this.slowPct;
-    }
-}
-
-@registerModifier("modifier_evo_spectre_shadow_path")
-export class modifier_evo_spectre_shadow_path extends BaseModifier {
-    private msPct = 16;
-    IsHidden(): boolean {
-        return false;
-    }
-    IsDebuff(): boolean {
-        return false;
-    }
-    IsPurgable(): boolean {
-        return false;
-    }
-    GetTexture(): string {
-        return "spectre_spectral_dagger";
-    }
-    OnCreated(): void {
-        this.msPct = 16;
-        const ab = this.GetAbility();
-        if (ab && !ab.IsNull()) {
-            this.msPct = ab.GetSpecialValueFor("path_ms_pct");
-        }
-    }
-    OnRefresh(): void {
-        this.OnCreated();
-    }
-    CheckState(): Partial<Record<ModifierState, boolean>> {
-        return {
-            [dotaModifierState("MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY")]: true,
-            [dotaModifierState("MODIFIER_STATE_NO_UNIT_COLLISION")]: true,
-        };
-    }
-    DeclareFunctions(): ModifierFunction[] {
-        return [dotaModifierFunction("MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE")];
-    }
-    GetModifierMoveSpeedBonus_Percentage(): number {
-        return this.msPct;
-    }
-}
 
 @registerModifier("modifier_evo_spectre_armor_shred")
 export class modifier_evo_spectre_armor_shred extends BaseModifier {
@@ -104,7 +30,7 @@ export class modifier_evo_spectre_armor_shred extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_desolate";
+        return "evo_spectre_phantom_w";
     }
     OnCreated(params: { shred?: number }): void {
         this.shred = 4;
@@ -145,7 +71,7 @@ export class modifier_evo_spectre_reality_ms extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_reality";
+        return "evo_spectre_phantom_d";
     }
     OnCreated(): void {
         this.msPct = 25;
@@ -181,7 +107,7 @@ export class modifier_evo_spectre_portal_slow extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_haunt";
+        return "evo_spectre_phantom_e";
     }
     OnCreated(): void {
         this.slowPct = 15;

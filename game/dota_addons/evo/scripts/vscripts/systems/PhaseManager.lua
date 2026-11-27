@@ -5,12 +5,13 @@ local __TS__New = ____lualib.__TS__New
 local __TS__ArrayMap = ____lualib.__TS__ArrayMap
 local __TS__ArraySplice = ____lualib.__TS__ArraySplice
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 4,["14"] = 5,["15"] = 6,["16"] = 7,["17"] = 9,["18"] = 9,["19"] = 11,["20"] = 11,["21"] = 11,["22"] = 18,["23"] = 18,["24"] = 12,["25"] = 13,["26"] = 14,["27"] = 15,["28"] = 16,["29"] = 18,["30"] = 20,["31"] = 21,["32"] = 21,["33"] = 21,["34"] = 21,["35"] = 21,["36"] = 22,["37"] = 22,["38"] = 22,["39"] = 22,["40"] = 22,["41"] = 24,["42"] = 20,["43"] = 27,["44"] = 28,["45"] = 27,["46"] = 31,["47"] = 32,["48"] = 31,["49"] = 35,["50"] = 36,["51"] = 37,["52"] = 38,["53"] = 39,["54"] = 40,["55"] = 40,["56"] = 40,["57"] = 40,["58"] = 40,["60"] = 35,["61"] = 48,["62"] = 49,["63"] = 50,["65"] = 53,["66"] = 55,["67"] = 57,["68"] = 61,["69"] = 62,["72"] = 69,["73"] = 70,["74"] = 71,["76"] = 73,["77"] = 74,["78"] = 75,["79"] = 76,["80"] = 77,["83"] = 81,["84"] = 48,["85"] = 84,["86"] = 85,["87"] = 86,["88"] = 84,["89"] = 89,["90"] = 90,["93"] = 91,["94"] = 92,["95"] = 94,["96"] = 100,["97"] = 89,["98"] = 103,["99"] = 104,["100"] = 104,["101"] = 104,["102"] = 104,["103"] = 105,["104"] = 108,["105"] = 111,["106"] = 112,["107"] = 113,["108"] = 114,["109"] = 114,["110"] = 116,["111"] = 121,["113"] = 103,["114"] = 132,["115"] = 133,["118"] = 134,["119"] = 135,["122"] = 136,["125"] = 137,["128"] = 139,["129"] = 139,["130"] = 139,["131"] = 139,["132"] = 140,["133"] = 132,["134"] = 143,["135"] = 144,["136"] = 145,["138"] = 148,["139"] = 149,["140"] = 150,["141"] = 151,["143"] = 153,["144"] = 154,["146"] = 157,["147"] = 158,["148"] = 161,["149"] = 164,["150"] = 165,["152"] = 169,["153"] = 173,["154"] = 174,["156"] = 177,["157"] = 179,["158"] = 185,["159"] = 186,["161"] = 188,["163"] = 191,["164"] = 191,["165"] = 192,["166"] = 193,["167"] = 194,["169"] = 197,["170"] = 143,["171"] = 200,["173"] = 201,["174"] = 201,["176"] = 202,["177"] = 203,["178"] = 203,["180"] = 204,["181"] = 205,["182"] = 205,["184"] = 206,["187"] = 201,["190"] = 200,["191"] = 210,["192"] = 211,["193"] = 211,["194"] = 211,["196"] = 211,["197"] = 215,["198"] = 216,["199"] = 217,["200"] = 218,["201"] = 219,["202"] = 220,["203"] = 221,["204"] = 210});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["10"] = 2,["11"] = 2,["12"] = 3,["13"] = 4,["14"] = 5,["15"] = 6,["16"] = 7,["17"] = 8,["18"] = 10,["19"] = 10,["20"] = 12,["21"] = 12,["22"] = 12,["23"] = 20,["24"] = 20,["25"] = 13,["26"] = 14,["27"] = 15,["28"] = 16,["29"] = 17,["30"] = 18,["31"] = 20,["32"] = 22,["33"] = 23,["34"] = 23,["35"] = 23,["36"] = 23,["37"] = 23,["38"] = 24,["39"] = 24,["40"] = 24,["41"] = 24,["42"] = 24,["43"] = 26,["44"] = 22,["45"] = 29,["46"] = 30,["47"] = 29,["48"] = 33,["49"] = 34,["50"] = 33,["51"] = 37,["52"] = 38,["53"] = 39,["54"] = 40,["55"] = 41,["56"] = 42,["57"] = 43,["58"] = 44,["59"] = 44,["60"] = 44,["61"] = 44,["62"] = 44,["64"] = 37,["65"] = 52,["66"] = 53,["67"] = 54,["69"] = 57,["70"] = 58,["71"] = 60,["72"] = 62,["73"] = 66,["74"] = 67,["77"] = 74,["78"] = 75,["79"] = 76,["81"] = 78,["82"] = 79,["83"] = 80,["84"] = 81,["85"] = 82,["88"] = 86,["89"] = 52,["90"] = 89,["91"] = 90,["92"] = 91,["93"] = 89,["94"] = 94,["95"] = 95,["98"] = 96,["99"] = 97,["100"] = 97,["101"] = 97,["102"] = 97,["103"] = 97,["104"] = 97,["105"] = 97,["107"] = 94,["108"] = 107,["109"] = 108,["110"] = 109,["112"] = 110,["113"] = 110,["115"] = 111,["119"] = 113,["120"] = 113,["122"] = 114,["123"] = 114,["125"] = 115,["126"] = 116,["127"] = 117,["129"] = 118,["130"] = 118,["132"] = 119,["133"] = 119,["134"] = 120,["135"] = 121,["136"] = 122,["137"] = 123,["138"] = 124,["139"] = 125,["140"] = 126,["142"] = 119,["145"] = 118,["148"] = 130,["149"] = 107,["150"] = 133,["151"] = 134,["154"] = 135,["155"] = 136,["156"] = 138,["157"] = 144,["158"] = 133,["159"] = 147,["160"] = 148,["161"] = 148,["162"] = 148,["163"] = 148,["164"] = 149,["165"] = 152,["166"] = 155,["167"] = 156,["168"] = 157,["169"] = 158,["170"] = 158,["171"] = 160,["172"] = 165,["174"] = 147,["175"] = 176,["176"] = 177,["179"] = 178,["180"] = 179,["183"] = 180,["186"] = 181,["189"] = 183,["190"] = 183,["191"] = 183,["192"] = 183,["193"] = 184,["194"] = 176,["195"] = 187,["196"] = 188,["197"] = 189,["199"] = 192,["200"] = 193,["201"] = 194,["202"] = 195,["204"] = 197,["205"] = 198,["207"] = 201,["208"] = 202,["209"] = 205,["210"] = 208,["211"] = 209,["213"] = 213,["214"] = 217,["215"] = 218,["217"] = 221,["218"] = 223,["219"] = 229,["220"] = 230,["222"] = 232,["224"] = 235,["225"] = 235,["226"] = 236,["227"] = 237,["228"] = 238,["230"] = 241,["231"] = 187,["232"] = 244,["234"] = 245,["235"] = 245,["237"] = 246,["238"] = 247,["239"] = 247,["241"] = 248,["242"] = 249,["243"] = 249,["245"] = 250,["248"] = 245,["251"] = 244,["252"] = 254,["253"] = 255,["254"] = 255,["255"] = 255,["257"] = 255,["258"] = 259,["259"] = 260,["260"] = 261,["261"] = 262,["262"] = 263,["263"] = 264,["264"] = 265,["265"] = 254});
 local ____exports = {}
 local ____bosses_catalog = require("data.bosses_catalog")
 local EVO_BOSSES_CATALOG = ____bosses_catalog.EVO_BOSSES_CATALOG
 local ____game_constants = require("data.game_constants")
 local EVO_CONSTANTS = ____game_constants.EVO_CONSTANTS
+local EVO_PLAYABLE_TEAMS = ____game_constants.EVO_PLAYABLE_TEAMS
 local EVO_TIERS = ____game_constants.EVO_TIERS
 local calculateEscalationMultiplier = ____game_constants.calculateEscalationMultiplier
 local calculateTargetTeamScore = ____game_constants.calculateTargetTeamScore
@@ -26,6 +27,7 @@ function PhaseManager.prototype.____constructor(self, eventBus)
     self.announcedBosses = {}
     self.unlockedTimedTiers = __TS__New(Set, {0})
     self.lastSyncedEscalation = 1
+    self.centerFowOrigin = Vector(0, 0, 128)
 end
 function PhaseManager.prototype.init(self)
     ListenToGameEvent(
@@ -49,8 +51,10 @@ end
 function PhaseManager.prototype.onGameStateChange(self)
     if GameRules:State_Get() == 10 and not self.started then
         self.started = true
+        self.centerFowOrigin = self:resolveCenterFowOrigin()
         self:announceMatchBosses()
         self:syncMatchState(0)
+        self:refreshCenterFowVision(0)
         GameRules:GetGameModeEntity():SetContextThink(
             "EvoPhaseManagerThink",
             function() return self:onThink() end,
@@ -63,6 +67,7 @@ function PhaseManager.prototype.onThink(self)
         return nil
     end
     local elapsed = GameRules:GetDOTATime(false, false)
+    self:refreshCenterFowVision(elapsed)
     for ____, tier in ipairs(EVO_TIERS) do
         if tier.unlockTimeSeconds ~= nil and not self.unlockedTimedTiers:has(tier.tierIndex) and elapsed >= tier.unlockTimeSeconds then
             self.unlockedTimedTiers:add(tier.tierIndex)
@@ -85,6 +90,62 @@ end
 function PhaseManager.prototype.transitionToSurface(self, elapsed)
     self:clearPeaceTimeModifiers()
     self:transitionToPhase("SURFACE", elapsed)
+end
+function PhaseManager.prototype.refreshCenterFowVision(self, elapsed)
+    if elapsed >= EVO_CONSTANTS.CENTER_FOW_REVEAL_SECONDS then
+        return
+    end
+    for ____, team in ipairs(EVO_PLAYABLE_TEAMS) do
+        AddFOWViewer(
+            team,
+            self.centerFowOrigin,
+            EVO_CONSTANTS.CENTER_FOW_REVEAL_RADIUS,
+            1.5,
+            false
+        )
+    end
+end
+function PhaseManager.prototype.resolveCenterFowOrigin(self)
+    local fountains = {}
+    for ____, ent in ipairs(Entities:FindAllByClassname("ent_dota_fountain")) do
+        do
+            if not ent or ent:IsNull() or not IsValidEntity(ent) then
+                goto __continue26
+            end
+            fountains[#fountains + 1] = ent:GetAbsOrigin()
+        end
+        ::__continue26::
+    end
+    if #fountains == 0 then
+        return Vector(0, 0, 128)
+    end
+    if #fountains == 1 then
+        return fountains[1]
+    end
+    local bestA = fountains[1]
+    local bestB = fountains[2]
+    local maxDistSq = -1
+    do
+        local i = 0
+        while i < #fountains do
+            do
+                local j = i + 1
+                while j < #fountains do
+                    local dx = fountains[i + 1].x - fountains[j + 1].x
+                    local dy = fountains[i + 1].y - fountains[j + 1].y
+                    local dSq = dx * dx + dy * dy
+                    if dSq > maxDistSq then
+                        maxDistSq = dSq
+                        bestA = fountains[i + 1]
+                        bestB = fountains[j + 1]
+                    end
+                    j = j + 1
+                end
+            end
+            i = i + 1
+        end
+    end
+    return Vector((bestA.x + bestB.x) / 2, (bestA.y + bestB.y) / 2, 128)
 end
 function PhaseManager.prototype.transitionToPhase(self, newPhase, elapsed)
     if self.currentPhase == newPhase then
@@ -175,15 +236,15 @@ function PhaseManager.prototype.clearPeaceTimeModifiers(self)
             do
                 local playerId = i
                 if not PlayerResource:IsValidPlayerID(playerId) then
-                    goto __continue41
+                    goto __continue54
                 end
                 local hero = PlayerResource:GetSelectedHeroEntity(playerId)
                 if not hero or hero:IsNull() or not IsValidEntity(hero) then
-                    goto __continue41
+                    goto __continue54
                 end
                 hero:RemoveModifierByName("modifier_evo_peace_time")
             end
-            ::__continue41::
+            ::__continue54::
             i = i + 1
         end
     end

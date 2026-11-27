@@ -4,128 +4,128 @@
     "en": "Frenzy Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_frenzy_Description": {
-    "ru": "Увеличивает скорость атаки ближайших крипов.",
-    "en": "Increases attack speed of nearby creeps."
+    "ru": "<font color='#9acd32'>Скорость атаки</font> ближайших крипов увеличена.",
+    "en": "Increases <font color='#9acd32'>attack speed</font> of nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_carapace": {
     "ru": "Аура панциря",
     "en": "Carapace Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_carapace_Description": {
-    "ru": "Увеличивает броню ближайших крипов.",
-    "en": "Increases armor of nearby creeps."
+    "ru": "<font color='#e03e2e'>Броня</font> ближайших крипов увеличена.",
+    "en": "Increases <font color='#e03e2e'>armor</font> of nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_vitality": {
     "ru": "Аура живучести",
     "en": "Vitality Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_vitality_Description": {
-    "ru": "Восстанавливает здоровье ближайших крипов.",
-    "en": "Restores health of nearby creeps."
+    "ru": "Восстанавливает <font color='#9acd32'>здоровье</font> ближайших крипов.",
+    "en": "Restores <font color='#9acd32'>Health</font> of nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_vampiric": {
     "ru": "Аура вампиризма",
     "en": "Vampiric Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_vampiric_Description": {
-    "ru": "Дарует вампиризм ближайшим крипам.",
-    "en": "Grants lifesteal to nearby creeps."
+    "ru": "Дарует <font color='#9acd32'>вампиризм</font> ближайшим крипам.",
+    "en": "Grants <font color='#9acd32'>lifesteal</font> to nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_haste": {
     "ru": "Аура стремительности",
     "en": "Haste Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_haste_Description": {
-    "ru": "Увеличивает скорость передвижения ближайших крипов.",
-    "en": "Increases movement speed of nearby creeps."
+    "ru": "Увеличивает <font color='#9acd32'>скорость передвижения</font> ближайших крипов.",
+    "en": "Increases <font color='#9acd32'>movement speed</font> of nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_thorns": {
     "ru": "Аура шипов",
     "en": "Thorns Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_thorns_Description": {
-    "ru": "Возвращает часть физического урона атакующему.",
-    "en": "Returns a portion of physical attack damage."
+    "ru": "Возвращает часть <font color='#e03e2e'>физического урона</font> атакующему.",
+    "en": "Returns a portion of <font color='#e03e2e'>physical attack damage</font>."
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_ward": {
     "ru": "Аура завесы",
     "en": "Ward Aura"
   },
   "DOTA_Tooltip_modifier_evo_creep_aura_ward_Description": {
-    "ru": "Увеличивает сопротивление магии ближайших крипов.",
-    "en": "Increases magic resistance of nearby creeps."
+    "ru": "Увеличивает <font color='#87ceeb'>сопротивление магии</font> ближайших крипов.",
+    "en": "Increases <font color='#87ceeb'>magic resistance</font> of nearby creeps."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_frost": {
     "ru": "Ледяной удар",
     "en": "Frost Strike"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_frost_Description": {
-    "ru": "Атаки замедляют передвижение и скорость атаки цели.",
-    "en": "Attacks slow movement and attack speed."
+    "ru": "Атаки <font color='#7998b5'>замедляют</font> передвижение и скорость атаки цели.",
+    "en": "Attacks <font color='#7998b5'>slow</font> target movement and attack speed."
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_frost": {
     "ru": "Обморожение",
     "en": "Frostbitten"
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_frost_Description": {
-    "ru": "Скорость передвижения и атаки снижены.",
-    "en": "Movement and attack speed reduced."
+    "ru": "Скорость передвижения и атаки <font color='#7998b5'>снижены</font>.",
+    "en": "Movement and attack speed <font color='#7998b5'>reduced</font>."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_venom": {
     "ru": "Ядовитые когти",
     "en": "Venom Claws"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_venom_Description": {
-    "ru": "Атаки отравляют цель и ослабляют лечение.",
-    "en": "Attacks poison the target and reduce healing."
+    "ru": "Атаки <font color='#9acd32'>отравляют</font> цель и ослабляют лечение.",
+    "en": "Attacks <font color='#9acd32'>poison</font> the target and reduce healing."
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_venom": {
     "ru": "Яд когтей",
     "en": "Venom"
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_venom_Description": {
-    "ru": "Периодический магический урон и снижение лечения.",
-    "en": "Taking magic damage over time with reduced healing."
+    "ru": "Получает периодический <font color='#87ceeb'>магический урон</font>; <font color='#9acd32'>лечение</font> ослаблено.",
+    "en": "Taking <font color='#87ceeb'>magical damage</font> over time with reduced <font color='#9acd32'>healing</font>."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_sunder": {
     "ru": "Разлом брони",
     "en": "Armor Sunder"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_sunder_Description": {
-    "ru": "Атаки снижают броню цели.",
-    "en": "Attacks reduce target armor."
+    "ru": "Атаки снижают <font color='#e03e2e'>броню</font> цели.",
+    "en": "Attacks reduce target <font color='#e03e2e'>armor</font>."
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_sunder": {
     "ru": "Расколотая броня",
     "en": "Sundered Armor"
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_sunder_Description": {
-    "ru": "Броня снижена.",
-    "en": "Armor is reduced."
+    "ru": "<font color='#e03e2e'>Броня</font> цели снижена.",
+    "en": "Target <font color='#e03e2e'>armor</font> is reduced."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_manaburn": {
     "ru": "Манабёрн",
     "en": "Mana Burn"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_manaburn_Description": {
-    "ru": "Атаки сжигают ману и наносят доп. урон.",
-    "en": "Attacks burn mana and deal bonus damage."
+    "ru": "Атаки сжигают <font color='#87ceeb'>ману</font> и наносят дополнительный урон.",
+    "en": "Attacks burn <font color='#87ceeb'>mana</font> and deal bonus damage."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_crit": {
     "ru": "Кровавый разрыв",
     "en": "Rending Strike"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_crit_Description": {
-    "ru": "Шанс нанести критический удар.",
-    "en": "Chance to deal critical damage."
+    "ru": "Шанс нанести <font color='#e03e2e'>критический физический удар</font>.",
+    "en": "Chance to deal <font color='#e03e2e'>critical physical damage</font>."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_explode": {
     "ru": "Посмертный взрыв",
     "en": "Volatile Death"
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_explode_Description": {
-    "ru": "Взрывается при гибели, нанося урон вокруг.",
-    "en": "Explodes on death, damaging nearby enemies."
+    "ru": "Взрывается при гибели, нанося <font color='#87ceeb'>магический урон</font> вокруг.",
+    "en": "Explodes on death, dealing <font color='#87ceeb'>magical damage</font> to nearby enemies."
   },
   "DOTA_Tooltip_modifier_evo_creep_ability_stomp": {
     "ru": "Громовой топот",
@@ -140,7 +140,7 @@
     "en": "Stomped"
   },
   "DOTA_Tooltip_modifier_evo_creep_debuff_stomp_Description": {
-    "ru": "Скорость передвижения снижена.",
-    "en": "Movement speed reduced."
+    "ru": "Скорость передвижения <font color='#7998b5'>снижена</font>.",
+    "en": "Movement speed <font color='#7998b5'>reduced</font>."
   }
 }

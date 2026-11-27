@@ -111,11 +111,6 @@ export class EvoGameMode {
         gameMode.SetBuybackEnabled(true);
         gameMode.SetCustomScanCooldown(EVO_CONSTANTS.SCAN_COOLDOWN_SECONDS);
         gameMode.SetCustomScanMaxCharges(EVO_CONSTANTS.SCAN_MAX_CHARGES);
-
-        if (IsInToolsMode()) {
-            gameMode.SetFogOfWarDisabled(true);
-            gameMode.SetUnseenFogOfWarEnabled(false);
-        }
     }
 
     public configureTeams(teamCount: number, playersPerTeam: number): void {

@@ -84,79 +84,79 @@
     "en": "Mutation: +5 Attack Damage"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_atk_5_Description": {
-    "ru": "Увеличивает урон от атак на 5.",
-    "en": "Increases attack damage by 5."
+    "ru": "Увеличивает урон от атак на <font color='#e03e2e'>5</font>.",
+    "en": "Increases attack damage by <font color='#e03e2e'>5</font>."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_ms_5": {
     "ru": "Мутация: +5 к скорости бега",
     "en": "Mutation: +5 Move Speed"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_ms_5_Description": {
-    "ru": "Увеличивает скорость передвижения на 5.",
-    "en": "Increases movement speed by 5."
+    "ru": "Увеличивает скорость передвижения на <font color='#9acd32'>5</font>.",
+    "en": "Increases movement speed by <font color='#9acd32'>5</font>."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_mana_regen": {
     "ru": "Мутация: +1 к регену маны",
     "en": "Mutation: +1 Mana Regen"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_mana_regen_Description": {
-    "ru": "Увеличивает восстановление маны на 1 в секунду.",
-    "en": "Increases mana regeneration by 1 per second."
+    "ru": "Увеличивает восстановление маны на <font color='#87ceeb'>1</font> в секунду.",
+    "en": "Increases mana regeneration by <font color='#87ceeb'>1</font> per second."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_hp_regen": {
     "ru": "Мутация: +2.5 к регену ХП",
     "en": "Mutation: +2.5 HP Regen"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_hp_regen_Description": {
-    "ru": "Увеличивает восстановление здоровья на 2.5 в секунду.",
-    "en": "Increases health regeneration by 2.5 per second."
+    "ru": "Увеличивает восстановление здоровья на <font color='#9acd32'>2.5</font> в секунду.",
+    "en": "Increases health regeneration by <font color='#9acd32'>2.5</font> per second."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_str_1": {
     "ru": "Мутация: +1 к силе",
     "en": "Mutation: +1 Strength"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_str_1_Description": {
-    "ru": "Увеличивает силу на 1.",
-    "en": "Increases strength by 1."
+    "ru": "Увеличивает <font color='#e03e2e'>силу</font> на 1.",
+    "en": "Increases <font color='#e03e2e'>Strength</font> by 1."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_agi_1": {
     "ru": "Мутация: +1 к ловкости",
     "en": "Mutation: +1 Agility"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_agi_1_Description": {
-    "ru": "Увеличивает ловкость на 1.",
-    "en": "Increases agility by 1."
+    "ru": "Увеличивает <font color='#9acd32'>ловкость</font> на 1.",
+    "en": "Increases <font color='#9acd32'>Agility</font> by 1."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_int_1": {
     "ru": "Мутация: +1 к интеллекту",
     "en": "Mutation: +1 Intelligence"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_int_1_Description": {
-    "ru": "Увеличивает интеллект на 1.",
-    "en": "Increases intelligence by 1."
+    "ru": "Увеличивает <font color='#87ceeb'>интеллект</font> на 1.",
+    "en": "Increases <font color='#87ceeb'>Intelligence</font> by 1."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_armor_1": {
     "ru": "Мутация: +1 к броне",
     "en": "Mutation: +1 Armor"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_armor_1_Description": {
-    "ru": "Увеличивает броню на 1.",
-    "en": "Increases armor by 1."
+    "ru": "Увеличивает <font color='#e03e2e'>броню</font> на 1.",
+    "en": "Increases <font color='#e03e2e'>Armor</font> by 1."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_as_5": {
     "ru": "Мутация: +5 к скорости атаки",
     "en": "Mutation: +5 Attack Speed"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_as_5_Description": {
-    "ru": "Увеличивает скорость атаки на 5.",
-    "en": "Increases attack speed by 5."
+    "ru": "Увеличивает <font color='#9acd32'>скорость атаки</font> на 5.",
+    "en": "Increases <font color='#9acd32'>attack speed</font> by 5."
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_hp_40": {
     "ru": "Мутация: +40 к здоровью",
     "en": "Mutation: +40 Max Health"
   },
   "DOTA_Tooltip_modifier_evo_mut_stat_hp_40_Description": {
-    "ru": "Увеличивает максимальное здоровье на 40.",
-    "en": "Increases maximum health by 40."
+    "ru": "Увеличивает <font color='#9acd32'>максимальное здоровье</font> на 40.",
+    "en": "Increases <font color='#9acd32'>maximum health</font> by 40."
   }
 }

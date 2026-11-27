@@ -19,3 +19,4 @@ NEVER guess ControlPoints (`CP1`, `CP2`, `CP15`, etc.) or attach heights! Inspec
 ```powershell
 python tools/extract_vpcf.py particles/units/heroes/hero_spectre/spectre_desolate.vpcf --children
 ```
+- **CRITICAL when authoring custom `.vpcf` from `resourceinfo.exe` output:** `resourceinfo.exe` prints compiled `CParticleCollectionFloatInput` dicts (`{ m_nType = "PF_TYPE_LITERAL" m_flLiteralValue = ... }`), `m_vecTexturesInput`, and `m_nOutputBlendMode`. In source `.vpcf` files for `resourcecompiler.exe` (without `m_nBehaviorVersion`), ALWAYS convert inputs back to plain scalars (`m_nParticlesToEmit = 128`, `m_flInitialSpeedMin = 1850.0`, `m_hTexture = resource:"..."`, `m_bAdditive = true`) and verify with `resourceinfo.exe -b DATA -baremode` after compiling — otherwise `resourcecompiler.exe` silently compiles `m_nParticlesToEmit` to `0.0`!

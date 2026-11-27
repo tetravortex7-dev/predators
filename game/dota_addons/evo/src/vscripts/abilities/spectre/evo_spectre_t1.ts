@@ -33,6 +33,24 @@ export class evo_spectre_dispersion extends BaseAbility {
 @registerAbility("evo_spectre_phantom_dispersion")
 export class evo_spectre_phantom_dispersion extends evo_spectre_dispersion {}
 
+@registerAbility("evo_spectre_phantom_dispersion_t3")
+export class evo_spectre_phantom_dispersion_t3 extends evo_spectre_dispersion {}
+
+@registerAbility("evo_spectre_phantom_dispersion_t4")
+export class evo_spectre_phantom_dispersion_t4 extends evo_spectre_dispersion {}
+
+function findPhantomDispersion(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
+    for (const name of [
+        "evo_spectre_phantom_dispersion_t4",
+        "evo_spectre_phantom_dispersion_t3",
+        "evo_spectre_phantom_dispersion",
+    ]) {
+        const ab = unit.FindAbilityByName(name);
+        if (ab && !ab.IsNull()) return ab;
+    }
+    return undefined;
+}
+
 @registerModifier("modifier_evo_spectre_dispersion_haste")
 export class modifier_evo_spectre_dispersion_haste extends BaseModifier {
     private msPct = 15;
@@ -46,7 +64,7 @@ export class modifier_evo_spectre_dispersion_haste extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_dispersion";
+        return "evo_spectre_phantom_dispersion";
     }
     OnCreated(): void {
         this.msPct = 15;
@@ -84,7 +102,7 @@ export class modifier_evo_spectre_dispersion_charge extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "spectre_dispersion";
+        return "evo_spectre_phantom_dispersion";
     }
     OnCreated(): void {
         if (IsServer() && this.GetStackCount() <= 0) {
@@ -103,7 +121,7 @@ export class modifier_evo_spectre_dispersion_charge extends BaseModifier {
         if (target.GetTeamNumber() === parent.GetTeamNumber() || target.IsBuilding()) return;
         if (this.GetStackCount() <= 0) return;
 
-        const disp = parent.FindAbilityByName("evo_spectre_phantom_dispersion");
+        const disp = findPhantomDispersion(parent);
         if (!disp || disp.IsNull()) return;
         const baseDmg = disp.GetSpecialValueFor("charge_dmg");
         const agiPct = disp.GetSpecialValueFor("charge_agi_pct");
@@ -155,6 +173,12 @@ export class modifier_evo_spectre_dispersion extends BaseModifier {
         return false;
     }
     GetTexture(): string {
+        const ability = this.GetAbility();
+        if (ability && !ability.IsNull()) {
+            const name = ability.GetAbilityName();
+            if (name === "evo_spectre_dispersion") return "evo_spectre_dispersion";
+            if (name.startsWith("evo_spectre_phantom_dispersion")) return "evo_spectre_phantom_dispersion";
+        }
         return "spectre_dispersion";
     }
     OnCreated(): void {
@@ -276,19 +300,22 @@ export class evo_spectre_t1_w extends BaseAbility {
         const attrPct = this.GetSpecialValueFor("attr_pct");
         const physDmg = physBase + (getSpectreHighestAttr(caster) * attrPct) / 100;
 
+        const casterPos = caster.GetAbsOrigin();
         const targetPos = target.GetAbsOrigin();
-        const dir = targetPos.__sub(caster.GetAbsOrigin());
+        const dir = targetPos.__sub(casterPos);
         dir.z = 0;
         const forward = dir.Length2D() > 1 ? dir.Normalized() : caster.GetForwardVector();
 
         caster.EmitSound("Hero_VoidSpirit.Pulse.Cast");
         target.EmitSound("Hero_VoidSpirit.AstralStep.Target");
         const pfx = ParticleManager.CreateParticle(
-            "particles/evo_spectre/evo_spectre_void_surge.vpcf",
-            ParticleAttachment.ABSORIGIN_FOLLOW,
-            target
+            "particles/evo_spectre/evo_spectre_cleave.vpcf",
+            ParticleAttachment.ABSORIGIN,
+            caster
         );
+        ParticleManager.SetParticleControl(pfx, 0, casterPos);
         ParticleManager.SetParticleControlForward(pfx, 0, forward);
+        ParticleManager.SetParticleControl(pfx, 2, targetPos);
         ParticleManager.ReleaseParticleIndex(pfx);
 
         ApplyDamage({

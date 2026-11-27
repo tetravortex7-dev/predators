@@ -30,6 +30,12 @@ export class evo_spectre_mirror_inversion extends BaseAbility {
     }
 }
 
+@registerAbility("evo_spectre_mirror_inversion_t3")
+export class evo_spectre_mirror_inversion_t3 extends evo_spectre_mirror_inversion {}
+
+@registerAbility("evo_spectre_mirror_inversion_t4")
+export class evo_spectre_mirror_inversion_t4 extends evo_spectre_mirror_inversion {}
+
 @registerModifier("modifier_evo_spectre_mirror_inversion")
 export class modifier_evo_spectre_mirror_inversion extends BaseModifier {
     IsHidden(): boolean {

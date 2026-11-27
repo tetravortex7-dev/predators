@@ -7,7 +7,6 @@ import {
     registerModifier,
 } from "../../lib/dota_ts_adapter";
 import {
-    applySpectreCreepDamage,
     findSpectreEnemies,
     getSpectreAgi,
     getSpectreBranchMaxLevel,
@@ -15,131 +14,12 @@ import {
 } from "./evo_spectre_shared";
 import "./evo_spectre_debuffs";
 
-const SCRIPT_PATH = "abilities/spectre/evo_spectre_phantom";
+const SCRIPT_PATH = "abilities/spectre/evo_spectre_phantom_w";
 
 LinkLuaModifier("modifier_evo_spectre_phantom_w_passive", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_phantom_w_active", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_phantom_ms_steal", SCRIPT_PATH, LuaModifierMotionType.NONE);
 LinkLuaModifier("modifier_evo_spectre_phantom_root", SCRIPT_PATH, LuaModifierMotionType.NONE);
-
-@registerAbility("evo_spectre_phantom_q")
-export class evo_spectre_phantom_q extends BaseAbility {
-    private projMeta: Record<number, { isReturn: boolean; hit: Set<EntityIndex> }> = {};
-
-    GetMaxLevel(): number {
-        return getSpectreBranchMaxLevel(this.GetCaster());
-    }
-
-    private launchCrescent(origin: Vector, dir: Vector, isReturn: boolean): void {
-        const caster = this.GetCaster();
-        const range = this.GetSpecialValueFor("range");
-        const width = this.GetSpecialValueFor("width");
-        const speed = this.GetSpecialValueFor("speed");
-
-        const projId = ProjectileManager.CreateLinearProjectile({
-            Ability: this,
-            EffectName: "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
-            vSpawnOrigin: origin,
-            fDistance: range,
-            fStartRadius: width,
-            fEndRadius: width,
-            Source: caster,
-            bHasFrontalCone: false,
-            iUnitTargetTeam: UnitTargetTeam.ENEMY,
-            iUnitTargetFlags: UnitTargetFlags.NONE,
-            iUnitTargetType: (UnitTargetType.HERO + UnitTargetType.BASIC) as UnitTargetType,
-            vVelocity: (dir * speed) as Vector,
-            bProvidesVision: true,
-            iVisionRadius: 225,
-            iVisionTeamNumber: caster.GetTeamNumber(),
-        });
-        this.projMeta[projId] = { isReturn, hit: new Set<EntityIndex>() };
-    }
-
-    OnSpellStart(): void {
-        if (!IsServer()) return;
-        const caster = this.GetCaster();
-        const origin = caster.GetAbsOrigin();
-        let dir = (this.GetCursorPosition() - origin) as Vector;
-        dir.z = 0;
-        if (dir.Length2D() < 1) {
-            dir = caster.GetForwardVector();
-        }
-        dir = dir.Normalized();
-
-        const range = this.GetSpecialValueFor("range");
-        const speed = this.GetSpecialValueFor("speed");
-        const pathDur = this.GetSpecialValueFor("path_duration");
-
-        caster.EmitSound("Hero_Spectre.DaggerCast");
-        caster.AddNewModifier(caster, this, "modifier_evo_spectre_shadow_path", { duration: pathDur });
-        this.launchCrescent(origin, dir, false);
-
-        if (getSpectreTier(caster) >= 3) {
-            const endPoint = GetGroundPosition((origin + dir * range) as Vector, caster);
-            const returnDelay = range / Math.max(100, speed) + this.GetSpecialValueFor("return_delay");
-            caster.SetContextThink(
-                DoUniqueString("SpectreCrescentReturn"),
-                () => {
-                    if (!this || this.IsNull() || !caster || caster.IsNull()) return undefined;
-                    const targetPos = caster.IsAlive() ? caster.GetAbsOrigin() : origin;
-                    let backDir = (targetPos - endPoint) as Vector;
-                    backDir.z = 0;
-                    if (backDir.Length2D() < 1) {
-                        backDir = (-dir) as Vector;
-                    }
-                    this.launchCrescent(endPoint, backDir.Normalized(), true);
-                    return undefined;
-                },
-                returnDelay
-            );
-        }
-    }
-
-    OnProjectileHitHandle(
-        target: CDOTA_BaseNPC | undefined,
-        _location: Vector,
-        projectileHandle: ProjectileID
-    ): boolean {
-        if (!IsServer()) return false;
-        const meta = this.projMeta[projectileHandle];
-        if (!target || target.IsNull() || !IsValidEntity(target) || !target.IsAlive()) {
-            delete this.projMeta[projectileHandle];
-            return false;
-        }
-        const idx = target.GetEntityIndex();
-        if (meta !== undefined && meta.hit.has(idx)) return false;
-        if (meta !== undefined) meta.hit.add(idx);
-
-        const caster = this.GetCaster();
-        const tier = getSpectreTier(caster);
-        const rawBase = this.GetSpecialValueFor("base_damage") + (getSpectreAgi(caster) * this.GetSpecialValueFor("agi_pct")) / 100;
-        const dmg = meta && meta.isReturn ? (rawBase * this.GetSpecialValueFor("return_dmg_pct")) / 100 : rawBase;
-        const creepMult = this.GetSpecialValueFor("creep_mult");
-        const slowDur = this.GetSpecialValueFor("slow_duration");
-
-        target.EmitSound("Hero_Spectre.DaggerImpact");
-        applySpectreCreepDamage(caster, target, this, dmg, DamageTypes.PHYSICAL, creepMult);
-        target.AddNewModifier(caster, this, "modifier_evo_spectre_dagger_slow", { duration: slowDur });
-
-        if (tier >= 4 && !(meta && meta.isReturn)) {
-            caster.PerformAttack(target, true, true, true, true, false, false, true);
-            if (target.IsRealHero()) {
-                const dAb = caster.FindAbilityByName("evo_spectre_phantom_d");
-                const reduce = this.GetSpecialValueFor("reality_cd_reduce");
-                if (dAb && !dAb.IsNull() && reduce > 0) {
-                    const rem = dAb.GetCooldownTimeRemaining();
-                    if (rem > 0) {
-                        dAb.EndCooldown();
-                        const next = rem - reduce;
-                        if (next > 0.05) dAb.StartCooldown(next);
-                    }
-                }
-            }
-        }
-        return false;
-    }
-}
 
 @registerAbility("evo_spectre_phantom_w")
 export class evo_spectre_phantom_w extends BaseAbility {
@@ -153,7 +33,15 @@ export class evo_spectre_phantom_w extends BaseAbility {
         if (!IsServer()) return;
         const caster = this.GetCaster();
         const dur = this.GetSpecialValueFor("active_duration");
-        caster.EmitSound("Hero_Spectre.Desolate");
+        caster.EmitSound("Hero_VoidSpirit.Dissimilate.Cast");
+        caster.EmitSound("Hero_Spectre.ShadowStep.Cast");
+        const castPfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
+            ParticleAttachment.ABSORIGIN_FOLLOW,
+            caster
+        );
+        ParticleManager.SetParticleControl(castPfx, 0, caster.GetAbsOrigin());
+        ParticleManager.ReleaseParticleIndex(castPfx);
         const mod = caster.AddNewModifier(caster, this, "modifier_evo_spectre_phantom_w_active", {
             duration: dur,
         });
@@ -214,7 +102,9 @@ export class modifier_evo_spectre_phantom_w_passive extends BaseModifier {
             tier >= 4 &&
             (activeMod !== undefined || parent.HasModifier("modifier_evo_spectre_reality_ms"));
         const cadence = isFastCycle ? 2 : 3;
-        const isSlowed = target.HasModifier("modifier_evo_spectre_dagger_slow");
+        const isSlowed =
+            target.HasModifier("modifier_spectre_spectral_dagger_slow") ||
+            target.HasModifier("modifier_spectre_spectral_dagger");
 
         if (!hasEmpower && !isSlowed && this.hitCounter < cadence) {
             return;
@@ -229,11 +119,39 @@ export class modifier_evo_spectre_phantom_w_passive extends BaseModifier {
         const cleaveRadius = ability.GetSpecialValueFor("cleave_radius");
         const cleavePct = ability.GetSpecialValueFor("cleave_pct") / 100;
 
+        const parentPos = parent.GetAbsOrigin();
+        const targetPos = target.GetAbsOrigin();
+        const dir = targetPos.__sub(parentPos);
+        dir.z = 0;
+        const forward = dir.Length2D() > 1 ? dir.Normalized() : parent.GetForwardVector();
+
+        target.EmitSound("Hero_Spectre.Desolate");
+        target.EmitSound(hasEmpower ? "Hero_VoidSpirit.AstralStep.Target" : "Hero_VoidSpirit.Pulse.Target");
+
+        const cleavePfx = ParticleManager.CreateParticle(
+            "particles/evo_spectre/evo_spectre_cleave.vpcf",
+            ParticleAttachment.ABSORIGIN,
+            parent
+        );
+        ParticleManager.SetParticleControl(cleavePfx, 0, parentPos);
+        ParticleManager.SetParticleControlForward(cleavePfx, 0, forward);
+        ParticleManager.SetParticleControl(cleavePfx, 2, targetPos);
+        ParticleManager.ReleaseParticleIndex(cleavePfx);
+
+        const burstPfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
+            ParticleAttachment.ABSORIGIN,
+            target
+        );
+        ParticleManager.SetParticleControl(burstPfx, 0, targetPos);
+        ParticleManager.ReleaseParticleIndex(burstPfx);
+
         const pfx = ParticleManager.CreateParticle(
             "particles/units/heroes/hero_spectre/spectre_desolate.vpcf",
             ParticleAttachment.ABSORIGIN_FOLLOW,
             target
         );
+        ParticleManager.SetParticleControl(pfx, 4, parentPos);
         ParticleManager.ReleaseParticleIndex(pfx);
 
         ApplyDamage({
@@ -298,7 +216,13 @@ export class modifier_evo_spectre_phantom_w_active extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_desolate";
+        return "evo_spectre_phantom_w";
+    }
+    GetEffectName(): string {
+        return "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf";
+    }
+    GetEffectAttachType(): ParticleAttachment {
+        return ParticleAttachment.ABSORIGIN_FOLLOW;
     }
     OnCreated(): void {
         this.evasion = 30;
@@ -345,7 +269,7 @@ export class modifier_evo_spectre_phantom_ms_steal extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_desolate";
+        return "evo_spectre_phantom_w";
     }
     OnCreated(params: { amount?: number }): void {
         this.isDebuffFlag = (params && (params.amount ?? 0) < 0) || this.GetParent().GetTeamNumber() !== this.GetCaster()?.GetTeamNumber();
@@ -377,7 +301,13 @@ export class modifier_evo_spectre_phantom_root extends BaseModifier {
         return true;
     }
     GetTexture(): string {
-        return "spectre_desolate";
+        return "evo_spectre_phantom_w";
+    }
+    GetEffectName(): string {
+        return "particles/units/heroes/hero_treant/treant_bramble_root.vpcf";
+    }
+    GetEffectAttachType(): ParticleAttachment {
+        return ParticleAttachment.ABSORIGIN_FOLLOW;
     }
     CheckState(): Partial<Record<ModifierState, boolean>> {
         return {

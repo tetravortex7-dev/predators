@@ -4,48 +4,60 @@
     "en": "Water Splash"
   },
   "DOTA_Tooltip_ability_evo_morph_t1_water_splash_Description": {
-    "ru": "Герой совершает короткий рывок волной на расстояние до %dash_range%, нанося %damage% магического урона всем врагам на пути и замедляя их передвижение на %slow_pct%%% на %slow_duration% сек.",
-    "en": "Dashes forward up to %dash_range% units, dealing %damage% magic damage to all enemies along the path and slowing movement speed by %slow_pct%%% for %slow_duration%s."
+    "ru": "Герой совершает рывок волной на расстояние до %dash_range%, нанося %damage% <font color='#87ceeb'>магического урона</font> всем врагам на пути и <font color='#7998b5'>замедляя</font> их передвижение на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Dashes forward in a wave up to %dash_range% units, dealing %damage% <font color='#87ceeb'>magical damage</font> to all enemies along the path and <font color='#7998b5'>slowing</font> their movement speed by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_water_splash_Note0": {
+    "ru": "Во время рывка герой проходит сквозь существ и не может отдавать другие приказы. Не действует на цели с невосприимчивостью к эффектам.",
+    "en": "Grants phased movement and restricts commands during the dash. Does not affect debuff-immune enemies."
   },
   "DOTA_Tooltip_modifier_evo_morph_t1_water_splash_slow": {
     "ru": "Водяной всплеск",
     "en": "Water Splash"
   },
   "DOTA_Tooltip_modifier_evo_morph_t1_water_splash_slow_Description": {
-    "ru": "Скорость передвижения снижена на 15%.",
-    "en": "Movement speed reduced by 15%."
+    "ru": "Скорость передвижения изменена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Movement speed modified by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream": {
     "ru": "Разъедающий поток",
     "en": "Corrosive Stream"
   },
   "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_Description": {
-    "ru": "Выпускает поток воды в цель, нанося %base_damage% + %attr_damage_pct%%% от наибольшего атрибута магического урона. Поток расплёскивается на %splash_targets% ближайших врагов (%splash_pct%%% урона) и снижает броню всех задетых целей на %armor_reduction% на %armor_duration% сек.",
-    "en": "Fires a water stream dealing %base_damage% + %attr_damage_pct%%% of highest attribute magic damage. Splashes onto %splash_targets% nearest enemies (%splash_pct%%% damage) and reduces armor by %armor_reduction% for %armor_duration%s on all hit."
+    "ru": "Выпускает в цель поток воды, наносящий %base_damage% + %attr_damage_pct%%% от <font color='#d8ae53'>наибольшего атрибута</font> <font color='#87ceeb'>магического урона</font>.<br><br>Поток расплёскивается на %splash_targets% ближайших врагов в радиусе %splash_radius% <font color='#7d7d7d'>(%splash_pct%%% урона)</font> и снижает броню всех задетых целей на <font color='#e03e2e'>%armor_reduction%</font> на %armor_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Fires a water stream at the target, dealing %base_damage% + %attr_damage_pct%%% of your <font color='#d8ae53'>highest attribute</font> as <font color='#87ceeb'>magical damage</font>.<br><br>Splashes onto up to %splash_targets% nearest enemies within %splash_radius% radius <font color='#7d7d7d'>(%splash_pct%%% damage)</font>, reducing the armor of all hit targets by <font color='#e03e2e'>%armor_reduction%</font> for %armor_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_Note0": {
+    "ru": "От снаряда можно уклониться; блокируется и отражается защитой от заклинаний.",
+    "en": "The projectile can be disjointed and is blocked by Spell Block."
   },
   "DOTA_Tooltip_modifier_evo_morph_t1_corrosive_armor": {
     "ru": "Разъедающий поток",
     "en": "Corrosive Stream"
   },
   "DOTA_Tooltip_modifier_evo_morph_t1_corrosive_armor_Description": {
-    "ru": "Броня снижена на 2.",
-    "en": "Armor reduced by 2."
+    "ru": "Броня изменена на <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font>.",
+    "en": "Armor modified by <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font>."
   },
   "DOTA_Tooltip_ability_evo_morph_adaptive_essence": {
     "ru": "Адаптивная сущность",
     "en": "Adaptive Essence"
   },
   "DOTA_Tooltip_ability_evo_morph_adaptive_essence_Description": {
-    "ru": "Динамически усиливает героя в зависимости от наибольшего атрибута:<br>— <b>Сила:</b> +%str_armor% к броне и +%str_hp_regen% к регенерации здоровья.<br>— <b>Ловкость:</b> +%agi_attack_speed% к скорости атаки и +%agi_move_speed_pct%%% к скорости передвижения.<br>— <b>Интеллект:</b> +%int_spell_amp%%% к урону заклинаний и +%int_mana_regen% к регенерации маны.",
-    "en": "Dynamically grants bonuses based on highest attribute:<br>— <b>Strength:</b> +%str_armor% Armor, +%str_hp_regen% HP Regen.<br>— <b>Agility:</b> +%agi_attack_speed% Attack Speed, +%agi_move_speed_pct%%% Move Speed.<br>— <b>Intelligence:</b> +%int_spell_amp%%% Spell Amp, +%int_mana_regen% Mana Regen."
+    "ru": "<h1>Пассивно: Адаптация</h1>Динамически усиливает героя в зависимости от его <font color='#d8ae53'><b>наибольшего атрибута</b></font>:<br><br>• <font color='#e03e2e'><b>Сила:</b></font> <font color='#e03e2e'>+%str_armor%</font> к броне и <font color='#9acd32'>+%str_hp_regen%</font> к регенерации здоровья.<br>• <font color='#9acd32'><b>Ловкость:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> к скорости атаки и <font color='#9acd32'>+%agi_move_speed_pct%%%</font> к скорости передвижения.<br>• <font color='#87ceeb'><b>Интеллект:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> к урону заклинаний и <font color='#87ceeb'>+%int_mana_regen%</font> к регенерации маны.",
+    "en": "<h1>Passive: Adaptation</h1>Dynamically empowers the hero based on their <font color='#d8ae53'><b>highest attribute</b></font>:<br><br>• <font color='#e03e2e'><b>Strength:</b></font> <font color='#e03e2e'>+%str_armor%</font> armor and <font color='#9acd32'>+%str_hp_regen%</font> health regeneration.<br>• <font color='#9acd32'><b>Agility:</b></font> <font color='#9acd32'>+%agi_attack_speed%</font> attack speed and <font color='#9acd32'>+%agi_move_speed_pct%%%</font> movement speed.<br>• <font color='#87ceeb'><b>Intelligence:</b></font> <font color='#87ceeb'>+%int_spell_amp%%%</font> spell amplification and <font color='#87ceeb'>+%int_mana_regen%</font> mana regeneration."
+  },
+  "DOTA_Tooltip_ability_evo_morph_adaptive_essence_Note0": {
+    "ru": "Не действует на иллюзии и отключается истощением.",
+    "en": "Does not affect illusions and is disabled by Break."
   },
   "DOTA_Tooltip_modifier_evo_morph_adaptive_essence": {
     "ru": "Адаптивная сущность",
     "en": "Adaptive Essence"
   },
   "DOTA_Tooltip_modifier_evo_morph_adaptive_essence_Description": {
-    "ru": "Активный бонус от наибольшего атрибута (1: СИЛ, 2: ЛОВ, 3: ИНТ).",
-    "en": "Active bonus from highest attribute (1: STR, 2: AGI, 3: INT)."
+    "ru": "Герой адаптируется под свой <font color='#d8ae53'><b>наибольший атрибут</b></font>, получая пассивные бонусы от способности <b>Адаптивная сущность</b>.",
+    "en": "Adapting to your <font color='#d8ae53'><b>highest attribute</b></font>, granting passive bonuses from <b>Adaptive Essence</b>."
   },
   "DOTA_Tooltip_ability_evo_morph_t1_water_splash_dash_range": {
     "ru": "ДАЛЬНОСТЬ РЫВКА:",
@@ -74,6 +86,10 @@
   "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_splash_targets": {
     "ru": "ЦЕЛЕЙ СПЛЕША:",
     "en": "SPLASH TARGETS:"
+  },
+  "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_splash_radius": {
+    "ru": "РАДИУС СПЛЕША:",
+    "en": "SPLASH RADIUS:"
   },
   "DOTA_Tooltip_ability_evo_morph_t1_corrosive_stream_splash_pct": {
     "ru": "%УРОН СПЛЕША:",
@@ -116,8 +132,12 @@
     "en": "Tidal Surge"
   },
   "DOTA_Tooltip_ability_evo_morph_water_q_Description": {
-    "ru": "Рывок волной на %dash_range%, наносящий %damage% магического урона всем врагам на пути.",
-    "en": "Dashes forward %dash_range% units, dealing %damage% magic damage to all enemies along the path."
+    "ru": "Устремляется вперёд волной на расстояние до %dash_range%, нанося %damage% <font color='#87ceeb'>магического урона</font> всем врагам на пути.",
+    "en": "Dashes forward in a wave up to %dash_range% units, dealing %damage% <font color='#87ceeb'>magical damage</font> to all enemies along the path."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_q_Note0": {
+    "ru": "Во время рывка герой проходит сквозь существ и не может отдавать другие приказы. Не действует на цели с невосприимчивостью к эффектам.",
+    "en": "Grants phased movement and restricts commands during the dash. Does not affect debuff-immune enemies."
   },
   "DOTA_Tooltip_ability_evo_morph_water_q_dash_range": {
     "ru": "ДАЛЬНОСТЬ РЫВКА:",
@@ -132,8 +152,12 @@
     "en": "Water Spear"
   },
   "DOTA_Tooltip_ability_evo_morph_water_w_Description": {
-    "ru": "Направленный удар водой на %base_damage% + %stat_pct%%% от суммы Силы и Ловкости магического урона, накладывающий Промокание на %wet_duration% сек.",
-    "en": "Hurls a water spear dealing %base_damage% + %stat_pct%%% of (STR+AGI) magic damage and applying Wet for %wet_duration%s."
+    "ru": "Выпускает направленное копьё воды, наносящее %base_damage% + %stat_pct%%% от суммы <font color='#e03e2e'>Силы</font> и <font color='#9acd32'>Ловкости</font> <font color='#87ceeb'>магического урона</font> и накладывающее <font color='#7998b5'><b>Промокание</b></font> на %wet_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Hurls a water spear dealing %base_damage% + %stat_pct%%% of combined <font color='#e03e2e'>Strength</font> and <font color='#9acd32'>Agility</font> as <font color='#87ceeb'>magical damage</font> and applying <font color='#7998b5'><b>Wet</b></font> for %wet_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_w_Note0": {
+    "ru": "От снаряда можно уклониться; блокируется защитой от заклинаний.",
+    "en": "The projectile can be disjointed and is blocked by Spell Block."
   },
   "DOTA_Tooltip_ability_evo_morph_water_w_base_damage": {
     "ru": "БАЗОВЫЙ УРОН:",
@@ -152,8 +176,8 @@
     "en": "Rarefaction"
   },
   "DOTA_Tooltip_ability_evo_morph_water_e_Description": {
-    "ru": "На %duration% сек. дарует +%bonus_ms_pct%%% к скорости передвижения и %evasion_pct%%% уклонения.",
-    "en": "Grants +%bonus_ms_pct%%% Move Speed and %evasion_pct%%% Evasion for %duration%s."
+    "ru": "На %duration% сек. дарует <font color='#9acd32'>+%bonus_ms_pct%%%</font> к скорости передвижения и <font color='#9acd32'>%evasion_pct%%%</font> уклонения.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Grants <font color='#9acd32'>+%bonus_ms_pct%%%</font> movement speed and <font color='#9acd32'>%evasion_pct%%%</font> evasion for %duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_morph_water_e_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
@@ -172,8 +196,12 @@
     "en": "Call of the Ocean"
   },
   "DOTA_Tooltip_ability_evo_morph_water_r_Description": {
-    "ru": "Затапливает область радиусом %radius% на %duration% сек. Все враги в зоне постоянно находятся под эффектом Промокания (гарантирует оцепенение от Водяного Копья), а перезарядка Рывка Прилива героя внутри зоны идёт в 1.5× быстрее.",
-    "en": "Floods a %radius%-radius area for %duration%s. Enemies inside permanently suffer Wet (guaranteeing Water Spear root), while the caster's Tidal Surge cooldown ticks 1.5x faster inside."
+    "ru": "Затапливает область радиусом %radius% на %duration% сек.<br><br>Все враги в зоне постоянно находятся под эффектом <font color='#7998b5'><b>Промокания</b></font> <font color='#7d7d7d'>(гарантирует оцепенение от <b>Водяного Копья</b>)</font>, а перезарядка способности <b>Рывок Прилива</b> у героя внутри зоны идёт в <font color='#9acd32'>1.5×</font> быстрее.",
+    "en": "Floods a %radius%-radius area for %duration%s.<br><br>Enemies inside permanently suffer <font color='#7998b5'><b>Wet</b></font> <font color='#7d7d7d'>(guaranteeing the <b>Water Spear</b> root)</font>, while the caster's <b>Tidal Surge</b> cooldown ticks <font color='#9acd32'>1.5×</font> faster inside the zone."
+  },
+  "DOTA_Tooltip_ability_evo_morph_water_r_Note0": {
+    "ru": "Эффект <b>Промокания</b> обновляется каждые 0.5 сек., пока враги находятся в области. Ускорение перезарядки действует, только пока герой стоит внутри зоны.",
+    "en": "<b>Wet</b> refreshes every 0.5s while enemies remain inside. Cooldown acceleration only applies while the caster stands inside the area."
   },
   "DOTA_Tooltip_ability_evo_morph_water_r_radius": {
     "ru": "РАДИУС:",
@@ -188,8 +216,12 @@
     "en": "Blood Leap"
   },
   "DOTA_Tooltip_ability_evo_morph_blood_q_Description": {
-    "ru": "Мгновенный скачок к врагу, наносящий %base_damage% + %str_pct%%% от Силы физического урона и накладывающий Кровотечение (%bleed_dps% урона/сек на %bleed_duration% сек.).",
-    "en": "Blinks to an enemy dealing %base_damage% + %str_pct%%% STR physical damage and applying Bleed (%bleed_dps% DPS for %bleed_duration%s)."
+    "ru": "Мгновенно переносится к врагу, нанося %base_damage% + %str_pct%%% от <font color='#e03e2e'>Силы</font> <font color='#e03e2e'>физического урона</font> и накладывая <font color='#e03e2e'><b>Кровотечение</b></font> <font color='#7d7d7d'>(%bleed_dps% урона/сек на %bleed_duration% сек.)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Instantly blinks to an enemy, dealing %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#e03e2e'>physical damage</font> and applying <font color='#e03e2e'><b>Bleed</b></font> <font color='#7d7d7d'>(%bleed_dps% DPS for %bleed_duration%s)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_q_Note0": {
+    "ru": "Пробивает невосприимчивость к эффектам; блокируется защитой от заклинаний. После скачка герой автоматически атакует вражескую цель.",
+    "en": "Pierces debuff immunity; blocked by Spell Block. Orders the hero to attack the enemy target upon arrival."
   },
   "DOTA_Tooltip_ability_evo_morph_blood_q_base_damage": {
     "ru": "БАЗОВЫЙ ФИЗ. УРОН:",
@@ -212,8 +244,12 @@
     "en": "Life Siphon"
   },
   "DOTA_Tooltip_ability_evo_morph_blood_w_Description": {
-    "ru": "Наносит %base_damage% + %str_pct%%% от Силы магического урона и лечит героя на %heal_pct%%% от нанесённого урона.",
-    "en": "Deals %base_damage% + %str_pct%%% STR magic damage and heals for %heal_pct%%% of damage dealt."
+    "ru": "Наносит цели %base_damage% + %str_pct%%% от <font color='#e03e2e'>Силы</font> <font color='#87ceeb'>магического урона</font> и <font color='#9acd32'>лечит</font> героя на <font color='#9acd32'>%heal_pct%%%</font> от нанесённого урона.",
+    "en": "Deals %base_damage% + %str_pct%%% of <font color='#e03e2e'>Strength</font> as <font color='#87ceeb'>magical damage</font> and <font color='#9acd32'>heals</font> the caster for <font color='#9acd32'>%heal_pct%%%</font> of damage dealt."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_w_Note0": {
+    "ru": "Блокируется защитой от заклинаний и не действует на цели с невосприимчивостью к эффектам.",
+    "en": "Blocked by Spell Block and does not affect debuff-immune targets."
   },
   "DOTA_Tooltip_ability_evo_morph_blood_w_range": {
     "ru": "ДАЛЬНОСТЬ:",
@@ -236,8 +272,12 @@
     "en": "Flesh Hunger"
   },
   "DOTA_Tooltip_ability_evo_morph_blood_e_Description": {
-    "ru": "<b>Пассивно:</b> +%lifesteal_pct%%% вампиризма против кровоточащих целей и +%bonus_as% к скорости атаки.",
-    "en": "<b>Passive:</b> +%lifesteal_pct%%% lifesteal vs bleeding targets and +%bonus_as% Attack Speed."
+    "ru": "<h1>Пассивно: Жажда плоти</h1>Дарует <font color='#9acd32'>+%lifesteal_pct%%%</font> вампиризма против целей под <font color='#e03e2e'><b>Кровотечением</b></font> и <font color='#9acd32'>+%bonus_as%</font> к скорости атаки.",
+    "en": "<h1>Passive: Flesh Hunger</h1>Grants <font color='#9acd32'>+%lifesteal_pct%%%</font> lifesteal against <font color='#e03e2e'><b>bleeding</b></font> targets and <font color='#9acd32'>+%bonus_as%</font> attack speed."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_e_Note0": {
+    "ru": "Вампиризм срабатывает только при атаке врагов с эффектом <b>Кровотечения</b>.",
+    "en": "Lifesteal only triggers when attacking enemies affected by <b>Bleed</b>."
   },
   "DOTA_Tooltip_ability_evo_morph_blood_e_lifesteal_pct": {
     "ru": "%ВАМПИРИЗМ ПО КРОВОТ.:",
@@ -252,8 +292,16 @@
     "en": "Flayer Ritual"
   },
   "DOTA_Tooltip_ability_evo_morph_blood_r_Description": {
-    "ru": "Связывает героя с целью на %duration% сек. (разрыв на дистанции %break_distance%). На цели постоянно висит Кровотечение, а %redirect_pct%%% всего входящего по герою урона перенаправляется в связанную цель чистым уроном.",
-    "en": "Tethers the hero to a target for %duration%s (breaks at %break_distance% range). The target permanently suffers Bleed and takes %redirect_pct%%% of all damage dealt to the caster as pure damage."
+    "ru": "Связывает героя с целью на %duration% сек. <font color='#7d7d7d'>(разрывается на дистанции %break_distance%)</font>.<br><br>На цель постоянно наложено <font color='#e03e2e'><b>Кровотечение</b></font>, а <font color='#d8ae53'>%redirect_pct%%%</font> всего <font color='#e03e2e'>входящего по герою урона</font> перенаправляется в связанную цель в виде <font color='#d8ae53'>чистого урона</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Tethers the hero to a target for %duration%s <font color='#7d7d7d'>(breaks at %break_distance% distance)</font>.<br><br>The target permanently suffers <font color='#e03e2e'><b>Bleed</b></font>, and <font color='#d8ae53'>%redirect_pct%%%</font> of all <font color='#e03e2e'>incoming damage dealt to the caster</font> is redirected to the tethered target as <font color='#d8ae53'>pure damage</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_Note0": {
+    "ru": "Пробивает невосприимчивость к эффектам; блокируется защитой от заклинаний.",
+    "en": "Pierces debuff immunity; blocked by Spell Block."
+  },
+  "DOTA_Tooltip_ability_evo_morph_blood_r_Note1": {
+    "ru": "Перенаправленный урон рассчитывается от исходного урона до снижения защитой и не усиливается бонусом к урону заклинаний.",
+    "en": "Redirected damage is calculated from pre-mitigation damage and does not benefit from spell amplification."
   },
   "DOTA_Tooltip_ability_evo_morph_blood_r_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
@@ -272,8 +320,12 @@
     "en": "Shadow Step"
   },
   "DOTA_Tooltip_ability_evo_morph_void_q_Description": {
-    "ru": "Уходит в невидимость на %duration% сек. со скоростью %move_speed% и прохождением сквозь существ, нанося %pass_damage% магического урона врагам при прохождении.",
-    "en": "Turns invisible for %duration%s with %move_speed% phased Move Speed, dealing %pass_damage% magic damage to enemies passed through."
+    "ru": "Герой уходит в <b>невидимость</b> на %duration% сек. со скоростью передвижения <font color='#9acd32'>%move_speed%</font> и <b>прохождением сквозь существ</b>, нанося %pass_damage% <font color='#87ceeb'>магического урона</font> врагам при прохождении через них.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Turns <b>invisible</b> for %duration%s with <font color='#9acd32'>%move_speed%</font> <b>phased movement speed</b>, dealing %pass_damage% <font color='#87ceeb'>magical damage</font> to enemies passed through.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_q_Note0": {
+    "ru": "Атака или применение способностей <font color='#7d7d7d'>(кроме <b>Печати Пустоты</b>)</font> раскрывают невидимость. Каждый враг получает урон от прохождения не более одного раза за применение.",
+    "en": "Attacking or casting abilities <font color='#7d7d7d'>(except <b>Void Seal</b>)</font> breaks invisibility. Each enemy can only take pass-through damage once per cast."
   },
   "DOTA_Tooltip_ability_evo_morph_void_q_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
@@ -292,8 +344,12 @@
     "en": "Void Seal"
   },
   "DOTA_Tooltip_ability_evo_morph_void_w_Description": {
-    "ru": "Накладывает на врага метку на %duration% сек. (применимо в невидимости). Следующий удар или заклинание героя взрывают метку на %base_damage% + %int_pct%%% от Интеллекта магического урона.",
-    "en": "Marks an enemy for %duration%s (castable while invisible). The next attack or spell detonates the mark for %base_damage% + %int_pct%%% INT magic damage."
+    "ru": "Накладывает на врага <b>печать</b> на %duration% сек. <font color='#7d7d7d'>(можно применять в невидимости)</font>.<br><br>Следующая атака или заклинание героя взрывают печать, нанося %base_damage% + %int_pct%%% от <font color='#87ceeb'>Интеллекта</font> <font color='#87ceeb'>магического урона</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Marks an enemy with a <b>seal</b> for %duration%s <font color='#7d7d7d'>(castable while invisible)</font>.<br><br>The caster's next attack or spell detonates the seal, dealing %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_w_Note0": {
+    "ru": "Блокируется защитой от заклинаний; не действует на цели с невосприимчивостью к эффектам.",
+    "en": "Blocked by Spell Block and does not affect debuff-immune targets."
   },
   "DOTA_Tooltip_ability_evo_morph_void_w_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ МЕТКИ:",
@@ -312,8 +368,12 @@
     "en": "Abyssal Touch"
   },
   "DOTA_Tooltip_ability_evo_morph_void_e_Description": {
-    "ru": "Атаки накладывают Эрозию на %stack_duration% сек. (до %max_stacks% зарядов): -%mr_shred_per_stack%%% маг. сопротивления и +%on_hit_damage% маг. урона за каждый заряд.",
-    "en": "Attacks apply Erosion for %stack_duration%s (max %max_stacks% stacks): -%mr_shred_per_stack%%% Magic Resistance and +%on_hit_damage% on-hit magic damage per stack."
+    "ru": "<h1>Пассивно: Эрозия</h1>Атаки накладывают на врага эффект <b>Эрозии</b> на %stack_duration% сек. <font color='#7d7d7d'>(до %max_stacks% зарядов)</font>.<br><br>Каждый заряд снижает сопротивление магии цели на <font color='#87ceeb'>%mr_shred_per_stack%%%</font> и добавляет <font color='#87ceeb'>+%on_hit_damage% магического урона</font> при атаке.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<h1>Passive: Erosion</h1>Attacks apply <b>Erosion</b> to the target for %stack_duration%s <font color='#7d7d7d'>(max %max_stacks% stacks)</font>.<br><br>Each stack reduces the target's magic resistance by <font color='#87ceeb'>%mr_shred_per_stack%%%</font> and deals <font color='#87ceeb'>+%on_hit_damage% bonus magical damage</font> on hit.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_e_Note0": {
+    "ru": "Не срабатывает по постройкам и не действует на цели с невосприимчивостью к эффектам.",
+    "en": "Does not trigger against buildings and does not affect debuff-immune enemies."
   },
   "DOTA_Tooltip_ability_evo_morph_void_e_max_stacks": {
     "ru": "МАКС. ЗАРЯДОВ:",
@@ -327,13 +387,21 @@
     "ru": "МАГ. УРОН ЗА ЗАРЯД:",
     "en": "MAGIC DMG/STACK:"
   },
+  "DOTA_Tooltip_ability_evo_morph_void_e_stack_duration": {
+    "ru": "ДЛИТЕЛЬНОСТЬ ЭРОЗИИ:",
+    "en": "EROSION DURATION:"
+  },
   "DOTA_Tooltip_ability_evo_morph_void_r": {
     "ru": "Зеркало Бездны",
     "en": "Void Mirror"
   },
   "DOTA_Tooltip_ability_evo_morph_void_r_Description": {
-    "ru": "Обездвиживает цель на %root_duration% сек. и создаёт рядом иллюзию героя на %illusion_duration% сек. (%illusion_dmg_pct%%% наносимого урона, %illusion_taken_pct%%% получаемого). Иллюзия атакует цель и накладывает заряды Касания Бездны.",
-    "en": "Roots the target for %root_duration%s and spawns an illusion next to them for %illusion_duration%s (%illusion_dmg_pct%%% damage dealt, %illusion_taken_pct%%% taken). The illusion attacks the target and applies Abyssal Touch stacks."
+    "ru": "<font color='#7998b5'>Обездвиживает</font> цель на %root_duration% сек. и создаёт рядом с ней <b>иллюзию</b> героя на %illusion_duration% сек. <font color='#7d7d7d'>(%illusion_dmg_pct%%% наносимого урона, %illusion_taken_pct%%% получаемого)</font>.<br><br>Иллюзия атакует цель и накладывает заряды способности <b>Касание Бездны</b>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<font color='#7998b5'>Roots</font> the target for %root_duration%s and spawns an <b>illusion</b> next to them for %illusion_duration%s <font color='#7d7d7d'>(%illusion_dmg_pct%%% damage dealt, %illusion_taken_pct%%% taken)</font>.<br><br>The illusion attacks the target and applies <b>Abyssal Touch</b> stacks.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_morph_void_r_Note0": {
+    "ru": "Блокируется защитой от заклинаний. Обычное развеивание снимает только оцепенение.",
+    "en": "Blocked by Spell Block. Basic Dispel only removes the root."
   },
   "DOTA_Tooltip_ability_evo_morph_void_r_root_duration": {
     "ru": "ОЦЕПЕНЕНИЕ:",
@@ -347,132 +415,136 @@
     "ru": "%УРОН ИЛЛЮЗИИ:",
     "en": "%ILLUSION DAMAGE:"
   },
+  "DOTA_Tooltip_ability_evo_morph_void_r_illusion_taken_pct": {
+    "ru": "%ПОЛУЧАЕМЫЙ УРОН ИЛЛЮЗИИ:",
+    "en": "%ILLUSION DAMAGE TAKEN:"
+  },
   "DOTA_Tooltip_modifier_evo_morph_wet": {
     "ru": "Промокание",
     "en": "Wet"
   },
   "DOTA_Tooltip_modifier_evo_morph_wet_Description": {
-    "ru": "Скорость передвижения снижена на 20%.",
-    "en": "Movement speed reduced by 20%."
+    "ru": "Скорость передвижения изменена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Movement speed modified by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_water_w_root": {
     "ru": "Водяные оковы",
     "en": "Water Shackles"
   },
   "DOTA_Tooltip_modifier_evo_morph_water_w_root_Description": {
-    "ru": "Обездвижен Водяным Копьём.",
-    "en": "Rooted by Water Spear."
+    "ru": "Цель <font color='#7998b5'>обездвижена</font> способностью <b>Водяное Копьё</b> и не может передвигаться.",
+    "en": "<font color='#7998b5'>Rooted</font> by <b>Water Spear</b> and unable to move."
   },
   "DOTA_Tooltip_modifier_evo_morph_water_w_mr": {
     "ru": "Пробитый поток",
     "en": "Pierced Current"
   },
   "DOTA_Tooltip_modifier_evo_morph_water_w_mr_Description": {
-    "ru": "Сопротивление магии снижено на 15%. Смерть под дебаффом сократит КД Водяного Копья вдвое.",
-    "en": "Magic resistance reduced by 15%. Dying under this debuff cuts Water Spear cooldown in half."
+    "ru": "Сопротивление магии изменено на <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>.<br><br>Смерть под этим эффектом вдвое сокращает оставшуюся перезарядку способности <b>Водяное Копьё</b>.",
+    "en": "Magic resistance modified by <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>.<br><br>Dying under this debuff cuts the remaining cooldown of <b>Water Spear</b> in half."
   },
   "DOTA_Tooltip_modifier_evo_morph_water_e_buff": {
     "ru": "Разрежение",
     "en": "Rarefaction"
   },
   "DOTA_Tooltip_modifier_evo_morph_water_e_buff_Description": {
-    "ru": "+18% скорости передвижения и 25% уклонения.",
-    "en": "+18% movement speed and 25% evasion."
+    "ru": "Скорость передвижения увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>, а уклонение — на <font color='#9acd32'>%dMODIFIER_PROPERTY_EVASION_CONSTANT%%%</font>.",
+    "en": "Movement speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> and evasion by <font color='#9acd32'>%dMODIFIER_PROPERTY_EVASION_CONSTANT%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_bleed": {
     "ru": "Кровотечение",
     "en": "Bleed"
   },
   "DOTA_Tooltip_modifier_evo_morph_bleed_Description": {
-    "ru": "Получает периодический физический урон.",
-    "en": "Taking physical damage over time."
+    "ru": "Получает периодический <font color='#e03e2e'>физический урон</font> каждую секунду.",
+    "en": "Taking periodic <font color='#e03e2e'>physical damage</font> every second."
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_shield": {
     "ru": "Кровавый щит",
     "en": "Blood Shield"
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_shield_Description": {
-    "ru": "Поглощает входящий урон за счёт избыточного лечения от Вытягивания жизни.",
-    "en": "Absorbing incoming damage from Life Siphon overheal."
+    "ru": "Окружён кровавым барьером, поглощающим входящий урон за счёт избыточного лечения от способности <b>Вытягивание жизни</b>.",
+    "en": "Surrounded by a blood barrier absorbing incoming damage from <b>Life Siphon</b> overheal."
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_e_active": {
     "ru": "Вскипание крови",
     "en": "Boiling Blood"
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_e_active_Description": {
-    "ru": "Бонусы Жажды плоти удвоены, +15% к скорости передвижения.",
-    "en": "Flesh Hunger bonuses doubled, +15% movement speed."
+    "ru": "Бонусы способности <b>Жажда плоти</b> удвоены; скорость передвижения увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "<b>Flesh Hunger</b> bonuses doubled, and movement speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_r_tether": {
     "ru": "Ритуал Свежевателей",
     "en": "Flayer Ritual"
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_r_tether_Description": {
-    "ru": "Получает 30% урона, наносимого Алому Потрошителю.",
-    "en": "Taking 30% of all damage dealt to the Scarlet Ripper."
+    "ru": "Связан с <b>Алым Потрошителем</b>: получает <font color='#d8ae53'>30%</font> всего наносимого ему урона в виде <font color='#d8ae53'>чистого урона</font>.",
+    "en": "Tethered to <b>Scarlet Ripper</b>, taking <font color='#d8ae53'>30%</font> of all damage dealt to them as <font color='#d8ae53'>pure damage</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_r_caster": {
     "ru": "Ритуал Свежевателей",
     "en": "Flayer Ritual"
   },
   "DOTA_Tooltip_modifier_evo_morph_blood_r_caster_Description": {
-    "ru": "30% входящего урона перенаправляется в связанную цель.",
-    "en": "Redirecting 30% of incoming damage to the tethered target."
+    "ru": "Входящий урон снижен, а <font color='#d8ae53'>30%</font> исходного урона перенаправляется связанной цели в виде <font color='#d8ae53'>чистого урона</font>.",
+    "en": "Incoming damage reduced, redirecting <font color='#d8ae53'>30%</font> of original damage to the tethered target as <font color='#d8ae53'>pure damage</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_q_invis": {
     "ru": "Шаг сквозь Тень",
     "en": "Shadow Step"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_q_invis_Description": {
-    "ru": "Невидимость, скорость 550 и прохождение сквозь существ с нанесением урона врагам.",
-    "en": "Invisible with 550 phased movement speed, damaging enemies passed through."
+    "ru": "Невидим, проходит сквозь существ со скоростью передвижения <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_ABSOLUTE%</font> и наносит <font color='#87ceeb'>магический урон</font> врагам на пути.",
+    "en": "Invisible with phased movement at <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_ABSOLUTE%</font> movement speed, dealing <font color='#87ceeb'>magical damage</font> to enemies passed through."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_q_slow": {
     "ru": "Холод Тени",
     "en": "Shadow Chill"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_q_slow_Description": {
-    "ru": "Скорость передвижения снижена.",
-    "en": "Movement speed reduced."
+    "ru": "Скорость передвижения изменена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Movement speed modified by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_w_mark": {
     "ru": "Печать Пустоты",
     "en": "Void Seal"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_w_mark_Description": {
-    "ru": "Следующий удар или заклинание владельца взорвут печать, нанеся магический урон.",
-    "en": "The caster's next attack or spell will detonate this seal for magic damage."
+    "ru": "Следующая атака или заклинание владельца взорвут печать, нанеся <font color='#87ceeb'>магический урон</font>.",
+    "en": "The caster's next attack or spell will detonate this seal for <font color='#87ceeb'>magical damage</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_w_amp": {
     "ru": "Сила Пустоты",
     "en": "Void Empowerment"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_w_amp_Description": {
-    "ru": "+12% к урону заклинаний.",
-    "en": "+12% spell amplification."
+    "ru": "Урон заклинаний увеличен на <font color='#87ceeb'>+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%</font>.",
+    "en": "Spell amplification increased by <font color='#87ceeb'>+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_erosion": {
     "ru": "Эрозия",
     "en": "Erosion"
   },
   "DOTA_Tooltip_modifier_evo_morph_erosion_Description": {
-    "ru": "Снижает сопротивление магии и усиливает магический урон от атак владельца за каждый заряд.",
-    "en": "Reduced magic resistance and bonus on-hit magic damage taken per stack."
+    "ru": "Сопротивление магии изменено на <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>; атаки владельца наносят дополнительный <font color='#87ceeb'>магический урон</font> за каждый заряд.",
+    "en": "Magic resistance modified by <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>, taking bonus <font color='#87ceeb'>magical damage</font> from the caster's attacks per stack."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_exhaust": {
     "ru": "Истощение Бездны",
     "en": "Abyssal Exhaustion"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_exhaust_Description": {
-    "ru": "Входящее лечение и регенерация здоровья снижены на 40%.",
-    "en": "Incoming healing and health regeneration reduced by 40%."
+    "ru": "Входящее <font color='#9acd32'>лечение</font> и <font color='#9acd32'>регенерация здоровья</font> снижены на <font color='#7998b5'>40%</font>.",
+    "en": "Incoming <font color='#9acd32'>healing</font> and <font color='#9acd32'>health regeneration</font> reduced by <font color='#7998b5'>40%</font>."
   },
   "DOTA_Tooltip_modifier_evo_morph_void_r_root": {
     "ru": "Зеркало Бездны",
     "en": "Void Mirror"
   },
   "DOTA_Tooltip_modifier_evo_morph_void_r_root_Description": {
-    "ru": "Обездвижен Зеркалом Бездны.",
-    "en": "Rooted by Void Mirror."
+    "ru": "Цель <font color='#7998b5'>обездвижена</font> способностью <b>Зеркало Бездны</b> и не может передвигаться.",
+    "en": "<font color='#7998b5'>Rooted</font> by <b>Void Mirror</b> and unable to move."
   }
 }

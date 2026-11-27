@@ -42,23 +42,18 @@ export class evo_spectre_phantom_e extends BaseAbility {
         const caster = this.GetCaster();
         const pos = GetGroundPosition(this.GetCursorPosition(), caster);
         const maxPortals = this.GetSpecialValueFor("max_portals");
-        const visionRadius = this.GetSpecialValueFor("vision_radius");
 
         caster.EmitSound("Hero_Spectre.HauntCast");
-        const portal = CreateUnitByName(
-            "npc_dota_companion",
+        EmitSoundOnLocationWithCaster(pos, "Hero_VoidSpirit.Dissimilate.Portals", caster);
+        const portal = CreateModifierThinker(
+            caster,
+            this,
+            "modifier_evo_spectre_portal_unit",
+            {},
             pos,
-            true,
-            caster,
-            caster,
-            caster.GetTeamNumber()
+            caster.GetTeamNumber(),
+            false
         );
-        portal.SetDayTimeVisionRange(visionRadius);
-        portal.SetNightTimeVisionRange(visionRadius);
-        portal.SetModel("models/heroes/spectre/spectre.vmdl");
-        portal.SetModelScale(0.75);
-        portal.SetRenderColor(155, 65, 235);
-        portal.AddNewModifier(caster, this, "modifier_evo_spectre_portal_unit", {});
         registerSpectrePortal(caster, portal, maxPortals);
     }
 }
@@ -66,6 +61,7 @@ export class evo_spectre_phantom_e extends BaseAbility {
 @registerModifier("modifier_evo_spectre_portal_unit")
 export class modifier_evo_spectre_portal_unit extends BaseModifier {
     private auraRadius = 275;
+    private visionRadius = 450;
     private isTier3Plus = false;
     private stormPulseAccum = 0;
 
@@ -92,11 +88,13 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
     }
     OnCreated(): void {
         this.auraRadius = 275;
+        this.visionRadius = 450;
         this.isTier3Plus = false;
         this.stormPulseAccum = 0;
         const ab = this.GetAbility();
         if (ab && !ab.IsNull()) {
             this.auraRadius = ab.GetSpecialValueFor("truesight_radius");
+            this.visionRadius = Math.max(250, ab.GetSpecialValueFor("vision_radius"));
         }
         const caster = this.GetCaster();
         if (caster && !caster.IsNull()) {
@@ -104,12 +102,28 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
         }
         if (!IsServer()) return;
         const parent = this.GetParent();
-        const pfx = ParticleManager.CreateParticle(
-            "particles/units/heroes/hero_spectre/spectre_dispersion.vpcf",
-            ParticleAttachment.ABSORIGIN_FOLLOW,
-            parent
+        const origin = GetGroundPosition(parent.GetAbsOrigin(), parent);
+
+        const portalPfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_void_spirit/void_spirit_entryportal.vpcf",
+            ParticleAttachment.WORLDORIGIN,
+            undefined
         );
-        this.AddParticle(pfx, false, false, -1, false, false);
+        ParticleManager.SetParticleControl(portalPfx, 0, origin);
+        ParticleManager.SetParticleControl(portalPfx, 3, origin);
+        this.AddParticle(portalPfx, false, false, -1, false, false);
+
+        const spirePfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf",
+            ParticleAttachment.WORLDORIGIN,
+            undefined
+        );
+        ParticleManager.SetParticleControl(spirePfx, 0, (origin + Vector(0, 0, 64)) as Vector);
+        this.AddParticle(spirePfx, false, false, -1, false, false);
+
+        if (caster && !caster.IsNull()) {
+            AddFOWViewer(caster.GetTeamNumber(), origin, this.visionRadius, 0.3, false);
+        }
         this.StartIntervalThink(0.1);
     }
     OnIntervalThink(): void {
@@ -119,8 +133,9 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
         if (!parent || parent.IsNull() || !caster || caster.IsNull()) return;
         const origin = parent.GetAbsOrigin();
 
+        AddFOWViewer(caster.GetTeamNumber(), origin, this.visionRadius, 0.25, false);
+
         if (getSpectreTier(caster) >= 3) {
-            AddFOWViewer(caster.GetTeamNumber(), origin, this.auraRadius, 0.2, false);
             for (const enemy of findSpectreEnemies(caster, origin, this.auraRadius)) {
                 if (enemy && !enemy.IsNull() && enemy.IsAlive()) {
                     enemy.AddNewModifier(caster, this.GetAbility(), "modifier_truesight", { duration: 0.25 });
@@ -151,6 +166,7 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
                         undefined
                     );
                     ParticleManager.SetParticleControl(pfx, 0, origin);
+                    ParticleManager.SetParticleControl(pfx, 1, Vector(0, pulseRadius, 0));
                     ParticleManager.ReleaseParticleIndex(pfx);
 
                     for (const enemy of findSpectreEnemies(caster, origin, pulseRadius)) {
@@ -179,10 +195,7 @@ export class modifier_evo_spectre_portal_unit extends BaseModifier {
             [dotaModifierState("MODIFIER_STATE_INVULNERABLE")]: true,
             [dotaModifierState("MODIFIER_STATE_NO_HEALTH_BAR")]: true,
             [dotaModifierState("MODIFIER_STATE_UNSELECTABLE")]: true,
-            [dotaModifierState("MODIFIER_STATE_NOT_ON_MINIMAP")]: false,
             [dotaModifierState("MODIFIER_STATE_NO_UNIT_COLLISION")]: true,
-            [dotaModifierState("MODIFIER_STATE_COMMAND_RESTRICTED")]: true,
-            [dotaModifierState("MODIFIER_STATE_DISARMED")]: true,
         };
     }
 }
@@ -194,7 +207,7 @@ export class evo_spectre_phantom_d extends BaseAbility {
         if (caster && !caster.IsNull() && caster.HasModifier("modifier_evo_spectre_phantom_r_free_d")) {
             return 0;
         }
-        return [45.0, 40.0, 35.0][Math.max(0, Math.min(2, level))] ?? 45.0;
+        return super.GetCooldown(level);
     }
     CastFilterResultLocation(location: Vector): UnitFilterResult {
         if (!IsServer()) return UnitFilterResult.SUCCESS;
@@ -217,10 +230,48 @@ export class evo_spectre_phantom_d extends BaseAbility {
             return;
         }
 
-        const dest = portal.GetAbsOrigin();
+        const origin = caster.GetAbsOrigin();
+        const dest = GetGroundPosition(portal.GetAbsOrigin(), caster);
+        const dir = (dest - origin) as Vector;
+        dir.z = 0;
+        const forward = dir.Length2D() > 1 ? dir.Normalized() : caster.GetForwardVector();
+
+        const startPfx = ParticleManager.CreateParticle(
+            "particles/items_fx/blink_dagger_start.vpcf",
+            ParticleAttachment.WORLDORIGIN,
+            undefined
+        );
+        ParticleManager.SetParticleControl(startPfx, 0, origin);
+        ParticleManager.SetParticleControlForward(startPfx, 0, forward);
+        ParticleManager.ReleaseParticleIndex(startPfx);
+        EmitSoundOnLocationWithCaster(origin, "Hero_VoidSpirit.AstralStep.Start", caster);
+        EmitSoundOnLocationWithCaster(origin, "Hero_Spectre.Reality", caster);
+
         ProjectileManager.ProjectileDodge(caster);
-        caster.EmitSound("Hero_Spectre.Reality");
+        caster.Stop();
         FindClearSpaceForUnit(caster, dest, true);
+        caster.SetForwardVector(forward);
+
+        const arrivedPos = caster.GetAbsOrigin();
+        const endPfx = ParticleManager.CreateParticle(
+            "particles/items_fx/blink_dagger_end.vpcf",
+            ParticleAttachment.ABSORIGIN,
+            caster
+        );
+        ParticleManager.SetParticleControl(endPfx, 0, arrivedPos);
+        ParticleManager.SetParticleControlForward(endPfx, 0, forward);
+        ParticleManager.ReleaseParticleIndex(endPfx);
+
+        const burstPfx = ParticleManager.CreateParticle(
+            "particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf",
+            ParticleAttachment.WORLDORIGIN,
+            undefined
+        );
+        ParticleManager.SetParticleControl(burstPfx, 0, arrivedPos);
+        ParticleManager.ReleaseParticleIndex(burstPfx);
+
+        caster.EmitSound("Hero_Spectre.Reality");
+        caster.EmitSound("Hero_VoidSpirit.Dissimilate.TeleportIn");
 
         const msDur = this.GetSpecialValueFor("ms_duration");
         caster.AddNewModifier(caster, this, "modifier_evo_spectre_reality_ms", { duration: msDur });
@@ -238,10 +289,11 @@ export class evo_spectre_phantom_d extends BaseAbility {
                 ParticleAttachment.WORLDORIGIN,
                 undefined
             );
-            ParticleManager.SetParticleControl(pfx, 0, dest);
+            ParticleManager.SetParticleControl(pfx, 0, arrivedPos);
+            ParticleManager.SetParticleControl(pfx, 1, Vector(0, radius, 0));
             ParticleManager.ReleaseParticleIndex(pfx);
 
-            for (const enemy of findSpectreEnemies(caster, dest, radius)) {
+            for (const enemy of findSpectreEnemies(caster, arrivedPos, radius)) {
                 if (!enemy || enemy.IsNull() || !enemy.IsAlive()) continue;
                 ApplyDamage({
                     victim: enemy,
@@ -289,7 +341,7 @@ export class modifier_evo_spectre_phantom_r_storm extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "spectre_haunt_single";
+        return "evo_spectre_phantom_r";
     }
 }
 
@@ -305,6 +357,6 @@ export class modifier_evo_spectre_phantom_r_free_d extends BaseModifier {
         return false;
     }
     GetTexture(): string {
-        return "spectre_reality";
+        return "evo_spectre_phantom_d";
     }
 }

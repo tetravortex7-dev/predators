@@ -63,6 +63,30 @@ export class TalentTreeManager {
             this.reapplyTalentsToHero(playerId);
             this.syncPlayer(playerId);
         });
+
+        ListenToGameEvent(
+            "dota_player_learned_ability",
+            (event) => {
+                const pid = (event.PlayerID ?? (event as unknown as { player_id?: PlayerID }).player_id) as
+                    | PlayerID
+                    | undefined;
+                if (pid === undefined || !PlayerResource.IsValidPlayerID(pid)) return;
+                this.syncPlayer(pid);
+                GameRules.GetGameModeEntity().SetContextThink(
+                    DoUniqueString("EvoTalentLearnSync"),
+                    () => {
+                        this.syncPlayer(pid);
+                        return undefined;
+                    },
+                    0.03
+                );
+            },
+            undefined
+        );
+
+        this.eventBus.on("spell_purchased", ({ playerId }) => {
+            this.syncPlayer(playerId);
+        });
     }
 
     private getOrCreatePicks(playerId: PlayerID): RowPickState[] {

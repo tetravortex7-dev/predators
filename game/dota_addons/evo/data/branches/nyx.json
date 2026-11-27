@@ -92,13 +92,13 @@
       "desc_en": "Scarab T4: Chitin debris DoT [Q], 175 MS burrow crawl [W], Evade counter-spike [E], Hive Epicenter [R] (40% Graze).",
       "scale": 1.1,
       "ability_level": 1,
-      "innate": "evo_nyx_scarab_chitin",
+      "innate": "evo_nyx_scarab_chitin_t4",
       "abilities": [
         "evo_nyx_scarab_q",
         "evo_nyx_scarab_w",
         "evo_nyx_scarab_e",
         "evo_nyx_scarab_r",
-        "evo_nyx_scarab_chitin"
+        "evo_nyx_scarab_chitin_t4"
       ],
       "next_body_ids": [],
       "color": [45, 55, 95],
@@ -169,13 +169,13 @@
       "desc_en": "Mantis T4: 4-hit flurry at 5+ wounds [Q], shield & [Q] reset on 3rd parry [W], pure dmg & lifesteal [E], Symphony of Blades [R].",
       "scale": 1.1,
       "ability_level": 1,
-      "innate": "evo_nyx_mantis_chitin",
+      "innate": "evo_nyx_mantis_chitin_t4",
       "abilities": [
         "evo_nyx_mantis_q",
         "evo_nyx_mantis_w",
         "evo_nyx_mantis_e",
         "evo_nyx_mantis_r",
-        "evo_nyx_mantis_chitin"
+        "evo_nyx_mantis_chitin_t4"
       ],
       "next_body_ids": [],
       "color": [115, 15, 35],
@@ -246,13 +246,13 @@
       "desc_en": "Psy-Archon T4: Silencing psi-field [Q], bounce [W], +18% pure dmg <40% mana [E], Psionic Obelisk [R].",
       "scale": 1.1,
       "ability_level": 1,
-      "innate": "evo_nyx_archon_chitin",
+      "innate": "evo_nyx_archon_chitin_t4",
       "abilities": [
         "lion_impale",
         "evo_nyx_archon_w",
         "evo_nyx_archon_e",
         "evo_nyx_archon_r",
-        "evo_nyx_archon_chitin"
+        "evo_nyx_archon_chitin_t4"
       ],
       "next_body_ids": [],
       "color": [90, 85, 250],
@@ -298,12 +298,12 @@
       "desc_en": "Cicada T3: Echo wave on [Q], Disarm & mana restore on sting shatter [W], Basic Dispel +25/35 AS & +25% Status Res [E].",
       "scale": 0.95,
       "ability_level": 1,
-      "innate": "evo_nyx_cicada_chitin",
+      "innate": "evo_nyx_cicada_chitin_t3",
       "abilities": [
         "evo_nyx_cicada_q",
         "evo_nyx_cicada_w",
         "evo_nyx_cicada_e",
-        "evo_nyx_cicada_chitin"
+        "evo_nyx_cicada_chitin_t3"
       ],
       "next_body_ids": ["evo_body_t4_nyx_cicada"],
       "color": [155, 235, 65],
@@ -324,13 +324,13 @@
       "desc_en": "Cicada T4: [Q/W/E] CDR on [Q], bounce & 2-proc shatter on [W], knockback & [W] reset on [E], Tuning Fork Symphony [R].",
       "scale": 1.1,
       "ability_level": 1,
-      "innate": "evo_nyx_cicada_chitin",
+      "innate": "evo_nyx_cicada_chitin_t4",
       "abilities": [
         "evo_nyx_cicada_q",
         "evo_nyx_cicada_w",
         "evo_nyx_cicada_e",
         "evo_nyx_cicada_r",
-        "evo_nyx_cicada_chitin"
+        "evo_nyx_cicada_chitin_t4"
       ],
       "next_body_ids": [],
       "color": [95, 250, 120],

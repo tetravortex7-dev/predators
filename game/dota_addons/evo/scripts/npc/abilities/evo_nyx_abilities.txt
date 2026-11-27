@@ -6,7 +6,7 @@
 		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
 		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"2"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
@@ -16,8 +16,29 @@
 			"armor_per_stack"			"1.5"
 			"mr_per_stack"				"3"
 			"ms_per_stack"				"3"
-			"str_per_stack"				"4 7"
-			"status_per_stack"			"10 15"
+			"str_per_stack"				"4"
+			"status_per_stack"			"10"
+		}
+	}
+
+	"evo_nyx_scarab_chitin_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"max_stacks"				"3"
+			"stack_interval"			"6.0"
+			"armor_per_stack"			"1.5"
+			"mr_per_stack"				"3"
+			"ms_per_stack"				"3"
+			"str_per_stack"				"7"
+			"status_per_stack"			"15"
 		}
 	}
 
@@ -27,7 +48,7 @@
 		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
 		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"2"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
@@ -36,9 +57,31 @@
 			"stack_interval"			"6.0"
 			"armor_per_stack"			"1.5"
 			"mr_per_stack"				"3"
-			"ms_per_stack"				"6 8"
-			"as_per_stack"				"10 16"
-			"pure_base"					"20 35"
+			"ms_per_stack"				"6"
+			"as_per_stack"				"10"
+			"pure_base"					"20"
+			"pure_agi_pct"				"20"
+		}
+	}
+
+	"evo_nyx_mantis_chitin_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"max_stacks"				"3"
+			"stack_interval"			"6.0"
+			"armor_per_stack"			"1.5"
+			"mr_per_stack"				"3"
+			"ms_per_stack"				"8"
+			"as_per_stack"				"16"
+			"pure_base"					"35"
 			"pure_agi_pct"				"20"
 		}
 	}
@@ -49,7 +92,7 @@
 		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
 		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"2"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
@@ -59,9 +102,31 @@
 			"armor_per_stack"			"1.5"
 			"mr_per_stack"				"3"
 			"ms_per_stack"				"3"
-			"amp_per_stack"				"4 6"
-			"bonus_range"				"150 225"
-			"mana_burn_pct"				"6 9"
+			"amp_per_stack"				"4"
+			"bonus_range"				"150"
+			"mana_burn_pct"				"6"
+		}
+	}
+
+	"evo_nyx_archon_chitin_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"max_stacks"				"3"
+			"stack_interval"			"6.0"
+			"armor_per_stack"			"1.5"
+			"mr_per_stack"				"3"
+			"ms_per_stack"				"3"
+			"amp_per_stack"				"6"
+			"bonus_range"				"225"
+			"mana_burn_pct"				"9"
 		}
 	}
 
@@ -71,7 +136,7 @@
 		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
 		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"3"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
@@ -81,10 +146,54 @@
 			"armor_per_stack"			"1.5"
 			"mr_per_stack"				"3"
 			"ms_per_stack"				"3"
-			"full_ms_pct"				"0 12 18"
-			"ring_damage"				"35 45 80"
-			"ring_all_pct"				"15 25 35"
-			"ring_as"					"0 30 45"
+			"ring_damage"				"35"
+			"ring_all_pct"				"15"
+		}
+	}
+
+	"evo_nyx_cicada_chitin_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"max_stacks"				"3"
+			"stack_interval"			"6.0"
+			"armor_per_stack"			"1.5"
+			"mr_per_stack"				"3"
+			"ms_per_stack"				"3"
+			"full_ms_pct"				"12"
+			"ring_damage"				"45"
+			"ring_all_pct"				"25"
+			"ring_as"					"30"
+		}
+	}
+
+	"evo_nyx_cicada_chitin_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/nyx/evo_nyx_t1"
+		"AbilityTextureName"			"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"max_stacks"				"3"
+			"stack_interval"			"6.0"
+			"armor_per_stack"			"1.5"
+			"mr_per_stack"				"3"
+			"ms_per_stack"				"3"
+			"full_ms_pct"				"18"
+			"ring_damage"				"80"
+			"ring_all_pct"				"35"
+			"ring_as"					"45"
 		}
 	}
 

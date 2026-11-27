@@ -33,14 +33,29 @@ export class evo_nyx_living_chitin extends BaseAbility {
 @registerAbility("evo_nyx_scarab_chitin")
 export class evo_nyx_scarab_chitin extends evo_nyx_living_chitin {}
 
+@registerAbility("evo_nyx_scarab_chitin_t4")
+export class evo_nyx_scarab_chitin_t4 extends evo_nyx_living_chitin {}
+
 @registerAbility("evo_nyx_mantis_chitin")
 export class evo_nyx_mantis_chitin extends evo_nyx_living_chitin {}
+
+@registerAbility("evo_nyx_mantis_chitin_t4")
+export class evo_nyx_mantis_chitin_t4 extends evo_nyx_living_chitin {}
 
 @registerAbility("evo_nyx_archon_chitin")
 export class evo_nyx_archon_chitin extends evo_nyx_living_chitin {}
 
+@registerAbility("evo_nyx_archon_chitin_t4")
+export class evo_nyx_archon_chitin_t4 extends evo_nyx_living_chitin {}
+
 @registerAbility("evo_nyx_cicada_chitin")
 export class evo_nyx_cicada_chitin extends evo_nyx_living_chitin {}
+
+@registerAbility("evo_nyx_cicada_chitin_t3")
+export class evo_nyx_cicada_chitin_t3 extends evo_nyx_living_chitin {}
+
+@registerAbility("evo_nyx_cicada_chitin_t4")
+export class evo_nyx_cicada_chitin_t4 extends evo_nyx_living_chitin {}
 
 @registerModifier("modifier_evo_nyx_living_chitin")
 export class modifier_evo_nyx_living_chitin extends BaseModifier {

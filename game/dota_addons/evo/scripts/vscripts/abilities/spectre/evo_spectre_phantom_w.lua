@@ -1,12 +1,9 @@
 local ____lualib = require("lualib_bundle")
 local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
-local Set = ____lualib.Set
-local __TS__New = ____lualib.__TS__New
-local __TS__Delete = ____lualib.__TS__Delete
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["11"] = 1,["12"] = 2,["13"] = 3,["14"] = 4,["15"] = 5,["16"] = 6,["17"] = 7,["18"] = 9,["19"] = 10,["20"] = 11,["21"] = 12,["22"] = 13,["23"] = 14,["24"] = 16,["25"] = 18,["26"] = 20,["27"] = 21,["28"] = 22,["29"] = 23,["30"] = 25,["31"] = 26,["32"] = 25,["33"] = 26,["35"] = 26,["36"] = 27,["37"] = 25,["38"] = 29,["39"] = 30,["40"] = 30,["41"] = 30,["42"] = 30,["43"] = 29,["44"] = 33,["45"] = 34,["46"] = 35,["47"] = 36,["48"] = 37,["49"] = 39,["50"] = 39,["51"] = 39,["52"] = 39,["53"] = 39,["54"] = 39,["55"] = 39,["56"] = 39,["57"] = 39,["58"] = 39,["59"] = 39,["60"] = 39,["61"] = 39,["62"] = 39,["63"] = 39,["64"] = 39,["65"] = 39,["66"] = 56,["67"] = 56,["68"] = 56,["69"] = 56,["70"] = 33,["71"] = 59,["72"] = 60,["75"] = 61,["76"] = 62,["77"] = 63,["78"] = 64,["79"] = 65,["80"] = 66,["82"] = 68,["83"] = 70,["84"] = 71,["85"] = 72,["86"] = 74,["87"] = 75,["88"] = 76,["89"] = 78,["90"] = 79,["91"] = 80,["92"] = 81,["93"] = 81,["94"] = 83,["95"] = 84,["96"] = 84,["98"] = 85,["99"] = 86,["100"] = 87,["101"] = 88,["102"] = 89,["104"] = 91,["105"] = 91,["106"] = 91,["107"] = 91,["108"] = 91,["109"] = 92,["110"] = 81,["111"] = 81,["112"] = 81,["114"] = 59,["115"] = 99,["116"] = 104,["117"] = 104,["119"] = 105,["120"] = 106,["121"] = 107,["122"] = 108,["124"] = 110,["125"] = 111,["126"] = 111,["128"] = 112,["129"] = 112,["131"] = 114,["132"] = 115,["133"] = 116,["134"] = 117,["135"] = 118,["136"] = 119,["137"] = 121,["138"] = 122,["139"] = 122,["140"] = 122,["141"] = 122,["142"] = 122,["143"] = 122,["144"] = 122,["145"] = 122,["146"] = 122,["147"] = 123,["148"] = 125,["149"] = 126,["150"] = 126,["151"] = 126,["152"] = 126,["153"] = 126,["154"] = 126,["155"] = 126,["156"] = 126,["157"] = 126,["158"] = 126,["159"] = 127,["160"] = 128,["161"] = 129,["162"] = 130,["163"] = 131,["164"] = 132,["165"] = 133,["166"] = 134,["167"] = 135,["168"] = 135,["174"] = 140,["175"] = 99,["176"] = 26,["177"] = 25,["178"] = 26,["180"] = 26,["181"] = 144,["182"] = 145,["183"] = 144,["184"] = 145,["185"] = 146,["186"] = 147,["187"] = 147,["188"] = 147,["189"] = 147,["190"] = 146,["191"] = 149,["192"] = 150,["193"] = 149,["194"] = 152,["195"] = 153,["198"] = 154,["199"] = 155,["200"] = 156,["201"] = 157,["202"] = 160,["203"] = 161,["205"] = 152,["206"] = 145,["207"] = 144,["208"] = 145,["210"] = 145,["211"] = 166,["212"] = 167,["213"] = 166,["214"] = 167,["216"] = 167,["217"] = 168,["218"] = 169,["219"] = 166,["220"] = 171,["221"] = 172,["222"] = 171,["223"] = 174,["224"] = 175,["225"] = 174,["226"] = 177,["227"] = 178,["228"] = 179,["229"] = 180,["230"] = 181,["231"] = 182,["233"] = 177,["234"] = 185,["235"] = 186,["236"] = 185,["237"] = 188,["238"] = 189,["239"] = 189,["240"] = 189,["241"] = 189,["242"] = 188,["243"] = 194,["244"] = 195,["245"] = 196,["246"] = 196,["248"] = 197,["249"] = 194,["250"] = 199,["251"] = 200,["254"] = 201,["255"] = 202,["256"] = 203,["257"] = 204,["260"] = 205,["263"] = 206,["266"] = 207,["269"] = 209,["270"] = 210,["271"] = 211,["272"] = 212,["273"] = 213,["274"] = 216,["275"] = 217,["276"] = 219,["279"] = 222,["280"] = 223,["282"] = 226,["283"] = 229,["284"] = 230,["285"] = 232,["286"] = 237,["287"] = 239,["288"] = 239,["289"] = 239,["290"] = 239,["291"] = 239,["292"] = 239,["293"] = 239,["294"] = 247,["295"] = 247,["296"] = 247,["297"] = 247,["298"] = 247,["299"] = 247,["301"] = 248,["302"] = 248,["304"] = 249,["305"] = 249,["306"] = 249,["307"] = 249,["308"] = 249,["309"] = 249,["310"] = 249,["314"] = 258,["315"] = 259,["316"] = 260,["317"] = 261,["318"] = 262,["319"] = 266,["320"] = 266,["322"] = 267,["323"] = 271,["324"] = 271,["326"] = 273,["327"] = 274,["328"] = 275,["329"] = 276,["330"] = 277,["331"] = 277,["332"] = 277,["333"] = 277,["334"] = 277,["335"] = 277,["336"] = 277,["337"] = 277,["338"] = 277,["341"] = 199,["342"] = 167,["343"] = 166,["344"] = 167,["346"] = 167,["347"] = 286,["348"] = 287,["349"] = 286,["350"] = 287,["352"] = 287,["353"] = 288,["354"] = 289,["355"] = 286,["356"] = 291,["357"] = 292,["358"] = 291,["359"] = 294,["360"] = 295,["361"] = 294,["362"] = 297,["363"] = 298,["364"] = 297,["365"] = 300,["366"] = 301,["367"] = 300,["368"] = 303,["369"] = 304,["370"] = 305,["371"] = 306,["372"] = 307,["373"] = 308,["374"] = 309,["376"] = 303,["377"] = 312,["378"] = 313,["379"] = 312,["380"] = 315,["381"] = 316,["382"] = 315,["383"] = 320,["384"] = 321,["385"] = 321,["386"] = 321,["387"] = 321,["388"] = 320,["389"] = 326,["390"] = 327,["391"] = 326,["392"] = 329,["393"] = 330,["394"] = 329,["395"] = 287,["396"] = 286,["397"] = 287,["399"] = 287,["400"] = 334,["401"] = 335,["402"] = 334,["403"] = 335,["405"] = 335,["406"] = 336,["407"] = 334,["408"] = 338,["409"] = 339,["410"] = 338,["411"] = 341,["412"] = 342,["413"] = 341,["414"] = 344,["415"] = 345,["416"] = 344,["417"] = 347,["418"] = 348,["419"] = 347,["420"] = 350,["421"] = 351,["423"] = 351,["424"] = 351,["425"] = 351,["427"] = 351,["428"] = 352,["429"] = 353,["431"] = 350,["432"] = 356,["433"] = 357,["434"] = 356,["435"] = 359,["436"] = 360,["437"] = 359,["438"] = 362,["439"] = 363,["440"] = 364,["441"] = 362,["442"] = 335,["443"] = 334,["444"] = 335,["446"] = 335,["447"] = 368,["448"] = 369,["449"] = 368,["450"] = 369,["451"] = 370,["452"] = 371,["453"] = 370,["454"] = 373,["455"] = 374,["456"] = 373,["457"] = 376,["458"] = 377,["459"] = 376,["460"] = 379,["461"] = 380,["462"] = 379,["463"] = 382,["464"] = 383,["465"] = 382,["466"] = 369,["467"] = 368,["468"] = 369,["470"] = 369});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 7,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 15,["21"] = 17,["22"] = 19,["23"] = 20,["24"] = 21,["25"] = 22,["26"] = 24,["27"] = 25,["28"] = 24,["29"] = 25,["30"] = 26,["31"] = 27,["32"] = 27,["33"] = 27,["34"] = 27,["35"] = 26,["36"] = 29,["37"] = 30,["38"] = 29,["39"] = 32,["40"] = 33,["43"] = 34,["44"] = 35,["45"] = 36,["46"] = 37,["47"] = 38,["48"] = 43,["49"] = 43,["50"] = 43,["51"] = 43,["52"] = 43,["53"] = 44,["54"] = 45,["55"] = 48,["56"] = 49,["58"] = 32,["59"] = 25,["60"] = 24,["61"] = 25,["63"] = 25,["64"] = 54,["65"] = 55,["66"] = 54,["67"] = 55,["69"] = 55,["70"] = 56,["71"] = 57,["72"] = 54,["73"] = 59,["74"] = 60,["75"] = 59,["76"] = 62,["77"] = 63,["78"] = 62,["79"] = 65,["80"] = 66,["81"] = 67,["82"] = 68,["83"] = 69,["84"] = 70,["86"] = 65,["87"] = 73,["88"] = 74,["89"] = 73,["90"] = 76,["91"] = 77,["92"] = 77,["93"] = 77,["94"] = 77,["95"] = 76,["96"] = 82,["97"] = 83,["98"] = 84,["99"] = 84,["101"] = 85,["102"] = 82,["103"] = 87,["104"] = 88,["107"] = 89,["108"] = 90,["109"] = 91,["110"] = 92,["113"] = 93,["116"] = 94,["119"] = 95,["122"] = 97,["123"] = 98,["124"] = 99,["125"] = 100,["126"] = 101,["127"] = 104,["128"] = 105,["129"] = 109,["132"] = 112,["133"] = 113,["135"] = 116,["136"] = 119,["137"] = 120,["138"] = 122,["139"] = 123,["140"] = 124,["141"] = 125,["142"] = 126,["143"] = 128,["144"] = 129,["145"] = 131,["146"] = 136,["147"] = 137,["148"] = 138,["149"] = 139,["150"] = 141,["151"] = 146,["152"] = 147,["153"] = 149,["154"] = 154,["155"] = 155,["156"] = 157,["157"] = 157,["158"] = 157,["159"] = 157,["160"] = 157,["161"] = 157,["162"] = 157,["163"] = 165,["164"] = 165,["165"] = 165,["166"] = 165,["167"] = 165,["168"] = 165,["170"] = 166,["171"] = 166,["173"] = 167,["174"] = 167,["175"] = 167,["176"] = 167,["177"] = 167,["178"] = 167,["179"] = 167,["183"] = 176,["184"] = 177,["185"] = 178,["186"] = 179,["187"] = 180,["188"] = 184,["189"] = 184,["191"] = 185,["192"] = 189,["193"] = 189,["195"] = 191,["196"] = 192,["197"] = 193,["198"] = 194,["199"] = 195,["200"] = 195,["201"] = 195,["202"] = 195,["203"] = 195,["204"] = 195,["205"] = 195,["206"] = 195,["207"] = 195,["210"] = 87,["211"] = 55,["212"] = 54,["213"] = 55,["215"] = 55,["216"] = 204,["217"] = 205,["218"] = 204,["219"] = 205,["221"] = 205,["222"] = 206,["223"] = 207,["224"] = 204,["225"] = 209,["226"] = 210,["227"] = 209,["228"] = 212,["229"] = 213,["230"] = 212,["231"] = 215,["232"] = 216,["233"] = 215,["234"] = 218,["235"] = 219,["236"] = 218,["237"] = 221,["238"] = 222,["239"] = 221,["240"] = 224,["241"] = 225,["242"] = 224,["243"] = 227,["244"] = 228,["245"] = 229,["246"] = 230,["247"] = 231,["248"] = 232,["249"] = 233,["251"] = 227,["252"] = 236,["253"] = 237,["254"] = 236,["255"] = 239,["256"] = 240,["257"] = 239,["258"] = 244,["259"] = 245,["260"] = 245,["261"] = 245,["262"] = 245,["263"] = 244,["264"] = 250,["265"] = 251,["266"] = 250,["267"] = 253,["268"] = 254,["269"] = 253,["270"] = 205,["271"] = 204,["272"] = 205,["274"] = 205,["275"] = 258,["276"] = 259,["277"] = 258,["278"] = 259,["280"] = 259,["281"] = 260,["282"] = 258,["283"] = 262,["284"] = 263,["285"] = 262,["286"] = 265,["287"] = 266,["288"] = 265,["289"] = 268,["290"] = 269,["291"] = 268,["292"] = 271,["293"] = 272,["294"] = 271,["295"] = 274,["296"] = 275,["298"] = 275,["299"] = 275,["300"] = 275,["302"] = 275,["303"] = 276,["304"] = 277,["306"] = 274,["307"] = 280,["308"] = 281,["309"] = 280,["310"] = 283,["311"] = 284,["312"] = 283,["313"] = 286,["314"] = 287,["315"] = 288,["316"] = 286,["317"] = 259,["318"] = 258,["319"] = 259,["321"] = 259,["322"] = 292,["323"] = 293,["324"] = 292,["325"] = 293,["326"] = 294,["327"] = 295,["328"] = 294,["329"] = 297,["330"] = 298,["331"] = 297,["332"] = 300,["333"] = 301,["334"] = 300,["335"] = 303,["336"] = 304,["337"] = 303,["338"] = 306,["339"] = 307,["340"] = 306,["341"] = 309,["342"] = 310,["343"] = 309,["344"] = 312,["345"] = 313,["346"] = 312,["347"] = 293,["348"] = 292,["349"] = 293,["351"] = 293});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -16,168 +13,16 @@ local dotaModifierState = ____dota_ts_adapter.dotaModifierState
 local registerAbility = ____dota_ts_adapter.registerAbility
 local registerModifier = ____dota_ts_adapter.registerModifier
 local ____evo_spectre_shared = require("abilities.spectre.evo_spectre_shared")
-local applySpectreCreepDamage = ____evo_spectre_shared.applySpectreCreepDamage
 local findSpectreEnemies = ____evo_spectre_shared.findSpectreEnemies
 local getSpectreAgi = ____evo_spectre_shared.getSpectreAgi
 local getSpectreBranchMaxLevel = ____evo_spectre_shared.getSpectreBranchMaxLevel
 local getSpectreTier = ____evo_spectre_shared.getSpectreTier
 require("abilities.spectre.evo_spectre_debuffs")
-local SCRIPT_PATH = "abilities/spectre/evo_spectre_phantom"
+local SCRIPT_PATH = "abilities/spectre/evo_spectre_phantom_w"
 LinkLuaModifier("modifier_evo_spectre_phantom_w_passive", SCRIPT_PATH, 0)
 LinkLuaModifier("modifier_evo_spectre_phantom_w_active", SCRIPT_PATH, 0)
 LinkLuaModifier("modifier_evo_spectre_phantom_ms_steal", SCRIPT_PATH, 0)
 LinkLuaModifier("modifier_evo_spectre_phantom_root", SCRIPT_PATH, 0)
-____exports.evo_spectre_phantom_q = __TS__Class()
-local evo_spectre_phantom_q = ____exports.evo_spectre_phantom_q
-evo_spectre_phantom_q.name = "evo_spectre_phantom_q"
-__TS__ClassExtends(evo_spectre_phantom_q, BaseAbility)
-function evo_spectre_phantom_q.prototype.____constructor(self, ...)
-    BaseAbility.prototype.____constructor(self, ...)
-    self.projMeta = {}
-end
-function evo_spectre_phantom_q.prototype.GetMaxLevel(self)
-    return getSpectreBranchMaxLevel(
-        nil,
-        self:GetCaster()
-    )
-end
-function evo_spectre_phantom_q.prototype.launchCrescent(self, origin, dir, isReturn)
-    local caster = self:GetCaster()
-    local range = self:GetSpecialValueFor("range")
-    local width = self:GetSpecialValueFor("width")
-    local speed = self:GetSpecialValueFor("speed")
-    local projId = ProjectileManager:CreateLinearProjectile({
-        Ability = self,
-        EffectName = "particles/units/heroes/hero_spectre/spectre_spectral_dagger_tracking.vpcf",
-        vSpawnOrigin = origin,
-        fDistance = range,
-        fStartRadius = width,
-        fEndRadius = width,
-        Source = caster,
-        bHasFrontalCone = false,
-        iUnitTargetTeam = 2,
-        iUnitTargetFlags = 0,
-        iUnitTargetType = 1 + 18,
-        vVelocity = dir * speed,
-        bProvidesVision = true,
-        iVisionRadius = 225,
-        iVisionTeamNumber = caster:GetTeamNumber()
-    })
-    self.projMeta[projId] = {
-        isReturn = isReturn,
-        hit = __TS__New(Set)
-    }
-end
-function evo_spectre_phantom_q.prototype.OnSpellStart(self)
-    if not IsServer() then
-        return
-    end
-    local caster = self:GetCaster()
-    local origin = caster:GetAbsOrigin()
-    local dir = self:GetCursorPosition() - origin
-    dir.z = 0
-    if dir:Length2D() < 1 then
-        dir = caster:GetForwardVector()
-    end
-    dir = dir:Normalized()
-    local range = self:GetSpecialValueFor("range")
-    local speed = self:GetSpecialValueFor("speed")
-    local pathDur = self:GetSpecialValueFor("path_duration")
-    caster:EmitSound("Hero_Spectre.DaggerCast")
-    caster:AddNewModifier(caster, self, "modifier_evo_spectre_shadow_path", {duration = pathDur})
-    self:launchCrescent(origin, dir, false)
-    if getSpectreTier(nil, caster) >= 3 then
-        local endPoint = GetGroundPosition(origin + dir * range, caster)
-        local returnDelay = range / math.max(100, speed) + self:GetSpecialValueFor("return_delay")
-        caster:SetContextThink(
-            DoUniqueString("SpectreCrescentReturn"),
-            function()
-                if not self or self:IsNull() or not caster or caster:IsNull() then
-                    return nil
-                end
-                local targetPos = caster:IsAlive() and caster:GetAbsOrigin() or origin
-                local backDir = targetPos - endPoint
-                backDir.z = 0
-                if backDir:Length2D() < 1 then
-                    backDir = -dir
-                end
-                self:launchCrescent(
-                    endPoint,
-                    backDir:Normalized(),
-                    true
-                )
-                return nil
-            end,
-            returnDelay
-        )
-    end
-end
-function evo_spectre_phantom_q.prototype.OnProjectileHitHandle(self, target, _location, projectileHandle)
-    if not IsServer() then
-        return false
-    end
-    local meta = self.projMeta[projectileHandle]
-    if not target or target:IsNull() or not IsValidEntity(target) or not target:IsAlive() then
-        __TS__Delete(self.projMeta, projectileHandle)
-        return false
-    end
-    local idx = target:GetEntityIndex()
-    if meta ~= nil and meta.hit:has(idx) then
-        return false
-    end
-    if meta ~= nil then
-        meta.hit:add(idx)
-    end
-    local caster = self:GetCaster()
-    local tier = getSpectreTier(nil, caster)
-    local rawBase = self:GetSpecialValueFor("base_damage") + getSpectreAgi(nil, caster) * self:GetSpecialValueFor("agi_pct") / 100
-    local dmg = meta and meta.isReturn and rawBase * self:GetSpecialValueFor("return_dmg_pct") / 100 or rawBase
-    local creepMult = self:GetSpecialValueFor("creep_mult")
-    local slowDur = self:GetSpecialValueFor("slow_duration")
-    target:EmitSound("Hero_Spectre.DaggerImpact")
-    applySpectreCreepDamage(
-        nil,
-        caster,
-        target,
-        self,
-        dmg,
-        1,
-        creepMult
-    )
-    target:AddNewModifier(caster, self, "modifier_evo_spectre_dagger_slow", {duration = slowDur})
-    if tier >= 4 and not (meta and meta.isReturn) then
-        caster:PerformAttack(
-            target,
-            true,
-            true,
-            true,
-            true,
-            false,
-            false,
-            true
-        )
-        if target:IsRealHero() then
-            local dAb = caster:FindAbilityByName("evo_spectre_phantom_d")
-            local reduce = self:GetSpecialValueFor("reality_cd_reduce")
-            if dAb and not dAb:IsNull() and reduce > 0 then
-                local rem = dAb:GetCooldownTimeRemaining()
-                if rem > 0 then
-                    dAb:EndCooldown()
-                    local next = rem - reduce
-                    if next > 0.05 then
-                        dAb:StartCooldown(next)
-                    end
-                end
-            end
-        end
-    end
-    return false
-end
-evo_spectre_phantom_q = __TS__DecorateLegacy(
-    {registerAbility(nil, "evo_spectre_phantom_q")},
-    evo_spectre_phantom_q
-)
-____exports.evo_spectre_phantom_q = evo_spectre_phantom_q
 ____exports.evo_spectre_phantom_w = __TS__Class()
 local evo_spectre_phantom_w = ____exports.evo_spectre_phantom_w
 evo_spectre_phantom_w.name = "evo_spectre_phantom_w"
@@ -197,7 +42,15 @@ function evo_spectre_phantom_w.prototype.OnSpellStart(self)
     end
     local caster = self:GetCaster()
     local dur = self:GetSpecialValueFor("active_duration")
-    caster:EmitSound("Hero_Spectre.Desolate")
+    caster:EmitSound("Hero_VoidSpirit.Dissimilate.Cast")
+    caster:EmitSound("Hero_Spectre.ShadowStep.Cast")
+    local castPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf", 1, caster)
+    ParticleManager:SetParticleControl(
+        castPfx,
+        0,
+        caster:GetAbsOrigin()
+    )
+    ParticleManager:ReleaseParticleIndex(castPfx)
     local mod = caster:AddNewModifier(caster, self, "modifier_evo_spectre_phantom_w_active", {duration = dur})
     if mod ~= nil then
         mod:SetStackCount(1)
@@ -272,7 +125,7 @@ function modifier_evo_spectre_phantom_w_passive.prototype.OnAttackLanded(self, e
     local hasEmpower = activeMod ~= nil and activeMod:GetStackCount() > 0
     local isFastCycle = tier >= 4 and (activeMod ~= nil or parent:HasModifier("modifier_evo_spectre_reality_ms"))
     local cadence = isFastCycle and 2 or 3
-    local isSlowed = target:HasModifier("modifier_evo_spectre_dagger_slow")
+    local isSlowed = target:HasModifier("modifier_spectre_spectral_dagger_slow") or target:HasModifier("modifier_spectre_spectral_dagger")
     if not hasEmpower and not isSlowed and self.hitCounter < cadence then
         return
     end
@@ -282,7 +135,23 @@ function modifier_evo_spectre_phantom_w_passive.prototype.OnAttackLanded(self, e
     local pureDmg = ability:GetSpecialValueFor("pure_base") + getSpectreAgi(nil, parent) * ability:GetSpecialValueFor("pure_agi_pct") / 100
     local cleaveRadius = ability:GetSpecialValueFor("cleave_radius")
     local cleavePct = ability:GetSpecialValueFor("cleave_pct") / 100
+    local parentPos = parent:GetAbsOrigin()
+    local targetPos = target:GetAbsOrigin()
+    local dir = targetPos:__sub(parentPos)
+    dir.z = 0
+    local forward = dir:Length2D() > 1 and dir:Normalized() or parent:GetForwardVector()
+    target:EmitSound("Hero_Spectre.Desolate")
+    target:EmitSound(hasEmpower and "Hero_VoidSpirit.AstralStep.Target" or "Hero_VoidSpirit.Pulse.Target")
+    local cleavePfx = ParticleManager:CreateParticle("particles/evo_spectre/evo_spectre_cleave.vpcf", 0, parent)
+    ParticleManager:SetParticleControl(cleavePfx, 0, parentPos)
+    ParticleManager:SetParticleControlForward(cleavePfx, 0, forward)
+    ParticleManager:SetParticleControl(cleavePfx, 2, targetPos)
+    ParticleManager:ReleaseParticleIndex(cleavePfx)
+    local burstPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf", 0, target)
+    ParticleManager:SetParticleControl(burstPfx, 0, targetPos)
+    ParticleManager:ReleaseParticleIndex(burstPfx)
     local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_desolate.vpcf", 1, target)
+    ParticleManager:SetParticleControl(pfx, 4, parentPos)
     ParticleManager:ReleaseParticleIndex(pfx)
     ApplyDamage({
         victim = target,
@@ -299,7 +168,7 @@ function modifier_evo_spectre_phantom_w_passive.prototype.OnAttackLanded(self, e
     )) do
         do
             if not other or other:IsNull() or not other:IsAlive() or other == target then
-                goto __continue42
+                goto __continue23
             end
             ApplyDamage({
                 victim = other,
@@ -309,7 +178,7 @@ function modifier_evo_spectre_phantom_w_passive.prototype.OnAttackLanded(self, e
                 damage_type = 4
             })
         end
-        ::__continue42::
+        ::__continue23::
     end
     if hasEmpower and activeMod then
         activeMod:SetStackCount(0)
@@ -363,7 +232,13 @@ function modifier_evo_spectre_phantom_w_active.prototype.IsPurgable(self)
     return true
 end
 function modifier_evo_spectre_phantom_w_active.prototype.GetTexture(self)
-    return "spectre_desolate"
+    return "evo_spectre_phantom_w"
+end
+function modifier_evo_spectre_phantom_w_active.prototype.GetEffectName(self)
+    return "particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf"
+end
+function modifier_evo_spectre_phantom_w_active.prototype.GetEffectAttachType(self)
+    return 1
 end
 function modifier_evo_spectre_phantom_w_active.prototype.OnCreated(self)
     self.evasion = 30
@@ -415,7 +290,7 @@ function modifier_evo_spectre_phantom_ms_steal.prototype.IsPurgable(self)
     return true
 end
 function modifier_evo_spectre_phantom_ms_steal.prototype.GetTexture(self)
-    return "spectre_desolate"
+    return "evo_spectre_phantom_w"
 end
 function modifier_evo_spectre_phantom_ms_steal.prototype.OnCreated(self, params)
     local ____temp_3 = params and (params.amount or 0) < 0
@@ -458,7 +333,13 @@ function modifier_evo_spectre_phantom_root.prototype.IsPurgable(self)
     return true
 end
 function modifier_evo_spectre_phantom_root.prototype.GetTexture(self)
-    return "spectre_desolate"
+    return "evo_spectre_phantom_w"
+end
+function modifier_evo_spectre_phantom_root.prototype.GetEffectName(self)
+    return "particles/units/heroes/hero_treant/treant_bramble_root.vpcf"
+end
+function modifier_evo_spectre_phantom_root.prototype.GetEffectAttachType(self)
+    return 1
 end
 function modifier_evo_spectre_phantom_root.prototype.CheckState(self)
     return {[dotaModifierState(nil, "MODIFIER_STATE_ROOTED")] = true}

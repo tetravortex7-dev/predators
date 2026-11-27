@@ -33,9 +33,9 @@ ____exports.EVO_BRANCH_NYX_BODIES_2 = {{
     baseAttackDamageMax = 56,
     baseAttackRange = 150,
     baseArmor = 5,
-    innateAbility = "evo_nyx_cicada_chitin",
+    innateAbility = "evo_nyx_cicada_chitin_t3",
     signatureAbility = "nyx_assassin_impale",
-    kitAbilities = {"evo_nyx_cicada_q", "evo_nyx_cicada_w", "evo_nyx_cicada_e", "evo_nyx_cicada_chitin"},
+    kitAbilities = {"evo_nyx_cicada_q", "evo_nyx_cicada_w", "evo_nyx_cicada_e", "evo_nyx_cicada_chitin_t3"},
     kitAbilityLevel = 1
 }, {
     id = "evo_body_t4_nyx_cicada",
@@ -67,14 +67,14 @@ ____exports.EVO_BRANCH_NYX_BODIES_2 = {{
     baseAttackDamageMax = 56,
     baseAttackRange = 150,
     baseArmor = 5,
-    innateAbility = "evo_nyx_cicada_chitin",
+    innateAbility = "evo_nyx_cicada_chitin_t4",
     signatureAbility = "nyx_assassin_impale",
     kitAbilities = {
         "evo_nyx_cicada_q",
         "evo_nyx_cicada_w",
         "evo_nyx_cicada_e",
         "evo_nyx_cicada_r",
-        "evo_nyx_cicada_chitin"
+        "evo_nyx_cicada_chitin_t4"
     },
     kitAbilityLevel = 1
 }}

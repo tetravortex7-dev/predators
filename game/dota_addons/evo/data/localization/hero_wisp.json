@@ -4,8 +4,8 @@
     "en": "Spark Pulse"
   },
   "DOTA_Tooltip_ability_evo_wisp_pulse_Description": {
-    "ru": "Выпускает энергетическую волну в радиусе %radius%, нанося %damage% магического урона героям (%creep_damage% по крипам) и замедляя врагов на %slow_pct%%% на %slow_duration% сек.",
-    "en": "Releases an energy wave in a %radius% radius, dealing %damage% magical damage to heroes (%creep_damage% vs creeps) and slowing enemies by %slow_pct%%% for %slow_duration%s."
+    "ru": "Выпускает энергетическую волну в радиусе %radius%, нанося %damage% <font color='#87ceeb'>магического урона</font> героям <font color='#9acd32'>(%creep_damage% по крипам)</font> и замедляя передвижение врагов на <font color='#7998b5'>%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Releases an energy wave in a %radius% radius, dealing %damage% <font color='#87ceeb'>magical damage</font> to heroes <font color='#9acd32'>(%creep_damage% vs creeps)</font> and slowing enemies by <font color='#7998b5'>%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_wisp_pulse_radius": {
     "ru": "РАДИУС:",
@@ -20,8 +20,8 @@
     "en": "CREEP DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_wisp_pulse_slow_pct": {
-    "ru": "ЗАМЕДЛЕНИЕ:",
-    "en": "MOVE SLOW:"
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
   },
   "DOTA_Tooltip_ability_evo_wisp_pulse_slow_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
@@ -32,24 +32,24 @@
     "en": "Spark Pulse"
   },
   "DOTA_Tooltip_modifier_evo_wisp_pulse_slow_Description": {
-    "ru": "Скорость передвижения снижена на 20%.",
-    "en": "Movement speed reduced by 20%."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>20%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>20%</font>."
   },
   "DOTA_Tooltip_ability_evo_wisp_surge": {
     "ru": "Перегрузка ядра",
     "en": "Core Surge"
   },
   "DOTA_Tooltip_ability_evo_wisp_surge_Description": {
-    "ru": "На %duration% сек. даёт +%bonus_ms_pct%%% к скорости передвижения и +%bonus_attack_speed% к скорости атаки. Атаки наносят +%bonus_creep_damage% дополнительного магического урона крипам, а каждое убийство восстанавливает %kill_heal% здоровья и %kill_mana% маны.",
-    "en": "For %duration%s, grants +%bonus_ms_pct%%% Move Speed and +%bonus_attack_speed% Attack Speed. Attacks deal +%bonus_creep_damage% bonus magical damage to creeps, and each kill restores %kill_heal% HP and %kill_mana% Mana."
+    "ru": "На %duration% сек. ускоряет передвижение на <font color='#9acd32'>+%bonus_ms_pct%%%</font> и увеличивает скорость атаки на <font color='#9acd32'>+%bonus_attack_speed%</font>.<br><br>Атаки дополнительно наносят <font color='#87ceeb'>%bonus_creep_damage% магического урона</font> <font color='#9acd32'>по крипам</font>, а каждое убийство восстанавливает <font color='#9acd32'>%kill_heal% здоровья</font> и <font color='#87ceeb'>%kill_mana% маны</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "For %duration%s, increases movement speed by <font color='#9acd32'>+%bonus_ms_pct%%%</font> and attack speed by <font color='#9acd32'>+%bonus_attack_speed%</font>.<br><br>Attacks deal <font color='#87ceeb'>+%bonus_creep_damage% bonus magical damage</font> <font color='#9acd32'>vs creeps</font>, and each kill restores <font color='#9acd32'>%kill_heal% Health</font> and <font color='#87ceeb'>%kill_mana% Mana</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
   "DOTA_Tooltip_ability_evo_wisp_surge_duration": {
     "ru": "ДЛИТЕЛЬНОСТЬ:",
     "en": "DURATION:"
   },
   "DOTA_Tooltip_ability_evo_wisp_surge_bonus_ms_pct": {
-    "ru": "БОНУС К СКОРОСТИ:",
-    "en": "MOVE SPEED BONUS:"
+    "ru": "%БОНУСА К СКОРОСТИ:",
+    "en": "%MOVE SPEED BONUS:"
   },
   "DOTA_Tooltip_ability_evo_wisp_surge_bonus_attack_speed": {
     "ru": "СКОРОСТЬ АТАКИ:",
@@ -72,7 +72,7 @@
     "en": "Core Surge"
   },
   "DOTA_Tooltip_modifier_evo_wisp_surge_Description": {
-    "ru": "Скорость передвижения и атаки увеличены; атаки наносят доп. урон крипам, а убийства восстанавливают здоровье и ману.",
-    "en": "Move and attack speed increased; attacks deal bonus damage to creeps and kills restore HP and mana."
+    "ru": "Скорость передвижения и атаки увеличены; атаки наносят <font color='#87ceeb'>доп. магический урон</font> <font color='#9acd32'>крипам</font>, а убийства восстанавливают <font color='#9acd32'>здоровье</font> и <font color='#87ceeb'>ману</font>.",
+    "en": "Movement and attack speed increased; attacks deal <font color='#87ceeb'>bonus magical damage</font> <font color='#9acd32'>vs creeps</font>, and kills restore <font color='#9acd32'>Health</font> and <font color='#87ceeb'>Mana</font>."
   }
 }

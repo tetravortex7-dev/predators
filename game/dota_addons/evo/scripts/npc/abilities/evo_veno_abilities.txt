@@ -27,21 +27,66 @@
 		"ScriptFile"					"abilities/veno/evo_veno_t1"
 		"AbilityTextureName"			"venomancer_poison_sting"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"3"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
 			"pulse_radius"				"225"
-			"pulse_base_dmg"			"20 25 35"
+			"pulse_base_dmg"			"20"
 			"pulse_attr_pct"			"25"
 			"pulse_all_pct"				"12"
 			"slow_pct"					"12"
 			"slow_duration"				"2.0"
-			"attack_cadence"			"4 3 3"
-			"armor_shred"				"0 2 3"
+			"attack_cadence"			"4"
+		}
+	}
+
+	"evo_veno_needle_glands_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"25"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"12"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"3"
+			"armor_shred"				"2"
 			"shred_duration"			"4.0"
-			"mark_amp_pct"				"0 15 25"
+			"mark_amp_pct"				"15"
+		}
+	}
+
+	"evo_veno_needle_glands_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"35"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"12"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"3"
+			"armor_shred"				"3"
+			"shred_duration"			"4.0"
+			"mark_amp_pct"				"25"
 		}
 	}
 
@@ -51,21 +96,66 @@
 		"ScriptFile"					"abilities/veno/evo_veno_t1"
 		"AbilityTextureName"			"venomancer_poison_sting"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"3"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
 			"pulse_radius"				"225"
-			"pulse_base_dmg"			"20 25 35"
+			"pulse_base_dmg"			"20"
 			"pulse_attr_pct"			"25"
 			"pulse_all_pct"				"12"
 			"slow_pct"					"12"
 			"slow_duration"				"2.0"
 			"attack_cadence"			"4"
-			"amp_per_turret"			"0 3 5"
+		}
+	}
+
+	"evo_veno_hive_glands_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"25"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"12"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"4"
+			"amp_per_turret"			"3"
 			"max_turret_stacks"			"5"
-			"turret_cadence"			"0 4 3"
+			"turret_cadence"			"4"
+		}
+	}
+
+	"evo_veno_hive_glands_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"35"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"12"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"4"
+			"amp_per_turret"			"5"
+			"max_turret_stacks"			"5"
+			"turret_cadence"			"3"
 		}
 	}
 
@@ -75,23 +165,71 @@
 		"ScriptFile"					"abilities/veno/evo_veno_t1"
 		"AbilityTextureName"			"venomancer_poison_sting"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
-		"MaxLevel"						"3"
+		"MaxLevel"						"1"
 		"Innate"						"1"
 		"IsBreakable"					"1"
 		"AbilityValues"
 		{
 			"pulse_radius"				"225"
-			"pulse_base_dmg"			"20 25 35"
+			"pulse_base_dmg"			"20"
 			"pulse_attr_pct"			"25"
-			"pulse_all_pct"				"12 14 14"
+			"pulse_all_pct"				"12"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"4"
+		}
+	}
+
+	"evo_veno_symbiont_glands_t3"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"25"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"14"
 			"slow_pct"					"12"
 			"slow_duration"				"2.0"
 			"attack_cadence"			"4"
 			"heal_radius"				"275"
 			"heal_base"					"18"
 			"heal_all_pct"				"14"
-			"ally_ms_pct"				"0 10 15"
-			"ally_as"					"0 15 25"
+			"ally_ms_pct"				"10"
+			"ally_as"					"15"
+			"ally_buff_duration"		"2.5"
+		}
+	}
+
+	"evo_veno_symbiont_glands_t4"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/veno/evo_veno_t1"
+		"AbilityTextureName"			"venomancer_poison_sting"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS"
+		"MaxLevel"						"1"
+		"Innate"						"1"
+		"IsBreakable"					"1"
+		"AbilityValues"
+		{
+			"pulse_radius"				"225"
+			"pulse_base_dmg"			"35"
+			"pulse_attr_pct"			"25"
+			"pulse_all_pct"				"14"
+			"slow_pct"					"12"
+			"slow_duration"				"2.0"
+			"attack_cadence"			"4"
+			"heal_radius"				"275"
+			"heal_base"					"18"
+			"heal_all_pct"				"14"
+			"ally_ms_pct"				"15"
+			"ally_as"					"25"
 			"ally_buff_duration"		"2.5"
 		}
 	}

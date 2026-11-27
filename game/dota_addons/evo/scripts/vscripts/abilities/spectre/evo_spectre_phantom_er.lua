@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__DecorateLegacy = ____lualib.__TS__DecorateLegacy
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 16,["22"] = 18,["23"] = 20,["24"] = 21,["25"] = 22,["26"] = 24,["27"] = 25,["28"] = 24,["29"] = 25,["30"] = 26,["31"] = 27,["32"] = 27,["33"] = 27,["34"] = 27,["35"] = 26,["36"] = 29,["37"] = 30,["40"] = 31,["41"] = 32,["42"] = 33,["45"] = 34,["46"] = 35,["47"] = 36,["48"] = 37,["50"] = 29,["51"] = 40,["52"] = 41,["55"] = 42,["56"] = 43,["57"] = 43,["58"] = 43,["59"] = 43,["60"] = 44,["61"] = 45,["62"] = 47,["63"] = 48,["64"] = 48,["65"] = 48,["66"] = 48,["67"] = 48,["68"] = 48,["69"] = 48,["70"] = 48,["71"] = 56,["72"] = 57,["73"] = 58,["74"] = 59,["75"] = 60,["76"] = 61,["77"] = 62,["78"] = 40,["79"] = 25,["80"] = 24,["81"] = 25,["83"] = 25,["84"] = 66,["85"] = 67,["86"] = 66,["87"] = 67,["89"] = 67,["90"] = 68,["91"] = 69,["92"] = 70,["93"] = 66,["94"] = 72,["95"] = 73,["96"] = 72,["97"] = 75,["98"] = 76,["99"] = 75,["100"] = 78,["101"] = 79,["102"] = 78,["103"] = 81,["104"] = 82,["105"] = 81,["106"] = 84,["107"] = 85,["108"] = 84,["109"] = 87,["110"] = 88,["111"] = 87,["112"] = 90,["113"] = 91,["114"] = 90,["115"] = 93,["116"] = 94,["117"] = 95,["118"] = 96,["119"] = 97,["120"] = 98,["121"] = 99,["123"] = 101,["124"] = 102,["125"] = 103,["127"] = 105,["130"] = 106,["131"] = 107,["132"] = 112,["133"] = 112,["134"] = 112,["135"] = 112,["136"] = 112,["137"] = 112,["138"] = 112,["139"] = 112,["140"] = 113,["141"] = 93,["142"] = 115,["143"] = 116,["146"] = 117,["147"] = 118,["148"] = 119,["151"] = 120,["152"] = 122,["153"] = 123,["154"] = 123,["155"] = 123,["156"] = 123,["157"] = 123,["158"] = 123,["159"] = 123,["160"] = 124,["161"] = 125,["162"] = 126,["163"] = 126,["164"] = 126,["165"] = 126,["166"] = 126,["167"] = 126,["171"] = 131,["172"] = 132,["173"] = 133,["174"] = 134,["175"] = 135,["176"] = 136,["177"] = 137,["178"] = 138,["179"] = 139,["180"] = 140,["181"] = 143,["182"] = 144,["183"] = 145,["184"] = 146,["185"] = 148,["186"] = 153,["187"] = 154,["188"] = 156,["190"] = 157,["191"] = 157,["193"] = 158,["194"] = 158,["195"] = 158,["196"] = 158,["197"] = 158,["198"] = 158,["199"] = 158,["200"] = 165,["201"] = 166,["208"] = 174,["210"] = 115,["211"] = 177,["212"] = 178,["213"] = 178,["214"] = 178,["215"] = 178,["216"] = 178,["217"] = 178,["218"] = 178,["219"] = 178,["220"] = 178,["221"] = 177,["222"] = 67,["223"] = 66,["224"] = 67,["226"] = 67,["227"] = 190,["228"] = 191,["229"] = 190,["230"] = 191,["231"] = 192,["232"] = 193,["233"] = 194,["234"] = 195,["236"] = 197,["237"] = 197,["238"] = 197,["239"] = 197,["240"] = 192,["241"] = 199,["242"] = 200,["243"] = 200,["245"] = 201,["246"] = 202,["247"] = 203,["248"] = 204,["250"] = 206,["251"] = 199,["252"] = 208,["253"] = 209,["254"] = 208,["255"] = 211,["256"] = 212,["259"] = 213,["260"] = 214,["261"] = 214,["262"] = 214,["263"] = 214,["264"] = 214,["265"] = 215,["266"] = 216,["269"] = 220,["270"] = 221,["271"] = 222,["272"] = 223,["273"] = 225,["274"] = 226,["275"] = 228,["276"] = 229,["277"] = 230,["278"] = 233,["279"] = 234,["280"] = 236,["281"] = 241,["282"] = 242,["283"] = 244,["285"] = 245,["286"] = 245,["288"] = 246,["289"] = 246,["290"] = 246,["291"] = 246,["292"] = 246,["293"] = 246,["294"] = 246,["295"] = 253,["300"] = 211,["301"] = 191,["302"] = 190,["303"] = 191,["305"] = 191,["306"] = 262,["307"] = 263,["308"] = 262,["309"] = 263,["310"] = 264,["311"] = 265,["314"] = 266,["315"] = 267,["316"] = 268,["317"] = 270,["318"] = 271,["319"] = 272,["320"] = 273,["322"] = 275,["323"] = 276,["324"] = 264,["325"] = 263,["326"] = 262,["327"] = 263,["329"] = 263,["330"] = 280,["331"] = 281,["332"] = 280,["333"] = 281,["334"] = 282,["335"] = 283,["336"] = 282,["337"] = 285,["338"] = 286,["339"] = 285,["340"] = 288,["341"] = 289,["342"] = 288,["343"] = 291,["344"] = 292,["345"] = 291,["346"] = 281,["347"] = 280,["348"] = 281,["350"] = 281,["351"] = 296,["352"] = 297,["353"] = 296,["354"] = 297,["355"] = 298,["356"] = 299,["357"] = 298,["358"] = 301,["359"] = 302,["360"] = 301,["361"] = 304,["362"] = 305,["363"] = 304,["364"] = 307,["365"] = 308,["366"] = 307,["367"] = 297,["368"] = 296,["369"] = 297,["371"] = 297});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 2,["10"] = 3,["11"] = 4,["12"] = 5,["13"] = 6,["14"] = 8,["15"] = 9,["16"] = 10,["17"] = 11,["18"] = 12,["19"] = 13,["20"] = 14,["21"] = 16,["22"] = 18,["23"] = 20,["24"] = 21,["25"] = 22,["26"] = 24,["27"] = 25,["28"] = 24,["29"] = 25,["30"] = 26,["31"] = 27,["32"] = 27,["33"] = 27,["34"] = 27,["35"] = 26,["36"] = 29,["37"] = 30,["40"] = 31,["41"] = 32,["42"] = 33,["45"] = 34,["46"] = 35,["47"] = 36,["48"] = 37,["50"] = 29,["51"] = 40,["52"] = 41,["55"] = 42,["56"] = 43,["57"] = 43,["58"] = 43,["59"] = 43,["60"] = 44,["61"] = 46,["62"] = 47,["63"] = 48,["64"] = 48,["65"] = 48,["66"] = 48,["67"] = 48,["68"] = 48,["69"] = 48,["70"] = 48,["71"] = 48,["72"] = 57,["73"] = 40,["74"] = 25,["75"] = 24,["76"] = 25,["78"] = 25,["79"] = 61,["80"] = 62,["81"] = 61,["82"] = 62,["84"] = 62,["85"] = 63,["86"] = 64,["87"] = 65,["88"] = 66,["89"] = 61,["90"] = 68,["91"] = 69,["92"] = 68,["93"] = 71,["94"] = 72,["95"] = 71,["96"] = 74,["97"] = 75,["98"] = 74,["99"] = 77,["100"] = 78,["101"] = 77,["102"] = 80,["103"] = 81,["104"] = 80,["105"] = 83,["106"] = 84,["107"] = 83,["108"] = 86,["109"] = 87,["110"] = 86,["111"] = 89,["112"] = 90,["113"] = 91,["114"] = 92,["115"] = 93,["116"] = 94,["117"] = 95,["118"] = 96,["119"] = 97,["120"] = 97,["121"] = 97,["122"] = 97,["124"] = 99,["125"] = 100,["126"] = 101,["128"] = 103,["131"] = 104,["132"] = 105,["133"] = 105,["134"] = 105,["135"] = 105,["136"] = 107,["137"] = 112,["138"] = 113,["139"] = 114,["140"] = 114,["141"] = 114,["142"] = 114,["143"] = 114,["144"] = 114,["145"] = 114,["146"] = 114,["147"] = 116,["148"] = 121,["149"] = 121,["150"] = 121,["151"] = 121,["152"] = 121,["153"] = 122,["154"] = 122,["155"] = 122,["156"] = 122,["157"] = 122,["158"] = 122,["159"] = 122,["160"] = 122,["161"] = 124,["162"] = 125,["163"] = 125,["164"] = 125,["165"] = 125,["166"] = 125,["167"] = 125,["168"] = 125,["170"] = 127,["171"] = 89,["172"] = 129,["173"] = 130,["176"] = 131,["177"] = 132,["178"] = 133,["181"] = 134,["182"] = 136,["183"] = 136,["184"] = 136,["185"] = 136,["186"] = 136,["187"] = 136,["188"] = 136,["189"] = 138,["190"] = 139,["191"] = 140,["192"] = 141,["193"] = 141,["194"] = 141,["195"] = 141,["196"] = 141,["197"] = 141,["201"] = 146,["202"] = 147,["203"] = 148,["204"] = 149,["205"] = 150,["206"] = 151,["207"] = 152,["208"] = 153,["209"] = 154,["210"] = 155,["211"] = 158,["212"] = 159,["213"] = 160,["214"] = 161,["215"] = 163,["216"] = 168,["217"] = 169,["218"] = 169,["219"] = 169,["220"] = 169,["221"] = 169,["222"] = 170,["223"] = 172,["225"] = 173,["226"] = 173,["228"] = 174,["229"] = 174,["230"] = 174,["231"] = 174,["232"] = 174,["233"] = 174,["234"] = 174,["235"] = 181,["236"] = 182,["243"] = 190,["245"] = 129,["246"] = 193,["247"] = 194,["248"] = 194,["249"] = 194,["250"] = 194,["251"] = 194,["252"] = 194,["253"] = 193,["254"] = 62,["255"] = 61,["256"] = 62,["258"] = 62,["259"] = 203,["260"] = 204,["261"] = 203,["262"] = 204,["263"] = 205,["264"] = 206,["265"] = 207,["266"] = 208,["268"] = 204,["269"] = 205,["270"] = 212,["271"] = 213,["272"] = 213,["274"] = 214,["275"] = 215,["276"] = 216,["277"] = 217,["279"] = 219,["280"] = 212,["281"] = 221,["282"] = 222,["283"] = 221,["284"] = 224,["285"] = 225,["288"] = 226,["289"] = 227,["290"] = 227,["291"] = 227,["292"] = 227,["293"] = 227,["294"] = 228,["295"] = 229,["298"] = 233,["299"] = 234,["300"] = 234,["301"] = 234,["302"] = 234,["303"] = 235,["304"] = 236,["305"] = 237,["306"] = 239,["307"] = 244,["308"] = 245,["309"] = 246,["310"] = 247,["311"] = 248,["312"] = 250,["313"] = 251,["314"] = 252,["315"] = 253,["316"] = 255,["317"] = 256,["318"] = 261,["319"] = 262,["320"] = 263,["321"] = 265,["322"] = 270,["323"] = 271,["324"] = 273,["325"] = 274,["326"] = 276,["327"] = 277,["328"] = 279,["329"] = 280,["330"] = 281,["331"] = 284,["332"] = 285,["333"] = 287,["334"] = 292,["335"] = 293,["336"] = 293,["337"] = 293,["338"] = 293,["339"] = 293,["340"] = 294,["341"] = 296,["343"] = 297,["344"] = 297,["346"] = 298,["347"] = 298,["348"] = 298,["349"] = 298,["350"] = 298,["351"] = 298,["352"] = 298,["353"] = 305,["358"] = 224,["359"] = 204,["360"] = 203,["361"] = 204,["363"] = 204,["364"] = 314,["365"] = 315,["366"] = 314,["367"] = 315,["368"] = 316,["369"] = 317,["372"] = 318,["373"] = 319,["374"] = 320,["375"] = 322,["376"] = 323,["377"] = 324,["378"] = 325,["380"] = 327,["381"] = 328,["382"] = 316,["383"] = 315,["384"] = 314,["385"] = 315,["387"] = 315,["388"] = 332,["389"] = 333,["390"] = 332,["391"] = 333,["392"] = 334,["393"] = 335,["394"] = 334,["395"] = 337,["396"] = 338,["397"] = 337,["398"] = 340,["399"] = 341,["400"] = 340,["401"] = 343,["402"] = 344,["403"] = 343,["404"] = 333,["405"] = 332,["406"] = 333,["408"] = 333,["409"] = 348,["410"] = 349,["411"] = 348,["412"] = 349,["413"] = 350,["414"] = 351,["415"] = 350,["416"] = 353,["417"] = 354,["418"] = 353,["419"] = 356,["420"] = 357,["421"] = 356,["422"] = 359,["423"] = 360,["424"] = 359,["425"] = 349,["426"] = 348,["427"] = 349,["429"] = 349});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -58,22 +58,17 @@ function evo_spectre_phantom_e.prototype.OnSpellStart(self)
         caster
     )
     local maxPortals = self:GetSpecialValueFor("max_portals")
-    local visionRadius = self:GetSpecialValueFor("vision_radius")
     caster:EmitSound("Hero_Spectre.HauntCast")
-    local portal = CreateUnitByName(
-        "npc_dota_companion",
+    EmitSoundOnLocationWithCaster(pos, "Hero_VoidSpirit.Dissimilate.Portals", caster)
+    local portal = CreateModifierThinker(
+        caster,
+        self,
+        "modifier_evo_spectre_portal_unit",
+        {},
         pos,
-        true,
-        caster,
-        caster,
-        caster:GetTeamNumber()
+        caster:GetTeamNumber(),
+        false
     )
-    portal:SetDayTimeVisionRange(visionRadius)
-    portal:SetNightTimeVisionRange(visionRadius)
-    portal:SetModel("models/heroes/spectre/spectre.vmdl")
-    portal:SetModelScale(0.75)
-    portal:SetRenderColor(155, 65, 235)
-    portal:AddNewModifier(caster, self, "modifier_evo_spectre_portal_unit", {})
     registerSpectrePortal(nil, caster, portal, maxPortals)
 end
 evo_spectre_phantom_e = __TS__DecorateLegacy(
@@ -88,6 +83,7 @@ __TS__ClassExtends(modifier_evo_spectre_portal_unit, BaseModifier)
 function modifier_evo_spectre_portal_unit.prototype.____constructor(self, ...)
     BaseModifier.prototype.____constructor(self, ...)
     self.auraRadius = 275
+    self.visionRadius = 450
     self.isTier3Plus = false
     self.stormPulseAccum = 0
 end
@@ -114,11 +110,16 @@ function modifier_evo_spectre_portal_unit.prototype.GetAuraSearchType(self)
 end
 function modifier_evo_spectre_portal_unit.prototype.OnCreated(self)
     self.auraRadius = 275
+    self.visionRadius = 450
     self.isTier3Plus = false
     self.stormPulseAccum = 0
     local ab = self:GetAbility()
     if ab and not ab:IsNull() then
         self.auraRadius = ab:GetSpecialValueFor("truesight_radius")
+        self.visionRadius = math.max(
+            250,
+            ab:GetSpecialValueFor("vision_radius")
+        )
     end
     local caster = self:GetCaster()
     if caster and not caster:IsNull() then
@@ -128,15 +129,44 @@ function modifier_evo_spectre_portal_unit.prototype.OnCreated(self)
         return
     end
     local parent = self:GetParent()
-    local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_dispersion.vpcf", 1, parent)
+    local origin = GetGroundPosition(
+        parent:GetAbsOrigin(),
+        parent
+    )
+    local portalPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_void_spirit/void_spirit_entryportal.vpcf", 8, nil)
+    ParticleManager:SetParticleControl(portalPfx, 0, origin)
+    ParticleManager:SetParticleControl(portalPfx, 3, origin)
     self:AddParticle(
-        pfx,
+        portalPfx,
         false,
         false,
         -1,
         false,
         false
     )
+    local spirePfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_ambient_blade.vpcf", 8, nil)
+    ParticleManager:SetParticleControl(
+        spirePfx,
+        0,
+        origin + Vector(0, 0, 64)
+    )
+    self:AddParticle(
+        spirePfx,
+        false,
+        false,
+        -1,
+        false,
+        false
+    )
+    if caster and not caster:IsNull() then
+        AddFOWViewer(
+            caster:GetTeamNumber(),
+            origin,
+            self.visionRadius,
+            0.3,
+            false
+        )
+    end
     self:StartIntervalThink(0.1)
 end
 function modifier_evo_spectre_portal_unit.prototype.OnIntervalThink(self)
@@ -149,14 +179,14 @@ function modifier_evo_spectre_portal_unit.prototype.OnIntervalThink(self)
         return
     end
     local origin = parent:GetAbsOrigin()
+    AddFOWViewer(
+        caster:GetTeamNumber(),
+        origin,
+        self.visionRadius,
+        0.25,
+        false
+    )
     if getSpectreTier(nil, caster) >= 3 then
-        AddFOWViewer(
-            caster:GetTeamNumber(),
-            origin,
-            self.auraRadius,
-            0.2,
-            false
-        )
         for ____, enemy in ipairs(findSpectreEnemies(nil, caster, origin, self.auraRadius)) do
             if enemy and not enemy:IsNull() and enemy:IsAlive() then
                 enemy:AddNewModifier(
@@ -184,11 +214,16 @@ function modifier_evo_spectre_portal_unit.prototype.OnIntervalThink(self)
                 local shredDur = eAb and not eAb:IsNull() and eAb:GetSpecialValueFor("shred_duration") or 4
                 local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf", 8, nil)
                 ParticleManager:SetParticleControl(pfx, 0, origin)
+                ParticleManager:SetParticleControl(
+                    pfx,
+                    1,
+                    Vector(0, pulseRadius, 0)
+                )
                 ParticleManager:ReleaseParticleIndex(pfx)
                 for ____, enemy in ipairs(findSpectreEnemies(nil, caster, origin, pulseRadius)) do
                     do
                         if not enemy or enemy:IsNull() or not enemy:IsAlive() then
-                            goto __continue30
+                            goto __continue31
                         end
                         ApplyDamage({
                             victim = enemy,
@@ -200,7 +235,7 @@ function modifier_evo_spectre_portal_unit.prototype.OnIntervalThink(self)
                         enemy:AddNewModifier(caster, stormAb, "modifier_evo_spectre_portal_slow", {duration = slowDur})
                         enemy:AddNewModifier(caster, stormAb, "modifier_evo_spectre_armor_shred", {duration = shredDur, shred = shred})
                     end
-                    ::__continue30::
+                    ::__continue31::
                 end
             end
         end
@@ -213,10 +248,7 @@ function modifier_evo_spectre_portal_unit.prototype.CheckState(self)
         [dotaModifierState(nil, "MODIFIER_STATE_INVULNERABLE")] = true,
         [dotaModifierState(nil, "MODIFIER_STATE_NO_HEALTH_BAR")] = true,
         [dotaModifierState(nil, "MODIFIER_STATE_UNSELECTABLE")] = true,
-        [dotaModifierState(nil, "MODIFIER_STATE_NOT_ON_MINIMAP")] = false,
-        [dotaModifierState(nil, "MODIFIER_STATE_NO_UNIT_COLLISION")] = true,
-        [dotaModifierState(nil, "MODIFIER_STATE_COMMAND_RESTRICTED")] = true,
-        [dotaModifierState(nil, "MODIFIER_STATE_DISARMED")] = true
+        [dotaModifierState(nil, "MODIFIER_STATE_NO_UNIT_COLLISION")] = true
     }
 end
 modifier_evo_spectre_portal_unit = __TS__DecorateLegacy(
@@ -233,10 +265,7 @@ function evo_spectre_phantom_d.prototype.GetCooldown(self, level)
     if caster and not caster:IsNull() and caster:HasModifier("modifier_evo_spectre_phantom_r_free_d") then
         return 0
     end
-    return ({45, 40, 35})[math.max(
-        0,
-        math.min(2, level)
-    ) + 1] or 45
+    return BaseAbility.prototype.GetCooldown(self, level)
 end
 function evo_spectre_phantom_d.prototype.CastFilterResultLocation(self, location)
     if not IsServer() then
@@ -266,10 +295,34 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
         self:EndCooldown()
         return
     end
-    local dest = portal:GetAbsOrigin()
+    local origin = caster:GetAbsOrigin()
+    local dest = GetGroundPosition(
+        portal:GetAbsOrigin(),
+        caster
+    )
+    local dir = dest - origin
+    dir.z = 0
+    local forward = dir:Length2D() > 1 and dir:Normalized() or caster:GetForwardVector()
+    local startPfx = ParticleManager:CreateParticle("particles/items_fx/blink_dagger_start.vpcf", 8, nil)
+    ParticleManager:SetParticleControl(startPfx, 0, origin)
+    ParticleManager:SetParticleControlForward(startPfx, 0, forward)
+    ParticleManager:ReleaseParticleIndex(startPfx)
+    EmitSoundOnLocationWithCaster(origin, "Hero_VoidSpirit.AstralStep.Start", caster)
+    EmitSoundOnLocationWithCaster(origin, "Hero_Spectre.Reality", caster)
     ProjectileManager:ProjectileDodge(caster)
-    caster:EmitSound("Hero_Spectre.Reality")
+    caster:Stop()
     FindClearSpaceForUnit(caster, dest, true)
+    caster:SetForwardVector(forward)
+    local arrivedPos = caster:GetAbsOrigin()
+    local endPfx = ParticleManager:CreateParticle("particles/items_fx/blink_dagger_end.vpcf", 0, caster)
+    ParticleManager:SetParticleControl(endPfx, 0, arrivedPos)
+    ParticleManager:SetParticleControlForward(endPfx, 0, forward)
+    ParticleManager:ReleaseParticleIndex(endPfx)
+    local burstPfx = ParticleManager:CreateParticle("particles/units/heroes/hero_void_spirit/astral_step/void_spirit_astral_step_dmg_burst.vpcf", 8, nil)
+    ParticleManager:SetParticleControl(burstPfx, 0, arrivedPos)
+    ParticleManager:ReleaseParticleIndex(burstPfx)
+    caster:EmitSound("Hero_Spectre.Reality")
+    caster:EmitSound("Hero_VoidSpirit.Dissimilate.TeleportIn")
     local msDur = self:GetSpecialValueFor("ms_duration")
     caster:AddNewModifier(caster, self, "modifier_evo_spectre_reality_ms", {duration = msDur})
     if getSpectreTier(nil, caster) >= 4 then
@@ -278,12 +331,17 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
         local shred = self:GetSpecialValueFor("armor_shred")
         local shredDur = self:GetSpecialValueFor("shred_duration")
         local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_spectre/spectre_shadowstep_fear.vpcf", 8, nil)
-        ParticleManager:SetParticleControl(pfx, 0, dest)
+        ParticleManager:SetParticleControl(pfx, 0, arrivedPos)
+        ParticleManager:SetParticleControl(
+            pfx,
+            1,
+            Vector(0, radius, 0)
+        )
         ParticleManager:ReleaseParticleIndex(pfx)
-        for ____, enemy in ipairs(findSpectreEnemies(nil, caster, dest, radius)) do
+        for ____, enemy in ipairs(findSpectreEnemies(nil, caster, arrivedPos, radius)) do
             do
                 if not enemy or enemy:IsNull() or not enemy:IsAlive() then
-                    goto __continue45
+                    goto __continue46
                 end
                 ApplyDamage({
                     victim = enemy,
@@ -294,7 +352,7 @@ function evo_spectre_phantom_d.prototype.OnSpellStart(self)
                 })
                 enemy:AddNewModifier(caster, self, "modifier_evo_spectre_armor_shred", {duration = shredDur, shred = shred})
             end
-            ::__continue45::
+            ::__continue46::
         end
     end
 end
@@ -341,7 +399,7 @@ function modifier_evo_spectre_phantom_r_storm.prototype.IsPurgable(self)
     return false
 end
 function modifier_evo_spectre_phantom_r_storm.prototype.GetTexture(self)
-    return "spectre_haunt_single"
+    return "evo_spectre_phantom_r"
 end
 modifier_evo_spectre_phantom_r_storm = __TS__DecorateLegacy(
     {registerModifier(nil, "modifier_evo_spectre_phantom_r_storm")},
@@ -362,7 +420,7 @@ function modifier_evo_spectre_phantom_r_free_d.prototype.IsPurgable(self)
     return false
 end
 function modifier_evo_spectre_phantom_r_free_d.prototype.GetTexture(self)
-    return "spectre_reality"
+    return "evo_spectre_phantom_d"
 end
 modifier_evo_spectre_phantom_r_free_d = __TS__DecorateLegacy(
     {registerModifier(nil, "modifier_evo_spectre_phantom_r_free_d")},

@@ -26,19 +26,13 @@ export function getNyxTier(unit: CDOTA_BaseNPC): number {
     ) {
         return 4;
     }
-    const cicadaChitin = unit.FindAbilityByName("evo_nyx_cicada_chitin");
-    if (cicadaChitin && !cicadaChitin.IsNull()) {
-        return Math.min(4, Math.max(2, cicadaChitin.GetLevel() + 1));
-    }
-    for (const branchChitin of [
-        "evo_nyx_scarab_chitin",
-        "evo_nyx_mantis_chitin",
-        "evo_nyx_archon_chitin",
-    ]) {
-        const ab = unit.FindAbilityByName(branchChitin);
-        if (ab && !ab.IsNull()) {
-            return Math.min(4, Math.max(3, ab.GetLevel() + 2));
-        }
+    if (
+        hasClientSafeAbility(unit, "evo_nyx_cicada_chitin_t3") ||
+        hasClientSafeAbility(unit, "evo_nyx_scarab_chitin") ||
+        hasClientSafeAbility(unit, "evo_nyx_mantis_chitin") ||
+        hasClientSafeAbility(unit, "evo_nyx_archon_chitin")
+    ) {
+        return 3;
     }
     if (
         hasClientSafeAbility(unit, "evo_nyx_scarab_q") ||
@@ -114,9 +108,14 @@ export function getLivingChitinStacks(unit: CDOTA_BaseNPC): number {
 
 export function findNyxInnateAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
     for (const name of [
+        "evo_nyx_scarab_chitin_t4",
         "evo_nyx_scarab_chitin",
+        "evo_nyx_mantis_chitin_t4",
         "evo_nyx_mantis_chitin",
+        "evo_nyx_archon_chitin_t4",
         "evo_nyx_archon_chitin",
+        "evo_nyx_cicada_chitin_t4",
+        "evo_nyx_cicada_chitin_t3",
         "evo_nyx_cicada_chitin",
         "evo_nyx_living_chitin",
     ]) {

@@ -140,14 +140,7 @@ export function applyBodyToHero(
                         }
                     }
                     ab.SetHidden(false);
-                    const maxLvl = ab.GetMaxLevel();
-                    const desiredLevel = isInnate
-                        ? (maxLvl === 2
-                            ? Math.min(2, Math.max(1, body.tierIndex - 2))
-                            : maxLvl === 3
-                              ? Math.min(3, Math.max(1, body.tierIndex - 1))
-                              : 1)
-                        : 0;
+                    const desiredLevel = isInnate ? 1 : 0;
                     if (ab.GetLevel() !== desiredLevel) {
                         ab.SetLevel(desiredLevel);
                     }

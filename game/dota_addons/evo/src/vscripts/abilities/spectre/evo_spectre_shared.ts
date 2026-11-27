@@ -27,16 +27,14 @@ export function getSpectreTier(unit: CDOTA_BaseNPC | undefined): number {
     ) {
         return 4;
     }
-    const phantomDisp = unit.FindAbilityByName("evo_spectre_phantom_dispersion");
-    if (phantomDisp && !phantomDisp.IsNull()) {
-        return Math.min(4, Math.max(2, phantomDisp.GetLevel() + 1));
-    }
-    const mirrorInv = unit.FindAbilityByName("evo_spectre_mirror_inversion");
-    if (mirrorInv && !mirrorInv.IsNull()) {
-        return Math.min(4, Math.max(2, mirrorInv.GetLevel() + 1));
+    if (
+        hasAbilitySafe(unit, "evo_spectre_phantom_dispersion_t3") ||
+        hasAbilitySafe(unit, "evo_spectre_mirror_inversion_t3")
+    ) {
+        return 3;
     }
     if (
-        hasAbilitySafe(unit, "evo_spectre_phantom_q") ||
+        hasAbilitySafe(unit, "evo_spectre_phantom_w") ||
         hasAbilitySafe(unit, "evo_spectre_bastion_q") ||
         hasAbilitySafe(unit, "evo_spectre_mirror_q")
     ) {
@@ -57,7 +55,7 @@ export function detectSpectreBranchAndTier(unit: CDOTA_BaseNPC): SpectreBranchIn
         return { branch: "T1", tier: 1 };
     }
     const tier = getSpectreTier(unit);
-    if (hasAbilitySafe(unit, "evo_spectre_phantom_q")) {
+    if (hasAbilitySafe(unit, "evo_spectre_phantom_w")) {
         return { branch: "PHANTOM", tier };
     }
     if (hasAbilitySafe(unit, "evo_spectre_bastion_q")) {
@@ -110,7 +108,9 @@ const portalsByOwner = new Map<EntityIndex, CDOTA_BaseNPC[]>();
 export function cleanupSpectrePortals(owner: CDOTA_BaseNPC): CDOTA_BaseNPC[] {
     const idx = owner.GetEntityIndex();
     const list = portalsByOwner.get(idx) ?? [];
-    const alive = list.filter((u) => u && !u.IsNull() && IsValidEntity(u) && u.IsAlive());
+    const alive = list.filter(
+        (u) => u && !u.IsNull() && IsValidEntity(u) && u.HasModifier("modifier_evo_spectre_portal_unit")
+    );
     portalsByOwner.set(idx, alive);
     return alive;
 }
@@ -120,7 +120,6 @@ export function registerSpectrePortal(owner: CDOTA_BaseNPC, portal: CDOTA_BaseNP
     while (alive.length >= maxCount) {
         const oldest = alive.shift();
         if (oldest && !oldest.IsNull() && IsValidEntity(oldest)) {
-            oldest.ForceKill(false);
             UTIL_Remove(oldest);
         }
     }

@@ -16,26 +16,78 @@
     "en": "Mutagenic Glands"
   },
   "DOTA_Tooltip_ability_evo_veno_glands_Description": {
-    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает споровый импульс в %pulse_radius% AoE, нанося %pulse_base_dmg% + %pulse_attr_pct%%% макс. атрибута маг. урона и замедляя на -%slow_pct%%% на %slow_duration%с.",
-    "en": "Every %attack_cadence%th attack or ability cast triggers a %pulse_radius% AoE spore pulse dealing %pulse_base_dmg% + %pulse_attr_pct%%% highest stat magic damage and slowing by -%slow_pct%%% for %slow_duration%s."
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> врагам.<br><br>Задетые враги замедляются на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font>.<br><br>Enemies hit are slowed by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands_Note0": {
+    "ru": "Срабатывает только по существам и не срабатывает при атаке построек. Отключается истощением.",
+    "en": "Does not trigger when attacking buildings. Disabled by Break."
   },
   "DOTA_Tooltip_ability_evo_veno_glands_pulse_base_dmg": {
     "ru": "УРОН ИМПУЛЬСА:",
     "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands_pulse_radius": {
+    "ru": "РАДИУС ИМПУЛЬСА:",
+    "en": "PULSE RADIUS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_glands_slow_pct": {
+    "ru": "%ЗАМЕДЛЕНИЯ:",
+    "en": "%MOVE SLOW:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_glands": {
     "ru": "Железы Снайпера",
     "en": "Needle Glands"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_glands_Description": {
-    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_attr_pct%%% макс. стата маг. урона, -%slow_pct%%% MS). Импульс срезает -%armor_shred% брони и повышает физ. урон атак по цели на +%mark_amp_pct%%%.",
-    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_attr_pct%%% stat magic dmg, -%slow_pct%%% MS), shredding %armor_shred% armor and increasing attack damage against target by +%mark_amp_pct%%%."
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> врагам.<br><br>Задетые враги замедляются на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font>.<br><br>Enemies hit are slowed by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
-  "DOTA_Tooltip_ability_evo_veno_needle_glands_armor_shred": {
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_Note0": {
+    "ru": "Срабатывает только по существам и не срабатывает при атаке построек. Отключается истощением.",
+    "en": "Does not trigger when attacking buildings. Disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_pulse_base_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t3": {
+    "ru": "Железы Снайпера",
+    "en": "Needle Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t3_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Основная цель импульса теряет <font color='#e03e2e'>-%armor_shred% брони</font> и получает на <font color='#e03e2e'>+%mark_amp_pct%%%</font> больше <font color='#e03e2e'>физического урона</font> от ваших атак на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%rd attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>The primary target loses <font color='#e03e2e'>-%armor_shred% armor</font> and takes <font color='#e03e2e'>+%mark_amp_pct%%%</font> increased <font color='#e03e2e'>physical damage</font> from your attacks for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t3_Note0": {
+    "ru": "Срез брони и метка накладываются только на основную цель импульса. Не срабатывает по постройкам и отключается истощением.",
+    "en": "Armor shred and mark apply only to the primary target of the pulse. Does not trigger on buildings and is disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t3_armor_shred": {
     "ru": "СРЕЗ БРОНИ:",
     "en": "ARMOR SHRED:"
   },
-  "DOTA_Tooltip_ability_evo_veno_needle_glands_mark_amp_pct": {
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t3_mark_amp_pct": {
+    "ru": "%БОНУС ФИЗ. УРОНА:",
+    "en": "%PHYS AMP MARK:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t4": {
+    "ru": "Железы Снайпера",
+    "en": "Needle Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t4_Description": {
+    "ru": "Каждая %attack_cadence%-я атака <font color='#7d7d7d'>(или каждая 2-я по замедленным целям)</font> или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Основная цель импульса теряет <font color='#e03e2e'>-%armor_shred% брони</font> и получает на <font color='#e03e2e'>+%mark_amp_pct%%%</font> больше <font color='#e03e2e'>физического урона</font> от ваших атак на %shred_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%rd attack <font color='#7d7d7d'>(every 2nd against slowed targets)</font> or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>The primary target loses <font color='#e03e2e'>-%armor_shred% armor</font> and takes <font color='#e03e2e'>+%mark_amp_pct%%%</font> increased <font color='#e03e2e'>physical damage</font> from your attacks for %shred_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t4_Note0": {
+    "ru": "Срез брони и метка накладываются только на основную цель импульса. Не срабатывает по постройкам и отключается истощением.",
+    "en": "Armor shred and mark apply only to the primary target of the pulse. Does not trigger on buildings and is disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t4_armor_shred": {
+    "ru": "СРЕЗ БРОНИ:",
+    "en": "ARMOR SHRED:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_glands_t4_mark_amp_pct": {
     "ru": "%БОНУС ФИЗ. УРОНА:",
     "en": "%PHYS AMP MARK:"
   },
@@ -44,23 +96,95 @@
     "en": "Hive Glands"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_glands_Description": {
-    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_attr_pct%%% стата маг. урона). Даёт +%amp_per_turret%%% Spell Amp за каждую активную турель (до %max_turret_stacks%).",
-    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_attr_pct%%% stat magic dmg). Grants +%amp_per_turret%%% Spell Amp per active turret (max %max_turret_stacks%)."
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> врагам.<br><br>Задетые враги замедляются на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font>.<br><br>Enemies hit are slowed by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
-  "DOTA_Tooltip_ability_evo_veno_hive_glands_amp_per_turret": {
-    "ru": "%SPELL AMP ЗА ТУРЕЛЬ:",
-    "en": "%SPELL AMP / TURRET:"
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_Note0": {
+    "ru": "Срабатывает только по существам и не срабатывает при атаке построек. Отключается истощением.",
+    "en": "Does not trigger when attacking buildings. Disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_pulse_base_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t3": {
+    "ru": "Железы Улья",
+    "en": "Hive Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t3_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности <font color='#7d7d7d'>(а также каждый %turret_cadence%-й выстрел <b>Био-турели</b>)</font> выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Даёт <font color='#87ceeb'>+%amp_per_turret%%%</font> к урону заклинаний за каждую активную <b>Био-турель</b> <font color='#7d7d7d'>(до %max_turret_stacks% стаков)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast <font color='#7d7d7d'>(and every %turret_cadence%th <b>Bio-Turret</b> shot)</font> triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Grants <font color='#87ceeb'>+%amp_per_turret%%%</font> Spell Amplification per active <b>Bio-Turret</b> <font color='#7d7d7d'>(up to %max_turret_stacks% stacks)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t3_Note0": {
+    "ru": "Не срабатывает при атаке построек. Бонус к урону заклинаний и срабатывания импульса отключаются истощением.",
+    "en": "Does not trigger when attacking buildings. Spell Amplification and pulse triggers are disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t3_amp_per_turret": {
+    "ru": "%УСИЛ. ЗАКЛИНАНИЙ ЗА ТУРЕЛЬ:",
+    "en": "%SPELL AMP PER TURRET:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t4": {
+    "ru": "Железы Улья",
+    "en": "Hive Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t4_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности <font color='#7d7d7d'>(а также каждый %turret_cadence%-й выстрел <b>Био-турели</b>)</font> выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_attr_pct%%% от наивысшего атрибута <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Даёт <font color='#87ceeb'>+%amp_per_turret%%%</font> к урону заклинаний за каждую активную <b>Био-турель</b> <font color='#7d7d7d'>(до %max_turret_stacks% стаков)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast <font color='#7d7d7d'>(and every %turret_cadence%rd <b>Bio-Turret</b> shot)</font> triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_attr_pct%%% of your highest attribute as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Grants <font color='#87ceeb'>+%amp_per_turret%%%</font> Spell Amplification per active <b>Bio-Turret</b> <font color='#7d7d7d'>(up to %max_turret_stacks% stacks)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t4_Note0": {
+    "ru": "Не срабатывает при атаке построек. Бонус к урону заклинаний и срабатывания импульса отключаются истощением.",
+    "en": "Does not trigger when attacking buildings. Spell Amplification and pulse triggers are disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_glands_t4_amp_per_turret": {
+    "ru": "%УСИЛ. ЗАКЛИНАНИЙ ЗА ТУРЕЛЬ:",
+    "en": "%SPELL AMP PER TURRET:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_glands": {
     "ru": "Симбиотические железы",
     "en": "Symbiotic Glands"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_glands_Description": {
-    "ru": "Каждая %attack_cadence%-я атака или каст вызывает споровый импульс в %pulse_radius% AoE (%pulse_base_dmg% + %pulse_all_pct%%% суммы статов маг. урона). Лечит союзников в %heal_radius% AoE на %heal_base% + %heal_all_pct%%% суммы статов с бонусом +%ally_ms_pct%%% MS и +%ally_as% AS.",
-    "en": "Every %attack_cadence%th attack or cast triggers a %pulse_radius% AoE spore pulse (%pulse_base_dmg% + %pulse_all_pct%%% all stats magic dmg) and heals allies in %heal_radius% AoE for %heal_base% + %heal_all_pct%%% all stats plus +%ally_ms_pct%%% MS and +%ally_as% AS."
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> врагам.<br><br>Задетые враги замедляются на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font>.<br><br>Enemies hit are slowed by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
   },
-  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_heal_base": {
-    "ru": "БАЗОВЫЙ ХИЛ:",
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_Note0": {
+    "ru": "Срабатывает только по существам и не срабатывает при атаке построек. Отключается истощением.",
+    "en": "Does not trigger when attacking buildings. Disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_pulse_base_dmg": {
+    "ru": "УРОН ИМПУЛЬСА:",
+    "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t3": {
+    "ru": "Симбиотические железы",
+    "en": "Symbiotic Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t3_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Также <font color='#9acd32'>исцеляет</font> союзников в радиусе %heal_radius% на %heal_base% + %heal_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font>, ускоряя их на <font color='#9acd32'>+%ally_ms_pct%%%</font> и даруя <font color='#9acd32'>+%ally_as%</font> к скорости атаки на %ally_buff_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Also <font color='#9acd32'>heals</font> allies within %heal_radius% radius for %heal_base% + %heal_all_pct%%% of <font color='#d8ae53'>all attributes combined</font>, granting <font color='#9acd32'>+%ally_ms_pct%%%</font> movement speed and <font color='#9acd32'>+%ally_as%</font> attack speed for %ally_buff_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t3_Note0": {
+    "ru": "Лечение распространяется только на союзных героев в радиусе импульса. Не срабатывает по постройкам и отключается истощением.",
+    "en": "Healing affects only allied heroes around the pulse target. Does not trigger on buildings and is disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t3_heal_base": {
+    "ru": "БАЗОВОЕ ЛЕЧЕНИЕ:",
+    "en": "BASE HEAL:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t4": {
+    "ru": "Симбиотические железы",
+    "en": "Symbiotic Glands"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t4_Description": {
+    "ru": "Каждая %attack_cadence%-я атака или применение способности выпускает <font color='#9acd32'>споровый импульс</font> в радиусе %pulse_radius%, нанося %pulse_base_dmg% + %pulse_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Также <font color='#9acd32'>исцеляет</font> союзников в радиусе %heal_radius% на %heal_base% + %heal_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font>, ускоряя их на <font color='#9acd32'>+%ally_ms_pct%%%</font> и даруя <font color='#9acd32'>+%ally_as%</font> к скорости атаки на %ally_buff_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Every %attack_cadence%th attack or ability cast triggers a <font color='#9acd32'>spore pulse</font> in a %pulse_radius% radius, dealing %pulse_base_dmg% + %pulse_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Also <font color='#9acd32'>heals</font> allies within %heal_radius% radius for %heal_base% + %heal_all_pct%%% of <font color='#d8ae53'>all attributes combined</font>, granting <font color='#9acd32'>+%ally_ms_pct%%%</font> movement speed and <font color='#9acd32'>+%ally_as%</font> attack speed for %ally_buff_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t4_Note0": {
+    "ru": "Лечение распространяется только на союзных героев в радиусе импульса. Не срабатывает по постройкам и отключается истощением.",
+    "en": "Healing affects only allied heroes around the pulse target. Does not trigger on buildings and is disabled by Break."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_glands_t4_heal_base": {
+    "ru": "БАЗОВОЕ ЛЕЧЕНИЕ:",
     "en": "BASE HEAL:"
   },
   "DOTA_Tooltip_ability_evo_veno_t1_q": {
@@ -68,11 +192,15 @@
     "en": "Slime Glob"
   },
   "DOTA_Tooltip_ability_evo_veno_t1_q_Description": {
-    "ru": "Выпускает снаряд на %range% дальности (%damage% маг. урона, %creep_mult%x по крипам), замедляя на -%slow_pct%%% на %slow_duration%с и сразу вызывая Мутагенные железы на первой задетой цели.",
-    "en": "Fires a %range%-range slime projectile (%damage% magic damage, %creep_mult%x vs creeps), slowing by -%slow_pct%%% for %slow_duration%s and triggering Mutagenic Glands on the first target hit."
+    "ru": "Выпускает сгусток слизи на дальность %range%, нанося %damage% <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и замедляя врагов на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>На первой задетой цели мгновенно срабатывают <b>Мутагенные железы</b>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Launches a slime projectile over %range% range, dealing %damage% <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and slowing enemies by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Immediately triggers <b>Mutagenic Glands</b> on the first enemy hit.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_q_Note0": {
+    "ru": "Снаряд проходит сквозь всех врагов на линии и раскрывает небольшой обзор по пути полёта.",
+    "en": "The projectile pierces all enemies along its path and provides brief vision as it travels."
   },
   "DOTA_Tooltip_ability_evo_veno_t1_q_damage": {
-    "ru": "МАГ. УРОН:",
+    "ru": "МАГИЧЕСКИЙ УРОН:",
     "en": "MAGIC DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_t1_q_slow_pct": {
@@ -84,20 +212,32 @@
     "en": "Spore Growth"
   },
   "DOTA_Tooltip_ability_evo_veno_t1_w_Description": {
-    "ru": "Выращивает живой отросток на %duration%с (макс. %max_sprouts%), бьющий врагов в %attack_range% дальности каждые %attack_interval%с на %attack_damage% физ. урона (%creep_mult%x по крипам). Приоритет целям под Сгустком слизи.",
-    "en": "Grows a living sprout for %duration%s (max %max_sprouts%) attacking within %attack_range% range every %attack_interval%s for %attack_damage% physical damage (%creep_mult%x vs creeps), prioritizing Slime Glob targets."
+    "ru": "Выращивает живой отросток на %duration% сек. <font color='#7d7d7d'>(макс. %max_sprouts%)</font>, который атакует врагов в радиусе %attack_range% каждые %attack_interval% сек., нанося %attack_damage% <font color='#e03e2e'>физического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font>.<br><br>В первую очередь отростки выбирают цели, поражённые способностью <b>Сгусток слизи</b>.",
+    "en": "Grows a living sprout for %duration%s <font color='#7d7d7d'>(max %max_sprouts%)</font> that attacks enemies within %attack_range% range every %attack_interval%s for %attack_damage% <font color='#e03e2e'>physical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font>.<br><br>Sprouts prioritize enemies afflicted by <b>Slime Glob</b>."
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_w_Note0": {
+    "ru": "При превышении лимита в %max_sprouts% отростка самый старый уничтожается. Снаряды отростков можно сбросить или уклониться от них.",
+    "en": "Exceeding %max_sprouts% active sprouts destroys the oldest one. Sprout projectiles can be disjointed or evaded."
   },
   "DOTA_Tooltip_ability_evo_veno_t1_w_attack_damage": {
     "ru": "УРОН ОТРОСТКА:",
     "en": "SPROUT DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_t1_w_max_sprouts": {
+    "ru": "МАКС. ОТРОСТКОВ:",
+    "en": "MAX SPROUTS:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_q": {
     "ru": "Залп игл",
     "en": "Needle Volley"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_q_Description": {
-    "ru": "Выпускает веер из %needle_count% шипов на %range% дальности (%base_damage% + %agi_pct%%% AGI физ. урона, %creep_mult%x по крипам), накладывая стак Хитинового осколка и -%slow_pct%%% MS на %slow_duration%с (цель может поймать до 2 шипов; второй наносит 50%% урона).",
-    "en": "Fires a cone of %needle_count% needles over %range% range (%base_damage% + %agi_pct%%% AGI physical damage, %creep_mult%x vs creeps), applying Chitin Shard and -%slow_pct%%% MS for %slow_duration%s (up to 2 hits per target; 2nd deals 50%% dmg)."
+    "ru": "Выпускает веер из %needle_count% шипов на дальность %range%. Каждая игла наносит %base_damage% + %agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#e03e2e'>физического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font>, накладывает заряд <b>Хитинового осколка</b> и замедляет на <font color='#7998b5'>-%slow_pct%%%</font> на %slow_duration% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Fires a cone of %needle_count% needles over %range% range. Each needle deals %base_damage% + %agi_pct%%% of <font color='#9acd32'>Agility</font> as <font color='#e03e2e'>physical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font>, applies a <b>Chitin Shard</b> stack, and slows by <font color='#7998b5'>-%slow_pct%%%</font> for %slow_duration%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_q_Note0": {
+    "ru": "Одна цель может получить урон не более чем от 2 игл за залп; вторая игла наносит 50%% урона.",
+    "en": "A single target can be hit by up to 2 needles per volley; the second needle deals 50%% damage."
   },
   "DOTA_Tooltip_ability_evo_veno_needle_q_needle_count": {
     "ru": "ШИПОВ В ВЕЕРЕ:",
@@ -108,24 +248,28 @@
     "en": "BASE PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_q_agi_pct": {
-    "ru": "%УРОНА ОТ AGI:",
-    "en": "%AGI DAMAGE:"
+    "ru": "%УРОНА ОТ ЛОВКОСТИ:",
+    "en": "%AGILITY DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_w": {
     "ru": "Разрывной стручок",
     "en": "Bursting Pod"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_w_Description": {
-    "ru": "Усиливает следующие %charges% атак (на %duration%с): +%bonus_as% AS, +%bonus_range% дальности и +%bonus_dmg% + %agi_pct%%% AGI физ. урона. Последний выстрел взрывает все стаки Хитинового осколка (%detonate_per_shard% физ. урона за стак).",
-    "en": "Empowers next %charges% attacks (%duration%s) with +%bonus_as% AS, +%bonus_range% range, and +%bonus_dmg% + %agi_pct%%% AGI physical damage. The final shot detonates all Chitin Shards for %detonate_per_shard% physical damage each."
+    "ru": "Усиливает следующие %charges% атак <font color='#7d7d7d'>(на %duration% сек.)</font>, давая <font color='#9acd32'>+%bonus_as%</font> к скорости атаки, +%bonus_range% к дальности и %bonus_dmg% + %agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#e03e2e'>физического урона</font>.<br><br>Последний усиленный выстрел взрывает все заряды <b>Хитинового осколка</b> на цели, нанося %detonate_per_shard% <font color='#e03e2e'>физического урона</font> за каждый заряд.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Empowers your next %charges% attacks <font color='#7d7d7d'>(for %duration%s)</font> with <font color='#9acd32'>+%bonus_as%</font> attack speed, +%bonus_range% attack range, and %bonus_dmg% + %agi_pct%%% of <font color='#9acd32'>Agility</font> as bonus <font color='#e03e2e'>physical damage</font>.<br><br>The final empowered shot detonates all <b>Chitin Shard</b> stacks on the target for %detonate_per_shard% <font color='#e03e2e'>physical damage</font> per stack.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_w_Note0": {
+    "ru": "Расход зарядов и детонация осколков не срабатывают при атаке построек.",
+    "en": "Charges and shard detonation do not trigger when attacking buildings."
   },
   "DOTA_Tooltip_ability_evo_veno_needle_w_charges": {
     "ru": "ЗАРЯДОВ АТАК:",
     "en": "EMPOWERED SHOTS:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_w_bonus_dmg": {
-    "ru": "БОНУС УРОН:",
-    "en": "BONUS DAMAGE:"
+    "ru": "ДОП. ФИЗ. УРОН:",
+    "en": "BONUS PHYS DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_w_detonate_per_shard": {
     "ru": "ДЕТОНАЦИЯ ЗА СТАК:",
@@ -136,8 +280,12 @@
     "en": "Venomous Plumage"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_e_Description": {
-    "ru": "Даёт +%bonus_range% дальности атаки. Атаки по замедленным целям наносят +%slow_bonus_dmg% + %slow_agi_pct%%% AGI физ. урона и разгоняют +%as_per_stack% AS на %as_duration%с (до %max_as_stacks% стаков).",
-    "en": "Grants +%bonus_range% attack range. Attacks against slowed enemies deal +%slow_bonus_dmg% + %slow_agi_pct%%% AGI bonus physical damage and grant +%as_per_stack% AS for %as_duration%s (max %max_as_stacks%)."
+    "ru": "Увеличивает дальность атаки на +%bonus_range%.<br><br>Атаки по замедленным врагам дополнительно наносят %slow_bonus_dmg% + %slow_agi_pct%%% от <font color='#9acd32'>ловкости</font> <font color='#e03e2e'>физического урона</font> и дают <font color='#9acd32'>+%as_per_stack%</font> к скорости атаки на %as_duration% сек. <font color='#7d7d7d'>(складывается до %max_as_stacks% раз)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Increases attack range by +%bonus_range%.<br><br>Attacks against slowed enemies deal %slow_bonus_dmg% + %slow_agi_pct%%% of <font color='#9acd32'>Agility</font> as bonus <font color='#e03e2e'>physical damage</font> and grant <font color='#9acd32'>+%as_per_stack%</font> attack speed for %as_duration%s <font color='#7d7d7d'>(stacks up to %max_as_stacks% times)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_e_Note0": {
+    "ru": "Пассивная способность отключается истощением и не срабатывает по постройкам. Развеивается только эффект скорости атаки.",
+    "en": "Passive effects are disabled by Break and do not trigger against buildings. Only the attack speed buff is dispellable."
   },
   "DOTA_Tooltip_ability_evo_veno_needle_e_bonus_range": {
     "ru": "БОНУС ДАЛЬНОСТИ:",
@@ -147,32 +295,52 @@
     "ru": "ДОП. УРОН ПО ЗАМЕДЛ.:",
     "en": "VS SLOWED DMG:"
   },
+  "DOTA_Tooltip_ability_evo_veno_needle_e_as_per_stack": {
+    "ru": "СКОР. АТАКИ ЗА СТАК:",
+    "en": "AS PER STACK:"
+  },
   "DOTA_Tooltip_ability_evo_veno_needle_r": {
     "ru": "Ливень Смертоцвета",
     "en": "Deathbloom Barrage"
   },
   "DOTA_Tooltip_ability_evo_veno_needle_r_Description": {
-    "ru": "Снайперский режим на %duration%с: +%bonus_range% дальности, True Strike, +%agi_bonus_pct%%% AGI, а каждая атака выпускает самонаводящуюся иглу в самого раненого врага в %homing_radius% AoE (%homing_dmg_pct%%% урона атаки + Хитиновый осколок).",
-    "en": "Enters sniper stance for %duration%s: +%bonus_range% range, True Strike, +%agi_bonus_pct%%% AGI, and every attack launches a homing needle at the lowest-HP enemy within %homing_radius% AoE (%homing_dmg_pct%%% attack damage + Chitin Shard)."
+    "ru": "Переходит в снайперскую стойку на %duration% сек.: дальность атаки увеличивается на +%bonus_range%, <font color='#9acd32'>ловкость</font> — на <font color='#9acd32'>+%agi_bonus_pct%%%</font>, а атаки получают <b>True Strike</b>.<br><br>Каждая атака дополнительно выпускает самонаводящуюся иглу в самого раненого врага в радиусе %homing_radius%, наносящую %homing_dmg_pct%%% от урона атаки <font color='#e03e2e'>физическим уроном</font> и накладывающую заряд <b>Хитинового осколка</b>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">нельзя развеять</span>",
+    "en": "Enters sniper stance for %duration%s, granting +%bonus_range% attack range, <font color='#9acd32'>+%agi_bonus_pct%%%</font> Agility, and <b>True Strike</b>.<br><br>Every attack fires a homing needle at the lowest-HP enemy within %homing_radius% radius for %homing_dmg_pct%%% attack damage as <font color='#e03e2e'>physical damage</font> and applies a <b>Chitin Shard</b> stack.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Cannot be dispelled</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r_Note0": {
+    "ru": "Бонус ловкости рассчитывается в момент применения. Самонаводящиеся иглы являются снарядами, от которых можно уклониться смещением.",
+    "en": "Bonus Agility is calculated upon cast. Homing needles are disjointable projectiles."
   },
   "DOTA_Tooltip_ability_evo_veno_needle_r_agi_bonus_pct": {
-    "ru": "%БОНУС AGI:",
-    "en": "%AGI BONUS:"
+    "ru": "%БОНУС ЛОВКОСТИ:",
+    "en": "%AGILITY BONUS:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r_bonus_range": {
+    "ru": "БОНУС ДАЛЬНОСТИ:",
+    "en": "BONUS RANGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_needle_r_homing_dmg_pct": {
+    "ru": "%УРОНА ИГЛЫ:",
+    "en": "%HOMING NEEDLE DMG:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_q": {
     "ru": "Гейзер миазмов",
     "en": "Miasma Geyser"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_q_Description": {
-    "ru": "Выброс спор в %radius% AoE: %base_damage% + %int_pct%%% INT маг. урона (%creep_mult%x по крипам), накладывает Споровое заражение, полностью лечит свои био-турели в зоне и продлевает их на %turret_extend%с.",
-    "en": "Erupts spores in %radius% AoE for %base_damage% + %int_pct%%% INT magic damage (%creep_mult%x vs creeps), applying Spore Infection while healing friendly turrets inside and extending them by %turret_extend%s."
+    "ru": "Вызывает выброс спор в радиусе %radius%, нанося %base_damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font> и накладывая <b>Споровое заражение</b>.<br><br>Все ваши <b>Био-турели</b> в области полностью восстанавливают здоровье, а их время жизни продлевается на %turret_extend% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Erupts spores in a %radius% radius, dealing %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font> and applying <b>Spore Infection</b>.<br><br>Friendly <b>Bio-Turrets</b> inside the area are <font color='#9acd32'>healed to full health</font> and have their duration extended by %turret_extend%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_q_Note0": {
+    "ru": "Развеять можно только эффект Спорового заражения на врагах.",
+    "en": "Only the Spore Infection debuff on enemies can be dispelled."
   },
   "DOTA_Tooltip_ability_evo_veno_hive_q_base_damage": {
     "ru": "БАЗОВЫЙ МАГ. УРОН:",
     "en": "BASE MAGIC DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_q_int_pct": {
-    "ru": "%УРОНА ОТ INT:",
+    "ru": "%УРОНА ОТ ИНТЕЛЛЕКТА:",
     "en": "%INT DAMAGE:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_w": {
@@ -180,8 +348,12 @@
     "en": "Bio-Turret"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_w_Description": {
-    "ru": "Выращивает турель на %duration%с (макс. %max_turrets%) с %base_hp% + %hp_int_pct%%% INT HP и дальностью %turret_range%. Бьёт каждые %attack_interval%с на %base_damage% + %int_pct%%% INT маг. урона (%creep_mult%x по крипам), фокуся заражённых врагов.",
-    "en": "Grows a Bio-Turret for %duration%s (max %max_turrets%) with %base_hp% + %hp_int_pct%%% INT HP and %turret_range% range. Fires every %attack_interval%s for %base_damage% + %int_pct%%% INT magic damage (%creep_mult%x vs creeps), prioritizing infected targets."
+    "ru": "Выращивает неподвижную <b>Био-турель</b> на %duration% сек. <font color='#7d7d7d'>(макс. %max_turrets%)</font> со здоровьем %base_hp% + %hp_int_pct%%% от <font color='#87ceeb'>интеллекта</font> и дальностью атаки %turret_range%.<br><br>Каждые %attack_interval% сек. турель стреляет на %base_damage% + %int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font>, отдавая приоритет врагам под <b>Споровым заражением</b> и стреляя быстрее, когда заражённые цели рядом.",
+    "en": "Summons an immobile <b>Bio-Turret</b> for %duration%s <font color='#7d7d7d'>(max %max_turrets%)</font> with %base_hp% + %hp_int_pct%%% of <font color='#87ceeb'>Intelligence</font> health and %turret_range% attack range.<br><br>Fires every %attack_interval%s for %base_damage% + %int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font>, prioritizing enemies with <b>Spore Infection</b> and firing faster while infected enemies are nearby."
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_w_Note0": {
+    "ru": "При превышении лимита в %max_turrets% турелей самая старая уничтожается. Не атакует постройки; снаряды можно сбросить смещением.",
+    "en": "Exceeding %max_turrets% active turrets destroys the oldest one. Cannot target buildings; projectiles can be disjointed."
   },
   "DOTA_Tooltip_ability_evo_veno_hive_w_max_turrets": {
     "ru": "МАКС. ТУРЕЛЕЙ:",
@@ -196,11 +368,15 @@
     "en": "Cocoon Detonation"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_e_Description": {
-    "ru": "Пассивно: гибель турели наносит %death_base_dmg% + %death_int_pct%%% INT маг. урона в %death_radius% AoE и возвращает %mana_return% маны. Активно (Перегрузка улья): все турели дают синхронный залп (%volley_dmg_pct%%% урона) в %volley_radius% AoE и получают +%volley_as% AS на %volley_as_dur%с.",
-    "en": "Passive: dying turrets burst %death_radius% AoE for %death_base_dmg% + %death_int_pct%%% INT magic damage and restore %mana_return% mana. Active (Hive Overload): all turrets fire a %volley_dmg_pct%%% synchronized volley at target %volley_radius% AoE and gain +%volley_as% AS for %volley_as_dur%s."
+    "ru": "<h1>Пассивно: Детонация кокона</h1>При гибели или истечении времени жизни <b>Био-турель</b> взрывается в радиусе %death_radius%, нанося %death_base_dmg% + %death_int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> врагам и восстанавливая <font color='#87ceeb'>%mana_return% маны</font>.<br><br><h1>Активно: Перегрузка улья</h1>Приказывает всем активным <b>Био-турелям</b> дать синхронный залп в указанную область радиусом %volley_radius% <font color='#7d7d7d'>(%volley_dmg_pct%%% от их урона)</font> и ускоряет их стрельбу на <font color='#9acd32'>+%volley_as%</font> на %volley_as_dur% сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "<h1>Passive: Cocoon Detonation</h1>When a <b>Bio-Turret</b> dies or expires, it detonates in a %death_radius% radius, dealing %death_base_dmg% + %death_int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> and restoring <font color='#87ceeb'>%mana_return% mana</font>.<br><br><h1>Active: Hive Overload</h1>Orders all active <b>Bio-Turrets</b> to fire a synchronized volley into the target %volley_radius% area <font color='#7d7d7d'>(%volley_dmg_pct%%% of their damage)</font> and grants them <font color='#9acd32'>+%volley_as%</font> attack speed for %volley_as_dur%s.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_e_Note0": {
+    "ru": "Пассивная детонация срабатывает и при замене старой турели из-за лимита. Усиление турелей можно развеять.",
+    "en": "Passive detonation also triggers when an old turret is replaced by the turret limit. The turret frenzy buff is dispellable."
   },
   "DOTA_Tooltip_ability_evo_veno_hive_e_death_base_dmg": {
-    "ru": "ВЗРЫВ ТУРЕЛИ:",
+    "ru": "УРОН ДЕТОНАЦИИ:",
     "en": "TURRET BLAST DMG:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_e_mana_return": {
@@ -208,28 +384,40 @@
     "en": "MANA RETURN:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_e_volley_as": {
-    "ru": "AS ПЕРЕГРУЗКИ:",
-    "en": "OVERLOAD AS:"
+    "ru": "СКОР. АТАКИ ПЕРЕГРУЗКИ:",
+    "en": "OVERLOAD ATTACK SPEED:"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_r": {
     "ru": "Материнский Обелиск",
     "en": "Mother Obelisk"
   },
   "DOTA_Tooltip_ability_evo_veno_hive_r_Description": {
-    "ru": "Призывает Нексус на %duration%с (%base_hp% + %hp_int_pct%%% INT HP), порождая дополнительную Био-турель. Каждые %pulse_interval%с бьёт в %pulse_radius% AoE на %pulse_dmg% + %pulse_int_pct%%% INT маг. урона с заражением; турели в %link_radius% AoE бьют 2 цели сразу.",
-    "en": "Summons a Nexus for %duration%s (%base_hp% + %hp_int_pct%%% INT HP) and spawns a bonus Bio-Turret. Pulses %pulse_radius% AoE every %pulse_interval%s for %pulse_dmg% + %pulse_int_pct%%% INT magic damage + infection; turrets within %link_radius% attack 2 targets simultaneously."
+    "ru": "Призывает <b>Материнский Обелиск</b> на %duration% сек. со здоровьем %base_hp% + %hp_int_pct%%% от <font color='#87ceeb'>интеллекта</font> и порождает дополнительную <b>Био-турель</b>.<br><br>Каждые %pulse_interval% сек. Обелиск выпускает волну в радиусе %pulse_radius%, нанося %pulse_dmg% + %pulse_int_pct%%% от <font color='#87ceeb'>интеллекта</font> <font color='#87ceeb'>магического урона</font> и накладывая <b>Споровое заражение</b>. <b>Био-турели</b> в радиусе %link_radius% от Обелиска атакуют 2 цели одновременно.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Summons a <b>Mother Obelisk</b> for %duration%s with %base_hp% + %hp_int_pct%%% of <font color='#87ceeb'>Intelligence</font> health and spawns a bonus <b>Bio-Turret</b>.<br><br>Every %pulse_interval%s, the Obelisk pulses in a %pulse_radius% radius, dealing %pulse_dmg% + %pulse_int_pct%%% of <font color='#87ceeb'>Intelligence</font> as <font color='#87ceeb'>magical damage</font> and applying <b>Spore Infection</b>. <b>Bio-Turrets</b> within %link_radius% radius attack 2 targets simultaneously.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_r_Note0": {
+    "ru": "Дополнительная турель не учитывается в лимите турелей. Развеивается только наложенное Споровое заражение.",
+    "en": "The bonus turret bypasses the maximum turret limit. Only the applied Spore Infection debuff is dispellable."
   },
   "DOTA_Tooltip_ability_evo_veno_hive_r_pulse_dmg": {
     "ru": "УРОН ИМПУЛЬСА:",
     "en": "PULSE DAMAGE:"
+  },
+  "DOTA_Tooltip_ability_evo_veno_hive_r_base_hp": {
+    "ru": "БАЗОВОЕ ЗДОРОВЬЕ:",
+    "en": "BASE HEALTH:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_q": {
     "ru": "Волна пыльцы",
     "en": "Pollen Wave"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_q_Description": {
-    "ru": "Пускает волну на %range% дальности (ширина %width%), накладывая Симбиотическую пыльцу: лечит союзников на %heal_base% + %heal_all_pct%%% суммы статов и наносит врагам %dmg_base% + %dmg_all_pct%%% суммы статов маг. урона (%creep_mult%x по крипам).",
-    "en": "Unleashes a %range%-range wave (%width% width) applying Symbiotic Pollen: heals allies for %heal_base% + %heal_all_pct%%% all stats and damages enemies for %dmg_base% + %dmg_all_pct%%% all stats magic damage (%creep_mult%x vs creeps)."
+    "ru": "Пускает волну на дальность %range% <font color='#7d7d7d'>(ширина %width%)</font>, накладывая на всех задетых существ <b>Симбиотическую пыльцу</b>.<br><br>Союзников волна <font color='#9acd32'>исцеляет</font> на %heal_base% + %heal_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font>, а врагам наносит %dmg_base% + %dmg_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> <font color='#9acd32'>(×%creep_mult% по крипам)</font>.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Unleashes a wave over %range% range <font color='#7d7d7d'>(%width% width)</font>, applying <b>Symbiotic Pollen</b> to all units hit.<br><br>Allies are <font color='#9acd32'>healed</font> for %heal_base% + %heal_all_pct%%% of <font color='#d8ae53'>all attributes combined</font>, while enemies take %dmg_base% + %dmg_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font> <font color='#9acd32'>(×%creep_mult% vs creeps)</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_q_Note0": {
+    "ru": "Раскрывает обзор вдоль пути волны и действует как на героев, так и на крипов.",
+    "en": "Provides brief vision along the wave's path and affects both heroes and creeps."
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_q_heal_base": {
     "ru": "БАЗОВОЕ ЛЕЧЕНИЕ:",
@@ -244,12 +432,16 @@
     "en": "Living Cocoon"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_w_Description": {
-    "ru": "Защищает союзника или себя на %duration%с щитом %shield_base% + %shield_all_pct%%% суммы статов и +%status_res%%% сопр. эффектам. Каждые %pulse_interval%с импульсирует в %pulse_radius% AoE на %pulse_dmg% + %pulse_all_pct%%% суммы статов маг. урона.",
-    "en": "Shields an ally or self for %duration%s (%shield_base% + %shield_all_pct%%% all stats barrier, +%status_res%%% Status Res) and pulses %pulse_radius% AoE every %pulse_interval%s for %pulse_dmg% + %pulse_all_pct%%% all stats magic damage."
+    "ru": "Окутывает союзного героя или себя на %duration% сек. барьером прочностью %shield_base% + %shield_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> и даёт <font color='#d8ae53'>+%status_res%%%</font> сопротивления эффектам.<br><br>Каждые %pulse_interval% сек. кокон испускает волну в радиусе %pulse_radius%, нанося %pulse_dmg% + %pulse_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> врагам вокруг.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Envelops an allied hero or self for %duration%s in a barrier absorbing %shield_base% + %shield_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> and granting <font color='#d8ae53'>+%status_res%%%</font> Status Resistance.<br><br>Every %pulse_interval%s, the cocoon pulses in a %pulse_radius% radius for %pulse_dmg% + %pulse_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font>.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_w_Note0": {
+    "ru": "Если весь запас барьера будет поглощён досрочно, действие кокона прекращается.",
+    "en": "If the barrier's full capacity is absorbed early, the cocoon effect ends."
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_w_shield_base": {
-    "ru": "БАЗОВЫЙ ЩИТ:",
-    "en": "BASE SHIELD:"
+    "ru": "БАЗОВЫЙ БАРЬЕР:",
+    "en": "BASE BARRIER:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_w_status_res": {
     "ru": "%СОПР. ЭФФЕКТАМ:",
@@ -260,31 +452,39 @@
     "en": "Mycelium Aura"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_e_Description": {
-    "ru": "Союзники в радиусе %aura_radius% получают +%all_stats_bonus% ко всем атрибутам и +%heal_amp_pct%%% усиления лечения и регенерации.",
-    "en": "Allies within %aura_radius% radius gain +%all_stats_bonus% to all attributes and +%heal_amp_pct%%% incoming heal amplification."
+    "ru": "Союзные герои в радиусе %aura_radius% получают <font color='#d8ae53'>+%all_stats_bonus%</font> ко всем атрибутам и <font color='#9acd32'>+%heal_amp_pct%%%</font> к силе входящего лечения и регенерации.",
+    "en": "Allied heroes within %aura_radius% radius gain <font color='#d8ae53'>+%all_stats_bonus%</font> to all attributes and <font color='#9acd32'>+%heal_amp_pct%%%</font> incoming heal amplification."
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_e_Note0": {
+    "ru": "Аура действует на самого владельца и союзных героев, её нельзя развеять.",
+    "en": "Affects the caster and allied heroes within range; cannot be dispelled."
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_e_all_stats_bonus": {
-    "ru": "+КО ВСЕМ СТАТАМ:",
-    "en": "+ALL ATTRIBUTES:"
+    "ru": "БОНУС КО ВСЕМ АТРИБУТАМ:",
+    "en": "ALL ATTRIBUTES BONUS:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_e_heal_amp_pct": {
-    "ru": "%БОНУС ЛЕЧЕНИЯ:",
-    "en": "%HEAL AMP:"
+    "ru": "%УСИЛЕНИЯ ЛЕЧЕНИЯ:",
+    "en": "%HEAL AMPLIFICATION:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_r": {
     "ru": "Кольцо Возрождения",
     "en": "Ring of Rebirth"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_r_Description": {
-    "ru": "Святилище в %radius% AoE на %duration%с: Strong Dispel союзникам, -%ally_dmg_reduce%%% входящего урона и %ally_regen_base% + %ally_regen_all_pct%%% суммы статов регена HP/с; враги получают безмолвие на %silence_duration%с, -%enemy_slow_pct%%% MS и %enemy_dps_base% + %enemy_dps_all_pct%%% суммы статов маг. урона/с.",
-    "en": "Sanctuary in %radius% AoE for %duration%s: Strong Dispel allies, -%ally_dmg_reduce%%% damage taken, and %ally_regen_base% + %ally_regen_all_pct%%% all stats HP regen/s; silences enemies for %silence_duration%s, slows by -%enemy_slow_pct%%% MS, and deals %enemy_dps_base% + %enemy_dps_all_pct%%% all stats magic DPS."
+    "ru": "Создаёт вокруг себя святилище радиусом %radius% на %duration% сек. При применении применяет <b>сильное развеивание</b> к союзным героям внутри и накладывает на врагов <b>безмолвие</b> на %silence_duration% сек.<br><br>Союзники внутри получают на <font color='#d8ae53'>-%ally_dmg_reduce%%%</font> меньше урона и <font color='#9acd32'>+%ally_regen_base%</font> + %ally_regen_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> восстановления здоровья в сек.<br><br>Враги внутри замедляются на <font color='#7998b5'>-%enemy_slow_pct%%%</font> и получают %enemy_dps_base% + %enemy_dps_all_pct%%% от <font color='#d8ae53'>суммы всех атрибутов</font> <font color='#87ceeb'>магического урона</font> в сек.<br><br>Тип развеивания: <span class=\"GameplayValues GameplayVariable\">обычное</span>",
+    "en": "Creates a %radius% radius sanctuary around the caster for %duration%s. Upon cast, applies a <b>Strong Dispel</b> to allied heroes inside and <b>silences</b> enemies for %silence_duration%s.<br><br>Allies inside take <font color='#d8ae53'>-%ally_dmg_reduce%%%</font> reduced damage and gain <font color='#9acd32'>+%ally_regen_base%</font> + %ally_regen_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> HP regeneration per second.<br><br>Enemies inside are slowed by <font color='#7998b5'>-%enemy_slow_pct%%%</font> and take %enemy_dps_base% + %enemy_dps_all_pct%%% of <font color='#d8ae53'>all attributes combined</font> as <font color='#87ceeb'>magical damage</font> per second.<br><br>Dispel Type: <span class=\"GameplayValues GameplayVariable\">Basic Dispel</span>"
+  },
+  "DOTA_Tooltip_ability_evo_veno_symbiont_r_Note0": {
+    "ru": "Развеять можно только безмолвие и замедление на врагах; сама аура святилища неразвеиваема и перемещается вместе с героем.",
+    "en": "Only the enemy silence and slow can be dispelled; the sanctuary aura itself moves with the caster and cannot be dispelled."
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_r_ally_regen_base": {
-    "ru": "РЕГЕН СОЮЗНИКАМ:",
+    "ru": "РЕГЕНЕРАЦИЯ СОЮЗНИКАМ:",
     "en": "ALLY HP REGEN/S:"
   },
   "DOTA_Tooltip_ability_evo_veno_symbiont_r_enemy_dps_base": {
-    "ru": "УРОН ВРАГАМ/С:",
+    "ru": "УРОН ВРАГАМ В СЕК.:",
     "en": "ENEMY DPS:"
   },
   "DOTA_Tooltip_modifier_evo_veno_glands": {
@@ -292,223 +492,223 @@
     "en": "Mutagenic Glands"
   },
   "DOTA_Tooltip_modifier_evo_veno_glands_Description": {
-    "ru": "Заряжает споровый импульс с атак и заклинаний.",
-    "en": "Charges spore pulses from attacks and casts."
+    "ru": "Заряжает <font color='#9acd32'>споровый импульс</font> с атак и применения способностей.",
+    "en": "Charges a <font color='#9acd32'>spore pulse</font> from attacks and ability casts."
   },
   "DOTA_Tooltip_modifier_evo_veno_glands_slow": {
     "ru": "Споровый осадок",
     "en": "Spore Residue"
   },
   "DOTA_Tooltip_modifier_evo_veno_glands_slow_Description": {
-    "ru": "Скорость передвижения снижена.",
-    "en": "Move speed reduced."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_glands_shred": {
     "ru": "Кислотный пробой",
     "en": "Acid Breach"
   },
   "DOTA_Tooltip_modifier_evo_veno_glands_shred_Description": {
-    "ru": "Броня снижена на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%.",
-    "en": "Armor reduced."
+    "ru": "Броня снижена на <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font>.",
+    "en": "Armor reduced by <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_mark": {
     "ru": "Метка Снайпера",
     "en": "Sniper Mark"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_mark_Description": {
-    "ru": "Получает повышенный физический урон от атак Иглострела.",
-    "en": "Takes increased physical attack damage from Jungle Needle."
+    "ru": "Получает повышенный <font color='#e03e2e'>физический урон</font> от атак Иглострела.",
+    "en": "Takes increased <font color='#e03e2e'>physical damage</font> from Jungle Needle's attacks."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_glands_buff": {
     "ru": "Бодрость пыльцы",
     "en": "Pollen Vigor"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_glands_buff_Description": {
-    "ru": "Повышает скорость передвижения и атаки.",
-    "en": "Grants bonus move speed and attack speed."
+    "ru": "Скорость передвижения увеличена на <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>, а скорость атаки — на <font color='#9acd32'>%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>.",
+    "en": "Movement speed increased by <font color='#9acd32'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> and attack speed by <font color='#9acd32'>%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_t1_q_slow": {
     "ru": "Вязкая слизь",
     "en": "Viscous Slime"
   },
   "DOTA_Tooltip_modifier_evo_veno_t1_q_slow_Description": {
-    "ru": "Скорость передвижения снижена.",
-    "en": "Move speed reduced."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_chitin_shard": {
     "ru": "Хитиновый осколок",
     "en": "Chitin Shard"
   },
   "DOTA_Tooltip_modifier_evo_veno_chitin_shard_Description": {
-    "ru": "Снижает броню и скорость передвижения за стак.",
-    "en": "Reduces armor and move speed per stack."
+    "ru": "Броня снижена на <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font>, а скорость передвижения — на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.",
+    "en": "Armor reduced by <font color='#e03e2e'>%dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%</font> and movement speed by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_q_slow": {
     "ru": "Залп игл",
     "en": "Needle Slow"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_q_slow_Description": {
-    "ru": "Замедлен токсичными иглами.",
-    "en": "Slowed by toxic needles."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> токсичными иглами.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> by toxic needles."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_heal_cut": {
     "ru": "Глубокая рана",
     "en": "Toxic Wound"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_heal_cut_Description": {
-    "ru": "Входящее лечение снижено на %dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%.",
-    "en": "Incoming healing reduced."
+    "ru": "Входящее <font color='#9acd32'>лечение</font> снижено на <font color='#e03e2e'>%dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%</font>.",
+    "en": "Incoming <font color='#9acd32'>healing</font> reduced by <font color='#e03e2e'>%dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_q_trail_slow": {
     "ru": "Поле колючек",
     "en": "Thorn Field"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_q_trail_slow_Description": {
-    "ru": "Скорость передвижения снижена на 30%.",
-    "en": "Move speed reduced by 30%."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> на поле колючек.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> on the thorn field."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_w": {
     "ru": "Разрывной стручок",
     "en": "Bursting Pod"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_w_Description": {
-    "ru": "Бонусные AS, дальность и физ. урон; последний выстрел детонирует Хитиновые осколки.",
-    "en": "Bonus AS, range, and physical damage; final shot detonates Chitin Shards."
+    "ru": "Скорость атаки увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>, дальность атаки — на +%dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%, а атаки наносят <font color='#e03e2e'>доп. физический урон</font>.<br><br>Последний заряд взрывает все стаки <b>Хитинового осколка</b>.",
+    "en": "Attack speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>, attack range by +%dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%, and attacks deal <font color='#e03e2e'>bonus physical damage</font>.<br><br>The final charge detonates all <b>Chitin Shard</b> stacks."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_e_as": {
     "ru": "Токсичный азарт",
     "en": "Venom Surge"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_e_as_Description": {
-    "ru": "Увеличивает скорость атаки на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%.",
-    "en": "Attack speed increased."
+    "ru": "Скорость атаки увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>.",
+    "en": "Attack speed increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_e_root": {
     "ru": "Шипастые путы",
     "en": "Spine Snare"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_e_root_Description": {
-    "ru": "Обездвижен ядовитыми шипами.",
-    "en": "Rooted by venomous spines."
+    "ru": "Цель <font color='#7998b5'>обездвижена</font> ядовитыми шипами и не может передвигаться.",
+    "en": "<font color='#7998b5'>Rooted</font> by venomous spines and unable to move."
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_r": {
     "ru": "Ливень Смертоцвета",
     "en": "Deathbloom Barrage"
   },
   "DOTA_Tooltip_modifier_evo_veno_needle_r_Description": {
-    "ru": "Дальность, True Strike, бонус AGI и самонаводящиеся иглы с каждой атаки.",
-    "en": "Bonus range, True Strike, Agility, and homing needles on every attack."
+    "ru": "Дальность атаки увеличена на +%dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%, <font color='#9acd32'>ловкость</font> — на <font color='#9acd32'>+%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font>, атаки получают <b>True Strike</b>.<br><br>Каждая атака выпускает самонаводящуюся иглу в самого раненого врага поблизости.",
+    "en": "Attack range increased by +%dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%, <font color='#9acd32'>Agility</font> increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_STATS_AGILITY_BONUS%</font>, and attacks gain <b>True Strike</b>.<br><br>Every attack fires a homing needle at the lowest-HP nearby enemy."
   },
   "DOTA_Tooltip_modifier_evo_veno_spore_infection": {
     "ru": "Споровое заражение",
     "en": "Spore Infection"
   },
   "DOTA_Tooltip_modifier_evo_veno_spore_infection_Description": {
-    "ru": "Снижены магрезист и скорость; ближайшие био-турели фокусируются на цели.",
-    "en": "Reduced magic resistance and move speed; focused by nearby Bio-Turrets."
+    "ru": "Сопротивление магии снижено на <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font>, скорость передвижения — на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.<br><br>Ближайшие <b>Био-турели</b> выбирают эту цель в первую очередь.",
+    "en": "Magic resistance reduced by <font color='#87ceeb'>%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%</font> and movement speed by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font>.<br><br>Prioritized by nearby <b>Bio-Turrets</b>."
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_q_cloud_debuff": {
     "ru": "Облако спор",
     "en": "Spore Cloud"
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_q_cloud_debuff_Description": {
-    "ru": "Шанс промаха атак 25%.",
-    "en": "25% attack miss chance."
+    "ru": "Шанс промаха атак увеличен на <font color='#7998b5'>%dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%</font>.",
+    "en": "Attack miss chance increased by <font color='#7998b5'>%dMODIFIER_PROPERTY_MISS_PERCENTAGE%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_turret_frenzy": {
     "ru": "Перегрузка улья",
     "en": "Hive Overload"
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_turret_frenzy_Description": {
-    "ru": "Ускоренный темп стрельбы био-турели.",
-    "en": "Accelerated Bio-Turret firing cadence."
+    "ru": "Темп стрельбы <b>Био-турели</b> ускорен в <font color='#9acd32'>1.5 раза</font>.",
+    "en": "<b>Bio-Turret</b> firing rate accelerated by <font color='#9acd32'>1.5x</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_tether_slow": {
     "ru": "Токсичная нить",
     "en": "Toxic Tether"
   },
   "DOTA_Tooltip_modifier_evo_veno_tether_slow_Description": {
-    "ru": "Замедлен нитью между био-турелями.",
-    "en": "Slowed by a Bio-Turret tether."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> токсичной нитью между <b>Био-турелями</b>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> by a <b>Bio-Turret</b> tether."
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_obelisk": {
     "ru": "Материнский Обелиск",
     "en": "Mother Obelisk"
   },
   "DOTA_Tooltip_modifier_evo_veno_hive_obelisk_Description": {
-    "ru": "Периодически бьёт волнами по области и усиливает турели рядом.",
-    "en": "Periodically pulses AoE damage and empowers nearby Bio-Turrets."
+    "ru": "Периодически наносит <font color='#87ceeb'>магический урон</font> и накладывает <b>Споровое заражение</b> по области, а ближайшие <b>Био-турели</b> атакуют по 2 цели сразу.",
+    "en": "Periodically pulses <font color='#87ceeb'>magical damage</font> and <b>Spore Infection</b> in an area while allowing nearby <b>Bio-Turrets</b> to attack 2 targets at once."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_pollen": {
     "ru": "Симбиотическая пыльца",
     "en": "Symbiotic Pollen"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_pollen_Description": {
-    "ru": "Ускоряет и лечит союзников; ослабляет скорость и лечение врагов.",
-    "en": "Empowers and heals allies; slows enemies and reduces healing."
+    "ru": "Ускоряет передвижение и атаку союзников и даёт <font color='#9acd32'>регенерацию здоровья</font>; замедляет врагов и снижает их <font color='#9acd32'>входящее лечение</font>.",
+    "en": "Increases allies' movement, attack speed, and <font color='#9acd32'>health regeneration</font>; slows enemies and reduces their <font color='#9acd32'>incoming healing</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_shield": {
     "ru": "Пыльцевой барьер",
     "en": "Pollen Barrier"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_shield_Description": {
-    "ru": "Поглощает входящий урон.",
-    "en": "Absorbs incoming damage."
+    "ru": "Поглощает входящий урон до исчерпания запаса барьера.",
+    "en": "Absorbs incoming damage until the barrier capacity is depleted."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_w_ally": {
     "ru": "Живой кокон",
     "en": "Living Cocoon"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_w_ally_Description": {
-    "ru": "Щит, сопротивление эффектам и периодические импульсы вокруг носителя.",
-    "en": "Shield, Status Resistance, and periodic area magic pulses."
+    "ru": "Поглощает входящий урон, повышает сопротивление эффектам на <font color='#d8ae53'>%dMODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING%%%</font> и периодически наносит <font color='#87ceeb'>магический урон</font> врагам вокруг.",
+    "en": "Absorbs incoming damage, grants <font color='#d8ae53'>%dMODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING%%%</font> Status Resistance, and periodically deals <font color='#87ceeb'>magical damage</font> to nearby enemies."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_w_enemy": {
     "ru": "Паразитический кокон",
     "en": "Parasitic Cocoon"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_w_enemy_Description": {
-    "ru": "Обездвижен и теряет здоровье в пользу Симбионта.",
-    "en": "Rooted and draining health to Spore Symbiont."
+    "ru": "<font color='#7998b5'>Обездвижен</font> и периодически теряет здоровье от <font color='#87ceeb'>магического урона</font>, <font color='#9acd32'>исцеляя</font> Спорового Симбионта.",
+    "en": "<font color='#7998b5'>Rooted</font> and draining health via <font color='#87ceeb'>magical damage</font> to <font color='#9acd32'>heal</font> Spore Symbiont."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_e_aura_buff": {
     "ru": "Аура мицелия",
     "en": "Mycelium Aura"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_e_aura_buff_Description": {
-    "ru": "Увеличивает все атрибуты и усиливает входящее лечение.",
-    "en": "Increases all attributes and incoming healing."
+    "ru": "Все атрибуты увеличены на <font color='#d8ae53'>+%dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%</font>, а <font color='#9acd32'>входящее лечение</font> усилено на <font color='#9acd32'>+%dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%</font>.",
+    "en": "All attributes increased by <font color='#d8ae53'>+%dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%</font> and <font color='#9acd32'>incoming healing</font> amplified by <font color='#9acd32'>+%dMODIFIER_PROPERTY_HEAL_AMPLIFY_PERCENTAGE_TARGET%%%</font>."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_e_surge": {
     "ru": "Всплеск спороношения",
     "en": "Spore Surge"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_e_surge_Description": {
-    "ru": "Атаки вызывают Мутагенные железы Симбионта.",
-    "en": "Attacks trigger Symbiont Mutagenic Glands."
+    "ru": "Атаки по врагам вызывают ослабленный споровый импульс <b>Мутагенных желез</b> Симбионта.",
+    "en": "Attacks against enemies trigger a reduced spore pulse from Symbiont's <b>Mutagenic Glands</b>."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_aura": {
     "ru": "Кольцо Возрождения",
     "en": "Ring of Rebirth"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_aura_Description": {
-    "ru": "Исцеляет и защищает союзников в святилище, нанося урон врагам.",
-    "en": "Heals and shields allies inside the sanctuary while damaging enemies."
+    "ru": "Создаёт святилище вокруг героя, <font color='#9acd32'>исцеляя</font> и защищая союзников и нанося <font color='#87ceeb'>магический урон</font> врагам.",
+    "en": "Projects a sanctuary around the hero that <font color='#9acd32'>heals</font> and protects allies while dealing <font color='#87ceeb'>magical damage</font> to enemies."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_ally": {
     "ru": "Благословение Возрождения",
     "en": "Rebirth Ward"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_ally_Description": {
-    "ru": "Снижает входящий урон на 25% и сильно регенерирует здоровье.",
-    "en": "Reduces incoming damage by 25% and rapidly regenerates HP."
+    "ru": "Входящий урон снижен на <font color='#d8ae53'>%dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%</font>; <font color='#9acd32'>регенерация здоровья</font> увеличена на <font color='#9acd32'>+%dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%</font> в сек.",
+    "en": "Incoming damage reduced by <font color='#d8ae53'>%dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%</font> and <font color='#9acd32'>health regeneration</font> increased by <font color='#9acd32'>+%dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%</font> per second."
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_enemy_slow": {
     "ru": "Угнетение спор",
     "en": "Spore Suppression"
   },
   "DOTA_Tooltip_modifier_evo_veno_symbiont_r_enemy_slow_Description": {
-    "ru": "Скорость передвижения снижена на 35%.",
-    "en": "Move speed reduced by 35%."
+    "ru": "Скорость передвижения снижена на <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> в области <b>Кольца Возрождения</b>.",
+    "en": "Movement speed reduced by <font color='#7998b5'>%dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%</font> inside <b>Ring of Rebirth</b>."
   }
 }

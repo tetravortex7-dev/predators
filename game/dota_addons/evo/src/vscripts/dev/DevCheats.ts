@@ -4,6 +4,8 @@ import { EVO_CONSTANTS } from "../data/game_constants";
 import { HeroAppearance } from "../lib/HeroAppearance";
 
 export class DevCheats {
+    private devFowDisabled = false;
+
     constructor(
         private readonly eventBus: EventBus,
         private readonly levelingManager: LevelingManager
@@ -64,6 +66,15 @@ export class DevCheats {
             }
             case "-evo_look": {
                 this.handleLookCommand(playerId, hero, args);
+                break;
+            }
+            case "-evo_fow": {
+                const mode = (args[0] ?? "").toLowerCase();
+                this.devFowDisabled = mode === "off" ? true : mode === "on" ? false : !this.devFowDisabled;
+                const gm = GameRules.GetGameModeEntity();
+                gm.SetFogOfWarDisabled(this.devFowDisabled);
+                gm.SetUnseenFogOfWarEnabled(!this.devFowDisabled);
+                this.say(`[Dev] FOW ${this.devFowDisabled ? "DISABLED" : "ENABLED"}`);
                 break;
             }
             case "-evo_evo":

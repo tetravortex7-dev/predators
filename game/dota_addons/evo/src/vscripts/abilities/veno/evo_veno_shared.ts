@@ -28,13 +28,12 @@ export function getVenoTier(unit: CDOTA_BaseNPC | undefined): number {
         return 4;
     }
     for (const innateName of [
-        "evo_veno_needle_glands",
-        "evo_veno_hive_glands",
-        "evo_veno_symbiont_glands",
+        "evo_veno_needle_glands_t3",
+        "evo_veno_hive_glands_t3",
+        "evo_veno_symbiont_glands_t3",
     ]) {
-        const ab = unit.FindAbilityByName(innateName);
-        if (ab && !ab.IsNull()) {
-            return Math.min(4, Math.max(2, ab.GetLevel() + 1));
+        if (hasAbilitySafe(unit, innateName)) {
+            return 3;
         }
     }
     if (
@@ -206,8 +205,14 @@ export function spawnVenoBioTurret(
 
 export function findVenoInnateAbility(unit: CDOTA_BaseNPC): CDOTABaseAbility | undefined {
     for (const name of [
+        "evo_veno_needle_glands_t4",
+        "evo_veno_needle_glands_t3",
         "evo_veno_needle_glands",
+        "evo_veno_hive_glands_t4",
+        "evo_veno_hive_glands_t3",
         "evo_veno_hive_glands",
+        "evo_veno_symbiont_glands_t4",
+        "evo_veno_symbiont_glands_t3",
         "evo_veno_symbiont_glands",
         "evo_veno_glands",
     ]) {

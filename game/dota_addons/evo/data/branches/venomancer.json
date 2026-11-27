@@ -80,12 +80,12 @@
         "attack_range": 500,
         "move_speed": 315
       },
-      "innate": "evo_veno_needle_glands",
+      "innate": "evo_veno_needle_glands_t3",
       "abilities": [
         "evo_veno_needle_q",
         "evo_veno_needle_w",
         "evo_veno_needle_e",
-        "evo_veno_needle_glands"
+        "evo_veno_needle_glands_t3"
       ],
       "next_body_ids": ["evo_body_t4_veno_needle"],
       "color": [225, 145, 45],
@@ -110,13 +110,13 @@
         "attack_range": 500,
         "move_speed": 325
       },
-      "innate": "evo_veno_needle_glands",
+      "innate": "evo_veno_needle_glands_t4",
       "abilities": [
         "evo_veno_needle_q",
         "evo_veno_needle_w",
         "evo_veno_needle_e",
         "evo_veno_needle_r",
-        "evo_veno_needle_glands"
+        "evo_veno_needle_glands_t4"
       ],
       "next_body_ids": [],
       "color": [195, 45, 85],
@@ -170,12 +170,12 @@
         "attack_range": 450,
         "move_speed": 310
       },
-      "innate": "evo_veno_hive_glands",
+      "innate": "evo_veno_hive_glands_t3",
       "abilities": [
         "evo_veno_hive_q",
         "evo_veno_hive_w",
         "evo_veno_hive_e",
-        "evo_veno_hive_glands"
+        "evo_veno_hive_glands_t3"
       ],
       "next_body_ids": ["evo_body_t4_veno_hive"],
       "color": [125, 75, 215],
@@ -200,13 +200,13 @@
         "attack_range": 450,
         "move_speed": 320
       },
-      "innate": "evo_veno_hive_glands",
+      "innate": "evo_veno_hive_glands_t4",
       "abilities": [
         "evo_veno_hive_q",
         "evo_veno_hive_w",
         "evo_veno_hive_e",
         "evo_veno_hive_r",
-        "evo_veno_hive_glands"
+        "evo_veno_hive_glands_t4"
       ],
       "next_body_ids": [],
       "color": [45, 215, 195],
@@ -260,12 +260,12 @@
         "attack_range": 450,
         "move_speed": 315
       },
-      "innate": "evo_veno_symbiont_glands",
+      "innate": "evo_veno_symbiont_glands_t3",
       "abilities": [
         "evo_veno_symbiont_q",
         "evo_veno_symbiont_w",
         "evo_veno_symbiont_e",
-        "evo_veno_symbiont_glands"
+        "evo_veno_symbiont_glands_t3"
       ],
       "next_body_ids": ["evo_body_t4_veno_symbiont"],
       "color": [85, 185, 250],
@@ -290,13 +290,13 @@
         "attack_range": 450,
         "move_speed": 325
       },
-      "innate": "evo_veno_symbiont_glands",
+      "innate": "evo_veno_symbiont_glands_t4",
       "abilities": [
         "evo_veno_symbiont_q",
         "evo_veno_symbiont_w",
         "evo_veno_symbiont_e",
         "evo_veno_symbiont_r",
-        "evo_veno_symbiont_glands"
+        "evo_veno_symbiont_glands_t4"
       ],
       "next_body_ids": [],
       "color": [235, 225, 115],
